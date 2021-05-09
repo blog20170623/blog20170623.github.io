@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-01-19T06:54:44.673Z</updated>
+  <updated>2021-05-09T02:44:25.699Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>股票分析</title>
+    <link href="http://yoursite.com/2021/05/09/Other/%E8%82%A1%E7%A5%A8%E5%88%86%E6%9E%90/"/>
+    <id>http://yoursite.com/2021/05/09/Other/%E8%82%A1%E7%A5%A8%E5%88%86%E6%9E%90/</id>
+    <published>2021-05-09T02:44:25.699Z</published>
+    <updated>2021-05-09T02:44:25.699Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;楼主84年，33岁了，银行从业8年，目前负责授信审批，说简单一些就是批贷款的。&lt;/p&gt;
+&lt;p&gt;想聊聊关于我们周围生活的金融，先说说通货膨胀吧，&lt;/p&gt;
+&lt;p&gt;在国际经济大通缩的环境下，我们国家是流动性极度匮乏的通货膨胀，很有意思的一件事，也很可悲。&lt;/p&gt;
+&lt;p&gt;我们的通货
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>成功学经典语录——陈安之</title>
+    <link href="http://yoursite.com/2021/05/09/Other/%E6%88%90%E5%8A%9F%E5%AD%A6%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%BD%95/"/>
+    <id>http://yoursite.com/2021/05/09/Other/%E6%88%90%E5%8A%9F%E5%AD%A6%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%BD%95/</id>
+    <published>2021-05-08T16:00:00.000Z</published>
+    <updated>2021-05-09T02:43:13.105Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;做人篇&quot;&gt;&lt;a href=&quot;#做人篇&quot; class=&quot;headerlink&quot; title=&quot;做人篇&quot;&gt;&lt;/a&gt;做人篇&lt;/h2&gt;&lt;p&gt;1、用爱心做事业，用感恩的心做人。 &lt;/p&gt;
+&lt;p&gt;2、做事先做人，小企业做事，大企业做人。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>如果楼市泡沫破灭会怎么样？</title>
@@ -147,33 +201,6 @@
     
     
       <category term="English" scheme="http://yoursite.com/categories/English/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>博客指南</title>
-    <link href="http://yoursite.com/2020/02/18/Other/%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/"/>
-    <id>http://yoursite.com/2020/02/18/Other/%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/</id>
-    <published>2020-02-18T08:06:24.000Z</published>
-    <updated>2021-03-03T16:32:02.737Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
     
     
   </entry>
@@ -376,29 +403,6 @@
 &lt;p&gt;1 级：以在任委员、退休常委为代表，和 2 的区别在于，1 对全国局势有控制能力 2
         
       
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>markdown语法手册</title>
-    <link href="http://yoursite.com/2017/03/06/Other/markdown%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/"/>
-    <id>http://yoursite.com/2017/03/06/Other/markdown%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/</id>
-    <published>2017-03-05T16:00:00.000Z</published>
-    <updated>2020-03-18T00:30:47.724Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Cmd-Markdown-简明语法手册&quot;&gt;&lt;a href=&quot;#Cmd-Markdown-简明语法手册&quot; class=&quot;headerlink&quot; title=&quot;Cmd Markdown 简明语法手册&quot;&gt;&lt;/a&gt;Cmd Markdown 简明语法手册&lt;/h1&gt;&lt;p&gt;标签： Cmd-Markdown&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;1-斜体和粗体&quot;&gt;&lt;a href=&quot;#1-斜体和粗体&quot; class=&quot;headerlink&quot; title=&quot;1. 斜体和粗体&quot;&gt;&lt;/a&gt;1. 斜体和粗体&lt;/h3&gt;&lt;p&gt;使用 * 和 ** 表示斜体和粗体。&lt;/p&gt;
-&lt;p&gt;示例：&lt;/p&gt;
-&lt;p&gt;这是 &lt;em&gt;斜体&lt;/em&gt;，这是 &lt;strong&gt;粗体&lt;/strong&gt;。&lt;/p&gt;
     
     </summary>
     
