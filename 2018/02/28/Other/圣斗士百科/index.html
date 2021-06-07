@@ -1,202 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head><meta name="generator" content="Hexo 3.9.0">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <meta name="description" content="Mr.zhang&#39;s blog">
-  <meta name="keyword" content="hexo-theme, vuejs">
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
   
-    <link rel="shortcut icon" href="/css/images/logo.png">
   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
+    圣斗士百科 |
     
-      圣斗士百科 | Blog
-    
-  </title>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+    Blog</title>
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
   <link rel="stylesheet" href="/css/style.css">
   
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
   
-    <script src="/js/qrious.js"></script>
-  
-  
-  
-  
-    <!-- MathJax support START -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <!-- MathJax support END -->
-  
-
-
-  
-  
-    <script src="/js/local-search.js"></script>
-
+  <script src="/js/pace.min.js"></script>
 <link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
 </head>
-<div class="wechat-share">
-  <img src="/css/images/logo.png">
-</div>
-  <body>
-    <header class="header fixed-header">
-  <div class="header-container">
-    <a class="home-link" href="/">
-      <div class="logo"></div>
-      <span>Blog</span>
-    </a>
-    <ul class="right-list">
-      
-        <li class="list-item">
-          
-            <a href="/" class="item-link">Home</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/series/" class="item-link">Series</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/tags/" class="item-link">Tags</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/archives/" class="item-link">Archives</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/project/" class="item-link">Projects</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/about/" class="item-link">About</a>
-          
-        </li>
-      
-      
-        <li class="menu-item menu-item-search right-list">
-    <a role="button" class="popup-trigger">
-        <i class="fa fa-search fa-fw"></i>
-    </a>
-</li>
-      
-    </ul>
-    <div class="menu">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </div>
-    <div class="menu-mask">
-      <ul class="menu-list">
-        
-          <li class="menu-item">
-            
-              <a href="/" class="menu-link">Home</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/series/" class="menu-link">Series</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/tags/" class="menu-link">Tags</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/archives/" class="menu-link">Archives</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/project/" class="menu-link">Projects</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/about/" class="menu-link">About</a>
-            
-          </li>
-        
-      </ul>
-    </div>
-    
-      <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-            <span class="search-icon">
-                <i class="fa fa-search"></i>
-            </span>
-            <div class="search-input-container">
-                <input autocomplete="off" autocapitalize="off"
-                    placeholder="Please enter your keyword(s) to search." spellcheck="false"
-                    type="search" class="search-input">
-            </div>
-            <span class="popup-btn-close">
-                <i class="fa fa-times-circle"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
-    
-  </div>
-</header>
+</html>
+<body>
+<main class="content">
+  <section class="outer">
+  <article id="post-Other/圣斗士百科" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
 
-    <div id="article-banner">
-  <h2>圣斗士百科</h2>
-  <p class="post-date">2018-02-28</p>
-  <div class="arrow-down">
-    <a href="javascript:;"></a>
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 class="article-title" itemprop="name">
+      圣斗士百科
+    </h1>
+  
+  
+
+
+
+
+            </header>
+            
+
+                
+                    <div class="article-meta">
+                        <a href="/2018/02/28/Other/圣斗士百科/" class="article-date">
+  <time datetime="2018-02-27T16:00:00.000Z" itemprop="datePublished">2018-02-28</time>
+</a>
+                            
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Other/">Other</a>
   </div>
-</div>
-<main class="app-body flex-box">
-  <!-- Article START -->
-  <article class="post-article">
-    <section class="markdown-content"><p>为什么撒加及沙加十分客观理性？</p>
+
+                    </div>
+                    
+
+                        
+                            
+    <div class="tocbot"></div>
+
+
+
+
+
+                                
+
+                                    <div class="article-entry" itemprop="articleBody">
+                                        
+
+
+                                            
+
+                                                
+                                                                    <p>为什么撒加及沙加十分客观理性？</p>
 <blockquote>
 <p>作者：卢仕岷<br>摘要：一个，被称作是神化之身，一个，被公认是最接近神的男人。</p>
 </blockquote>
@@ -219,201 +96,160 @@
 <p>撒加<br>撒加</p>
 <p>从上面的事实，我们不难看出，凡是自己认为对的就去做，即使对方有着无上的权利，即使自己有对之景仰有佳，但，错就是错，对就是对。错了要改，不改就是危害真理的敌人。亚里士多德说：“吾爱吾师，吾更爱真理。”这种客观理性，这种明辨是非，撒伽当之无愧。<br>有人以为在十三年中，哈帝斯和波塞顿都被封印着，所以，圣域没什么危险可言，撒伽也就无所谓什么功绩了。哈帝斯和波塞顿被封印是事实，但不排除还有其他的危险。撒伽自己也说，没有他，这世界早被吞并了。撒伽不是个爱慕虚荣的人，他不会自吹自擂，因此，我们不应该怀疑这话的真实性。并且，经过了上次圣战的重创，振兴圣域的责任也不是多么轻松的事情。撒伽选择了教皇，也就选择了一条“路漫漫其修远兮，吾将上下而求索”的不归路。撒伽错就错在他不该去刺杀雅典娜并阻止她重回圣域。但这一举动是野心膨胀也好，是真的不想把人类的安危托付给一个柔弱的小女孩儿也好，都已不重要了。因为无论怎样，撒迷都会一如既往的支持他。喜欢撒伽，因为他的不完美，因为他的真实。<br>圣斗士也好，冥斗士也罢，都以忠于神，保护神为己任。然而在这群人中却出现了像撒伽和卡隆这样的人物。一个敢于与雅典娜作对，一个把波塞顿玩弄于鼓掌之间。一个藐视神的人，还有什么能让他畏惧呢？孟子说，人定胜天。撒伽不正是一个逆天而行的人吗？在教皇庭与雅典娜对峙，当面痛贬小强，向雅典娜示威：看看这些夸下海口要保护你的圣斗士都变成了什么样子吧。在他把小强的合力一击化解后，雅典娜的眼神，如果你注意看就会发现，她被震惊了。雅典娜被震惊过几次？只这一次。那一刻，我想，她一定产生了爱将之意。然后，五名黄金想一起讨伐撒伽。撒伽也只是顿了顿。请注意，是五名黄金，不是杂鱼。你也许会说，撒伽就是个自大的家伙，或撒伽是死要面子不要命。我要坚决的予以纠正。撒伽决不自大，也不爱面子。他只是无所畏惧，他不怕任何挑战，包括来自于神的。在剧场版里，撒伽启迪星矢的那段话道出了他无所畏惧的真谛。大体意思是，只有怀着必胜的信念，才能打败比自己强大的对手。而撒伽无疑具有这种素质。在这里，我没用剧场版刻意抬高撒伽的实力，也没说撒伽能打败五黄金。我只想点明撒伽的傲气。说白了，《圣》这部片子，也可以说日本所有的打斗片，都强调了精神对个人能力的强大作用。星矢也好，浦板幽助也罢，在动画中之所以创造奇迹，都是因为他们有顽强的精神与必胜的信念。同样在动画中的撒伽，也具有如此的特点，相信他也应创造奇迹。所以，他秒了一个天斗士也就不希奇了。这是很多沙迷不服的地方，他们应该找老车，而不能因为撒伽秒了天斗士而沙加没秒就说撒伽也秒不了。撒迷们喜欢撒伽，因为他无所畏惧，我相信在他的感召下，撒迷也一定具有或正在具有这种宝贵精神。人们喜欢某人，总有一定的原因。这就像宗教，信仰它，因为它可以给人以寄托，教人们以宗教的方式解决生活中的困难。基督教人把一切寄希望于上帝的解救，佛祖教人们学会忍受，而撒伽告诉撒迷，有什么敢于拦路的话，就凭实力让他/她/它消失！撒迷信仰这一点，也乐于用这种方式对待挫折。   </p>
 <p>说一千道一万，归根结底，还得回到撒伽的实力上来，因为撒伽的这一切几乎都是以他超强的实力为前提的。撒迷们崇拜撒伽，因为他是强者。<br>整个黄金篇中，虽然都是以撒伽之乱为线索的，但直到最后两集，撒伽的样子才被我们看清楚。然而他刚一出现就代表了一种超乎人们想象的实力。从星矢，一辉的轮番登场，到五位小强的合力一击。每次攻击层次的不断提升，我们都以为撒伽这次差不多要挂了。但每次他都能像什么都没发生一样站在那里，笑着，让对手恐惧，不知道眼前的这个男人究竟有多么强大。因为仿佛无论多么强劲的攻击对他都毫无作用。整个《圣》中唯一一次令星矢失去了战斗意志的是撒伽。星矢说：“这家伙太可怕，太厉害了，无希望了，我已经无力还击。”号称不死鸟的一辉，在撒伽面前完全没有了威风。只能拼上性命拖住撒伽。有人说到达教皇时的小强已经筋疲力尽。这完全是狡辩。小强们哪次打倒对手不是在经历了对手对之的一翻残酷虐待之后？难道他们打倒对手的力量还不及刚开打时吗？那他们为何不在一开始就打倒对手？根本就是自相矛盾。在被虐中提升小宇宙才是真正的小强本色。黄金们也说了，经历了战斗的洗礼，小强们提升了七感，此时他们挥出的拳可说是最强的。<br>在教皇厅撒伽的强大是有目共睹的。让女神都颜色大变可以说明一切。倒是很多人拿沙加1V3来说撒伽是多么的不如沙加。作为一个撒迷，我有责任和权力用我力所能及去为撒伽说两句。在冥王篇里，撒伽他们（包括史昂）杀了几个黄金？答案是0，他们能杀几个？不知道，但肯定不止一个。那为什么没杀？原因很简单。他们一开始就说了，去取雅典娜的人头，而不是杀黄金。若杀了黄金即便雅典娜穿上神衣也只能孤军奋战，不可能赢得圣战。因此，他们要取雅典娜的头，还要保证黄金的性命。所以，他们一开始就对穆说从那处让开，而不是像冥斗士那样遇谁杀谁。记得三人在通过金牛宫时说：“仿佛有正规冥斗士潜入了圣域呢。”“亚尔迪本可以毫发无损的。”（忘了是在哪，可能是漫画，总之有很强的印象。）我想，撒伽他们的确是没用上全部的实力的。要不然，你以为穆能躲过修罗那一剑吗？圣剑的犀利加上修罗的突袭，是大艾也能秒杀的绝技。却为什么恰倒好处地仅把穆的几根头发斩落？这样既可以令穆不受伤害，也可起到绝佳的威慑作用，以期让穆闪开。还有，穆为什么要交由史昂处理？因为史昂同样可以用星光灭绝把穆传走。为什么撒伽他们要用那种方式通过狮子宫？因为小艾不是穆，他会不假思索地与撒伽他们真干。到那时，撒伽他们就陷入了下手也不是，不下手也不是的境地而无法自拔。<br>在这种情况下，撒伽三人对沙加会用100%的实力吗？不会！你们真的以为沙加的防御避挡住的是三位以往最强黄金的绝招吗？那撒伽他们不是太没有人性了？对昔日的战友痛下毒手，这还算圣斗士吗？在双树园，三人斗沙加，真的用了全部力量？若是一场真正的敌对战斗，对沙加不是不了解的修罗，卡妙会如此大意地走近已拿出佛珠摆好姿势的沙加？太搞笑了吧。这一切的事实说明，撒伽他们未用全部实力。再说说沙加的天舞宝轮。（天魔那种物理招数不会伤害撒伽多少，而六道那种空间招数对同样拥有空间招数的撒伽来说也不应有多大用处。）天舞的确是相当厉害的招数。中了天舞，就不能反击，也不能逃走。如果是单挑的话也用不了A。E，那就只能自爆以期凌驾沙加的小宇宙了。而自爆就意味着自己也赔上了性命，天舞是破了，沙加还是没打倒，就像一辉。那怎样才能破天舞呢？只有使小宇宙凌驾沙加。撒伽做不做的到呢？我不敢确定。但我相信，他能。从他的惟我独尊的气概和深不可测的强大实力。提升小宇宙至凌驾沙加只是时间问题。（别忘了，撒伽的实力到底有多强还是个未知数，因为还没有人把撒伽打倒过。）而撒伽超强的抗击打能力会帮他赢得充足的时间。沙加会剥夺六感，但剥夺了六感又能怎样呢？一辉不照样很精神吗？撒伽比一辉强是无庸质疑的，沙加整不死他，只要撒伽把握时机，相信能凌驾天舞的。再一个，天舞的强像A。E一样，只能在小范围内。撒伽完全可以采用远程决战的战术来对付。从撒伽那一记穿透十二宫的重拳可知他的远程打击能力。沙加防御强，撒伽抗击打能力强。但就战斗意志与战斗经验方面，沙加很明显稍逊一筹。毕竟，撒伽比沙加更加成熟，经历了更多是非，内心更加殷实。还是那句话，撒沙在风格上是完全不同的两个人，硬加比较是很难的。我没说撒伽就比沙加强，只想警告那些敢于藐视撒伽的人，事实本楼主已经说得再明白不过，如果你们再顽固不化，那结论只有一个，就是你们的愚昧无知。<br>写了这么多，相信很多人能看出来，我并没有一味地强调谁强啦，谁能打得过谁啦，我认为撒迷们讨论这个还有情可原，因为撒伽的魅力就体现在他战斗中的无所畏惧。沙迷却不应该，因为沙加本身不是一个争强好胜的人，他的魅力也不靠他的实力之强劲去展现，那沙迷们一而再，再而三的沙加第一论是不是反而让人以为沙迷们仅仅因为沙加强大而去喜欢他呢，那对沙加这样一个人物来说是不是太肤浅了呢？好了，那是沙迷的事情，我也不说太多。反正我除了注重实力以外，还非常在乎那些隐藏在人们外表下的让人感动的美好品质。我希望通过这篇文章能加深某些圣迷对撒沙的理解。今后在讨论他们的时候，不要再单纯的拿实力去比较，正像我前面说的，我们不是仅仅因为他们强大而喜欢他们的。</p>
-</section>
-    <!-- Tags START -->
-    
-    <!-- Tags END -->
-    <!-- NAV START -->
-    
-  <div class="nav-container">
-    <!-- reverse left and right to put prev and next in a more logic postition -->
-    
-      <a class="nav-left" href="/2017/11/29/Other/认知三部曲/">
-        <span class="nav-arrow">← </span>
-        
-          认知三部曲
-        
-      </a>
-    
-    
-      <a class="nav-right" href="/2018/04/06/Other/财富自由/">
-        
-          财富自由
-        
-        <span class="nav-arrow"> →</span>
-      </a>
-    
-  </div>
 
-    <!-- NAV END -->
-    <!-- 打赏 START -->
+                                                                        
+                                    </div>
+                                    <footer class="article-footer">
+                                        
+                                    </footer>
+
+    </div>
+
     
-      <div class="money-like">
-        <div class="reward-btn">
-          赏
-          <span class="money-code">
-            <span class="alipay-code">
-              <div class="code-image"></div>
-              <b>使用支付宝打赏</b>
-            </span>
-            <span class="wechat-code">
-              <div class="code-image"></div>
-              <b>使用微信打赏</b>
-            </span>
-          </span>
+        
+  <nav class="article-nav">
+    
+      <a href="/2018/04/06/Other/财富自由/" class="article-nav-link">
+        <strong class="article-nav-caption">Newer</strong>
+        <div class="article-nav-title">
+          
+            财富自由
+          
         </div>
-        <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
-      </div>
+      </a>
     
-    <!-- 打赏 END -->
-    <!-- 二维码 START -->
     
-      <div class="qrcode">
-        <canvas id="share-qrcode"></canvas>
-        <p class="notice">扫描二维码，分享此文章</p>
-      </div>
+      <a href="/2017/11/29/Other/认知三部曲/" class="article-nav-link">
+        <strong class="article-nav-caption">Older</strong>
+        <div class="article-nav-title">认知三部曲</div>
+      </a>
     
-    <!-- 二维码 END -->
-    
-      <!-- Utterances START -->
-      <div id="utterances"></div>
-      <script src="https://utteranc.es/client.js"
-        repo="null"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async></script>    
-      <!-- Utterances END -->
-    
-  </article>
-  <!-- Article END -->
-  <!-- Catalog START -->
+  </nav>
+
+
+            
+
+                
+                    
+                        
+                            
+
+</article>
+</section>
+  <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
   
-    <aside class="catalog-container">
-  <div class="toc-main">
-    <strong class="toc-title">Catalog</strong>
-    
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#沙加"><span class="toc-nav-text">沙加</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#撒加"><span class="toc-nav-text">撒加</span></a></li></ol>
-    
+    <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+    <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>&copy; 2021 Blog</li>
+      <li>Powered by <a href="
+      #" target="_blank">Mr.Zhang</a></li>
+      <li>Theme  <a href="#">Ocean</a></li>
+    </ul>
   </div>
-</aside>
-  
-  <!-- Catalog END -->
+</footer>
+
 </main>
+<aside class="sidebar">
+  <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+    <div class="logo">
+      <a href="/"><img src="/images/hexo.svg" alt="Blog"></a>
+    </div>
+  
+  <ul class="nav nav-main">
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/">Home</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/archives">Archives</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/gallery">Gallery</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/timeline/">Timeline</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/links/">Links</a>
+      </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+</aside>
+<script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/lazyload.min.js"></script>
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
 
-<script>
-  (function () {
-    var url = 'http://yoursite.com/2018/02/28/Other/圣斗士百科/';
-    var banner = 'undefined'
-    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
-      $('#article-banner').css({
-        'background-image': 'url(' + banner + ')'
-      })
-    } else {
-      $('#article-banner').geopattern(url)
-    }
-    $('.header').removeClass('fixed-header')
-
-    // error image
-    $(".markdown-content img").on('error', function() {
-      $(this).attr('src', '/css/images/error_icon.png')
-      $(this).css({
-        'cursor': 'default'
-      })
-    })
-
-    // zoom image
-    $(".markdown-content img").on('click', function() {
-      var src = $(this).attr('src')
-      if (src !== '/css/images/error_icon.png') {
-        var imageW = $(this).width()
-        var imageH = $(this).height()
-
-        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
-        zoom = zoom < 1 ? 1 : zoom
-        zoom = zoom > 2 ? 2 : zoom
-        var transY = (($(window).height() - imageH) / 2).toFixed(2)
-
-        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
-        $('.image-view-wrap').addClass('wrap-active')
-        $('.image-view-wrap img').css({
-          'width': `${imageW}`,
-          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
-        })
-        $('html').css('overflow', 'hidden')
-
-        $('.image-view-wrap').on('click', function() {
-          $(this).remove()
-          $('html').attr('style', '')
-        })
-      }
-    })
-  })();
-</script>
+  <script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
+
+  <script src="/js/tocbot.min.js"></script>
   <script>
-    var qr = new QRious({
-      element: document.getElementById('share-qrcode'),
-      value: document.location.href
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5, h6',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
     });
   </script>
 
 
+<script src="/js/ocean.js"></script>
 
-
-
-
-    <div class="scroll-top">
-  <span class="arrow-icon"></span>
-</div>
-    <footer class="app-footer">
-  <p class="copyright">
-    &copy; 2021 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
-    <br>
-    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
-  </p>
-</footer>
 
 <script>
-  function async(u, c) {
-    var d = document, t = 'script',
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-    s.parentNode.insertBefore(o, s);
-  }
-</script>
-<script>
-  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
-    FastClick.attach(document.body);
-  })
+// 使用fancybox来显示post图片集(#andus-head-img为头像id)
+$('img:not(#andus-head-img)').each(function() {
+  $(this).wrap('<a class="fancybox" data-fancybox="gallery" href="' + $(this).prop("src") + '"></a>'); 
+})
 </script>
 
-<script>
-  var hasLine = 'true';
-  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
-    $('figure pre').each(function(i, block) {
-      var figure = $(this).parents('figure');
-      if (hasLine === 'false') {
-        figure.find('.gutter').hide();
-      }
-      hljs.configure({useBR: true});
-      var lang = figure.attr('class').split(' ')[1] || 'code';
-      var codeHtml = $(this).html();
-      var codeTag = document.createElement('code');
-      codeTag.className = lang;
-      codeTag.innerHTML = codeHtml;
-      $(this).attr('class', '').empty().html(codeTag);
-      figure.attr('data-lang', lang.toUpperCase());
-      hljs.highlightBlock(block);
-    });
-  })
-</script>
-<!-- Baidu Tongji -->
 
-<script src="/js/script.js"></script>
 
-  </body>
+</body>
 </html>
