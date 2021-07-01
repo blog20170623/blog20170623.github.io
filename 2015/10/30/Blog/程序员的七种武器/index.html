@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="Mr.zhang&#39;s blog">
+  <meta name="keyword" content="hexo-theme, vuejs">
+  
+    <link rel="shortcut icon" href="/css/images/logo.png">
+  
+  <title>
+    
+      程序员的七种武器 | Blog
+    
+  </title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  
+    <script src="/js/qrious.js"></script>
+  
+  
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
+  
+
+
+  
+  
+    <script src="/js/local-search.js"></script>
+
+<link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png">
+</div>
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>Blog</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/series/" class="item-link">Series</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">About</a>
+          
+        </li>
+      
+      
+        <li class="menu-item menu-item-search right-list">
+    <a role="button" class="popup-trigger">
+        <i class="fa fa-search fa-fw"></i>
+    </a>
+</li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/series/" class="menu-link">Series</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+    
+      <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+            <span class="search-icon">
+                <i class="fa fa-search"></i>
+            </span>
+            <div class="search-input-container">
+                <input autocomplete="off" autocapitalize="off"
+                    placeholder="Please enter your keyword(s) to search." spellcheck="false"
+                    type="search" class="search-input">
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa fa-times-circle"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>程序员的七种武器</h2>
+  <p class="post-date">2015-10-30</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><p>信息技术的发展时间虽然不长，但其爆炸式的发展速度使信息技术迅速覆盖社会和人类生活的各个角落。程序员们是这场信息化浪潮的见证者之一，更是其中的主要参与者，这是时代赋予每个程序员的机会和责任。 </p>
+<!-- doc -->
+<a id="more"></a>
+<p>信息技术的更新速度是惊人的，程序员的职业生涯则是一个要求不断学习的过程，永远不能固步自封。本人在工作期间曾看见过很多程序员只要有闲暇时间就浏览一些没有太大作用的网页，在网上聊天，打游戏，浪费了大量的时间，十分不可取。而另外一种情况是，IT技术的日新月异使很多程序员眼花缭乱，什么都想学，却又不知从何学起，今天看看这个，明天学学那个，贪多不熟。 </p>
+<p>虽然IT技术发展迅速，但很多技术都是有规律可循，一些基本的概念、原理和方法还很通用，可以举一反三。本人根据自己的体会和经验，向那些刚刚踏入IT行业的新程序员们或正在迷茫的程序员们推荐程序员必须掌握的七种武器，有了这七种武器，虽不敢说笑傲江湖，但将自己立于不败之地还是可以的。 </p>
+<h2 id="第一种武器：开发工具"><a href="#第一种武器：开发工具" class="headerlink" title="第一种武器：开发工具"></a>第一种武器：开发工具</h2><p>至少熟练掌握两到三种开发工具的使用，这是程序员的立身之本，其中C/C++和JAVA是我重点推荐的开发工具，C/C++以其高效率和高度的灵活性成为开发工具中的利器，很多系统级的软件还是用C/C++编写。而JAVA的跨平台和与WEB很好的结合是JAVA的优势所在，而本人对SUN公司的“网络即计算机”的概念相当欣赏，并相信JAVA即其相关的技术集JAVA One会成为未来的主流开发工具之一。其次，如果能掌握一种简便的可视化开发工具，如VB，PowerBuilder，Delphi，C++ Builder，则更好，这些开发工具减小了开发难度，并能够强化程序员对象模型的概念。另外，需要掌握基本的脚本语言，如shell,perl等，至少能读懂这些脚本代码。 </p>
+<h2 id="第二种武器：数据库"><a href="#第二种武器：数据库" class="headerlink" title="第二种武器：数据库"></a>第二种武器：数据库</h2><p>为什么数据库是如此重要？很多应用程序都是以数据库的数据为中心，而数据库的产品也有不少，其中关系型数据库仍是主流形式，所以程序员至少熟练掌握一两种数据库，对关系型数据库的关键元素要非常清楚，要熟练掌握SQL的基本语法。虽然很多数据库产品提供了可视化的数据库管理工具，但SQL是基础，是通用的数据库操作方法。如果没有机会接触商业数据库系统，可以使用免费的数据库产品是一个不错的选择，如mySQL, Postgres等。 </p>
+<h2 id="第三种武器：操作系统"><a href="#第三种武器：操作系统" class="headerlink" title="第三种武器：操作系统"></a>第三种武器：操作系统</h2><p>当前主流的操作系统是Windows，Linux/Unix，熟练地使用这些操作系统是必须的，但只有这些还远远不够。要想成为一个真正的编程高手，需要深入了解操作系统，了解它的内存管理机制、进程/线程调度、信号、内核对象、系统调用、协议栈实现等。Linux作为开发源码的操作系统，是一个很好的学习平台，Linux几乎具备了所有现代操作系统的特征。虽然Windows系统的内核实现机制的资料较少，但通过互联网还是能获取不少资料。只有对操作系统有一定的了解后，你会发现自己上了一个新的台阶。 </p>
+<h2 id="第四种武器：网络协议TCP-IP"><a href="#第四种武器：网络协议TCP-IP" class="headerlink" title="第四种武器：网络协议TCP/IP"></a>第四种武器：网络协议TCP/IP</h2><p>在互联网如此普及的今天，如果您还没有对互联网的支撑协议TCP/IP协议栈有很好的掌握，就需要迅速补上这一课，网络技术已改变了软件运行的模式，从最早的客户/服务器结构，到今天的WEB Services，再到未来的网格计算，这一切都离不开以TCP/IP协议栈为基础的网络协议支持，所以，深入掌握TCP/IP协议是非常必要的。至少，你需要了解ISO七层协议模型，IP/UDP/TCP/HTTP等常用协议的原理和三次握手机制。 </p>
+<h2 id="第五种武器：DCOM-CORBA-XML-WEB-Services"><a href="#第五种武器：DCOM-CORBA-XML-WEB-Services" class="headerlink" title="第五种武器：DCOM/CORBA/XML/WEB Services"></a>第五种武器：DCOM/CORBA/XML/WEB Services</h2><p>随着技术的发展，软件与网络的无缝结合是必然趋势，软件系统的位置无关性是未来计算模式的重要特征之一，DCOM/CORBA是当前两大主流的分布计算的中间件平台，DCOM是微软COM(组件对象模型)的扩展，而CORBA是OMG支持的规范。程序员需要做的不仅仅是利用商业的开发平台来开发软件，而是要理解这些技术的初衷，即为什么需要这项技术，如果你能理解了这一点，再回头看这些技术的具体实现，就如庖丁解牛，迎刃而解。XML/WebServices重要性不言而喻，XML以其结构化的表示方法和超强的表达能力被喻为互联网上的“世界语”，是分布计算的基石之一。 </p>
+<h2 id="第六种武器：软件工程与CMM"><a href="#第六种武器：软件工程与CMM" class="headerlink" title="第六种武器：软件工程与CMM"></a>第六种武器：软件工程与CMM</h2><p>现代大型软件系统的开发中，工程化的开发控制取代个人英雄主义，成为软件系统成功的保证，一个编程高手并不一定是一个优秀的程序员，一个优秀的程序员是将出色的编程能力和开发技巧同严格的软件工程思想有机结合，编程只是软件生命周期中的其中一环，优秀的程序员应该掌握软件开发各个阶段的基本技能，如市场分析，可行性分析，需求分析，结构设计，详细设计，软件测试等。一句话可以概括我的看法：“创意无限，流程保证”。 </p>
+<h2 id="第七种武器：强烈的好奇心"><a href="#第七种武器：强烈的好奇心" class="headerlink" title="第七种武器：强烈的好奇心"></a>第七种武器：强烈的好奇心</h2><p>什么才是一个程序员的终极武器呢，那就是强烈的好奇心和学习精神。没有比强烈的好奇心和学习精神更好的武器了，它是程序员们永攀高峰的源泉和动力所在。</p>
+</section>
+    <!-- Tags START -->
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+  <div class="nav-container">
+    <!-- reverse left and right to put prev and next in a more logic postition -->
+    
+      <a class="nav-left" href="/2015/08/25/Blog/Web/">
+        <span class="nav-arrow">← </span>
+        
+          Web知识片段
+        
+      </a>
+    
+    
+      <a class="nav-right" href="/2015/10/30/Notes/老板必须知道的11组数据/">
+        
+          老板必须知道的11组数据
+        
+        <span class="nav-arrow"> →</span>
+      </a>
+    
+  </div>
+
+    <!-- NAV END -->
+    <!-- 打赏 START -->
+    
+      <div class="money-like">
+        <div class="reward-btn">
+          赏
+          <span class="money-code">
+            <span class="alipay-code">
+              <div class="code-image"></div>
+              <b>使用支付宝打赏</b>
+            </span>
+            <span class="wechat-code">
+              <div class="code-image"></div>
+              <b>使用微信打赏</b>
+            </span>
+          </span>
+        </div>
+        <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
+      </div>
+    
+    <!-- 打赏 END -->
+    <!-- 二维码 START -->
+    
+      <div class="qrcode">
+        <canvas id="share-qrcode"></canvas>
+        <p class="notice">扫描二维码，分享此文章</p>
+      </div>
+    
+    <!-- 二维码 END -->
+    
+      <!-- Utterances START -->
+      <div id="utterances"></div>
+      <script src="https://utteranc.es/client.js"
+        repo="null"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>    
+      <!-- Utterances END -->
+    
+  </article>
+  <!-- Article END -->
+  <!-- Catalog START -->
+  
+    <aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">Catalog</strong>
+    
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第一种武器：开发工具"><span class="toc-nav-text">第一种武器：开发工具</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第二种武器：数据库"><span class="toc-nav-text">第二种武器：数据库</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第三种武器：操作系统"><span class="toc-nav-text">第三种武器：操作系统</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第四种武器：网络协议TCP-IP"><span class="toc-nav-text">第四种武器：网络协议TCP/IP</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第五种武器：DCOM-CORBA-XML-WEB-Services"><span class="toc-nav-text">第五种武器：DCOM/CORBA/XML/WEB Services</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第六种武器：软件工程与CMM"><span class="toc-nav-text">第六种武器：软件工程与CMM</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#第七种武器：强烈的好奇心"><span class="toc-nav-text">第七种武器：强烈的好奇心</span></a></li></ol>
+    
+  </div>
+</aside>
+  
+  <!-- Catalog END -->
+</main>
+
+<script>
+  (function () {
+    var url = 'http://yoursite.com/2015/10/30/Blog/程序员的七种武器/';
+    var banner = 'undefined'
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+    // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', '/css/images/error_icon.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== '/css/images/error_icon.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+  })();
+</script>
+
+
+  <script>
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+  </script>
+
+
+
+
+
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2021 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      hljs.configure({useBR: true});
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/js/script.js"></script>
+
+  </body>
+</html>
