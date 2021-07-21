@@ -1,411 +1,297 @@
 <!DOCTYPE html>
-<html>
-  <head><meta name="generator" content="Hexo 3.9.0">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <meta name="description" content="Mr.zhang&#39;s blog">
-  <meta name="keyword" content="hexo-theme, vuejs">
-  
-    <link rel="shortcut icon" href="/css/images/logo.png">
-  
-  <title>
-    
-      Blog
-    
-  </title>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-  
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
-  
-    <script src="/js/qrious.js"></script>
-  
-  
-  
-  
-    <!-- MathJax support START -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <!-- MathJax support END -->
-  
+<html lang>
+  <head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-  
-  
-    <script src="/js/local-search.js"></script>
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
-<link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+<meta name="theme-color" content="#f8f5ec">
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<link rel="alternate" href="/atom.xml" title="Blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0">
+<link rel="canonical" href="http://yoursite.com/page/2/">
+
+<link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0">
+
+<script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":"","latex":false};
+</script>
+
+    <title>Blog</title>
+  <link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
 </head>
-<div class="wechat-share">
-  <img src="/css/images/logo.png">
-</div>
-  <body>
-    <header class="header fixed-header">
-  <div class="header-container">
-    <a class="home-link" href="/">
-      <div class="logo"></div>
-      <span>Blog</span>
-    </a>
-    <ul class="right-list">
-      
-        <li class="list-item">
-          
-            <a href="/" class="item-link active">Home</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/series/" class="item-link">Series</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/tags/" class="item-link">Tags</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/archives/" class="item-link">Archives</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/project/" class="item-link">Projects</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/about/" class="item-link">About</a>
-          
-        </li>
-      
-      
-        <li class="menu-item menu-item-search right-list">
-    <a role="button" class="popup-trigger">
-        <i class="fa fa-search fa-fw"></i>
-    </a>
-</li>
-      
-    </ul>
-    <div class="menu">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </div>
-    <div class="menu-mask">
-      <ul class="menu-list">
-        
-          <li class="menu-item">
-            
-              <a href="/" class="menu-link mobile-active">Home</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/series/" class="menu-link">Series</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/tags/" class="menu-link">Tags</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/archives/" class="menu-link">Archives</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/project/" class="menu-link">Projects</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/about/" class="menu-link">About</a>
-            
-          </li>
-        
-      </ul>
-    </div>
-    
-      <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-            <span class="search-icon">
-                <i class="fa fa-search"></i>
-            </span>
-            <div class="search-input-container">
-                <input autocomplete="off" autocapitalize="off"
-                    placeholder="Please enter your keyword(s) to search." spellcheck="false"
-                    type="search" class="search-input">
-            </div>
-            <span class="popup-btn-close">
-                <i class="fa fa-times-circle"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
-    
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">Blog</a>
   </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list"><a href="/">
+        <li class="mobile-menu-item">Home
+          </li>
+      </a><a href="/archives/">
+        <li class="mobile-menu-item">Archives
+          </li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags
+          </li>
+      </a></ul>
+</nav>
+<div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">Blog</a>
+</div>
+
+<nav class="site-navbar"><ul id="menu" class="menu"><li class="menu-item">
+          <a class="menu-item-link" href="/">
+            Home
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            Archives
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/tags/">
+            Tags
+            </a>
+        </li>
+      </ul></nav>
 </header>
 
-    <main class="app-body">
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2016/12/13/Other/网易新闻：大部分看起来很努力的人，不过愚蠢而已/">网易新闻：大部分看起来很努力的人，不过愚蠢而已</a>
-      </h2>
-      <p class="article-date">December 13, 2016</p>
-      
-      <div class="article-summary">
-        
-          
-熬了几次夜就觉得鞠躬尽瘁，坐了几站地铁就觉得漂洋过海，没有吃晚餐就觉得一九四二，没人打招呼就觉得百年孤独。一个人被自己的事迹感动得稀里哗啦，别人却觉得你是个傻逼。
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content"><section id="posts" class="posts"><section id="archive" class="archive"><div class="collection-title">
+            <h2 class="archive-year">2018</h2>
+          </div>
+        <div class="archive-post">
+        <span class="archive-post-time">
+          02-28
+          </span>
+        <span class="archive-post-title">
+          <a href="/2018/02/28/Other/圣斗士百科/" class="archive-post-link">
+            圣斗士百科
+          </a>
+        </span>
+      </div>
+    <div class="collection-title">
+            <h2 class="archive-year">2017</h2>
+          </div>
+        <div class="archive-post">
+        <span class="archive-post-time">
+          11-29
+          </span>
+        <span class="archive-post-title">
+          <a href="/2017/11/29/Other/认知三部曲/" class="archive-post-link">
+            认知三部曲
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          11-29
+          </span>
+        <span class="archive-post-title">
+          <a href="/2017/11/29/Other/看懂中国房地产/" class="archive-post-link">
+            看懂中国房地产
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          11-28
+          </span>
+        <span class="archive-post-title">
+          <a href="/2017/11/28/Other/中国社会九大阶层划分/" class="archive-post-link">
+            中国社会九大阶层划分
+          </a>
+        </span>
+      </div>
+    <div class="collection-title">
+            <h2 class="archive-year">2016</h2>
+          </div>
+        <div class="archive-post">
+        <span class="archive-post-time">
+          12-13
+          </span>
+        <span class="archive-post-title">
+          <a href="/2016/12/13/Other/网易新闻：大部分看起来很努力的人，不过愚蠢而已/" class="archive-post-link">
+            网易新闻：大部分看起来很努力的人，不过愚蠢而已
+          </a>
+        </span>
+      </div>
+    <div class="collection-title">
+            <h2 class="archive-year">2015</h2>
+          </div>
+        <div class="archive-post">
+        <span class="archive-post-time">
+          10-30
+          </span>
+        <span class="archive-post-title">
+          <a href="/2015/10/30/Blog/程序员的七种武器/" class="archive-post-link">
+            程序员的七种武器
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          10-30
+          </span>
+        <span class="archive-post-title">
+          <a href="/2015/10/30/Notes/20个你不知道的大脑秘密/" class="archive-post-link">
+            20个你不知道的大脑秘密
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          10-30
+          </span>
+        <span class="archive-post-title">
+          <a href="/2015/10/30/Notes/57条创业经验/" class="archive-post-link">
+            57条创业经验
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          10-30
+          </span>
+        <span class="archive-post-title">
+          <a href="/2015/10/30/Notes/老板必须知道的11组数据/" class="archive-post-link">
+            老板必须知道的11组数据
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          10-30
+          </span>
+        <span class="archive-post-title">
+          <a href="/2015/10/30/Notes/制度的力量/" class="archive-post-link">
+            制度的力量
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          08-25
+          </span>
+        <span class="archive-post-title">
+          <a href="/2015/08/25/Blog/Web/" class="archive-post-link">
+            Web知识片段
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          08-25
+          </span>
+        <span class="archive-post-title">
+          <a href="/2015/08/25/Blog/神奇的大脑：怎样学习最有效？/" class="archive-post-link">
+            神奇的大脑：怎样学习最有效
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          08-25
+          </span>
+        <span class="archive-post-title">
+          <a href="/2015/08/25/Blog/Web笔记/" class="archive-post-link">
+            Web知识片段
+          </a>
+        </span>
+      </div>
+    <div class="collection-title">
+            <h2 class="archive-year">2014</h2>
+          </div>
+        <div class="archive-post">
+        <span class="archive-post-time">
+          04-16
+          </span>
+        <span class="archive-post-title">
+          <a href="/2014/04/16/Notes/阅读训练/" class="archive-post-link">
+            阅读训练
+          </a>
+        </span>
+      </div>
+    <div class="collection-title">
+            <h2 class="archive-year">2013</h2>
+          </div>
+        <div class="archive-post">
+        <span class="archive-post-time">
+          09-07
+          </span>
+        <span class="archive-post-title">
+          <a href="/2013/09/07/Notes/陈安之如何追求超级成功/" class="archive-post-link">
+            陈安之：如何追求超级成功
+          </a>
+        </span>
+      </div>
+    </section><nav class="pagination"><a class="prev" href="/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text">Prev</span>
+      </a>
+    </nav>
+    </section></div></div>
+      </main>
 
-身边不乏这样的人：
-每天都在熬夜学习，可考试结果不尽如人意；
-每天都是最后一个离开公司，可月末报告时总挨批；
-每天都去健身房 ...
-        
-      </div>
-      <a class="more" href="/2016/12/13/Other/网易新闻：大部分看起来很努力的人，不过愚蠢而已/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2015/10/30/Notes/20个你不知道的大脑秘密/">20个你不知道的大脑秘密</a>
-      </h2>
-      <p class="article-date">October 30, 2015</p>
-      
-      <div class="article-summary">
-        
-          尽管科学家一个接一个的科研成果让我们对记忆有了越来越多的了解，但直到今天，科学家所发现的所谓大脑的秘密也只是冰山一角，在很大程度上，大脑和记忆仍是神秘的。研究人员认为，记忆是一个过程，并且当你记忆的时候，实际上就是你把保存在大脑中零零碎碎的信息进行重建。但让人不解的是，究竟是什么东西引发大脑 ...
-        
-      </div>
-      <a class="more" href="/2015/10/30/Notes/20个你不知道的大脑秘密/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2015/10/30/Notes/制度的力量/">制度的力量</a>
-      </h2>
-      <p class="article-date">October 30, 2015</p>
-      
-      <div class="article-summary">
-        
-          第一个故事：合格率的检查制度
-二战期间，美国空军降落伞的合格率为99.9%，这就意味着从概率上来说，每一千个跳伞的士兵中会有一个因为降落伞不合格而丧命。军方要求厂家必须让合格率达到100%才行。厂家负责人说他们竭尽全力了，99.9%已是极限，除非出现奇迹。军方（也有人说是巴顿将军）就改变了检 ...
-        
-      </div>
-      <a class="more" href="/2015/10/30/Notes/制度的力量/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2015/10/30/Notes/57条创业经验/">57条创业经验</a>
-      </h2>
-      <p class="article-date">October 30, 2015</p>
-      
-      <div class="article-summary">
-        
-          总部位于旧金山的云计算数据库服务公司RethinkDB创始人斯拉瓦·阿克麦切特（SlavaA khmechet）日前发表文章，总结了57条创业经验，其中涉及团队、融资、市场、产品、营销、销售、产品开发、公司管理、个人状态等9个方面。
-　　以下是阿克麦切特总结的57条创业经验：
-　　那些才华横 ...
-        
-      </div>
-      <a class="more" href="/2015/10/30/Notes/57条创业经验/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2015/10/30/Notes/老板必须知道的11组数据/">老板必须知道的11组数据</a>
-      </h2>
-      <p class="article-date">October 30, 2015</p>
-      
-      <div class="article-summary">
-        
-          1、老板利润：15%-20%，低于20%说明管理不力，要 调整。低于15%属于投资失败。
-2、人员工资：17%-22%，高于22%需要减员增效，高 于20%需要调整。
-3、材料成本：20%-25%，高于25%会亏损。
-4、礼品赠品等成本：5%-10%，包括转介绍中老顾客 回馈部分。
-5、年业 ...
-        
-      </div>
-      <a class="more" href="/2015/10/30/Notes/老板必须知道的11组数据/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2015/10/30/Blog/程序员的七种武器/">程序员的七种武器</a>
-      </h2>
-      <p class="article-date">October 30, 2015</p>
-      
-      <div class="article-summary">
-        
-          <p>信息技术的发展时间虽然不长，但其爆炸式的发展速度使信息技术迅速覆盖社会和人类生活的各个角落。程序员们是这场信息化浪潮的见证者之一，更是其中的主要参与者，这是时代赋予每个程序员的机会和责任。 </p>
-<!-- doc -->
-        
-      </div>
-      <a class="more" href="/2015/10/30/Blog/程序员的七种武器/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2015/08/25/Blog/Web/">Web知识片段</a>
-      </h2>
-      <p class="article-date">August 25, 2015</p>
-      
-      <div class="article-summary">
-        
-          <!-- doc -->
-        
-      </div>
-      <a class="more" href="/2015/08/25/Blog/Web/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2015/08/25/Blog/神奇的大脑：怎样学习最有效？/">神奇的大脑：怎样学习最有效</a>
-      </h2>
-      <p class="article-date">August 25, 2015</p>
-      
-      <div class="article-summary">
-        
-          <!-- doc -->
-        
-      </div>
-      <a class="more" href="/2015/08/25/Blog/神奇的大脑：怎样学习最有效？/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2014/04/16/Notes/阅读训练/">阅读训练</a>
-      </h2>
-      <p class="article-date">April 16, 2014</p>
-      
-      <div class="article-summary">
-        
-          一、阅读训练：超实用读书方法读书是一门艺术，是心灵和头脑的艺术，它从来不是忙里偷闲的消遣。　　如果你精通读书之道，你就会懂得，什么是人生之道和成功之道。　　读书可以怡人养性，可以提高修养，可以锻炼能力。读史使人明智，诗歌使人聪慧，数学使人严密，哲理使人深刻，伦理学使人有修养，逻辑修辞使人善辫 ...
-        
-      </div>
-      <a class="more" href="/2014/04/16/Notes/阅读训练/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2013/09/07/Notes/陈安之如何追求超级成功/">陈安之：如何追求超级成功</a>
-      </h2>
-      <p class="article-date">September 7, 2013</p>
-      
-      <div class="article-summary">
-        
-          如何追求超级成功成功最重要的秘诀，就是要用已经证明有效的成功方法。你必须向成功者学习，做成功者所做的事情，了解成功者的思考模式，加以运用到自己的身上，然后再以自己的风格，创出一套自己的成功哲学和理论。　　你想知道那些世界级的顶尖人物，是如何透过自我操练与自我鞭策才能达到巅峰？你想知道他们成功 ...
-        
-      </div>
-      <a class="more" href="/2013/09/07/Notes/陈安之如何追求超级成功/">Read more</a>
-    </article>
-  
+      <footer id="footer" class="footer"><div class="social-links"><a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+        <a href="https://github.com/blog20170623" class="iconfont icon-github" title="github"></a>
+        <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    </div><div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
 
-  
-    <div class="guide-pager">
-  
-    <a href="/"><span class="page-arrow">← </span>Prev</a>
-  
-  
-    <a class="unvisible" href="/">Next <span class="page-arrow">→</span></a>
-  
+  <span class="copyright-year">&copy;2015 - 2021<span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Mr.Zhang</span>
+  </span>
 </div>
-  
-</main>
-
-
-    <div class="scroll-top">
-  <span class="arrow-icon"></span>
-</div>
-    <footer class="app-footer">
-  <p class="copyright">
-    &copy; 2021 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
-    <br>
-    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
-  </p>
 </footer>
 
-<script>
-  function async(u, c) {
-    var d = document, t = 'script',
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-    s.parentNode.insertBefore(o, s);
-  }
-</script>
-<script>
-  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
-    FastClick.attach(document.body);
-  })
-</script>
-
-<script>
-  var hasLine = 'true';
-  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
-    $('figure pre').each(function(i, block) {
-      var figure = $(this).parents('figure');
-      if (hasLine === 'false') {
-        figure.find('.gutter').hide();
-      }
-      hljs.configure({useBR: true});
-      var lang = figure.attr('class').split(' ')[1] || 'code';
-      var codeHtml = $(this).html();
-      var codeTag = document.createElement('code');
-      codeTag.className = lang;
-      codeTag.innerHTML = codeHtml;
-      $(this).attr('class', '').empty().html(codeTag);
-      figure.attr('data-lang', lang.toUpperCase());
-      hljs.highlightBlock(block);
-    });
-  })
-</script>
-<!-- Baidu Tongji -->
-
-<script src="/js/script.js"></script>
-
-  </body>
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div><script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/src/even.js?v=2.11.0"></script>
+</body>
 </html>

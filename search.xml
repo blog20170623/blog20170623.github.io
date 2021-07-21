@@ -1,9 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>话题</title>
+    <url>/2021/07/14/Blog/%E8%AF%9D%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="话题：视频学习胜过读书吗？"><a href="#话题：视频学习胜过读书吗？" class="headerlink" title="话题：视频学习胜过读书吗？"></a>话题：视频学习胜过读书吗？</h2><p>现在，网上的课程视频和讲座视频，越来越多。同样的内容，可以读书学习，也可以视频学习，大家喜欢哪一种？</p>
+<p>我比较喜欢读书，实在没耐心视频学习。</p>
+<p>书籍只要随手一翻，就知道大概的内容了，哪些章节需要重点阅读。视频行吗？不行，只能从头到尾，看完整个视频。看完才发现，10分钟的视频，只有1分钟是想听的。读书读到精彩之处，可以停下来慢慢琢磨，反复读上几遍。视频行吗？很麻烦，如果要回到10秒前，多拖几次播放轴，保证让你心情烦躁。</p>
+<p>奇怪的是，我发现， 很多人宁愿看视频，也不想读书。</p>
+<p>举例来说，我遇到过同学跟我说：老师，我想学习 React，你有好的视频教程推荐吗？你可以看文档啊，官方文档写得不错。老师，我觉得视频学起来更快，文档不好懂，看起来太慢了。</p>
+<p>我感到很困惑，明明是读书的学习效率比较高，为什么别人不这样想呢？</p>
+<p>最近，我读到一篇文章，里面有一句话，让我恍然大悟，明白了为什么人们喜欢视频学习。</p>
+<p>文章说，<strong>人类学习效率最高的方式，不是”读书 + 思考”，而是”观察 + 模仿”。</strong>前者需要较长时间的注意力投入，后者只需要短时间注意力，更符合人类的天性。</p>
+<p>我一下子就想通了，有些知识，读书读半天也不一定明白，但是亲眼看别人做一遍，马上就能懂。即使不完全懂，至少知道怎么模仿。所以才会有”百闻（文）不如一见”，人们更容易接受形象的东西，而不是抽象的文字。</p>
+<p>大部分领域的入门方式，都是”观察和模仿”，所以视频学习更有效。 对于深入学习，文字和书籍的效果可能好于视频，因为入门以后再往上走，”理解 + 思考”的作用越来越大，”观察 + 模仿”的作用越来越小。但是，大多数人需要的只是入门，成为专业工作者毕竟是少数。</p>
+<p>所以，视频学习才是初学者更好的方式，或者说，视频是大众学习的主流，读书更适用于某个主题的进阶学习。</p>
+<p>以前没条件视频学习，现在不一样了。智能手机的普及，使得以前没人拍的知识，现在都有人拍；宽带互联网的普及，又使得人们可以随时随地消费视频。我们已经进了视频学习的时代，视频网站可能是新时代的图书馆和印刷机。</p>
+<h2 id="本周话题：内卷化是什么？"><a href="#本周话题：内卷化是什么？" class="headerlink" title="本周话题：内卷化是什么？"></a>本周话题：内卷化是什么？</h2><p>网上找到的解释：</p>
+<blockquote>
+<p>“内卷化，指一种社会或文化模式在某一发展阶段达到一种确定的形式后，便停滞不前或无法转化为另一种高级模式的现象。”（百度百科）</p>
+</blockquote>
+<p>我现在对”内卷化”的理解是， 当一个组织不能或不愿向外发展时，成员的精力就只好用到组织内部，这时就会出现”内卷化”，也就是内部的过度发展。 举例来说，海上的一艘船，外卷化就是大家齐心协力划向对岸，内卷化就是大家心思不在划船，而放在内部的互相牵扯（组织建设、规章制度、人事安排等等）。</p>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Web知识片段</title>
+    <url>/2021/07/11/Blog/vi:vim%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">vim runoob.txt #打开文件</span><br></pre></td></tr></table></figure>
+<p>在一般模式之中，只要按下 i 字符就可以进入输入模式了</p>
+<p>按下 ESC 按钮回到一般模式</p>
+<p>输入 :wq 即可保存离开！</p>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>分享</title>
+    <url>/2021/07/11/Blog/%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<h2 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h2><p><a href="https://www.ruanyifeng.com/blog/weekly/" target="_blank" rel="noopener">科技爱好者周刊</a></p>
+<h2 id="随机显示图片"><a href="#随机显示图片" class="headerlink" title="随机显示图片"></a>随机显示图片</h2><p><img src="https://api.btstu.cn/sjbz/zsy.php" alt></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">![](https://api.btstu.cn/sjbz/zsy.php) # 随机图片</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">随机显示美女图片</span><br><span class="line">https://api88.net/api/img/rand/</span><br><span class="line"></span><br><span class="line">随机显示 bing 壁纸</span><br><span class="line">https://api88.net/api/bing/rand</span><br><span class="line"></span><br><span class="line">电脑手机自适应随机图片</span><br><span class="line">https://api.btstu.cn/sjbz/zsy.php</span><br><span class="line"></span><br><span class="line">横版动漫图片</span><br><span class="line">https://api.btstu.cn/sjbz/?lx=dongman</span><br><span class="line"></span><br><span class="line">横版美女图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=meizi</span><br><span class="line"></span><br><span class="line">横版动漫妹子</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=suiji</span><br><span class="line"></span><br><span class="line">竖版动漫图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=m_dongman</span><br><span class="line"></span><br><span class="line">竖版美女图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=m_meizi</span><br><span class="line"></span><br><span class="line">竖版随机动漫妹子</span><br><span class="line">http://api.btstu.cn/sjbz/?m_lx=suiji</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.biantube.com" target="_blank" rel="noopener">国内版油管</a></p>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
     <title>NobleUI使用文档</title>
     <url>/2021/07/01/Blog/NobleUI%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/</url>
     <content><![CDATA[<h2 id="基本的页面容器"><a href="#基本的页面容器" class="headerlink" title="基本的页面容器"></a>基本的页面容器</h2><p>main-wrapper是最顶层的div</p>
+<a id="more"></a>
 <p>page-wrapper是页面内容容器div、其次是page-content</p>
 <p>row更相当于一个功能组件的集合，也相当于一行，一个row下面可以有两个col-6。row下面一层的col-12是定义卡片显示多大的。</p>
 <p>再下面的class=”card”是真正的功能组件。</p>
@@ -13,6 +63,7 @@
 <h3 id="在页面中插入apexcharts"><a href="#在页面中插入apexcharts" class="headerlink" title="在页面中插入apexcharts"></a>在页面中插入apexcharts</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xl-6 grid-margin stretch-card"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">h6</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>Pie chart<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"apexPie"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xl-6 grid-margin stretch-card"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">h6</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>Line chart<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"apexLine"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>在script标签中写入参数</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Apex Pie chart end</span></span><br><span class="line">	<span class="keyword">var</span> options = &#123;</span><br><span class="line">	  chart: &#123;</span><br><span class="line">	    height: <span class="number">300</span>,</span><br><span class="line">	    type: <span class="string">"pie"</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  colors: [<span class="string">"#f77eb9"</span>, <span class="string">"#7ee5e5"</span>,<span class="string">"#4d8af0"</span>,<span class="string">"#fbbc06"</span>],</span><br><span class="line">	  legend: &#123;</span><br><span class="line">	    position: <span class="string">'top'</span>,</span><br><span class="line">	    horizontalAlign: <span class="string">'center'</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  stroke: &#123;</span><br><span class="line">	    colors: [<span class="string">'rgba(0,0,0,0)'</span>]</span><br><span class="line">	  &#125;,</span><br><span class="line">	  dataLabels: &#123;</span><br><span class="line">	    enabled: <span class="literal">false</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  series: [<span class="number">44</span>, <span class="number">55</span>, <span class="number">13</span>, <span class="number">33</span>]</span><br><span class="line">	&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> chart = <span class="keyword">new</span> ApexCharts(<span class="built_in">document</span>.querySelector(<span class="string">"#apexPie"</span>), options);</span><br><span class="line">	</span><br><span class="line">	chart.render();  </span><br><span class="line">	<span class="comment">// Apex Pie chart end</span></span><br></pre></td></tr></table></figure>
+<p>11</p>
 ]]></content>
       <categories>
         <category>Blog</category>
@@ -5804,6 +5855,144 @@
       </categories>
   </entry>
   <entry>
+    <title>Django的开发流程</title>
+    <url>/2018/11/22/Blog/django/</url>
+    <content><![CDATA[<p>Django是Python里面Web开发的一个框架，遵循MVT模式。也是MVC模式框架的一种。</p>
+<h2 id="关于MVT模式"><a href="#关于MVT模式" class="headerlink" title="关于MVT模式"></a>关于MVT模式</h2><p><strong>M ： 模型，存取数据</strong></p>
+<p><strong>V ： 控制器，决定需要调取哪些数据。和M T 进行交换，返回应答。</strong></p>
+<p><strong>T ： 模版，调取出的数据在模版页面上展示出来</strong></p>
+<p>简单来说就是Model存取数据，View决定需要调取哪些数据，而Template则负责将调取出的数据以合理的方式展现出来。</p>
+<a id="more"></a>
+<h2 id="1-搭建开发环境"><a href="#1-搭建开发环境" class="headerlink" title="1.搭建开发环境"></a>1.搭建开发环境</h2><p>先安装pip</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</span><br><span class="line"></span><br><span class="line">python3 get-pip.py</span><br></pre></td></tr></table></figure>
+<p>安装django</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install Django</span><br></pre></td></tr></table></figure>
+<p>若要验证 Django 是否能被 Python 识别，可以在 shell 中输入 python。 然后在 Python 提示符下，尝试导入 Django：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; import django</span><br><span class="line">&gt;&gt;&gt; print(django.get_version())</span><br><span class="line">2.1</span><br></pre></td></tr></table></figure>
+<h3 id="1-1-在站点目录下创建一个项目：my-blog"><a href="#1-1-在站点目录下创建一个项目：my-blog" class="headerlink" title="1-1.在站点目录下创建一个项目：my_blog"></a>1-1.在站点目录下创建一个项目：my_blog</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">django-admin startproject my_blog</span><br></pre></td></tr></table></figure>
+<h3 id="1-2-开启服务器"><a href="#1-2-开启服务器" class="headerlink" title="1-2.开启服务器"></a>1-2.开启服务器</h3><p>要运行这个django服务器，首先要进入my_blog文件夹，即含有manage.py文件的那个</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 manage.py runserver 8000  //因为安装的是python3 而不是python 2</span><br></pre></td></tr></table></figure>
+<h3 id="1-3-在项目目录下创建一个应用："><a href="#1-3-在项目目录下创建一个应用：" class="headerlink" title="1-3.在项目目录下创建一个应用："></a>1-3.在项目目录下创建一个应用：</h3><p>在Django中的一个app代表一个功能模块。开发者可以将不同功能的模块放在不同的app中, 方便代码的复用。app就是项目的基石，因此开发博客的第一步就是创建新的app，用来实现跟文章相关的功能模块。<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 manage.py startapp article  //创建名为article的app：</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>注册APP：</p>
+</blockquote>
+<p>接着我们需要修改项目配置文件，“告诉”Django现在有article这么一个app了。</p>
+<p>打开my_blog目录的settings.py，找到INSTALLED_APPS写入如下代码：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">my_blog/settings.py</span><br><span class="line"></span><br><span class="line">INSTALLED_APPS = [</span><br><span class="line">    <span class="comment"># 其他代码</span></span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 新增'article'代码，激活app</span></span><br><span class="line">    <span class="string">'article'</span>,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>配置访问路径（urls）</p>
+</blockquote>
+<p>url可以理解为访问网站时输入的网址链接，配置好url后Django才知道怎样定位app。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 存放映射关系的列表</span></span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">'admin/'</span>, admin.site.urls),</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 新增代码，配置app的url</span></span><br><span class="line">    path(<span class="string">'article/'</span>, include(<span class="string">'article.urls'</span>, namespace=<span class="string">'article'</span>)),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h3 id="1-4-目录结构："><a href="#1-4-目录结构：" class="headerlink" title="1-4.目录结构："></a>1-4.目录结构：</h3><p><img src="/images/it/20181123001.png" alt></p>
+<!-- more -->
+<p>HelloWorld/<strong>init</strong>.py: 一个空文件，告诉 Python 该目录是一个 Python 包。<br>HelloWorld/asgi.py: 一个 ASGI 兼容的 Web 服务器的入口，以便运行你的项目。<br>HelloWorld/settings.py: 该 Django 项目的设置/配置。<br>HelloWorld/urls.py: 该 Django 项目的 URL 声明; 一份由 Django 驱动的网站”目录”。<br>HelloWorld/wsgi.py: 一个 WSGI 兼容的 Web 服务器的入口，以便运行你的项目。</p>
+<p><strong>path() 函数</strong></p>
+<p>Django path() 可以接收四个参数，分别是两个必选参数：route、view 和两个可选参数：kwargs、name。</p>
+<p>语法格式：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">path(route, view, kwargs=<span class="literal">None</span>, name=<span class="literal">None</span>)</span><br></pre></td></tr></table></figure>
+<p>route: 字符串，表示 URL 规则，与之匹配的 URL 会执行对应的第二个参数 view。</p>
+<p>view: 用于执行与正则表达式匹配的 URL 请求。</p>
+<p>kwargs: 视图使用的字典类型的参数。</p>
+<p>name: 用来反向获取 URL。</p>
+<h2 id="2-M-编写Model模型"><a href="#2-M-编写Model模型" class="headerlink" title="2.M:编写Model模型"></a>2.M:编写Model模型</h2><p>Django 框架主要关注的是模型（Model）、模板（Template）和视图（Views），称为MTV模式。</p>
+<p>简单来说就是Model存取数据，View决定需要调取哪些数据，而Template则负责将调取出的数据以合理的方式展现出来。</p>
+<h3 id="2-1-ORM"><a href="#2-1-ORM" class="headerlink" title="2-1.ORM"></a>2-1.ORM</h3><p>Django 对各种数据库提供了很好的支持，包括：PostgreSQL、MySQL、SQLite、Oracle。Django 为这些数据库提供了统一的调用API。 我们可以根据自己业务需求选择不同的数据库。</p>
+<p>Django 模型使用自带的 ORM。</p>
+<p>对象关系映射（Object Relational Mapping，简称 ORM ）用于实现面向对象编程语言里不同类型系统的数据之间的转换。</p>
+<p>ORM 在业务逻辑层和数据库层之间充当了桥梁的作用。</p>
+<p>ORM 是通过使用描述对象和数据库之间的映射的元数据，将程序中的对象自动持久化到数据库中</p>
+<p><img src="/images/it/django-orm1.png" alt></p>
+<p>ORM 无法操作到数据库级别，只能操作到数据表</p>
+<p>ORM操作数据库</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ python3 manage.py migrate   # 创建表结构</span><br><span class="line"></span><br><span class="line">$ python3 manage.py makemigrations TestModel  # 让 Django 知道我们在我们的模型有一些变更</span><br><span class="line">$ python3 manage.py migrate TestModel   # 创建表结构</span><br></pre></td></tr></table></figure>
+<h3 id="2-2-编写Model-py"><a href="#2-2-编写Model-py" class="headerlink" title="2-2.编写Model.py"></a>2-2.编写Model.py</h3><p>Django中通过模型（Model）映射到数据库，处理与数据相关的事务。</p>
+<p>对博客网站来说，最重要的数据就是文章。所以首先来建立一个存放文章的数据模型。</p>
+<p>打开article/models.py文件，输入如下代码：略</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> django.db <span class="keyword">import</span> models</span><br><span class="line"><span class="keyword">from</span> django.contrib.auth.models <span class="keyword">import</span> User</span><br><span class="line"><span class="keyword">from</span> django.utils <span class="keyword">import</span> timezone</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ArticlePost</span><span class="params">(models.Model)</span>:</span></span><br><span class="line">    author = models.ForeignKey(User, on_delete=models.CASCADE)</span><br><span class="line">    title = models.CharField(max_length=<span class="number">100</span>)</span><br><span class="line">    body = models.TextField()</span><br><span class="line">    created = models.DateTimeField(default=timezone.now)</span><br><span class="line">    updated = models.DateTimeField(auto_now=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Meta</span>:</span></span><br><span class="line">        ordering = (<span class="string">'-created'</span>,)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self.title</span><br></pre></td></tr></table></figure>
+<p>编写好了Model后，接下来就需要进行数据迁移。迁移是Django对模型所做的更改传递到数据库中的方式。</p>
+<p>再重复一次：每当你修改了models.py文件，都需要用makemigrations和migrate这两条指令迁移数据。</p>
+<p>在迁移之后，Model的编写就算完成了。</p>
+<h3 id="2-3-Django配置使用mysql数据库"><a href="#2-3-Django配置使用mysql数据库" class="headerlink" title="2-3.Django配置使用mysql数据库"></a>2-3.Django配置使用mysql数据库</h3><blockquote>
+<p>本地需要安装MySQLdb模块<br>这就需要安装pip<br>pip 是 Python 包管理工具，该工具提供了对Python 包的查找、下载、安装、卸载的功能。</p>
+</blockquote>
+<p>安装pip</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py   # 下载安装脚本</span><br><span class="line">$ sudo python get-pip.py    # 运行安装脚本</span><br></pre></td></tr></table></figure>
+<p>安装Mysql 模块</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo pip install mysqlclient</span><br></pre></td></tr></table></figure>
+<p>在setting.py文件中配置mysql数据库。</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">DATABASES = &#123; </span><br><span class="line">    <span class="string">'default'</span>: </span><br><span class="line">    &#123; </span><br><span class="line">        <span class="string">'ENGINE'</span>: <span class="string">'django.db.backends.mysql'</span>,    <span class="comment"># 数据库引擎</span></span><br><span class="line">        <span class="string">'NAME'</span>: <span class="string">'runoob'</span>, <span class="comment"># 数据库名称</span></span><br><span class="line">        <span class="string">'HOST'</span>: <span class="string">'127.0.0.1'</span>, <span class="comment"># 数据库地址，本机 ip 地址 127.0.0.1 </span></span><br><span class="line">        <span class="string">'PORT'</span>: <span class="number">3306</span>, <span class="comment"># 端口 </span></span><br><span class="line">        <span class="string">'USER'</span>: <span class="string">'root'</span>,  <span class="comment"># 数据库用户名</span></span><br><span class="line">        <span class="string">'PASSWORD'</span>: <span class="string">'123456'</span>, <span class="comment"># 数据库密码</span></span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用的数据库是mysql，就要安装pymsql模块。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install pymysql</span><br><span class="line"></span><br><span class="line"># pip list 查看已安装的Django模块包</span><br></pre></td></tr></table></figure>
+<p>安装之后，还要在项目中的<strong>int.py</strong>文件添加：</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line">pymysql.install_as_MySQLdb()</span><br></pre></td></tr></table></figure>
+<h2 id="3-V-视图views-py"><a href="#3-V-视图views-py" class="headerlink" title="3.V:视图views.py"></a>3.V:视图views.py</h2><h3 id="3-1-创建管理员账号"><a href="#3-1-创建管理员账号" class="headerlink" title="3-1.创建管理员账号"></a>3-1.创建管理员账号</h3><p>管理员账号（Superuser）是可以进入网站后台，对数据进行维护的账号，具有很高的权限。这里我们需要创建一个管理员账号，以便添加后续的测试数据。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 manage.py createsuperuser</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>将ArticlePost注册到后台中</p>
+</blockquote>
+<p>接下来我们需要“告诉”Django，后台中需要添加ArticlePost这个数据表供管理。</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"></span><br><span class="line"><span class="comment"># 别忘了导入ArticlerPost</span></span><br><span class="line"><span class="keyword">from</span> .models <span class="keyword">import</span> ArticlePost</span><br><span class="line"></span><br><span class="line"><span class="comment"># 注册ArticlePost到admin中</span></span><br><span class="line">admin.site.register(ArticlePost)</span><br></pre></td></tr></table></figure>
+<hr>
+<p>下面是旧的，没有整理。</p>
+<h2 id="2-使用Django的后台管理"><a href="#2-使用Django的后台管理" class="headerlink" title="2.使用Django的后台管理"></a>2.使用Django的后台管理</h2><p>1.创建管理员用户</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">python manage.py createsuperuser，按提示输入用户名、邮箱、密码</span><br></pre></td></tr></table></figure>
+<p>2.打开booktest/admin.py文件，注册模型</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> django.contrib <span class="keyword">import</span> admin</span><br><span class="line"><span class="keyword">from</span> models <span class="keyword">import</span> BookInfo</span><br><span class="line">admin.site.register(BookInfo)</span><br></pre></td></tr></table></figure>
+<p>在Django项目中使用 migrate 同步数据库操作时，出现1366类型 InternalError</p>
+<p>出错原因：<br>由于表记录中有汉字，而创建库或者创建表的时候没有设置中文字符集charset=utf8</p>
+<p>更改库的默认字符集</p>
+<p>创建库的时候指定默认字符集：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create database 库名 default charset=utf8;</span><br></pre></td></tr></table></figure>
+<h2 id="3-视图和模板"><a href="#3-视图和模板" class="headerlink" title="3.视图和模板"></a>3.视图和模板</h2><ol>
+<li>定义视图</li>
+</ol>
+<p>在django中，视图对WEB请求进行回应</p>
+<p>视图接收reqeust对象作为第一个参数，包含了请求的信息</p>
+<p>视图就是一个Python函数，被定义在views.py中</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#coding=utf8</span></span><br><span class="line"><span class="keyword">from</span> django.http <span class="keyword">import</span> HttpResponse</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">(request)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">"index"</span>)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">detail</span><span class="params">(request,id)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">"detail %s"</span> % id)</span><br></pre></td></tr></table></figure>
+<p>定义完成视图后，需要配置urlconf，否则无法处理请求</p>
+<p>2.配置urlconf</p>
+<p>在test1/urls.py插入booktest，使主urlconf连接到booktest.urls模块</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">url(<span class="string">r'^'</span>, include(<span class="string">'booktest.urls'</span>)),</span><br></pre></td></tr></table></figure>
+<p>在booktest中添加urls.py文件</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> django.conf.urls <span class="keyword">import</span> url</span><br><span class="line"><span class="keyword">from</span> . <span class="keyword">import</span> views</span><br><span class="line">urlpatterns = [</span><br><span class="line">    url(<span class="string">r'^$'</span>, views.index),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>3.模板</p>
+<p>模板是html页面，可以根据视图中传递的数据填充值</p>
+<p><img src="/images/it/20181123003.png" alt></p>
+<p>修改settings.py文件，设置TEMPLATES的DIRS值<br><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="string">'DIRS'</span>: [os.path.join(BASE_DIR, <span class="string">'templates'</span>)],</span><br></pre></td></tr></table></figure></p>
+<p>在模板中访问视图传递的数据<br><figure class="highlight py"><table><tr><td class="code"><pre><span class="line">&#123;&#123;输出值，可以是变量，也可以是对象.属性&#125;&#125;</span><br><span class="line">&#123;%执行代码段%&#125;</span><br></pre></td></tr></table></figure></p>
+<p>编辑views.py文件，在方法中调用模板</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> django.http <span class="keyword">import</span> HttpResponse</span><br><span class="line"><span class="keyword">from</span> django.template <span class="keyword">import</span> RequestContext, loader</span><br><span class="line"><span class="keyword">from</span> models <span class="keyword">import</span> BookInfo</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">(request)</span>:</span></span><br><span class="line">    booklist = BookInfo.objects.all()</span><br><span class="line">    template = loader.get_template(<span class="string">'booktest/index.html'</span>)</span><br><span class="line">    context = RequestContext(request, &#123;<span class="string">'booklist'</span>: booklist&#125;)</span><br><span class="line">    <span class="keyword">return</span> HttpResponse(template.render(context))</span><br></pre></td></tr></table></figure>
+<h2 id="使用Django创建一个影视剧平台"><a href="#使用Django创建一个影视剧平台" class="headerlink" title="使用Django创建一个影视剧平台"></a>使用Django创建一个影视剧平台</h2><h3 id="Django模板"><a href="#Django模板" class="headerlink" title="Django模板"></a>Django模板</h3><p>HelloWorld 目录底下创建 templates 目录并建立 index.html文件，整个目录结构如下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">HelloWorld/</span><br><span class="line">|-- HelloWorld</span><br><span class="line">|   |-- __init__.py</span><br><span class="line">|   |-- __init__.pyc</span><br><span class="line">|   |-- settings.py</span><br><span class="line">|   |-- settings.pyc</span><br><span class="line">|   |-- urls.py</span><br><span class="line">|   |-- urls.pyc</span><br><span class="line">|   |-- views.py</span><br><span class="line">|   |-- views.pyc</span><br><span class="line">|   |-- wsgi.py</span><br><span class="line">|   `-- wsgi.pyc</span><br><span class="line">|-- manage.py</span><br><span class="line">`-- templates</span><br><span class="line">    `-- index.html</span><br></pre></td></tr></table></figure>
+<p>接下来我们需要向Django说明模板文件的路径，修改HelloWorld/settings.py</p>
+<blockquote>
+<p>‘DIRS’: [os.path.join(BASE_DIR, ‘templates’)],</p>
+</blockquote>
+<p>注意BASE_DIR是manage.py文件的所在路径.</p>
+<p>Django 模板标签</p>
+<p><strong>变量、列表</strong></p>
+<p>模板语法：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">view：｛&quot;HTML变量名&quot; : &quot;views变量名&quot;｝</span><br><span class="line">HTML：｛｛变量名｝｝</span><br></pre></td></tr></table></figure></p>
+<p>urls.py</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">from django.contrib import admin</span><br><span class="line">from django.urls import path</span><br><span class="line"></span><br><span class="line">from django.conf.urls import url</span><br><span class="line">from . import views,testdb</span><br><span class="line"></span><br><span class="line">urlpatterns = [</span><br><span class="line">    url(r&apos;^$&apos;, views.article_home),</span><br><span class="line">    path(&apos;create/&apos;, views.article_create),</span><br><span class="line">    path(&apos;testdb/&apos;, testdb.testdb_get),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>HelloWorld/HelloWorld/views.py 文件代码：<br><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">runoob</span><span class="params">(request)</span>:</span></span><br><span class="line">  views_name = <span class="string">"菜鸟教程"</span></span><br><span class="line">  <span class="keyword">return</span>  render(request,<span class="string">"runoob.html"</span>, &#123;<span class="string">"name"</span>:views_name&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>templates 中的 runoob.html ：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;&#123;&#123; name &#125;&#125;&lt;/p&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;p&gt;&#123;&#123; views_list &#125;&#125;&lt;/p&gt;   # 取出整个列表</span><br><span class="line">&lt;p&gt;&#123;&#123; views_list.0 &#125;&#125;&lt;/p&gt; # 取出列表的第一个元素</span><br></pre></td></tr></table></figure>
+<p><strong>字典</strong></p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">runoob</span><span class="params">(request)</span>:</span></span><br><span class="line">    views_dict = &#123;<span class="string">"name"</span>:<span class="string">"菜鸟教程"</span>&#125;</span><br><span class="line">    <span class="keyword">return</span> render(request, <span class="string">"runoob.html"</span>, &#123;<span class="string">"views_dict"</span>: views_dict&#125;)</span><br><span class="line"><span class="string">'''HelloWorld/templates/runoob.html 文件代码：'''</span></span><br><span class="line">&lt;p&gt;&#123;&#123; views_dict &#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;p&gt;&#123;&#123; views_dict.name &#125;&#125;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>更多的模板模型参考<a href="https://www.runoob.com/django/django-template.html" target="_blank" rel="noopener">这里</a></p>
+<p>timeline</p>
+<ol>
+<li>优化页面UI</li>
+<li>关联进数据库，可以创建数据。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>IT</category>
+      </categories>
+  </entry>
+  <entry>
     <title>一个炒房者的思考</title>
     <url>/2018/10/24/Other/%E4%B8%80%E4%B8%AA%E7%82%92%E6%88%BF%E8%80%85%E7%9A%84%E6%80%9D%E8%80%83/</url>
     <content><![CDATA[<p>2010年的房地产预测“神贴”到底有多神?</p>
@@ -6579,6 +6768,26 @@
       </categories>
   </entry>
   <entry>
+    <title>程序员的七种武器</title>
+    <url>/2015/10/30/Blog/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E4%B8%83%E7%A7%8D%E6%AD%A6%E5%99%A8/</url>
+    <content><![CDATA[<p>信息技术的发展时间虽然不长，但其爆炸式的发展速度使信息技术迅速覆盖社会和人类生活的各个角落。程序员们是这场信息化浪潮的见证者之一，更是其中的主要参与者，这是时代赋予每个程序员的机会和责任。 </p>
+<!-- doc -->
+<a id="more"></a>
+<p>信息技术的更新速度是惊人的，程序员的职业生涯则是一个要求不断学习的过程，永远不能固步自封。本人在工作期间曾看见过很多程序员只要有闲暇时间就浏览一些没有太大作用的网页，在网上聊天，打游戏，浪费了大量的时间，十分不可取。而另外一种情况是，IT技术的日新月异使很多程序员眼花缭乱，什么都想学，却又不知从何学起，今天看看这个，明天学学那个，贪多不熟。 </p>
+<p>虽然IT技术发展迅速，但很多技术都是有规律可循，一些基本的概念、原理和方法还很通用，可以举一反三。本人根据自己的体会和经验，向那些刚刚踏入IT行业的新程序员们或正在迷茫的程序员们推荐程序员必须掌握的七种武器，有了这七种武器，虽不敢说笑傲江湖，但将自己立于不败之地还是可以的。 </p>
+<h2 id="第一种武器：开发工具"><a href="#第一种武器：开发工具" class="headerlink" title="第一种武器：开发工具"></a>第一种武器：开发工具</h2><p>至少熟练掌握两到三种开发工具的使用，这是程序员的立身之本，其中C/C++和JAVA是我重点推荐的开发工具，C/C++以其高效率和高度的灵活性成为开发工具中的利器，很多系统级的软件还是用C/C++编写。而JAVA的跨平台和与WEB很好的结合是JAVA的优势所在，而本人对SUN公司的“网络即计算机”的概念相当欣赏，并相信JAVA即其相关的技术集JAVA One会成为未来的主流开发工具之一。其次，如果能掌握一种简便的可视化开发工具，如VB，PowerBuilder，Delphi，C++ Builder，则更好，这些开发工具减小了开发难度，并能够强化程序员对象模型的概念。另外，需要掌握基本的脚本语言，如shell,perl等，至少能读懂这些脚本代码。 </p>
+<h2 id="第二种武器：数据库"><a href="#第二种武器：数据库" class="headerlink" title="第二种武器：数据库"></a>第二种武器：数据库</h2><p>为什么数据库是如此重要？很多应用程序都是以数据库的数据为中心，而数据库的产品也有不少，其中关系型数据库仍是主流形式，所以程序员至少熟练掌握一两种数据库，对关系型数据库的关键元素要非常清楚，要熟练掌握SQL的基本语法。虽然很多数据库产品提供了可视化的数据库管理工具，但SQL是基础，是通用的数据库操作方法。如果没有机会接触商业数据库系统，可以使用免费的数据库产品是一个不错的选择，如mySQL, Postgres等。 </p>
+<h2 id="第三种武器：操作系统"><a href="#第三种武器：操作系统" class="headerlink" title="第三种武器：操作系统"></a>第三种武器：操作系统</h2><p>当前主流的操作系统是Windows，Linux/Unix，熟练地使用这些操作系统是必须的，但只有这些还远远不够。要想成为一个真正的编程高手，需要深入了解操作系统，了解它的内存管理机制、进程/线程调度、信号、内核对象、系统调用、协议栈实现等。Linux作为开发源码的操作系统，是一个很好的学习平台，Linux几乎具备了所有现代操作系统的特征。虽然Windows系统的内核实现机制的资料较少，但通过互联网还是能获取不少资料。只有对操作系统有一定的了解后，你会发现自己上了一个新的台阶。 </p>
+<h2 id="第四种武器：网络协议TCP-IP"><a href="#第四种武器：网络协议TCP-IP" class="headerlink" title="第四种武器：网络协议TCP/IP"></a>第四种武器：网络协议TCP/IP</h2><p>在互联网如此普及的今天，如果您还没有对互联网的支撑协议TCP/IP协议栈有很好的掌握，就需要迅速补上这一课，网络技术已改变了软件运行的模式，从最早的客户/服务器结构，到今天的WEB Services，再到未来的网格计算，这一切都离不开以TCP/IP协议栈为基础的网络协议支持，所以，深入掌握TCP/IP协议是非常必要的。至少，你需要了解ISO七层协议模型，IP/UDP/TCP/HTTP等常用协议的原理和三次握手机制。 </p>
+<h2 id="第五种武器：DCOM-CORBA-XML-WEB-Services"><a href="#第五种武器：DCOM-CORBA-XML-WEB-Services" class="headerlink" title="第五种武器：DCOM/CORBA/XML/WEB Services"></a>第五种武器：DCOM/CORBA/XML/WEB Services</h2><p>随着技术的发展，软件与网络的无缝结合是必然趋势，软件系统的位置无关性是未来计算模式的重要特征之一，DCOM/CORBA是当前两大主流的分布计算的中间件平台，DCOM是微软COM(组件对象模型)的扩展，而CORBA是OMG支持的规范。程序员需要做的不仅仅是利用商业的开发平台来开发软件，而是要理解这些技术的初衷，即为什么需要这项技术，如果你能理解了这一点，再回头看这些技术的具体实现，就如庖丁解牛，迎刃而解。XML/WebServices重要性不言而喻，XML以其结构化的表示方法和超强的表达能力被喻为互联网上的“世界语”，是分布计算的基石之一。 </p>
+<h2 id="第六种武器：软件工程与CMM"><a href="#第六种武器：软件工程与CMM" class="headerlink" title="第六种武器：软件工程与CMM"></a>第六种武器：软件工程与CMM</h2><p>现代大型软件系统的开发中，工程化的开发控制取代个人英雄主义，成为软件系统成功的保证，一个编程高手并不一定是一个优秀的程序员，一个优秀的程序员是将出色的编程能力和开发技巧同严格的软件工程思想有机结合，编程只是软件生命周期中的其中一环，优秀的程序员应该掌握软件开发各个阶段的基本技能，如市场分析，可行性分析，需求分析，结构设计，详细设计，软件测试等。一句话可以概括我的看法：“创意无限，流程保证”。 </p>
+<h2 id="第七种武器：强烈的好奇心"><a href="#第七种武器：强烈的好奇心" class="headerlink" title="第七种武器：强烈的好奇心"></a>第七种武器：强烈的好奇心</h2><p>什么才是一个程序员的终极武器呢，那就是强烈的好奇心和学习精神。没有比强烈的好奇心和学习精神更好的武器了，它是程序员们永攀高峰的源泉和动力所在。</p>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
     <title>20个你不知道的大脑秘密</title>
     <url>/2015/10/30/Notes/20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/</url>
     <content><![CDATA[<p>尽管科学家一个接一个的科研成果让我们对记忆有了越来越多的了解，但直到今天，科学家所发现的所谓大脑的秘密也只是冰山一角，在很大程度上，大脑和记忆仍是神秘的。研究人员认为，记忆是一个过程，并且当你记忆的时候，实际上就是你把保存在大脑中零零碎碎的信息进行重建。但让人不解的是，究竟是什么东西引发大脑开始这个重建过程？这个谜团继续等待科学家们去寻找答案，但有20个事实是已经科学家证实了的。 </p>
@@ -6602,39 +6811,6 @@
 <p>　　18。大脑需要运动。站着办公效率更高。 </p>
 <p>　　19。大脑会归类，也会联系。如果你正在学习某种东西，不妨问问自己：它让我想起了什么？这样做能帮助你记忆，因为大脑能把你以前知道的知识和新知识联系起来。 </p>
 <p>　　20。大脑喜欢开玩笑。开心和学习效率成正比，心情越好，学到的知识就越多，所以，让自己快乐起来吧！</p>
-]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>制度的力量</title>
-    <url>/2015/10/30/Notes/%E5%88%B6%E5%BA%A6%E7%9A%84%E5%8A%9B%E9%87%8F/</url>
-    <content><![CDATA[<p>第一个故事：合格率的检查制度</p>
-<p>二战期间，美国空军降落伞的合格率为99.9%，这就意味着从概率上来说，每一千个跳伞的士兵中会有一个因为降落伞不合格而丧命。军方要求厂家必须让合格率达到100%才行。厂家负责人说他们竭尽全力了，99.9%已是极限，除非出现奇迹。军方（也有人说是巴顿将军）就改变了检查制度，每次交货前从降落伞中随机挑出几个，让厂家负责人亲自跳伞检测。从此，奇迹出现了，降落伞的合格率达到了百分之百。</p>
-<p>第二个故事：付款方式</p>
-<p>英国将澳洲变成殖民地之后，因为那儿地广人稀，尚未开发，英政府就鼓励国民移民到澳洲，可是当时澳洲非常落后，没有人愿意去。英国政府就想出一个办法，把罪犯送到澳洲去。这样一方面解决了英国本土监狱人满为患的问题，另一方面也解决了澳洲的劳动力问题，还有一条，他们以为把坏家伙们都送走了，英国就会变得更美好了。</p>
-<p>英国政府雇佣私人船只运送犯人，按照装船的人数付费，多运多赚钱。很快政府发现这样做有很大的弊端，就是罪犯的死亡率非常之高，平均超过了百分之十，最严重的一艘船死亡率达到了惊人的百分之三十七。政府官员绞尽脑汁想降低罪犯运输过程中的死亡率，包括派官员上船监督，限制装船数量等等，却都实施不下去。</p>
-<p>最后，他们终于找到了一劳永逸的办法，就是将付款方式变换了一下：由根据上船的人数付费改为根据下船的人数付费。船东只有将人活着送达澳洲，才能赚到运送费用。</p>
-<p>新政策一出炉，罪犯死亡率立竿见影地降到了百分之一左右。后来船东为了提高生存率还在船上配备了医生。</p>
-<p>第三个故事：粥的分配制度</p>
-<p>七个人住在一起，每天分一大桶粥。要命的是，粥每天都是不够的。一开始，他们抓阄决定谁来分粥，每天轮一个。于是乎，每周下来，他们只有一天是饱的，就是自己分粥的那一天。后来他们开始推选出一个口口声声道德高尚的人出来分粥。</p>
-<p>大权独揽，没有制约，也就会产生腐败。大家开始挖空心思去讨好他，互相勾结，搞得整个小团体乌烟瘴气。然后大家开始组成三人的分粥委员会及四人的评选委员会，互相攻击扯皮下来，粥吃到嘴里全是凉的。</p>
-<p>最后想出来一个方法：轮流分粥，但分粥的人要等其它人都挑完后拿剩下的最后一碗。为了不让自己吃到最少的，每人都尽量分得平均，就算不平，也只能认了。</p>
-<p>大家快快乐乐，和和气气，日子越过越好。</p>
-<p>第四个故事：互助与共赢的天堂</p>
-<p>有一位行善的基督教徒，去世后向上帝提出一个要求，要求上帝领去参观地狱和天堂，看看究竟有什么区别。</p>
-<p>到了地狱，看到一张巨大的餐桌，摆满丰盛的佳肴。心想：地狱生活不错吗？过一会儿，用餐的时间到了，只见一群骨瘦如柴，奄奄一息的人围坐在香气四溢的肉锅前，只因手持的汤勺把儿太长，尽管他们争着抢着往自己嘴里送肉，可就是吃不到，又馋又急又饿。</p>
-<p>上帝说，这就是地狱。</p>
-<p>他们走进另一个房间，这里跟地狱一般无二，同样飘溢着肉汤的香气，同样手里拿着的是特别长的汤勺。但是，这里的人个个红光满面，精神焕发。原来他们个个手持特长勺把肉汤喂进对方嘴里。</p>
-<p>上帝说，这就是天堂。</p>
-<p>同样的人，不同的制度，可以产生不同的文化和氛围以及差距巨大的结果。</p>
-<p>这，就是制度的力量！</p>
-<p>补充故事一：</p>
-<p>一个美国教授。每一次来中国都是住陋室，穿小巷，不停地采访、记录，一本牛津出版的最新学术著作就是这样完成的，其工作精神不由你不敬佩。<br>　但他也有个对他来说出格的嗜好：到中国的第一天，总是让朋友陪他去软件市场，寻找中国盗版的美国软件，物美价廉，乐而忘返。作为中国人，我们也许能理解甚至支持这位美国教授的嗜好，那些刚出炉的美国软件，如果在北美本地买，实在是太贵了，贵到连教授也买不起的地步。<br>　但私下我们也会想：在美国的制度环境下，能允许他这么做吗？看来美国人和任何其他民族的人一样，既不是天使，也不是魔鬼，一旦脱离本土制度约束，人性中的弱点都会出现，甚至放纵。</p>
-<p>补充故事二：</p>
-<p>一位香港的朋友说，一群西方人从罗湖出境，跟大陆有的人一样，见排队就插队，一点儿没有文明习惯；跨过罗湖桥，到香港一端入境，百步之外，人性突然大变，规规矩矩地排起队来。<br>　　这就是制度的力量！无论高傲的美国人、优雅的法国人，一旦脱离制度约束，都是近朱者赤，近墨者黑。</p>
-<p>一个好的制度可以使人的坏念头受到抑制，而坏的制度会让人的好愿望四处碰壁。建立起将结果和个人责任和利益联系到一起的制度，能解决很多似乎无法解决的社会问题。</p>
 ]]></content>
       <categories>
         <category>Notes</category>
@@ -6776,23 +6952,36 @@
       </categories>
   </entry>
   <entry>
-    <title>程序员的七种武器</title>
-    <url>/2015/10/30/Blog/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E4%B8%83%E7%A7%8D%E6%AD%A6%E5%99%A8/</url>
-    <content><![CDATA[<p>信息技术的发展时间虽然不长，但其爆炸式的发展速度使信息技术迅速覆盖社会和人类生活的各个角落。程序员们是这场信息化浪潮的见证者之一，更是其中的主要参与者，这是时代赋予每个程序员的机会和责任。 </p>
-<!-- doc -->
-<a id="more"></a>
-<p>信息技术的更新速度是惊人的，程序员的职业生涯则是一个要求不断学习的过程，永远不能固步自封。本人在工作期间曾看见过很多程序员只要有闲暇时间就浏览一些没有太大作用的网页，在网上聊天，打游戏，浪费了大量的时间，十分不可取。而另外一种情况是，IT技术的日新月异使很多程序员眼花缭乱，什么都想学，却又不知从何学起，今天看看这个，明天学学那个，贪多不熟。 </p>
-<p>虽然IT技术发展迅速，但很多技术都是有规律可循，一些基本的概念、原理和方法还很通用，可以举一反三。本人根据自己的体会和经验，向那些刚刚踏入IT行业的新程序员们或正在迷茫的程序员们推荐程序员必须掌握的七种武器，有了这七种武器，虽不敢说笑傲江湖，但将自己立于不败之地还是可以的。 </p>
-<h2 id="第一种武器：开发工具"><a href="#第一种武器：开发工具" class="headerlink" title="第一种武器：开发工具"></a>第一种武器：开发工具</h2><p>至少熟练掌握两到三种开发工具的使用，这是程序员的立身之本，其中C/C++和JAVA是我重点推荐的开发工具，C/C++以其高效率和高度的灵活性成为开发工具中的利器，很多系统级的软件还是用C/C++编写。而JAVA的跨平台和与WEB很好的结合是JAVA的优势所在，而本人对SUN公司的“网络即计算机”的概念相当欣赏，并相信JAVA即其相关的技术集JAVA One会成为未来的主流开发工具之一。其次，如果能掌握一种简便的可视化开发工具，如VB，PowerBuilder，Delphi，C++ Builder，则更好，这些开发工具减小了开发难度，并能够强化程序员对象模型的概念。另外，需要掌握基本的脚本语言，如shell,perl等，至少能读懂这些脚本代码。 </p>
-<h2 id="第二种武器：数据库"><a href="#第二种武器：数据库" class="headerlink" title="第二种武器：数据库"></a>第二种武器：数据库</h2><p>为什么数据库是如此重要？很多应用程序都是以数据库的数据为中心，而数据库的产品也有不少，其中关系型数据库仍是主流形式，所以程序员至少熟练掌握一两种数据库，对关系型数据库的关键元素要非常清楚，要熟练掌握SQL的基本语法。虽然很多数据库产品提供了可视化的数据库管理工具，但SQL是基础，是通用的数据库操作方法。如果没有机会接触商业数据库系统，可以使用免费的数据库产品是一个不错的选择，如mySQL, Postgres等。 </p>
-<h2 id="第三种武器：操作系统"><a href="#第三种武器：操作系统" class="headerlink" title="第三种武器：操作系统"></a>第三种武器：操作系统</h2><p>当前主流的操作系统是Windows，Linux/Unix，熟练地使用这些操作系统是必须的，但只有这些还远远不够。要想成为一个真正的编程高手，需要深入了解操作系统，了解它的内存管理机制、进程/线程调度、信号、内核对象、系统调用、协议栈实现等。Linux作为开发源码的操作系统，是一个很好的学习平台，Linux几乎具备了所有现代操作系统的特征。虽然Windows系统的内核实现机制的资料较少，但通过互联网还是能获取不少资料。只有对操作系统有一定的了解后，你会发现自己上了一个新的台阶。 </p>
-<h2 id="第四种武器：网络协议TCP-IP"><a href="#第四种武器：网络协议TCP-IP" class="headerlink" title="第四种武器：网络协议TCP/IP"></a>第四种武器：网络协议TCP/IP</h2><p>在互联网如此普及的今天，如果您还没有对互联网的支撑协议TCP/IP协议栈有很好的掌握，就需要迅速补上这一课，网络技术已改变了软件运行的模式，从最早的客户/服务器结构，到今天的WEB Services，再到未来的网格计算，这一切都离不开以TCP/IP协议栈为基础的网络协议支持，所以，深入掌握TCP/IP协议是非常必要的。至少，你需要了解ISO七层协议模型，IP/UDP/TCP/HTTP等常用协议的原理和三次握手机制。 </p>
-<h2 id="第五种武器：DCOM-CORBA-XML-WEB-Services"><a href="#第五种武器：DCOM-CORBA-XML-WEB-Services" class="headerlink" title="第五种武器：DCOM/CORBA/XML/WEB Services"></a>第五种武器：DCOM/CORBA/XML/WEB Services</h2><p>随着技术的发展，软件与网络的无缝结合是必然趋势，软件系统的位置无关性是未来计算模式的重要特征之一，DCOM/CORBA是当前两大主流的分布计算的中间件平台，DCOM是微软COM(组件对象模型)的扩展，而CORBA是OMG支持的规范。程序员需要做的不仅仅是利用商业的开发平台来开发软件，而是要理解这些技术的初衷，即为什么需要这项技术，如果你能理解了这一点，再回头看这些技术的具体实现，就如庖丁解牛，迎刃而解。XML/WebServices重要性不言而喻，XML以其结构化的表示方法和超强的表达能力被喻为互联网上的“世界语”，是分布计算的基石之一。 </p>
-<h2 id="第六种武器：软件工程与CMM"><a href="#第六种武器：软件工程与CMM" class="headerlink" title="第六种武器：软件工程与CMM"></a>第六种武器：软件工程与CMM</h2><p>现代大型软件系统的开发中，工程化的开发控制取代个人英雄主义，成为软件系统成功的保证，一个编程高手并不一定是一个优秀的程序员，一个优秀的程序员是将出色的编程能力和开发技巧同严格的软件工程思想有机结合，编程只是软件生命周期中的其中一环，优秀的程序员应该掌握软件开发各个阶段的基本技能，如市场分析，可行性分析，需求分析，结构设计，详细设计，软件测试等。一句话可以概括我的看法：“创意无限，流程保证”。 </p>
-<h2 id="第七种武器：强烈的好奇心"><a href="#第七种武器：强烈的好奇心" class="headerlink" title="第七种武器：强烈的好奇心"></a>第七种武器：强烈的好奇心</h2><p>什么才是一个程序员的终极武器呢，那就是强烈的好奇心和学习精神。没有比强烈的好奇心和学习精神更好的武器了，它是程序员们永攀高峰的源泉和动力所在。</p>
+    <title>制度的力量</title>
+    <url>/2015/10/30/Notes/%E5%88%B6%E5%BA%A6%E7%9A%84%E5%8A%9B%E9%87%8F/</url>
+    <content><![CDATA[<p>第一个故事：合格率的检查制度</p>
+<p>二战期间，美国空军降落伞的合格率为99.9%，这就意味着从概率上来说，每一千个跳伞的士兵中会有一个因为降落伞不合格而丧命。军方要求厂家必须让合格率达到100%才行。厂家负责人说他们竭尽全力了，99.9%已是极限，除非出现奇迹。军方（也有人说是巴顿将军）就改变了检查制度，每次交货前从降落伞中随机挑出几个，让厂家负责人亲自跳伞检测。从此，奇迹出现了，降落伞的合格率达到了百分之百。</p>
+<p>第二个故事：付款方式</p>
+<p>英国将澳洲变成殖民地之后，因为那儿地广人稀，尚未开发，英政府就鼓励国民移民到澳洲，可是当时澳洲非常落后，没有人愿意去。英国政府就想出一个办法，把罪犯送到澳洲去。这样一方面解决了英国本土监狱人满为患的问题，另一方面也解决了澳洲的劳动力问题，还有一条，他们以为把坏家伙们都送走了，英国就会变得更美好了。</p>
+<p>英国政府雇佣私人船只运送犯人，按照装船的人数付费，多运多赚钱。很快政府发现这样做有很大的弊端，就是罪犯的死亡率非常之高，平均超过了百分之十，最严重的一艘船死亡率达到了惊人的百分之三十七。政府官员绞尽脑汁想降低罪犯运输过程中的死亡率，包括派官员上船监督，限制装船数量等等，却都实施不下去。</p>
+<p>最后，他们终于找到了一劳永逸的办法，就是将付款方式变换了一下：由根据上船的人数付费改为根据下船的人数付费。船东只有将人活着送达澳洲，才能赚到运送费用。</p>
+<p>新政策一出炉，罪犯死亡率立竿见影地降到了百分之一左右。后来船东为了提高生存率还在船上配备了医生。</p>
+<p>第三个故事：粥的分配制度</p>
+<p>七个人住在一起，每天分一大桶粥。要命的是，粥每天都是不够的。一开始，他们抓阄决定谁来分粥，每天轮一个。于是乎，每周下来，他们只有一天是饱的，就是自己分粥的那一天。后来他们开始推选出一个口口声声道德高尚的人出来分粥。</p>
+<p>大权独揽，没有制约，也就会产生腐败。大家开始挖空心思去讨好他，互相勾结，搞得整个小团体乌烟瘴气。然后大家开始组成三人的分粥委员会及四人的评选委员会，互相攻击扯皮下来，粥吃到嘴里全是凉的。</p>
+<p>最后想出来一个方法：轮流分粥，但分粥的人要等其它人都挑完后拿剩下的最后一碗。为了不让自己吃到最少的，每人都尽量分得平均，就算不平，也只能认了。</p>
+<p>大家快快乐乐，和和气气，日子越过越好。</p>
+<p>第四个故事：互助与共赢的天堂</p>
+<p>有一位行善的基督教徒，去世后向上帝提出一个要求，要求上帝领去参观地狱和天堂，看看究竟有什么区别。</p>
+<p>到了地狱，看到一张巨大的餐桌，摆满丰盛的佳肴。心想：地狱生活不错吗？过一会儿，用餐的时间到了，只见一群骨瘦如柴，奄奄一息的人围坐在香气四溢的肉锅前，只因手持的汤勺把儿太长，尽管他们争着抢着往自己嘴里送肉，可就是吃不到，又馋又急又饿。</p>
+<p>上帝说，这就是地狱。</p>
+<p>他们走进另一个房间，这里跟地狱一般无二，同样飘溢着肉汤的香气，同样手里拿着的是特别长的汤勺。但是，这里的人个个红光满面，精神焕发。原来他们个个手持特长勺把肉汤喂进对方嘴里。</p>
+<p>上帝说，这就是天堂。</p>
+<p>同样的人，不同的制度，可以产生不同的文化和氛围以及差距巨大的结果。</p>
+<p>这，就是制度的力量！</p>
+<p>补充故事一：</p>
+<p>一个美国教授。每一次来中国都是住陋室，穿小巷，不停地采访、记录，一本牛津出版的最新学术著作就是这样完成的，其工作精神不由你不敬佩。<br>　但他也有个对他来说出格的嗜好：到中国的第一天，总是让朋友陪他去软件市场，寻找中国盗版的美国软件，物美价廉，乐而忘返。作为中国人，我们也许能理解甚至支持这位美国教授的嗜好，那些刚出炉的美国软件，如果在北美本地买，实在是太贵了，贵到连教授也买不起的地步。<br>　但私下我们也会想：在美国的制度环境下，能允许他这么做吗？看来美国人和任何其他民族的人一样，既不是天使，也不是魔鬼，一旦脱离本土制度约束，人性中的弱点都会出现，甚至放纵。</p>
+<p>补充故事二：</p>
+<p>一位香港的朋友说，一群西方人从罗湖出境，跟大陆有的人一样，见排队就插队，一点儿没有文明习惯；跨过罗湖桥，到香港一端入境，百步之外，人性突然大变，规规矩矩地排起队来。<br>　　这就是制度的力量！无论高傲的美国人、优雅的法国人，一旦脱离制度约束，都是近朱者赤，近墨者黑。</p>
+<p>一个好的制度可以使人的坏念头受到抑制，而坏的制度会让人的好愿望四处碰壁。建立起将结果和个人责任和利益联系到一起的制度，能解决很多似乎无法解决的社会问题。</p>
 ]]></content>
       <categories>
-        <category>Blog</category>
+        <category>Notes</category>
       </categories>
   </entry>
   <entry>
@@ -6869,6 +7058,64 @@
 <p>一个建议是，起床之后的几个小时里要尽量避免从事需高度集中注意力的事情。根据你的睡眠情况，你得需要30分钟以上摆脱睡眠惰性——也就是早晨发困。不过如果有艰巨的任务必须要做，你可以用大家都知道的方法——一杯咖啡即可帮助你迅速摆脱睡眠惰性。</p>
 <p>另一建议是，使你的思维活动与体温的变化相匹配。当你的体温降到37℃以下时，从注意力到推理等所有大脑活动都会变慢。经过测量，一天中最糟糕的时刻是从午夜到早上6点；下午2点到4点也同样糟糕，这被称为“下午困”。这是一天中人的体温比较低的两个时段，体温下降直接影响了人的大脑机能。当然，简短的锻炼或洗个热水澡可以提高你的体温，从而提高大脑的工作效率。而一天中最佳的时刻，则是从上午10点左右到中午，以及下午4点到晚上10点，这两个时段人的体温相对较高。</p>
 <p>另外，身体的反应会在一天中逐渐变得更灵敏，在晚上8点左右达到峰值。所以，竞技运动最好留在每一天的最后。</p>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Web知识片段</title>
+    <url>/2015/08/25/Blog/Web%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<!-- doc -->
+<a id="more"></a>
+<p><img src="https://api.btstu.cn/sjbz/zsy.php" alt></p>
+<h2 id="2021-06-19"><a href="#2021-06-19" class="headerlink" title="2021.06.19"></a>2021.06.19</h2><p>如何使用Animated动画</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line"> 	</span><br><span class="line">　　$(<span class="string">"#login-box"</span>).addClass(<span class="string">"animated bounceInLeft"</span>);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="number">111</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>window.onload要等整个窗口（包括图片）都加载完才触发 执行</p>
+<p><strong>jQuery加载即执行：</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　$(<span class="string">"#name"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　　　<span class="comment">//adding your code here </span></span><br><span class="line">　　&#125;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p><strong>增加和移除一个class</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="string">".default"</span>).addClass(<span class="string">"hover_s"</span>);</span><br><span class="line">$(<span class="string">".default"</span>).removeClass(<span class="string">"default "</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="npm安装错误"><a href="#npm安装错误" class="headerlink" title="npm安装错误"></a>npm安装错误</h3><p>npm 遇到 write access 安装错误</p>
+<p>官方给出的一个解决办法是给npm的global安装位置换个地方，因为默认的安装位置是/usr/local/lib所在的文件夹，这是系统的文件夹所在地，所以可能会出现一些读写问题。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 第一步：在你的用户文件下新建一个文件夹，这个.npm-global</span><br><span class="line">mkdir ~/.npm-global</span><br><span class="line">#第二步：更改node的安装连接</span><br><span class="line">npm config set prefix &apos;~/.npm-global&apos;</span><br><span class="line">#第三步：在用户的profile下增加path，为的是系统能够找到可执行文件的目录</span><br><span class="line">vim profile</span><br><span class="line"></span><br><span class="line">export PATH=~/.npm-global/bin:$PATH</span><br><span class="line">#第四步：update profile。使其生效</span><br><span class="line">source ~/.profile</span><br></pre></td></tr></table></figure>
+<h3 id="React"><a href="#React" class="headerlink" title="React"></a>React</h3><p>元素是构成 React 应用的最小单位，它用于描述屏幕上输出的内容。</p>
+<h3 id="React-component开发"><a href="#React-component开发" class="headerlink" title="React component开发"></a>React component开发</h3><p><code>npm i --save</code> 和 <code>npm i --save-dev</code> 的使用是个规范问题。</p>
+<p><code>npm i --save</code>项目（运行时、发布到生产环境时）依赖；</p>
+<p><code>npm i --save-dev</code>工程构建（开发时、“打包”时）依赖 </p>
+<h3 id="Github搜索指南"><a href="#Github搜索指南" class="headerlink" title="Github搜索指南"></a>Github搜索指南</h3><ol>
+<li><p>搜百科大全，搜索优秀的资源。xxx awesome</p>
+</li>
+<li><p>找例子 xxx simple</p>
+</li>
+<li><p>找空项目架子 xxx starter</p>
+</li>
+<li><p>找技术教程 django tutorial </p>
+</li>
+</ol>
+<blockquote>
+<p>React组件开发，搞来搞去，还是自己的好用，别人太复杂太绕了。@06.24</p>
+</blockquote>
+<h2 id="07-01"><a href="#07-01" class="headerlink" title="07.01"></a>07.01</h2><p>弹性布局<a href="https://www.runoob.com/w3cnote/flex-grammar.html" target="_blank" rel="noopener">display:flex</a></p>
+<h2 id="07-11"><a href="#07-11" class="headerlink" title="07.11"></a>07.11</h2><h3 id="innerHTML、innerText、textContent"><a href="#innerHTML、innerText、textContent" class="headerlink" title="innerHTML、innerText、textContent"></a>innerHTML、innerText、textContent</h3><p>innerHTML 可获取标签中的所有的内容，包括标签、空格、文本、换行等。</p>
+<p>innerText此方法获取标签(及其子标签)中的所有文本，不会获取标签（或者说可以过滤掉所有的标签）。如果有多个空格或者是换行，解析为一个空格。</p>
+<p>如果想要清空标签的内容，innerText = “”；即可</p>
+<p>textContent来获取标签中的内容。但是textContent在过滤掉标签时，会保留标签结构。</p>
+<h3 id="js数组与字符串的相互转换方法"><a href="#js数组与字符串的相互转换方法" class="headerlink" title="js数组与字符串的相互转换方法"></a>js数组与字符串的相互转换方法</h3><p>1、数组转字符串<br>需要将数组元素用某个字符连接成字符串，示例代码如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a, b;</span><br><span class="line">a = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>);</span><br><span class="line">b = a.join(<span class="string">"-"</span>);      <span class="comment">//"0-1-2-3-4"</span></span><br></pre></td></tr></table></figure>
+<p>2、字符串转数组</p>
+<p>实现方法为将字符串按某个字符切割成若干个字符串，并以数组形式返回，示例代码如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">"abc,abcd,aaa"</span>;</span><br><span class="line">ss = s.split(<span class="string">","</span>);<span class="comment">// 在每个逗号(,)处进行分解  ["abc", "abcd", "aaa"]</span></span><br><span class="line"><span class="keyword">var</span> s1 = <span class="string">"helloworld"</span>;</span><br><span class="line">ss1 = s1.split(<span class="string">''</span>);  <span class="comment">//["h", "e", "l", "l", "o", "w", "o", "r", "l", "d"]</span></span><br></pre></td></tr></table></figure>
+<h3 id="群晖的终端连接"><a href="#群晖的终端连接" class="headerlink" title="群晖的终端连接"></a>群晖的终端连接</h3><p>群晖并没有提供可视化的连接终端，所以我们只能通过其它设备上的连接终端进行连接，比如PUTTY，但在这之前我们需要先开启SSH，否则无法使用终端连接。</p>
+<p>终端连接：<br>1.首先打开终端，然后输入sudo su - 回车进入根目录</p>
+<p>2.然后输入：ssh -p 22 服务器用户名@ip<br>（例如ssh -p 22 <a href="mailto:userkunyu@119.29.37.63" target="_blank" rel="noopener">userkunyu@119.29.37.63</a>）回车，到这会让你输入yes或者no来确认是否连接，输入yes回车</p>
+<p>3.然后输入在服务器上的用户密码回车</p>
+<p>4.到此进入的是你在服务器上的账户的目录，即为连接成功</p>
+<p>pip3安装</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">wget -O /tmp/get-pip.py &apos;https://bootstrap.pypa.io/get-pip.py&apos;</span><br><span class="line"></span><br><span class="line">python3 /tmp/get-pip.py</span><br><span class="line"># 权限不够的话，加上 --user</span><br><span class="line"># python3 /tmp/get-pip.py --user</span><br><span class="line"></span><br><span class="line">rm /tmp/get-pip.py</span><br></pre></td></tr></table></figure>
+<p>安装之后提示 pip3 的安装目录（一般是 /homes/USERNAME/.local/bin）不在系统的环境变量里。<br>每次要先跳到安装目录里。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd .local/bin</span><br><span class="line">./pip3 -V</span><br><span class="line">./pip3 list</span><br></pre></td></tr></table></figure>
+<p>手动配置环境变量<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br><span class="line"></span><br><span class="line"># 写入以下内容</span><br><span class="line">export PATH=$PATH:</span><br><span class="line">/var/services/homes/Administrator/.local/bin</span><br><span class="line"># 保存、退出</span><br><span class="line"></span><br><span class="line"># 运行以下命令使生效</span><br><span class="line">source ~/.bash_profile</span><br><span class="line"></span><br><span class="line"># 最后可以检查一下</span><br><span class="line">echo $PATH</span><br></pre></td></tr></table></figure></p>
 ]]></content>
       <categories>
         <category>Blog</category>

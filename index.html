@@ -1,579 +1,341 @@
 <!DOCTYPE html>
-<html>
-  <head><meta name="generator" content="Hexo 3.9.0">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-  <meta name="description" content="Mr.zhang&#39;s blog">
-  <meta name="keyword" content="hexo-theme, vuejs">
-  
-    <link rel="shortcut icon" href="/css/images/logo.png">
-  
-  <title>
-    
-      Blog
-    
-  </title>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-  
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
-  
-    <script src="/js/qrious.js"></script>
-  
-  
-  
-  
-    <!-- MathJax support START -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <!-- MathJax support END -->
-  
+<html lang>
+  <head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-  
-  
-    <script src="/js/local-search.js"></script>
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
-<link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+<meta name="theme-color" content="#f8f5ec">
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<link rel="alternate" href="/atom.xml" title="Blog"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0">
+<link rel="canonical" href="http://yoursite.com/">
+
+<link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0">
+
+<script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":"","latex":false};
+</script>
+
+    <title>Blog</title>
+  <link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
 </head>
-<div class="wechat-share">
-  <img src="/css/images/logo.png">
-</div>
-  <body>
-    <header class="header fixed-header">
-  <div class="header-container">
-    <a class="home-link" href="/">
-      <div class="logo"></div>
-      <span>Blog</span>
-    </a>
-    <ul class="right-list">
-      
-        <li class="list-item">
-          
-            <a href="/" class="item-link active">Home</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/series/" class="item-link">Series</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/tags/" class="item-link">Tags</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/archives/" class="item-link">Archives</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/project/" class="item-link">Projects</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/about/" class="item-link">About</a>
-          
-        </li>
-      
-      
-        <li class="menu-item menu-item-search right-list">
-    <a role="button" class="popup-trigger">
-        <i class="fa fa-search fa-fw"></i>
-    </a>
-</li>
-      
-    </ul>
-    <div class="menu">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </div>
-    <div class="menu-mask">
-      <ul class="menu-list">
-        
-          <li class="menu-item">
-            
-              <a href="/" class="menu-link mobile-active">Home</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/series/" class="menu-link">Series</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/tags/" class="menu-link">Tags</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/archives/" class="menu-link">Archives</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/project/" class="menu-link">Projects</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/about/" class="menu-link">About</a>
-            
-          </li>
-        
-      </ul>
-    </div>
-    
-      <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-            <span class="search-icon">
-                <i class="fa fa-search"></i>
-            </span>
-            <div class="search-input-container">
-                <input autocomplete="off" autocapitalize="off"
-                    placeholder="Please enter your keyword(s) to search." spellcheck="false"
-                    type="search" class="search-input">
-            </div>
-            <span class="popup-btn-close">
-                <i class="fa fa-times-circle"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
-    
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">Blog</a>
   </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list"><a href="/">
+        <li class="mobile-menu-item">Home
+          </li>
+      </a><a href="/archives/">
+        <li class="mobile-menu-item">Archives
+          </li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags
+          </li>
+      </a></ul>
+</nav>
+<div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">Blog</a>
+</div>
+
+<nav class="site-navbar"><ul id="menu" class="menu"><li class="menu-item">
+          <a class="menu-item-link" href="/">
+            Home
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            Archives
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/tags/">
+            Tags
+            </a>
+        </li>
+      </ul></nav>
 </header>
 
-    <main class="app-body">
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2021/07/01/Blog/NobleUI使用文档/">NobleUI使用文档</a>
-      </h2>
-      <p class="article-date">July 1, 2021</p>
-      
-      <div class="article-summary">
-        
-          基本的页面容器main-wrapper是最顶层的div
-page-wrapper是页面内容容器div、其次是page-content
-row更相当于一个功能组件的集合，也相当于一行，一个row下面可以有两个col-6。row下面一层的col-12是定义卡片显示多大的。
-再下面的class=” ...
-        
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content"><section id="posts" class="posts"><section id="archive" class="archive"><div class="collection-title">
+            <h2 class="archive-year">2021</h2>
+          </div>
+        <div class="archive-post">
+        <span class="archive-post-time">
+          07-14
+          </span>
+        <span class="archive-post-title">
+          <a href="/2021/07/14/Blog/话题/" class="archive-post-link">
+            话题
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2021/07/01/Blog/NobleUI使用文档/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2021/06/07/IT/hexo部署链接出错/">Hexo部署Github</a>
-      </h2>
-      <p class="article-date">June 7, 2021</p>
-      
-      <div class="article-summary">
-        
-          1.Hexo部署Github1-1. 错误：fatal: unable to accessfatal: unable to access ‘https://github.com/blog20170623/blog20170623.github.io/&#39;: LibreSSL SSL_c ...
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          07-11
+          </span>
+        <span class="archive-post-title">
+          <a href="/2021/07/11/Blog/vi:vim的使用/" class="archive-post-link">
+            Web知识片段
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2021/06/07/IT/hexo部署链接出错/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2021/05/09/Other/股票分析/">股票分析</a>
-      </h2>
-      <p class="article-date">May 9, 2021</p>
-      
-      <div class="article-summary">
-        
-          楼主84年，33岁了，银行从业8年，目前负责授信审批，说简单一些就是批贷款的。
-想聊聊关于我们周围生活的金融，先说说通货膨胀吧，
-在国际经济大通缩的环境下，我们国家是流动性极度匮乏的通货膨胀，很有意思的一件事，也很可悲。
-我们的通货膨胀是货币超发 而市场流动性紧张，钱去了哪里？
-近3年所有行 ...
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          07-11
+          </span>
+        <span class="archive-post-title">
+          <a href="/2021/07/11/Blog/分享/" class="archive-post-link">
+            分享
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2021/05/09/Other/股票分析/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2021/05/09/Other/成功学经典语录/">成功学经典语录——陈安之</a>
-      </h2>
-      <p class="article-date">May 9, 2021</p>
-      
-      <div class="article-summary">
-        
-          做人篇1、用爱心做事业，用感恩的心做人。 
-2、做事先做人，小企业做事，大企业做人。 
-3、认认真真做事，踏踏实实做人。4、一个人成功不是因为他很会做生意，而是因为他很会做人。 
-5、人的品质是一切的根源。 
-6、言行一致是成功的开始。 
-7、所有成功者都是付出者。 
-8、永远保持谦虚感恩的 ...
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          07-01
+          </span>
+        <span class="archive-post-title">
+          <a href="/2021/07/01/Blog/NobleUI使用文档/" class="archive-post-link">
+            NobleUI使用文档
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2021/05/09/Other/成功学经典语录/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2021/01/19/Other/如果楼市泡沫破灭会怎么样？/">如果楼市泡沫破灭会怎么样？</a>
-      </h2>
-      <p class="article-date">January 19, 2021</p>
-      
-      <div class="article-summary">
-        
-          <!-- doc -->
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          06-07
+          </span>
+        <span class="archive-post-title">
+          <a href="/2021/06/07/IT/hexo部署链接出错/" class="archive-post-link">
+            Hexo部署Github
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2021/01/19/Other/如果楼市泡沫破灭会怎么样？/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/10/22/Notes/陈安之时间管理/">陈安之时间管理</a>
-      </h2>
-      <p class="article-date">October 22, 2020</p>
-      
-      <div class="article-summary">
-        
-          <p>如果要想成为顶尖，那么就100%的实践，缺一分那就会差很多。 一个人的成就，决定于一天24小时，你做了哪些不一样的事情。</p>
-<p><img src="/images/Energy/20210202001.png" alt></p>
-<!-- toc -->
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          05-09
+          </span>
+        <span class="archive-post-title">
+          <a href="/2021/05/09/Other/股票分析/" class="archive-post-link">
+            股票分析
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2020/10/22/Notes/陈安之时间管理/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/05/21/English/Knowledge/">Knowledge points</a>
-      </h2>
-      <p class="article-date">May 21, 2020</p>
-      
-      <div class="article-summary">
-        
-          <!-- toc -->
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          05-09
+          </span>
+        <span class="archive-post-title">
+          <a href="/2021/05/09/Other/成功学经典语录/" class="archive-post-link">
+            成功学经典语录——陈安之
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2020/05/21/English/Knowledge/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/04/22/English/Edition/">新概念英语</a>
-      </h2>
-      <p class="article-date">April 22, 2020</p>
-      
-      <div class="article-summary">
-        
-          <!-- toc -->
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          01-19
+          </span>
+        <span class="archive-post-title">
+          <a href="/2021/01/19/Other/如果楼市泡沫破灭会怎么样？/" class="archive-post-link">
+            如果楼市泡沫破灭会怎么样？
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2020/04/22/English/Edition/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/04/07/English/学习英语/">英语学习的技巧总结</a>
-      </h2>
-      <p class="article-date">April 7, 2020</p>
-      
-      <div class="article-summary">
-        
-          <!-- doc -->
-        
+    <div class="collection-title">
+            <h2 class="archive-year">2020</h2>
+          </div>
+        <div class="archive-post">
+        <span class="archive-post-time">
+          10-22
+          </span>
+        <span class="archive-post-title">
+          <a href="/2020/10/22/Notes/陈安之时间管理/" class="archive-post-link">
+            陈安之时间管理
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2020/04/07/English/学习英语/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/03/17/Other/优秀小说作品节选/">优秀小说作品节选</a>
-      </h2>
-      <p class="article-date">March 17, 2020</p>
-      
-      <div class="article-summary">
-        
-          <h2 id="大唐双龙传"><a href="#大唐双龙传" class="headerlink" title="大唐双龙传"></a>大唐双龙传</h2>
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          05-21
+          </span>
+        <span class="archive-post-title">
+          <a href="/2020/05/21/English/Knowledge/" class="archive-post-link">
+            Knowledge points
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2020/03/17/Other/优秀小说作品节选/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/03/01/English/Word/">英语词汇</a>
-      </h2>
-      <p class="article-date">March 1, 2020</p>
-      
-      <div class="article-summary">
-        
-          <!-- toc -->
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          04-22
+          </span>
+        <span class="archive-post-title">
+          <a href="/2020/04/22/English/Edition/" class="archive-post-link">
+            新概念英语
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2020/03/01/English/Word/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2020/02/03/Other/国人在网络上的六种形态/">国人在网络上的六种形态</a>
-      </h2>
-      <p class="article-date">February 3, 2020</p>
-      
-      <div class="article-summary">
-        
-          作者：冰河猛犸
-据观察，中国人在网络上的表现大概呈现出6种形态：
-左愤、右愤、犬儒、人云亦云者、既得利益者、独立思考者。至于所谓的“五毛”、“美分”，可以看作他们的职业所迫，并不能反映其个人的观点。
-这6种形态往往会在某个具体的人身上产生交叉和重叠，而且随着生活经历的增长和对现实的认识（妥协 ...
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          04-07
+          </span>
+        <span class="archive-post-title">
+          <a href="/2020/04/07/English/学习英语/" class="archive-post-link">
+            英语学习的技巧总结
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2020/02/03/Other/国人在网络上的六种形态/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2019/11/14/Other/20个你不知道的大脑秘密/">20个你不知道的大脑秘密</a>
-      </h2>
-      <p class="article-date">November 14, 2019</p>
-      
-      <div class="article-summary">
-        
-          尽管科学家一个接一个的科研成果让我们对记忆有了越来越多的了解，但直到今天，科学家所发现的所谓大脑的秘密也只是冰山一角，在很大程度上，大脑和记忆仍是神秘的。研究人员认为，记忆是一个过程，并且当你记忆的时候，实际上就是你把保存在大脑中零零碎碎的信息进行重建。但让人不解的是，究竟是什么东西引发大脑 ...
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          03-17
+          </span>
+        <span class="archive-post-title">
+          <a href="/2020/03/17/Other/优秀小说作品节选/" class="archive-post-link">
+            优秀小说作品节选
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2019/11/14/Other/20个你不知道的大脑秘密/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/10/24/Other/一个炒房者的思考/">一个炒房者的思考</a>
-      </h2>
-      <p class="article-date">October 24, 2018</p>
-      
-      <div class="article-summary">
-        
-          2010年的房地产预测“神贴”到底有多神?
-以下是精华部分：
-2010年的房地产调控，让很多人看到了希望：让房价降得再猛烈些吧。还有人更是幸灾乐祸似的呼喊：让房地产赶紧崩盘吧。让没房子的好好看看有房子的笑话，是人生的一大快事。
-但是我们是不是要仔细想想，为什么调控？调控期望得到什么样的效果？ ...
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          03-01
+          </span>
+        <span class="archive-post-title">
+          <a href="/2020/03/01/English/Word/" class="archive-post-link">
+            英语词汇
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2018/10/24/Other/一个炒房者的思考/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/10/17/Blog/在线工具资源汇总/">在线工具资源链接汇总</a>
-      </h2>
-      <p class="article-date">October 17, 2018</p>
-      
-      <div class="article-summary">
-        
-          <!-- doc -->
-        
+    <div class="archive-post">
+        <span class="archive-post-time">
+          02-03
+          </span>
+        <span class="archive-post-title">
+          <a href="/2020/02/03/Other/国人在网络上的六种形态/" class="archive-post-link">
+            国人在网络上的六种形态
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2018/10/17/Blog/在线工具资源汇总/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/04/06/Other/财富自由/">财富自由</a>
-      </h2>
-      <p class="article-date">April 6, 2018</p>
-      
-      <div class="article-summary">
-        
-          <h2 id="财富自由是一种怎样的体验，一个人是否有钱就快乐？"><a href="#财富自由是一种怎样的体验，一个人是否有钱就快乐？" class="headerlink" title="财富自由是一种怎样的体验，一个人是否有钱就快乐？"></a>财富自由是一种怎样的体验，一个人是否有钱就快乐？</h2><blockquote>
-<p>　　作 者：叶开甫</p>
-</blockquote>
-<blockquote>
-<p>　　来 源：正和岛（ID：zhenghedao）</p>
-</blockquote>
-<p>　　胡润研究院最新的报告公布了一组“扎心”的数字：2017年北上广深的财富自由门槛已经高达2.9亿元，相比2015年提高50%。在二线城市，这个数字是1.7亿。</p>
-<p>　　如果可以有选择，似乎没有谁会拒绝财富自由，但实现财富自由的过程显然不轻松。人们前赴后继，99%的人却无意识地坠入了种种“怪圈”。</p>
-<p>　　某种意义上，这是一场思维与认知的较量。</p>
-        
+    <div class="collection-title">
+            <h2 class="archive-year">2019</h2>
+          </div>
+        <div class="archive-post">
+        <span class="archive-post-time">
+          11-14
+          </span>
+        <span class="archive-post-title">
+          <a href="/2019/11/14/Other/20个你不知道的大脑秘密/" class="archive-post-link">
+            20个你不知道的大脑秘密
+          </a>
+        </span>
       </div>
-      <a class="more" href="/2018/04/06/Other/财富自由/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/02/28/Other/圣斗士百科/">圣斗士百科</a>
-      </h2>
-      <p class="article-date">February 28, 2018</p>
-      
-      <div class="article-summary">
-        
-          为什么撒加及沙加十分客观理性？
+    <div class="collection-title">
+            <h2 class="archive-year">2018</h2>
+          </div>
+        <div class="archive-post">
+        <span class="archive-post-time">
+          11-22
+          </span>
+        <span class="archive-post-title">
+          <a href="/2018/11/22/Blog/django/" class="archive-post-link">
+            Django的开发流程
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          10-24
+          </span>
+        <span class="archive-post-title">
+          <a href="/2018/10/24/Other/一个炒房者的思考/" class="archive-post-link">
+            一个炒房者的思考
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          10-17
+          </span>
+        <span class="archive-post-title">
+          <a href="/2018/10/17/Blog/在线工具资源汇总/" class="archive-post-link">
+            在线工具资源链接汇总
+          </a>
+        </span>
+      </div>
+    <div class="archive-post">
+        <span class="archive-post-time">
+          04-06
+          </span>
+        <span class="archive-post-title">
+          <a href="/2018/04/06/Other/财富自由/" class="archive-post-link">
+            财富自由
+          </a>
+        </span>
+      </div>
+    </section><nav class="pagination"><a class="next" href="/page/2/">
+        <span class="next-text">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    </nav>
+    </section></div></div>
+      </main>
 
-作者：卢仕岷摘要：一个，被称作是神化之身，一个，被公认是最接近神的男人。
+      <footer id="footer" class="footer"><div class="social-links"><a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+        <a href="https://github.com/blog20170623" class="iconfont icon-github" title="github"></a>
+        <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    </div><div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
 
-本来，我想用三个同样形式的排比句，但我发现，我所选出来的词句都那么无力，总不能完全概括这两人的特点，于是也就作罢，我想，你们的心情也是一样吧。
-喜欢他们，却不能用自己的话完全表现他们 ...
-        
-      </div>
-      <a class="more" href="/2018/02/28/Other/圣斗士百科/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2017/11/29/Other/认知三部曲/">认知三部曲</a>
-      </h2>
-      <p class="article-date">November 29, 2017</p>
-      
-      <div class="article-summary">
-        
-          <blockquote>
-<p>认知三部曲完整版：人与人最大的差别是认知！</p>
-</blockquote>
-<p>在今天这样一个急剧变化的时代，每一个行业的认知都在迅速更新迭代，跨界也越来越普遍。</p>
-<p>谁能正确建立和升级认知，谁就能脱颖而出。猎豹 CEO 傅盛他将认知梳理为三部曲：成长就是认知升级；管理本质就是认知管理；战略就是格局+破局。</p>
-<p>如认知升级：坚信大趋势，对外求教，活在当下、面向未来。认知管理：学会逆向思考，分清优先级。战略升级：建立行业格局，养成格局和破局结合的思维习惯。</p>
-<p>我们将三部曲整合，希望能够成体系地输出有价值的内容，愿大家能够从中有所启发。</p>
-        
-      </div>
-      <a class="more" href="/2017/11/29/Other/认知三部曲/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2017/11/29/Other/看懂中国房地产/">看懂中国房地产</a>
-      </h2>
-      <p class="article-date">November 29, 2017</p>
-      
-      <div class="article-summary">
-        
-          <p><img src="/images/date/201711/20171129001.jpg" alt></p>
-        
-      </div>
-      <a class="more" href="/2017/11/29/Other/看懂中国房地产/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2017/11/28/Other/中国社会九大阶层划分/">中国社会九大阶层划分</a>
-      </h2>
-      <p class="article-date">November 28, 2017</p>
-      
-      <div class="article-summary">
-        
-          中国社会的人群划分为 9 个阶层，1—3 级是统治阶层，是最大的既得利益者；4-6 级属于中产阶级；7-9 级是中国社会的底层，9 级是这个社会最悲惨的阶层。
-1 级：以在任委员、退休常委为代表，和 2 的区别在于，1 对全国局势有控制能力 2 没有。
-2 级：以在任实权省部级干部、退休委员 ...
-        
-      </div>
-      <a class="more" href="/2017/11/28/Other/中国社会九大阶层划分/">Read more</a>
-    </article>
-  
-
-  
-    <div class="guide-pager">
-  
-    <a class="unvisible" href="/"><span class="page-arrow">←</span> Prev</a>
-  
-  
-    <a href="/page/2/">Next<span class="page-arrow"> →</span></a>
-  
+  <span class="copyright-year">&copy;2015 - 2021<span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Mr.Zhang</span>
+  </span>
 </div>
-  
-</main>
-
-
-    <div class="scroll-top">
-  <span class="arrow-icon"></span>
-</div>
-    <footer class="app-footer">
-  <p class="copyright">
-    &copy; 2021 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
-    <br>
-    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
-  </p>
 </footer>
 
-<script>
-  function async(u, c) {
-    var d = document, t = 'script',
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-    s.parentNode.insertBefore(o, s);
-  }
-</script>
-<script>
-  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
-    FastClick.attach(document.body);
-  })
-</script>
-
-<script>
-  var hasLine = 'true';
-  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
-    $('figure pre').each(function(i, block) {
-      var figure = $(this).parents('figure');
-      if (hasLine === 'false') {
-        figure.find('.gutter').hide();
-      }
-      hljs.configure({useBR: true});
-      var lang = figure.attr('class').split(' ')[1] || 'code';
-      var codeHtml = $(this).html();
-      var codeTag = document.createElement('code');
-      codeTag.className = lang;
-      codeTag.innerHTML = codeHtml;
-      $(this).attr('class', '').empty().html(codeTag);
-      figure.attr('data-lang', lang.toUpperCase());
-      hljs.highlightBlock(block);
-    });
-  })
-</script>
-<!-- Baidu Tongji -->
-
-<script src="/js/script.js"></script>
-
-  </body>
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div><script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/src/even.js?v=2.11.0"></script>
+</body>
 </html>
