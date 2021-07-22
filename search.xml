@@ -26,47 +26,55 @@
       </categories>
   </entry>
   <entry>
-    <title>Web知识片段</title>
-    <url>/2021/07/11/Blog/vi:vim%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">vim runoob.txt #打开文件</span><br></pre></td></tr></table></figure>
+    <title>数字周刊 01</title>
+    <url>/2021/07/11/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A01/</url>
+    <content><![CDATA[<h2 id="1-vi-vim的简单实用"><a href="#1-vi-vim的简单实用" class="headerlink" title="1.vi/vim的简单实用"></a>1.vi/vim的简单实用</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">vim runoob.txt #打开文件</span><br></pre></td></tr></table></figure>
 <p>在一般模式之中，只要按下 i 字符就可以进入输入模式了</p>
 <p>按下 ESC 按钮回到一般模式</p>
 <p>输入 :wq 即可保存离开！</p>
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>分享</title>
-    <url>/2021/07/11/Blog/%E5%88%86%E4%BA%AB/</url>
-    <content><![CDATA[<h2 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h2><p><a href="https://www.ruanyifeng.com/blog/weekly/" target="_blank" rel="noopener">科技爱好者周刊</a></p>
-<h2 id="随机显示图片"><a href="#随机显示图片" class="headerlink" title="随机显示图片"></a>随机显示图片</h2><p><img src="https://api.btstu.cn/sjbz/zsy.php" alt></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">![](https://api.btstu.cn/sjbz/zsy.php) # 随机图片</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">随机显示美女图片</span><br><span class="line">https://api88.net/api/img/rand/</span><br><span class="line"></span><br><span class="line">随机显示 bing 壁纸</span><br><span class="line">https://api88.net/api/bing/rand</span><br><span class="line"></span><br><span class="line">电脑手机自适应随机图片</span><br><span class="line">https://api.btstu.cn/sjbz/zsy.php</span><br><span class="line"></span><br><span class="line">横版动漫图片</span><br><span class="line">https://api.btstu.cn/sjbz/?lx=dongman</span><br><span class="line"></span><br><span class="line">横版美女图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=meizi</span><br><span class="line"></span><br><span class="line">横版动漫妹子</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=suiji</span><br><span class="line"></span><br><span class="line">竖版动漫图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=m_dongman</span><br><span class="line"></span><br><span class="line">竖版美女图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=m_meizi</span><br><span class="line"></span><br><span class="line">竖版随机动漫妹子</span><br><span class="line">http://api.btstu.cn/sjbz/?m_lx=suiji</span><br></pre></td></tr></table></figure>
-<p><a href="https://www.biantube.com" target="_blank" rel="noopener">国内版油管</a></p>
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>NobleUI使用文档</title>
-    <url>/2021/07/01/Blog/NobleUI%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/</url>
-    <content><![CDATA[<h2 id="基本的页面容器"><a href="#基本的页面容器" class="headerlink" title="基本的页面容器"></a>基本的页面容器</h2><p>main-wrapper是最顶层的div</p>
+<h2 id="2-NobleUI模版"><a href="#2-NobleUI模版" class="headerlink" title="2.NobleUI模版"></a>2.NobleUI模版</h2><p><a href="https://www.jq22.com/demo/nobleuimo201909200931/demo_1/dashboard-one.html" target="_blank" rel="noopener">NobleUI</a> Responsive Bootstrap 4 Dashboard Template</p>
+<p><strong>如何copy使用？</strong></p>
+<p>main-wrapper是最顶层的div</p>
 <a id="more"></a>
 <p>page-wrapper是页面内容容器div、其次是page-content</p>
 <p>row更相当于一个功能组件的集合，也相当于一行，一个row下面可以有两个col-6。row下面一层的col-12是定义卡片显示多大的。</p>
 <p>再下面的class=”card”是真正的功能组件。</p>
 <p>一个标准的页面容器：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main-wrapper"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-wrapper"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-content"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"d-flexflex-wrap grid-margin"</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span> </span><br><span class="line">          <span class="tag">&lt;<span class="name">h4</span> <span class="attr">class</span>=<span class="string">"mb-3 mb-md-0"</span>&gt;</span>欢迎标语<span class="tag">&lt;/<span class="name">h4</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      </span><br><span class="line">      <span class="comment">&lt;!-- 某个功能组件 --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-12 col-xl-12 grid-margin stretch-card"</span>&gt;</span> </span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card overflow-hidden"</span>&gt;</span> </span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            ...</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="card"><a href="#card" class="headerlink" title="card"></a>card</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main-wrapper"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-wrapper"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-content"</span>&gt;</span></span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-12 col-xl-12 grid-margin stretch-card"</span>&gt;</span> </span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card overflow-hidden"</span>&gt;</span> </span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            ...</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="在页面中插入apexcharts"><a href="#在页面中插入apexcharts" class="headerlink" title="在页面中插入apexcharts"></a>在页面中插入apexcharts</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xl-6 grid-margin stretch-card"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">h6</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>Pie chart<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"apexPie"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xl-6 grid-margin stretch-card"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">h6</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>Line chart<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"apexLine"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-1-card"><a href="#2-1-card" class="headerlink" title="2-1.card"></a>2-1.card</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main-wrapper"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-wrapper"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-content"</span>&gt;</span></span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-12 col-xl-12 grid-margin stretch-card"</span>&gt;</span> </span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card overflow-hidden"</span>&gt;</span> </span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            ...</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-2-在页面中插入apexcharts"><a href="#2-2-在页面中插入apexcharts" class="headerlink" title="2-2.在页面中插入apexcharts"></a>2-2.在页面中插入apexcharts</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xl-6 grid-margin stretch-card"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h6</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>Pie chart<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"apexPie"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xl-6 grid-margin stretch-card"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h6</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>Line chart<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"apexLine"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>在script标签中写入参数</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Apex Pie chart end</span></span><br><span class="line">	<span class="keyword">var</span> options = &#123;</span><br><span class="line">	  chart: &#123;</span><br><span class="line">	    height: <span class="number">300</span>,</span><br><span class="line">	    type: <span class="string">"pie"</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  colors: [<span class="string">"#f77eb9"</span>, <span class="string">"#7ee5e5"</span>,<span class="string">"#4d8af0"</span>,<span class="string">"#fbbc06"</span>],</span><br><span class="line">	  legend: &#123;</span><br><span class="line">	    position: <span class="string">'top'</span>,</span><br><span class="line">	    horizontalAlign: <span class="string">'center'</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  stroke: &#123;</span><br><span class="line">	    colors: [<span class="string">'rgba(0,0,0,0)'</span>]</span><br><span class="line">	  &#125;,</span><br><span class="line">	  dataLabels: &#123;</span><br><span class="line">	    enabled: <span class="literal">false</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  series: [<span class="number">44</span>, <span class="number">55</span>, <span class="number">13</span>, <span class="number">33</span>]</span><br><span class="line">	&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> chart = <span class="keyword">new</span> ApexCharts(<span class="built_in">document</span>.querySelector(<span class="string">"#apexPie"</span>), options);</span><br><span class="line">	</span><br><span class="line">	chart.render();  </span><br><span class="line">	<span class="comment">// Apex Pie chart end</span></span><br></pre></td></tr></table></figure>
-<p>11</p>
+<h2 id="3-随机显示的图片接口"><a href="#3-随机显示的图片接口" class="headerlink" title="3.随机显示的图片接口"></a>3.随机显示的图片接口</h2><p><img src="https://api.btstu.cn/sjbz/zsy.php" alt></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">![](https://api.btstu.cn/sjbz/zsy.php) # 随机图片</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">随机显示美女图片</span><br><span class="line">https://api88.net/api/img/rand/</span><br><span class="line"></span><br><span class="line">随机显示 bing 壁纸</span><br><span class="line">https://api88.net/api/bing/rand</span><br><span class="line"></span><br><span class="line">电脑手机自适应随机图片</span><br><span class="line">https://api.btstu.cn/sjbz/zsy.php</span><br><span class="line"></span><br><span class="line">横版动漫图片</span><br><span class="line">https://api.btstu.cn/sjbz/?lx=dongman</span><br><span class="line"></span><br><span class="line">横版美女图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=meizi</span><br><span class="line"></span><br><span class="line">横版动漫妹子</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=suiji</span><br><span class="line"></span><br><span class="line">竖版动漫图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=m_dongman</span><br><span class="line"></span><br><span class="line">竖版美女图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=m_meizi</span><br><span class="line"></span><br><span class="line">竖版随机动漫妹子</span><br><span class="line">http://api.btstu.cn/sjbz/?m_lx=suiji</span><br></pre></td></tr></table></figure>
+<h2 id="4-国内油管"><a href="#4-国内油管" class="headerlink" title="4.国内油管"></a>4.国内油管</h2><p><a href="https://www.biantube.com" target="_blank" rel="noopener">国内版油管</a></p>
+<h2 id="5-动漫网站：卡通战"><a href="#5-动漫网站：卡通战" class="headerlink" title="5.动漫网站：卡通战"></a>5.动漫网站：卡通战</h2><p><img src="/images/Github/Weekly/2021002.png" alt></p>
+<p><a href="https://www.ktkkt.top/" target="_blank" rel="noopener">卡通战</a>一个不错的动漫网站，可以观看翻译国语动漫</p>
+<h2 id="6-电影资源网站"><a href="#6-电影资源网站" class="headerlink" title="6.电影资源网站"></a>6.电影资源网站</h2><p><img src="/images/Github/Weekly/2021004.png" alt></p>
+<h2 id="7-iphone-6"><a href="#7-iphone-6" class="headerlink" title="7.iphone 6"></a>7.iphone 6</h2><p><img src="/images/Github/Weekly/2021005.jpg" alt></p>
+<h2 id="8-每日自省吾身"><a href="#8-每日自省吾身" class="headerlink" title="8.每日自省吾身"></a>8.每日自省吾身</h2><p><img src="/images/Github/Weekly/2021003.jpg" alt></p>
+<h2 id="9-Github搜索指南"><a href="#9-Github搜索指南" class="headerlink" title="9.Github搜索指南"></a>9.Github搜索指南</h2><ol>
+<li><p>搜百科大全，搜索优秀的资源。xxx awesome</p>
+</li>
+<li><p>找例子 xxx simple</p>
+</li>
+<li><p>找空项目架子 xxx starter</p>
+</li>
+<li><p>找技术教程 django tutorial </p>
+</li>
+</ol>
+<h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
+<p>成年人最大的自律，就是控制自己去跟杠精辩论的欲望。</p>
+</blockquote>
+<blockquote>
+<p>友谊的唯一诀窍，就是找到比你更好的人，不是更聪明，而是更宽容、更慷慨、更宽容的人。</p>
+</blockquote>
+<blockquote>
+<p>你永远赚不到超出你认知范围外的钱，除非你靠运气，最后往往又会靠实力亏掉，这是一种必然。你所赚的每一分钱，都是你对这个世界认知的变现，你所亏的每一分钱，都是因为对这个世界的认知缺陷。这个世界最大的公平在于，当一个人的财富大于自己认知的时候，这个社会有100种方法收割你，直到你的认知和财富相匹配为止。</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>Blog</category>
+        <category>周刊</category>
       </categories>
   </entry>
   <entry>
@@ -6846,6 +6854,35 @@
       </categories>
   </entry>
   <entry>
+    <title>20个你不知道的大脑秘密</title>
+    <url>/2015/10/30/Notes/20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/</url>
+    <content><![CDATA[<p>尽管科学家一个接一个的科研成果让我们对记忆有了越来越多的了解，但直到今天，科学家所发现的所谓大脑的秘密也只是冰山一角，在很大程度上，大脑和记忆仍是神秘的。研究人员认为，记忆是一个过程，并且当你记忆的时候，实际上就是你把保存在大脑中零零碎碎的信息进行重建。但让人不解的是，究竟是什么东西引发大脑开始这个重建过程？这个谜团继续等待科学家们去寻找答案，但有20个事实是已经科学家证实了的。 </p>
+<p>　　1。大脑喜欢色彩。平时使用高质量的有色笔或使用有色纸，颜色能帮助记忆。 </p>
+<p>　　2。大脑集中精力最多只有25分钟。这是对成人而言，所以学习20到30分钟后就应该休息10分钟。你可以利用这段时间做点家务，10分钟后再回来继续学习，效果会更好。 </p>
+<p>　　3。大脑需要休息，才能学得快，记得牢。如果你感到很累，先拿出20分钟小睡一会儿再继续学习。 </p>
+<p>　　4。大脑像发动机，它需要燃料。大脑是一台珍贵而复杂的机器，所以你必须给它补充“优质燃料”。垃圾食品、劣质食品、所有化学制品和防腐剂，不仅损害身体，还削弱智力。英国一项新研究显示，饮食结构影响你的智商。 </p>
+<p>　　5。大脑是一个电气化学活动的海洋。电和化学物质在水里能更好地流动，如果你脱水，就无法集中精力。专家建议，日常生活要多喝水，保持身体必需的水分，而且一天最好不要饮用相同的饮料，可以交换着喝矿泉水、果汁和咖啡等。另外，研究资料显示，经常性头痛和脱水有关。 </p>
+<p>　　6。大脑喜欢问题。当你在学习或读书过程中提出问题的时候，大脑会自动搜索答案，从而提高你的学习效率。从这个角度说，一个好的问题胜过一个答案。 </p>
+<p>　　7。大脑和身体有它们各自的节奏周期。一天中大脑思维最敏捷的时间有几段，如果你能在大脑功能最活跃的时候学习，就能节省很多时间，会取得很好的学习效果。 </p>
+<p>　　8。大脑和身体经常交流。如果身体很懒散，大脑就会认为你正在做的事情一点都不重要，大脑也就不会重视你所做的事情。所以，在学习的时候，你应该端坐、身体稍微前倾，让大脑保持警觉。 </p>
+<p>　　9。气味影响大脑。香料对保持头脑清醒有一定功效。薄荷、柠檬和桂皮都值得一试。 </p>
+<p>　　10。大脑需要氧气。经常到户外走走，运动运动身体。 </p>
+<p>　　11。大脑需要空间。尽量在一个宽敞的地方学习，这对你的大脑有好处。 </p>
+<p>　　12。大脑喜欢整洁的空间。最近的研究显示，在一个整洁、有条有理的家庭长大的孩子在学业上的表现更好。为什么，因为接受了安排外部环境的训练后，大脑学会了组织内部知道的技巧，你的记忆力会更好。 </p>
+<p>　　13。压力影响记忆。当你受到压力时，体内就会产生皮质醇，它会杀死海马状突起里的脑细胞，而这种大脑侧面脑室壁上的隆起物在处理长期和短期记忆上起主要作用。因此，压力影响记忆。最好的方法就是锻炼。 </p>
+<p>　　14。大脑并不知道你不能做哪些事情，所以需要你告诉它。用自言自语的方式对大脑说话，但是不要提供消极信息，用积极的话代替它。 </p>
+<p>　　15。大脑如同肌肉。无论在哪个年龄段，大脑都是可以训练和加强的。毫无疑问，不要寻找任何借口。不要整天呆在家里无所事事，这只能使大脑老化的速度加快。专业运动员每天都要训练，才能有突出表现。所以你一定要“没事找事”，不要让大脑老闲着。 </p>
+<p>　　16。大脑需要重复。每一次回顾记忆间隔的时间越短，记忆的效果越好，因为多次看同一事物能加深印象，但只看一次却往往容易忘记。 </p>
+<p>　　17。大脑的理解速度比你的阅读速度快。用铅笔或手指辅助阅读吗？不，用眼睛。使用这种方法的时候，需要你的眼睛更快地移动。 </p>
+<p>　　18。大脑需要运动。站着办公效率更高。 </p>
+<p>　　19。大脑会归类，也会联系。如果你正在学习某种东西，不妨问问自己：它让我想起了什么？这样做能帮助你记忆，因为大脑能把你以前知道的知识和新知识联系起来。 </p>
+<p>　　20。大脑喜欢开玩笑。开心和学习效率成正比，心情越好，学到的知识就越多，所以，让自己快乐起来吧！</p>
+]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+  </entry>
+  <entry>
     <title>57条创业经验</title>
     <url>/2015/10/30/Notes/57%E6%9D%A1%E5%88%9B%E4%B8%9A%E7%BB%8F%E9%AA%8C/</url>
     <content><![CDATA[<p>总部位于旧金山的云计算数据库服务公司RethinkDB创始人斯拉瓦·阿克麦切特（SlavaA khmechet）日前发表文章，总结了57条创业经验，其中涉及团队、融资、市场、产品、营销、销售、产品开发、公司管理、个人状态等9个方面。</p>
@@ -6917,35 +6954,6 @@
 <p>　　个人状态</p>
 <p>　　56、尽自己最大的努力，给你的创业公司贴上自己的标签（你可能会失败，但要尝度）。每天都尽全力工作，然后休息。这样在尘埃落定之后，你会因自己做过的选择而感到骄傲，无论结果如何。</p>
 <p>　　57、每隔一段时间，就离开一次。去徒步旅行，看望另一座城市的家人，跳舞，玩象棋，打网球，任何事情。你会让你更有效率，让你周围的人们感觉快乐。</p>
-]]></content>
-      <categories>
-        <category>Notes</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>20个你不知道的大脑秘密</title>
-    <url>/2015/10/30/Notes/20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/</url>
-    <content><![CDATA[<p>尽管科学家一个接一个的科研成果让我们对记忆有了越来越多的了解，但直到今天，科学家所发现的所谓大脑的秘密也只是冰山一角，在很大程度上，大脑和记忆仍是神秘的。研究人员认为，记忆是一个过程，并且当你记忆的时候，实际上就是你把保存在大脑中零零碎碎的信息进行重建。但让人不解的是，究竟是什么东西引发大脑开始这个重建过程？这个谜团继续等待科学家们去寻找答案，但有20个事实是已经科学家证实了的。 </p>
-<p>　　1。大脑喜欢色彩。平时使用高质量的有色笔或使用有色纸，颜色能帮助记忆。 </p>
-<p>　　2。大脑集中精力最多只有25分钟。这是对成人而言，所以学习20到30分钟后就应该休息10分钟。你可以利用这段时间做点家务，10分钟后再回来继续学习，效果会更好。 </p>
-<p>　　3。大脑需要休息，才能学得快，记得牢。如果你感到很累，先拿出20分钟小睡一会儿再继续学习。 </p>
-<p>　　4。大脑像发动机，它需要燃料。大脑是一台珍贵而复杂的机器，所以你必须给它补充“优质燃料”。垃圾食品、劣质食品、所有化学制品和防腐剂，不仅损害身体，还削弱智力。英国一项新研究显示，饮食结构影响你的智商。 </p>
-<p>　　5。大脑是一个电气化学活动的海洋。电和化学物质在水里能更好地流动，如果你脱水，就无法集中精力。专家建议，日常生活要多喝水，保持身体必需的水分，而且一天最好不要饮用相同的饮料，可以交换着喝矿泉水、果汁和咖啡等。另外，研究资料显示，经常性头痛和脱水有关。 </p>
-<p>　　6。大脑喜欢问题。当你在学习或读书过程中提出问题的时候，大脑会自动搜索答案，从而提高你的学习效率。从这个角度说，一个好的问题胜过一个答案。 </p>
-<p>　　7。大脑和身体有它们各自的节奏周期。一天中大脑思维最敏捷的时间有几段，如果你能在大脑功能最活跃的时候学习，就能节省很多时间，会取得很好的学习效果。 </p>
-<p>　　8。大脑和身体经常交流。如果身体很懒散，大脑就会认为你正在做的事情一点都不重要，大脑也就不会重视你所做的事情。所以，在学习的时候，你应该端坐、身体稍微前倾，让大脑保持警觉。 </p>
-<p>　　9。气味影响大脑。香料对保持头脑清醒有一定功效。薄荷、柠檬和桂皮都值得一试。 </p>
-<p>　　10。大脑需要氧气。经常到户外走走，运动运动身体。 </p>
-<p>　　11。大脑需要空间。尽量在一个宽敞的地方学习，这对你的大脑有好处。 </p>
-<p>　　12。大脑喜欢整洁的空间。最近的研究显示，在一个整洁、有条有理的家庭长大的孩子在学业上的表现更好。为什么，因为接受了安排外部环境的训练后，大脑学会了组织内部知道的技巧，你的记忆力会更好。 </p>
-<p>　　13。压力影响记忆。当你受到压力时，体内就会产生皮质醇，它会杀死海马状突起里的脑细胞，而这种大脑侧面脑室壁上的隆起物在处理长期和短期记忆上起主要作用。因此，压力影响记忆。最好的方法就是锻炼。 </p>
-<p>　　14。大脑并不知道你不能做哪些事情，所以需要你告诉它。用自言自语的方式对大脑说话，但是不要提供消极信息，用积极的话代替它。 </p>
-<p>　　15。大脑如同肌肉。无论在哪个年龄段，大脑都是可以训练和加强的。毫无疑问，不要寻找任何借口。不要整天呆在家里无所事事，这只能使大脑老化的速度加快。专业运动员每天都要训练，才能有突出表现。所以你一定要“没事找事”，不要让大脑老闲着。 </p>
-<p>　　16。大脑需要重复。每一次回顾记忆间隔的时间越短，记忆的效果越好，因为多次看同一事物能加深印象，但只看一次却往往容易忘记。 </p>
-<p>　　17。大脑的理解速度比你的阅读速度快。用铅笔或手指辅助阅读吗？不，用眼睛。使用这种方法的时候，需要你的眼睛更快地移动。 </p>
-<p>　　18。大脑需要运动。站着办公效率更高。 </p>
-<p>　　19。大脑会归类，也会联系。如果你正在学习某种东西，不妨问问自己：它让我想起了什么？这样做能帮助你记忆，因为大脑能把你以前知道的知识和新知识联系起来。 </p>
-<p>　　20。大脑喜欢开玩笑。开心和学习效率成正比，心情越好，学到的知识就越多，所以，让自己快乐起来吧！</p>
 ]]></content>
       <categories>
         <category>Notes</category>
