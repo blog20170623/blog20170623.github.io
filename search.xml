@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>数字周刊 02</title>
+    <url>/2021/07/18/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A02/</url>
+    <content><![CDATA[<blockquote>
+<p>前言：学习不是为了记忆，是为了运用。没有被加工和重新储存的信息和知识，和电脑没什么区别。新的时代，一定要学习两点。一、什么样的只是不用储存，到用时直接借助网络。二、自己记忆的知识，一定要系统化的存在，且可灵活运用。</p>
+</blockquote>
+<p><img src="/images/Github/Weekly/2021006.jpeg" alt></p>
+<a id="more"></a>
+<h2 id="1-hexo"><a href="#1-hexo" class="headerlink" title="1.hexo"></a>1.hexo</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>静态博客网站生成器</p>
+<p><strong>Run server</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<p><strong>生成静态文件 Generate static files</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<p><strong>部署到远程站点 Deploy to remote sites</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h2 id="2-Hexo插件"><a href="#2-Hexo插件" class="headerlink" title="2.Hexo插件"></a>2.Hexo插件</h2><p><a href="https://www.monsteryu.top/web/hexo/hexo_plugins/" target="_blank" rel="noopener">郁明敏</a>收藏归纳的Hexo插件</p>
+<h2 id="3-怎样学习？"><a href="#3-怎样学习？" class="headerlink" title="3.怎样学习？"></a>3.怎样学习？</h2><ul>
+<li>1、一个真正善于学习的人是可怕的，而且绝不会没有未来。</li>
+<li>2、只要你愿意学习，就不愁找不到老师，比我们优秀的人都是资源，包括竞争对手。</li>
+<li>3、学习不是简单模仿，而是为结合我们自身实际提升成长的半径，赢得更大空间。</li>
+<li>4、必须强调，比学习方法更重要的是心态，我们必须学会谦卑、聆听、吸收！</li>
+</ul>
+<h2 id="4-Belle"><a href="#4-Belle" class="headerlink" title="4.Belle"></a>4.Belle</h2><p>一个React组件库：<a href="http://nikgraf.github.io/belle/#/?_k=6st638" target="_blank" rel="noopener">Belle</a></p>
+<h2 id="5-向爱因斯坦学习桌面管理之道"><a href="#5-向爱因斯坦学习桌面管理之道" class="headerlink" title="5.向爱因斯坦学习桌面管理之道"></a>5.向爱因斯坦学习桌面管理之道</h2><p><a href="https://www.runningcheese.com/dm" target="_blank" rel="noopener">向爱因斯坦学习桌面管理之道</a></p>
+<h2 id="6-浏览器简史"><a href="#6-浏览器简史" class="headerlink" title="6.浏览器简史"></a>6.浏览器简史</h2><p><a href="https://www.runningcheese.com/browser-history" target="_blank" rel="noopener">浏览器简史：人类早期网上冲浪珍贵资料（上）</a><br><a href="https://www.runningcheese.com/browser-history-2" target="_blank" rel="noopener">浏览器简史：人类早期网上冲浪珍贵资料（中）</a></p>
+<h2 id="7-今日热榜"><a href="#7-今日热榜" class="headerlink" title="7.今日热榜"></a>7.今日热榜</h2><p><a href="https://tophub.today/" target="_blank" rel="noopener">今日热榜</a>提供各站热榜聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Github、抖音…追踪全网热点、简单高效阅读。</p>
+<h2 id="8-图灵社区"><a href="#8-图灵社区" class="headerlink" title="8.图灵社区"></a>8.图灵社区</h2><p><a href="https://www.ituring.com.cn/" target="_blank" rel="noopener">图灵社区</a>成立于2005年6月，以策划出版高质量的科技书籍为核心业务，主要出版领域包括计算机、电子电气、数学统计、科普等，通过引进国际高水平的教材、专著，以及发掘国内优秀原创作品等途径，为目标读者提供一流的内容。</p>
+<h2 id="9-闺蜜逛街快乐加倍"><a href="#9-闺蜜逛街快乐加倍" class="headerlink" title="9.闺蜜逛街快乐加倍"></a>9.闺蜜逛街快乐加倍</h2><video src="/images/Github/Video/2021001.mp4" autoplay="autoplay" controls="controls" width="92%"></video>
+
+
+<p><a href></a></p>
+<h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
+<p>以绝大多数人努力程度之低，根本没有到拼天赋的地步。真实情况就是，以绝大多数人的天赋之低，根本得不到努力的机会。</p>
+</blockquote>
+<blockquote>
+<p>个人水平不高没关系，要知道什么是“高”，心中要有标准。比如写作，你受水平局限，写不出好文章，但你要知道什么是好文章。你不能拿垃圾当经典，这就没有救了。没有水平，可以通过努力来弥补，没有眼界，你根本不知道努力的方向。</p>
+</blockquote>
+<blockquote>
+<p>成人学习，最重要的已经不是信息了，而是看世界的不同角度。有见识的人写的东西，天然会把这个世界的不同角度展示给我们看。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>周刊</category>
+      </categories>
+  </entry>
+  <entry>
     <title>话题</title>
     <url>/2021/07/14/Blog/%E8%AF%9D%E9%A2%98/</url>
     <content><![CDATA[<h2 id="话题：视频学习胜过读书吗？"><a href="#话题：视频学习胜过读书吗？" class="headerlink" title="话题：视频学习胜过读书吗？"></a>话题：视频学习胜过读书吗？</h2><p>现在，网上的课程视频和讲座视频，越来越多。同样的内容，可以读书学习，也可以视频学习，大家喜欢哪一种？</p>
@@ -6776,26 +6824,6 @@
       </categories>
   </entry>
   <entry>
-    <title>程序员的七种武器</title>
-    <url>/2015/10/30/Blog/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E4%B8%83%E7%A7%8D%E6%AD%A6%E5%99%A8/</url>
-    <content><![CDATA[<p>信息技术的发展时间虽然不长，但其爆炸式的发展速度使信息技术迅速覆盖社会和人类生活的各个角落。程序员们是这场信息化浪潮的见证者之一，更是其中的主要参与者，这是时代赋予每个程序员的机会和责任。 </p>
-<!-- doc -->
-<a id="more"></a>
-<p>信息技术的更新速度是惊人的，程序员的职业生涯则是一个要求不断学习的过程，永远不能固步自封。本人在工作期间曾看见过很多程序员只要有闲暇时间就浏览一些没有太大作用的网页，在网上聊天，打游戏，浪费了大量的时间，十分不可取。而另外一种情况是，IT技术的日新月异使很多程序员眼花缭乱，什么都想学，却又不知从何学起，今天看看这个，明天学学那个，贪多不熟。 </p>
-<p>虽然IT技术发展迅速，但很多技术都是有规律可循，一些基本的概念、原理和方法还很通用，可以举一反三。本人根据自己的体会和经验，向那些刚刚踏入IT行业的新程序员们或正在迷茫的程序员们推荐程序员必须掌握的七种武器，有了这七种武器，虽不敢说笑傲江湖，但将自己立于不败之地还是可以的。 </p>
-<h2 id="第一种武器：开发工具"><a href="#第一种武器：开发工具" class="headerlink" title="第一种武器：开发工具"></a>第一种武器：开发工具</h2><p>至少熟练掌握两到三种开发工具的使用，这是程序员的立身之本，其中C/C++和JAVA是我重点推荐的开发工具，C/C++以其高效率和高度的灵活性成为开发工具中的利器，很多系统级的软件还是用C/C++编写。而JAVA的跨平台和与WEB很好的结合是JAVA的优势所在，而本人对SUN公司的“网络即计算机”的概念相当欣赏，并相信JAVA即其相关的技术集JAVA One会成为未来的主流开发工具之一。其次，如果能掌握一种简便的可视化开发工具，如VB，PowerBuilder，Delphi，C++ Builder，则更好，这些开发工具减小了开发难度，并能够强化程序员对象模型的概念。另外，需要掌握基本的脚本语言，如shell,perl等，至少能读懂这些脚本代码。 </p>
-<h2 id="第二种武器：数据库"><a href="#第二种武器：数据库" class="headerlink" title="第二种武器：数据库"></a>第二种武器：数据库</h2><p>为什么数据库是如此重要？很多应用程序都是以数据库的数据为中心，而数据库的产品也有不少，其中关系型数据库仍是主流形式，所以程序员至少熟练掌握一两种数据库，对关系型数据库的关键元素要非常清楚，要熟练掌握SQL的基本语法。虽然很多数据库产品提供了可视化的数据库管理工具，但SQL是基础，是通用的数据库操作方法。如果没有机会接触商业数据库系统，可以使用免费的数据库产品是一个不错的选择，如mySQL, Postgres等。 </p>
-<h2 id="第三种武器：操作系统"><a href="#第三种武器：操作系统" class="headerlink" title="第三种武器：操作系统"></a>第三种武器：操作系统</h2><p>当前主流的操作系统是Windows，Linux/Unix，熟练地使用这些操作系统是必须的，但只有这些还远远不够。要想成为一个真正的编程高手，需要深入了解操作系统，了解它的内存管理机制、进程/线程调度、信号、内核对象、系统调用、协议栈实现等。Linux作为开发源码的操作系统，是一个很好的学习平台，Linux几乎具备了所有现代操作系统的特征。虽然Windows系统的内核实现机制的资料较少，但通过互联网还是能获取不少资料。只有对操作系统有一定的了解后，你会发现自己上了一个新的台阶。 </p>
-<h2 id="第四种武器：网络协议TCP-IP"><a href="#第四种武器：网络协议TCP-IP" class="headerlink" title="第四种武器：网络协议TCP/IP"></a>第四种武器：网络协议TCP/IP</h2><p>在互联网如此普及的今天，如果您还没有对互联网的支撑协议TCP/IP协议栈有很好的掌握，就需要迅速补上这一课，网络技术已改变了软件运行的模式，从最早的客户/服务器结构，到今天的WEB Services，再到未来的网格计算，这一切都离不开以TCP/IP协议栈为基础的网络协议支持，所以，深入掌握TCP/IP协议是非常必要的。至少，你需要了解ISO七层协议模型，IP/UDP/TCP/HTTP等常用协议的原理和三次握手机制。 </p>
-<h2 id="第五种武器：DCOM-CORBA-XML-WEB-Services"><a href="#第五种武器：DCOM-CORBA-XML-WEB-Services" class="headerlink" title="第五种武器：DCOM/CORBA/XML/WEB Services"></a>第五种武器：DCOM/CORBA/XML/WEB Services</h2><p>随着技术的发展，软件与网络的无缝结合是必然趋势，软件系统的位置无关性是未来计算模式的重要特征之一，DCOM/CORBA是当前两大主流的分布计算的中间件平台，DCOM是微软COM(组件对象模型)的扩展，而CORBA是OMG支持的规范。程序员需要做的不仅仅是利用商业的开发平台来开发软件，而是要理解这些技术的初衷，即为什么需要这项技术，如果你能理解了这一点，再回头看这些技术的具体实现，就如庖丁解牛，迎刃而解。XML/WebServices重要性不言而喻，XML以其结构化的表示方法和超强的表达能力被喻为互联网上的“世界语”，是分布计算的基石之一。 </p>
-<h2 id="第六种武器：软件工程与CMM"><a href="#第六种武器：软件工程与CMM" class="headerlink" title="第六种武器：软件工程与CMM"></a>第六种武器：软件工程与CMM</h2><p>现代大型软件系统的开发中，工程化的开发控制取代个人英雄主义，成为软件系统成功的保证，一个编程高手并不一定是一个优秀的程序员，一个优秀的程序员是将出色的编程能力和开发技巧同严格的软件工程思想有机结合，编程只是软件生命周期中的其中一环，优秀的程序员应该掌握软件开发各个阶段的基本技能，如市场分析，可行性分析，需求分析，结构设计，详细设计，软件测试等。一句话可以概括我的看法：“创意无限，流程保证”。 </p>
-<h2 id="第七种武器：强烈的好奇心"><a href="#第七种武器：强烈的好奇心" class="headerlink" title="第七种武器：强烈的好奇心"></a>第七种武器：强烈的好奇心</h2><p>什么才是一个程序员的终极武器呢，那就是强烈的好奇心和学习精神。没有比强烈的好奇心和学习精神更好的武器了，它是程序员们永攀高峰的源泉和动力所在。</p>
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-  </entry>
-  <entry>
     <title>老板必须知道的11组数据</title>
     <url>/2015/10/30/Notes/%E8%80%81%E6%9D%BF%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%8411%E7%BB%84%E6%95%B0%E6%8D%AE/</url>
     <content><![CDATA[<p>1、老板利润：15%-20%，低于20%说明管理不力，要 调整。低于15%属于投资失败。</p>
@@ -6854,29 +6882,33 @@
       </categories>
   </entry>
   <entry>
-    <title>20个你不知道的大脑秘密</title>
-    <url>/2015/10/30/Notes/20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/</url>
-    <content><![CDATA[<p>尽管科学家一个接一个的科研成果让我们对记忆有了越来越多的了解，但直到今天，科学家所发现的所谓大脑的秘密也只是冰山一角，在很大程度上，大脑和记忆仍是神秘的。研究人员认为，记忆是一个过程，并且当你记忆的时候，实际上就是你把保存在大脑中零零碎碎的信息进行重建。但让人不解的是，究竟是什么东西引发大脑开始这个重建过程？这个谜团继续等待科学家们去寻找答案，但有20个事实是已经科学家证实了的。 </p>
-<p>　　1。大脑喜欢色彩。平时使用高质量的有色笔或使用有色纸，颜色能帮助记忆。 </p>
-<p>　　2。大脑集中精力最多只有25分钟。这是对成人而言，所以学习20到30分钟后就应该休息10分钟。你可以利用这段时间做点家务，10分钟后再回来继续学习，效果会更好。 </p>
-<p>　　3。大脑需要休息，才能学得快，记得牢。如果你感到很累，先拿出20分钟小睡一会儿再继续学习。 </p>
-<p>　　4。大脑像发动机，它需要燃料。大脑是一台珍贵而复杂的机器，所以你必须给它补充“优质燃料”。垃圾食品、劣质食品、所有化学制品和防腐剂，不仅损害身体，还削弱智力。英国一项新研究显示，饮食结构影响你的智商。 </p>
-<p>　　5。大脑是一个电气化学活动的海洋。电和化学物质在水里能更好地流动，如果你脱水，就无法集中精力。专家建议，日常生活要多喝水，保持身体必需的水分，而且一天最好不要饮用相同的饮料，可以交换着喝矿泉水、果汁和咖啡等。另外，研究资料显示，经常性头痛和脱水有关。 </p>
-<p>　　6。大脑喜欢问题。当你在学习或读书过程中提出问题的时候，大脑会自动搜索答案，从而提高你的学习效率。从这个角度说，一个好的问题胜过一个答案。 </p>
-<p>　　7。大脑和身体有它们各自的节奏周期。一天中大脑思维最敏捷的时间有几段，如果你能在大脑功能最活跃的时候学习，就能节省很多时间，会取得很好的学习效果。 </p>
-<p>　　8。大脑和身体经常交流。如果身体很懒散，大脑就会认为你正在做的事情一点都不重要，大脑也就不会重视你所做的事情。所以，在学习的时候，你应该端坐、身体稍微前倾，让大脑保持警觉。 </p>
-<p>　　9。气味影响大脑。香料对保持头脑清醒有一定功效。薄荷、柠檬和桂皮都值得一试。 </p>
-<p>　　10。大脑需要氧气。经常到户外走走，运动运动身体。 </p>
-<p>　　11。大脑需要空间。尽量在一个宽敞的地方学习，这对你的大脑有好处。 </p>
-<p>　　12。大脑喜欢整洁的空间。最近的研究显示，在一个整洁、有条有理的家庭长大的孩子在学业上的表现更好。为什么，因为接受了安排外部环境的训练后，大脑学会了组织内部知道的技巧，你的记忆力会更好。 </p>
-<p>　　13。压力影响记忆。当你受到压力时，体内就会产生皮质醇，它会杀死海马状突起里的脑细胞，而这种大脑侧面脑室壁上的隆起物在处理长期和短期记忆上起主要作用。因此，压力影响记忆。最好的方法就是锻炼。 </p>
-<p>　　14。大脑并不知道你不能做哪些事情，所以需要你告诉它。用自言自语的方式对大脑说话，但是不要提供消极信息，用积极的话代替它。 </p>
-<p>　　15。大脑如同肌肉。无论在哪个年龄段，大脑都是可以训练和加强的。毫无疑问，不要寻找任何借口。不要整天呆在家里无所事事，这只能使大脑老化的速度加快。专业运动员每天都要训练，才能有突出表现。所以你一定要“没事找事”，不要让大脑老闲着。 </p>
-<p>　　16。大脑需要重复。每一次回顾记忆间隔的时间越短，记忆的效果越好，因为多次看同一事物能加深印象，但只看一次却往往容易忘记。 </p>
-<p>　　17。大脑的理解速度比你的阅读速度快。用铅笔或手指辅助阅读吗？不，用眼睛。使用这种方法的时候，需要你的眼睛更快地移动。 </p>
-<p>　　18。大脑需要运动。站着办公效率更高。 </p>
-<p>　　19。大脑会归类，也会联系。如果你正在学习某种东西，不妨问问自己：它让我想起了什么？这样做能帮助你记忆，因为大脑能把你以前知道的知识和新知识联系起来。 </p>
-<p>　　20。大脑喜欢开玩笑。开心和学习效率成正比，心情越好，学到的知识就越多，所以，让自己快乐起来吧！</p>
+    <title>制度的力量</title>
+    <url>/2015/10/30/Notes/%E5%88%B6%E5%BA%A6%E7%9A%84%E5%8A%9B%E9%87%8F/</url>
+    <content><![CDATA[<p>第一个故事：合格率的检查制度</p>
+<p>二战期间，美国空军降落伞的合格率为99.9%，这就意味着从概率上来说，每一千个跳伞的士兵中会有一个因为降落伞不合格而丧命。军方要求厂家必须让合格率达到100%才行。厂家负责人说他们竭尽全力了，99.9%已是极限，除非出现奇迹。军方（也有人说是巴顿将军）就改变了检查制度，每次交货前从降落伞中随机挑出几个，让厂家负责人亲自跳伞检测。从此，奇迹出现了，降落伞的合格率达到了百分之百。</p>
+<p>第二个故事：付款方式</p>
+<p>英国将澳洲变成殖民地之后，因为那儿地广人稀，尚未开发，英政府就鼓励国民移民到澳洲，可是当时澳洲非常落后，没有人愿意去。英国政府就想出一个办法，把罪犯送到澳洲去。这样一方面解决了英国本土监狱人满为患的问题，另一方面也解决了澳洲的劳动力问题，还有一条，他们以为把坏家伙们都送走了，英国就会变得更美好了。</p>
+<p>英国政府雇佣私人船只运送犯人，按照装船的人数付费，多运多赚钱。很快政府发现这样做有很大的弊端，就是罪犯的死亡率非常之高，平均超过了百分之十，最严重的一艘船死亡率达到了惊人的百分之三十七。政府官员绞尽脑汁想降低罪犯运输过程中的死亡率，包括派官员上船监督，限制装船数量等等，却都实施不下去。</p>
+<p>最后，他们终于找到了一劳永逸的办法，就是将付款方式变换了一下：由根据上船的人数付费改为根据下船的人数付费。船东只有将人活着送达澳洲，才能赚到运送费用。</p>
+<p>新政策一出炉，罪犯死亡率立竿见影地降到了百分之一左右。后来船东为了提高生存率还在船上配备了医生。</p>
+<p>第三个故事：粥的分配制度</p>
+<p>七个人住在一起，每天分一大桶粥。要命的是，粥每天都是不够的。一开始，他们抓阄决定谁来分粥，每天轮一个。于是乎，每周下来，他们只有一天是饱的，就是自己分粥的那一天。后来他们开始推选出一个口口声声道德高尚的人出来分粥。</p>
+<p>大权独揽，没有制约，也就会产生腐败。大家开始挖空心思去讨好他，互相勾结，搞得整个小团体乌烟瘴气。然后大家开始组成三人的分粥委员会及四人的评选委员会，互相攻击扯皮下来，粥吃到嘴里全是凉的。</p>
+<p>最后想出来一个方法：轮流分粥，但分粥的人要等其它人都挑完后拿剩下的最后一碗。为了不让自己吃到最少的，每人都尽量分得平均，就算不平，也只能认了。</p>
+<p>大家快快乐乐，和和气气，日子越过越好。</p>
+<p>第四个故事：互助与共赢的天堂</p>
+<p>有一位行善的基督教徒，去世后向上帝提出一个要求，要求上帝领去参观地狱和天堂，看看究竟有什么区别。</p>
+<p>到了地狱，看到一张巨大的餐桌，摆满丰盛的佳肴。心想：地狱生活不错吗？过一会儿，用餐的时间到了，只见一群骨瘦如柴，奄奄一息的人围坐在香气四溢的肉锅前，只因手持的汤勺把儿太长，尽管他们争着抢着往自己嘴里送肉，可就是吃不到，又馋又急又饿。</p>
+<p>上帝说，这就是地狱。</p>
+<p>他们走进另一个房间，这里跟地狱一般无二，同样飘溢着肉汤的香气，同样手里拿着的是特别长的汤勺。但是，这里的人个个红光满面，精神焕发。原来他们个个手持特长勺把肉汤喂进对方嘴里。</p>
+<p>上帝说，这就是天堂。</p>
+<p>同样的人，不同的制度，可以产生不同的文化和氛围以及差距巨大的结果。</p>
+<p>这，就是制度的力量！</p>
+<p>补充故事一：</p>
+<p>一个美国教授。每一次来中国都是住陋室，穿小巷，不停地采访、记录，一本牛津出版的最新学术著作就是这样完成的，其工作精神不由你不敬佩。<br>　但他也有个对他来说出格的嗜好：到中国的第一天，总是让朋友陪他去软件市场，寻找中国盗版的美国软件，物美价廉，乐而忘返。作为中国人，我们也许能理解甚至支持这位美国教授的嗜好，那些刚出炉的美国软件，如果在北美本地买，实在是太贵了，贵到连教授也买不起的地步。<br>　但私下我们也会想：在美国的制度环境下，能允许他这么做吗？看来美国人和任何其他民族的人一样，既不是天使，也不是魔鬼，一旦脱离本土制度约束，人性中的弱点都会出现，甚至放纵。</p>
+<p>补充故事二：</p>
+<p>一位香港的朋友说，一群西方人从罗湖出境，跟大陆有的人一样，见排队就插队，一点儿没有文明习惯；跨过罗湖桥，到香港一端入境，百步之外，人性突然大变，规规矩矩地排起队来。<br>　　这就是制度的力量！无论高傲的美国人、优雅的法国人，一旦脱离制度约束，都是近朱者赤，近墨者黑。</p>
+<p>一个好的制度可以使人的坏念头受到抑制，而坏的制度会让人的好愿望四处碰壁。建立起将结果和个人责任和利益联系到一起的制度，能解决很多似乎无法解决的社会问题。</p>
 ]]></content>
       <categories>
         <category>Notes</category>
@@ -6960,71 +6992,50 @@
       </categories>
   </entry>
   <entry>
-    <title>制度的力量</title>
-    <url>/2015/10/30/Notes/%E5%88%B6%E5%BA%A6%E7%9A%84%E5%8A%9B%E9%87%8F/</url>
-    <content><![CDATA[<p>第一个故事：合格率的检查制度</p>
-<p>二战期间，美国空军降落伞的合格率为99.9%，这就意味着从概率上来说，每一千个跳伞的士兵中会有一个因为降落伞不合格而丧命。军方要求厂家必须让合格率达到100%才行。厂家负责人说他们竭尽全力了，99.9%已是极限，除非出现奇迹。军方（也有人说是巴顿将军）就改变了检查制度，每次交货前从降落伞中随机挑出几个，让厂家负责人亲自跳伞检测。从此，奇迹出现了，降落伞的合格率达到了百分之百。</p>
-<p>第二个故事：付款方式</p>
-<p>英国将澳洲变成殖民地之后，因为那儿地广人稀，尚未开发，英政府就鼓励国民移民到澳洲，可是当时澳洲非常落后，没有人愿意去。英国政府就想出一个办法，把罪犯送到澳洲去。这样一方面解决了英国本土监狱人满为患的问题，另一方面也解决了澳洲的劳动力问题，还有一条，他们以为把坏家伙们都送走了，英国就会变得更美好了。</p>
-<p>英国政府雇佣私人船只运送犯人，按照装船的人数付费，多运多赚钱。很快政府发现这样做有很大的弊端，就是罪犯的死亡率非常之高，平均超过了百分之十，最严重的一艘船死亡率达到了惊人的百分之三十七。政府官员绞尽脑汁想降低罪犯运输过程中的死亡率，包括派官员上船监督，限制装船数量等等，却都实施不下去。</p>
-<p>最后，他们终于找到了一劳永逸的办法，就是将付款方式变换了一下：由根据上船的人数付费改为根据下船的人数付费。船东只有将人活着送达澳洲，才能赚到运送费用。</p>
-<p>新政策一出炉，罪犯死亡率立竿见影地降到了百分之一左右。后来船东为了提高生存率还在船上配备了医生。</p>
-<p>第三个故事：粥的分配制度</p>
-<p>七个人住在一起，每天分一大桶粥。要命的是，粥每天都是不够的。一开始，他们抓阄决定谁来分粥，每天轮一个。于是乎，每周下来，他们只有一天是饱的，就是自己分粥的那一天。后来他们开始推选出一个口口声声道德高尚的人出来分粥。</p>
-<p>大权独揽，没有制约，也就会产生腐败。大家开始挖空心思去讨好他，互相勾结，搞得整个小团体乌烟瘴气。然后大家开始组成三人的分粥委员会及四人的评选委员会，互相攻击扯皮下来，粥吃到嘴里全是凉的。</p>
-<p>最后想出来一个方法：轮流分粥，但分粥的人要等其它人都挑完后拿剩下的最后一碗。为了不让自己吃到最少的，每人都尽量分得平均，就算不平，也只能认了。</p>
-<p>大家快快乐乐，和和气气，日子越过越好。</p>
-<p>第四个故事：互助与共赢的天堂</p>
-<p>有一位行善的基督教徒，去世后向上帝提出一个要求，要求上帝领去参观地狱和天堂，看看究竟有什么区别。</p>
-<p>到了地狱，看到一张巨大的餐桌，摆满丰盛的佳肴。心想：地狱生活不错吗？过一会儿，用餐的时间到了，只见一群骨瘦如柴，奄奄一息的人围坐在香气四溢的肉锅前，只因手持的汤勺把儿太长，尽管他们争着抢着往自己嘴里送肉，可就是吃不到，又馋又急又饿。</p>
-<p>上帝说，这就是地狱。</p>
-<p>他们走进另一个房间，这里跟地狱一般无二，同样飘溢着肉汤的香气，同样手里拿着的是特别长的汤勺。但是，这里的人个个红光满面，精神焕发。原来他们个个手持特长勺把肉汤喂进对方嘴里。</p>
-<p>上帝说，这就是天堂。</p>
-<p>同样的人，不同的制度，可以产生不同的文化和氛围以及差距巨大的结果。</p>
-<p>这，就是制度的力量！</p>
-<p>补充故事一：</p>
-<p>一个美国教授。每一次来中国都是住陋室，穿小巷，不停地采访、记录，一本牛津出版的最新学术著作就是这样完成的，其工作精神不由你不敬佩。<br>　但他也有个对他来说出格的嗜好：到中国的第一天，总是让朋友陪他去软件市场，寻找中国盗版的美国软件，物美价廉，乐而忘返。作为中国人，我们也许能理解甚至支持这位美国教授的嗜好，那些刚出炉的美国软件，如果在北美本地买，实在是太贵了，贵到连教授也买不起的地步。<br>　但私下我们也会想：在美国的制度环境下，能允许他这么做吗？看来美国人和任何其他民族的人一样，既不是天使，也不是魔鬼，一旦脱离本土制度约束，人性中的弱点都会出现，甚至放纵。</p>
-<p>补充故事二：</p>
-<p>一位香港的朋友说，一群西方人从罗湖出境，跟大陆有的人一样，见排队就插队，一点儿没有文明习惯；跨过罗湖桥，到香港一端入境，百步之外，人性突然大变，规规矩矩地排起队来。<br>　　这就是制度的力量！无论高傲的美国人、优雅的法国人，一旦脱离制度约束，都是近朱者赤，近墨者黑。</p>
-<p>一个好的制度可以使人的坏念头受到抑制，而坏的制度会让人的好愿望四处碰壁。建立起将结果和个人责任和利益联系到一起的制度，能解决很多似乎无法解决的社会问题。</p>
+    <title>20个你不知道的大脑秘密</title>
+    <url>/2015/10/30/Notes/20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/</url>
+    <content><![CDATA[<p>尽管科学家一个接一个的科研成果让我们对记忆有了越来越多的了解，但直到今天，科学家所发现的所谓大脑的秘密也只是冰山一角，在很大程度上，大脑和记忆仍是神秘的。研究人员认为，记忆是一个过程，并且当你记忆的时候，实际上就是你把保存在大脑中零零碎碎的信息进行重建。但让人不解的是，究竟是什么东西引发大脑开始这个重建过程？这个谜团继续等待科学家们去寻找答案，但有20个事实是已经科学家证实了的。 </p>
+<p>　　1。大脑喜欢色彩。平时使用高质量的有色笔或使用有色纸，颜色能帮助记忆。 </p>
+<p>　　2。大脑集中精力最多只有25分钟。这是对成人而言，所以学习20到30分钟后就应该休息10分钟。你可以利用这段时间做点家务，10分钟后再回来继续学习，效果会更好。 </p>
+<p>　　3。大脑需要休息，才能学得快，记得牢。如果你感到很累，先拿出20分钟小睡一会儿再继续学习。 </p>
+<p>　　4。大脑像发动机，它需要燃料。大脑是一台珍贵而复杂的机器，所以你必须给它补充“优质燃料”。垃圾食品、劣质食品、所有化学制品和防腐剂，不仅损害身体，还削弱智力。英国一项新研究显示，饮食结构影响你的智商。 </p>
+<p>　　5。大脑是一个电气化学活动的海洋。电和化学物质在水里能更好地流动，如果你脱水，就无法集中精力。专家建议，日常生活要多喝水，保持身体必需的水分，而且一天最好不要饮用相同的饮料，可以交换着喝矿泉水、果汁和咖啡等。另外，研究资料显示，经常性头痛和脱水有关。 </p>
+<p>　　6。大脑喜欢问题。当你在学习或读书过程中提出问题的时候，大脑会自动搜索答案，从而提高你的学习效率。从这个角度说，一个好的问题胜过一个答案。 </p>
+<p>　　7。大脑和身体有它们各自的节奏周期。一天中大脑思维最敏捷的时间有几段，如果你能在大脑功能最活跃的时候学习，就能节省很多时间，会取得很好的学习效果。 </p>
+<p>　　8。大脑和身体经常交流。如果身体很懒散，大脑就会认为你正在做的事情一点都不重要，大脑也就不会重视你所做的事情。所以，在学习的时候，你应该端坐、身体稍微前倾，让大脑保持警觉。 </p>
+<p>　　9。气味影响大脑。香料对保持头脑清醒有一定功效。薄荷、柠檬和桂皮都值得一试。 </p>
+<p>　　10。大脑需要氧气。经常到户外走走，运动运动身体。 </p>
+<p>　　11。大脑需要空间。尽量在一个宽敞的地方学习，这对你的大脑有好处。 </p>
+<p>　　12。大脑喜欢整洁的空间。最近的研究显示，在一个整洁、有条有理的家庭长大的孩子在学业上的表现更好。为什么，因为接受了安排外部环境的训练后，大脑学会了组织内部知道的技巧，你的记忆力会更好。 </p>
+<p>　　13。压力影响记忆。当你受到压力时，体内就会产生皮质醇，它会杀死海马状突起里的脑细胞，而这种大脑侧面脑室壁上的隆起物在处理长期和短期记忆上起主要作用。因此，压力影响记忆。最好的方法就是锻炼。 </p>
+<p>　　14。大脑并不知道你不能做哪些事情，所以需要你告诉它。用自言自语的方式对大脑说话，但是不要提供消极信息，用积极的话代替它。 </p>
+<p>　　15。大脑如同肌肉。无论在哪个年龄段，大脑都是可以训练和加强的。毫无疑问，不要寻找任何借口。不要整天呆在家里无所事事，这只能使大脑老化的速度加快。专业运动员每天都要训练，才能有突出表现。所以你一定要“没事找事”，不要让大脑老闲着。 </p>
+<p>　　16。大脑需要重复。每一次回顾记忆间隔的时间越短，记忆的效果越好，因为多次看同一事物能加深印象，但只看一次却往往容易忘记。 </p>
+<p>　　17。大脑的理解速度比你的阅读速度快。用铅笔或手指辅助阅读吗？不，用眼睛。使用这种方法的时候，需要你的眼睛更快地移动。 </p>
+<p>　　18。大脑需要运动。站着办公效率更高。 </p>
+<p>　　19。大脑会归类，也会联系。如果你正在学习某种东西，不妨问问自己：它让我想起了什么？这样做能帮助你记忆，因为大脑能把你以前知道的知识和新知识联系起来。 </p>
+<p>　　20。大脑喜欢开玩笑。开心和学习效率成正比，心情越好，学到的知识就越多，所以，让自己快乐起来吧！</p>
 ]]></content>
       <categories>
         <category>Notes</category>
       </categories>
   </entry>
   <entry>
-    <title>Web知识片段</title>
-    <url>/2015/08/25/Blog/Web/</url>
-    <content><![CDATA[<!-- doc -->
+    <title>Excerpt 01：程序员的七种武器</title>
+    <url>/2015/10/30/Article/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E4%B8%83%E7%A7%8D%E6%AD%A6%E5%99%A8/</url>
+    <content><![CDATA[<p><img src="/images/Github/Article/codeimg-facebook-event-image.jpeg" alt></p>
+<p>信息技术的发展时间虽然不长，但其爆炸式的发展速度使信息技术迅速覆盖社会和人类生活的各个角落。程序员们是这场信息化浪潮的见证者之一，更是其中的主要参与者，这是时代赋予每个程序员的机会和责任。 </p>
+<!-- doc -->
 <a id="more"></a>
-<h2 id="2021-06-19"><a href="#2021-06-19" class="headerlink" title="2021.06.19"></a>2021.06.19</h2><p>如何使用Animated动画</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line"> 	</span><br><span class="line">　　$(<span class="string">"#login-box"</span>).addClass(<span class="string">"animated bounceInLeft"</span>);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="number">111</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>window.onload要等整个窗口（包括图片）都加载完才触发 执行</p>
-<p><strong>jQuery加载即执行：</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　$(<span class="string">"#name"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　　　<span class="comment">//adding your code here </span></span><br><span class="line">　　&#125;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p><strong>增加和移除一个class</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="string">".default"</span>).addClass(<span class="string">"hover_s"</span>);</span><br><span class="line">$(<span class="string">".default"</span>).removeClass(<span class="string">"default "</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="npm安装错误"><a href="#npm安装错误" class="headerlink" title="npm安装错误"></a>npm安装错误</h3><p>npm 遇到 write access 安装错误</p>
-<p>官方给出的一个解决办法是给npm的global安装位置换个地方，因为默认的安装位置是/usr/local/lib所在的文件夹，这是系统的文件夹所在地，所以可能会出现一些读写问题。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 第一步：在你的用户文件下新建一个文件夹，这个.npm-global</span><br><span class="line">mkdir ~/.npm-global</span><br><span class="line">#第二步：更改node的安装连接</span><br><span class="line">npm config set prefix &apos;~/.npm-global&apos;</span><br><span class="line">#第三步：在用户的profile下增加path，为的是系统能够找到可执行文件的目录</span><br><span class="line">vim profile</span><br><span class="line"></span><br><span class="line">export PATH=~/.npm-global/bin:$PATH</span><br><span class="line">#第四步：update profile。使其生效</span><br><span class="line">source ~/.profile</span><br></pre></td></tr></table></figure>
-<h3 id="React"><a href="#React" class="headerlink" title="React"></a>React</h3><p>元素是构成 React 应用的最小单位，它用于描述屏幕上输出的内容。</p>
-<h3 id="React-component开发"><a href="#React-component开发" class="headerlink" title="React component开发"></a>React component开发</h3><p><code>npm i --save</code> 和 <code>npm i --save-dev</code> 的使用是个规范问题。</p>
-<p><code>npm i --save</code>项目（运行时、发布到生产环境时）依赖；</p>
-<p><code>npm i --save-dev</code>工程构建（开发时、“打包”时）依赖 </p>
-<h3 id="Github搜索指南"><a href="#Github搜索指南" class="headerlink" title="Github搜索指南"></a>Github搜索指南</h3><ol>
-<li><p>搜百科大全，搜索优秀的资源。xxx awesome</p>
-</li>
-<li><p>找例子 xxx simple</p>
-</li>
-<li><p>找空项目架子 xxx starter</p>
-</li>
-<li><p>找技术教程 django tutorial </p>
-</li>
-</ol>
-<blockquote>
-<p>React组件开发，搞来搞去，还是自己的好用，别人太复杂太绕了。@06.24</p>
-</blockquote>
-<h2 id="07-01"><a href="#07-01" class="headerlink" title="07.01"></a>07.01</h2><p>弹性布局<a href="https://www.runoob.com/w3cnote/flex-grammar.html" target="_blank" rel="noopener">display:flex</a></p>
+<p>信息技术的更新速度是惊人的，程序员的职业生涯则是一个要求不断学习的过程，永远不能固步自封。本人在工作期间曾看见过很多程序员只要有闲暇时间就浏览一些没有太大作用的网页，在网上聊天，打游戏，浪费了大量的时间，十分不可取。而另外一种情况是，IT技术的日新月异使很多程序员眼花缭乱，什么都想学，却又不知从何学起，今天看看这个，明天学学那个，贪多不熟。 </p>
+<p>虽然IT技术发展迅速，但很多技术都是有规律可循，一些基本的概念、原理和方法还很通用，可以举一反三。本人根据自己的体会和经验，向那些刚刚踏入IT行业的新程序员们或正在迷茫的程序员们推荐程序员必须掌握的七种武器，有了这七种武器，虽不敢说笑傲江湖，但将自己立于不败之地还是可以的。 </p>
+<h2 id="第一种武器：开发工具"><a href="#第一种武器：开发工具" class="headerlink" title="第一种武器：开发工具"></a>第一种武器：开发工具</h2><p>至少熟练掌握两到三种开发工具的使用，这是程序员的立身之本，其中C/C++和JAVA是我重点推荐的开发工具，C/C++以其高效率和高度的灵活性成为开发工具中的利器，很多系统级的软件还是用C/C++编写。而JAVA的跨平台和与WEB很好的结合是JAVA的优势所在，而本人对SUN公司的“网络即计算机”的概念相当欣赏，并相信JAVA即其相关的技术集JAVA One会成为未来的主流开发工具之一。其次，如果能掌握一种简便的可视化开发工具，如VB，PowerBuilder，Delphi，C++ Builder，则更好，这些开发工具减小了开发难度，并能够强化程序员对象模型的概念。另外，需要掌握基本的脚本语言，如shell,perl等，至少能读懂这些脚本代码。 </p>
+<h2 id="第二种武器：数据库"><a href="#第二种武器：数据库" class="headerlink" title="第二种武器：数据库"></a>第二种武器：数据库</h2><p>为什么数据库是如此重要？很多应用程序都是以数据库的数据为中心，而数据库的产品也有不少，其中关系型数据库仍是主流形式，所以程序员至少熟练掌握一两种数据库，对关系型数据库的关键元素要非常清楚，要熟练掌握SQL的基本语法。虽然很多数据库产品提供了可视化的数据库管理工具，但SQL是基础，是通用的数据库操作方法。如果没有机会接触商业数据库系统，可以使用免费的数据库产品是一个不错的选择，如mySQL, Postgres等。 </p>
+<h2 id="第三种武器：操作系统"><a href="#第三种武器：操作系统" class="headerlink" title="第三种武器：操作系统"></a>第三种武器：操作系统</h2><p>当前主流的操作系统是Windows，Linux/Unix，熟练地使用这些操作系统是必须的，但只有这些还远远不够。要想成为一个真正的编程高手，需要深入了解操作系统，了解它的内存管理机制、进程/线程调度、信号、内核对象、系统调用、协议栈实现等。Linux作为开发源码的操作系统，是一个很好的学习平台，Linux几乎具备了所有现代操作系统的特征。虽然Windows系统的内核实现机制的资料较少，但通过互联网还是能获取不少资料。只有对操作系统有一定的了解后，你会发现自己上了一个新的台阶。 </p>
+<h2 id="第四种武器：网络协议TCP-IP"><a href="#第四种武器：网络协议TCP-IP" class="headerlink" title="第四种武器：网络协议TCP/IP"></a>第四种武器：网络协议TCP/IP</h2><p>在互联网如此普及的今天，如果您还没有对互联网的支撑协议TCP/IP协议栈有很好的掌握，就需要迅速补上这一课，网络技术已改变了软件运行的模式，从最早的客户/服务器结构，到今天的WEB Services，再到未来的网格计算，这一切都离不开以TCP/IP协议栈为基础的网络协议支持，所以，深入掌握TCP/IP协议是非常必要的。至少，你需要了解ISO七层协议模型，IP/UDP/TCP/HTTP等常用协议的原理和三次握手机制。 </p>
+<h2 id="第五种武器：DCOM-CORBA-XML-WEB-Services"><a href="#第五种武器：DCOM-CORBA-XML-WEB-Services" class="headerlink" title="第五种武器：DCOM/CORBA/XML/WEB Services"></a>第五种武器：DCOM/CORBA/XML/WEB Services</h2><p>随着技术的发展，软件与网络的无缝结合是必然趋势，软件系统的位置无关性是未来计算模式的重要特征之一，DCOM/CORBA是当前两大主流的分布计算的中间件平台，DCOM是微软COM(组件对象模型)的扩展，而CORBA是OMG支持的规范。程序员需要做的不仅仅是利用商业的开发平台来开发软件，而是要理解这些技术的初衷，即为什么需要这项技术，如果你能理解了这一点，再回头看这些技术的具体实现，就如庖丁解牛，迎刃而解。XML/WebServices重要性不言而喻，XML以其结构化的表示方法和超强的表达能力被喻为互联网上的“世界语”，是分布计算的基石之一。 </p>
+<h2 id="第六种武器：软件工程与CMM"><a href="#第六种武器：软件工程与CMM" class="headerlink" title="第六种武器：软件工程与CMM"></a>第六种武器：软件工程与CMM</h2><p>现代大型软件系统的开发中，工程化的开发控制取代个人英雄主义，成为软件系统成功的保证，一个编程高手并不一定是一个优秀的程序员，一个优秀的程序员是将出色的编程能力和开发技巧同严格的软件工程思想有机结合，编程只是软件生命周期中的其中一环，优秀的程序员应该掌握软件开发各个阶段的基本技能，如市场分析，可行性分析，需求分析，结构设计，详细设计，软件测试等。一句话可以概括我的看法：“创意无限，流程保证”。 </p>
+<h2 id="第七种武器：强烈的好奇心"><a href="#第七种武器：强烈的好奇心" class="headerlink" title="第七种武器：强烈的好奇心"></a>第七种武器：强烈的好奇心</h2><p>什么才是一个程序员的终极武器呢，那就是强烈的好奇心和学习精神。没有比强烈的好奇心和学习精神更好的武器了，它是程序员们永攀高峰的源泉和动力所在。</p>
 ]]></content>
       <categories>
         <category>Blog</category>
@@ -7083,6 +7094,44 @@
 <p>安装之后提示 pip3 的安装目录（一般是 /homes/USERNAME/.local/bin）不在系统的环境变量里。<br>每次要先跳到安装目录里。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd .local/bin</span><br><span class="line">./pip3 -V</span><br><span class="line">./pip3 list</span><br></pre></td></tr></table></figure>
 <p>手动配置环境变量<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br><span class="line"></span><br><span class="line"># 写入以下内容</span><br><span class="line">export PATH=$PATH:</span><br><span class="line">/var/services/homes/Administrator/.local/bin</span><br><span class="line"># 保存、退出</span><br><span class="line"></span><br><span class="line"># 运行以下命令使生效</span><br><span class="line">source ~/.bash_profile</span><br><span class="line"></span><br><span class="line"># 最后可以检查一下</span><br><span class="line">echo $PATH</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Web知识片段</title>
+    <url>/2015/08/25/Blog/Web/</url>
+    <content><![CDATA[<!-- doc -->
+<a id="more"></a>
+<h2 id="2021-06-19"><a href="#2021-06-19" class="headerlink" title="2021.06.19"></a>2021.06.19</h2><p>如何使用Animated动画</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line"> 	</span><br><span class="line">　　$(<span class="string">"#login-box"</span>).addClass(<span class="string">"animated bounceInLeft"</span>);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="number">111</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>window.onload要等整个窗口（包括图片）都加载完才触发 执行</p>
+<p><strong>jQuery加载即执行：</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　$(<span class="string">"#name"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　　　<span class="comment">//adding your code here </span></span><br><span class="line">　　&#125;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p><strong>增加和移除一个class</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="string">".default"</span>).addClass(<span class="string">"hover_s"</span>);</span><br><span class="line">$(<span class="string">".default"</span>).removeClass(<span class="string">"default "</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="npm安装错误"><a href="#npm安装错误" class="headerlink" title="npm安装错误"></a>npm安装错误</h3><p>npm 遇到 write access 安装错误</p>
+<p>官方给出的一个解决办法是给npm的global安装位置换个地方，因为默认的安装位置是/usr/local/lib所在的文件夹，这是系统的文件夹所在地，所以可能会出现一些读写问题。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 第一步：在你的用户文件下新建一个文件夹，这个.npm-global</span><br><span class="line">mkdir ~/.npm-global</span><br><span class="line">#第二步：更改node的安装连接</span><br><span class="line">npm config set prefix &apos;~/.npm-global&apos;</span><br><span class="line">#第三步：在用户的profile下增加path，为的是系统能够找到可执行文件的目录</span><br><span class="line">vim profile</span><br><span class="line"></span><br><span class="line">export PATH=~/.npm-global/bin:$PATH</span><br><span class="line">#第四步：update profile。使其生效</span><br><span class="line">source ~/.profile</span><br></pre></td></tr></table></figure>
+<h3 id="React"><a href="#React" class="headerlink" title="React"></a>React</h3><p>元素是构成 React 应用的最小单位，它用于描述屏幕上输出的内容。</p>
+<h3 id="React-component开发"><a href="#React-component开发" class="headerlink" title="React component开发"></a>React component开发</h3><p><code>npm i --save</code> 和 <code>npm i --save-dev</code> 的使用是个规范问题。</p>
+<p><code>npm i --save</code>项目（运行时、发布到生产环境时）依赖；</p>
+<p><code>npm i --save-dev</code>工程构建（开发时、“打包”时）依赖 </p>
+<h3 id="Github搜索指南"><a href="#Github搜索指南" class="headerlink" title="Github搜索指南"></a>Github搜索指南</h3><ol>
+<li><p>搜百科大全，搜索优秀的资源。xxx awesome</p>
+</li>
+<li><p>找例子 xxx simple</p>
+</li>
+<li><p>找空项目架子 xxx starter</p>
+</li>
+<li><p>找技术教程 django tutorial </p>
+</li>
+</ol>
+<blockquote>
+<p>React组件开发，搞来搞去，还是自己的好用，别人太复杂太绕了。@06.24</p>
+</blockquote>
+<h2 id="07-01"><a href="#07-01" class="headerlink" title="07.01"></a>07.01</h2><p>弹性布局<a href="https://www.runoob.com/w3cnote/flex-grammar.html" target="_blank" rel="noopener">display:flex</a></p>
 ]]></content>
       <categories>
         <category>Blog</category>

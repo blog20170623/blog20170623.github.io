@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-07-16T08:06:19.328Z</updated>
+  <updated>2021-07-23T00:07:08.273Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数字周刊 02</title>
+    <link href="http://yoursite.com/2021/07/18/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A02/"/>
+    <id>http://yoursite.com/2021/07/18/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A02/</id>
+    <published>2021-07-17T16:00:00.000Z</published>
+    <updated>2021-07-23T00:07:08.273Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;前言：学习不是为了记忆，是为了运用。没有被加工和重新储存的信息和知识，和电脑没什么区别。新的时代，一定要学习两点。一、什么样的只是不用储存，到用时直接借助网络。二、自己记忆的知识，一定要系统化的存在，且可灵活运用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/images/Github/Weekly/2021006.jpeg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="周刊" scheme="http://yoursite.com/categories/%E5%91%A8%E5%88%8A/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>话题</title>
@@ -455,31 +477,6 @@
     
     
       <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>认知三部曲</title>
-    <link href="http://yoursite.com/2017/11/29/Other/%E8%AE%A4%E7%9F%A5%E4%B8%89%E9%83%A8%E6%9B%B2/"/>
-    <id>http://yoursite.com/2017/11/29/Other/%E8%AE%A4%E7%9F%A5%E4%B8%89%E9%83%A8%E6%9B%B2/</id>
-    <published>2017-11-29T10:04:33.000Z</published>
-    <updated>2017-11-29T10:04:33.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;认知三部曲完整版：人与人最大的差别是认知！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;在今天这样一个急剧变化的时代，每一个行业的认知都在迅速更新迭代，跨界也越来越普遍。&lt;/p&gt;
-&lt;p&gt;谁能正确建立和升级认知，谁就能脱颖而出。猎豹 CEO 傅盛他将认知梳理为三部曲：成长就是认知升级；管理本质就是认知管理；战略就是格局+破局。&lt;/p&gt;
-&lt;p&gt;如认知升级：坚信大趋势，对外求教，活在当下、面向未来。认知管理：学会逆向思考，分清优先级。战略升级：建立行业格局，养成格局和破局结合的思维习惯。&lt;/p&gt;
-&lt;p&gt;我们将三部曲整合，希望能够成体系地输出有价值的内容，愿大家能够从中有所启发。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
     
     
   </entry>
