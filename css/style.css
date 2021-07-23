@@ -106,7 +106,8 @@ abbr[title] {
  */
 b,
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 0.88rem; }
 
 /**
  * Address styling not present in Safari and Chrome.
@@ -588,7 +589,7 @@ h6 {
       font-weight: 400;
       text-transform: uppercase; }
     .post .post-toc .post-toc-content {
-      font-size: 15px; }
+      font-size: 13px; }
       .post .post-toc .post-toc-content .toc,
       .post .post-toc .post-toc-content .toc-child {
         list-style: square; }
@@ -620,6 +621,8 @@ h6 {
   .post .post-content h6 {
     font-weight: 400;
     font-family: Athelas, STHeiti, Microsoft Yahei, serif; }
+  .post .post-content p {
+    font-size: 0.85rem; }
   .post .post-content .headerlink:hover {
     border-bottom: 0; }
   .post .post-content a {

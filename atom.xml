@@ -90,8 +90,8 @@
   
   <entry>
     <title>Hexo部署Github</title>
-    <link href="http://yoursite.com/2021/06/07/IT/hexo%E9%83%A8%E7%BD%B2%E9%93%BE%E6%8E%A5%E5%87%BA%E9%94%99/"/>
-    <id>http://yoursite.com/2021/06/07/IT/hexo%E9%83%A8%E7%BD%B2%E9%93%BE%E6%8E%A5%E5%87%BA%E9%94%99/</id>
+    <link href="http://yoursite.com/2021/06/07/Blog/hexo%E9%83%A8%E7%BD%B2%E9%93%BE%E6%8E%A5%E5%87%BA%E9%94%99/"/>
+    <id>http://yoursite.com/2021/06/07/Blog/hexo%E9%83%A8%E7%BD%B2%E9%93%BE%E6%8E%A5%E5%87%BA%E9%94%99/</id>
     <published>2021-06-06T16:00:00.000Z</published>
     <updated>2021-06-07T13:44:28.382Z</updated>
     
@@ -114,37 +114,9 @@
   </entry>
   
   <entry>
-    <title>股票分析</title>
-    <link href="http://yoursite.com/2021/05/09/Other/%E8%82%A1%E7%A5%A8%E5%88%86%E6%9E%90/"/>
-    <id>http://yoursite.com/2021/05/09/Other/%E8%82%A1%E7%A5%A8%E5%88%86%E6%9E%90/</id>
-    <published>2021-05-09T02:44:25.699Z</published>
-    <updated>2021-05-09T02:44:25.699Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;楼主84年，33岁了，银行从业8年，目前负责授信审批，说简单一些就是批贷款的。&lt;/p&gt;
-&lt;p&gt;想聊聊关于我们周围生活的金融，先说说通货膨胀吧，&lt;/p&gt;
-&lt;p&gt;在国际经济大通缩的环境下，我们国家是流动性极度匮乏的通货膨胀，很有意思的一件事，也很可悲。&lt;/p&gt;
-&lt;p&gt;我们的通货
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>成功学经典语录——陈安之</title>
-    <link href="http://yoursite.com/2021/05/09/Other/%E6%88%90%E5%8A%9F%E5%AD%A6%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%BD%95/"/>
-    <id>http://yoursite.com/2021/05/09/Other/%E6%88%90%E5%8A%9F%E5%AD%A6%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%BD%95/</id>
+    <link href="http://yoursite.com/2021/05/09/Notes/%E6%88%90%E5%8A%9F%E5%AD%A6%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%BD%95/"/>
+    <id>http://yoursite.com/2021/05/09/Notes/%E6%88%90%E5%8A%9F%E5%AD%A6%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%BD%95/</id>
     <published>2021-05-08T16:00:00.000Z</published>
     <updated>2021-05-09T02:43:13.105Z</updated>
     
@@ -169,8 +141,8 @@
   
   <entry>
     <title>如果楼市泡沫破灭会怎么样？</title>
-    <link href="http://yoursite.com/2021/01/19/Other/%E5%A6%82%E6%9E%9C%E6%A5%BC%E5%B8%82%E6%B3%A1%E6%B2%AB%E7%A0%B4%E7%81%AD%E4%BC%9A%E6%80%8E%E4%B9%88%E6%A0%B7%EF%BC%9F/"/>
-    <id>http://yoursite.com/2021/01/19/Other/%E5%A6%82%E6%9E%9C%E6%A5%BC%E5%B8%82%E6%B3%A1%E6%B2%AB%E7%A0%B4%E7%81%AD%E4%BC%9A%E6%80%8E%E4%B9%88%E6%A0%B7%EF%BC%9F/</id>
+    <link href="http://yoursite.com/2021/01/19/Notes/%E5%A6%82%E6%9E%9C%E6%A5%BC%E5%B8%82%E6%B3%A1%E6%B2%AB%E7%A0%B4%E7%81%AD%E4%BC%9A%E6%80%8E%E4%B9%88%E6%A0%B7%EF%BC%9F/"/>
+    <id>http://yoursite.com/2021/01/19/Notes/%E5%A6%82%E6%9E%9C%E6%A5%BC%E5%B8%82%E6%B3%A1%E6%B2%AB%E7%A0%B4%E7%81%AD%E4%BC%9A%E6%80%8E%E4%B9%88%E6%A0%B7%EF%BC%9F/</id>
     <published>2021-01-18T16:00:00.000Z</published>
     <updated>2021-01-19T06:54:44.673Z</updated>
     
@@ -182,27 +154,6 @@
     
     
       <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>陈安之时间管理</title>
-    <link href="http://yoursite.com/2020/10/22/Notes/%E9%99%88%E5%AE%89%E4%B9%8B%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/"/>
-    <id>http://yoursite.com/2020/10/22/Notes/%E9%99%88%E5%AE%89%E4%B9%8B%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/</id>
-    <published>2020-10-22T08:00:26.360Z</published>
-    <updated>2021-02-02T13:25:23.338Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;如果要想成为顶尖，那么就100%的实践，缺一分那就会差很多。 一个人的成就，决定于一天24小时，你做了哪些不一样的事情。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/Energy/20210202001.png&quot; alt&gt;&lt;/p&gt;
-&lt;!-- toc --&gt;
-    
-    </summary>
-    
-    
-      <category term="Notes" scheme="http://yoursite.com/categories/Notes/"/>
     
     
   </entry>
@@ -266,8 +217,8 @@
   
   <entry>
     <title>优秀小说作品节选</title>
-    <link href="http://yoursite.com/2020/03/17/Other/%E4%BC%98%E7%A7%80%E5%B0%8F%E8%AF%B4%E4%BD%9C%E5%93%81%E8%8A%82%E9%80%89/"/>
-    <id>http://yoursite.com/2020/03/17/Other/%E4%BC%98%E7%A7%80%E5%B0%8F%E8%AF%B4%E4%BD%9C%E5%93%81%E8%8A%82%E9%80%89/</id>
+    <link href="http://yoursite.com/2020/03/17/Notes/%E4%BC%98%E7%A7%80%E5%B0%8F%E8%AF%B4%E4%BD%9C%E5%93%81%E8%8A%82%E9%80%89/"/>
+    <id>http://yoursite.com/2020/03/17/Notes/%E4%BC%98%E7%A7%80%E5%B0%8F%E8%AF%B4%E4%BD%9C%E5%93%81%E8%8A%82%E9%80%89/</id>
     <published>2020-03-16T16:00:00.000Z</published>
     <updated>2020-03-19T11:45:27.020Z</updated>
     
@@ -303,37 +254,9 @@
   </entry>
   
   <entry>
-    <title>国人在网络上的六种形态</title>
-    <link href="http://yoursite.com/2020/02/03/Other/%E5%9B%BD%E4%BA%BA%E5%9C%A8%E7%BD%91%E7%BB%9C%E4%B8%8A%E7%9A%84%E5%85%AD%E7%A7%8D%E5%BD%A2%E6%80%81/"/>
-    <id>http://yoursite.com/2020/02/03/Other/%E5%9B%BD%E4%BA%BA%E5%9C%A8%E7%BD%91%E7%BB%9C%E4%B8%8A%E7%9A%84%E5%85%AD%E7%A7%8D%E5%BD%A2%E6%80%81/</id>
-    <published>2020-02-02T16:00:00.000Z</published>
-    <updated>2020-02-23T08:28:46.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;作者：冰河猛犸&lt;/p&gt;
-&lt;p&gt;据观察，中国人在网络上的表现大概呈现出6种形态：&lt;/p&gt;
-&lt;p&gt;左愤、右愤、犬儒、人云亦云者、既得利益者、独立思考者。至于所谓的“五毛”、“美分”，可以看作他们的职业所迫，并不能反映其个人的观点。&lt;/p&gt;
-&lt;p&gt;这6种形态往往会在某个具体的人身
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>20个你不知道的大脑秘密</title>
-    <link href="http://yoursite.com/2019/11/14/Other/20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/"/>
-    <id>http://yoursite.com/2019/11/14/Other/20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/</id>
+    <link href="http://yoursite.com/2019/11/14/Notes/20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/"/>
+    <id>http://yoursite.com/2019/11/14/Notes/20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/</id>
     <published>2019-11-14T08:25:23.000Z</published>
     <updated>2019-11-14T08:25:23.000Z</updated>
     
@@ -380,8 +303,8 @@
   
   <entry>
     <title>一个炒房者的思考</title>
-    <link href="http://yoursite.com/2018/10/24/Other/%E4%B8%80%E4%B8%AA%E7%82%92%E6%88%BF%E8%80%85%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>http://yoursite.com/2018/10/24/Other/%E4%B8%80%E4%B8%AA%E7%82%92%E6%88%BF%E8%80%85%E7%9A%84%E6%80%9D%E8%80%83/</id>
+    <link href="http://yoursite.com/2018/10/24/Notes/%E4%B8%80%E4%B8%AA%E7%82%92%E6%88%BF%E8%80%85%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://yoursite.com/2018/10/24/Notes/%E4%B8%80%E4%B8%AA%E7%82%92%E6%88%BF%E8%80%85%E7%9A%84%E6%80%9D%E8%80%83/</id>
     <published>2018-10-24T14:46:39.000Z</published>
     <updated>2018-10-24T14:46:39.000Z</updated>
     
@@ -426,11 +349,106 @@
   </entry>
   
   <entry>
-    <title>财富自由</title>
-    <link href="http://yoursite.com/2018/04/06/Other/%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1/"/>
-    <id>http://yoursite.com/2018/04/06/Other/%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1/</id>
-    <published>2018-04-06T06:42:50.000Z</published>
-    <updated>2018-04-06T06:42:50.000Z</updated>
+    <title>认知三部曲</title>
+    <link href="http://yoursite.com/2017/11/29/Notes/%E8%AE%A4%E7%9F%A5%E4%B8%89%E9%83%A8%E6%9B%B2/"/>
+    <id>http://yoursite.com/2017/11/29/Notes/%E8%AE%A4%E7%9F%A5%E4%B8%89%E9%83%A8%E6%9B%B2/</id>
+    <published>2017-11-29T10:04:33.000Z</published>
+    <updated>2017-11-29T10:04:33.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;认知三部曲完整版：人与人最大的差别是认知！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在今天这样一个急剧变化的时代，每一个行业的认知都在迅速更新迭代，跨界也越来越普遍。&lt;/p&gt;
+&lt;p&gt;谁能正确建立和升级认知，谁就能脱颖而出。猎豹 CEO 傅盛他将认知梳理为三部曲：成长就是认知升级；管理本质就是认知管理；战略就是格局+破局。&lt;/p&gt;
+&lt;p&gt;如认知升级：坚信大趋势，对外求教，活在当下、面向未来。认知管理：学会逆向思考，分清优先级。战略升级：建立行业格局，养成格局和破局结合的思维习惯。&lt;/p&gt;
+&lt;p&gt;我们将三部曲整合，希望能够成体系地输出有价值的内容，愿大家能够从中有所启发。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>看懂中国房地产</title>
+    <link href="http://yoursite.com/2017/11/29/Notes/%E7%9C%8B%E6%87%82%E4%B8%AD%E5%9B%BD%E6%88%BF%E5%9C%B0%E4%BA%A7/"/>
+    <id>http://yoursite.com/2017/11/29/Notes/%E7%9C%8B%E6%87%82%E4%B8%AD%E5%9B%BD%E6%88%BF%E5%9C%B0%E4%BA%A7/</id>
+    <published>2017-11-28T17:51:44.000Z</published>
+    <updated>2017-11-28T17:51:44.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/date/201711/20171129001.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>中国社会九大阶层划分</title>
+    <link href="http://yoursite.com/2017/11/28/Notes/%E4%B8%AD%E5%9B%BD%E7%A4%BE%E4%BC%9A%E4%B9%9D%E5%A4%A7%E9%98%B6%E5%B1%82%E5%88%92%E5%88%86/"/>
+    <id>http://yoursite.com/2017/11/28/Notes/%E4%B8%AD%E5%9B%BD%E7%A4%BE%E4%BC%9A%E4%B9%9D%E5%A4%A7%E9%98%B6%E5%B1%82%E5%88%92%E5%88%86/</id>
+    <published>2017-11-27T16:00:00.000Z</published>
+    <updated>2020-02-01T02:10:01.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;中国社会的人群划分为 9 个阶层，1—3 级是统治阶层，是最大的既得利益者；4-6 级属于中产阶级；7-9 级是中国社会的底层，9 级是这个社会最悲惨的阶层。&lt;/p&gt;
+&lt;p&gt;1 级：以在任委员、退休常委为代表，和 2 的区别在于，1 对全国局势有控制能力 2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Excerpt 09：20个你不知道的大脑秘密</title>
+    <link href="http://yoursite.com/2015/12/25/Article/09%EF%BC%9A20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/"/>
+    <id>http://yoursite.com/2015/12/25/Article/09%EF%BC%9A20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/</id>
+    <published>2015-12-24T16:00:00.000Z</published>
+    <updated>2021-07-23T05:51:32.250Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;尽管科学家一个接一个的科研成果让我们对记忆有了越来越多的了解，但直到今天，科学家所发现的所谓大脑的秘密也只是冰山一角，在很大程度上，大脑和记忆仍是神秘的。研究人员认为，记忆是一个过程，并且当你记忆的时候，实际上就是你把保存在大脑中零零碎碎的信息进行重建。但让人不解的是，究竟
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Article" scheme="http://yoursite.com/categories/Article/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Excerpt 08：财富自由是怎样的一种体验？</title>
+    <link href="http://yoursite.com/2015/12/18/Article/08%EF%BC%9A%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C%EF%BC%9F/"/>
+    <id>http://yoursite.com/2015/12/18/Article/08%EF%BC%9A%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C%EF%BC%9F/</id>
+    <published>2015-12-17T16:00:00.000Z</published>
+    <updated>2021-07-23T05:46:53.244Z</updated>
     
     <summary type="html">
     
@@ -447,36 +465,7 @@
     </summary>
     
     
-      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>圣斗士百科</title>
-    <link href="http://yoursite.com/2018/02/28/Other/%E5%9C%A3%E6%96%97%E5%A3%AB%E7%99%BE%E7%A7%91/"/>
-    <id>http://yoursite.com/2018/02/28/Other/%E5%9C%A3%E6%96%97%E5%A3%AB%E7%99%BE%E7%A7%91/</id>
-    <published>2018-02-27T16:00:00.000Z</published>
-    <updated>2020-03-31T05:46:26.762Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;为什么撒加及沙加十分客观理性？&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;作者：卢仕岷&lt;br&gt;摘要：一个，被称作是神化之身，一个，被公认是最接近神的男人。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;本来，我想用三个同样形式的排比句，但我发现，我所选出来的词句都那么无力，总不能
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
+      <category term="Article" scheme="http://yoursite.com/categories/Article/"/>
     
     
   </entry>
