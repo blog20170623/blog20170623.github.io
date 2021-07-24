@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-07-23T00:07:08.273Z</updated>
+  <updated>2021-07-23T12:37:18.238Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数字周刊 03</title>
+    <link href="http://yoursite.com/2021/07/25/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A03/"/>
+    <id>http://yoursite.com/2021/07/25/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A03/</id>
+    <published>2021-07-24T16:00:00.000Z</published>
+    <updated>2021-07-23T12:37:18.238Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/Github/Weekly/2021008.jpeg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-什么是“内卷化”？&quot;&gt;&lt;a href=&quot;#1-什么是“内卷化”？&quot; class=&quot;headerlink&quot; title=&quot;1.什么是“内卷化”？&quot;&gt;&lt;/a&gt;1.什么是“内卷化”？&lt;/h2&gt;&lt;p&gt;网上找到的解释：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“内卷化，指一种社会或文化模式在某一发展阶段达到一种确定的形式后，便停滞不前或无法转化为另一种高级模式的现象。”（百度百科）&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="周刊" scheme="http://yoursite.com/categories/%E5%91%A8%E5%88%8A/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>理想の生き方</title>
+    <link href="http://yoursite.com/2021/07/23/Blog/%E7%90%86%E6%83%B3%E3%81%AE%E7%94%9F%E3%81%8D%E6%96%B9/"/>
+    <id>http://yoursite.com/2021/07/23/Blog/%E7%90%86%E6%83%B3%E3%81%AE%E7%94%9F%E3%81%8D%E6%96%B9/</id>
+    <published>2021-07-22T16:00:00.000Z</published>
+    <updated>2021-07-23T01:38:19.186Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;07-23&quot;&gt;&lt;a href=&quot;#07-23&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>数字周刊 02</title>
@@ -140,25 +186,6 @@
   </entry>
   
   <entry>
-    <title>如果楼市泡沫破灭会怎么样？</title>
-    <link href="http://yoursite.com/2021/01/19/Notes/%E5%A6%82%E6%9E%9C%E6%A5%BC%E5%B8%82%E6%B3%A1%E6%B2%AB%E7%A0%B4%E7%81%AD%E4%BC%9A%E6%80%8E%E4%B9%88%E6%A0%B7%EF%BC%9F/"/>
-    <id>http://yoursite.com/2021/01/19/Notes/%E5%A6%82%E6%9E%9C%E6%A5%BC%E5%B8%82%E6%B3%A1%E6%B2%AB%E7%A0%B4%E7%81%AD%E4%BC%9A%E6%80%8E%E4%B9%88%E6%A0%B7%EF%BC%9F/</id>
-    <published>2021-01-18T16:00:00.000Z</published>
-    <updated>2021-01-19T06:54:44.673Z</updated>
-    
-    <summary type="html">
-    
-      &lt;!-- doc --&gt;
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Knowledge points</title>
     <link href="http://yoursite.com/2020/05/21/English/Knowledge/"/>
     <id>http://yoursite.com/2020/05/21/English/Knowledge/</id>
@@ -254,31 +281,6 @@
   </entry>
   
   <entry>
-    <title>20个你不知道的大脑秘密</title>
-    <link href="http://yoursite.com/2019/11/14/Notes/20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/"/>
-    <id>http://yoursite.com/2019/11/14/Notes/20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/</id>
-    <published>2019-11-14T08:25:23.000Z</published>
-    <updated>2019-11-14T08:25:23.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;尽管科学家一个接一个的科研成果让我们对记忆有了越来越多的了解，但直到今天，科学家所发现的所谓大脑的秘密也只是冰山一角，在很大程度上，大脑和记忆仍是神秘的。研究人员认为，记忆是一个过程，并且当你记忆的时候，实际上就是你把保存在大脑中零零碎碎的信息进行重建。但让人不解的是，究竟
-        
-      
-    
-    </summary>
-    
-    
-      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Django的开发流程</title>
     <link href="http://yoursite.com/2018/11/22/Blog/django/"/>
     <id>http://yoursite.com/2018/11/22/Blog/django/</id>
@@ -297,34 +299,6 @@
     
     
       <category term="IT" scheme="http://yoursite.com/categories/IT/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一个炒房者的思考</title>
-    <link href="http://yoursite.com/2018/10/24/Notes/%E4%B8%80%E4%B8%AA%E7%82%92%E6%88%BF%E8%80%85%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>http://yoursite.com/2018/10/24/Notes/%E4%B8%80%E4%B8%AA%E7%82%92%E6%88%BF%E8%80%85%E7%9A%84%E6%80%9D%E8%80%83/</id>
-    <published>2018-10-24T14:46:39.000Z</published>
-    <updated>2018-10-24T14:46:39.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;2010年的房地产预测“神贴”到底有多神?&lt;/p&gt;
-&lt;p&gt;以下是精华部分：&lt;/p&gt;
-&lt;p&gt;2010年的房地产调控，让很多人看到了希望：让房价降得再猛烈些吧。还有人更是幸灾乐祸似的呼喊：让房地产赶紧崩盘吧。让没房子的好好看看有房子的笑话，是人生的一大快事。&lt;/p&gt;
-&lt;p&gt;但是
-        
-      
-    
-    </summary>
-    
-    
-      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
     
     
   </entry>
@@ -374,30 +348,11 @@
   </entry>
   
   <entry>
-    <title>看懂中国房地产</title>
-    <link href="http://yoursite.com/2017/11/29/Notes/%E7%9C%8B%E6%87%82%E4%B8%AD%E5%9B%BD%E6%88%BF%E5%9C%B0%E4%BA%A7/"/>
-    <id>http://yoursite.com/2017/11/29/Notes/%E7%9C%8B%E6%87%82%E4%B8%AD%E5%9B%BD%E6%88%BF%E5%9C%B0%E4%BA%A7/</id>
-    <published>2017-11-28T17:51:44.000Z</published>
-    <updated>2017-11-28T17:51:44.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/date/201711/20171129001.jpg&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>中国社会九大阶层划分</title>
-    <link href="http://yoursite.com/2017/11/28/Notes/%E4%B8%AD%E5%9B%BD%E7%A4%BE%E4%BC%9A%E4%B9%9D%E5%A4%A7%E9%98%B6%E5%B1%82%E5%88%92%E5%88%86/"/>
-    <id>http://yoursite.com/2017/11/28/Notes/%E4%B8%AD%E5%9B%BD%E7%A4%BE%E4%BC%9A%E4%B9%9D%E5%A4%A7%E9%98%B6%E5%B1%82%E5%88%92%E5%88%86/</id>
-    <published>2017-11-27T16:00:00.000Z</published>
-    <updated>2020-02-01T02:10:01.000Z</updated>
+    <title>Excerpt 20：训练你的头脑到达顶尖效率的20种方法</title>
+    <link href="http://yoursite.com/2016/03/04/Article/20%EF%BC%9A%E8%AE%AD%E7%BB%83%E4%BD%A0%E7%9A%84%E5%A4%B4%E8%84%91%E5%88%B0%E8%BE%BE%E9%A1%B6%E5%B0%96%E6%95%88%E7%8E%87%E7%9A%8420%E7%A7%8D%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2016/03/04/Article/20%EF%BC%9A%E8%AE%AD%E7%BB%83%E4%BD%A0%E7%9A%84%E5%A4%B4%E8%84%91%E5%88%B0%E8%BE%BE%E9%A1%B6%E5%B0%96%E6%95%88%E7%8E%87%E7%9A%8420%E7%A7%8D%E6%96%B9%E6%B3%95/</id>
+    <published>2016-03-03T16:00:00.000Z</published>
+    <updated>2021-07-24T12:02:45.705Z</updated>
     
     <summary type="html">
     
@@ -405,33 +360,7 @@
       
         
         
-          &lt;p&gt;中国社会的人群划分为 9 个阶层，1—3 级是统治阶层，是最大的既得利益者；4-6 级属于中产阶级；7-9 级是中国社会的底层，9 级是这个社会最悲惨的阶层。&lt;/p&gt;
-&lt;p&gt;1 级：以在任委员、退休常委为代表，和 2 的区别在于，1 对全国局势有控制能力 2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://yoursite.com/categories/Other/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Excerpt 09：20个你不知道的大脑秘密</title>
-    <link href="http://yoursite.com/2015/12/25/Article/09%EF%BC%9A20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/"/>
-    <id>http://yoursite.com/2015/12/25/Article/09%EF%BC%9A20%E4%B8%AA%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E5%A4%A7%E8%84%91%E7%A7%98%E5%AF%86/</id>
-    <published>2015-12-24T16:00:00.000Z</published>
-    <updated>2021-07-23T05:51:32.250Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;尽管科学家一个接一个的科研成果让我们对记忆有了越来越多的了解，但直到今天，科学家所发现的所谓大脑的秘密也只是冰山一角，在很大程度上，大脑和记忆仍是神秘的。研究人员认为，记忆是一个过程，并且当你记忆的时候，实际上就是你把保存在大脑中零零碎碎的信息进行重建。但让人不解的是，究竟
+          &lt;a
         
       
     
@@ -444,23 +373,91 @@
   </entry>
   
   <entry>
-    <title>Excerpt 08：财富自由是怎样的一种体验？</title>
-    <link href="http://yoursite.com/2015/12/18/Article/08%EF%BC%9A%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C%EF%BC%9F/"/>
-    <id>http://yoursite.com/2015/12/18/Article/08%EF%BC%9A%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C%EF%BC%9F/</id>
-    <published>2015-12-17T16:00:00.000Z</published>
-    <updated>2021-07-23T05:46:53.244Z</updated>
+    <title>Excerpt 18：谁的青春不迷茫</title>
+    <link href="http://yoursite.com/2016/02/26/Article/18%EF%BC%9A%E8%B0%81%E7%9A%84%E9%9D%92%E6%98%A5%E4%B8%8D%E8%BF%B7%E8%8C%AB/"/>
+    <id>http://yoursite.com/2016/02/26/Article/18%EF%BC%9A%E8%B0%81%E7%9A%84%E9%9D%92%E6%98%A5%E4%B8%8D%E8%BF%B7%E8%8C%AB/</id>
+    <published>2016-02-25T16:00:00.000Z</published>
+    <updated>2021-07-24T11:54:15.908Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;财富自由是一种怎样的体验，一个人是否有钱就快乐？&quot;&gt;&lt;a href=&quot;#财富自由是一种怎样的体验，一个人是否有钱就快乐？&quot; class=&quot;headerlink&quot; title=&quot;财富自由是一种怎样的体验，一个人是否有钱就快乐？&quot;&gt;&lt;/a&gt;财富自由是一种怎样的体验，一个人是否有钱就快乐？&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;　　作 者：叶开甫&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;　　来 源：正和岛（ID：zhenghedao）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;　　胡润研究院最新的报告公布了一组“扎心”的数字：2017年北上广深的财富自由门槛已经高达2.9亿元，相比2015年提高50%。在二线城市，这个数字是1.7亿。&lt;/p&gt;
-&lt;p&gt;　　如果可以有选择，似乎没有谁会拒绝财富自由，但实现财富自由的过程显然不轻松。人们前赴后继，99%的人却无意识地坠入了种种“怪圈”。&lt;/p&gt;
-&lt;p&gt;　　某种意义上，这是一场思维与认知的较量。&lt;/p&gt;
+      
+      
+        
+        
+          &lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Article" scheme="http://yoursite.com/categories/Article/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Excerpt 19：思维之美</title>
+    <link href="http://yoursite.com/2016/02/26/Article/19%EF%BC%9A%E6%80%9D%E7%BB%B4%E4%B9%8B%E7%BE%8E/"/>
+    <id>http://yoursite.com/2016/02/26/Article/19%EF%BC%9A%E6%80%9D%E7%BB%B4%E4%B9%8B%E7%BE%8E/</id>
+    <published>2016-02-25T16:00:00.000Z</published>
+    <updated>2021-07-24T12:00:20.501Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Article" scheme="http://yoursite.com/categories/Article/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Excerpt 17：七个方法建立你的自信</title>
+    <link href="http://yoursite.com/2016/02/19/Article/17%EF%BC%9A%E4%B8%83%E4%B8%AA%E6%96%B9%E6%B3%95%E5%BB%BA%E7%AB%8B%E4%BD%A0%E7%9A%84%E8%87%AA%E4%BF%A1/"/>
+    <id>http://yoursite.com/2016/02/19/Article/17%EF%BC%9A%E4%B8%83%E4%B8%AA%E6%96%B9%E6%B3%95%E5%BB%BA%E7%AB%8B%E4%BD%A0%E7%9A%84%E8%87%AA%E4%BF%A1/</id>
+    <published>2016-02-18T16:00:00.000Z</published>
+    <updated>2021-07-24T11:48:49.421Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Article" scheme="http://yoursite.com/categories/Article/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Excerpt 16：照临专栏</title>
+    <link href="http://yoursite.com/2016/02/12/Article/16%EF%BC%9A%E5%91%8A%E8%AF%89%E4%BD%A0%EF%BC%8C%E8%AE%A9%E4%BD%A0%E7%9A%84%E7%94%9F%E5%91%BD%E6%9B%B4%E5%8A%A0%E7%BE%8E%E5%A5%BD%E7%9A%84%E7%A7%98%E5%AF%86/"/>
+    <id>http://yoursite.com/2016/02/12/Article/16%EF%BC%9A%E5%91%8A%E8%AF%89%E4%BD%A0%EF%BC%8C%E8%AE%A9%E4%BD%A0%E7%9A%84%E7%94%9F%E5%91%BD%E6%9B%B4%E5%8A%A0%E7%BE%8E%E5%A5%BD%E7%9A%84%E7%A7%98%E5%AF%86/</id>
+    <published>2016-02-11T16:00:00.000Z</published>
+    <updated>2021-07-24T11:23:24.120Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- doc --&gt;
+&lt;p&gt;&lt;sub&gt;2014.09.24&lt;/sub&gt;&lt;/p&gt;
     
     </summary>
     
