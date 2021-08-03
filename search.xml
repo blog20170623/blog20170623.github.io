@@ -7616,44 +7616,6 @@
   </entry>
   <entry>
     <title>Web知识片段</title>
-    <url>/2015/08/25/Blog/Web/</url>
-    <content><![CDATA[<!-- doc -->
-<a id="more"></a>
-<h2 id="2021-06-19"><a href="#2021-06-19" class="headerlink" title="2021.06.19"></a>2021.06.19</h2><p>如何使用Animated动画</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line"> 	</span><br><span class="line">　　$(<span class="string">"#login-box"</span>).addClass(<span class="string">"animated bounceInLeft"</span>);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="number">111</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>window.onload要等整个窗口（包括图片）都加载完才触发 执行</p>
-<p><strong>jQuery加载即执行：</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　$(<span class="string">"#name"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　　　<span class="comment">//adding your code here </span></span><br><span class="line">　　&#125;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p><strong>增加和移除一个class</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="string">".default"</span>).addClass(<span class="string">"hover_s"</span>);</span><br><span class="line">$(<span class="string">".default"</span>).removeClass(<span class="string">"default "</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="npm安装错误"><a href="#npm安装错误" class="headerlink" title="npm安装错误"></a>npm安装错误</h3><p>npm 遇到 write access 安装错误</p>
-<p>官方给出的一个解决办法是给npm的global安装位置换个地方，因为默认的安装位置是/usr/local/lib所在的文件夹，这是系统的文件夹所在地，所以可能会出现一些读写问题。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 第一步：在你的用户文件下新建一个文件夹，这个.npm-global</span><br><span class="line">mkdir ~/.npm-global</span><br><span class="line">#第二步：更改node的安装连接</span><br><span class="line">npm config set prefix &apos;~/.npm-global&apos;</span><br><span class="line">#第三步：在用户的profile下增加path，为的是系统能够找到可执行文件的目录</span><br><span class="line">vim profile</span><br><span class="line"></span><br><span class="line">export PATH=~/.npm-global/bin:$PATH</span><br><span class="line">#第四步：update profile。使其生效</span><br><span class="line">source ~/.profile</span><br></pre></td></tr></table></figure>
-<h3 id="React"><a href="#React" class="headerlink" title="React"></a>React</h3><p>元素是构成 React 应用的最小单位，它用于描述屏幕上输出的内容。</p>
-<h3 id="React-component开发"><a href="#React-component开发" class="headerlink" title="React component开发"></a>React component开发</h3><p><code>npm i --save</code> 和 <code>npm i --save-dev</code> 的使用是个规范问题。</p>
-<p><code>npm i --save</code>项目（运行时、发布到生产环境时）依赖；</p>
-<p><code>npm i --save-dev</code>工程构建（开发时、“打包”时）依赖 </p>
-<h3 id="Github搜索指南"><a href="#Github搜索指南" class="headerlink" title="Github搜索指南"></a>Github搜索指南</h3><ol>
-<li><p>搜百科大全，搜索优秀的资源。xxx awesome</p>
-</li>
-<li><p>找例子 xxx simple</p>
-</li>
-<li><p>找空项目架子 xxx starter</p>
-</li>
-<li><p>找技术教程 django tutorial </p>
-</li>
-</ol>
-<blockquote>
-<p>React组件开发，搞来搞去，还是自己的好用，别人太复杂太绕了。@06.24</p>
-</blockquote>
-<h2 id="07-01"><a href="#07-01" class="headerlink" title="07.01"></a>07.01</h2><p>弹性布局<a href="https://www.runoob.com/w3cnote/flex-grammar.html" target="_blank" rel="noopener">display:flex</a></p>
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Web知识片段</title>
     <url>/2015/08/25/Blog/Web%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<!-- doc -->
 <a id="more"></a>
@@ -7705,6 +7667,44 @@
 <p>安装之后提示 pip3 的安装目录（一般是 /homes/USERNAME/.local/bin）不在系统的环境变量里。<br>每次要先跳到安装目录里。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd .local/bin</span><br><span class="line">./pip3 -V</span><br><span class="line">./pip3 list</span><br></pre></td></tr></table></figure>
 <p>手动配置环境变量<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br><span class="line"></span><br><span class="line"># 写入以下内容</span><br><span class="line">export PATH=$PATH:</span><br><span class="line">/var/services/homes/Administrator/.local/bin</span><br><span class="line"># 保存、退出</span><br><span class="line"></span><br><span class="line"># 运行以下命令使生效</span><br><span class="line">source ~/.bash_profile</span><br><span class="line"></span><br><span class="line"># 最后可以检查一下</span><br><span class="line">echo $PATH</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Web知识片段</title>
+    <url>/2015/08/25/Blog/Web/</url>
+    <content><![CDATA[<!-- doc -->
+<a id="more"></a>
+<h2 id="2021-06-19"><a href="#2021-06-19" class="headerlink" title="2021.06.19"></a>2021.06.19</h2><p>如何使用Animated动画</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line"> 	</span><br><span class="line">　　$(<span class="string">"#login-box"</span>).addClass(<span class="string">"animated bounceInLeft"</span>);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="number">111</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>window.onload要等整个窗口（包括图片）都加载完才触发 执行</p>
+<p><strong>jQuery加载即执行：</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　$(<span class="string">"#name"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　　　<span class="comment">//adding your code here </span></span><br><span class="line">　　&#125;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p><strong>增加和移除一个class</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="string">".default"</span>).addClass(<span class="string">"hover_s"</span>);</span><br><span class="line">$(<span class="string">".default"</span>).removeClass(<span class="string">"default "</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="npm安装错误"><a href="#npm安装错误" class="headerlink" title="npm安装错误"></a>npm安装错误</h3><p>npm 遇到 write access 安装错误</p>
+<p>官方给出的一个解决办法是给npm的global安装位置换个地方，因为默认的安装位置是/usr/local/lib所在的文件夹，这是系统的文件夹所在地，所以可能会出现一些读写问题。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 第一步：在你的用户文件下新建一个文件夹，这个.npm-global</span><br><span class="line">mkdir ~/.npm-global</span><br><span class="line">#第二步：更改node的安装连接</span><br><span class="line">npm config set prefix &apos;~/.npm-global&apos;</span><br><span class="line">#第三步：在用户的profile下增加path，为的是系统能够找到可执行文件的目录</span><br><span class="line">vim profile</span><br><span class="line"></span><br><span class="line">export PATH=~/.npm-global/bin:$PATH</span><br><span class="line">#第四步：update profile。使其生效</span><br><span class="line">source ~/.profile</span><br></pre></td></tr></table></figure>
+<h3 id="React"><a href="#React" class="headerlink" title="React"></a>React</h3><p>元素是构成 React 应用的最小单位，它用于描述屏幕上输出的内容。</p>
+<h3 id="React-component开发"><a href="#React-component开发" class="headerlink" title="React component开发"></a>React component开发</h3><p><code>npm i --save</code> 和 <code>npm i --save-dev</code> 的使用是个规范问题。</p>
+<p><code>npm i --save</code>项目（运行时、发布到生产环境时）依赖；</p>
+<p><code>npm i --save-dev</code>工程构建（开发时、“打包”时）依赖 </p>
+<h3 id="Github搜索指南"><a href="#Github搜索指南" class="headerlink" title="Github搜索指南"></a>Github搜索指南</h3><ol>
+<li><p>搜百科大全，搜索优秀的资源。xxx awesome</p>
+</li>
+<li><p>找例子 xxx simple</p>
+</li>
+<li><p>找空项目架子 xxx starter</p>
+</li>
+<li><p>找技术教程 django tutorial </p>
+</li>
+</ol>
+<blockquote>
+<p>React组件开发，搞来搞去，还是自己的好用，别人太复杂太绕了。@06.24</p>
+</blockquote>
+<h2 id="07-01"><a href="#07-01" class="headerlink" title="07.01"></a>07.01</h2><p>弹性布局<a href="https://www.runoob.com/w3cnote/flex-grammar.html" target="_blank" rel="noopener">display:flex</a></p>
 ]]></content>
       <categories>
         <category>Blog</category>
