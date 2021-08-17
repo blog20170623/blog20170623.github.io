@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-08-02T08:20:21.469Z</updated>
+  <updated>2021-08-04T12:48:17.356Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数字周刊 06</title>
+    <link href="http://yoursite.com/2021/08/15/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A06/"/>
+    <id>http://yoursite.com/2021/08/15/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A06/</id>
+    <published>2021-08-14T16:00:00.000Z</published>
+    <updated>2021-08-04T12:48:17.356Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-做完你的项目"><a href="#1-做完你的项目" class="headerlink" title="1.做完你的项目"></a>1.做完你的项目</h2><p>如果要为 UNIX 哲学添加一个原则，我认为应该是：</p><blockquote><p>“做完你的项目。”</p></blockquote><p>这是我能想到的最简单、但最被忽视的软件工程准则。</p><p>大多数软件其实都没有真正完成，作者只是做出了基本功能，然后就发布了。很多软件后来不做了，也不是因为做完了，而是作者放弃了。</p><p>让我们把程序员比作木匠。你买了一把椅子，因为觉得它能满足你的需求。可是买来以后，每隔几天，木匠就会出现在你的家里，对椅子进行修改。有些变动是你想要的，有些你无所谓，还有一些变动只会让你心生反感。甚至有时候，木匠还会出错，比如木头上伸出了一些尖刺，使椅子不再可用。</p><p>你买的是椅子，而不是某种千变万化的家具，没人喜欢每天会变的椅子。</p><p>程序员也是如此，应该对软件有一个总体规划，让它有一个完整的基本功能。虽然以后可以进行维护、错误修复和安全补丁，但基本功能应该从始至终都是完整清晰的。</p><p>你不能说，因为出现了新情况，所以需要不断改变或完善它的功能。 如果一个软件一直在加功能，它就太大了，超出了你应该做的东西。你试图制造一个超出合理范围的东西，你需要画一下功能图，将过大的软件拆分成几个功能完整且合理的小软件。</p><p>总之，做完你的项目再发布。用户拿到的，应该是一个基本上做完的项目。</p><h2 id="2-Django—模型—数据查询"><a href="#2-Django—模型—数据查询" class="headerlink" title="2.Django—模型—数据查询"></a>2.Django—模型—数据查询</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">all()</span><br><span class="line"><span class="comment"># 获取所有数据，对应SQL：select * from User</span></span><br><span class="line">User.objects.all()</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">filter(**kwargs) 返回QuerySet包含与给定查找参数匹配的新查询集。</span><br><span class="line"><span class="comment">#等价sql：select * from User</span></span><br><span class="line">User.objects.filter()</span><br><span class="line"><span class="comment">#等价sql：select * from User where uname = 'admin'</span></span><br><span class="line">User.objects.filter(uname=<span class="string">'admin'</span>)</span><br><span class="line"><span class="comment">#等级sql：select * from User where uid &gt; 1 and type = 2</span></span><br><span class="line">User.objects.filter(uid__gt=<span class="number">1</span>,type=<span class="number">2</span>)</span><br><span class="line"><span class="comment">#链式调⽤，等价于User.objects.filter(uid__gt=1,type=2)</span></span><br><span class="line">User.objects.filter(uid__gt=<span class="number">1</span>).filter(type=<span class="number">2</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">exclude(**kwargs)</span><br><span class="line"><span class="comment"># 不匹配，对应SQL：select * from User where name != 'admin'</span></span><br><span class="line">User.objects.exclude(name=<span class="string">'admin'</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">order_by(*fields)</span><br><span class="line">参数是字段名，可以有多个字段名，默认是升序。</span><br><span class="line">如果要按某个字段降序，在字段名前加<span class="string">'-'</span>： <span class="string">"-uid"</span>表示按uid降序排列</span><br><span class="line"><span class="comment">#按uid升序排列 等价于 order by uid</span></span><br><span class="line"> User.objects().order_by(<span class="string">'uid'</span>)</span><br><span class="line"> <span class="comment">#按uid降序排列 等价于 order by uid desc</span></span><br><span class="line"> User.objects.order_by(<span class="string">'-uid'</span>)</span><br><span class="line"> <span class="comment">#多列排序 等价于 order by password,uid desc</span></span><br><span class="line"> User.objects.order_by(<span class="string">'password'</span>,<span class="string">'-uid'</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">values()</span><br><span class="line"><span class="comment">#返回所有字段</span></span><br><span class="line">User.objects.values()</span><br><span class="line"><span class="comment">#返回数据：</span></span><br><span class="line">[&#123;<span class="string">'uid'</span>: <span class="number">2</span>, <span class="string">'uname'</span>: <span class="string">'⼩甜甜'</span>, <span class="string">'password'</span>:</span><br><span class="line"><span class="string">'59f2443a4317918ce29ad28a14e1bdb7'</span>type<span class="string">': '</span>普通⽤户<span class="string">', '</span>regtime</span><br><span class="line"><span class="literal">None</span>, <span class="string">'ip'</span>: <span class="literal">None</span>, <span class="string">'allowed'</span>: <span class="string">'允许登录'</span>, <span class="string">'email'</span>: <span class="literal">None</span>, <span class="literal">None</span>&#125;,...]</span><br><span class="line"><span class="comment">#返回指定字段</span></span><br><span class="line">User.objects.values(<span class="string">'uname'</span>,<span class="string">'password'</span>)</span><br><span class="line">[&#123;<span class="string">'uname'</span>: <span class="string">'⼩甜甜'</span>, <span class="string">'password'</span>:</span><br><span class="line"><span class="string">'59f2443a4317918ce29ad28a14e1bdb7'</span>&#125;,...]</span><br><span class="line">reverse()</span><br><span class="line">User.objects.order_by(<span class="string">'id'</span>).reverse() 降序</span><br><span class="line">User.objects.order_by(<span class="string">'-id'</span>).reverse() 升序</span><br><span class="line">distinct()去重</span><br><span class="line">User.objects.values(<span class="string">'password'</span>).distinct()</span><br></pre></td></tr></table></figure><h2 id="3-自证预言"><a href="#3-自证预言" class="headerlink" title="3.自证预言"></a>3.自证预言</h2><p>美国社会学家罗伯特·金·莫顿提出“自证预言”之后（人会不自觉的按自我的预言来行事，最终令预言发生），这个心理学理论不断地在各个领域重现。</p><h2 id="4-Hexo-even主题"><a href="#4-Hexo-even主题" class="headerlink" title="4.Hexo-even主题"></a>4.Hexo-even主题</h2><p><a href="https://xiuxiuing.gitee.io/blog/2018/08/10/blogsetting/" target="_blank" rel="noopener">Hexo-even主题</a></p><h2 id="5-3D-封面生成器"><a href="#5-3D-封面生成器" class="headerlink" title="5.3D 封面生成器"></a>5.3D 封面生成器</h2><p><a href="https://3dbook.xyz/" target="_blank" rel="noopener">3D 封面生成器</a></p><h2 id="6-基于文件和文档的知识管理技巧"><a href="#6-基于文件和文档的知识管理技巧" class="headerlink" title="6.基于文件和文档的知识管理技巧"></a>6.基于文件和文档的知识管理技巧</h2><p><a href="https://www.williamlong.info/archives/6176.html" target="_blank" rel="noopener">基于文件和文档的知识管理技巧</a></p><h2 id="7-Yandex"><a href="#7-Yandex" class="headerlink" title="7.Yandex"></a>7.Yandex</h2><p><a href="https://yandex.com/" target="_blank" rel="noopener">Yandex</a>是一款非常好用的图片搜索网站</p><h2 id="8-好听的8首歌"><a href="#8-好听的8首歌" class="headerlink" title="8.好听的8首歌"></a>8.好听的8首歌</h2><p>《星辰大海》、《千千万万》、《错位时空》、《四季予你》、《清空》、《白月光与朱砂痣》、《夜太孤单》、《可可托海与牧羊人》</p><h2 id="9-推荐小说"><a href="#9-推荐小说" class="headerlink" title="9.推荐小说"></a>9.推荐小说</h2><p>搞笑幽默的小说：《开局地摊卖大力》、《亏成首付从游戏开始》、《最强反套路系统》</p><h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote><p>有人慌张见面、有人简单告别、有人预谋离开、有人计划重逢</p></blockquote><blockquote><p>年轻时，我犯的最大错误，就是没有及时离职。我以为我必须向公司证明自己，然后再离开，但这其实没有任何意义。你不欠雇主任何东西，不必向雇主证明任何事情。他们对你丝毫没有忠诚度，对你做对或做错、是聪明还是愚蠢，毫不在意。<strong>把时间用在你最终不会引以为豪的东西上面，是一件可怕的事情，浪费了你在地球上的短暂旅程。</strong></p></blockquote><blockquote><p>优先考虑那些优先考虑你的人 　　</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;1-做完你的项目&quot;&gt;&lt;a href=&quot;#1-做完你的项目&quot; class=&quot;headerlink&quot; title=&quot;1.做完你的项目&quot;&gt;&lt;/a&gt;1.做完你的项目&lt;/h2&gt;&lt;p&gt;如果要为 UNIX 哲学添加一个原则，我认为应该是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p
+      
+    
+    </summary>
+    
+    
+      <category term="周刊" scheme="http://yoursite.com/categories/%E5%91%A8%E5%88%8A/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>数字周刊 05</title>
@@ -452,33 +478,6 @@
       
       
         &lt;p&gt;1、我们要成功是不是要学习，那学习有两种方法，一种是摸索，一种是使用别人证明有效的方法，那你们是选择哪一种？哪一种比较有效、快速？那使用别人证明有效的方法在哪里呢？你觉得上课重不重要。课程就是给你一套成功者已经证明有效的方法，他们走过的路，在课程中总结给你们，假如你可以知道
-      
-    
-    </summary>
-    
-    
-      <category term="Article" scheme="http://yoursite.com/categories/Article/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Excerpt 22：老板必须知道的11组数据</title>
-    <link href="http://yoursite.com/2016/03/25/Article/22%EF%BC%9A%E8%80%81%E6%9D%BF%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%8411%E7%BB%84%E6%95%B0%E6%8D%AE/"/>
-    <id>http://yoursite.com/2016/03/25/Article/22%EF%BC%9A%E8%80%81%E6%9D%BF%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E7%9A%8411%E7%BB%84%E6%95%B0%E6%8D%AE/</id>
-    <published>2016-03-24T16:00:00.000Z</published>
-    <updated>2021-07-29T11:40:10.634Z</updated>
-    
-    <content type="html"><![CDATA[<p>1、老板利润：15%-20%，低于20%说明管理不力，要 调整。低于15%属于投资失败。</p><p>2、人员工资：17%-22%，高于22%需要减员增效，高 于20%需要调整。</p><p>3、材料成本：20%-25%，高于25%会亏损。</p><p>4、礼品赠品等成本：5%-10%，包括转介绍中老顾客 回馈部分。</p><p>5、年业绩：必须高于投资额的250%。即：投资100万 的店，年业绩最少做到250万。否则属于投资失误。</p><p>6、回报年限：2-4年。2年内收回投资属于经营成功， 2-4年内收回投资属于经营一般，4年以上才收回投资属 于经营失败。</p><p>7、日常再投入比例：10%，用于更新。</p><p>8、扩店或重装修间隔：大于2年，不到2年便扩店或重 装修，结局是店越开越大，债越欠越多。</p><p>9、促销频度：年2-3次，低于2次会丧失市场，高于3 次会增加经营难度。</p><p>10、一次订单率：60%-80%，不到60%需要调整，有 店格包装和门市培训。高于80%？这辈子没见过。</p><p>11、成熟店转介绍率：80%，高于80%说明推广不足， 低于80%说明</p><p>【复利的奇迹】</p><p>1、今天一次性给你10亿元；</p><p>2、今天给你1元，接下来连续30天每天都给你前一天2 倍的钱。</p><p>你选哪个？</p><p>很多人选了1，可是我告诉你，</p><p>选2的结果是21.47亿。</p><p>这题目告诉我们，不要期望一夜暴富，起点哪怕低到仅 有“1元钱”，但只要你每天努力多一点，每天进步一 点，就能创造一个意想不到的奇迹。</p><p>布什说：“我们准备干掉4百万伊拉克人和1个修单车 的。”</p><p>CNN记者：“1个修单车的？！为什么要杀死一个修单车 的？”</p><p>布什转身拍拍鲍威尔的肩膀：“看吧，我都说没有人会 关心那4百万伊拉克人吧。”</p><p>——这就是公众，他们只关心奇怪的个案。值得反思。</p><p>【无论你的月收入多少，记得分成5份】</p><p>第1份，用来做生活费；</p><p>第2份，用来交朋友，坚持一年，你的朋友圈就会为你 产生价值；</p><p>第3份，用来感恩，每月给父母、爱人送一份礼物；</p><p>第4份，用来学习，每个月买一本好书读；</p><p>第5份，用来投资，培养自己的财富意识。</p><p>西游记的5人团队分别代表了马斯诺5个层次的需求。</p><p>八戒的需求是生理，</p><p>沙僧的需求是安全，</p><p>白龙的需求是归属，</p><p>唐僧的需求是荣誉，</p><p>悟空的需求是实现自我价值。</p><p>所以他们取经的目的需求不一样，价值观不一样，所以 一路上的行为就很好理解了。</p><p>八戒偷懒、沙僧撮合、白龙无闻、唐僧哭啼、悟空拼 命。</p><p>【心态的力量】</p><p>三个工人砌墙，有人问他们在干嘛？</p><p>第一个人没好气说:”砌墙，你没看到吗？”</p><p>第二个人笑笑:”我们在盖一幢高楼。”</p><p>第三个人笑容满面:”我们正在建一座新城市。”</p><p>10年后，</p><p>第一个人仍在砌墙，</p><p>第二个人成了工程师，</p><p>而第三个人，是前两个人的老板。</p><p>同样的起点，不一样的终点，这就是心态的力量。</p><p>【伤不起的人才】</p><p>一个值8000元的人，就别讨价还价只愿付他7500元。 即使省下了500块，实际上却凉了他的心，一有更好的 机会，人家拔脚就走。</p><p>相反，痛痛快快付他10000元，他会拿出两倍的能耐为 你卖命干。</p><p>记住，宁可花两个人的钱去招一个好人，也不要用一个 人的钱去招两个差人。——这是营销。你值得学习！</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;1、老板利润：15%-20%，低于20%说明管理不力，要 调整。低于15%属于投资失败。&lt;/p&gt;
-&lt;p&gt;2、人员工资：17%-22%，高于22%需要减员增效，高 于20%需要调整。&lt;/p&gt;
-&lt;p&gt;3、材料成本：20%-25%，高于25%会亏损。&lt;/p&gt;
-&lt;p&gt;4、礼品赠品等
       
     
     </summary>
