@@ -1,6 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>数字周刊 08</title>
+    <url>/2021/08/28/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A08/</url>
+    <content><![CDATA[<p><img src="/images/Github/Weekly/2021081320u0190gsk.jpg" alt></p>
+<h2 id="1-Highcharts"><a href="#1-Highcharts" class="headerlink" title="1.Highcharts"></a>1.Highcharts</h2><p><a href="https://www.highcharts.com.cn/" target="_blank" rel="noopener">Highcharts</a> 是一个用纯 JavaScript 编写的一个图表库， 能够很简单便捷的在 Web 网站或是 Web 应用程序添加有交互性的图表，并且免费提供给个人学习、个人网站和非商业用途使用。</p>
+<p><strong>Highmaps 是一款基于 HTML5 的优秀地图组件。</strong></p>
+<p><strong>图表配置选项</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">// 全局配置，针对页面上所有图表有效</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="comment">// 全局配置，针对页面上所有图表有效</span></span></span><br><span class="line">Highcharts.setOptions(&#123;</span><br><span class="line">    chart: &#123;</span><br><span class="line">        backgroundColor: &#123;</span><br><span class="line">            linearGradient: [0, 0, 500, 500],</span><br><span class="line">            stops: [</span><br><span class="line"><span class="actionscript">                [<span class="number">0</span>, <span class="string">'rgb(255, 255, 255)'</span>],</span></span><br><span class="line"><span class="actionscript">                [<span class="number">1</span>, <span class="string">'rgb(240, 240, 255)'</span>]</span></span><br><span class="line">                ]</span><br><span class="line">        &#125;,</span><br><span class="line">        borderWidth: 2,</span><br><span class="line"><span class="actionscript">        plotBackgroundColor: <span class="string">'rgba(255, 255, 255, .9)'</span>,</span></span><br><span class="line"><span class="actionscript">        plotShadow: <span class="literal">true</span>,</span></span><br><span class="line">        plotBorderWidth: 1</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> chart1 = Highcharts.chart(<span class="string">'container'</span>, &#123;</span></span><br><span class="line">    xAxis: &#123;</span><br><span class="line"><span class="actionscript">        type: <span class="string">'datetime'</span></span></span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    series: [&#123;</span><br><span class="line">        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],</span><br><span class="line"><span class="javascript">        pointStart: <span class="built_in">Date</span>.UTC(<span class="number">2010</span>, <span class="number">0</span>, <span class="number">1</span>),</span></span><br><span class="line"><span class="actionscript">        pointInterval: <span class="number">3600</span> * <span class="number">1000</span> <span class="comment">// one hour</span></span></span><br><span class="line">    &#125;]</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> chart2 = Highcharts.chart(<span class="string">'container'</span>, &#123;</span></span><br><span class="line">    ...</span><br><span class="line">&#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>1.图表的主要组成</strong></p>
+<p><img src="/images/it/highcharts.png" alt></p>
+<ol>
+<li><p>标题（Title）<br>图表标题，包含标题和副标题（subTitle），其中副标题是非必须的。</p>
+</li>
+<li><p>坐标轴（Axis）<br>坐标轴包含x轴（xAxis）和y轴（yAxis）。通常情况下，x轴显示在图表的底部，y轴显示在图表的左侧。多个数据列可以共同使用同一个坐标轴，为了对比或区分数据，Highcharts提供了多轴的支持。</p>
+</li>
+<li><p>数据列（Series）<br>数据列即图表上一个或多个数据系列，比如曲线图中的一条曲线，柱状图中的一个柱形。</p>
+</li>
+<li><p>数据提示框（Tooltip）<br>当鼠标悬停在某点上时，以框的形式提示该点的数据，比如该点的值、数据单位等。数据提示框内提示的信息完全可以通过格式化函数动态指定。</p>
+</li>
+<li><p>图例（Legend）<br>图例是图表中用不同形状、颜色、文字等 标示不同数据列，通过点击标示可以显示或隐藏该数据列。</p>
+</li>
+<li><p>版权标签（Credits）<br>显示在图表右下方的包含链接的文字，默认是Highcharts官网地址。通过指定credits.enabled=false即可不显示该信息。</p>
+</li>
+<li><p>导出功能（Exporting）<br>通过引入 exporting.js即可增加图表导出为常见文件功能。</p>
+</li>
+<li><p>标示线（PlotLines）<br>可以在图表上增加一条标示线，比如平均值线，最高值线等。</p>
+</li>
+<li><p>标示区（PlotBands）<br>可以在图表添加不同颜色的区域带，标示出明显的范围区域。</p>
+</li>
+</ol>
+<h2 id="2-克服拖延"><a href="#2-克服拖延" class="headerlink" title="2.克服拖延"></a>2.克服拖延</h2><p>每天早上先完成一件你认为最困难的事。<strong>在采取实际行动之后，</strong>你会发现拖延时间毫无必要，因为你很可能会喜欢自己一再拖延的这项工作。</p>
+<h2 id="3-FastAI"><a href="#3-FastAI" class="headerlink" title="3.FastAI"></a>3.FastAI</h2><p><a href="https://github.com/fastai/fastbook" target="_blank" rel="noopener">FastAI</a>是一个深度学习库，这是它的教程书，介绍深度学习的基础知识，以及如何用这个库完成人工智能项目。</p>
+<h2 id="4-Muboard"><a href="#4-Muboard" class="headerlink" title="4.Muboard"></a>4.Muboard</h2><p><a href="https://github.com/susam/muboard" target="_blank" rel="noopener">一个 JS 库，在网页上展示一个可以书写数学公式的黑板。</a></p>
+<h2 id="5-编程巨星的唯一秘诀"><a href="#5-编程巨星的唯一秘诀" class="headerlink" title="5.编程巨星的唯一秘诀"></a>5.编程巨星的唯一秘诀</h2><p>只有一条真理决定了一个软件程序员的成功还是失败。</p>
+<p>由于坚持这个真理，一个资深的程序员能在一天的时间里学会一门新的编程语言，而由于不坚持这条真理，一个初级的程序员用十年时间也只能挣到一份糊口的钱、永远是来实现别人的设计、永远不够优秀而得不到晋升的机会。</p>
+<p>这条真理让你看清了差的程序员和好的程序员的不同之处，好的程序员和伟大的程序员的不同之处，伟大的程序员和能通过自己的技术创造出一个亿万美元价值的程序帝国的超级程序员的不同之处。</p>
+<p>不是什么复杂的道理，不是什么难懂的理论。不是具有什么天赋或“编程超能力“才能做到的事情。最终成为的是一个优秀的程序员还是一个很烂的程序员，这跟你的出身一点关系都没有。</p>
+<p>而真正的原因只有一个，唯一的一个：<strong>对所做的事情的理解越深，你就会做的越好。</strong></p>
+<p>超级程序员跟那些平庸的、一般的程序员比起来，对自己要做的事情的理解要深的多的多。这就是原因。</p>
+<h2 id="6-Python的文件操作"><a href="#6-Python的文件操作" class="headerlink" title="6.Python的文件操作"></a>6.Python的文件操作</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">f = open(<span class="string">'test.txt'</span>, <span class="string">'w'</span>)</span><br><span class="line"></span><br><span class="line">f.write(<span class="string">'hello world, i am here!'</span>) <span class="comment"># 文件的操作</span></span><br><span class="line"></span><br><span class="line">f.close() <span class="comment">#关闭这个文件管道。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 访问模式有很多种</span></span><br></pre></td></tr></table></figure>
+<h2 id="7-Python的面向对象"><a href="#7-Python的面向对象" class="headerlink" title="7.Python的面向对象"></a>7.Python的面向对象</h2><p>Python从设计之初就已经是一门面向对象的语言，正因为如此，在Python中创建一个类和对象是很容易的。</p>
+<p><strong>一个简单的Python类</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Employee</span>:</span></span><br><span class="line">   <span class="string">'所有员工的基类'</span></span><br><span class="line">   empCount = <span class="number">0</span></span><br><span class="line"> </span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, salary)</span>:</span></span><br><span class="line">      self.name = name</span><br><span class="line">      self.salary = salary</span><br><span class="line">      Employee.empCount += <span class="number">1</span></span><br><span class="line">   </span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">displayCount</span><span class="params">(self)</span>:</span></span><br><span class="line">     <span class="keyword">print</span> <span class="string">"Total Employee %d"</span> % Employee.empCount</span><br><span class="line"> </span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">displayEmployee</span><span class="params">(self)</span>:</span></span><br><span class="line">      <span class="keyword">print</span> <span class="string">"Name : "</span>, self.name,  <span class="string">", Salary: "</span>, self.salary</span><br></pre></td></tr></table></figure>
+<p>类的方法与普通的函数只有一个特别的区别——它们必须有一个额外的第一个参数名称, 按照惯例它的名称是 self。</p>
+<h2 id="8-不要对最熟悉的事物熟视无睹"><a href="#8-不要对最熟悉的事物熟视无睹" class="headerlink" title="8.不要对最熟悉的事物熟视无睹"></a>8.不要对最熟悉的事物熟视无睹</h2><p>什么是我们最熟悉的事物？可能就是你最容易忽略的－亲人、朋友、爱情、时间、工作、身体、信誉等等，这一切才会成就现在的你，没有了这一切，你只是一具孤家寡人，寸步难行。如果你忽略了与你最有缘的事物，那么就等于将财富从身边推开。只有利用好你身边的一切资源，才可能在生活和事业的道路上顺风顺水，更上一层楼。</p>
+<h2 id="9-不要沉迷于过去或未来而让生命从指缝溜走"><a href="#9-不要沉迷于过去或未来而让生命从指缝溜走" class="headerlink" title="9.不要沉迷于过去或未来而让生命从指缝溜走"></a>9.不要沉迷于过去或未来而让生命从指缝溜走</h2><p>脚踏实地、懂得充分利用现在的人，决不会对将来的未知生活抱太多的幻想，也不会对往日的失败或辉煌过多地追悔留恋，他们清楚同，只有珍视今天的生活，才不会使生命变得空虚，变得了无生趣。不要因为明日的海市蜃楼而践踏今日脚下的玫瑰，使得本可以建功立业的时机，悄悄远去。</p>
+<h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论　"></a>10.言论　</h2><blockquote>
+<p>新手作家追求写得聪明，专业作家追求写得清晰，大师追求引起读者灵魂的共鸣。</p>
+</blockquote>
+<blockquote>
+<p>一个人的思想就像是一座冰山，自己能意识到的只是很小一部分，其它大部分都埋在脑海深处，只有通过思考和写作，才能把它们发掘出来。 <strong>– David Perell</strong></p>
+</blockquote>
+<blockquote>
+<p>世界并不完美，人生当有不足。留些遗憾，反倒可使人清醒，催人奋进。有句话叫没有皱纹的祖母最可怕，没有遗憾的过去无法继续链接人生。对于每个人来讲，不完美是客观存在的，无须怨天尤人。在羡幕别人的同时，不妨想想，怎样才能走出误区。或善良美化；或用知识充实；或用一技之长发展……生命的可贵之处，就在于看到自己的不足这处之后，能够坦然地“自我接受”。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>周刊</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>数字周刊 07</title>
+    <url>/2021/08/21/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A07/</url>
+    <content><![CDATA[<p><img src="/images/Github/Weekly/2021020.jpg" alt></p>
+<h2 id="1-视频学习胜过读书吗？"><a href="#1-视频学习胜过读书吗？" class="headerlink" title="1.视频学习胜过读书吗？"></a>1.视频学习胜过读书吗？</h2><p>现在，网上的课程视频和讲座视频，越来越多。同样的内容，可以读书学习，也可以视频学习，大家喜欢哪一种？</p>
+<p>我比较喜欢读书，实在没耐心视频学习。</p>
+<p>书籍只要随手一翻，就知道大概的内容了，哪些章节需要重点阅读。视频行吗？不行，只能从头到尾，看完整个视频。看完才发现，10分钟的视频，只有1分钟是想听的。读书读到精彩之处，可以停下来慢慢琢磨，反复读上几遍。视频行吗？很麻烦，如果要回到10秒前，多拖几次播放轴，保证让你心情烦躁。</p>
+<p>奇怪的是，我发现， 很多人宁愿看视频，也不想读书。</p>
+<p>举例来说，我遇到过同学跟我说：老师，我想学习 React，你有好的视频教程推荐吗？你可以看文档啊，官方文档写得不错。老师，我觉得视频学起来更快，文档不好懂，看起来太慢了。</p>
+<p>我感到很困惑，明明是读书的学习效率比较高，为什么别人不这样想呢？</p>
+<p>最近，我读到一篇文章，里面有一句话，让我恍然大悟，明白了为什么人们喜欢视频学习。</p>
+<p>文章说，<strong>人类学习效率最高的方式，不是”读书 + 思考”，而是”观察 + 模仿”。</strong>前者需要较长时间的注意力投入，后者只需要短时间注意力，更符合人类的天性。</p>
+<p>我一下子就想通了，有些知识，读书读半天也不一定明白，但是亲眼看别人做一遍，马上就能懂。即使不完全懂，至少知道怎么模仿。所以才会有”百闻（文）不如一见”，人们更容易接受形象的东西，而不是抽象的文字。</p>
+<p>大部分领域的入门方式，都是”观察和模仿”，所以视频学习更有效。 对于深入学习，文字和书籍的效果可能好于视频，因为入门以后再往上走，”理解 + 思考”的作用越来越大，”观察 + 模仿”的作用越来越小。但是，大多数人需要的只是入门，成为专业工作者毕竟是少数。</p>
+<p>所以，视频学习才是初学者更好的方式，或者说，视频是大众学习的主流，读书更适用于某个主题的进阶学习。</p>
+<p>以前没条件视频学习，现在不一样了。智能手机的普及，使得以前没人拍的知识，现在都有人拍；宽带互联网的普及，又使得人们可以随时随地消费视频。我们已经进了视频学习的时代，视频网站可能是新时代的图书馆和印刷机。</p>
+<h2 id="2-offsetWidth、clientWidth和scrollWidth"><a href="#2-offsetWidth、clientWidth和scrollWidth" class="headerlink" title="2.offsetWidth、clientWidth和scrollWidth"></a>2.offsetWidth、clientWidth和scrollWidth</h2><p><a href="https://www.jianshu.com/p/2bd00720e2de" target="_blank" rel="noopener">offsetWidth、clientWidth和scrollWidth</a></p>
+<p><a href="https://segmentfault.com/a/1190000023060419" target="_blank" rel="noopener">clientWidth和offsetWidth的区别</a></p>
+<h2 id="3-Linux合并多个文件"><a href="#3-Linux合并多个文件" class="headerlink" title="3.Linux合并多个文件"></a>3.Linux合并多个文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">cat 1.txt 2.txt 3.tex &gt; all.txt</span><br><span class="line"></span><br><span class="line">cat *.txt &gt; merge.txt</span><br><span class="line"></span><br><span class="line">rm *.ts</span><br></pre></td></tr></table></figure>
+<h2 id="4-如何阻止社交网络上的傻子"><a href="#4-如何阻止社交网络上的傻子" class="headerlink" title="4.如何阻止社交网络上的傻子"></a>4.如何阻止社交网络上的傻子</h2><p>由于现在上网的门槛实在太低，导致社交网络上的傻子越来越多，据2020年第46次中国互联网络发展状况统计报告显示，受过大学本科以上教育的网民群体仅为8.8%，初中以下文化程度的网民占比高达60%。</p>
+<p>那么问题来了，正常用户在使用社交网络的时候，会发现一个问题，用户无法阻止傻子和自己互动，傻子制造的大量信息会破坏用户的网络使用体验，浪费用户的宝贵时间。</p>
+<p>我们知道，在日常生活中的社交很少会出现这种情况，那么，网络用户可以参考日常生活中的经验，在社交网络阻止傻子和自己互动。在日常生活中，如果有傻子和你互动，人们的主要应对方法是回避，没人愿意和傻子争论，那是毫无意义的事情。</p>
+<blockquote>
+<p>傻子的关注者通常也是傻子，判断出一个傻子，他的关注者可以一起屏蔽拉黑。</p>
+</blockquote>
+<h2 id="5-CSS3-filter-滤镜-属性"><a href="#5-CSS3-filter-滤镜-属性" class="headerlink" title="5.CSS3 filter(滤镜) 属性"></a>5.CSS3 filter(滤镜) 属性</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">filter</span>: <span class="selector-tag">grayscale</span>(100%);将图像转换为灰度图像。值定义转换的比例。</span><br><span class="line">	<span class="selector-tag">invert</span>(%)反转输入图像。</span><br><span class="line">	<span class="selector-tag">saturate</span>(%) 转换图像饱和度。值定义转换的比例。</span><br></pre></td></tr></table></figure>
+<h2 id="6-Gradient-Magic"><a href="#6-Gradient-Magic" class="headerlink" title="6.Gradient Magic"></a>6.Gradient Magic</h2><p><a href="https://www.gradientmagic.com/" target="_blank" rel="noopener">Gradient Magic</a>免费的、奇妙的、独特的CSS渐变色画廊</p>
+<h2 id="7-十大最佳电脑单机游戏"><a href="#7-十大最佳电脑单机游戏" class="headerlink" title="7.十大最佳电脑单机游戏"></a>7.十大最佳电脑单机游戏</h2><p>2020年选出的<a href="https://www.williamlong.info/archives/6183.html" target="_blank" rel="noopener">十大最佳电脑单机游戏</a></p>
+<h2 id="8-Dataease"><a href="#8-Dataease" class="headerlink" title="8.Dataease"></a>8.Dataease</h2><p><a href="https://github.com/dataease/dataease" target="_blank" rel="noopener">Dataease</a>一个开源的数据可视化分析工具，支持丰富的数据源连接，能够通过拖拉拽方式，快速制作图表和仪表盘。（</p>
+<h2 id="9-不要将别人认为重要的东西当做自己的人生目标"><a href="#9-不要将别人认为重要的东西当做自己的人生目标" class="headerlink" title="9.不要将别人认为重要的东西当做自己的人生目标"></a>9.不要将别人认为重要的东西当做自己的人生目标</h2><p>生活中有一种人，很在乎别人对他的看法，完全以别人的评价为行事准则。别人说好，他就按人家的想法和意思去做；别人说不好，他就会后悔、恐慌、自责、情绪低落、偃旗息鼓。他时时为别人的看法担心、害怕、烦恼、痛苦，经常掩饰自己，迎合他人，不知道自己是谁。挪威大剧作家易卜生有句名言说：“人的第一天职是什么？答案很简单：做自己。”是的，做人首先要做自己。要认清自己，把握自己的命运，实现自己的人生价值，只有这样，才真正算是自己的主人。</p>
+<h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
+<p>软件业有一句名言，感叹文档是多么重要，又是多么难写。</p>
+</blockquote>
+<blockquote>
+<p>一个人的思想就像是一座冰山，自己能意识到的只是很小一部分，其它大部分都埋在脑海深处，只有通过思考和写作，才能把它们发掘出来。</p>
+</blockquote>
+<blockquote>
+<p>位先生说梁漱溟讲过人一生要处理三种关系，最低的是人与物的关系，中级的是人与人的关系，最高级的是人与自己的关系。确实，人与自己的关系决定了我们一生的走向。所以当我们因为某个事情受到伤害，在不甘心的同时，一定要及时止损，与自己和解，不要让不甘心左右了自己。一生为不甘心买单是蠢货。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>周刊</category>
+      </categories>
+  </entry>
+  <entry>
     <title>数字周刊 06</title>
     <url>/2021/08/15/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A06/</url>
     <content><![CDATA[<h2 id="1-做完你的项目"><a href="#1-做完你的项目" class="headerlink" title="1.做完你的项目"></a>1.做完你的项目</h2><p>如果要为 UNIX 哲学添加一个原则，我认为应该是：</p>
@@ -6109,6 +6213,55 @@
       </categories>
   </entry>
   <entry>
+    <title>Excerpt 27：中国做大事的22条真言</title>
+    <url>/2016/04/29/Article/27%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%81%9A%E5%A4%A7%E4%BA%8B%E7%9A%8422%E6%9D%A1%E7%9C%9F%E8%A8%80/</url>
+    <content><![CDATA[<p>一位身价过亿的温州商人醉酒后说出在中国做大事的22条真言</p>
+<h2 id="1-坚持看CCTV-1新闻联播。"><a href="#1-坚持看CCTV-1新闻联播。" class="headerlink" title="1.坚持看CCTV-1新闻联播。"></a>1.坚持看CCTV-1新闻联播。</h2><p>要想把握经济命脉，必须关注政局，新闻联播图文并茂，有声有色，着实为中国商人的最佳晴雨表；你可以不看财经报道，也可以不看焦点访谈，如果你不是做石油和外汇的，甚至你都可以不去管类似9.11事件和中东局势。</p>
+<h2 id="2-不要轻易相信合约或合同"><a href="#2-不要轻易相信合约或合同" class="headerlink" title="2.不要轻易相信合约或合同"></a>2.不要轻易相信合约或合同</h2><p>哪怕合约让你的律师看过了，公证处公证了都不要轻易相信，甚至当你的客户把钱已经汇入你指定的账户以后你都必须确认，这笔钱你能不能拿出来，能不能动，而合约以外的涉及到利益冲突的任何口头承诺与解释你都必须当他是放屁，无论香还是臭，在对方兑现承诺以前都不要沉湎其中，更无论对方是谁，哪怕那是你交了十年的朋友甚至是和你上了床的女人都必须如此。</p>
+<h2 id="3-你自己必须守信，一诺千斤，但对不守信的人例外！！"><a href="#3-你自己必须守信，一诺千斤，但对不守信的人例外！！" class="headerlink" title="3.你自己必须守信，一诺千斤，但对不守信的人例外！！"></a>3.你自己必须守信，一诺千斤，但对不守信的人例外！！</h2><p>你确认你一定能够做到的事情你才可以承诺，但不要夸大其辞；你如果想一直做个商人，那么你必须树立自己的信誉！虽然你可以不在乎外界对你的争议甚至你也可以制造争议但你不能失去信誉，否则你就不是一个商人而是一个骗子；信誉具体包括你如果和别人约了2：00见面，那么你绝对不可以1：50以前或者2：01以后出现，如遇交通堵塞或意外事件，那你必须及时通知对方，除非你出了车祸遇到空难昏迷不醒或者已经死亡，否则你都没有理由爽约、早到太早或迟到太迟，而你的涵养则体现在对待对方不守时不守承诺的态度与包容等方面；而一旦当你确认对方是在为了利益而一再欺骗你，那么你对对方做出的一切行为都不过分，甚至你可以将计就计，反过来给他画一个饼！</p>
+<h2 id="4-你能赢得起但你可能输不起的生意最好不做！"><a href="#4-你能赢得起但你可能输不起的生意最好不做！" class="headerlink" title="4.你能赢得起但你可能输不起的生意最好不做！"></a>4.你能赢得起但你可能输不起的生意最好不做！</h2><p>在做任何生意以前，你都必须考虑清楚，如果你输了，那么你是否输得起，而不是去考虑你如果赢了会怎样怎样，输不起的事情你最好别做！而考虑输的范围时你也不要只考虑钱财方面，作为半个商人，有些东西你永远都输不起，包括你爱的女人，你的家人，你的江湖地位甚至你的信誉；所以你必须在做任何生意以前全面考虑清楚你究竟输得起输不起，如果输得起，那么OK，你去义无返顾的DO IT吧！</p>
+<h2 id="5-不要先期投入太多，给自己留够底牌"><a href="#5-不要先期投入太多，给自己留够底牌" class="headerlink" title="5.不要先期投入太多，给自己留够底牌"></a>5.不要先期投入太多，给自己留够底牌</h2><p>不要把自己手里所有的牌全部亮出来，因为牌局随时会中途停止，而对方也随时会出新的牌，不到最后关键时刻，最好不要亮出你手里最有分量的牌，最后的赢家才是真正的赢家！</p>
+<h2 id="6-天下无事不可为，但商人有所为也有所不为"><a href="#6-天下无事不可为，但商人有所为也有所不为" class="headerlink" title="6.天下无事不可为，但商人有所为也有所不为"></a>6.天下无事不可为，但商人有所为也有所不为</h2><p>《菜根潭》上有句话说的好“毋以善小而不为，毋以恶小而为之”，说的是做人的道理，而生意也是如此：“不要因为利润少就不去做，也不要因为风险小就去做”；而同样在中国，违背法律的事情可以做，但违背道义的事情则坚决不能做。</p>
+<h2 id="7-慎重选择合作伙伴"><a href="#7-慎重选择合作伙伴" class="headerlink" title="7.慎重选择合作伙伴"></a>7.慎重选择合作伙伴</h2><p>无论是团队，还是个人，很多时候我们都渴望有能够和我们一起联手打天下的黄金搭档，但亲密战友是一定要慎重慎重再慎重的选择的，慎重是对彼此而言并非只针对单方，而亲密战友一定要符合下面这些前提条件才可以成为你的亲密战友；其一，他和你一定需要在一个战壕里一起战斗过至少一年；其二，在你没有负他的前提他对你所说的每一句话他自己都能负责任；其三，他必须是个实在而且能塌实干事的人；其四，他考虑得更多的是你们之间共同的利益(无论是短期的还是长期的)，而这个共同利益高于个人利益；其五，关键时刻他没有躲开更没有出卖你或者大家在他能获得比合作利益还大的更大利益的前提下，五点缺一不可，否则彼此之间的合作不会长久。</p>
+<h2 id="8-不要在你的团队里有你家庭成员的影子"><a href="#8-不要在你的团队里有你家庭成员的影子" class="headerlink" title="8.不要在你的团队里有你家庭成员的影子"></a>8.不要在你的团队里有你家庭成员的影子</h2><p>无论是你老婆还是你父母，都不可以在以你为核心之一的商业团队里有太多插手，因为以你为核心之一的团队接受的是你，而不是你的家庭成员，在你的团队全体成员主动接受并邀请你的家庭成员成为你们团队一员以前，无论你的家庭成员是谁，有多大的本事，或者可以给你们的团队带来多大的前进帮助，都不能成为你让你的家庭成员成为团队一员的理由；而当在你团队(三人或三人以上)里的异性成员一旦与你上了床，那么你必须考虑让对方立刻离开这个团队，要么她(他)另谋高就，要么她(他)成为你的专职情人或者太太(老公)，总之，她(他)已经不能继续留在这个团队，所以在团队里不要随便考虑和异性上床或者动情。</p>
+<h2 id="9-不要与和你有利益冲突的女人上床"><a href="#9-不要与和你有利益冲突的女人上床" class="headerlink" title="9.不要与和你有利益冲突的女人上床"></a>9.不要与和你有利益冲突的女人上床</h2><p>无论谁会占谁的便宜，或者大家之间可以同时并行两种关系，都不应该与之上床，更无论这个女人有多性感，多煽情；这样的女人包括：与你有生意往来的女人，在你手下工作的女人或者是你手下与同事的家眷，甚至是管理着你的政府机构、职能部门里的女公务员，原因有二：其一，这样的女人可以让你死都不知道是怎么死的，其二你虽然是半个商人，但另一半也不是出卖肉体的男。</p>
+<h2 id="10-不要给你的女人讲你的商业细节"><a href="#10-不要给你的女人讲你的商业细节" class="headerlink" title="10.不要给你的女人讲你的商业细节"></a>10.不要给你的女人讲你的商业细节</h2><p>无论这个女人是你包了的二奶，还是你众多情人之中的一个更或者是你已经结婚多年的妻子，你都应该不和她们谈你的商业细节：第一，你谈了可能她们也不懂；第二，你谈的商业细节里面会有能让你入狱的内容；第三，那涉及到商业机密；无论你有多少信任你的女人，都不应该谈太多和你有关的商业内容；还有一个无须单列的商规就是千万不要在夜总会歌厅等色情场所给小姐和应招女郎发名片，一定要记住！</p>
+<h2 id="11-你可以行贿但不要做污点证人到法庭去举证"><a href="#11-你可以行贿但不要做污点证人到法庭去举证" class="headerlink" title="11.你可以行贿但不要做污点证人到法庭去举证"></a>11.你可以行贿但不要做污点证人到法庭去举证</h2><p>不管收受你贿赂的官员多么无耻，多么不够意思，你只可以行贿而绝不可以去做污点证人到法庭举证；除非你以后连半个商人都不想做了；而如果是你主动行贿，对方收受了而且也为你办了事情，那你更不应该由此来当做能抓住对方小辫子的罪证要挟对方继续为你顶风开绿灯，也无论对方是政府官员还是执法人员还是银行官员甚至办事人员的；最基本的，请客送礼吃饭洗桑拿甚至大到澳门游，这些感情投入都千万不要单独记小黑账，而财务账面上的处理也一定要不留痕迹。</p>
+<h2 id="12-不要偷税漏税但要学会合理避税"><a href="#12-不要偷税漏税但要学会合理避税" class="headerlink" title="12.不要偷税漏税但要学会合理避税"></a>12.不要偷税漏税但要学会合理避税</h2><p>大头小尾的发票最好别开，营业税以及附加的教育基金等你该交多少交多少，增值税你更别动脑子(记得找上家要税票正常抵扣就可以了)，除此以外关税你掂量掂量自己的分量，具体情况具体对待，企业所得税是可以全部避掉一分钱都不交的，但最好给地税点面子，少交点别一分钱都不交，交多交少你自己看着办，而个人所得税呢，视当地政府给纳税人办了多少实事是否把咱纳税人真当纳税人人看待的具体情况而造工资表吧。</p>
+<h2 id="13-你可以利用新闻记者但不要相信记者"><a href="#13-你可以利用新闻记者但不要相信记者" class="headerlink" title="13.你可以利用新闻记者但不要相信记者"></a>13.你可以利用新闻记者但不要相信记者</h2><p>你可以给记者一些钱或礼品，但你不能告诉记者很多你的底细更不能相信记者会给你保守商业秘密，甚至你不能和记者靠的太近且必须学会面对记者而设防，无论你面对是是否是漂亮风骚的女记者还是能发内参的大腕记者都如此。</p>
+<h2 id="14-不要摆大，哪怕你真的是老大"><a href="#14-不要摆大，哪怕你真的是老大" class="headerlink" title="14.不要摆大，哪怕你真的是老大"></a>14.不要摆大，哪怕你真的是老大</h2><p>切记天外有天，不要在任何场合摆大，哪怕你真的很大，而当对方是个摆大而且肤浅的人，你如果想灭掉他，那么最好随便找块砖头砸他一个跟头，然后你走你的路！但切记，这个砖头一定不是你自己的砖头，而且这个砖头最好和你自己没什么关系。</p>
+<h2 id="15-保持中立，不要卷入政治派系纷争"><a href="#15-保持中立，不要卷入政治派系纷争" class="headerlink" title="15.保持中立，不要卷入政治派系纷争"></a>15.保持中立，不要卷入政治派系纷争</h2><p>在任何派系纷争面前都应该保持中立，尤其是在政治派系纷争面前，事实证明，把商业利益的希望寄托在有派系纷争可能的任何一方面都是危险而且不明智的，在派系纷争之间，你必须冷静的保持中立。</p>
+<h2 id="16-不要太在乎金钱与利益得失"><a href="#16-不要太在乎金钱与利益得失" class="headerlink" title="16.不要太在乎金钱与利益得失"></a>16.不要太在乎金钱与利益得失</h2><p>切记有所得就有所失，而有所失就有所得的古训，钱没有了还可以再赚，天下自然有得是你赚不完的钱和商业机会，所以何妨在金钱与利益面前大度一些呢？更何况，更大的商业机会正在等着你去把握呢？基本上你应该没有时间计较一时的得失才对，哪怕你有的是时间去品茗赏色。</p>
+<h2 id="17-不要过多用金钱粉饰自己"><a href="#17-不要过多用金钱粉饰自己" class="headerlink" title="17.不要过多用金钱粉饰自己"></a>17.不要过多用金钱粉饰自己</h2><p>虽然面子对你而言很重要，但相对于你自己的人格魅力而言，有没有名车，带游泳池的别墅，高尔夫以及你的服饰，甚至发型这些都会显得微不足道；当然你可以按自己的喜欢穿一双“内联升”的布鞋，甚至可以在有时间的时候飞到异国他乡去看一场你喜欢的球队的主场或客场比赛，更甚至你可以在很多人面前抽你自己喜欢抽的劣质香烟！</p>
+<h2 id="18-资本决定发言权，但你不应该轻易让别人知道你有多大的发言权"><a href="#18-资本决定发言权，但你不应该轻易让别人知道你有多大的发言权" class="headerlink" title="18.资本决定发言权，但你不应该轻易让别人知道你有多大的发言权"></a>18.资本决定发言权，但你不应该轻易让别人知道你有多大的发言权</h2><p>关心一下你的属于你的资本和你能控制的资本是正确的，甚至你该关心的包括你的坏帐和现金收益以及现金流量，但这些不应该让太多人知道；而当你以外的获得一笔巨大财富的时候，你更应该学会别把这个消息告诉别人，包括已经和你患难很久的妻子，否则她可能会要求离婚并分割你的这笔不小的资产！记住，男人的金钱应该和女人的年龄一样永远属于秘密，哪怕有一天连女人的年龄都已经不是秘密的时候，你的金钱也应该还是秘密；除非在你临死时即将捐献你的全部家产时，你都绝对不可告诉别人！</p>
+<h2 id="19-总结别人的成败得失，但国外的案例你可以不用理会"><a href="#19-总结别人的成败得失，但国外的案例你可以不用理会" class="headerlink" title="19.总结别人的成败得失，但国外的案例你可以不用理会"></a>19.总结别人的成败得失，但国外的案例你可以不用理会</h2><p>不要羡慕别人的成功，更不要鄙夷别人的失败，你首要应该做的是学会分析和总结现象背后的本质，找出别人失败或者成功的全部原因，取其长，补其短，做你自己该做的事情；而国外类似微软等那些故事，离你实在太遥远，你大可以不去管他，所以一定意义上，现有的MBA对在中国做生意的你而言并没有多大实际意义！</p>
+<h2 id="20-不要用黑白道的规矩去解决商业上的冲突"><a href="#20-不要用黑白道的规矩去解决商业上的冲突" class="headerlink" title="20.不要用黑白道的规矩去解决商业上的冲突"></a>20.不要用黑白道的规矩去解决商业上的冲突</h2><p>商业永远是商业，而商业是有商业自身的游戏规则在的，所以哪怕你确实是黑道人物，也不能随便利用黑道规矩去解决商业冲突，同样，即将你有很好的白道背景与资源，你也不能轻易利用这些资源来解决你在商业中的冲突！既然选择了商人，那你必须遵守商业中的一切游戏规则，愿赌就得服输！</p>
+<h2 id="21-在能把握全局的前提下，不要追求事必躬亲"><a href="#21-在能把握全局的前提下，不要追求事必躬亲" class="headerlink" title="21.在能把握全局的前提下，不要追求事必躬亲"></a>21.在能把握全局的前提下，不要追求事必躬亲</h2><p>不要把自己搞的没有时间与朋友交流，更不要让自己没有时间去泡女人和INTERNET，最要紧的是不要让自己没有时间放松与思考，所以，应该学会让别人去帮你打点生意，处理业务，虽然，业务的核心部分你自己必须牢牢把握；同样，把事情交给别人去做的风险你要考虑清楚并能够预防，以免你把事情交给别人去做以后，你自己又成了一名忙碌的救火队员，记住消防和救火是有区别的，消防的口号是“消防结合，预防为主”。</p>
+<h2 id="22-给自己留条后路，预防众叛亲离你"><a href="#22-给自己留条后路，预防众叛亲离你" class="headerlink" title="22.给自己留条后路，预防众叛亲离你"></a>22.给自己留条后路，预防众叛亲离你</h2><p>可以在沉寂江湖多年以后重整旗鼓，但你不可以倒下以后就不再起来，因为你是一个男人！所以你必须给自己留一条属于你自己的后路，后路包括藏起一个存钱罐，虽然里面只有几块钱但你将来就是要靠这几块钱东山再起；后路也包括一栋法律意义上并不在你名下的房子(你可以有个地方一个人疗伤，恢复元气)，更包括一个并不经常来往的但很仗义而且你也给过他很多帮助的朋友(他可以在关键时候收留你，陪你喝酒，而这样的朋友一生中你能遇到一个也已经很幸运了)；如果实在没有后路，那么你就必须有去露宿街头沿街乞讨的心理准备，但那时候你只可以去向陌生人伸手，而绝对不要向你过去帮助过的还欠着你很多债务或者人情但装做不认识你的人低头。</p>
+]]></content>
+      <categories>
+        <category>Article</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Excerpt 26：杰出的程序员</title>
+    <url>/2016/04/22/Article/26%EF%BC%9A%E6%9D%B0%E5%87%BA%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/</url>
+    <content><![CDATA[<p>我不能算是一个很优秀的程序员，但这个问题我已经反复思考了五年了。跟大家分享一下我的看法：</p>
+<p>首先， 我认为答案绝对不是 “只要写很多年代码就好了“。我面试过不少有10年经验，代码却写的很糟糕的程序员。经验很保贵， 但只靠经验是不够的。就像下棋一样，假如你用心研究，复习，不断挑战自己，也许可以成为一名大师。但不断用懒散的方式去玩棋，下20年也只是一个”臭棋篓子“。</p>
+<p>我觉得比较有用的进步方式：</p>
+<h2 id="1-学会看代码"><a href="#1-学会看代码" class="headerlink" title="1. 学会看代码"></a>1. 学会看代码</h2><p>大多数程序员都只愿意用自己写的代码，但高手一般可以轻易调用别人写的代码。表面看上去是工作习惯不同， 但实际上是能力上的差别。看代码要比写代码难很多倍。</p>
+<p>我建议上班时多给队友们作code review，下班后试着阅读github上的开源代码。</p>
+<h2 id="2-复习"><a href="#2-复习" class="headerlink" title="2. 复习"></a>2. 复习</h2><p>程序员一般都很忙， 手上有永远也做不完的活儿。但在某些公司里， 你只是在反复做同样的事。偶尔放下手上的活儿，留下一部分时间来分析自己的弱点，更改坏习惯，看新书， 或学习新语言。</p>
+<h2 id="3-做个人项目"><a href="#3-做个人项目" class="headerlink" title="3. 做个人项目"></a>3. 做个人项目</h2><p>工作中的编程一般只能让你熟悉一部分技术， 导致漏洞的形成。这就好像你长期一个人在自己后院练习投篮， 但第一次打比赛才（在惨败中）发些原来还需要传球， 防守， 强篮板这些概念。</p>
+<p>Facebook喜欢雇佣所谓的 “full stack programmer”，就是一个人从设计，到交互，到html， css，javascript， server，sql， 架构，和数据统计都能做。成为full stack programmer最好的方式就是不断做个人项目。</p>
+<h2 id="4-问答网站"><a href="#4-问答网站" class="headerlink" title="4. 问答网站"></a>4. 问答网站</h2><p>问问题和回答问题都是很好的学习方式。 有的时候写出一个好问题， 比写出解答次问题所需要的代码还难。写问题可以帮你整理自己的思维逻辑。你可以试着每周在<a href="http://stackoverflow.com上问一个好问题或写一个好答案。" target="_blank" rel="noopener">http://stackoverflow.com上问一个好问题或写一个好答案。</a></p>
+<h2 id="5-加入一个好团队"><a href="#5-加入一个好团队" class="headerlink" title="5. 加入一个好团队"></a>5. 加入一个好团队</h2><p>最好的进步方式就是跟比自己强的人一起做事。高手都愿意聚在一起，所以很多会选择去优秀的早期创业公司。我在硅谷和创新工场创业时遇到了很多神人， 跟他们学了不少东西。</p>
+]]></content>
+      <categories>
+        <category>Article</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Excerpt 24：陈安之如何追求超级成功</title>
     <url>/2016/04/08/Article/24%EF%BC%9A%E9%99%88%E5%AE%89%E4%B9%8B%E5%A6%82%E4%BD%95%E8%BF%BD%E6%B1%82%E8%B6%85%E7%BA%A7%E6%88%90%E5%8A%9F/</url>
     <content><![CDATA[<h2 id="如何追求超级成功"><a href="#如何追求超级成功" class="headerlink" title="如何追求超级成功"></a>如何追求超级成功</h2><p>成功最重要的秘诀，就是要用已经证明有效的成功方法。你必须向成功者学习，做成功者所做的事情，了解成功者的思考模式，加以运用到自己的身上，然后再以自己的风格，创出一套自己的成功哲学和理论。<br>　　<br>你想知道那些世界级的顶尖人物，是如何透过自我操练与自我鞭策才能达到巅峰？你想知道他们成功的秘诀是什么吗？现在，让我们一起来揭开超级成功的神秘面纱。 </p>
@@ -6513,6 +6666,39 @@
       </categories>
   </entry>
   <entry>
+    <title>Excerpt 20：训练你的头脑到达顶尖效率的20种方法</title>
+    <url>/2016/03/04/Article/20%EF%BC%9A%E8%AE%AD%E7%BB%83%E4%BD%A0%E7%9A%84%E5%A4%B4%E8%84%91%E5%88%B0%E8%BE%BE%E9%A1%B6%E5%B0%96%E6%95%88%E7%8E%87%E7%9A%8420%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<a id="more"></a>
+<p>你是否感到越来越难集中注意力，或者难以进行心算？我希望你不要接受这么一种主张：随着年龄增长头脑的敏锐性必然会减弱。</p>
+<p>许多事情能够导致头脑的工作效率下降，而且我喜欢称其中一个主要的因素为“使用它或者失去它”综合症。<br>这篇文章是《我的生活巨变》的杰夫 尼克尔斯写的报告。他的使命和他的博客的关注点是帮助人们找到生命中的成功和意义。杰夫是一位有深度的作家，我鼓励你读完后去拜访他。</p>
+<p>杰夫用这份伟大的列表来帮助我们避免可怕的“使用它或者失去它”综合症，而我很高兴和大家分享它。<br>训练你的头脑到达顶尖效率的20种方法：</p>
+<p>为了保持敏锐，锻炼你的大脑是很重要的。我们思考得越少，它就会变得越迟钝。今天我们有很多重点来保持生理健康，但我们也应该关注我们的精神健康。在一生 中，我们的大脑都在持续扩张和适应受到的刺激。我们更关心我们的大脑，我们会变得跟有智慧。这里有20个训练大脑的方案。</p>
+<p>1)读一本好书。读书会激发想象力。当你读书时，你的大脑不能持续在反映画面。读书让你的头脑开始工作。我喜欢让书本带着我走。我总是有一本有时甚至三至 四本书在读!大部分书我是从图书馆里借来的，这样就不用花钱买每一本书了。这也使我能够毫无风险地广泛阅读各种书籍。</p>
+<p>2）大脑学院。视频游戏不好的一面是导致脑袋腐烂，但实际上有些也会帮助你增强思维。我喜欢大脑学院游戏。这是一款用头脑玩笑测试头脑敏锐性的合集。<br>(Big Brain Academy for the Wii.这是原文中的游戏名称，是一个Will下的游戏智力游戏，很不错的。)</p>
+<p>3）练习冥想。不要担心，我不是要在这里离开新时代的最深端。冥想的方式有很多种。对我而言，最简单的形式，冥想是花一点时间独处达到放松和集中思考的方式。它是神奇的治疗。</p>
+<p>4）获得大量的休息。缺少睡眠能够影响你吸收新信息的能力。这意味着大学里通宵达旦地补习的效率比你想象的要低得多。你的大脑需要休息，工作在其最佳效能。这可能是为什么事情总是在睡了好觉后变得更加清晰明朗。</p>
+<p>5）规律地锻炼。你难道想没一会就从跑步机上下来吗？心血管运动通过改善血液到大脑的流动从而改善大脑功能。一份研究发现体育锻炼实际上帮助扩大大脑的体积。所以，如果你想要一个更大、更好的大脑，那么就去运动吧！</p>
+<p>6）吃一顿好早餐。这不是不切实际。吃一顿好早餐确实令你有个更好的开始。你应该吃高蛋白和优质碳水化合物的的早餐。两片夹着花生牛油的全麦吐司就符合这一条了。鸡蛋同样是蛋白质的好来源。坚果、牛奶和新鲜水果都能为大脑提供良好的营养。</p>
+<p>7）积极地思考。鼓励自己。我相信积极思考会提供大脑效能和帮助避免失望。我想说你的大脑就像电脑一样，垃圾进来、垃圾出去。发现积极，鼓励人们闲逛、能够使你快乐阅读材料，做所有能够使你感觉良好的事情。这些事情将会帮助你的精神变得更有生产力。</p>
+<p>8）不断地学习。不要停止怀疑你的世界。寻找新的体验、技能和知识。想写你总是想学着去做的事并且开始去做。一份现在着名的研究表明伦敦出租车司机大脑的 确定领域比一般的市民得到更大的开发。这是由于他们需要学习懂得如何在迷宫般的城市街道上导航。我们能够运用此项挑战我们大脑的技术来增进我们的能力。</p>
+<p>9）戒酒。酒精是抑郁的原因。它降低精神功能。酒能乱性是有充分证据的。如果你想要有顶尖的精神表现，那么停止喝酒吧。另外它能观察到的作用，它也减弱人的睡眠，这是我们已经讨论过的，阻碍你清晰思考的能力。</p>
+<p>10）拥有浪漫（特别是女性）。</p>
+<p>11）打破你的例程。选择一条新路开车去工作。试着用另外一只手去写字。将一点不同的东西掺杂在一起。这将振作你的大脑因为它需要你思考更多。你不能只是自动驾驶。离开你的定式来挑战你的大脑，它将有所反应。这是使你脑浆流动的好方法。</p>
+<p>12）不要看太多电视。研究者发现在1-3岁时看太多电视会导致儿童注意力问题。让我们直面它，电视使心态麻木。从沙发上起来并离开电视机。当然，也有一 些好的教育节目给孩子和大人们，但是整体上美国人看太多电视了。如果你想要高效的精神表现就关掉电视吧。</p>
+<p>13）处理数字问题。心算而不是用计算器计算。我们许多人它是使用它或失去它。我们已经变得精神懒惰了。我们依赖工具而不是自己思考。处理和记忆数字是使大脑恢复状态的好途径。这一路上能够偿还大量股息。</p>
+<p>14）停止依靠GPS走路。记住第8条里所讲的出租车司机。用你的大脑去指出如何从点A到点B是很好的思维体操。你必须用你大脑的能力来决定空间关系来提高读地图的效率和穿梭城市。在一个陌生的地方旅行就更好了！</p>
+<p>15）唤起远久的记忆。找出老照片并且开始翻阅。这将进入你头脑中的记忆银行。图像将帮助你想起你已经忘记的东西。深入挖掘就是所有你记得的东西。如果你有别的方法来唤醒你的记忆，就像以前的信件和家庭电影，那么也尽可能得利用它们。</p>
+<p>16）创造优美的音乐。学习演奏一件乐器是超级改变你的大脑的方法。它需要你大脑的多个不同部分协调工作来创作出你想要的旋律。当然，如果你已经是一个音乐家了，你们学习一件新的东西。迫使你自己学习新技术。音乐是思想伟大的锻炼。</p>
+<p>17）说一种新语言。许多人同意学习一门新语言是使思想延伸的一种有力途径。如果你曾经尝试学习即使是几个新单词，那么你知道这会很难。当然，给大脑越难的东西越好!你有比你想象的要多得多的思维能力。让它试一下吧！</p>
+<p>18）记忆一首歌。我们很多人头脑中都储存有许多老歌，但为什么不通过学习一些新的调子来扩充我们的记忆？它将在开始的时候花费一点时间，但如果你坚持怎么做，你将发现会越来越简单。这是你的大脑恢复状态了。</p>
+<p>19）遮住你的双眼绕你的屋子走。这看起来是一种陌生的活动，但你的大脑能够处理它。一旦你试了几次，你就可能发现它很有趣和有挑战性。另外，这会应用你的记忆、运动技能和推理能力。多么好的锻炼！</p>
+<p>20）扩大你的词汇量。决定每天学习一个新单词。有许多能够帮你做这项努力的网站。你将不止扩大你的思想，而且当你在谈话中引入一个新词汇时能够使你的朋友和同事印象深刻。<br>今天就开始行动，明天将更聪明！</p>
+]]></content>
+      <categories>
+        <category>Article</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Excerpt 19：思维之美</title>
     <url>/2016/03/04/Article/19%EF%BC%9A%E6%80%9D%E7%BB%B4%E4%B9%8B%E7%BE%8E/</url>
     <content><![CDATA[<a id="more"></a>
@@ -6564,39 +6750,6 @@
 <h2 id="十四、排列组合法"><a href="#十四、排列组合法" class="headerlink" title="十四、排列组合法"></a>十四、排列组合法</h2><p>　　<br>从前有个县官判决一个犯人，起先写的判词是：情有可原，理无可恕。后来，这县官接受了贿赂，把判词颠倒了一下，成为：理无可恕，情有可原。这样一来，意思不同了，这个犯人得到了从轻发落。<br>　　<br>还有一个真实的例子：<br>　　<br>1949年新中国成立时，云南还是国民党统治区域。昆明监狱关了一批爱国民主人士。蒋介石电令把为首的解往重庆审讯。电文说他们“情有可原，罪不可 （  逃避的意思。）”当时在昆明的代总统李宗仁等人故意把电文颠倒为“罪不可，情有可原”，并根据这颠倒的电文把他们释放了。<br>　　<br>上述两例中只是把句子进行重新排列，从而产生意想不到的效果，这就叫做排列组合法。
 　　</p>
 <h2 id="十五、整思维法"><a href="#十五、整思维法" class="headerlink" title="十五、整思维法"></a>十五、整思维法</h2><p>　　<br>巴尔扎克塑像是法国雕塑大师罗丹的杰作。这塑像雕得虽好，却没有双手。原来，罗丹完成的塑像，巴尔扎克的双手是叠合在一起放在胸前的，姿态自然生动，罗丹非常满意。他连夜叫醒了一个学生来欣赏。那个学生看了，十分赞赏那双手。罗丹又叫了他的两个学生来，他俩也对塑像的双手赞叹不止。<br>　　<br>这时，罗丹一反常态，大声叫道：“手、手、手……”他突然拿起一把斧头，把塑像的双手砍掉了。三个学生惊呆了。<br>　　<br>罗丹为什么要砍掉那一双奇妙的手呢？罗丹说：“这双手太突出了！一件真正完美的艺术品，任何一部分都不应该比整体列重要，更突出……”<br>　　<br>原来，罗丹是从整体出发来衡量手的，所以叫做整体思维法</p>
-]]></content>
-      <categories>
-        <category>Article</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Excerpt 20：训练你的头脑到达顶尖效率的20种方法</title>
-    <url>/2016/03/04/Article/20%EF%BC%9A%E8%AE%AD%E7%BB%83%E4%BD%A0%E7%9A%84%E5%A4%B4%E8%84%91%E5%88%B0%E8%BE%BE%E9%A1%B6%E5%B0%96%E6%95%88%E7%8E%87%E7%9A%8420%E7%A7%8D%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<a id="more"></a>
-<p>你是否感到越来越难集中注意力，或者难以进行心算？我希望你不要接受这么一种主张：随着年龄增长头脑的敏锐性必然会减弱。</p>
-<p>许多事情能够导致头脑的工作效率下降，而且我喜欢称其中一个主要的因素为“使用它或者失去它”综合症。<br>这篇文章是《我的生活巨变》的杰夫 尼克尔斯写的报告。他的使命和他的博客的关注点是帮助人们找到生命中的成功和意义。杰夫是一位有深度的作家，我鼓励你读完后去拜访他。</p>
-<p>杰夫用这份伟大的列表来帮助我们避免可怕的“使用它或者失去它”综合症，而我很高兴和大家分享它。<br>训练你的头脑到达顶尖效率的20种方法：</p>
-<p>为了保持敏锐，锻炼你的大脑是很重要的。我们思考得越少，它就会变得越迟钝。今天我们有很多重点来保持生理健康，但我们也应该关注我们的精神健康。在一生 中，我们的大脑都在持续扩张和适应受到的刺激。我们更关心我们的大脑，我们会变得跟有智慧。这里有20个训练大脑的方案。</p>
-<p>1)读一本好书。读书会激发想象力。当你读书时，你的大脑不能持续在反映画面。读书让你的头脑开始工作。我喜欢让书本带着我走。我总是有一本有时甚至三至 四本书在读!大部分书我是从图书馆里借来的，这样就不用花钱买每一本书了。这也使我能够毫无风险地广泛阅读各种书籍。</p>
-<p>2）大脑学院。视频游戏不好的一面是导致脑袋腐烂，但实际上有些也会帮助你增强思维。我喜欢大脑学院游戏。这是一款用头脑玩笑测试头脑敏锐性的合集。<br>(Big Brain Academy for the Wii.这是原文中的游戏名称，是一个Will下的游戏智力游戏，很不错的。)</p>
-<p>3）练习冥想。不要担心，我不是要在这里离开新时代的最深端。冥想的方式有很多种。对我而言，最简单的形式，冥想是花一点时间独处达到放松和集中思考的方式。它是神奇的治疗。</p>
-<p>4）获得大量的休息。缺少睡眠能够影响你吸收新信息的能力。这意味着大学里通宵达旦地补习的效率比你想象的要低得多。你的大脑需要休息，工作在其最佳效能。这可能是为什么事情总是在睡了好觉后变得更加清晰明朗。</p>
-<p>5）规律地锻炼。你难道想没一会就从跑步机上下来吗？心血管运动通过改善血液到大脑的流动从而改善大脑功能。一份研究发现体育锻炼实际上帮助扩大大脑的体积。所以，如果你想要一个更大、更好的大脑，那么就去运动吧！</p>
-<p>6）吃一顿好早餐。这不是不切实际。吃一顿好早餐确实令你有个更好的开始。你应该吃高蛋白和优质碳水化合物的的早餐。两片夹着花生牛油的全麦吐司就符合这一条了。鸡蛋同样是蛋白质的好来源。坚果、牛奶和新鲜水果都能为大脑提供良好的营养。</p>
-<p>7）积极地思考。鼓励自己。我相信积极思考会提供大脑效能和帮助避免失望。我想说你的大脑就像电脑一样，垃圾进来、垃圾出去。发现积极，鼓励人们闲逛、能够使你快乐阅读材料，做所有能够使你感觉良好的事情。这些事情将会帮助你的精神变得更有生产力。</p>
-<p>8）不断地学习。不要停止怀疑你的世界。寻找新的体验、技能和知识。想写你总是想学着去做的事并且开始去做。一份现在着名的研究表明伦敦出租车司机大脑的 确定领域比一般的市民得到更大的开发。这是由于他们需要学习懂得如何在迷宫般的城市街道上导航。我们能够运用此项挑战我们大脑的技术来增进我们的能力。</p>
-<p>9）戒酒。酒精是抑郁的原因。它降低精神功能。酒能乱性是有充分证据的。如果你想要有顶尖的精神表现，那么停止喝酒吧。另外它能观察到的作用，它也减弱人的睡眠，这是我们已经讨论过的，阻碍你清晰思考的能力。</p>
-<p>10）拥有浪漫（特别是女性）。</p>
-<p>11）打破你的例程。选择一条新路开车去工作。试着用另外一只手去写字。将一点不同的东西掺杂在一起。这将振作你的大脑因为它需要你思考更多。你不能只是自动驾驶。离开你的定式来挑战你的大脑，它将有所反应。这是使你脑浆流动的好方法。</p>
-<p>12）不要看太多电视。研究者发现在1-3岁时看太多电视会导致儿童注意力问题。让我们直面它，电视使心态麻木。从沙发上起来并离开电视机。当然，也有一 些好的教育节目给孩子和大人们，但是整体上美国人看太多电视了。如果你想要高效的精神表现就关掉电视吧。</p>
-<p>13）处理数字问题。心算而不是用计算器计算。我们许多人它是使用它或失去它。我们已经变得精神懒惰了。我们依赖工具而不是自己思考。处理和记忆数字是使大脑恢复状态的好途径。这一路上能够偿还大量股息。</p>
-<p>14）停止依靠GPS走路。记住第8条里所讲的出租车司机。用你的大脑去指出如何从点A到点B是很好的思维体操。你必须用你大脑的能力来决定空间关系来提高读地图的效率和穿梭城市。在一个陌生的地方旅行就更好了！</p>
-<p>15）唤起远久的记忆。找出老照片并且开始翻阅。这将进入你头脑中的记忆银行。图像将帮助你想起你已经忘记的东西。深入挖掘就是所有你记得的东西。如果你有别的方法来唤醒你的记忆，就像以前的信件和家庭电影，那么也尽可能得利用它们。</p>
-<p>16）创造优美的音乐。学习演奏一件乐器是超级改变你的大脑的方法。它需要你大脑的多个不同部分协调工作来创作出你想要的旋律。当然，如果你已经是一个音乐家了，你们学习一件新的东西。迫使你自己学习新技术。音乐是思想伟大的锻炼。</p>
-<p>17）说一种新语言。许多人同意学习一门新语言是使思想延伸的一种有力途径。如果你曾经尝试学习即使是几个新单词，那么你知道这会很难。当然，给大脑越难的东西越好!你有比你想象的要多得多的思维能力。让它试一下吧！</p>
-<p>18）记忆一首歌。我们很多人头脑中都储存有许多老歌，但为什么不通过学习一些新的调子来扩充我们的记忆？它将在开始的时候花费一点时间，但如果你坚持怎么做，你将发现会越来越简单。这是你的大脑恢复状态了。</p>
-<p>19）遮住你的双眼绕你的屋子走。这看起来是一种陌生的活动，但你的大脑能够处理它。一旦你试了几次，你就可能发现它很有趣和有挑战性。另外，这会应用你的记忆、运动技能和推理能力。多么好的锻炼！</p>
-<p>20）扩大你的词汇量。决定每天学习一个新单词。有许多能够帮你做这项努力的网站。你将不止扩大你的思想，而且当你在谈话中引入一个新词汇时能够使你的朋友和同事印象深刻。<br>今天就开始行动，明天将更聪明！</p>
 ]]></content>
       <categories>
         <category>Article</category>
@@ -7653,44 +7806,6 @@
   </entry>
   <entry>
     <title>Web知识片段</title>
-    <url>/2015/08/25/Blog/Web/</url>
-    <content><![CDATA[<!-- doc -->
-<a id="more"></a>
-<h2 id="2021-06-19"><a href="#2021-06-19" class="headerlink" title="2021.06.19"></a>2021.06.19</h2><p>如何使用Animated动画</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line"> 	</span><br><span class="line">　　$(<span class="string">"#login-box"</span>).addClass(<span class="string">"animated bounceInLeft"</span>);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="number">111</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>window.onload要等整个窗口（包括图片）都加载完才触发 执行</p>
-<p><strong>jQuery加载即执行：</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　$(<span class="string">"#name"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　　　<span class="comment">//adding your code here </span></span><br><span class="line">　　&#125;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p><strong>增加和移除一个class</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="string">".default"</span>).addClass(<span class="string">"hover_s"</span>);</span><br><span class="line">$(<span class="string">".default"</span>).removeClass(<span class="string">"default "</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="npm安装错误"><a href="#npm安装错误" class="headerlink" title="npm安装错误"></a>npm安装错误</h3><p>npm 遇到 write access 安装错误</p>
-<p>官方给出的一个解决办法是给npm的global安装位置换个地方，因为默认的安装位置是/usr/local/lib所在的文件夹，这是系统的文件夹所在地，所以可能会出现一些读写问题。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 第一步：在你的用户文件下新建一个文件夹，这个.npm-global</span><br><span class="line">mkdir ~/.npm-global</span><br><span class="line">#第二步：更改node的安装连接</span><br><span class="line">npm config set prefix &apos;~/.npm-global&apos;</span><br><span class="line">#第三步：在用户的profile下增加path，为的是系统能够找到可执行文件的目录</span><br><span class="line">vim profile</span><br><span class="line"></span><br><span class="line">export PATH=~/.npm-global/bin:$PATH</span><br><span class="line">#第四步：update profile。使其生效</span><br><span class="line">source ~/.profile</span><br></pre></td></tr></table></figure>
-<h3 id="React"><a href="#React" class="headerlink" title="React"></a>React</h3><p>元素是构成 React 应用的最小单位，它用于描述屏幕上输出的内容。</p>
-<h3 id="React-component开发"><a href="#React-component开发" class="headerlink" title="React component开发"></a>React component开发</h3><p><code>npm i --save</code> 和 <code>npm i --save-dev</code> 的使用是个规范问题。</p>
-<p><code>npm i --save</code>项目（运行时、发布到生产环境时）依赖；</p>
-<p><code>npm i --save-dev</code>工程构建（开发时、“打包”时）依赖 </p>
-<h3 id="Github搜索指南"><a href="#Github搜索指南" class="headerlink" title="Github搜索指南"></a>Github搜索指南</h3><ol>
-<li><p>搜百科大全，搜索优秀的资源。xxx awesome</p>
-</li>
-<li><p>找例子 xxx simple</p>
-</li>
-<li><p>找空项目架子 xxx starter</p>
-</li>
-<li><p>找技术教程 django tutorial </p>
-</li>
-</ol>
-<blockquote>
-<p>React组件开发，搞来搞去，还是自己的好用，别人太复杂太绕了。@06.24</p>
-</blockquote>
-<h2 id="07-01"><a href="#07-01" class="headerlink" title="07.01"></a>07.01</h2><p>弹性布局<a href="https://www.runoob.com/w3cnote/flex-grammar.html" target="_blank" rel="noopener">display:flex</a></p>
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Web知识片段</title>
     <url>/2015/08/25/Blog/Web%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<!-- doc -->
 <a id="more"></a>
@@ -7742,6 +7857,44 @@
 <p>安装之后提示 pip3 的安装目录（一般是 /homes/USERNAME/.local/bin）不在系统的环境变量里。<br>每次要先跳到安装目录里。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd .local/bin</span><br><span class="line">./pip3 -V</span><br><span class="line">./pip3 list</span><br></pre></td></tr></table></figure>
 <p>手动配置环境变量<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br><span class="line"></span><br><span class="line"># 写入以下内容</span><br><span class="line">export PATH=$PATH:</span><br><span class="line">/var/services/homes/Administrator/.local/bin</span><br><span class="line"># 保存、退出</span><br><span class="line"></span><br><span class="line"># 运行以下命令使生效</span><br><span class="line">source ~/.bash_profile</span><br><span class="line"></span><br><span class="line"># 最后可以检查一下</span><br><span class="line">echo $PATH</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Web知识片段</title>
+    <url>/2015/08/25/Blog/Web/</url>
+    <content><![CDATA[<!-- doc -->
+<a id="more"></a>
+<h2 id="2021-06-19"><a href="#2021-06-19" class="headerlink" title="2021.06.19"></a>2021.06.19</h2><p>如何使用Animated动画</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line"> 	</span><br><span class="line">　　$(<span class="string">"#login-box"</span>).addClass(<span class="string">"animated bounceInLeft"</span>);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="number">111</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>window.onload要等整个窗口（包括图片）都加载完才触发 执行</p>
+<p><strong>jQuery加载即执行：</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　$(<span class="string">"#name"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　　　<span class="comment">//adding your code here </span></span><br><span class="line">　　&#125;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p><strong>增加和移除一个class</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="string">".default"</span>).addClass(<span class="string">"hover_s"</span>);</span><br><span class="line">$(<span class="string">".default"</span>).removeClass(<span class="string">"default "</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="npm安装错误"><a href="#npm安装错误" class="headerlink" title="npm安装错误"></a>npm安装错误</h3><p>npm 遇到 write access 安装错误</p>
+<p>官方给出的一个解决办法是给npm的global安装位置换个地方，因为默认的安装位置是/usr/local/lib所在的文件夹，这是系统的文件夹所在地，所以可能会出现一些读写问题。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 第一步：在你的用户文件下新建一个文件夹，这个.npm-global</span><br><span class="line">mkdir ~/.npm-global</span><br><span class="line">#第二步：更改node的安装连接</span><br><span class="line">npm config set prefix &apos;~/.npm-global&apos;</span><br><span class="line">#第三步：在用户的profile下增加path，为的是系统能够找到可执行文件的目录</span><br><span class="line">vim profile</span><br><span class="line"></span><br><span class="line">export PATH=~/.npm-global/bin:$PATH</span><br><span class="line">#第四步：update profile。使其生效</span><br><span class="line">source ~/.profile</span><br></pre></td></tr></table></figure>
+<h3 id="React"><a href="#React" class="headerlink" title="React"></a>React</h3><p>元素是构成 React 应用的最小单位，它用于描述屏幕上输出的内容。</p>
+<h3 id="React-component开发"><a href="#React-component开发" class="headerlink" title="React component开发"></a>React component开发</h3><p><code>npm i --save</code> 和 <code>npm i --save-dev</code> 的使用是个规范问题。</p>
+<p><code>npm i --save</code>项目（运行时、发布到生产环境时）依赖；</p>
+<p><code>npm i --save-dev</code>工程构建（开发时、“打包”时）依赖 </p>
+<h3 id="Github搜索指南"><a href="#Github搜索指南" class="headerlink" title="Github搜索指南"></a>Github搜索指南</h3><ol>
+<li><p>搜百科大全，搜索优秀的资源。xxx awesome</p>
+</li>
+<li><p>找例子 xxx simple</p>
+</li>
+<li><p>找空项目架子 xxx starter</p>
+</li>
+<li><p>找技术教程 django tutorial </p>
+</li>
+</ol>
+<blockquote>
+<p>React组件开发，搞来搞去，还是自己的好用，别人太复杂太绕了。@06.24</p>
+</blockquote>
+<h2 id="07-01"><a href="#07-01" class="headerlink" title="07.01"></a>07.01</h2><p>弹性布局<a href="https://www.runoob.com/w3cnote/flex-grammar.html" target="_blank" rel="noopener">display:flex</a></p>
 ]]></content>
       <categories>
         <category>Blog</category>
