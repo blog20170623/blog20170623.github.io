@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>数字周刊 14</title>
-    <url>/2021/09/18/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A14/</url>
+    <title>数字周刊 15</title>
+    <url>/2021/09/19/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A15/</url>
     <content><![CDATA[<p><img src="/images/Github/Weekly/2021030.jpeg" alt></p>
 <a id="more"></a>
-<blockquote>
-<p>一件事只做到20%的时候先不要着急奖励自己。</p>
-</blockquote>
 <h2 id="1-关于json一些操作"><a href="#1-关于json一些操作" class="headerlink" title="1.关于json一些操作"></a>1.关于json一些操作</h2><p>在javascript中字符串转换json格式：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> data = <span class="built_in">JSON</span>.parse(str);</span><br></pre></td></tr></table></figure>
 <p>改变json数据中键值：</p>
@@ -16,27 +13,296 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> mydata = [];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; data.length; i++) &#123;</span><br><span class="line">mydata.push(data[i][<span class="string">'fields'</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><a href="https://www.json.cn/#" target="_blank" rel="noopener">json格式化转化</a></p>
 <h2 id="2-div、css基础知识"><a href="#2-div、css基础知识" class="headerlink" title="2.div、css基础知识"></a>2.div、css基础知识</h2><p><a href="http://www.divcss5.com/rumen/r119.shtml" target="_blank" rel="noopener">DIVCSS5</a>致力于成为中小站长与DIV+CSS网页布局开发制作技术人员的CSS学习平台，并提供有意义的div css教程、CSS培训、css+div资源、css div信息(模板特效模块资源)等。</p>
-<h2 id="3-成语"><a href="#3-成语" class="headerlink" title="3.成语"></a>3.成语</h2><p><strong>野鸟入庙：</strong>野鸟飞入太庙。旧指国家败亡的征兆。</p>
-<h2 id="4-HTML5-Canvas炫酷背景动画特效"><a href="#4-HTML5-Canvas炫酷背景动画特效" class="headerlink" title="4.HTML5 Canvas炫酷背景动画特效"></a>4.HTML5 Canvas炫酷背景动画特效</h2><p><img src="https://www.helloweba.net/attachments/contimg/2019/canvasbackground-1.jpg" alt></p>
+<h2 id="3-js数组与字符串的相互转换方法"><a href="#3-js数组与字符串的相互转换方法" class="headerlink" title="3.js数组与字符串的相互转换方法"></a>3.js数组与字符串的相互转换方法</h2><p>1、数组转字符串<br>需要将数组元素用某个字符连接成字符串，示例代码如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a, b;</span><br><span class="line">a = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>);</span><br><span class="line">b = a.join(<span class="string">"-"</span>);      <span class="comment">//"0-1-2-3-4"</span></span><br></pre></td></tr></table></figure>
+<p>2、字符串转数组</p>
+<p>实现方法为将字符串按某个字符切割成若干个字符串，并以数组形式返回，示例代码如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">"abc,abcd,aaa"</span>;</span><br><span class="line">ss = s.split(<span class="string">","</span>);<span class="comment">// 在每个逗号(,)处进行分解  ["abc", "abcd", "aaa"]</span></span><br><span class="line"><span class="keyword">var</span> s1 = <span class="string">"helloworld"</span>;</span><br><span class="line">ss1 = s1.split(<span class="string">''</span>);  <span class="comment">//["h", "e", "l", "l", "o", "w", "o", "r", "l", "d"]</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-Hexo部署Github"><a href="#4-Hexo部署Github" class="headerlink" title="4.Hexo部署Github"></a>4.Hexo部署Github</h2><h3 id="错误：fatal-unable-to-access"><a href="#错误：fatal-unable-to-access" class="headerlink" title="错误：fatal: unable to access"></a>错误：fatal: unable to access</h3><p>fatal: unable to access ‘<a href="https://github.com/blog20170623/blog20170623.github.io/&#39;" target="_blank" rel="noopener">https://github.com/blog20170623/blog20170623.github.io/&#39;</a>: LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443</p>
+<p>这个问题就是SSH Key需要重新更新了。</p>
+<p>打开.ssh使用 ssh-keygen 生成密钥，然后一直回车</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<p>密钥生成成功</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Your identification has been saved in /home/you/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /home/you/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">…………………此处是密钥内容…………………… your_email@example.com</span><br></pre></td></tr></table></figure>
+<p>在 chengjianhua.github.io 的首页菜单栏中点击 Settings –&gt; Deploy keys –&gt; Add deploy key，然后将生成的 id_rsa.pub 中的内容全选(全部)复制到 key 输入框中，然后点击 Add key 完成添加公钥。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>检查配置是否成功</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>如果出现以下内容即表示配置完成并且成功！<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">Hi username! You&apos;ve successfully authenticated, but GitHub does not</span><br><span class="line">provide shell access.</span><br></pre></td></tr></table></figure></p>
+<p>hexo 的配置文件  <em>config.yml  中的 deploy 属性。</em></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:username/username.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>出现了这个错误之后，百度谷歌之后，有很多文章描述这种错误的，其他方法我并没有试一试，写的并不清楚，我只找到我能够看得懂试，发现完全有用。</p>
+</blockquote>
+<h2 id="5-HTML5-Canvas炫酷背景动画特效"><a href="#5-HTML5-Canvas炫酷背景动画特效" class="headerlink" title="5.HTML5 Canvas炫酷背景动画特效"></a>5.HTML5 Canvas炫酷背景动画特效</h2><p><img src="https://www.helloweba.net/attachments/contimg/2019/canvasbackground-1.jpg" alt></p>
 <p><a href="https://www.helloweba.net/demo/2019/canvasBackground/" target="_blank" rel="noopener">demo演示</a></p>
-<h2 id="5-Django将queryset转为json对象"><a href="#5-Django将queryset转为json对象" class="headerlink" title="5.Django将queryset转为json对象"></a>5.Django将queryset转为json对象</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> django.core <span class="keyword">import</span> serializers</span><br><span class="line"></span><br><span class="line">data = WeekPost.objects.all()</span><br><span class="line">week = serializers.serialize(<span class="string">"json"</span>,data)</span><br></pre></td></tr></table></figure>
+<h2 id="6-Django将queryset转为json对象"><a href="#6-Django将queryset转为json对象" class="headerlink" title="6.Django将queryset转为json对象"></a>6.Django将queryset转为json对象</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> django.core <span class="keyword">import</span> serializers</span><br><span class="line"></span><br><span class="line">data = WeekPost.objects.all()</span><br><span class="line">week = serializers.serialize(<span class="string">"json"</span>,data)</span><br></pre></td></tr></table></figure>
 <p><img src="https://images2018.cnblogs.com/blog/1119873/201807/1119873-20180720163154903-1740963439.png" alt></p>
-<h2 id="6-使用Animated动画"><a href="#6-使用Animated动画" class="headerlink" title="6.使用Animated动画"></a>6.使用Animated动画</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line"> 	</span><br><span class="line">　　$(<span class="string">"#login-box"</span>).addClass(<span class="string">"animated bounceInLeft"</span>);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="number">111</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="7-使用Animated动画"><a href="#7-使用Animated动画" class="headerlink" title="7.使用Animated动画"></a>7.使用Animated动画</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line"> 	</span><br><span class="line">　　$(<span class="string">"#login-box"</span>).addClass(<span class="string">"animated bounceInLeft"</span>);</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="number">111</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>window.onload要等整个窗口（包括图片）都加载完才触发 执行</p>
 <p><strong>jQuery加载即执行：</strong></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　$(<span class="string">"#name"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line">　　　　<span class="comment">//adding your code here </span></span><br><span class="line">　　&#125;); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p><strong>增加和移除一个class</strong></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="string">".default"</span>).addClass(<span class="string">"hover_s"</span>);</span><br><span class="line">$(<span class="string">".default"</span>).removeClass(<span class="string">"default "</span>);</span><br></pre></td></tr></table></figure>
-<h2 id="7-Mac电脑MySQL安装和登录"><a href="#7-Mac电脑MySQL安装和登录" class="headerlink" title="7.Mac电脑MySQL安装和登录"></a>7.Mac电脑MySQL安装和登录</h2><p>在macbookpro 上安装<a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">mysql</a></p>
+<h2 id="8-Mac电脑MySQL安装和登录"><a href="#8-Mac电脑MySQL安装和登录" class="headerlink" title="8.Mac电脑MySQL安装和登录"></a>8.Mac电脑MySQL安装和登录</h2><p>在macbookpro 上安装<a href="https://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">mysql</a></p>
 <p>登陆mysql</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">alias mysql=/usr/local/mysql/bin/mysql</span><br><span class="line"></span><br><span class="line">mysql -u root -p</span><br></pre></td></tr></table></figure>
 <p>这种方式只能临时有效</p>
-<h2 id="8-Django的数据传入js中"><a href="#8-Django的数据传入js中" class="headerlink" title="8.Django的数据传入js中"></a>8.Django的数据传入js中</h2><p>我是先把数据传入Html标签中，然后通过document获取元素，把字符串数据转化成json传入js里面的。</p>
+<h2 id="9-Django的数据传入js中"><a href="#9-Django的数据传入js中" class="headerlink" title="9.Django的数据传入js中"></a>9.Django的数据传入js中</h2><p>我是先把数据传入Html标签中，然后通过document获取元素，把字符串数据转化成json传入js里面的。</p>
 <p>没有使用ajax</p>
-<h2 id="9-innerHTML、innerText、textContent"><a href="#9-innerHTML、innerText、textContent" class="headerlink" title="9.innerHTML、innerText、textContent"></a>9.innerHTML、innerText、textContent</h2><p>innerHTML 可获取标签中的所有的内容，包括标签、空格、文本、换行等。</p>
-<p>innerText此方法获取标签(及其子标签)中的所有文本，不会获取标签（或者说可以过滤掉所有的标签）。如果有多个空格或者是换行，解析为一个空格。</p>
-<p>如果想要清空标签的内容，innerText = “”；即可</p>
-<p>textContent来获取标签中的内容。但是textContent在过滤掉标签时，会保留标签结构。</p>
+<h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
+<p>如果你有足够的权，一切的规则都是为你服务的；如果你有足够的钱，任何规则都可以变通的；如果你既没有钱又没有权，所有规则是为你定制的。</p>
+</blockquote>
+<blockquote>
+<p>很多人结婚后能白首不相离的秘诀是：结婚后生儿育女，工作赚钱还房贷，送孩子上幼儿园，上学，上各种学习班，双方父母中有人生病了还得去照顾，这样的家庭生活就像一团乱麻的烂摊子，两个人应付都得焦头烂额，一个人根本应付不了，这种情况下还想离婚？做梦去吧…</p>
+</blockquote>
+<blockquote>
+<p>光是聪明还不够的，还应该有足够的聪明以避免过分聪明。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>周刊</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>数字周刊 14</title>
+    <url>/2021/09/18/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A14/</url>
+    <content><![CDATA[<p><img src="/images/Github/Weekly/2021032.png" alt></p>
+<a id="more"></a>
+<blockquote>
+<p>鲁迅先生说：“人一旦悟透了 就变得很沉默 不是没有了与人相处的能力 而是没有了与人逢场作戏的兴趣 。”</p>
+</blockquote>
+<h2 id="1-TED演讲：如何在六个月内掌握一门外语"><a href="#1-TED演讲：如何在六个月内掌握一门外语" class="headerlink" title="1.TED演讲：如何在六个月内掌握一门外语"></a>1.TED演讲：如何在六个月内掌握一门外语</h2><p>人类会记住和自己重要关联的事物。背单词为什么不理想，是因为没有建立起重要关联。</p>
+<p>如何帮助一个人快速、简单和有效地学习一门语言？</p>
+<p>第一个原则：对你自己有重要关联的单词开始学习。</p>
+<p>学任何语言就和学车一样，背单词学语法就和学了半年的发动机原理，而驾驶车只有半个小时而已，你肯定是不会坐这样人的车的。</p>
+<p>第二个原则：把新的语言当成重要的沟通工具去用</p>
+<blockquote>
+<p>只要会，就要用</p>
+</blockquote>
+<p>第三个原则：当你先理解沟通的含义，你会下意识获取语言的内容（可明白输入学习）</p>
+<p>第四个原则：学外语是训练生理的一个过程</p>
+<p>第五个原则：轻松好奇+忍耐歧义（不认识的单词）</p>
+<p>行动1:大量的去听</p>
+<p>行动2:注意力先放在理解含义</p>
+<p>行动3:混合已经会的，创造去用</p>
+<p>行动4:从核心高频词汇入手</p>
+<p>行动5:找一个语言家长</p>
+<p>行动6:模仿母语者的面部发音</p>
+<p>行动7:外语身音直接连接画面和感觉</p>
+<h2 id="2-阅读英文原版书籍"><a href="#2-阅读英文原版书籍" class="headerlink" title="2.阅读英文原版书籍"></a>2.阅读英文原版书籍</h2><p>对于绝大多数专业的研究生而言，是无可回避的问题。毕竟很多教材只有英文版，论文也多是英文杂志或者常常追本溯源到某篇英文原典。</p>
+<p>阅读原版书籍是大有裨益的。一来原版教材实在是太好读了，二来原版教材真正能铺平高阶英文研修之路，第三，难道你还没有发现这个社会几乎任何文明职业都很难完全离开英文吗？</p>
+<p>为什么原版教材好读？</p>
+<p>相信大家都曾经在英文马马虎虎的时候，被英文小说或者杂志等等这些阅读题常见来源给惊吓到。这种生活中的片段截取英文是最难的，一来是词汇量范围难以琢磨，二来是各种定语倒装等现象层出不穷，三来往往有点俚语夹杂甚至是特定作者的原创词句。</p>
+<p>而这恼人的三大英文难点，教材几乎统统没有！！！</p>
+<p>关于词汇量</p>
+<p>英文教材的目标是什么？把一个学术知识点说清楚对吧？往往一个单元一个小节内反复出现同样几个核心学术词汇，词汇量范围在十几页的范围内极窄。简直是背单词的神器啊~你想想，一个angular momentum（角动量）在一页纸上出现10次，一个单元出现200次，你会记不住？你简直要忘~！不！掉！！！没错，英文原版教材就是背单词神器，各种高端单词瞬间就记下来了。如果你要考GRE出国，恭喜你，你已经在开始准备GRE前牢牢掌握一半了。</p>
+<p>关于语法</p>
+<p>教材就是用来让人无歧义地看懂的文字，所以英文教材选用的语法，都是特别中规中矩的！！！教材涉及到要让很多人阅读，来自不同的地域甚至有不同的语法特点，于是教材只能选用最标准的定式英语。新加坡英语有新加坡语法，但是新加坡的英文教材只会有标准语法。通过原版教材学好标准语法之后，进阶灵活的口语语法就顺风顺水了。</p>
+<p>关于俚语</p>
+<p>如果某人是第一次听老外说grab a chow 或者drive me banana这种俚语的话，很可能两眼一黑。确实俚语繁多而无规律，但英文教材可不会这样，它为了避免歧义以及保证严肃性，几乎不可能出现俚语。而这就意味着，你可以集中精力在学术内容上，而不是去记那些一年才会碰到一次的俚语（对于这种小概率用到的东西，其实人真的遗忘率很高）。</p>
+<p><strong>综上所述，当你开始读一本英文原版教材的时候，体验大致是这样的：</strong></p>
+<p>①新单元第一页会觉得有点难，有几个新单词，需要查查字典。</p>
+<p>②唉呀我去，怎么老是这几个单词！？而且反复高频出现，让人再也忘不掉这个单词的意思，甚至在标准定式的语法表达下，已经开始用英文在思维了，中文不再经常跳出来烦你了。</p>
+<p>③开始理解这个知识点的意义了，而且是在英文环境中理解知识点。你不但学术长进了，还锻炼了英文能力。</p>
+<p>④反复按步骤①到③循环，读完了整本教材，发现其实英文教材只是厚，但是挺好读的。于是以后慢慢开始读越来越多的英文原版教材。</p>
+<p>⑤英文教材读够十本的时候，你发现忽然再去看英文的小说啦、报纸啦、美剧啦等等，其实都只是在规范英语下作一点小修正。而此时的你再也不害怕英文了，仅仅需要在一个相对high level的词汇和语法水平下对俚语或特殊用法补缺补漏而已。</p>
+<p>这种对英语和专业知识一箭双雕的乐事，只有阅读英文原版教材才能够获得。自从我大二在香港科技大学交换的时候开始阅读原版教材，就颇有相见恨晚之感，以致后来能找到原版教材几乎不会碰中文版，英文水平也随之提升不少。学英语是件循序渐进的事情，阅读英文原版教材可以作为高阶进阶的起点，以此为基础再去攻克之前说到的英文小说或者杂志这样的传统难点，也会觉得已经不再是难点。</p>
+<p>所以，其实世界上哪有什么《如何阅读英文原版教材》这种指导文章？你看，或不看，原版教材就在那里，只增不减。相信我，无论你是大一大二还是研究生，只要勇敢开始，就会发现没有那么难，英文和专业水平相得益彰，绝对收获满满。而世界图书出版社为国内引进了大量影印版教材，价格适中，相信找到一本合适的并非难事。</p>
+<p>倘若非要回答‌‌“本科生如何阅读英文原版教材‌‌”这种问题的话，那无疑是——只要读起来！</p>
+<p>意识到读原版教材的重要性才是最关键的事，接下来只要开始读，步骤①到⑤就将水到渠成依次发生。不信？不信你试试！！</p>
+<h2 id="3-陈述句型"><a href="#3-陈述句型" class="headerlink" title="3.陈述句型"></a>3.陈述句型</h2><p>20.当你想陈述自己的情况和观点的时候</p>
+<p>I’m(not) +形容词/名词</p>
+<blockquote>
+<p>I’m good at dancing<br>我擅长跳舞</p>
+</blockquote>
+<blockquote>
+<p>I’m not a big fan of surfing<br>我不喜欢冲浪</p>
+</blockquote>
+<p>21.当你想表达“我正在做…”的时候，可以用：</p>
+<p>I‘m(not)+动词ing</p>
+<blockquote>
+<p>I’m trying to fix my bicycle<br>我正在尝试修理我的自行车</p>
+</blockquote>
+<p>22.我在…（地点）</p>
+<p>I‘m(not)+介词</p>
+<blockquote>
+<p>I’m in the hospital now<br>我现在在医院里</p>
+</blockquote>
+<p>23.我想要/需要…</p>
+<p>I want/need…</p>
+<blockquote>
+<p>I want to turn off the heater<br>我想要关掉暖气</p>
+</blockquote>
+<blockquote>
+<p>I need a piece of paper<br>我需要一张纸</p>
+</blockquote>
+<p>24.我将要…</p>
+<blockquote>
+<p>I will + 动词<br>I’ll let you know。我会让你知道的</p>
+</blockquote>
+<p>25.我有…</p>
+<p>I have/had</p>
+<blockquote>
+<p>I have acute cat<br>我有一只可爱的猫</p>
+</blockquote>
+<p>26.我（以前）做过…</p>
+<p>I+动词（过去式）…</p>
+<blockquote>
+<p>I went to the grocery store yesterday<br>我昨天去逛超市了</p>
+</blockquote>
+<p>27.让我（们）来…</p>
+<p>Let me/us …</p>
+<blockquote>
+<p>Let me show you the pictures<br>让我给你看看这些图片</p>
+</blockquote>
+<p>28.你看起来…</p>
+<p>You seem…</p>
+<blockquote>
+<p>You seem upset<br>你看起来不太开心啊！</p>
+</blockquote>
+<p>29.你应该…</p>
+<p>You should…</p>
+<blockquote>
+<p>You should arrive there by 8 o’clock<br>你应该在8点之前到哪里。</p>
+</blockquote>
+<p>30.你其实可以…</p>
+<p>You could have done…</p>
+<blockquote>
+<p>You could have kept that marker<br>你其实可以留下那只马克笔</p>
+</blockquote>
+<p>31.你最好…</p>
+<p>You’d better…</p>
+<blockquote>
+<p>You’d better get up earlier tomorrow.<br>你明天最好早点儿起床</p>
+</blockquote>
+<p>32.你可以…</p>
+<p>You can …</p>
+<blockquote>
+<p>You can take thsi bus to City Hall<br>你可以做这趟车去市政厅</p>
+</blockquote>
+<p>33.这是…</p>
+<blockquote>
+<p>This is the best cafe in town</p>
+</blockquote>
+<p>34.当你想形容做某件事怎么样的时候</p>
+<p>It’s(not)+形容词+to do …</p>
+<blockquote>
+<p>It’s easy to learn how to ride a bicycle<br>学会骑自行车很容易</p>
+</blockquote>
+<p>35.可能会…</p>
+<p>It’s going to be/gonna be…</p>
+<blockquote>
+<p>It’s gonna be rainy tomorrow<br>明天可能会下雨</p>
+</blockquote>
+<p>36.据说…</p>
+<p>It’s said that…</p>
+<blockquote>
+<p>It’s said that Yoga is very good for healt<br>据说练瑜伽对健康很有好处</p>
+</blockquote>
+<p>37….没有用</p>
+<p>It’s no use + 动词ing…</p>
+<blockquote>
+<p>It’s no use complaining all the time<br>一直抱怨是没有用的。</p>
+</blockquote>
+<p>38.当你想要说“不可能…”的时候</p>
+<p>There’s no way…</p>
+<blockquote>
+<p>There’s no way he can win the game.<br>他不可能赢得比赛</p>
+</blockquote>
+<p>39.没必要…</p>
+<p>There’s no need…</p>
+<blockquote>
+<p>There’s no need to turn on the light<br>没必要开灯</p>
+</blockquote>
+<p>40….有问题</p>
+<blockquote>
+<p>There’s something wrong with my TV<br>我的电视有点问题</p>
+</blockquote>
+<p>41.这就是…的原因</p>
+<p>That’s why…</p>
+<blockquote>
+<p>That’s why she chose Social Study as her major<br>这就是她为什么选择社会研究作为她的专业</p>
+</blockquote>
+<p>42.当你想请对方做某事的时候</p>
+<p>Please + 动词…</p>
+<blockquote>
+<p>Please have a seat<br>请坐</p>
+</blockquote>
+<p>43.不要做…</p>
+<p>Don’t + 动词…</p>
+<blockquote>
+<p>Don’t go out after 10:00pm</p>
+</blockquote>
+<p>44.如果我是你，我会…</p>
+<p>If I were you, I would…</p>
+<p>如果我是你，我就会买那件衬衣</p>
+<p>45.如果…</p>
+<p>What would you do if…?</p>
+<blockquote>
+<p>What would you do if the A/C didn’t work<br>如果空调坏了，你会怎么做？</p>
+</blockquote>
+<h2 id="4-时间管理技巧"><a href="#4-时间管理技巧" class="headerlink" title="4.时间管理技巧"></a>4.时间管理技巧</h2><p>1.开始。<br>“没错，就是这个单词。我们要做的第一件事情就是开始。“Balancing Life Issues公司的CEO Wendy Kaufman说到（该公司位于纽约州的Ossining）。如果你要写点什么文章，那么请先安心坐下，然后至少写出第一个段落。只要这个事项能够顺利的启动，那后面的事情都是水到渠成的。</p>
+<p>2.设定明确的目标。<br>要建立一份工作事项清单，最好是结合日程计划，而且要弄清楚每一天究竟有哪些事情是必须做的。</p>
+<p>3.对工作的情况作详细记录<br>“这有助于分析你的时间使用情况，从工作日志中你可以看出哪项工作占用了更多的时间，哪项工作消耗时间最少，你是否达成了工作目标，以及怎样做才能让效率更高。<br>“ Pam O shea建议说 （Pam是Performance Insights公司总裁，同时也是美国管理协会时间管理论坛的成员）。 </p>
+<p>4.批量处理电子邮件和来电。<br>你是否像大多数人一样，每天都在随机处理来电和电子邮件信息呢？如果你总想在第一时间处理这些事务，那么你的工作时间将变得支离破碎，很难高效率的做好事情。O shea给我们的建议是：“要把电子邮件和来电的检查和回复工作集中在某个时间段一并处理。”为了管理好这些沟通事务，“请用好为你提供的电话工具和电子邮件系统。”</p>
+<p>5.化繁为简。<br>“将复杂的工作划分成小的简单的单元进行处理。”Tytel博士解释说，“不能因为事情的复杂而拖沓，因为复杂的工作不可能一下就搞定。”<br>Kaufman用打扫房间的事件做了一个比喻。你也许没有足够的时间打扫整个房间，但是你可以根据自己的可用时间有选择的做一部分清扫。她说：“如果你有20分钟，你可以清理一个抽屉或一个柜子。如果有40分钟，你可以整理衣橱或壁橱。如果有一小时，也许你可以收拾整个房间了。”</p>
+<p>6.把工作按照优先程度进行排序。<br>Tytel博士说：“我们要理解紧迫程度和重要性之间的差异。”你也许应该将一天内必须做的事情、应该做的事情、以及想要做的事情统统列出来，然后按照紧迫性和重要性进行排序。</p>
+<p>7.留出一部分时间什么都不要做。<br>如果你习惯于将一天的日程排得满满的，那么在做事情之前你可能没有时间思考和准备，而这个过程可能是非常有价值的，Kaufman这样建议道。如果你从始至终都是严格的按照日程时间表做每件工作，那么给自己留20分钟时间放松、反思、提前做个准备计划也许是很有用的。Tytel博士补充道：“处理工作或者做项目要有时间规划，而且要严格遵循这些规划。”</p>
+<p>8.工作不要超负荷。“现在的人都是疲劳过度，尤其是美国人。” Kaufman说道。Tytel同意Kaufman的观点，她建议，如果你感到自己的状态下降到正常水平的一半，那么你应该先好好休息。她说：“安排好放松和恢复的时间，如果我们连自己都照顾不好，那我们可能也没有能力做好其他的任何事情。”</p>
+<p>9.知道什么时候应该说“不”。<br>Tytel博士说，许多人害怕让他们的主管知道自己有多忙，但很重要的是如果你忙不过来，你要为自己辩解。</p>
+<p>10.知道什么时候你需要“时间管理”方面的帮助以及在哪里能获得这些帮助。<br>“我们在图书馆和书店里能找到相关的书籍。“O Shea指出。读其中的任何一本，书能帮助你总结评价自己的时间管理能力，进而发现哪些方面有提高的空间。Kaufman说，如果你发现自己有时间管理问题，并且不擅长与此，通常情况下，说明你是一个右脑相对发达的人，那么你得承认你没有管理时间计划的天赋技能，对你来说外部的帮助可能是必要的。你可以考虑学习相关课程或者通过参加其他一些技能提高培训，把时间管理当作一个技能去学习，并且时不时的重温这些信息。</p>
+<p>估算出自己可以安排的时间<br>首先，找出哪些是固定的开销，如吃饭，睡觉，洗漱等等，以后也可以不用再记录了；</p>
+<p>其次，整理出规律性事件，有助于形成循环事件的日程表（提示信息为主），如每周一次运动课程，每周二开两个小时例会，每天上午上三个小时课程等等；</p>
+<p>接下来，看看哪些是突发支出、临时性活动，如领导临时安排的工作，临时会议，堵车等等，评估一下自己不可控、易被打扰的时间比例；</p>
+<p>最后，估算出自己一段时间内（一天、一周、一个月…）大概可以用于计划和使用的时间到底有多少。</p>
+<p>能力和效率存在上限<br>每个人的能力、效率都是存在一个上限的。柳比歇夫的最高纪录是一九三七年七月，这个月他工作了316个小时，每日平均纯工作时间是7小时。（约每天可以规划的时间即可以记录时间为10个小时），这基本上已经是一个可规划时间的上限了。</p>
+<p>如果一天你可以规划的时间有10个小时，那么，你确定自己是以工作成就为导向的人，你就这样规划吧：大概用6.18个小时去工作学习，而用剩下的大约3.82个小时去享受欢乐——因为你毕竟是正常人。不要要求过高，61.8分刚刚好，已经比大多数人都强了！过高或过低都不如黄金分割好，或者我们可以简单的能做到四六分就已经非常不错了。</p>
+<h2 id="5-生活中的一些现象"><a href="#5-生活中的一些现象" class="headerlink" title="5.生活中的一些现象"></a>5.生活中的一些现象</h2><p><strong>【杯子】</strong></p>
+<p>当一只玻璃杯中装满牛奶的时候，人们会说“这是牛奶”；当改装菜油的时候，人们会说“这是菜油”。只有当杯子空置时，人们才看到杯子，说“这是一只杯子”。同样，当我们心中装满成见、财富、权势的时候，就已经不是自己了；人往往热衷拥有很多，却往往难以真正的拥有自己</p>
+<p><strong>【碗破的启示】</strong></p>
+<p>一个卖瓷碗的老人挑着扁担在路上走着，突然一个瓷碗掉到地上摔碎了，但是老人头也不回地继续向前走。路人看到觉得很奇怪，便问：“为什么你的碗摔碎了你却不看一下呢？”老人答到：“我再怎么回头看，碗还是碎的。”你得到什么启示呢？</p>
+<p><strong>【要害与敏感关键点】</strong></p>
+<p>公司在男厕小便池上贴了一纸条：“往前一小步，文明一大步。”结果地上仍有许多尿渍。后来公司认真吸取教训，纸条改成：“尿不到池里说明你短；尿到池外说明你软”，结果地上比以前干净许多。启示：有时扬其长不如揭其短！给客户的提案要具体并准确地切中其要害与敏感关键点才有效。</p>
+<p><strong>【个人与团队】</strong></p>
+<p>老师问弟子：一滴水如何能不干枯？弟子沉默不语。老师说道：一滴水，风可以将它吹干、土可以把它吸干、太阳可以把它蒸发，要想要不干枯，只有让它融入大海。一个人无力独撑天下，要想获得成功，就得学会与人合作，独木难林，这就是我们常说的：再强大的个人都不如一个团结的组织。 </p>
+<p><strong>【比耐力】</strong></p>
+<p>两只乌龟在田边相对一动不动，老农对一旁的专家说：它们在比耐力，谁先动谁就输了。专家指着一只龟壳上有甲骨文的乌龟说：据我多年研究，这只乌龟已死五千多年了。另一只乌龟伸出头来说：死了也不说一声，害得老子在这里干等。装死的乌龟大笑说：你输了吧，专家的话你也听！</p>
+<h2 id="6-一些法则"><a href="#6-一些法则" class="headerlink" title="6.一些法则"></a>6.一些法则</h2><p><strong>1:吸引法则</strong></p>
+<p>现实是内心的投射，心念总是能吸引和它一致的现实。</p>
+<p>控制心念，就能控制命运。</p>
+<p><strong>2:利他定律</strong></p>
+<p>事事处处为他人着想，为别人造福，最后最受益的人，就是自己。</p>
+<p><strong>3:施受定律</strong></p>
+<p>宇宙是一个玄妙无比的运算程序，你给予出去的任何东西，最后都会以各种形式回到你的身边。</p>
+<p><strong>4:在乎定律</strong></p>
+<p>你越在乎的东西越容易失去，越不在乎的东西，越容易自己过来找你。</p>
+<p>再来看几个深刻的规律：</p>
+<p><strong>5:强弱转化</strong></p>
+<p>强者和弱者一直在互相转化，没有永远的强者，也没有永远的弱者。</p>
+<h2 id="7-美文美句"><a href="#7-美文美句" class="headerlink" title="7.美文美句"></a>7.美文美句</h2><p>我们曾如此期盼外界的认可，到最后才知道，世界是自己的，与他人毫无关系。</p>
+<p>但见她清秀脱俗，容色照人，实是一个绝丽的美人。</p>
+<p>年少时不能遇到太惊艳的人—光是这么一句话就仿佛看到千百个遗憾的故事。</p>
+<p>你来的信写的越来越客气，关于爱情你只字不提。</p>
+<hr>
+<p>　附：胡砚光文言文请假条的情况说明原文</p>
+<p>　　诸位领导，砚光入职八月有余，深知公司情况及制度规章，察公司年前平稳收关之意，员工不宜于此时请假。然时值春运，出疆车票难觅，父母于家待儿多日而不归。及至车票售罄，归期方定。无奈，家父遂定于本月十日驱车返乡。凡哈密至兰州三千里，放任家父天命之年以一己之力驾车，为人子所不能也，此其一。</p>
+<p>　　或有问焉，除夕尚有数日，何不缓缓归矣？非是不想，不能也！家中门祚不兴，叔辈只余男女二人，皆为重利商贾，不至除夕不得休憩矣。祖母孀居在家，难得照拂，若家父不得早归，年货无人置办，事事难谐矣！是故，须阖家早归，不得拖延，此其二也。</p>
+<p>　　早年父母忙碌，吾自幼由外家祖父母抚养长大。外家家境优沃，祖父母无所操劳，日日心头所念，唯吾兄弟三人也。长兄留学美国不得归，老人所盼，只余我一人。子曰：“父母在，不远游，游必有方。”事父母且如此，又何忍于年将耄耋之老人乎？此其三也。</p>
+<p>　　以上所述，尽皆实情。砚光虽不欲早离公司，然人情天伦，实难辞却。此番告假，实乃事出有因，情非得已，望公司领导酌情体察，早日批准为盼。</p>
+<hr>
+<h2 id="8-费曼学习法-Feynman-Technique"><a href="#8-费曼学习法-Feynman-Technique" class="headerlink" title="8.费曼学习法 Feynman Technique"></a>8.费曼学习法 Feynman Technique</h2><p>第一步：获取知识（某概念），理解你所要学习的材料的内容。</p>
+<p>第二步：讲解/复述你所获得的主要内容。</p>
+<p>第三步：用你自己的方式以潜意识的形式再次复述你所学到的知识。</p>
+<p>第四步：这一步是一个可循环过程：不满意——纠错反馈；满意——尝试运用更简单精炼的语言概括。再用你所学到的知识解决实际问题，加以运用。</p>
+<p>第五步：反思。反思你在思考的时候在哪里卡了壳，着重这个地方，再次理解。这个过程至关重要！</p>
+<p>第六步：检验，通过不断的进行实践检验才能巩固你对于该知识点的理解。</p>
+<h2 id="9-程序员过剩？"><a href="#9-程序员过剩？" class="headerlink" title="9.程序员过剩？"></a>9.程序员过剩？</h2><p>美国一个编程培训班的老板，写了一篇<a href="https://www.forbes.com/sites/rajatbhageria/2017/09/10/is-learning-how-to-code-still-worth-it/?sh=78b07e7675a1" target="_blank" rel="noopener">文章</a>。他说自己很担忧。现在，那么多人学习编程，他的公司全靠培训赚钱，将来会不会程序员过剩？</p>
+<p>培训班的目的，就是让那些没有受过四年计算机教育的人，经过四个月的培训，找到一份软件开发的工作。某种程度上，这种做法是可行的，大量的程序员就是通过这种模式生产出来。</p>
+<p>但是，人工智能正变得越来越强，终有一天，简单代码都会由计算机自已生成，低级程序员的需求将会大量减少。另一方面，云服务的兴起，使得很多任务不需要自己编程，可以购买云服务，这也减少了程序员的需求。</p>
+<p>同时，由于不断的抽象和封装，应用层的软件开发正变得越来越简单，如果只是简单地遵循在线教程，就能编写软件，或者将一系列API混合在一起，就能做出一个服务，有必要向开发人员支付高额薪水吗？毕竟开发过程是那么简单。</p>
+<p>他认为，学习编程是值得的，它可以帮助你理解世界。但是，梦想仅仅学会软件开发，就能解决你的人生问题是不现实的。”只是能够编写一个安卓程序，不会为你赢得竞争优势，也没法在这个超级饱和的科技世界里，获得自己的一席之地。这个世界里，每个想法都已由十位企业家在你前面完成了。”</p>
+<p>由于其他行业不景气，大量年轻人正在转向软件业就业。但是，程序员的淘汰也很厉害，上车的人多，下车的人也多。大家应该对这一点有清醒的认识。</p>
 <h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
 <p>“嗑瓜子”理论：在你嗑瓜子的时候，随随便便几个小时就没了。但是换成学习，时间就过得特别慢。因为，一粒瓜子，从嗑到吃只要几秒钟，吃进去就是你得到的反馈，但是工作学习你做了，不一定就能得到反馈，你就会觉得无聊。</p>
 </blockquote>
@@ -57,34 +323,147 @@
     <content><![CDATA[<p><img src="/images/Github/Weekly/2021028.jpeg" alt></p>
 <a id="more"></a>
 <blockquote>
-<p>推行 996 工作制的心态，可以追溯到制造业时代。一家服装厂提高产量的最简单方法是什么？就是让你的工人加班。不幸的是，这不适用于科技公司，程序员在一段代码上花费更多时间，并不意味着写出更好的代码。事实上，处理错误的最佳方法通常是休息一下，然后回来重新阅读代码，你会更容易发现错误。</p>
+<p>一件事只做到20%的时候先不要着急奖励自己。</p>
 </blockquote>
 <h2 id="1-全能程序员-vs-特长程序员"><a href="#1-全能程序员-vs-特长程序员" class="headerlink" title="1.全能程序员 vs 特长程序员"></a>1.全能程序员 vs 特长程序员</h2><p>我的理解是特长程序员是在某个局部技术有足够的娴熟程度和深度，全能程序员适合于做Leader，更喜欢关注全局。</p>
-<h2 id="2-jQuery-ajax读取本地json文件"><a href="#2-jQuery-ajax读取本地json文件" class="headerlink" title="2.jQuery ajax读取本地json文件"></a>2.jQuery ajax读取本地json文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cdshi.json</span><br><span class="line">&#123;</span><br><span class="line">    &quot;first&quot;:[</span><br><span class="line">        &#123;&quot;name&quot;:&quot;张三&quot;,&quot;sex&quot;:&quot;男&quot;&#125;,</span><br><span class="line">        &#123;&quot;name&quot;:&quot;李四&quot;,&quot;sex&quot;:&quot;男&quot;&#125;,</span><br><span class="line">        &#123;&quot;name&quot;:&quot;王武&quot;,&quot;sex&quot;:&quot;男&quot;&#125;,</span><br><span class="line">        &#123;&quot;name&quot;:&quot;李梅&quot;,&quot;sex&quot;:&quot;女&quot;&#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$.ajax(&#123;</span><br><span class="line">   url: &quot;ceshi.json&quot;,//json文件位置</span><br><span class="line">   type: &quot;GET&quot;,//请求方式为get</span><br><span class="line">   dataType: &quot;json&quot;, //返回数据格式为json</span><br><span class="line">   success: function(data) &#123;//请求成功完成后要执行的方法 </span><br><span class="line">       //each循环 使用$.each方法遍历返回的数据date</span><br><span class="line">       $.each(data.first, function(i, item) &#123;</span><br><span class="line">            var str = &apos;&lt;div&gt;姓名:&apos; + item.name + &apos;性别：&apos; + item.sex + &apos;&lt;/div&gt;&apos;;</span><br><span class="line">            document.write(str);</span><br><span class="line">       &#125;)</span><br><span class="line">   &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h2 id="3-sublime-Text主题"><a href="#3-sublime-Text主题" class="headerlink" title="3.sublime Text主题"></a>3.sublime Text主题</h2><p>color scheme<br>Neon Monocyanide Markdown</p>
-<p>theme<br>Default.sublime-theme</p>
-<p><img src="/images/Other/20201225001.png" alt></p>
-<p>color scheme<br>Breakers</p>
-<p>theme<br>ayu-light.sublime-theme</p>
-<p><img src="/images/Other/20201225002.png" alt></p>
-<p>ayu-dark</p>
-<p><img src="/images/Other/20201225003.png" alt></p>
-<h2 id="4-sublime-Text高效率的快捷键"><a href="#4-sublime-Text高效率的快捷键" class="headerlink" title="4.sublime Text高效率的快捷键"></a>4.sublime Text高效率的快捷键</h2><p>control + k 折叠空行</p>
+<h2 id="2-TED演讲：想学会一个语言？就像玩电子游戏般地去说出来"><a href="#2-TED演讲：想学会一个语言？就像玩电子游戏般地去说出来" class="headerlink" title="2.TED演讲：想学会一个语言？就像玩电子游戏般地去说出来"></a>2.TED演讲：想学会一个语言？就像玩电子游戏般地去说出来</h2><p>很多人在用英语交流的时候带着恐惧感。他们感觉如果说不好会被别人评判。</p>
+<p>应该要有一个正确积极的态度，这种态度就像玩游戏一样，专注的是如何玩好，而不是专注如果玩不好会受到审判一样。好的态度就该全神贯注于和你交流的人，他想要得到什么样的结果，没有自我意识，不去考虑自己的错误。</p>
+<p>学校对于学生的评判是基于正确性，而不是清晰度。</p>
+<p>英语只是一个达成交流的工具，交流时不能想其他有的没的，比如你忙着思考如何正确回应和表达自己，根本听不到别人说什么。第二，你讲话时大脑就想关机了，忘了所有的词汇，话就说不出来。</p>
+<h2 id="3-成语"><a href="#3-成语" class="headerlink" title="3.成语"></a>3.成语</h2><p><strong>野鸟入庙：</strong>野鸟飞入太庙。旧指国家败亡的征兆。</p>
+<h2 id="4-英语询问的句型"><a href="#4-英语询问的句型" class="headerlink" title="4.英语询问的句型"></a>4.英语询问的句型</h2><p>用在我们想询问对方有关人、事、地点、时间、原因等等信息的场景中</p>
+<p>1.当你想问“谁能…？”的时候</p>
+<p>Who can …?</p>
+<blockquote>
+<p>Who can help me move this box ?</p>
+</blockquote>
+<blockquote>
+<p>谁能帮我搬一下这个箱子？</p>
+</blockquote>
+<p>2.当你想问“…是谁？”的时候，就用：</p>
+<p>Who is … ?</p>
+<blockquote>
+<p>Who is that girl in blue ?<br>那个穿蓝色衣服的女孩是谁？</p>
+</blockquote>
+<!-- doc -->
+<!-- more -->
+<p>3.当你想问“我们什么时候可以…？”的时候，就用：</p>
+<p>When can we …?</p>
+<blockquote>
+<p>When can we go hiking?<br>我们什么时候可以去远足？</p>
+</blockquote>
+<p>4.当你想问“你是什么时候做了某事…？”可以用：</p>
+<p>When did you …?</p>
+<blockquote>
+<p>When did you come back ?<br>你谁什么时候回来的？</p>
+</blockquote>
+<p>5.当你想问“…在哪里？”</p>
+<p>Where is …?</p>
+<blockquote>
+<p>Where is the washroom?<br>洗手间在哪里？</p>
+</blockquote>
+<p>6.当你想问“我能在哪里…”的时候</p>
+<p>Where can I … ?</p>
+<blockquote>
+<p>Where can I find some bottled water ?<br>我能在哪里找到瓶装水？</p>
+</blockquote>
+<p>7.当你想问“为什么”的时候</p>
+<p>Why do/did … ?</p>
+<blockquote>
+<p>Why did you quit your job?<br>你为什么辞职？</p>
+</blockquote>
+<p>8.你是怎么做到的…</p>
+<p>How did you …?</p>
+<blockquote>
+<p>How did you get to know each other ?<br>你们是怎么互相认识的？</p>
+</blockquote>
+<p>9.当你想问“去做…怎么样”的时候</p>
+<p>How about …?</p>
+<blockquote>
+<p>How about having a cup of coffee ?<br>喝杯咖啡怎么样？</p>
+</blockquote>
+<p>10.我怎样才能…</p>
+<p>How can I…?</p>
+<blockquote>
+<p>How can I fix my cellphone ?<br>我怎样才能修好我的手机</p>
+</blockquote>
+<p>11….是什么？</p>
+<p>What’s …?</p>
+<blockquote>
+<p>What’s your favorite color ?<br>你最喜欢的颜色是什么？</p>
+</blockquote>
+<p>12.你是正在做…吗？</p>
+<p>What are you + 动词ing …?</p>
+<blockquote>
+<p>What are you looking for ?<br>你正在找什么？</p>
+</blockquote>
+<p>13.某人做了什么事</p>
+<p>What do/did …?</p>
+<blockquote>
+<p>What do you like to do on weekends?<br>你周末喜欢做什么？<br>What did he say just now?<br>他刚才说了些什么？</p>
+</blockquote>
+<p>14.我能做…吗？</p>
+<p>Can I …?</p>
+<blockquote>
+<p>Can I take a look at your notebook ?<br>我能看一下你的笔记本吗？</p>
+</blockquote>
+<p>15.你能做…吗？</p>
+<p>Could you/Would you …?</p>
+<blockquote>
+<p>Could you tell me what time the store is open?<br>你能告诉我这家店几点营业吗？</p>
+</blockquote>
+<p>16.当你想问“你是…吗？”</p>
+<p>Are you …?</p>
+<blockquote>
+<p>Are you making dinner now?<br>你现在说在做晚饭吗？</p>
+</blockquote>
+<p>17.初次之外，问对方很多其他情况，都可以用：</p>
+<p>Do you + 动词…?</p>
+<p>Do you need any help ?你需要帮助吗？</p>
+<p>Do you mind if I open the window ? 你介意我打开窗户吗？</p>
+<p>18.你是否（已经）做了某件事？</p>
+<p>Have you …?</p>
+<blockquote>
+<p>Have you seen th message I sent you ?<br>你（已经）看到我发给你的信息了吗？</p>
+</blockquote>
+<p>19.当你想问某事物的情况的时候</p>
+<p>Is it …?</p>
+<blockquote>
+<p>Is it close to your house ？<br>那离你家近吗？</p>
+</blockquote>
 <h2 id="5-English"><a href="#5-English" class="headerlink" title="5.English"></a>5.English</h2><p>This is a photograph of our village[ˈvɪlɪdʒ], our village is in a valley.<br>It is between two hills, the village is on a river.</p>
 <p>Here is another photograph of the village.<br>My wife and I are walking along the banks of the river.<br>We are on the left, there is a boy in the water, He is swimming across the river.</p>
 <p>Here is another photograph, this is the school building, it is beside a park, the park is on the right.<br>Some children are coming out of the building, some of them are going into the park.</p>
-<h2 id="6-CSS3原生的关键帧和动画的使用方法"><a href="#6-CSS3原生的关键帧和动画的使用方法" class="headerlink" title="6.CSS3原生的关键帧和动画的使用方法"></a>6.CSS3原生的关键帧和动画的使用方法</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="selector-class">.div</span>&#123;</span><br><span class="line">	<span class="attribute">animation</span>:flash <span class="number">1s</span> ease <span class="number">0.3s</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@-webkit-keyframes</span> flash&#123;</span><br><span class="line">	0%&#123;css代码&#125;</span><br><span class="line">	20%&#123;&#125;</span><br><span class="line">	100&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="7-mysql的增、删、查、改"><a href="#7-mysql的增、删、查、改" class="headerlink" title="7.mysql的增、删、查、改"></a>7.mysql的增、删、查、改</h2><p>创建、删除、选择数据库</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create database 数据库名;  //创建</span><br><span class="line"></span><br><span class="line">drop database &lt;数据库名&gt;; //删除</span><br><span class="line"></span><br><span class="line">use &lt;数据库名&gt; //选择数据库</span><br></pre></td></tr></table></figure>
-<p>以下例子中我们将在 RUNOOB 数据库中创建数据表runoob_tbl：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CREATE TABLE IF NOT EXISTS `runoob_tbl`(</span><br><span class="line">   `runoob_id` INT UNSIGNED AUTO_INCREMENT,</span><br><span class="line">   `runoob_title` VARCHAR(100) NOT NULL,</span><br><span class="line">   `runoob_author` VARCHAR(40) NOT NULL,</span><br><span class="line">   `submission_date` DATE,</span><br><span class="line">   PRIMARY KEY ( `runoob_id` )</span><br><span class="line">)ENGINE=InnoDB DEFAULT CHARSET=utf8;</span><br></pre></td></tr></table></figure>
-<p>查看表结构<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">desc 表名;</span><br><span class="line"></span><br><span class="line">show table 表名; //查看建表语句</span><br></pre></td></tr></table></figure></p>
-<p>查询</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">select * from runoob_tbl;</span><br></pre></td></tr></table></figure>
-<p>删除</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DROP TABLE runoob_tbl;</span><br><span class="line"></span><br><span class="line">DELETE FROM tb_name WHERE id=4//删除表中多行数据</span><br></pre></td></tr></table></figure>
-<h2 id="8-python-Mysql表数据转换为json格式"><a href="#8-python-Mysql表数据转换为json格式" class="headerlink" title="8.python Mysql表数据转换为json格式"></a>8.python Mysql表数据转换为json格式</h2><p><a href="https://blog.csdn.net/weixin_41104835/article/details/89000096" target="_blank" rel="noopener">python Mysql表数据转换为json格式</a></p>
-<h2 id="9-句子"><a href="#9-句子" class="headerlink" title="9.句子"></a>9.句子</h2><p>如果不曾遇见你，我不会知道这世间有一种爱情，让人铭心刻骨。岁月凝香，时间会留下最深的爱，有一种深情，只能放在心里。岁月静好，时间会留下最深的爱，似水流年，你仍是我最惦记的人。岁月凝香，时间会留下最深的爱，却带走了最初遇见的人。很喜欢一句话：纵然万劫不复，纵然相思入骨，我也待你眉眼如初，岁月如故。闭上双眼，脑海里都是你的样子，岁月静好，时间会留下最深的爱。</p>
+<h2 id="6-做事方法"><a href="#6-做事方法" class="headerlink" title="6.做事方法"></a>6.做事方法</h2><p>之前的版本是按照，紧急和重要性来划分工作的，最近有所感悟，划分工作可以用感觉程度和对目标的影响程度来进行四现象划分，这样可以让自己更乐于执行。</p>
+<p><img src="/images/Github/Weekly/20191212001.png" alt></p>
+<p><strong>根据人类的需求，来安排具体事务：</strong></p>
+<p><img src="/images/Github/Weekly/chart.png" alt></p>
+<h2 id="7-陈安之：过去一年我们犯下的12个错误"><a href="#7-陈安之：过去一年我们犯下的12个错误" class="headerlink" title="7.陈安之：过去一年我们犯下的12个错误"></a>7.陈安之：过去一年我们犯下的12个错误</h2><p>　<br>　　1、没有接受足够的风险。<br>　　<br>　　活着是需要冒险的。你做出的每个决定、每次互动、每个步骤、你每天早晨起床的时候，都在冒险。要想真正的生活，就要迎面面对风险。不想起床，紧紧抓住那幻想中的安全，这样会慢慢死去而不会体验到真正的生活。冒点儿险，充分发挥生活的潜力。<br>　　<br>　　2、在恐惧和负面情绪前却步。<br>　　<br>　　现实是我们都会害怕。害怕没关系，重要的是当你害怕时你会做什么。当你觉得怀疑、害怕、愤怒或沮丧时，告诉自己你可以把这些情绪释放掉，就像你可以把手从火焰边抽回一样。多关注生活中美好的事物、机遇以及最珍视的梦想。有所想才会有所得。经常想一下你想变成什么样子，让思想驱动行为，现实会跟上你的想法。</p>
+<p>　　3、不确定性将你击溃。<br>　　<br>　　随着时间的流逝，你会明白：命里有时终须有，命里无时莫强求。时间会解决大部分问题，剩下的时间解决不了，你要学着自己去解决。有时你无法看清生活的方向，但是你灵魂深处的导航会指引你回家。你会发现你就是那个对的人，在正确的时间、正确的地点做正确的事情。相信自己的直觉。放松。你会知道该做什么。<br>　　<br>　　4、你做了别人想让你做的事。<br>　　<br>　　人生苦短，不要把你的时间都用来取悦别人。另外，你也不可能一直让所有人都高兴。做决定时想想自己的思想、身体和灵魂。只有你自己才知道如何做对你来说是最好的。别人不可能知道。无论你和他们分享了多少，他们都不可能触及到你最深处的愿望、直觉、希望和梦想。一定要听从自己的内心，想想自己想要什么。</p>
+<p>　　5、工作忙碌但效率低。<br>　　<br>　　工作并不是平等的。工作时要意识到你的工作类型，以及它是在帮助(还是阻碍)你的进步。关注自己为何工作，在自己身上找到最深切的原因。这种自我意识能够让你集中在正确的活动中，能让你离目标更近。<br>　　<br>　　6、你还练得不够。<br>　　<br>　　如果我要写一本书，取名为如何精通万物，那么书里面会只有一页，这一页上只有一个词：“练习!”只有它才会让你出色。无论你是想通过练习写作来学会写作，或是通过练习生活来学会生活，原则都是一样的。在每种情况下，都是坚持不懈地进行一系列例行活动，身体行动或是心理活动，并把注意力集中在想要的结果上。练习意味着在面对各种各样的困难下，反复进行一些和理想、信仰或愿望相关的行为。练习是一种手段，它能让结果令人惊叹。<br>　　<br>　　7、压力一点点地消耗着你。<br>　　<br>　　不要太过拘泥于一件事上，让它把你的一天都毁掉了。不要把时间浪费在不开心的思想上。如果通往快乐的一扇窗户关闭了，跑到下一扇窗前，或打破一堵墙。面对压力，你应该抬起头来说：我只想经历这一次。我得想出来如何积极快乐的生活。你必须学会放手。</p>
+<p>8、让同样的人一次又一次地榨干你。<br>　　<br>　　有的人能激励你，有的人能榨干你;要聪明地进行选择。在想让他人接受、爱或欣赏你时，不要丢掉自己的自尊、自敬，因为有些人无论你怎么做，他们都不会改变对你的态度。如果有些人或有些事对你来说很重要，你仍要去争取，但是不能去乞求。永远也不要牺牲自己的尊严来换取命运。<br>　　<br>　　9、你设立了不现实的期望。<br>　　<br>　　总有两种方法会让你更加开心：改善现实或降低希望。我们天生就希望世界会更明亮、更有意义，比现实更有趣。当我们意识到现实并不像期望的那么好时，我们开始四处寻找真实的世界。但是实际上我们现实的世界是非常美丽的地方。在期待时，我们是自己最大的敌人。如果你能学会停止期望你自己、他人、身边的世界上出现那不可能的完美，你会发现快乐总是环绕在你周围。</p>
+<p>　　10、你忽略了生活中美丽的小瞬间。<br>　　<br>　　无论你在期待什么，平静的心情、满足感、优雅、丰富的内在，这些都会来的，但是只会当你准备好以开放和感激的心情接受时才会到来。所以尽可能的心存感激吧，为生活中的小事，而不仅仅是因为大事……为像呼吸、在一起度过时光、谈话等这样简单的行为而心存感激吧。每个时刻、每一秒都很重要。你所收到的都是礼物。<br>　　<br>　　11、你没有足够关注内心的能量。<br>　　<br>　　即使和他人在一起，你仍然和你自己在一起。当你在早晨起床时，你和自己在一起，当晚上你躺着床上时，你和自己在一起，当你中午在街上走路时，你和自己在一起。当你走在大街上，你想和什么样的人在一起?当你起床时，你想和什么样的人在一起?在你入睡前，你想和什么样的人在一起?成为你想成为的人，是你自己的责任。<br>　　<br>　　12、你希望少犯些错误。<br>　　<br>　　直到你能允许自己犯错时，你才能得到真正的自由。解放自己!尝试新的事物，自由地学习和探索。良好的判断来自于经验，而生活经验来自于过去你所做的错误判断。你需要有足够的勇气去犯错。失望和失败是生活用来磨砺你的工具。</p>
+<h2 id="8-腾讯文化上的一篇文章"><a href="#8-腾讯文化上的一篇文章" class="headerlink" title="8.腾讯文化上的一篇文章"></a>8.腾讯文化上的一篇文章</h2><p><a href="https://cul.qq.com/a/20180210/011860.htm" target="_blank" rel="noopener">我们奴性几何？谁摧毁了我们的灵魂？</a></p>
+<p><a href="https://www.sohu.com/a/133752414_121223" target="_blank" rel="noopener">你知道你在培养孩子的“奴性”吗？</a></p>
+<h2 id="9-生活中的一些现象"><a href="#9-生活中的一些现象" class="headerlink" title="9.生活中的一些现象"></a>9.生活中的一些现象</h2><p><strong>【习惯】</strong></p>
+<p>乞丐到小王家乞讨，他给十块，第二天乞丐又去，又给十块，持续两年。一天只给五块，乞丐：以前给十块，怎么现在给五块？小王：我结婚了。乞丐一巴掌打过去：妈的，你竟拿我的钱去养你老婆？</p>
+<blockquote>
+<p>启示：当提供免费服务让客户成为一种习惯，这种服务就不再是优势，而是劣势。</p>
+</blockquote>
+<p><strong>【夫妻】</strong></p>
+<p>夫妇逛商场，女的看中一套高档餐具，坚持要买，丈夫嫌贵，不肯掏钱。导购一看，悄悄对丈夫说了句话，他一听马上掏钱。是什么让他立马转变？导购员对丈夫说：“这么贵的餐具，你太太是不会舍得让你洗碗的。”</p>
+<blockquote>
+<p>启示： 人的观念没有什么不可改变，关键是角度，要善于揣摩客户心理。</p>
+</blockquote>
+<p><strong>【班花】</strong></p>
+<p>女生公开投票选班花，相貌平平的小梅发表演说：如我当选，再过几年，在座姐妹可以向自己先生骄傲的说，我上大学时候，比班花还漂亮！结果，她全票当选——</p>
+<blockquote>
+<p>启示：说服别人支持你，不一定要证明比别人都优秀，而是让别人觉得,因为有你，他们变得更优秀更有成就感。</p>
+</blockquote>
+<p><strong>【管理的弊端】</strong></p>
+<p>女孩买了条裤子，一试太长，请奶奶帮忙剪短，奶奶说忙；找妈妈，也没空；找姐姐，更没空。女孩失望地入睡了。奶奶忙完家务想起小孙女的裤子，就把裤子剪短了一点；姐姐回来又把裤子剪短了；妈妈回来也把裤子剪短了，最后裤子没法穿了。——管理的弊端就在于：要么都不管，要么都来管！</p>
+<p><strong>【经典故事】</strong></p>
+<p>老虎抓到一头鹿后要把它吃掉！ 鹿说：“你不能吃我！” 老虎愣了一下，问：“为什么？” 鹿：“因为我是国家二级保护动物！” 老虎大笑道：“总不能为了二级保护动物而让一级保护动物饿死吧？！”<br>感悟：时刻保持危机感，不要让自己那点优势害死。</p>
 <h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
 <p>无所畏惧（fearless）不是没有恐惧；而是你依然心怀恐惧，但无论如何都决定要跳进去。</p>
 </blockquote>
@@ -102,7 +481,7 @@
   <entry>
     <title>数字周刊 12</title>
     <url>/2021/09/11/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A12/</url>
-    <content><![CDATA[<p><img src="/images/Github/Weekly/2021025.jpg" alt></p>
+    <content><![CDATA[<p><img src="/images/Github/Weekly/2021025_1.jpg" alt></p>
 <a id="more"></a>
 <h2 id="1-培养终身阅读习惯的几种方法"><a href="#1-培养终身阅读习惯的几种方法" class="headerlink" title="1.培养终身阅读习惯的几种方法"></a>1.培养终身阅读习惯的几种方法</h2><p><strong>1、定时。</strong><br>每天至少抽出5-10分钟雷打不动的读书时间，这是无论每天发生什么事情都不会受到影响的时间。例如，养成在早餐或午餐时间阅读的习惯，如果你每次坐在马桶上时间读书，在睡觉之前读书，那么你就拥有每天四次，每次10分钟也就视每天四十分钟的阅读时间。这是一个良好的开端，它有助于养成良好的每日读书习惯。</p>
 <p><strong>2、随身携带书籍。</strong><br>不论到那里，都带上本书，每天出门，都检查一遍，是否带了如下物品，驾照，钥匙，书。最少要携带这些东西，书在车里陪伴你，带到办公室，约会中，以及其他地方。例如看电影时，如果你需要花时间等待，就带上你的书，阅读吧，那是打发你的时间的好方法。</p>
@@ -113,22 +492,14 @@
 <p><strong>7、阅读有趣的和耐读的书。</strong><br>找那些能够吸引你并让你持续阅读的书，即使不是文学名著，它们也让你充满阅读欲望——这就是阅读的目标。</p>
 <p><strong>8、舒服一点。</strong><br>在最惬意的时间阅读，喝点好茶和好咖啡，或者以其他方式款待自己，找一把舒适的椅子，配上个好垫子。在日出或日落视阅读，或者在海边阅读。</p>
 <p><strong>9、设置一个远大的目标。</strong><br>告诉自己今年要读50本(或者类似数量)，然后完成任务。但是请确认，你仍然是在享受读书过程，而不是苦苦挣扎。</p>
-<h2 id="2-Python的文件操作"><a href="#2-Python的文件操作" class="headerlink" title="2.Python的文件操作"></a>2.Python的文件操作</h2><p><a href="https://blog.chenmo1212.cn/?p=72" target="_blank" rel="noopener">Python文件操作</a></p>
 <h2 id="3-FIKA-READING"><a href="#3-FIKA-READING" class="headerlink" title="3.FIKA READING"></a>3.FIKA READING</h2><p>陈默博客分享的<a href="https://www.chenmo1212.cn/book/index.html" target="_blank" rel="noopener">FIKA READING</a></p>
 <h2 id="4-Markmap"><a href="#4-Markmap" class="headerlink" title="4.Markmap"></a>4.Markmap</h2><p><a href="https://markmap.js.org/repl/" target="_blank" rel="noopener">Markmap</a>. 用markdown的方式生产思维导图</p>
 <h2 id="5-English"><a href="#5-English" class="headerlink" title="5.English"></a>5.English</h2><p>Today is the last day of August, the September will follow.</p>
 <p>The students have started school, I have graduated[ˈɡrædʒueɪtɪd] from school, but I miss my days at school.</p>
 <p>There are twenty days left for the Mid-Autumn Festival, after this festival, the national day will follow.</p>
 <p>National day is the last festival in 2021, but it has a seven day holiday.</p>
-<h2 id="6-用css实现行内溢出文字省略号"><a href="#6-用css实现行内溢出文字省略号" class="headerlink" title="6.用css实现行内溢出文字省略号"></a>6.用css实现行内溢出文字省略号</h2><p>需要加三个样式：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">	<span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">	<span class="attribute">white-space</span>: nowrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="7-Web开发相关资源链接"><a href="#7-Web开发相关资源链接" class="headerlink" title="7.Web开发相关资源链接"></a>7.Web开发相关资源链接</h2><p>Free <a href="https://www.jqueryscript.net/" target="_blank" rel="noopener">jQuery Plugins</a> and Tutorials - jQuery Script</p>
-<p><a href="https://www.jqueryscript.net/tags.php?/timeline/" target="_blank" rel="noopener">Free jQuery timeline Plugins</a>All the Free jQuery Plugins about ‘timeline’ are listed here.</p>
-<p><a href="https://www.nobleui.com/html/template/demo_5/dashboard-one.html" target="_blank" rel="noopener">NobleUI</a></p>
-<p><a href="https://blog-en.tilda.cc/articles-website-design-mistakes" target="_blank" rel="noopener">网页设计的常见错误</a>英文版</p>
-<p><a href="https://www.sioe.cn/yingyong/yanse-rgb-16/" target="_blank" rel="noopener">RGB颜色值与十六进制颜色码转换工具</a></p>
-<p>一个基于 <a href="https://firecms.co/" target="_blank" rel="noopener">Firebase</a> 的内容管理系统 CMS，数据存放在 Firebase，把这个工具架设在前端，就有了一个后台数据的管理系统。</p>
-<p><a href="https://fontawesome.dashgame.com/" target="_blank" rel="noopener">Font Awesome</a>为您提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。</p>
+<h2 id="6-句子"><a href="#6-句子" class="headerlink" title="6.句子"></a>6.句子</h2><p>如果不曾遇见你，我不会知道这世间有一种爱情，让人铭心刻骨。岁月凝香，时间会留下最深的爱，有一种深情，只能放在心里。岁月静好，时间会留下最深的爱，似水流年，你仍是我最惦记的人。岁月凝香，时间会留下最深的爱，却带走了最初遇见的人。很喜欢一句话：纵然万劫不复，纵然相思入骨，我也待你眉眼如初，岁月如故。闭上双眼，脑海里都是你的样子，岁月静好，时间会留下最深的爱。</p>
+<h2 id="7-投资"><a href="#7-投资" class="headerlink" title="7.投资"></a>7.投资</h2><p>投资的知识、经验、智慧，几乎只能从实战中获得，书上写的，牛人讲的都跟你没关系。那些东西不仅要在你骨子里生根发芽且不被夭折，还要等上很久，才会茁壮甚至茂盛地生长。</p>
 <h2 id="8-资源链接"><a href="#8-资源链接" class="headerlink" title="8.资源链接"></a>8.资源链接</h2><p><img src="/images/Github/Weekly/2021026.png" alt></p>
 <p><a href="https://www.cilixiong.com/" target="_blank" rel="noopener">磁力熊</a>磁力下载,高分电影,电影磁力下载,豆瓣高分电影,高清电影,1080P磁力下载,磁力高清下载”</p>
 <p><a href="https://www.wakatool.com/maker" target="_blank" rel="noopener">在线表情包制作</a></p>
@@ -143,7 +514,8 @@
 <p><a href="https://video.bqrdh.com/" target="_blank" rel="noopener">不求人导航@影视 | 专业影视资源导航</a>在线影视、影视下载、磁力搜索、下载工具、无损音乐下载、电视台、视频解析、动漫、公开课、短视频</p>
 <p><a href="http://www.gaosan.com/" target="_blank" rel="noopener">高三网</a>高中学习和高考升学平台</p>
 <p><a href="https://www.2hanju.com/" target="_blank" rel="noopener">韩剧网</a>中文最大的韩剧门户</p>
-<h2 id="9-经典的win2000桌面"><a href="#9-经典的win2000桌面" class="headerlink" title="9.经典的win2000桌面"></a>9.经典的win2000桌面</h2><p><img src="/images/Github/Weekly/win2000.jpeg" alt></p>
+<p><a href="https://yandex.com/" target="_blank" rel="noopener">Yandex</a>是一款非常好用的图片搜索网站</p>
+<h2 id="9-停车"><a href="#9-停车" class="headerlink" title="9.停车"></a>9.停车</h2><p><img src="/images/Github/Weekly/6b0be8222e0acc0f.gif" alt></p>
 <h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
 <p>无论从事什么行业，只要做好两件事就够了，一个是你的专业、一个是你的人品。专业决定了你的存在，人品决定了你的人脉；剩下的就是坚持。</p>
 </blockquote>
@@ -161,7 +533,7 @@
   <entry>
     <title>数字周刊 11</title>
     <url>/2021/09/05/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A11/</url>
-    <content><![CDATA[<p><img src="/images/Github/Weekly/artboard_2.png" alt></p>
+    <content><![CDATA[<p><img src="/images/Github/Weekly/2021031.jpg" alt></p>
 <a id="more"></a>
 <h2 id="1-努力是没有用的"><a href="#1-努力是没有用的" class="headerlink" title="1.努力是没有用的"></a>1.努力是没有用的</h2><p>有些人非常勤奋，别人休息和娱乐的时候，都在工作学习。但是努力了一辈子，人生也没有显著的提升，就像报道里经常说的：”某某在平凡的岗位上，勤勤恳恳工作了一辈子”。</p>
 <p>另一方面，很多成功者似乎也没有特别努力，就取得了许多成就，过上了好日子。蔡志忠以自己为例，他从小就喜欢画画，然后一直画，不知不觉就成了大漫画家，名利双收，从没有觉得过得很辛苦。</p>
@@ -184,80 +556,14 @@
 <p>公司旁边有一家税务所，每天都有很多人排队交税。如果你是第一次来交税，肯定搞不清楚怎么交，交税是一门学问，必须有人教你，要带哪些证件，要填哪些表，去哪些窗口排队等等。</p>
 <p>我现在认为，学习编程跟学习交税是一样的，都是学习实施的细节。一旦外部环境变了，原来的实施细节就没用了。当代编程由于层层的抽象和封装，我们已经不必接触底层真正具有通用性的知识了。大部分时候，所谓编程就是在写某个抽象层的配置。比如，网页样式就是在写 CSS 配置，你很难说这到底是真正的知识，还是像《办税指南》那样的实施细节。</p>
 <p>实施细节并不是知识，而是操作步骤。如果技术栈发生变更，实施细节就会毫无用处。但是，你又不能不学习它，不知道实施细节，就没法做出项目。我觉得，程序员应该要警惕，不要落入实施细节的陷阱，不要把全部精力花在实施细节上面，然后以为自己学到了真正的知识。对待各种语言和工具，正确的态度应该是”进得去，出得来”，既要了解足够的细节，也要能够站在宏观的角度看待它，探寻底层到底是怎么实现的。</p>
-<h2 id="3-Linux系统常用命令"><a href="#3-Linux系统常用命令" class="headerlink" title="3.Linux系统常用命令"></a>3.Linux系统常用命令</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Linux系统常用的命令语句</span><br><span class="line"></span><br><span class="line">pwd 显示当前工作路径</span><br><span class="line">ls 查看目录中的文件 ｜｜ 列出目录内容</span><br><span class="line">	ls -l 改变输出的格式</span><br><span class="line">	ls -lt  ||  ls -lt -reverse</span><br><span class="line">	ls -a || ls -all 列出所有文件，甚至包括文件名以圆点开头的，默认会被隐藏的隐藏文件。</span><br><span class="line">clear 清楚命令行屏幕</span><br><span class="line"></span><br><span class="line">cd快捷键</span><br><span class="line">1.更改当前工作目录   cd Music</span><br><span class="line">2.返回到你的家目录  cd   ||   cd ~user_name</span><br><span class="line">3.返回到你先前工作的目录 cd -</span><br><span class="line">4.返回系统根目录     cd /</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">目录和文件的操作：</span><br><span class="line">mkdir demo创建一个demo目录</span><br><span class="line">mkdir dir1 dir2 dir3 创建3个目录</span><br><span class="line"></span><br><span class="line">touch 1.txt  创建一个1.txt的文件  </span><br><span class="line"></span><br><span class="line">cp 1.txt 2.txt 复制1.txt文件，并改名为2.txt</span><br><span class="line"></span><br><span class="line">mv 移动和重命名文件，任何一种 情况下，完成操作之后，原来的文件名不再存在。</span><br><span class="line">mv 1.txt 11.txt</span><br><span class="line"></span><br><span class="line">rm 11.txt 默默地删除文件</span><br><span class="line">／＊＊＊＊＊＊＊＊＊</span><br><span class="line">小心 rm!</span><br><span class="line">类 Unix 的操作系统，比如说 Linux，没有复原命令。一旦你用 rm 删除了一些东西， 它就消失了。Linux 假定你很聪明，你知道你在做什么。</span><br><span class="line">尤其要小心通配符。思考一下这个经典的例子。假如说，你只想删除一个目录中的 HTML 文件。输入：</span><br><span class="line">rm *.html</span><br><span class="line">这是正确的，如果你不小心在 “*” 和 “.html” 之间多输入了一个空格，就像这样：</span><br><span class="line">rm * .html</span><br><span class="line">这个 rm 命令会删除目录中的所有文件，还会抱怨没有文件叫做 “.html”。</span><br><span class="line">小贴士。 无论什么时候，rm 命令用到通配符（除了仔细检查输入的内容外！）， 用 ls 命令来测试通配符。这会让你看到要删除的文件列表。然后按下上箭头按键，重新调用 刚刚执行的命令，用 rm 替换 ls</span><br><span class="line">＊＊＊＊＊＊＊＊＊／</span><br><span class="line"></span><br><span class="line">文件的压缩与解压：</span><br><span class="line">tar</span><br><span class="line">tar命令可以用来压缩打包单文件、多个文件、单个目录、多个目录。</span><br><span class="line">常用格式：</span><br><span class="line">单个文件压缩打包 tar czvf my.tar file1</span><br><span class="line">多个文件压缩打包 tar czvf my.tar file1 file2,...</span><br><span class="line">单个目录压缩打包 tar czvf my.tar dir1</span><br><span class="line">多个目录压缩打包 tar czvf my.tar dir1 dir2</span><br><span class="line">解包至当前目录：tar xzvf my.tar</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">demo:</span><br><span class="line">在桌面新建一个demo文件夹，在文件中建一个1.txt的文件</span><br><span class="line">cd Desktop</span><br><span class="line">mkdir demo</span><br><span class="line">touch 1.txt</span><br><span class="line"></span><br><span class="line">复制1.txt文件，并把该文件改名为：2.txt</span><br><span class="line"></span><br><span class="line">简单的命令：</span><br><span class="line">date   显示当前时间和日期</span><br><span class="line">cal     显示当前月份的日历</span><br><span class="line">df      显示磁盘剩余空间的数量</span><br><span class="line">exit    结束一个终端窗口</span><br></pre></td></tr></table></figure>
+<h2 id="3-决策者"><a href="#3-决策者" class="headerlink" title="3.决策者"></a>3.决策者</h2><p>作为一个决策者，你的职责不是做出很多决定，而是只需做出几个高质量的决定。</p>
+<p>如果我每天做出三个不错的决定，就很满意了。巴菲特说，他的一年就是做对三个投资决定。</p>
 <h2 id="4-克拉克三定律"><a href="#4-克拉克三定律" class="headerlink" title="4.克拉克三定律"></a>4.克拉克三定律</h2><p>英国科幻小说家亚瑟.C.克拉克，提出了三个定律。</p>
 <p>克拉克的第一定律：”如果一位杰出的老科学家表示，某些事情是可能的，那么他几乎肯定是对的。如果他说某事是不可能的，他很可能是错的。”</p>
 <p>克拉克还补充说，上面定律里面”老人”的定义，取决于他所在的学科。”物理学、数学和航天科技中，超过三十岁的人就是老人；其他学科中，老人有时会推迟到四十岁。当然也有一些了不起的例外，但是每个刚刚大学毕业的研究人员都知道，超过五十岁的科学家只能去参加会议，其他什么也干不了，而且他本人也应该有自知之明，绝不要让自己去碰实验室的工作。”</p>
 <p>克拉克的第二定律：”发现极限的唯一方法，就是尝试一些不可能的事情。”</p>
 <p>克拉克的第三定律：”任何足够先进的技术都像魔术一样。”</p>
-<h2 id="5-English"><a href="#5-English" class="headerlink" title="5.English"></a>5.English</h2><p>Mr.Zhang’s bedroom is small.</p>
-<p>There is a table in the bedroom, the table is near the window.</p>
-<p>There is a chair, it’s on the right side of the table.</p>
-<p>There is an electric fan on the chair.</p>
-<p>There is a bed against[əˈɡenst; əˈɡeɪnst] the wall in the north[nɔːrθ].</p>
-<ul>
-<li><p>an: 用在以元音字母（a，e，i，o，u）开头，或以不发音的h字母开头的单词前面。</p>
-</li>
-<li><p>a: 用在以辅音字母开头，或以读做辅音的元音字母开头的单词前面。</p>
-</li>
-</ul>
-<h2 id="6-A-fine-day"><a href="#6-A-fine-day" class="headerlink" title="6.A fine day"></a>6.A fine day</h2><p>It is a fine day today.</p>
-<p>There are some clouds in the sky, but the sun is shining.</p>
-<p>Mr.Jones is with his family.</p>
-<p>They are walking over the bridge[brɪdʒ].</p>
-<p>There are some boats on the river.</p>
-<p>Mr.Jones and his wife are looking at them.</p>
-<p>Sally is looking at a big ship.</p>
-<p>The ship is going under the bridge.</p>
-<p>Tim is looking at an aeroplane[ˈerəpleɪn], the aeroplane is flying over the river.</p>
-<h2 id="7-Math-is-Fun"><a href="#7-Math-is-Fun" class="headerlink" title="7.Math is Fun"></a>7.Math is Fun</h2><p><a href="https://www.shuxuele.com/index.html" target="_blank" rel="noopener">Shuxuele.com</a> 是 Math is Fun 的中文版</p>
-<h2 id="8-电影"><a href="#8-电影" class="headerlink" title="8.电影"></a>8.电影</h2><p>《失控玩家》、《勇者行动》、《勇往直前》</p>
-<h2 id="9-人类简史"><a href="#9-人类简史" class="headerlink" title="9.人类简史"></a>9.人类简史</h2><p><img src="/images/Github/Weekly/mmexport1496426826854.jpg" alt></p>
-<h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
-<p>常规的自然运动（比如经常步行），就是长寿的最有效方法之一。</p>
-</blockquote>
-<blockquote>
-<p>善于解决问题的人，基本不会制造问题；善于制造问题的人，基本不会解决问题。所以每个人才会沿着自己的性格，走向自己必然的宿命。</p>
-</blockquote>
-<blockquote>
-<p>该什么时候去吸收碎片化知识呢？就是你对某个领域的知识架构已经建立好了，这时你可以借助碎片化知识来查漏补缺，丰富自己的认知深度和广度。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>周刊</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>数字周刊 10</title>
-    <url>/2021/09/04/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A10/</url>
-    <content><![CDATA[<p><img src="/images/Github/Weekly/2021024.png" alt></p>
-<a id="more"></a>
-<h2 id="1-GTD"><a href="#1-GTD" class="headerlink" title="1.GTD"></a>1.GTD</h2><p><strong>清理自己的文档：</strong>花了几个小时把电脑中的文件，书柜里的书和文档全部都清理了一遍。</p>
-<p><strong>时刻记录：</strong>总是带着两张小卡片和笔，第一张是一天前记录今天需要完成的事情，另一张记录新添加的需要完成的事情。</p>
-<p><strong>2分钟法则：</strong>当一件事需要的时间少于2分钟的时候，我总是先完成它。</p>
-<p><strong>To-do List + 小卡片：</strong>保持一份完整的lists，随时知道下一个步骤是什么，尽量让自己保持进度。</p>
-<p><strong>保持收件箱干净：</strong>清空了所有的inbox，分别添加tags和filters来加快查阅。</p>
-<p><strong>较少查看邮件的时间：</strong>设定新邮件通知，即时tags或者删除，不重复阅读邮件。</p>
-<p><strong>Someday/maybelist：</strong>总是有很多事情想去做，但未必能马上实行，比如说假期旅行。先记录下来，一旦有时间就开始计划。</p>
-<p><strong>提高Calender的使用方法：</strong>不再是什么事件都放入其中，跟To-do List搭配使用。如果不是某天一定要完成任务，则放入Action List中。把可以确定时间长短的事件放入其中，规定完成。</p>
-<p><strong>完成，推迟，委派：</strong>合理安排每个任务，马上完成？推迟到什么时候？委派给别人完成？</p>
-<p><strong>从零开始：</strong>把Inbox清空，买一个新的文件箱，新的记录本。新的东西总是让人觉得有种无穷的魅力。</p>
-<h2 id="2-为什么下一步行动这么重要？"><a href="#2-为什么下一步行动这么重要？" class="headerlink" title="2.为什么下一步行动这么重要？"></a>2.为什么下一步行动这么重要？</h2><p>“我的下一步行动是什么？”，这个貌似简单的问题，对于不同的人和事，解答绝对不同。但是这个问题对每个学习GTD的人都非常重要。掌握GTD，你就必须了解什么是你的下一步行动。</p>
-<blockquote>
-<p>长期占居你的任务清单但尚未完成得项目。</p>
-</blockquote>
-<h2 id="3-当今社会趋向阶级固化，贫穷世袭。"><a href="#3-当今社会趋向阶级固化，贫穷世袭。" class="headerlink" title="3.当今社会趋向阶级固化，贫穷世袭。"></a>3.当今社会趋向阶级固化，贫穷世袭。</h2><p>很多人都说，当今社会趋向阶级固化，贫穷世袭。这种说法有根据吗？</p>
-<p>纽约大学的社会学家就做了一次调查，企图给出实证数据。最近，他们公布了结果。</p>
-<p>社会学家按照收入，把所有美国的职业分成100个等级。收入最高的职业为100分，收入最低的职业为1分。在这个体系里面，医生是93分，空姐是53分，擦鞋工是9分。</p>
-<p>一共调查了2万多个人，结果发现，子女的等级与父母的等级，呈现明显的正相关。如果父母的职业在76分以上，子女的职业往往也是这个等级；如果父母的职业在25分以下，子女很可能也是如此。概率在50%以上。</p>
-<p>调查报告写道：</p>
-<blockquote>
-<p>“人们总说，美国是一块充满机会的大陆。事实并非如此，美国人的职业发展，最大的决定因素可能是父母。”</p>
-</blockquote>
-<p>注意，这是美国的调查结果，那个地方号称有”美国梦”，人们相信奋斗就能改变人生。如果在中国调查，我想正相关肯定更明显，父母因素的决定性将更大。一个表现就是，由于太缺乏改变人生的正常途径，才导致我们这里任何可能暴富的东西，都异乎寻常的流行，比如彩票、传销、互联网金融和加密货币。</p>
-<h2 id="4-决策者"><a href="#4-决策者" class="headerlink" title="4.决策者"></a>4.决策者</h2><p>作为一个决策者，你的职责不是做出很多决定，而是只需做出几个高质量的决定。</p>
-<p>如果我每天做出三个不错的决定，就很满意了。巴菲特说，他的一年就是做对三个投资决定。</p>
-<h2 id="5-English"><a href="#5-English" class="headerlink" title="5.English"></a>5.English</h2><p>Yesterday was 25th, August.</p>
+<h2 id="5-Yesterday"><a href="#5-Yesterday" class="headerlink" title="5.Yesterday"></a>5.Yesterday</h2><p>Yesterday was 25th, August.</p>
 <p>I went to the town and bought[bɔːt] a box of water.</p>
 <p>At that time, I saw a beautiful girl, Her age is about eighteen[ˌeɪˈtiːn].</p>
 <p>Today, I get up at 6:00, We had corn[kɔːrn] for breakfast.</p>
@@ -278,10 +584,115 @@
 <blockquote>
 <p>Watching TV too much is bad for your health. 看电视太多有害于你的健康。</p>
 </blockquote>
-<h2 id="6-CSS3-filter-滤镜-属性"><a href="#6-CSS3-filter-滤镜-属性" class="headerlink" title="6.CSS3 filter(滤镜) 属性"></a>6.CSS3 filter(滤镜) 属性</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">filter</span>: <span class="selector-tag">grayscale</span>(100%);将图像转换为灰度图像。值定义转换的比例。</span><br><span class="line">	<span class="selector-tag">invert</span>(%)反转输入图像。</span><br><span class="line">	<span class="selector-tag">saturate</span>(%) 转换图像饱和度。值定义转换的比例。</span><br></pre></td></tr></table></figure>
-<h2 id="7-Gradient-Magic"><a href="#7-Gradient-Magic" class="headerlink" title="7.Gradient Magic"></a>7.Gradient Magic</h2><p><a href="https://www.gradientmagic.com/" target="_blank" rel="noopener">Gradient Magic</a>免费的、奇妙的、独特的CSS渐变色画廊</p>
-<h2 id="8-投资"><a href="#8-投资" class="headerlink" title="8.投资"></a>8.投资</h2><p>投资的知识、经验、智慧，几乎只能从实战中获得，书上写的，牛人讲的都跟你没关系。那些东西不仅要在你骨子里生根发芽且不被夭折，还要等上很久，才会茁壮甚至茂盛地生长。</p>
-<h2 id="9-停车"><a href="#9-停车" class="headerlink" title="9.停车"></a>9.停车</h2><p><img src="/images/Github/Weekly/6b0be8222e0acc0f.gif" alt></p>
+<h2 id="6-Mr-Zhang’s-bedroom"><a href="#6-Mr-Zhang’s-bedroom" class="headerlink" title="6.Mr.Zhang’s bedroom"></a>6.Mr.Zhang’s bedroom</h2><p>Mr.Zhang’s bedroom is small.</p>
+<p>There is a table in the bedroom, the table is near the window.</p>
+<p>There is a chair, it’s on the right side of the table.</p>
+<p>There is an electric fan on the chair.</p>
+<p>There is a bed against[əˈɡenst; əˈɡeɪnst] the wall in the north[nɔːrθ].</p>
+<blockquote>
+<p>an: 用在以元音字母（a，e，i，o，u）开头，或以不发音的h字母开头的单词前面。</p>
+</blockquote>
+<blockquote>
+<p>a: 用在以辅音字母开头，或以读做辅音的元音字母开头的单词前面。</p>
+</blockquote>
+<h2 id="7-A-fine-day"><a href="#7-A-fine-day" class="headerlink" title="7.A fine day"></a>7.A fine day</h2><p>It is a fine day today.</p>
+<p>There are some clouds in the sky, but the sun is shining.</p>
+<p>Mr.Jones is with his family.</p>
+<p>They are walking over the bridge[brɪdʒ].</p>
+<p>There are some boats on the river.</p>
+<p>Mr.Jones and his wife are looking at them.</p>
+<p>Sally is looking at a big ship.</p>
+<p>The ship is going under the bridge.</p>
+<p>Tim is looking at an aeroplane[ˈerəpleɪn], the aeroplane is flying over the river.</p>
+<h2 id="8-Math-is-Fun"><a href="#8-Math-is-Fun" class="headerlink" title="8.Math is Fun"></a>8.Math is Fun</h2><p><a href="https://www.shuxuele.com/index.html" target="_blank" rel="noopener">Shuxuele.com</a> 是 Math is Fun 的中文版</p>
+<h2 id="9-经典的win2000桌面"><a href="#9-经典的win2000桌面" class="headerlink" title="9.经典的win2000桌面"></a>9.经典的win2000桌面</h2><p><img src="/images/Github/Weekly/win2000.jpeg" alt></p>
+<h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
+<p>常规的自然运动（比如经常步行），就是长寿的最有效方法之一。</p>
+</blockquote>
+<blockquote>
+<p>善于解决问题的人，基本不会制造问题；善于制造问题的人，基本不会解决问题。所以每个人才会沿着自己的性格，走向自己必然的宿命。</p>
+</blockquote>
+<blockquote>
+<p>该什么时候去吸收碎片化知识呢？就是你对某个领域的知识架构已经建立好了，这时你可以借助碎片化知识来查漏补缺，丰富自己的认知深度和广度。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>周刊</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>数字周刊 10</title>
+    <url>/2021/09/04/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A10/</url>
+    <content><![CDATA[<p><img src="/images/Github/Weekly/2021024.png" alt></p>
+<a id="more"></a>
+<blockquote>
+<p>推行 996 工作制的心态，可以追溯到制造业时代。一家服装厂提高产量的最简单方法是什么？就是让你的工人加班。不幸的是，这不适用于科技公司，程序员在一段代码上花费更多时间，并不意味着写出更好的代码。事实上，处理错误的最佳方法通常是休息一下，然后回来重新阅读代码，你会更容易发现错误。</p>
+</blockquote>
+<h2 id="1-Python的面向对象"><a href="#1-Python的面向对象" class="headerlink" title="1.Python的面向对象"></a>1.Python的面向对象</h2><p>Python从设计之初就已经是一门面向对象的语言，正因为如此，在Python中创建一个类和对象是很容易的。</p>
+<p><strong>一个简单的Python类</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Employee</span>:</span></span><br><span class="line">   <span class="string">'所有员工的基类'</span></span><br><span class="line">   empCount = <span class="number">0</span></span><br><span class="line"> </span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, salary)</span>:</span></span><br><span class="line">      self.name = name</span><br><span class="line">      self.salary = salary</span><br><span class="line">      Employee.empCount += <span class="number">1</span></span><br><span class="line">   </span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">displayCount</span><span class="params">(self)</span>:</span></span><br><span class="line">     <span class="keyword">print</span> <span class="string">"Total Employee %d"</span> % Employee.empCount</span><br><span class="line"> </span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">displayEmployee</span><span class="params">(self)</span>:</span></span><br><span class="line">      <span class="keyword">print</span> <span class="string">"Name : "</span>, self.name,  <span class="string">", Salary: "</span>, self.salary</span><br></pre></td></tr></table></figure>
+<p>类的方法与普通的函数只有一个特别的区别——它们必须有一个额外的第一个参数名称, 按照惯例它的名称是 self。</p>
+<h2 id="2-Highcharts"><a href="#2-Highcharts" class="headerlink" title="2.Highcharts"></a>2.Highcharts</h2><p><a href="https://www.highcharts.com.cn/" target="_blank" rel="noopener">Highcharts</a> 是一个用纯 JavaScript 编写的一个图表库， 能够很简单便捷的在 Web 网站或是 Web 应用程序添加有交互性的图表，并且免费提供给个人学习、个人网站和非商业用途使用。</p>
+<p><strong>Highmaps 是一款基于 HTML5 的优秀地图组件。</strong></p>
+<p><strong>图表配置选项</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">// 全局配置，针对页面上所有图表有效</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="comment">// 全局配置，针对页面上所有图表有效</span></span></span><br><span class="line">Highcharts.setOptions(&#123;</span><br><span class="line">    chart: &#123;</span><br><span class="line">        backgroundColor: &#123;</span><br><span class="line">            linearGradient: [0, 0, 500, 500],</span><br><span class="line">            stops: [</span><br><span class="line"><span class="actionscript">                [<span class="number">0</span>, <span class="string">'rgb(255, 255, 255)'</span>],</span></span><br><span class="line"><span class="actionscript">                [<span class="number">1</span>, <span class="string">'rgb(240, 240, 255)'</span>]</span></span><br><span class="line">                ]</span><br><span class="line">        &#125;,</span><br><span class="line">        borderWidth: 2,</span><br><span class="line"><span class="actionscript">        plotBackgroundColor: <span class="string">'rgba(255, 255, 255, .9)'</span>,</span></span><br><span class="line"><span class="actionscript">        plotShadow: <span class="literal">true</span>,</span></span><br><span class="line">        plotBorderWidth: 1</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> chart1 = Highcharts.chart(<span class="string">'container'</span>, &#123;</span></span><br><span class="line">    xAxis: &#123;</span><br><span class="line"><span class="actionscript">        type: <span class="string">'datetime'</span></span></span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    series: [&#123;</span><br><span class="line">        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],</span><br><span class="line"><span class="javascript">        pointStart: <span class="built_in">Date</span>.UTC(<span class="number">2010</span>, <span class="number">0</span>, <span class="number">1</span>),</span></span><br><span class="line"><span class="actionscript">        pointInterval: <span class="number">3600</span> * <span class="number">1000</span> <span class="comment">// one hour</span></span></span><br><span class="line">    &#125;]</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> chart2 = Highcharts.chart(<span class="string">'container'</span>, &#123;</span></span><br><span class="line">    ...</span><br><span class="line">&#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>1.图表的主要组成</strong></p>
+<p><img src="/images/it/highcharts.png" alt></p>
+<ol>
+<li><p>标题（Title）<br>图表标题，包含标题和副标题（subTitle），其中副标题是非必须的。</p>
+</li>
+<li><p>坐标轴（Axis）<br>坐标轴包含x轴（xAxis）和y轴（yAxis）。通常情况下，x轴显示在图表的底部，y轴显示在图表的左侧。多个数据列可以共同使用同一个坐标轴，为了对比或区分数据，Highcharts提供了多轴的支持。</p>
+</li>
+<li><p>数据列（Series）<br>数据列即图表上一个或多个数据系列，比如曲线图中的一条曲线，柱状图中的一个柱形。</p>
+</li>
+<li><p>数据提示框（Tooltip）<br>当鼠标悬停在某点上时，以框的形式提示该点的数据，比如该点的值、数据单位等。数据提示框内提示的信息完全可以通过格式化函数动态指定。</p>
+</li>
+<li><p>图例（Legend）<br>图例是图表中用不同形状、颜色、文字等 标示不同数据列，通过点击标示可以显示或隐藏该数据列。</p>
+</li>
+<li><p>版权标签（Credits）<br>显示在图表右下方的包含链接的文字，默认是Highcharts官网地址。通过指定credits.enabled=false即可不显示该信息。</p>
+</li>
+<li><p>导出功能（Exporting）<br>通过引入 exporting.js即可增加图表导出为常见文件功能。</p>
+</li>
+<li><p>标示线（PlotLines）<br>可以在图表上增加一条标示线，比如平均值线，最高值线等。</p>
+</li>
+<li><p>标示区（PlotBands）<br>可以在图表添加不同颜色的区域带，标示出明显的范围区域。</p>
+</li>
+</ol>
+<h2 id="3-Linux系统常用命令"><a href="#3-Linux系统常用命令" class="headerlink" title="3.Linux系统常用命令"></a>3.Linux系统常用命令</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Linux系统常用的命令语句</span><br><span class="line"></span><br><span class="line">pwd 显示当前工作路径</span><br><span class="line">ls 查看目录中的文件 ｜｜ 列出目录内容</span><br><span class="line">	ls -l 改变输出的格式</span><br><span class="line">	ls -lt  ||  ls -lt -reverse</span><br><span class="line">	ls -a || ls -all 列出所有文件，甚至包括文件名以圆点开头的，默认会被隐藏的隐藏文件。</span><br><span class="line">clear 清楚命令行屏幕</span><br><span class="line"></span><br><span class="line">cd快捷键</span><br><span class="line">1.更改当前工作目录   cd Music</span><br><span class="line">2.返回到你的家目录  cd   ||   cd ~user_name</span><br><span class="line">3.返回到你先前工作的目录 cd -</span><br><span class="line">4.返回系统根目录     cd /</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">目录和文件的操作：</span><br><span class="line">mkdir demo创建一个demo目录</span><br><span class="line">mkdir dir1 dir2 dir3 创建3个目录</span><br><span class="line"></span><br><span class="line">touch 1.txt  创建一个1.txt的文件  </span><br><span class="line"></span><br><span class="line">cp 1.txt 2.txt 复制1.txt文件，并改名为2.txt</span><br><span class="line"></span><br><span class="line">mv 移动和重命名文件，任何一种 情况下，完成操作之后，原来的文件名不再存在。</span><br><span class="line">mv 1.txt 11.txt</span><br><span class="line"></span><br><span class="line">rm 11.txt 默默地删除文件</span><br><span class="line">／＊＊＊＊＊＊＊＊＊</span><br><span class="line">小心 rm!</span><br><span class="line">类 Unix 的操作系统，比如说 Linux，没有复原命令。一旦你用 rm 删除了一些东西， 它就消失了。Linux 假定你很聪明，你知道你在做什么。</span><br><span class="line">尤其要小心通配符。思考一下这个经典的例子。假如说，你只想删除一个目录中的 HTML 文件。输入：</span><br><span class="line">rm *.html</span><br><span class="line">这是正确的，如果你不小心在 “*” 和 “.html” 之间多输入了一个空格，就像这样：</span><br><span class="line">rm * .html</span><br><span class="line">这个 rm 命令会删除目录中的所有文件，还会抱怨没有文件叫做 “.html”。</span><br><span class="line">小贴士。 无论什么时候，rm 命令用到通配符（除了仔细检查输入的内容外！）， 用 ls 命令来测试通配符。这会让你看到要删除的文件列表。然后按下上箭头按键，重新调用 刚刚执行的命令，用 rm 替换 ls</span><br><span class="line">＊＊＊＊＊＊＊＊＊／</span><br><span class="line"></span><br><span class="line">文件的压缩与解压：</span><br><span class="line">tar</span><br><span class="line">tar命令可以用来压缩打包单文件、多个文件、单个目录、多个目录。</span><br><span class="line">常用格式：</span><br><span class="line">单个文件压缩打包 tar czvf my.tar file1</span><br><span class="line">多个文件压缩打包 tar czvf my.tar file1 file2,...</span><br><span class="line">单个目录压缩打包 tar czvf my.tar dir1</span><br><span class="line">多个目录压缩打包 tar czvf my.tar dir1 dir2</span><br><span class="line">解包至当前目录：tar xzvf my.tar</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">demo:</span><br><span class="line">在桌面新建一个demo文件夹，在文件中建一个1.txt的文件</span><br><span class="line">cd Desktop</span><br><span class="line">mkdir demo</span><br><span class="line">touch 1.txt</span><br><span class="line"></span><br><span class="line">复制1.txt文件，并把该文件改名为：2.txt</span><br><span class="line"></span><br><span class="line">简单的命令：</span><br><span class="line">date   显示当前时间和日期</span><br><span class="line">cal     显示当前月份的日历</span><br><span class="line">df      显示磁盘剩余空间的数量</span><br><span class="line">exit    结束一个终端窗口</span><br></pre></td></tr></table></figure>
+<h2 id="4-用css实现行内溢出文字省略号"><a href="#4-用css实现行内溢出文字省略号" class="headerlink" title="4.用css实现行内溢出文字省略号"></a>4.用css实现行内溢出文字省略号</h2><p>需要加三个样式：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">	<span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">	<span class="attribute">white-space</span>: nowrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="5-CSS3-filter-滤镜-属性"><a href="#5-CSS3-filter-滤镜-属性" class="headerlink" title="5.CSS3 filter(滤镜) 属性"></a>5.CSS3 filter(滤镜) 属性</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">filter</span>: <span class="selector-tag">grayscale</span>(100%);将图像转换为灰度图像。值定义转换的比例。</span><br><span class="line">	<span class="selector-tag">invert</span>(%)反转输入图像。</span><br><span class="line">	<span class="selector-tag">saturate</span>(%) 转换图像饱和度。值定义转换的比例。</span><br></pre></td></tr></table></figure>
+<h2 id="6-jQuery-ajax读取本地json文件"><a href="#6-jQuery-ajax读取本地json文件" class="headerlink" title="6.jQuery ajax读取本地json文件"></a>6.jQuery ajax读取本地json文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cdshi.json</span><br><span class="line">&#123;</span><br><span class="line">    &quot;first&quot;:[</span><br><span class="line">        &#123;&quot;name&quot;:&quot;张三&quot;,&quot;sex&quot;:&quot;男&quot;&#125;,</span><br><span class="line">        &#123;&quot;name&quot;:&quot;李四&quot;,&quot;sex&quot;:&quot;男&quot;&#125;,</span><br><span class="line">        &#123;&quot;name&quot;:&quot;王武&quot;,&quot;sex&quot;:&quot;男&quot;&#125;,</span><br><span class="line">        &#123;&quot;name&quot;:&quot;李梅&quot;,&quot;sex&quot;:&quot;女&quot;&#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$.ajax(&#123;</span><br><span class="line">   url: &quot;ceshi.json&quot;,//json文件位置</span><br><span class="line">   type: &quot;GET&quot;,//请求方式为get</span><br><span class="line">   dataType: &quot;json&quot;, //返回数据格式为json</span><br><span class="line">   success: function(data) &#123;//请求成功完成后要执行的方法 </span><br><span class="line">       //each循环 使用$.each方法遍历返回的数据date</span><br><span class="line">       $.each(data.first, function(i, item) &#123;</span><br><span class="line">            var str = &apos;&lt;div&gt;姓名:&apos; + item.name + &apos;性别：&apos; + item.sex + &apos;&lt;/div&gt;&apos;;</span><br><span class="line">            document.write(str);</span><br><span class="line">       &#125;)</span><br><span class="line">   &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="5-mysql的增、删、查、改"><a href="#5-mysql的增、删、查、改" class="headerlink" title="5.mysql的增、删、查、改"></a>5.mysql的增、删、查、改</h2><p>创建、删除、选择数据库</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create database 数据库名;  //创建</span><br><span class="line"></span><br><span class="line">drop database &lt;数据库名&gt;; //删除</span><br><span class="line"></span><br><span class="line">use &lt;数据库名&gt; //选择数据库</span><br></pre></td></tr></table></figure>
+<p>以下例子中我们将在 RUNOOB 数据库中创建数据表runoob_tbl：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CREATE TABLE IF NOT EXISTS `runoob_tbl`(</span><br><span class="line">   `runoob_id` INT UNSIGNED AUTO_INCREMENT,</span><br><span class="line">   `runoob_title` VARCHAR(100) NOT NULL,</span><br><span class="line">   `runoob_author` VARCHAR(40) NOT NULL,</span><br><span class="line">   `submission_date` DATE,</span><br><span class="line">   PRIMARY KEY ( `runoob_id` )</span><br><span class="line">)ENGINE=InnoDB DEFAULT CHARSET=utf8;</span><br></pre></td></tr></table></figure>
+<p>查看表结构<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">desc 表名;</span><br><span class="line"></span><br><span class="line">show table 表名; //查看建表语句</span><br></pre></td></tr></table></figure></p>
+<p>查询</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">select * from runoob_tbl;</span><br></pre></td></tr></table></figure>
+<p>删除</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DROP TABLE runoob_tbl;</span><br><span class="line"></span><br><span class="line">DELETE FROM tb_name WHERE id=4//删除表中多行数据</span><br></pre></td></tr></table></figure>
+<h2 id="6-CSS3原生的关键帧和动画的使用方法"><a href="#6-CSS3原生的关键帧和动画的使用方法" class="headerlink" title="6.CSS3原生的关键帧和动画的使用方法"></a>6.CSS3原生的关键帧和动画的使用方法</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="selector-class">.div</span>&#123;</span><br><span class="line">	<span class="attribute">animation</span>:flash <span class="number">1s</span> ease <span class="number">0.3s</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@-webkit-keyframes</span> flash&#123;</span><br><span class="line">	0%&#123;css代码&#125;</span><br><span class="line">	20%&#123;&#125;</span><br><span class="line">	100&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="7-sublime-Text主题"><a href="#7-sublime-Text主题" class="headerlink" title="7.sublime Text主题"></a>7.sublime Text主题</h2><p>color scheme<br>Neon Monocyanide Markdown</p>
+<p>theme<br>Default.sublime-theme</p>
+<p><img src="/images/Other/20201225001.png" alt></p>
+<p>color scheme<br>Breakers</p>
+<p>theme<br>ayu-light.sublime-theme</p>
+<p><img src="/images/Other/20201225002.png" alt></p>
+<p>ayu-dark</p>
+<p><img src="/images/Other/20201225003.png" alt></p>
+<p><strong>sublime Text高效率的快捷键</strong></p>
+<p>control + k 折叠空行</p>
+<h2 id="8-python-Mysql表数据转换为json格式"><a href="#8-python-Mysql表数据转换为json格式" class="headerlink" title="8.python Mysql表数据转换为json格式"></a>8.python Mysql表数据转换为json格式</h2><p><a href="https://blog.csdn.net/weixin_41104835/article/details/89000096" target="_blank" rel="noopener">python Mysql表数据转换为json格式</a></p>
+<h2 id="9-Web开发相关资源链接"><a href="#9-Web开发相关资源链接" class="headerlink" title="9.Web开发相关资源链接"></a>9.Web开发相关资源链接</h2><p>Free <a href="https://www.jqueryscript.net/" target="_blank" rel="noopener">jQuery Plugins</a> and Tutorials - jQuery Script</p>
+<p><a href="https://www.jqueryscript.net/tags.php?/timeline/" target="_blank" rel="noopener">Free jQuery timeline Plugins</a>All the Free jQuery Plugins about ‘timeline’ are listed here.</p>
+<p><a href="https://www.nobleui.com/html/template/demo_5/dashboard-one.html" target="_blank" rel="noopener">NobleUI</a></p>
+<p><a href="https://blog-en.tilda.cc/articles-website-design-mistakes" target="_blank" rel="noopener">网页设计的常见错误</a>英文版</p>
+<p><a href="https://www.sioe.cn/yingyong/yanse-rgb-16/" target="_blank" rel="noopener">RGB颜色值与十六进制颜色码转换工具</a></p>
+<p>一个基于 <a href="https://firecms.co/" target="_blank" rel="noopener">Firebase</a> 的内容管理系统 CMS，数据存放在 Firebase，把这个工具架设在前端，就有了一个后台数据的管理系统。</p>
+<p><a href="https://fontawesome.dashgame.com/" target="_blank" rel="noopener">Font Awesome</a>为您提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。</p>
+<p><a href="https://github.com/susam/muboard" target="_blank" rel="noopener">Muboard</a>一个 JS 库，在网页上展示一个可以书写数学公式的黑板。</p>
+<p><a href="https://www.gradientmagic.com/" target="_blank" rel="noopener">Gradient Magic</a>免费的、奇妙的、独特的CSS渐变色画廊</p>
 <h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
 <p>Linux 内核与 Mac 内核虽然都源于 Unix，但是差别较大。Mac 内核继承 BSD Unix，有一些很老的代码，并且做了大量的定制。</p>
 </blockquote>
@@ -360,46 +771,30 @@
     <url>/2021/08/28/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A08/</url>
     <content><![CDATA[<p><img src="/images/Github/Weekly/2021081320u0190gsk.jpg" alt></p>
 <a id="more"></a>
-<h2 id="1-Highcharts"><a href="#1-Highcharts" class="headerlink" title="1.Highcharts"></a>1.Highcharts</h2><p><a href="https://www.highcharts.com.cn/" target="_blank" rel="noopener">Highcharts</a> 是一个用纯 JavaScript 编写的一个图表库， 能够很简单便捷的在 Web 网站或是 Web 应用程序添加有交互性的图表，并且免费提供给个人学习、个人网站和非商业用途使用。</p>
-<p><strong>Highmaps 是一款基于 HTML5 的优秀地图组件。</strong></p>
-<p><strong>图表配置选项</strong></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">// 全局配置，针对页面上所有图表有效</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="comment">// 全局配置，针对页面上所有图表有效</span></span></span><br><span class="line">Highcharts.setOptions(&#123;</span><br><span class="line">    chart: &#123;</span><br><span class="line">        backgroundColor: &#123;</span><br><span class="line">            linearGradient: [0, 0, 500, 500],</span><br><span class="line">            stops: [</span><br><span class="line"><span class="actionscript">                [<span class="number">0</span>, <span class="string">'rgb(255, 255, 255)'</span>],</span></span><br><span class="line"><span class="actionscript">                [<span class="number">1</span>, <span class="string">'rgb(240, 240, 255)'</span>]</span></span><br><span class="line">                ]</span><br><span class="line">        &#125;,</span><br><span class="line">        borderWidth: 2,</span><br><span class="line"><span class="actionscript">        plotBackgroundColor: <span class="string">'rgba(255, 255, 255, .9)'</span>,</span></span><br><span class="line"><span class="actionscript">        plotShadow: <span class="literal">true</span>,</span></span><br><span class="line">        plotBorderWidth: 1</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> chart1 = Highcharts.chart(<span class="string">'container'</span>, &#123;</span></span><br><span class="line">    xAxis: &#123;</span><br><span class="line"><span class="actionscript">        type: <span class="string">'datetime'</span></span></span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    series: [&#123;</span><br><span class="line">        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],</span><br><span class="line"><span class="javascript">        pointStart: <span class="built_in">Date</span>.UTC(<span class="number">2010</span>, <span class="number">0</span>, <span class="number">1</span>),</span></span><br><span class="line"><span class="actionscript">        pointInterval: <span class="number">3600</span> * <span class="number">1000</span> <span class="comment">// one hour</span></span></span><br><span class="line">    &#125;]</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="actionscript"><span class="keyword">var</span> chart2 = Highcharts.chart(<span class="string">'container'</span>, &#123;</span></span><br><span class="line">    ...</span><br><span class="line">&#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>1.图表的主要组成</strong></p>
-<p><img src="/images/it/highcharts.png" alt></p>
-<ol>
-<li><p>标题（Title）<br>图表标题，包含标题和副标题（subTitle），其中副标题是非必须的。</p>
-</li>
-<li><p>坐标轴（Axis）<br>坐标轴包含x轴（xAxis）和y轴（yAxis）。通常情况下，x轴显示在图表的底部，y轴显示在图表的左侧。多个数据列可以共同使用同一个坐标轴，为了对比或区分数据，Highcharts提供了多轴的支持。</p>
-</li>
-<li><p>数据列（Series）<br>数据列即图表上一个或多个数据系列，比如曲线图中的一条曲线，柱状图中的一个柱形。</p>
-</li>
-<li><p>数据提示框（Tooltip）<br>当鼠标悬停在某点上时，以框的形式提示该点的数据，比如该点的值、数据单位等。数据提示框内提示的信息完全可以通过格式化函数动态指定。</p>
-</li>
-<li><p>图例（Legend）<br>图例是图表中用不同形状、颜色、文字等 标示不同数据列，通过点击标示可以显示或隐藏该数据列。</p>
-</li>
-<li><p>版权标签（Credits）<br>显示在图表右下方的包含链接的文字，默认是Highcharts官网地址。通过指定credits.enabled=false即可不显示该信息。</p>
-</li>
-<li><p>导出功能（Exporting）<br>通过引入 exporting.js即可增加图表导出为常见文件功能。</p>
-</li>
-<li><p>标示线（PlotLines）<br>可以在图表上增加一条标示线，比如平均值线，最高值线等。</p>
-</li>
-<li><p>标示区（PlotBands）<br>可以在图表添加不同颜色的区域带，标示出明显的范围区域。</p>
-</li>
-</ol>
-<h2 id="2-克服拖延"><a href="#2-克服拖延" class="headerlink" title="2.克服拖延"></a>2.克服拖延</h2><p>每天早上先完成一件你认为最困难的事。<strong>在采取实际行动之后，</strong>你会发现拖延时间毫无必要，因为你很可能会喜欢自己一再拖延的这项工作。</p>
-<h2 id="3-FastAI"><a href="#3-FastAI" class="headerlink" title="3.FastAI"></a>3.FastAI</h2><p><a href="https://github.com/fastai/fastbook" target="_blank" rel="noopener">FastAI</a>是一个深度学习库，这是它的教程书，介绍深度学习的基础知识，以及如何用这个库完成人工智能项目。</p>
-<h2 id="4-Muboard"><a href="#4-Muboard" class="headerlink" title="4.Muboard"></a>4.Muboard</h2><p><a href="https://github.com/susam/muboard" target="_blank" rel="noopener">一个 JS 库，在网页上展示一个可以书写数学公式的黑板。</a></p>
+<h2 id="1-GTD"><a href="#1-GTD" class="headerlink" title="1.GTD"></a>1.GTD</h2><p><strong>清理自己的文档：</strong>花了几个小时把电脑中的文件，书柜里的书和文档全部都清理了一遍。</p>
+<p><strong>时刻记录：</strong>总是带着两张小卡片和笔，第一张是一天前记录今天需要完成的事情，另一张记录新添加的需要完成的事情。</p>
+<p><strong>2分钟法则：</strong>当一件事需要的时间少于2分钟的时候，我总是先完成它。</p>
+<p><strong>To-do List + 小卡片：</strong>保持一份完整的lists，随时知道下一个步骤是什么，尽量让自己保持进度。</p>
+<p><strong>保持收件箱干净：</strong>清空了所有的inbox，分别添加tags和filters来加快查阅。</p>
+<p><strong>较少查看邮件的时间：</strong>设定新邮件通知，即时tags或者删除，不重复阅读邮件。</p>
+<p><strong>Someday/maybelist：</strong>总是有很多事情想去做，但未必能马上实行，比如说假期旅行。先记录下来，一旦有时间就开始计划。</p>
+<p><strong>提高Calender的使用方法：</strong>不再是什么事件都放入其中，跟To-do List搭配使用。如果不是某天一定要完成任务，则放入Action List中。把可以确定时间长短的事件放入其中，规定完成。</p>
+<p><strong>完成，推迟，委派：</strong>合理安排每个任务，马上完成？推迟到什么时候？委派给别人完成？</p>
+<p><strong>从零开始：</strong>把Inbox清空，买一个新的文件箱，新的记录本。新的东西总是让人觉得有种无穷的魅力。</p>
+<h2 id="2-为什么下一步行动这么重要？"><a href="#2-为什么下一步行动这么重要？" class="headerlink" title="2.为什么下一步行动这么重要？"></a>2.为什么下一步行动这么重要？</h2><p>“我的下一步行动是什么？”，这个貌似简单的问题，对于不同的人和事，解答绝对不同。但是这个问题对每个学习GTD的人都非常重要。掌握GTD，你就必须了解什么是你的下一步行动。</p>
+<blockquote>
+<p>长期占居你的任务清单但尚未完成得项目。</p>
+</blockquote>
+<h2 id="3-克服拖延"><a href="#3-克服拖延" class="headerlink" title="3.克服拖延"></a>3.克服拖延</h2><p>每天早上先完成一件你认为最困难的事。<strong>在采取实际行动之后，</strong>你会发现拖延时间毫无必要，因为你很可能会喜欢自己一再拖延的这项工作。</p>
+<h2 id="4-FastAI"><a href="#4-FastAI" class="headerlink" title="4.FastAI"></a>4.FastAI</h2><p><a href="https://github.com/fastai/fastbook" target="_blank" rel="noopener">FastAI</a>是一个深度学习库，这是它的教程书，介绍深度学习的基础知识，以及如何用这个库完成人工智能项目。</p>
 <h2 id="5-编程巨星的唯一秘诀"><a href="#5-编程巨星的唯一秘诀" class="headerlink" title="5.编程巨星的唯一秘诀"></a>5.编程巨星的唯一秘诀</h2><p>只有一条真理决定了一个软件程序员的成功还是失败。</p>
 <p>由于坚持这个真理，一个资深的程序员能在一天的时间里学会一门新的编程语言，而由于不坚持这条真理，一个初级的程序员用十年时间也只能挣到一份糊口的钱、永远是来实现别人的设计、永远不够优秀而得不到晋升的机会。</p>
 <p>这条真理让你看清了差的程序员和好的程序员的不同之处，好的程序员和伟大的程序员的不同之处，伟大的程序员和能通过自己的技术创造出一个亿万美元价值的程序帝国的超级程序员的不同之处。</p>
 <p>不是什么复杂的道理，不是什么难懂的理论。不是具有什么天赋或“编程超能力“才能做到的事情。最终成为的是一个优秀的程序员还是一个很烂的程序员，这跟你的出身一点关系都没有。</p>
 <p>而真正的原因只有一个，唯一的一个：<strong>对所做的事情的理解越深，你就会做的越好。</strong></p>
 <p>超级程序员跟那些平庸的、一般的程序员比起来，对自己要做的事情的理解要深的多的多。这就是原因。</p>
-<h2 id="6-Python的文件操作"><a href="#6-Python的文件操作" class="headerlink" title="6.Python的文件操作"></a>6.Python的文件操作</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">f = open(<span class="string">'test.txt'</span>, <span class="string">'w'</span>)</span><br><span class="line"></span><br><span class="line">f.write(<span class="string">'hello world, i am here!'</span>) <span class="comment"># 文件的操作</span></span><br><span class="line"></span><br><span class="line">f.close() <span class="comment">#关闭这个文件管道。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 访问模式有很多种</span></span><br></pre></td></tr></table></figure>
-<h2 id="7-Python的面向对象"><a href="#7-Python的面向对象" class="headerlink" title="7.Python的面向对象"></a>7.Python的面向对象</h2><p>Python从设计之初就已经是一门面向对象的语言，正因为如此，在Python中创建一个类和对象是很容易的。</p>
-<p><strong>一个简单的Python类</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Employee</span>:</span></span><br><span class="line">   <span class="string">'所有员工的基类'</span></span><br><span class="line">   empCount = <span class="number">0</span></span><br><span class="line"> </span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, salary)</span>:</span></span><br><span class="line">      self.name = name</span><br><span class="line">      self.salary = salary</span><br><span class="line">      Employee.empCount += <span class="number">1</span></span><br><span class="line">   </span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">displayCount</span><span class="params">(self)</span>:</span></span><br><span class="line">     <span class="keyword">print</span> <span class="string">"Total Employee %d"</span> % Employee.empCount</span><br><span class="line"> </span><br><span class="line">   <span class="function"><span class="keyword">def</span> <span class="title">displayEmployee</span><span class="params">(self)</span>:</span></span><br><span class="line">      <span class="keyword">print</span> <span class="string">"Name : "</span>, self.name,  <span class="string">", Salary: "</span>, self.salary</span><br></pre></td></tr></table></figure>
-<p>类的方法与普通的函数只有一个特别的区别——它们必须有一个额外的第一个参数名称, 按照惯例它的名称是 self。</p>
+<h2 id="6-电影"><a href="#6-电影" class="headerlink" title="6.电影"></a>6.电影</h2><p>《失控玩家》、《勇者行动》、《勇往直前》</p>
+<h2 id="7-人类简史"><a href="#7-人类简史" class="headerlink" title="7.人类简史"></a>7.人类简史</h2><p><img src="/images/Github/Weekly/mmexport1496426826854.jpg" alt></p>
 <h2 id="8-不要对最熟悉的事物熟视无睹"><a href="#8-不要对最熟悉的事物熟视无睹" class="headerlink" title="8.不要对最熟悉的事物熟视无睹"></a>8.不要对最熟悉的事物熟视无睹</h2><p>什么是我们最熟悉的事物？可能就是你最容易忽略的－亲人、朋友、爱情、时间、工作、身体、信誉等等，这一切才会成就现在的你，没有了这一切，你只是一具孤家寡人，寸步难行。如果你忽略了与你最有缘的事物，那么就等于将财富从身边推开。只有利用好你身边的一切资源，才可能在生活和事业的道路上顺风顺水，更上一层楼。</p>
 <h2 id="9-不要沉迷于过去或未来而让生命从指缝溜走"><a href="#9-不要沉迷于过去或未来而让生命从指缝溜走" class="headerlink" title="9.不要沉迷于过去或未来而让生命从指缝溜走"></a>9.不要沉迷于过去或未来而让生命从指缝溜走</h2><p>脚踏实地、懂得充分利用现在的人，决不会对将来的未知生活抱太多的幻想，也不会对往日的失败或辉煌过多地追悔留恋，他们清楚同，只有珍视今天的生活，才不会使生命变得空虚，变得了无生趣。不要因为明日的海市蜃楼而践踏今日脚下的玫瑰，使得本可以建功立业的时机，悄悄远去。</p>
 <h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论　"></a>10.言论　</h2><blockquote>
@@ -433,9 +828,17 @@
 <p>大部分领域的入门方式，都是”观察和模仿”，所以视频学习更有效。 对于深入学习，文字和书籍的效果可能好于视频，因为入门以后再往上走，”理解 + 思考”的作用越来越大，”观察 + 模仿”的作用越来越小。但是，大多数人需要的只是入门，成为专业工作者毕竟是少数。</p>
 <p>所以，视频学习才是初学者更好的方式，或者说，视频是大众学习的主流，读书更适用于某个主题的进阶学习。</p>
 <p>以前没条件视频学习，现在不一样了。智能手机的普及，使得以前没人拍的知识，现在都有人拍；宽带互联网的普及，又使得人们可以随时随地消费视频。我们已经进了视频学习的时代，视频网站可能是新时代的图书馆和印刷机。</p>
-<h2 id="2-offsetWidth、clientWidth和scrollWidth"><a href="#2-offsetWidth、clientWidth和scrollWidth" class="headerlink" title="2.offsetWidth、clientWidth和scrollWidth"></a>2.offsetWidth、clientWidth和scrollWidth</h2><p><a href="https://www.jianshu.com/p/2bd00720e2de" target="_blank" rel="noopener">offsetWidth、clientWidth和scrollWidth</a></p>
-<p><a href="https://segmentfault.com/a/1190000023060419" target="_blank" rel="noopener">clientWidth和offsetWidth的区别</a></p>
-<h2 id="3-Linux合并多个文件"><a href="#3-Linux合并多个文件" class="headerlink" title="3.Linux合并多个文件"></a>3.Linux合并多个文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">cat 1.txt 2.txt 3.tex &gt; all.txt</span><br><span class="line"></span><br><span class="line">cat *.txt &gt; merge.txt</span><br><span class="line"></span><br><span class="line">rm *.ts</span><br></pre></td></tr></table></figure>
+<p><img src="/images/Github/Weekly/2021083060u011in1l02.jpg" alt></p>
+<h2 id="2-当今社会趋向阶级固化，贫穷世袭。"><a href="#2-当今社会趋向阶级固化，贫穷世袭。" class="headerlink" title="2.当今社会趋向阶级固化，贫穷世袭。"></a>2.当今社会趋向阶级固化，贫穷世袭。</h2><p>很多人都说，当今社会趋向阶级固化，贫穷世袭。这种说法有根据吗？</p>
+<p>纽约大学的社会学家就做了一次调查，企图给出实证数据。最近，他们公布了结果。</p>
+<p>社会学家按照收入，把所有美国的职业分成100个等级。收入最高的职业为100分，收入最低的职业为1分。在这个体系里面，医生是93分，空姐是53分，擦鞋工是9分。</p>
+<p>一共调查了2万多个人，结果发现，子女的等级与父母的等级，呈现明显的正相关。如果父母的职业在76分以上，子女的职业往往也是这个等级；如果父母的职业在25分以下，子女很可能也是如此。概率在50%以上。</p>
+<p>调查报告写道：</p>
+<blockquote>
+<p>“人们总说，美国是一块充满机会的大陆。事实并非如此，美国人的职业发展，最大的决定因素可能是父母。”</p>
+</blockquote>
+<p>注意，这是美国的调查结果，那个地方号称有”美国梦”，人们相信奋斗就能改变人生。如果在中国调查，我想正相关肯定更明显，父母因素的决定性将更大。一个表现就是，由于太缺乏改变人生的正常途径，才导致我们这里任何可能暴富的东西，都异乎寻常的流行，比如彩票、传销、互联网金融和加密货币。</p>
+<h2 id="3-书单"><a href="#3-书单" class="headerlink" title="3.书单"></a>3.书单</h2><p>英文版《纳尼亚传奇》<br>路遥的《人生》<br>《麦田守望者》<br>马尔克斯的《百年孤独》。<br>《算法帝国》<br>《自我拯救》《基业长青》《长日将尽》<br>《货币的上升：世界金融史》<br>《卡拉马佐夫兄弟》<br>《麦田守望者》<br>《埃涅阿斯记》<br>《耸肩的阿特拉斯》<br>《房间里最聪明的人: 安然公司是怎样破产的》<br>《在不确定的世界：从华尔街到华盛顿的艰难选择》<br>《正面思考的力量》<br>《拿破仑传》<br>《资本论》<br>《大卫·科波菲尔》<br>《思考，快与慢》。<br>《可预测的非理性》<br>《引爆点》<br>《夏洛特烦恼》</p>
 <h2 id="4-如何阻止社交网络上的傻子"><a href="#4-如何阻止社交网络上的傻子" class="headerlink" title="4.如何阻止社交网络上的傻子"></a>4.如何阻止社交网络上的傻子</h2><p>由于现在上网的门槛实在太低，导致社交网络上的傻子越来越多，据2020年第46次中国互联网络发展状况统计报告显示，受过大学本科以上教育的网民群体仅为8.8%，初中以下文化程度的网民占比高达60%。</p>
 <p>那么问题来了，正常用户在使用社交网络的时候，会发现一个问题，用户无法阻止傻子和自己互动，傻子制造的大量信息会破坏用户的网络使用体验，浪费用户的宝贵时间。</p>
 <p>我们知道，在日常生活中的社交很少会出现这种情况，那么，网络用户可以参考日常生活中的经验，在社交网络阻止傻子和自己互动。在日常生活中，如果有傻子和你互动，人们的主要应对方法是回避，没人愿意和傻子争论，那是毫无意义的事情。</p>
@@ -490,14 +893,15 @@
 <p>程序员也是如此，应该对软件有一个总体规划，让它有一个完整的基本功能。虽然以后可以进行维护、错误修复和安全补丁，但基本功能应该从始至终都是完整清晰的。</p>
 <p>你不能说，因为出现了新情况，所以需要不断改变或完善它的功能。 如果一个软件一直在加功能，它就太大了，超出了你应该做的东西。你试图制造一个超出合理范围的东西，你需要画一下功能图，将过大的软件拆分成几个功能完整且合理的小软件。</p>
 <p>总之，做完你的项目再发布。用户拿到的，应该是一个基本上做完的项目。</p>
-<h2 id="2-Django—模型—数据查询"><a href="#2-Django—模型—数据查询" class="headerlink" title="2.Django—模型—数据查询"></a>2.Django—模型—数据查询</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line">all()</span><br><span class="line"><span class="comment"># 获取所有数据，对应SQL：select * from User</span></span><br><span class="line">User.objects.all()</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">filter(**kwargs) 返回QuerySet包含与给定查找参数匹配的新查询集。</span><br><span class="line"><span class="comment">#等价sql：select * from User</span></span><br><span class="line">User.objects.filter()</span><br><span class="line"><span class="comment">#等价sql：select * from User where uname = 'admin'</span></span><br><span class="line">User.objects.filter(uname=<span class="string">'admin'</span>)</span><br><span class="line"><span class="comment">#等级sql：select * from User where uid &gt; 1 and type = 2</span></span><br><span class="line">User.objects.filter(uid__gt=<span class="number">1</span>,type=<span class="number">2</span>)</span><br><span class="line"><span class="comment">#链式调⽤，等价于User.objects.filter(uid__gt=1,type=2)</span></span><br><span class="line">User.objects.filter(uid__gt=<span class="number">1</span>).filter(type=<span class="number">2</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">exclude(**kwargs)</span><br><span class="line"><span class="comment"># 不匹配，对应SQL：select * from User where name != 'admin'</span></span><br><span class="line">User.objects.exclude(name=<span class="string">'admin'</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">order_by(*fields)</span><br><span class="line">参数是字段名，可以有多个字段名，默认是升序。</span><br><span class="line">如果要按某个字段降序，在字段名前加<span class="string">'-'</span>： <span class="string">"-uid"</span>表示按uid降序排列</span><br><span class="line"><span class="comment">#按uid升序排列 等价于 order by uid</span></span><br><span class="line"> User.objects().order_by(<span class="string">'uid'</span>)</span><br><span class="line"> <span class="comment">#按uid降序排列 等价于 order by uid desc</span></span><br><span class="line"> User.objects.order_by(<span class="string">'-uid'</span>)</span><br><span class="line"> <span class="comment">#多列排序 等价于 order by password,uid desc</span></span><br><span class="line"> User.objects.order_by(<span class="string">'password'</span>,<span class="string">'-uid'</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">values()</span><br><span class="line"><span class="comment">#返回所有字段</span></span><br><span class="line">User.objects.values()</span><br><span class="line"><span class="comment">#返回数据：</span></span><br><span class="line">[&#123;<span class="string">'uid'</span>: <span class="number">2</span>, <span class="string">'uname'</span>: <span class="string">'⼩甜甜'</span>, <span class="string">'password'</span>:</span><br><span class="line"><span class="string">'59f2443a4317918ce29ad28a14e1bdb7'</span>type<span class="string">': '</span>普通⽤户<span class="string">', '</span>regtime</span><br><span class="line"><span class="literal">None</span>, <span class="string">'ip'</span>: <span class="literal">None</span>, <span class="string">'allowed'</span>: <span class="string">'允许登录'</span>, <span class="string">'email'</span>: <span class="literal">None</span>, <span class="literal">None</span>&#125;,...]</span><br><span class="line"><span class="comment">#返回指定字段</span></span><br><span class="line">User.objects.values(<span class="string">'uname'</span>,<span class="string">'password'</span>)</span><br><span class="line">[&#123;<span class="string">'uname'</span>: <span class="string">'⼩甜甜'</span>, <span class="string">'password'</span>:</span><br><span class="line"><span class="string">'59f2443a4317918ce29ad28a14e1bdb7'</span>&#125;,...]</span><br><span class="line">reverse()</span><br><span class="line">User.objects.order_by(<span class="string">'id'</span>).reverse() 降序</span><br><span class="line">User.objects.order_by(<span class="string">'-id'</span>).reverse() 升序</span><br><span class="line">distinct()去重</span><br><span class="line">User.objects.values(<span class="string">'password'</span>).distinct()</span><br></pre></td></tr></table></figure>
+<h2 id="2-不要拿自己去跟别人比较而贬低自己"><a href="#2-不要拿自己去跟别人比较而贬低自己" class="headerlink" title="2.不要拿自己去跟别人比较而贬低自己"></a>2.不要拿自己去跟别人比较而贬低自己</h2><p>每个人都有自己的特点，每个人都是独一无二的奇迹。尺有所短，寸有所长，不必拿自己的优点与别人的缺点作比较，也不必经常自叹某某处总不如人，因为没有谁可以号称完美。人生的缺憾，最大的就是拿自己和别人相比。和高人相比使我们自卑；和俗人相比使我们下流；和庸人相比使我们骄满。外来的比较是我们动荡不能自在的来源，也使得大部分的人都迷失了自我，障蔽了自己心灵原有的氤氲馨香。</p>
 <h2 id="3-自证预言"><a href="#3-自证预言" class="headerlink" title="3.自证预言"></a>3.自证预言</h2><p>美国社会学家罗伯特·金·莫顿提出“自证预言”之后（人会不自觉的按自我的预言来行事，最终令预言发生），这个心理学理论不断地在各个领域重现。</p>
 <h2 id="4-Hexo-even主题"><a href="#4-Hexo-even主题" class="headerlink" title="4.Hexo-even主题"></a>4.Hexo-even主题</h2><p><a href="https://xiuxiuing.gitee.io/blog/2018/08/10/blogsetting/" target="_blank" rel="noopener">Hexo-even主题</a></p>
 <h2 id="5-3D-封面生成器"><a href="#5-3D-封面生成器" class="headerlink" title="5.3D 封面生成器"></a>5.3D 封面生成器</h2><p><a href="https://3dbook.xyz/" target="_blank" rel="noopener">3D 封面生成器</a></p>
 <h2 id="6-基于文件和文档的知识管理技巧"><a href="#6-基于文件和文档的知识管理技巧" class="headerlink" title="6.基于文件和文档的知识管理技巧"></a>6.基于文件和文档的知识管理技巧</h2><p><a href="https://www.williamlong.info/archives/6176.html" target="_blank" rel="noopener">基于文件和文档的知识管理技巧</a></p>
-<h2 id="7-Yandex"><a href="#7-Yandex" class="headerlink" title="7.Yandex"></a>7.Yandex</h2><p><a href="https://yandex.com/" target="_blank" rel="noopener">Yandex</a>是一款非常好用的图片搜索网站</p>
+<h2 id="7-知识混子"><a href="#7-知识混子" class="headerlink" title="7.知识混子"></a>7.知识混子</h2><p><img src="/images/Github/Weekly/2021019.jpg" alt></p>
 <h2 id="8-好听的8首歌"><a href="#8-好听的8首歌" class="headerlink" title="8.好听的8首歌"></a>8.好听的8首歌</h2><p>《星辰大海》、《千千万万》、《错位时空》、《四季予你》、《清空》、《白月光与朱砂痣》、《夜太孤单》、《可可托海与牧羊人》</p>
-<h2 id="9-推荐小说"><a href="#9-推荐小说" class="headerlink" title="9.推荐小说"></a>9.推荐小说</h2><p>搞笑幽默的小说：《开局地摊卖大力》、《亏成首付从游戏开始》、《最强反套路系统》</p>
+<h2 id="9-推荐小说"><a href="#9-推荐小说" class="headerlink" title="9.推荐小说"></a>9.推荐小说</h2><p>《大奉大更人》、《天启预报》、《从姑获鸟开始》</p>
+<p>搞笑幽默的小说：《开局地摊卖大力》、《亏成首付从游戏开始》、《最强反套路系统》</p>
 <h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
 <p>有人慌张见面、有人简单告别、有人预谋离开、有人计划重逢</p>
 </blockquote>
@@ -518,46 +922,48 @@
     <url>/2021/08/08/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A05/</url>
     <content><![CDATA[<p><img src="/images/Github/Weekly/wyq196.jpg" alt></p>
 <a id="more"></a>
-<h2 id="1-理财"><a href="#1-理财" class="headerlink" title="1.理财"></a>1.理财</h2><p>使财务从健康到安全，从安全到自主，从自主到自由的过程，并在此过程中实现现金流的顺畅、创造财富能力的提升。</p>
-<p>理财的层次：</p>
-<ul>
-<li>第一层是有效的、合理的处理和运用钱财，让自己的钱花费发挥最大的效果，以达到最大限度的满足日常生活需要的目的。</li>
-<li>第二层是用余钱投资，使之产生最佳的财务收益，也就是钱生钱的层次。</li>
-<li>第三层是从财务的角度进行人生规划，利用现有的经济财务条件，最大限度地提高自己的人力资源价值，为以后发展做准备。</li>
-</ul>
-<p><strong>投资之门的四把钥匙：</strong>分散投资、价值投资、自身投资、长期投资</p>
-<ul>
-<li>要有花钱的计划</li>
-<li>要致富就要节约口袋里的每一块钱</li>
-<li>一定要降低你的消费（没有预算的概念，随性消费也是贫穷的主要原因）</li>
-<li>明确要达成的存款目标、要有年度存款目标</li>
-<li>拥有详细的赚钱计划</li>
-<li>自我管理</li>
-<li>要不断地学习和发现新事物，不断修正改进自己的理财计划，使其日益完善。</li>
-</ul>
-<h2 id="2-每日自省"><a href="#2-每日自省" class="headerlink" title="2.每日自省"></a>2.每日自省</h2><p>我现在可以着手做哪三件事对我的目标和个人成长有益？</p>
-<p>今天的一天当中，我学到了什么？有哪些事可以再进步？</p>
-<p>我要准备什么时候起下决定改变并开始行动呢？</p>
-<p>达成目标的最大障碍是什么？</p>
-<p>为了要达成目标，我必须停止做哪些事情呢？</p>
-<p>如何让自己快乐地解决问题，并达到希望的结果？</p>
-<p>我有没有在我可以做到的情况下，最大限度地采取行动呢？</p>
-<p>对于现在的问题，我要做哪些事情来改变他呢？</p>
+<h2 id="1-vi-vim的简单实用"><a href="#1-vi-vim的简单实用" class="headerlink" title="1.vi/vim的简单实用"></a>1.vi/vim的简单实用</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">vim runoob.txt #打开文件</span><br></pre></td></tr></table></figure>
+<p>在一般模式之中，只要按下 i 字符就可以进入输入模式了</p>
+<p>按下 ESC 按钮回到一般模式</p>
+<p>输入 :wq 即可保存离开！</p>
+<h2 id="2-NobleUI模版"><a href="#2-NobleUI模版" class="headerlink" title="2.NobleUI模版"></a>2.NobleUI模版</h2><p><a href="https://www.jq22.com/demo/nobleuimo201909200931/demo_1/dashboard-one.html" target="_blank" rel="noopener">NobleUI</a> Responsive Bootstrap 4 Dashboard Template</p>
+<p><strong>如何copy使用？</strong></p>
+<p>main-wrapper是最顶层的div</p>
+<!-- more -->
+<p>page-wrapper是页面内容容器div、其次是page-content</p>
+<p>row更相当于一个功能组件的集合，也相当于一行，一个row下面可以有两个col-6。row下面一层的col-12是定义卡片显示多大的。</p>
+<p>再下面的class=”card”是真正的功能组件。</p>
+<p>一个标准的页面容器：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main-wrapper"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-wrapper"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-content"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"d-flexflex-wrap grid-margin"</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span> </span><br><span class="line">          <span class="tag">&lt;<span class="name">h4</span> <span class="attr">class</span>=<span class="string">"mb-3 mb-md-0"</span>&gt;</span>欢迎标语<span class="tag">&lt;/<span class="name">h4</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      </span><br><span class="line">      <span class="comment">&lt;!-- 某个功能组件 --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-12 col-xl-12 grid-margin stretch-card"</span>&gt;</span> </span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card overflow-hidden"</span>&gt;</span> </span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            ...</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-1-card"><a href="#2-1-card" class="headerlink" title="2-1.card"></a>2-1.card</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main-wrapper"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-wrapper"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-content"</span>&gt;</span></span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-12 col-xl-12 grid-margin stretch-card"</span>&gt;</span> </span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card overflow-hidden"</span>&gt;</span> </span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            ...</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-2-在页面中插入apexcharts"><a href="#2-2-在页面中插入apexcharts" class="headerlink" title="2-2.在页面中插入apexcharts"></a>2-2.在页面中插入apexcharts</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xl-6 grid-margin stretch-card"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h6</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>Pie chart<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"apexPie"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xl-6 grid-margin stretch-card"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h6</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>Line chart<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"apexLine"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在script标签中写入参数</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Apex Pie chart end</span></span><br><span class="line">	<span class="keyword">var</span> options = &#123;</span><br><span class="line">	  chart: &#123;</span><br><span class="line">	    height: <span class="number">300</span>,</span><br><span class="line">	    type: <span class="string">"pie"</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  colors: [<span class="string">"#f77eb9"</span>, <span class="string">"#7ee5e5"</span>,<span class="string">"#4d8af0"</span>,<span class="string">"#fbbc06"</span>],</span><br><span class="line">	  legend: &#123;</span><br><span class="line">	    position: <span class="string">'top'</span>,</span><br><span class="line">	    horizontalAlign: <span class="string">'center'</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  stroke: &#123;</span><br><span class="line">	    colors: [<span class="string">'rgba(0,0,0,0)'</span>]</span><br><span class="line">	  &#125;,</span><br><span class="line">	  dataLabels: &#123;</span><br><span class="line">	    enabled: <span class="literal">false</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  series: [<span class="number">44</span>, <span class="number">55</span>, <span class="number">13</span>, <span class="number">33</span>]</span><br><span class="line">	&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> chart = <span class="keyword">new</span> ApexCharts(<span class="built_in">document</span>.querySelector(<span class="string">"#apexPie"</span>), options);</span><br><span class="line">	</span><br><span class="line">	chart.render();  </span><br><span class="line">	<span class="comment">// Apex Pie chart end</span></span><br></pre></td></tr></table></figure>
 <h2 id="3-Python学习路线图"><a href="#3-Python学习路线图" class="headerlink" title="3.Python学习路线图"></a>3.Python学习路线图</h2><p><a href="/images/Github/Weekly/20210802001.png">Python学习路线图</a></p>
-<h2 id="4-书单"><a href="#4-书单" class="headerlink" title="4.书单"></a>4.书单</h2><p>英文版《纳尼亚传奇》<br>路遥的《人生》<br>《麦田守望者》<br>马尔克斯的《百年孤独》。<br>《算法帝国》</p>
-<p>《自我拯救》《基业长青》《长日将尽》</p>
-<p>《货币的上升：世界金融史》</p>
-<p>《卡拉马佐夫兄弟》</p>
-<p>《麦田守望者》</p>
-<p>《埃涅阿斯记》<br>《耸肩的阿特拉斯》<br>《房间里最聪明的人: 安然公司是怎样破产的》<br>《在不确定的世界：从华尔街到华盛顿的艰难选择》<br>《正面思考的力量》<br>《拿破仑传》<br>《资本论》<br>《大卫·科波菲尔》<br>《思考，快与慢》。<br>《可预测的非理性》<br>《引爆点》<br>《夏洛特烦恼》</p>
-<h2 id="5-The-first-20-hours-–-how-to-learn-anything"><a href="#5-The-first-20-hours-–-how-to-learn-anything" class="headerlink" title="5.The first 20 hours – how to learn anything"></a>5.The first 20 hours – how to learn anything</h2><p><strong>1.首先将你想学习的技能分解，想好你想要达成什么样的效果。</strong>你把技能分解的越细，你就能觉得这项技能里的哪些部分能帮助我达成目标。你就先练习这些</p>
-<p><strong>2.要有一定的理论学习。</strong>能帮助你纠错，要找到3～5种资源</p>
-<p><strong>3.排出干扰</strong></p>
-<p><strong>4.练习至少20小时</strong>最初的障碍，不是智力，也不是资源，而是情绪障碍</p>
-<h2 id="6-小说推荐"><a href="#6-小说推荐" class="headerlink" title="6.小说推荐"></a>6.小说推荐</h2><p>《大奉大更人》、《天启预报》、《从姑获鸟开始》</p>
-<h2 id="7-知识混子"><a href="#7-知识混子" class="headerlink" title="7.知识混子"></a>7.知识混子</h2><p><img src="/images/Github/Weekly/2021019.jpg" alt></p>
-<h2 id="8-不要拿自己去跟别人比较而贬低自己"><a href="#8-不要拿自己去跟别人比较而贬低自己" class="headerlink" title="8.不要拿自己去跟别人比较而贬低自己"></a>8.不要拿自己去跟别人比较而贬低自己</h2><p>每个人都有自己的特点，每个人都是独一无二的奇迹。尺有所短，寸有所长，不必拿自己的优点与别人的缺点作比较，也不必经常自叹某某处总不如人，因为没有谁可以号称完美。人生的缺憾，最大的就是拿自己和别人相比。和高人相比使我们自卑；和俗人相比使我们下流；和庸人相比使我们骄满。外来的比较是我们动荡不能自在的来源，也使得大部分的人都迷失了自我，障蔽了自己心灵原有的氤氲馨香。</p>
-<h2 id="9-近视眼的福利"><a href="#9-近视眼的福利" class="headerlink" title="9.近视眼的福利"></a>9.近视眼的福利</h2><p><img src="/images/Github/Weekly/2021017.png" alt></p>
+<h2 id="4-Python基本语法"><a href="#4-Python基本语法" class="headerlink" title="4.Python基本语法"></a>4.Python基本语法</h2><p>Py五种数据类型：Numbers（数字）、String（字符串）、List（列表）、Tuple（元组）、Dictionary（字典）</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 注释</span></span><br><span class="line"></span><br><span class="line">counter = <span class="number">100</span> <span class="comment"># 赋值整型变量</span></span><br><span class="line">miles = <span class="number">1000.0</span> <span class="comment"># 浮点型</span></span><br><span class="line">name = <span class="string">"John"</span> <span class="comment"># 字符串</span></span><br><span class="line">a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>] <span class="comment"># List</span></span><br><span class="line">tuple = ( <span class="string">'runoob'</span>, <span class="number">786</span> , <span class="number">2.23</span>, <span class="string">'john'</span>, <span class="number">70.2</span> ) <span class="comment"># 元组</span></span><br><span class="line"><span class="comment"># 元组是不允许更新的。而列表是允许更新的</span></span><br><span class="line"></span><br><span class="line">dict = &#123;&#125;</span><br><span class="line">dict[<span class="string">'one'</span>] = <span class="string">"This is one"</span></span><br><span class="line">dict[<span class="number">2</span>] = <span class="string">"This is two"</span></span><br><span class="line"> </span><br><span class="line">tinydict = &#123;<span class="string">'name'</span>: <span class="string">'runoob'</span>,<span class="string">'code'</span>:<span class="number">6734</span>, <span class="string">'dept'</span>: <span class="string">'sales'</span>&#125; <span class="comment">#字典</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printme</span><span class="params">( str )</span>:</span></span><br><span class="line">   <span class="string">"打印任何传入的字符串"</span></span><br><span class="line">   <span class="keyword">print</span> str</span><br><span class="line">   <span class="keyword">return</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">printme(<span class="string">"我要调用用户自定义函数!"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 函数参数</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum</span><span class="params">(num1,num2)</span>:</span></span><br><span class="line">  result = num1 + num2</span><br><span class="line">  print(<span class="string">"%d +%d = %d"</span> % (num1,num2,result))</span><br><span class="line"></span><br><span class="line">sum(<span class="number">10</span>,<span class="number">20</span>)</span><br></pre></td></tr></table></figure>
+<p>条件语句</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> 判断条件<span class="number">1</span>:</span><br><span class="line">    执行语句<span class="number">1</span>……</span><br><span class="line"><span class="keyword">elif</span> 判断条件<span class="number">2</span>:</span><br><span class="line">    执行语句<span class="number">2</span>……</span><br><span class="line"><span class="keyword">elif</span> 判断条件<span class="number">3</span>:</span><br><span class="line">    执行语句<span class="number">3</span>……</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    执行语句<span class="number">4</span>……</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> letter <span class="keyword">in</span> <span class="string">'Python'</span>:     <span class="comment"># 第一个实例</span></span><br><span class="line">   print(<span class="string">"当前字母: %s"</span> % letter)  <span class="comment"># 循环Python字符串</span></span><br></pre></td></tr></table></figure>
+<p>面向对象</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">prt</span><span class="params">(runoob)</span>:</span></span><br><span class="line">        print(runoob)</span><br><span class="line">        print(runoob.__class__)</span><br><span class="line"> </span><br><span class="line">t = Test()</span><br><span class="line">t.prt()</span><br></pre></td></tr></table></figure>
+<h2 id="5-Django—模型—数据查询"><a href="#5-Django—模型—数据查询" class="headerlink" title="5.Django—模型—数据查询"></a>5.Django—模型—数据查询</h2><figure class="highlight py"><table><tr><td class="code"><pre><span class="line">all()</span><br><span class="line"><span class="comment"># 获取所有数据，对应SQL：select * from User</span></span><br><span class="line">User.objects.all()</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">filter(**kwargs) 返回QuerySet包含与给定查找参数匹配的新查询集。</span><br><span class="line"><span class="comment">#等价sql：select * from User</span></span><br><span class="line">User.objects.filter()</span><br><span class="line"><span class="comment">#等价sql：select * from User where uname = 'admin'</span></span><br><span class="line">User.objects.filter(uname=<span class="string">'admin'</span>)</span><br><span class="line"><span class="comment">#等级sql：select * from User where uid &gt; 1 and type = 2</span></span><br><span class="line">User.objects.filter(uid__gt=<span class="number">1</span>,type=<span class="number">2</span>)</span><br><span class="line"><span class="comment">#链式调⽤，等价于User.objects.filter(uid__gt=1,type=2)</span></span><br><span class="line">User.objects.filter(uid__gt=<span class="number">1</span>).filter(type=<span class="number">2</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">exclude(**kwargs)</span><br><span class="line"><span class="comment"># 不匹配，对应SQL：select * from User where name != 'admin'</span></span><br><span class="line">User.objects.exclude(name=<span class="string">'admin'</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">order_by(*fields)</span><br><span class="line">参数是字段名，可以有多个字段名，默认是升序。</span><br><span class="line">如果要按某个字段降序，在字段名前加<span class="string">'-'</span>： <span class="string">"-uid"</span>表示按uid降序排列</span><br><span class="line"><span class="comment">#按uid升序排列 等价于 order by uid</span></span><br><span class="line"> User.objects().order_by(<span class="string">'uid'</span>)</span><br><span class="line"> <span class="comment">#按uid降序排列 等价于 order by uid desc</span></span><br><span class="line"> User.objects.order_by(<span class="string">'-uid'</span>)</span><br><span class="line"> <span class="comment">#多列排序 等价于 order by password,uid desc</span></span><br><span class="line"> User.objects.order_by(<span class="string">'password'</span>,<span class="string">'-uid'</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">values()</span><br><span class="line"><span class="comment">#返回所有字段</span></span><br><span class="line">User.objects.values()</span><br><span class="line"><span class="comment">#返回数据：</span></span><br><span class="line">[&#123;<span class="string">'uid'</span>: <span class="number">2</span>, <span class="string">'uname'</span>: <span class="string">'⼩甜甜'</span>, <span class="string">'password'</span>:</span><br><span class="line"><span class="string">'59f2443a4317918ce29ad28a14e1bdb7'</span>type<span class="string">': '</span>普通⽤户<span class="string">', '</span>regtime</span><br><span class="line"><span class="literal">None</span>, <span class="string">'ip'</span>: <span class="literal">None</span>, <span class="string">'allowed'</span>: <span class="string">'允许登录'</span>, <span class="string">'email'</span>: <span class="literal">None</span>, <span class="literal">None</span>&#125;,...]</span><br><span class="line"><span class="comment">#返回指定字段</span></span><br><span class="line">User.objects.values(<span class="string">'uname'</span>,<span class="string">'password'</span>)</span><br><span class="line">[&#123;<span class="string">'uname'</span>: <span class="string">'⼩甜甜'</span>, <span class="string">'password'</span>:</span><br><span class="line"><span class="string">'59f2443a4317918ce29ad28a14e1bdb7'</span>&#125;,...]</span><br><span class="line">reverse()</span><br><span class="line">User.objects.order_by(<span class="string">'id'</span>).reverse() 降序</span><br><span class="line">User.objects.order_by(<span class="string">'-id'</span>).reverse() 升序</span><br><span class="line">distinct()去重</span><br><span class="line">User.objects.values(<span class="string">'password'</span>).distinct()</span><br></pre></td></tr></table></figure>
+<h2 id="6-offsetWidth、clientWidth和scrollWidth"><a href="#6-offsetWidth、clientWidth和scrollWidth" class="headerlink" title="6.offsetWidth、clientWidth和scrollWidth"></a>6.offsetWidth、clientWidth和scrollWidth</h2><p><a href="https://www.jianshu.com/p/2bd00720e2de" target="_blank" rel="noopener">offsetWidth、clientWidth和scrollWidth</a></p>
+<p><a href="https://segmentfault.com/a/1190000023060419" target="_blank" rel="noopener">clientWidth和offsetWidth的区别</a></p>
+<h2 id="7-Linux合并多个文件"><a href="#7-Linux合并多个文件" class="headerlink" title="7.Linux合并多个文件"></a>7.Linux合并多个文件</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">cat 1.txt 2.txt 3.tex &gt; all.txt</span><br><span class="line"></span><br><span class="line">cat *.txt &gt; merge.txt</span><br><span class="line"></span><br><span class="line">rm *.ts</span><br></pre></td></tr></table></figure>
+<h2 id="8-Python的文件操作"><a href="#8-Python的文件操作" class="headerlink" title="8.Python的文件操作"></a>8.Python的文件操作</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">f = open(<span class="string">'test.txt'</span>, <span class="string">'w'</span>)</span><br><span class="line"></span><br><span class="line">f.write(<span class="string">'hello world, i am here!'</span>) <span class="comment"># 文件的操作</span></span><br><span class="line"></span><br><span class="line">f.close() <span class="comment">#关闭这个文件管道。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 访问模式有很多种</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>参见更多<a href="https://blog.chenmo1212.cn/?p=72" target="_blank" rel="noopener">Python文件操作</a></p>
+</blockquote>
+<h2 id="9-Github搜索指南"><a href="#9-Github搜索指南" class="headerlink" title="9.Github搜索指南"></a>9.Github搜索指南</h2><ol>
+<li><p>搜百科大全，搜索优秀的资源。xxx awesome</p>
+</li>
+<li><p>找例子 xxx simple</p>
+</li>
+<li><p>找空项目架子 xxx starter</p>
+</li>
+<li><p>找技术教程 django tutorial </p>
+</li>
+</ol>
 <h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
 <p>不要透支你和任何人的关系。对父母，倾听而不唯命是从、对爱人，紧密而不混淆、对孩子，慈爱而不包办、对朋友，相知而不逾界。愿你我都能收获这样舒服的相处关系。既能保持分寸感，又不会疏离、既能守住底线，又不至于淡薄。可以各自忙碌，又彼此牵挂，简单又纯粹。</p>
 </blockquote>
@@ -577,12 +983,10 @@
     <url>/2021/08/01/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A04/</url>
     <content><![CDATA[<p><img src="/images/Github/Weekly/2021012.jpeg" alt></p>
 <a id="more"></a>
-<h2 id="1-Python基本语法"><a href="#1-Python基本语法" class="headerlink" title="1.Python基本语法"></a>1.Python基本语法</h2><p>Py五种数据类型：Numbers（数字）、String（字符串）、List（列表）、Tuple（元组）、Dictionary（字典）</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 注释</span></span><br><span class="line"></span><br><span class="line">counter = <span class="number">100</span> <span class="comment"># 赋值整型变量</span></span><br><span class="line">miles = <span class="number">1000.0</span> <span class="comment"># 浮点型</span></span><br><span class="line">name = <span class="string">"John"</span> <span class="comment"># 字符串</span></span><br><span class="line">a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>] <span class="comment"># List</span></span><br><span class="line">tuple = ( <span class="string">'runoob'</span>, <span class="number">786</span> , <span class="number">2.23</span>, <span class="string">'john'</span>, <span class="number">70.2</span> ) <span class="comment"># 元组</span></span><br><span class="line"><span class="comment"># 元组是不允许更新的。而列表是允许更新的</span></span><br><span class="line"></span><br><span class="line">dict = &#123;&#125;</span><br><span class="line">dict[<span class="string">'one'</span>] = <span class="string">"This is one"</span></span><br><span class="line">dict[<span class="number">2</span>] = <span class="string">"This is two"</span></span><br><span class="line"> </span><br><span class="line">tinydict = &#123;<span class="string">'name'</span>: <span class="string">'runoob'</span>,<span class="string">'code'</span>:<span class="number">6734</span>, <span class="string">'dept'</span>: <span class="string">'sales'</span>&#125; <span class="comment">#字典</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printme</span><span class="params">( str )</span>:</span></span><br><span class="line">   <span class="string">"打印任何传入的字符串"</span></span><br><span class="line">   <span class="keyword">print</span> str</span><br><span class="line">   <span class="keyword">return</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 调用函数</span></span><br><span class="line">printme(<span class="string">"我要调用用户自定义函数!"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 函数参数</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum</span><span class="params">(num1,num2)</span>:</span></span><br><span class="line">  result = num1 + num2</span><br><span class="line">  print(<span class="string">"%d +%d = %d"</span> % (num1,num2,result))</span><br><span class="line"></span><br><span class="line">sum(<span class="number">10</span>,<span class="number">20</span>)</span><br></pre></td></tr></table></figure>
-<p>条件语句</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> 判断条件<span class="number">1</span>:</span><br><span class="line">    执行语句<span class="number">1</span>……</span><br><span class="line"><span class="keyword">elif</span> 判断条件<span class="number">2</span>:</span><br><span class="line">    执行语句<span class="number">2</span>……</span><br><span class="line"><span class="keyword">elif</span> 判断条件<span class="number">3</span>:</span><br><span class="line">    执行语句<span class="number">3</span>……</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    执行语句<span class="number">4</span>……</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> letter <span class="keyword">in</span> <span class="string">'Python'</span>:     <span class="comment"># 第一个实例</span></span><br><span class="line">   print(<span class="string">"当前字母: %s"</span> % letter)  <span class="comment"># 循环Python字符串</span></span><br></pre></td></tr></table></figure>
-<p>面向对象</p>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">prt</span><span class="params">(runoob)</span>:</span></span><br><span class="line">        print(runoob)</span><br><span class="line">        print(runoob.__class__)</span><br><span class="line"> </span><br><span class="line">t = Test()</span><br><span class="line">t.prt()</span><br></pre></td></tr></table></figure>
+<h2 id="1-The-first-20-hours-–-how-to-learn-anything"><a href="#1-The-first-20-hours-–-how-to-learn-anything" class="headerlink" title="1.The first 20 hours – how to learn anything"></a>1.The first 20 hours – how to learn anything</h2><p><strong>1.首先将你想学习的技能分解，想好你想要达成什么样的效果。</strong>你把技能分解的越细，你就能觉得这项技能里的哪些部分能帮助我达成目标。你就先练习这些</p>
+<p><strong>2.要有一定的理论学习。</strong>能帮助你纠错，要找到3～5种资源</p>
+<p><strong>3.排出干扰</strong></p>
+<p><strong>4.练习至少20小时</strong>最初的障碍，不是智力，也不是资源，而是情绪障碍</p>
 <h2 id="2-内在动机与刻意练习"><a href="#2-内在动机与刻意练习" class="headerlink" title="2.内在动机与刻意练习"></a>2.内在动机与刻意练习</h2><p>天才怎么来的？很多研究都显示，天才是后天因素造成的，而不是先天决定的。</p>
 <p>2014年，爱沙尼亚的研究人员调查了163名优秀运动员。研究发现，优秀人才首先存在强烈的内在动机。他有很强的意愿和兴趣，投入所从事的事业。然后，他会自发地在这方面进行刻意练习。</p>
 <p>研究还发现，内在动机与刻意练习有互相增强的作用。较高的初始内在动机，会带来更多的刻意练习；而较多的初始刻意练习，会使得内在动机增强。最终，内在动机和刻意练习两者都呈现螺旋式上升。如果你走在一条这样的道路上，往往就预示着这是一条正确道路，通向成功。</p>
@@ -668,7 +1072,7 @@
     <content><![CDATA[<blockquote>
 <p>前言：学习不是为了记忆，是为了运用。没有被加工和重新储存的信息和知识，和电脑没什么区别。新的时代，一定要学习两点。一、什么样的只是不用储存，到用时直接借助网络。二、自己记忆的知识，一定要系统化的存在，且可灵活运用。</p>
 </blockquote>
-<p><img src="/images/Github/Weekly/2021006.jpeg" alt></p>
+<p><img src="/images/Github/Weekly/2021006.jpg" alt></p>
 <a id="more"></a>
 <h2 id="1-hexo"><a href="#1-hexo" class="headerlink" title="1.hexo"></a>1.hexo</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>静态博客网站生成器</p>
 <p><strong>Run server</strong></p>
@@ -715,23 +1119,31 @@
     <url>/2021/07/11/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A01/</url>
     <content><![CDATA[<p><img src="/images/Github/Weekly/01.jpg" alt></p>
 <a id="more"></a>
-<h2 id="1-vi-vim的简单实用"><a href="#1-vi-vim的简单实用" class="headerlink" title="1.vi/vim的简单实用"></a>1.vi/vim的简单实用</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">vim runoob.txt #打开文件</span><br></pre></td></tr></table></figure>
-<p>在一般模式之中，只要按下 i 字符就可以进入输入模式了</p>
-<p>按下 ESC 按钮回到一般模式</p>
-<p>输入 :wq 即可保存离开！</p>
-<h2 id="2-NobleUI模版"><a href="#2-NobleUI模版" class="headerlink" title="2.NobleUI模版"></a>2.NobleUI模版</h2><p><a href="https://www.jq22.com/demo/nobleuimo201909200931/demo_1/dashboard-one.html" target="_blank" rel="noopener">NobleUI</a> Responsive Bootstrap 4 Dashboard Template</p>
-<p><strong>如何copy使用？</strong></p>
-<p>main-wrapper是最顶层的div</p>
-<!-- more -->
-<p>page-wrapper是页面内容容器div、其次是page-content</p>
-<p>row更相当于一个功能组件的集合，也相当于一行，一个row下面可以有两个col-6。row下面一层的col-12是定义卡片显示多大的。</p>
-<p>再下面的class=”card”是真正的功能组件。</p>
-<p>一个标准的页面容器：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main-wrapper"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-wrapper"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-content"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"d-flexflex-wrap grid-margin"</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span> </span><br><span class="line">          <span class="tag">&lt;<span class="name">h4</span> <span class="attr">class</span>=<span class="string">"mb-3 mb-md-0"</span>&gt;</span>欢迎标语<span class="tag">&lt;/<span class="name">h4</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      </span><br><span class="line">      <span class="comment">&lt;!-- 某个功能组件 --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-12 col-xl-12 grid-margin stretch-card"</span>&gt;</span> </span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card overflow-hidden"</span>&gt;</span> </span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            ...</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-1-card"><a href="#2-1-card" class="headerlink" title="2-1.card"></a>2-1.card</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main-wrapper"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-wrapper"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"page-content"</span>&gt;</span></span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-12 col-xl-12 grid-margin stretch-card"</span>&gt;</span> </span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card overflow-hidden"</span>&gt;</span> </span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            ...</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-2-在页面中插入apexcharts"><a href="#2-2-在页面中插入apexcharts" class="headerlink" title="2-2.在页面中插入apexcharts"></a>2-2.在页面中插入apexcharts</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xl-6 grid-margin stretch-card"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h6</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>Pie chart<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"apexPie"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-xl-6 grid-margin stretch-card"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"card-body"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h6</span> <span class="attr">class</span>=<span class="string">"card-title"</span>&gt;</span>Line chart<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"apexLine"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>在script标签中写入参数</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Apex Pie chart end</span></span><br><span class="line">	<span class="keyword">var</span> options = &#123;</span><br><span class="line">	  chart: &#123;</span><br><span class="line">	    height: <span class="number">300</span>,</span><br><span class="line">	    type: <span class="string">"pie"</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  colors: [<span class="string">"#f77eb9"</span>, <span class="string">"#7ee5e5"</span>,<span class="string">"#4d8af0"</span>,<span class="string">"#fbbc06"</span>],</span><br><span class="line">	  legend: &#123;</span><br><span class="line">	    position: <span class="string">'top'</span>,</span><br><span class="line">	    horizontalAlign: <span class="string">'center'</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  stroke: &#123;</span><br><span class="line">	    colors: [<span class="string">'rgba(0,0,0,0)'</span>]</span><br><span class="line">	  &#125;,</span><br><span class="line">	  dataLabels: &#123;</span><br><span class="line">	    enabled: <span class="literal">false</span></span><br><span class="line">	  &#125;,</span><br><span class="line">	  series: [<span class="number">44</span>, <span class="number">55</span>, <span class="number">13</span>, <span class="number">33</span>]</span><br><span class="line">	&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> chart = <span class="keyword">new</span> ApexCharts(<span class="built_in">document</span>.querySelector(<span class="string">"#apexPie"</span>), options);</span><br><span class="line">	</span><br><span class="line">	chart.render();  </span><br><span class="line">	<span class="comment">// Apex Pie chart end</span></span><br></pre></td></tr></table></figure>
+<h2 id="1-理财"><a href="#1-理财" class="headerlink" title="1.理财"></a>1.理财</h2><p>使财务从健康到安全，从安全到自主，从自主到自由的过程，并在此过程中实现现金流的顺畅、创造财富能力的提升。</p>
+<p>理财的层次：</p>
+<ul>
+<li>第一层是有效的、合理的处理和运用钱财，让自己的钱花费发挥最大的效果，以达到最大限度的满足日常生活需要的目的。</li>
+<li>第二层是用余钱投资，使之产生最佳的财务收益，也就是钱生钱的层次。</li>
+<li>第三层是从财务的角度进行人生规划，利用现有的经济财务条件，最大限度地提高自己的人力资源价值，为以后发展做准备。</li>
+</ul>
+<p><strong>投资之门的四把钥匙：</strong>分散投资、价值投资、自身投资、长期投资</p>
+<ul>
+<li>要有花钱的计划</li>
+<li>要致富就要节约口袋里的每一块钱</li>
+<li>一定要降低你的消费（没有预算的概念，随性消费也是贫穷的主要原因）</li>
+<li>明确要达成的存款目标、要有年度存款目标</li>
+<li>拥有详细的赚钱计划</li>
+<li>自我管理</li>
+<li>要不断地学习和发现新事物，不断修正改进自己的理财计划，使其日益完善。</li>
+</ul>
+<h2 id="2-每日自省"><a href="#2-每日自省" class="headerlink" title="2.每日自省"></a>2.每日自省</h2><p>我现在可以着手做哪三件事对我的目标和个人成长有益？</p>
+<p>今天的一天当中，我学到了什么？有哪些事可以再进步？</p>
+<p>我要准备什么时候起下决定改变并开始行动呢？</p>
+<p>达成目标的最大障碍是什么？</p>
+<p>为了要达成目标，我必须停止做哪些事情呢？</p>
+<p>如何让自己快乐地解决问题，并达到希望的结果？</p>
+<p>我有没有在我可以做到的情况下，最大限度地采取行动呢？</p>
+<p>对于现在的问题，我要做哪些事情来改变他呢？</p>
 <h2 id="3-随机显示的图片接口"><a href="#3-随机显示的图片接口" class="headerlink" title="3.随机显示的图片接口"></a>3.随机显示的图片接口</h2><p><img src="https://api.btstu.cn/sjbz/zsy.php" alt></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">![](https://api.btstu.cn/sjbz/zsy.php) # 随机图片</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">随机显示美女图片</span><br><span class="line">https://api88.net/api/img/rand/</span><br><span class="line"></span><br><span class="line">随机显示 bing 壁纸</span><br><span class="line">https://api88.net/api/bing/rand</span><br><span class="line"></span><br><span class="line">电脑手机自适应随机图片</span><br><span class="line">https://api.btstu.cn/sjbz/zsy.php</span><br><span class="line"></span><br><span class="line">横版动漫图片</span><br><span class="line">https://api.btstu.cn/sjbz/?lx=dongman</span><br><span class="line"></span><br><span class="line">横版美女图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=meizi</span><br><span class="line"></span><br><span class="line">横版动漫妹子</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=suiji</span><br><span class="line"></span><br><span class="line">竖版动漫图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=m_dongman</span><br><span class="line"></span><br><span class="line">竖版美女图片</span><br><span class="line">http://api.btstu.cn/sjbz/?lx=m_meizi</span><br><span class="line"></span><br><span class="line">竖版随机动漫妹子</span><br><span class="line">http://api.btstu.cn/sjbz/?m_lx=suiji</span><br></pre></td></tr></table></figure>
 <h2 id="4-国内油管"><a href="#4-国内油管" class="headerlink" title="4.国内油管"></a>4.国内油管</h2><p><a href="https://www.biantube.com" target="_blank" rel="noopener">国内版油管</a></p>
@@ -740,16 +1152,7 @@
 <h2 id="6-电影资源网站"><a href="#6-电影资源网站" class="headerlink" title="6.电影资源网站"></a>6.电影资源网站</h2><p><img src="/images/Github/Weekly/2021004.png" alt></p>
 <h2 id="7-iphone-6"><a href="#7-iphone-6" class="headerlink" title="7.iphone 6"></a>7.iphone 6</h2><p><img src="/images/Github/Weekly/2021005.jpg" alt></p>
 <h2 id="8-每日自省吾身"><a href="#8-每日自省吾身" class="headerlink" title="8.每日自省吾身"></a>8.每日自省吾身</h2><p><img src="/images/Github/Weekly/2021003.jpg" alt></p>
-<h2 id="9-Github搜索指南"><a href="#9-Github搜索指南" class="headerlink" title="9.Github搜索指南"></a>9.Github搜索指南</h2><ol>
-<li><p>搜百科大全，搜索优秀的资源。xxx awesome</p>
-</li>
-<li><p>找例子 xxx simple</p>
-</li>
-<li><p>找空项目架子 xxx starter</p>
-</li>
-<li><p>找技术教程 django tutorial </p>
-</li>
-</ol>
+<h2 id="9-近视眼的福利"><a href="#9-近视眼的福利" class="headerlink" title="9.近视眼的福利"></a>9.近视眼的福利</h2><p><img src="/images/Github/Weekly/2021017.png" alt></p>
 <h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
 <p>成年人最大的自律，就是控制自己去跟杠精辩论的欲望。</p>
 </blockquote>
@@ -762,6 +1165,65 @@
 ]]></content>
       <categories>
         <category>周刊</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Blog范文（一级标题）</title>
+    <url>/2021/04/07/Blog/Blog%E8%8C%83%E6%96%87/</url>
+    <content><![CDATA[<!-- doc -->
+<a id="more"></a>
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>每天早上先完成一件你认为最困难的事。</p>
+<p>每天早上先完成一件你认为最困难的事。在采取实际行动之后，你会发现拖延时间毫无必要，因为你很可能会喜欢自己一再拖延的这项工作。</p>
+<p>每天早上先完成一件你认为最困难的事。<strong>粗体在采取实际行动之后，</strong>你会发现拖延时间毫无必要，因为你很可能会喜欢自己一再拖延的这项工作。每天早上先完成一件你认为最困难的事。在采取实际行动之后，你会发现拖延时间毫无必要，因为你很可能会喜欢自己一再拖延的这项工作。</p>
+<blockquote>
+<p>这是引用的文字。</p>
+</blockquote>
+<p>有序列表</p>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<h3 id="无序列表-三级标题"><a href="#无序列表-三级标题" class="headerlink" title="无序列表(三级标题)"></a>无序列表(三级标题)</h3><ul>
+<li>无序列表</li>
+<li>无序列表</li>
+<li>无序列表</li>
+</ul>
+<blockquote><p>这是第二种引用的文字 Do not just seek happiness for yourself. Seek happiness for all. Through kindness.</p>
+<footer><strong>David Levithan</strong><cite>-- Wide Awake</cite></footer></blockquote>
+<p>这是链接 <a href="https://www.mifengtd.cn/" target="_blank" rel="noopener">褪墨・时间管理</a></p>
+<p>每天早上先完成一件你认为最困难的事。</p>
+<p><strong>代码JavaScript 示例：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* nth element in the fibonacci series.</span></span><br><span class="line"><span class="comment">* <span class="doctag">@param </span>n &gt;= 0</span></span><br><span class="line"><span class="comment">* <span class="doctag">@return </span>the nth element, &gt;= 0.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fib</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1</span>, b = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">var</span> tmp;</span><br><span class="line">  <span class="keyword">while</span> (--n &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">    tmp = a;</span><br><span class="line">    a += b;</span><br><span class="line">    b = tmp;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.write(fib(<span class="number">10</span>));</span><br></pre></td></tr></table></figure>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align:right">价格</th>
+<th style="text-align:center">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计算机</td>
+<td style="text-align:right">\$1600</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td style="text-align:right">\$12</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td style="text-align:right">\$1</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <categories>
+        <category>Blog</category>
       </categories>
   </entry>
   <entry>
@@ -2003,6 +2465,192 @@
       </categories>
   </entry>
   <entry>
+    <title>Markdown语法手册</title>
+    <url>/2017/03/06/Blog/Markdown%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/</url>
+    <content><![CDATA[<!-- doc -->
+<a id="more"></a>
+<h1 id="Markdown-简明语法手册"><a href="#Markdown-简明语法手册" class="headerlink" title="Markdown 简明语法手册"></a>Markdown 简明语法手册</h1><p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。</p>
+<p>Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。</p>
+<p>Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。</p>
+<!-- doc -->
+<!-- more -->
+<h2 id="1-Markdown-标题"><a href="#1-Markdown-标题" class="headerlink" title="1.Markdown 标题"></a>1.Markdown 标题</h2><p>Markdown 标题有两种格式。</p>
+<hr>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">我展示的是一级标题</span><br><span class="line">=================</span><br><span class="line"></span><br><span class="line">我展示的是二级标题</span><br><span class="line">-----------------</span><br></pre></td></tr></table></figure>
+<p>使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推。</p>
+<h2 id="2-段落和斜体和粗体"><a href="#2-段落和斜体和粗体" class="headerlink" title="2.段落和斜体和粗体"></a>2.段落和斜体和粗体</h2><p>Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个以上空格加上回车。<br>当然也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
+<h3 id="2-1斜体和粗体"><a href="#2-1斜体和粗体" class="headerlink" title="2.1斜体和粗体"></a>2.1斜体和粗体</h3><p>使用 * 和 ** 表示斜体和粗体。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">_斜体文本_</span><br><span class="line">**粗体文本**</span><br><span class="line">__粗体文本__</span><br><span class="line">***粗斜体文本***</span><br><span class="line">___粗斜体文本___</span><br></pre></td></tr></table></figure>
+<h3 id="2-2删除线和下划线"><a href="#2-2删除线和下划线" class="headerlink" title="2.2删除线和下划线"></a>2.2删除线和下划线</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~~BAIDU.COM~~</span><br><span class="line">&lt;u&gt;带下划线文本&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+<p>[^RUNOOB]: 菜鸟教程 – 学的不仅是技术，更是梦想</p>
+<h2 id="3-列表"><a href="#3-列表" class="headerlink" title="3.列表"></a>3.列表</h2><h3 id="3-1无序列表"><a href="#3-1无序列表" class="headerlink" title="3.1无序列表"></a>3.1无序列表</h3><p>使用 * ，+ ，- 表示无序列表。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- 无序列表项 一</span><br><span class="line">- 无序列表项 二</span><br><span class="line">- 无序列表项 三</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<ul>
+<li>无序列表项 一</li>
+<li>无序列表项 二</li>
+<li>无序列表项 三</li>
+</ul>
+<h3 id="3-2有序列表"><a href="#3-2有序列表" class="headerlink" title="3.2有序列表"></a>3.2有序列表</h3><p>使用数字和点表示有序列表。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 有序列表项 一</span><br><span class="line">2. 有序列表项 二</span><br><span class="line">3. 有序列表项 三</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<ol>
+<li>有序列表项 一</li>
+<li>有序列表项 二</li>
+<li>有序列表项 三</li>
+</ol>
+<h3 id="3-3列表嵌套"><a href="#3-3列表嵌套" class="headerlink" title="3.3列表嵌套"></a>3.3列表嵌套</h3><p>列表嵌套只需在子列表中的选项前面添加四个空格即可：</p>
+<ol>
+<li>第一项：<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项：<ul>
+<li>第二项嵌套的第一个元素</li>
+<li>第二项嵌套的第二个元素</li>
+</ul>
+</li>
+</ol>
+<h2 id="4-引用的区块"><a href="#4-引用的区块" class="headerlink" title="4.引用的区块"></a>4.引用的区块</h2><h3 id="文字引用"><a href="#文字引用" class="headerlink" title="文字引用"></a>文字引用</h3><p>使用 &gt; 表示文字引用。</p>
+<p>示例：</p>
+<blockquote>
+<p>野火烧不尽，春风吹又生。</p>
+</blockquote>
+<p>区块的以嵌套</p>
+<blockquote>
+<p>最外层</p>
+<blockquote>
+<p>第一层嵌套</p>
+<blockquote>
+<p>第二层嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>区块中使用列表</p>
+<blockquote>
+<p>区块中使用列表</p>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+</ol>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+</blockquote>
+<p>列表中使用区块</p>
+<ul>
+<li>第一项<blockquote>
+<p>菜鸟教程<br>学的不仅是技术更是梦想</p>
+</blockquote>
+</li>
+<li>第二项    </li>
+</ul>
+<h2 id="5-外链接和图片"><a href="#5-外链接和图片" class="headerlink" title="5.外链接和图片"></a>5.外链接和图片</h2><p>使用 [描述](链接地址) 为文字增加外链接。</p>
+<p>示例：</p>
+<p>这是去往 <a href="http://ghosertblog.github.com" target="_blank" rel="noopener">本人博客</a> 的链接。</p>
+<h3 id="5-1插入图像"><a href="#5-1插入图像" class="headerlink" title="5.1插入图像"></a>5.1插入图像</h3><p>使用 ![描述](图片链接地址) 插入图像。</p>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">![我的头像](https://www.zybuluo.com/static/img/my_head.jpg)</span><br></pre></td></tr></table></figure>
+<h3 id="5-2高级链接"><a href="#5-2高级链接" class="headerlink" title="5.2高级链接"></a>5.2高级链接</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">这个链接用 1 作为网址变量 [Google][1]</span><br><span class="line">这个链接用 runoob 作为网址变量 [Runoob][runoob]</span><br><span class="line">然后在文档的结尾为变量赋值（网址）</span><br><span class="line"></span><br><span class="line">[1]: http://www.google.com/</span><br><span class="line">[runoob]: http://www.runoob.com/</span><br></pre></td></tr></table></figure>
+<h2 id="6-代码"><a href="#6-代码" class="headerlink" title="6.代码"></a>6.代码</h2><h3 id="6-1行内代码块"><a href="#6-1行内代码块" class="headerlink" title="6.1行内代码块"></a>6.1行内代码块</h3><p>使用 `代码` 表示行内代码块。</p>
+<p>示例：</p>
+<p>让我们聊聊 <code>html</code>。</p>
+<h3 id="6-2代码块"><a href="#6-2代码块" class="headerlink" title="6.2代码块"></a>6.2代码块</h3><p>使用 四个缩进空格 表示代码块。</p>
+<p>示例：</p>
+<pre><code>这是一个代码块，此行左侧有四个不可见的空格。
+</code></pre><h3 id="6-3代码实例"><a href="#6-3代码实例" class="headerlink" title="6.3代码实例"></a>6.3代码实例</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">```javascript</span><br><span class="line">$(document).ready(function () &#123;</span><br><span class="line">    alert(&apos;RUNOOB&apos;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h1 id="Cmd-Markdown-高阶语法手册"><a href="#Cmd-Markdown-高阶语法手册" class="headerlink" title="Cmd Markdown 高阶语法手册"></a>Cmd Markdown 高阶语法手册</h1><h2 id="1-内容目录"><a href="#1-内容目录" class="headerlink" title="1. 内容目录"></a>1. 内容目录</h2><p>在段落中填写 <code>[TOC]</code> 以显示全文内容的目录结构。</p>
+<p>[TOC]</p>
+<h2 id="2-标签分类"><a href="#2-标签分类" class="headerlink" title="2. 标签分类"></a>2. 标签分类</h2><p>在编辑区任意行的列首位置输入以下代码给文稿标签：</p>
+<p>标签： 数学 英语 Markdown</p>
+<p>或者</p>
+<p>Tags： 数学 英语 Markdown</p>
+<h2 id="3-注脚"><a href="#3-注脚" class="headerlink" title="3. 注脚"></a>3. 注脚</h2><p>使用 [^keyword] 表示注脚。</p>
+<p>这是一个注脚[^footnote]的样例。</p>
+<p>这是第二个注脚[^footnote2]的样例。</p>
+<h2 id="4-LaTeX-公式"><a href="#4-LaTeX-公式" class="headerlink" title="4. LaTeX 公式"></a>4. LaTeX 公式</h2><p>$ 表示行内公式： </p>
+<p>质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。</p>
+<p>$$ 表示整行公式：</p>
+<p>$$\sum_{i=1}^n a_i=0$$</p>
+<p>$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$</p>
+<p>$$\sum^{j-1}<em>{k=0}{\widehat{\gamma}</em>{kj} z_k}$$</p>
+<p>访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a> 参考更多使用方法。</p>
+<h2 id="5-加强的代码块"><a href="#5-加强的代码块" class="headerlink" title="5. 加强的代码块"></a>5. 加强的代码块</h2><p>支持四十一种编程语言的语法高亮的显示，行号显示。</p>
+<p>非代码示例：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get install vim-gnome</span><br></pre></td></tr></table></figure>
+<p>Python 示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></span><br><span class="line">    <span class="string">'''A docstring'''</span></span><br><span class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></span><br><span class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="literal">None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span></span><br><span class="line"><span class="string"><span class="meta">... </span>prompt'''</span></span><br></pre></td></tr></table></figure>
+<p>JavaScript 示例：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* nth element in the fibonacci series.</span></span><br><span class="line"><span class="comment">* <span class="doctag">@param </span>n &gt;= 0</span></span><br><span class="line"><span class="comment">* <span class="doctag">@return </span>the nth element, &gt;= 0.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fib</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1</span>, b = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">var</span> tmp;</span><br><span class="line">  <span class="keyword">while</span> (--n &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">    tmp = a;</span><br><span class="line">    a += b;</span><br><span class="line">    b = tmp;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.write(fib(<span class="number">10</span>));</span><br></pre></td></tr></table></figure>
+<h2 id="6-表格支持"><a href="#6-表格支持" class="headerlink" title="6. 表格支持"></a>6. 表格支持</h2><table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align:right">价格</th>
+<th style="text-align:center">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计算机</td>
+<td style="text-align:right">\$1600</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td style="text-align:right">\$12</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td style="text-align:right">\$1</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-定义型列表"><a href="#7-定义型列表" class="headerlink" title="7. 定义型列表"></a>7. 定义型列表</h2><p>名词 1<br>:   定义 1（左侧有一个可见的冒号和四个不可见的空格）</p>
+<p>代码块 2<br>:   这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）</p>
+<pre><code>代码块（左侧有八个不可见的空格）
+</code></pre><h2 id="8-Html-标签"><a href="#8-Html-标签" class="headerlink" title="8. Html 标签"></a>8. Html 标签</h2><p>本站支持在 Markdown 语法中嵌套 Html 标签，譬如，你可以用 Html 写一个纵跨两行的表格：</p>
+<pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th rowspan=&quot;2&quot;&gt;值班人员&lt;/th&gt;
+        &lt;th&gt;星期一&lt;/th&gt;
+        &lt;th&gt;星期二&lt;/th&gt;
+        &lt;th&gt;星期三&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;李强&lt;/td&gt;
+        &lt;td&gt;张明&lt;/td&gt;
+        &lt;td&gt;王平&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><table><br>    <tr><br>        <th rowspan="2">值班人员</th><br>        <th>星期一</th><br>        <th>星期二</th><br>        <th>星期三</th><br>    </tr><br>    <tr><br>        <td>李强</td><br>        <td>张明</td><br>        <td>王平</td><br>    </tr><br></table>
+
+<h2 id="9-内嵌图标"><a href="#9-内嵌图标" class="headerlink" title="9. 内嵌图标"></a>9. 内嵌图标</h2><p>本站的图标系统对外开放，在文档中输入</p>
+<pre><code>&lt;i class=&quot;icon-weibo&quot;&gt;&lt;/i&gt;
+</code></pre><p>即显示微博的图标： <i class="icon-weibo icon-2x"></i></p>
+<p>替换 上述 <code>i 标签</code> 内的 <code>icon-weibo</code> 以显示不同的图标，例如：</p>
+<pre><code>&lt;i class=&quot;icon-renren&quot;&gt;&lt;/i&gt;
+</code></pre><p>即显示人人的图标： <i class="icon-renren icon-2x"></i></p>
+<p>更多的图标和玩法可以参看 <a href="http://fortawesome.github.io/Font-Awesome/3.2.1/icons/" target="_blank" rel="noopener">font-awesome</a> 官方网站。</p>
+<hr>
+<h2 id="10-甘特图"><a href="#10-甘特图" class="headerlink" title="10.甘特图"></a>10.甘特图</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">    A--&gt;B;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">    participant Alice</span><br><span class="line">    participant Bob</span><br><span class="line">    Alice-&gt;&gt;John: Hello John, how are you?</span><br><span class="line">    loop Healthcheck</span><br><span class="line">        John-&gt;&gt;John: Fight against hypochondria</span><br><span class="line">    end</span><br><span class="line">    Note right of John: Rational thoughts &lt;br/&gt;prevail...</span><br><span class="line">    John--&gt;&gt;Alice: Great!</span><br><span class="line">    John-&gt;&gt;Bob: How about you?</span><br><span class="line">    Bob--&gt;&gt;John: Jolly good!</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gantt</span><br><span class="line">dateFormat  YYYY-MM-DD</span><br><span class="line">title Adding GANTT diagram to mermaid</span><br><span class="line"></span><br><span class="line">section A section</span><br><span class="line">Completed task            :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">Active task               :active,  des2, 2014-01-09, 3d</span><br><span class="line">Future task               :         des3, after des2, 5d</span><br><span class="line">Future task2               :         des4, after des3, 5d</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">classDiagram</span><br><span class="line">Class01 &lt;|-- AveryLongClass : Cool</span><br><span class="line">Class03 *-- Class04</span><br><span class="line">Class05 o-- Class06</span><br><span class="line">Class07 .. Class08</span><br><span class="line">Class09 --&gt; C2 : Where am i?</span><br><span class="line">Class09 --* C3</span><br><span class="line">Class09 --|&gt; Class07</span><br><span class="line">Class07 : equals()</span><br><span class="line">Class07 : Object[] elementData</span><br><span class="line">Class01 : size()</span><br><span class="line">Class01 : int chimp</span><br><span class="line">Class01 : int gorilla</span><br><span class="line">Class08 &lt;--&gt; C2: Cool label</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gitGraph:</span><br><span class="line">options</span><br><span class="line">&#123;</span><br><span class="line">    &quot;nodeSpacing&quot;: 150,</span><br><span class="line">    &quot;nodeRadius&quot;: 10</span><br><span class="line">&#125;</span><br><span class="line">end</span><br><span class="line">commit</span><br><span class="line">branch newbranch</span><br><span class="line">checkout newbranch</span><br><span class="line">commit</span><br><span class="line">commit</span><br><span class="line">checkout master</span><br><span class="line">commit</span><br><span class="line">commit</span><br><span class="line">merge newbranch</span><br></pre></td></tr></table></figure>
+<p>甘特图、Mermaid 流程图、序列图<a href="(https://knsv.github.io/mermaid/#sequence-diagrams">Mermaid 序列图</a>、待办事宜 Todo 列表</p>
+<p>这些还没用到，就安装这些插件。</p>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Excerpt 27：中国做大事的22条真言</title>
     <url>/2016/04/29/Article/27%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%81%9A%E5%A4%A7%E4%BA%8B%E7%9A%8422%E6%9D%A1%E7%9C%9F%E8%A8%80/</url>
     <content><![CDATA[<p>一位身价过亿的温州商人醉酒后说出在中国做大事的22条真言</p>
@@ -2046,6 +2694,118 @@
 <p>Facebook喜欢雇佣所谓的 “full stack programmer”，就是一个人从设计，到交互，到html， css，javascript， server，sql， 架构，和数据统计都能做。成为full stack programmer最好的方式就是不断做个人项目。</p>
 <h2 id="4-问答网站"><a href="#4-问答网站" class="headerlink" title="4. 问答网站"></a>4. 问答网站</h2><p>问问题和回答问题都是很好的学习方式。 有的时候写出一个好问题， 比写出解答次问题所需要的代码还难。写问题可以帮你整理自己的思维逻辑。你可以试着每周在<a href="http://stackoverflow.com上问一个好问题或写一个好答案。" target="_blank" rel="noopener">http://stackoverflow.com上问一个好问题或写一个好答案。</a></p>
 <h2 id="5-加入一个好团队"><a href="#5-加入一个好团队" class="headerlink" title="5. 加入一个好团队"></a>5. 加入一个好团队</h2><p>最好的进步方式就是跟比自己强的人一起做事。高手都愿意聚在一起，所以很多会选择去优秀的早期创业公司。我在硅谷和创新工场创业时遇到了很多神人， 跟他们学了不少东西。</p>
+]]></content>
+      <categories>
+        <category>Article</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Excerpt 24：陈安之如何追求超级成功</title>
+    <url>/2016/04/08/Article/24%EF%BC%9A%E9%99%88%E5%AE%89%E4%B9%8B%E5%A6%82%E4%BD%95%E8%BF%BD%E6%B1%82%E8%B6%85%E7%BA%A7%E6%88%90%E5%8A%9F/</url>
+    <content><![CDATA[<h2 id="如何追求超级成功"><a href="#如何追求超级成功" class="headerlink" title="如何追求超级成功"></a>如何追求超级成功</h2><p>成功最重要的秘诀，就是要用已经证明有效的成功方法。你必须向成功者学习，做成功者所做的事情，了解成功者的思考模式，加以运用到自己的身上，然后再以自己的风格，创出一套自己的成功哲学和理论。<br>　　<br>你想知道那些世界级的顶尖人物，是如何透过自我操练与自我鞭策才能达到巅峰？你想知道他们成功的秘诀是什么吗？现在，让我们一起来揭开超级成功的神秘面纱。 </p>
+<p>1、做你喜欢做的事，然后把它做到最好。  </p>
+<p>你一定要做自己喜欢做的事情，才会有所成就。正确寻找工作的方法，把自己理想和完美的工作条件列出来。  </p>
+<p>2、要以成为行业中的世界最顶尖为目标。  </p>
+<p>不要把赚很多钱当做是你人生最重要的目标。只要你能够成为最好的人物，最好的事情也就会发生在你身上。  </p>
+<p>当你想要得到一切最美好的事物，你必须把自己变成最好的人，以成为行业中的世界最顶尖为你人生的最终目标，这样的话，你一定可以实现你所有的梦想。 </p>
+<p>3、成功的人要有远大的梦想，但要有合理的目标。  </p>
+<p>每一个成功的人都有伟大的梦想。大成功是由小成功所累积，每一个成功的人都是在达成无数的小目标之后，才实现他们伟大的梦想。  </p>
+<p>不放弃，就一定有成功的机会，如果你放弃，就已经失败了。记住！每一个目标和梦想，都要设定一个期限。目标不达成：1、不合理2、没有期限3、缺乏详细的计划4、没有天天衡量进度。千万不要靠运气过生活，你一定要靠目标和计划过生活。  </p>
+<p>每一年年底的时候，都要写出明年想要达成的目标。全写出来，选四个最重要、最想要，选1个为核心目标，另3个再排优先顺序，订出具体的完成期限。当你列出目标之后，请你列出一个详细的计划，把计划依照优先顺序排列好，这样会使你达成目标的机率大幅度地提升，这也是每个超级成功者所做的事情。  </p>
+<p>4、你到底是想要成功，还是一定要成功？  </p>
+<p>成功有三个最重要的秘诀：1、要有强烈的欲望2、还是要有强烈的欲望3、还是要有强烈的欲望。  </p>
+<p>5、每一天都要不断地检讨自己的做法和成效。  </p>
+<p>做对的一定要不断地加强，做错的一定要立刻改正。因为，同样的错误千万不要犯第二次！每一天一定要检视自己的进度，我检视下属进度，每一礼拜开会做讨论，发生何事（错、对）。  </p>
+<p>6、一定要跟成功的人学习，尤其是世界级的成功人物。  </p>
+<p>你一定要学习成功的榜样，让自己进入成功的环境当中，跟着成功者学习。一个人要成功 ，有几个方法：  </p>
+<p>1、他必须帮成功者工作2、当他们开始成功的时候，也开始跟更成功的人合作3、当你越来越成功的时候，要找成功者来帮你工作。依照这三个方法，按步就班去做，你一定会非常地成功。  </p>
+<p>7、要成功。要先研究成功学。  </p>
+<p>要成功，一定要研究成功。一个人的智慧产生的三个要素：  </p>
+<p>1、成功者不断地搜集资讯，他们相当善于掌握新知。记住！永远要不断地搜集新的资讯2、一个成功的人会不断地学习别人的经验。3、一个有智慧的人，会不断地自我反省。  </p>
+<p>8、要成功就要采取行动。  </p>
+<p>世界最顶尖的业务员成功的秘诀：从早上八点工作到晚上昏倒为止。销量永远是一个数字的游戏，你只要越勤劳，拜访越多的顾客，一定就会有成交的机会。  </p>
+<p>成功的人永远比一般人做得更多，当一般人放弃的时候，他们找寻下一位顾客；当顾客拒绝时，他再问他们：”你到底要不要？”当顾客不买时，他问：”你为什么不买？”记住！永远是你采取了多少行动让你更成功，而不是你知道了多少。  </p>
+<p>9、要不断地请教成功者，询问他们成功的方法和意见。  </p>
+<p>一个人要成功，需要不断地历练，需要经过不断地学习，然而，最快的方法就是向一些成功者询问，请他们给你一些意见，给你一些回馈，请他们告诉你做对了什么，做错了什么。  </p>
+<p>让他们用他们智慧和经验指导你，这样的话，比你看任何的书籍都要来得有效。你永远看不见你自己思考的盲点。问成功人士：”到底还有什么地方，我还需要改进？”  </p>
+<p>10、不管你做什么事，一定要快乐，一定要享受过程。  </p>
+<p>推销宗旨、理念：”提供顾客最好的服务，帮助顾客解决他们的问题。”  </p>
+<p>11、要设立高的标准，绝对不要接受第二流的表现。  </p>
+<p>你做事的品质和你个人的成就成正比，跟你服务的人数成正比，跟你的态度成正比，跟你的知识成正比，跟你的标准成正比，成功者都拥有高的标准，失败者的标准都不高。凡事零缺点。一定要求第一名。  </p>
+<p>12、改变自我的心像。  </p>
+<p>心理学最伟大的发现之一，就是可以籍由自己的不断想像，而成为自己理想中的人物。你必须想像自己是一个非常成功的人，非常富有的人，非常积极的人，非常热情的人，非常有动力的人，你必须每天不断地花一些时间，想像自己成功的景象。  </p>
+<p>你必须想像自己是一个天生的羸家。不断想像每一年你要达成的目标，不断具体地一次又一次，睡梦中输入潜意识。你不妨今天就把你的目标，有适当的图片，把它剪下，贴起来，每天想像，每天想像，早晚灌输到你的潜意识里面，来改变自己。  </p>
+<p>13、潜意识的力量。  </p>
+<p>“潜意识的力量比意识大三万倍以上。”运用潜意识的第一个方法，就是不断地想像，改变自我内在的一个影像和图片；第二个方法，也就是要不断地自我暗示，或是所谓的自我确认。  </p>
+<p>“我会成功，我会成功，我一定会成功””我会很有钱，我会很有钱，我一定会很有钱””我的业绩不断地提升，不断地提升，我的业绩一定会不断地提升””我很会存钱，我很会存钱，我很会存钱”反复地练习，反复地输入。  </p>
+<p>影响一个人潜意识最重要最重要的关键，就是要不断地重复，不断地重复，再一次不断地重复，大量地重复，有时间随时随地不断地确认你的目标，不断地想着你的目标，这样的话，你的目标终究会实现的。  </p>
+<p>14、把你的目标录在录音带上，每天不断地重复播放，来输入你的潜意识。  </p>
+<p>不断地重复，不断地重复。方法简单，一般人都不愿意去尝试，不尝试，铁定没有效。  </p>
+<p>15、听潜意识录音带。  </p>
+<p>影响潜意识最重要最重要的关键，就是反复的次数。”我的收入不断地增加，我的收入不断地增加，我的收入轻而易举地不断地增加””要节俭，要节俭，银行要存钱，要存钱””我们拥有完美的细胞”（不断地重复听）  </p>
+<p>16、运用潜能开发机。  </p>
+<p>要改变潜意识，世界上最快的方法，就是运用催眠。新的东西总是容易受到排斥。成功者，勇于尝试新工具。  </p>
+<p>17、不断建立自己的知识基础。  </p>
+<p>每年平均阅读400-600本书或杂志。成功有一个很重要的秘诀，就是要用最短的时间，采取最大量的行动。所有的领导者都是阅读者。每会必到。学习才会让你更成功。你必须花30%的收入来不断学习。成功是不断持续累积的，就像学习也是一样。  </p>
+<p>想赚得更多，一定要学得更多，你的专业知识，一定要是你行业的顶尖。你之所以成功，是因为别人喜欢你，别人相信你；别人凭什么相信你、喜欢你，因为你懂得的比他们多，他们觉得跟你在一起有希望。他们觉得跟你在一起可以学到东西。</p>
+<h2 id="检讨是成功之父"><a href="#检讨是成功之父" class="headerlink" title="检讨是成功之父"></a>检讨是成功之父</h2><p>在研究如何成功致富之前，我们一定要了解，一般人为什么会失败。</p>
+<p>因为，我每天都在研究成功者如何成功，却从未研究失败者如何失败。失败是成功之母，检讨是成功之父。我发现，如果你做了成功者做的事情，又做了失败者不该做的事情后，成功的几率便更小了。</p>
+<p>所以，不妨在和我分享如何成功之前，先探讨一下一个人为什么失败。</p>
+<p>1、缺乏目标</p>
+<p>一般人失败的第一个主要原因，就是缺乏目标。我时常问我的学员：“你想不想成功？”他说：“我很想呀！想得不得了！但是，我还没有想好要做什么？”我听后觉得很奇怪，因为一个想要成功的人竟然没有设定目标？</p>
+<p>今天我要探讨的是成功致富的策略与方法，从最简单、最可能犯的错误，到最困难或是一般人最容易忽略的问题，我都会与你分享。思想只是原因，行动才会有结果。假如到目前为止你还没听到你要的讯息，也请你拭目以待。</p>
+<p>2、未能记录</p>
+<p>第二个导致失败的理由是：虽然有了目标，却没有把它写下来，忽略了白纸黑字的力量。</p>
+<p>以前我在设定目标时，总是不断的满脑子乱想。所以，当人家问我有没有目标时我就回答：“有！有！有的”“在哪里啊？”，“在脑袋里面。”，“写出来没有啊？”，“没有。”</p>
+<p>我想，写下来干什么？浪费时间。事实上，设定目标的第一个关键，就是把它写下来。因为，当你写下来之后，在你脑海中，已经把这个目标“视觉化”了。</p>
+<p>3、时常更改目标</p>
+<p>下一个失败的原因是：时常更改目标。许多人常在设定目标之后，隔了不久发现，这好象不是我想要的，或是目标定得太小了，应该再大一点，既然潜意识是无所不能的，就该设大一点的目标，才能实现得更快！</p>
+<p>这个一般人常有的通病。我时常在想，假设一个枪靶是漂浮不定的话，我们是很难击中的。这是一般人时常犯的毛病，也是大家特别需要注意的地方。</p>
+<p>4、不愿意对自己负责</p>
+<p>除了上述的几种原因外，我发现一般人失败的原因，便是不愿意对自己负责，老是找借口，老是因为别人的原因使自己无法成功：老是认为别人不好，而导致自己失败。</p>
+<p>你可以仔细观察，这些失败者，天天都在抱怨。然后天天找朋友谈他的问题，假如没有人倾听他们的问题，他就把这些人视为敌人，然后另外找一群愿意分享问题的朋友，接着便天天聚在一起抱怨。</p>
+<p>例如，我从事汽车销售时，业绩不是很好，我就怪公司训练得不够多；广告打得不够大；我们车子的种类不够多；颜色不够多，整整抱怨了两个月，差点被开除。</p>
+<p>但事实上，这对自己并没有任何的好处。所以，假设你想要更成功的话，请你从现在开始，百分之百地对自己负责。</p>
+<p>5、不能立刻行动  </p>
+<p>谈了这么多失败原因后，我认为促使个人失败的最大原因，就是因为没有立刻行动。成功者通常都是马上行动，而失败者却是明天再做，后天再做。今天好累，先睡个觉，先休息一下，先喝杯咖啡，我资料还没有整理好，总之他总是帮自己找一堆借口。要相信，借口与成功无缘。</p>
+<p>6、自我设限</p>
+<p>此外一个无法成功的最大障碍，就是害怕“被拒绝”，进而害怕失败。我时常问许多业务伙伴：“假如你所拜访的顾客都会购买你的产品，而且会大量的购买的话，请问你一天会拜访几个顾客？”</p>
+<p>他们的回答是：“我会跑遍整条街，因为每个人都会跟我买，我一定会立刻行动。”所以导致他们不行动的原因，是因为他们满脑子都在想：“大家不会跟我买，大家铁定会拒绝我，每一个都会给我脸色看。”</p>
+<p>7、无法掌控自己的情绪</p>
+<p>无法掌控自己的情绪也是许多人常犯的毛病。我发现很多失败者，他们的情绪时常处于低落的状态，譬如以前我去拜访顾客时，一旦被顾客拒绝就会很难过，常常要一个礼拜才能克服被拒绝的恐惧感。</p>
+<p>然而，成功的人在被顾客拒绝之后，会立刻想说：“顾客就是因为不了解，所以才会拒绝，我下次应该再解释一遍。”就这么一个简单的想法，已经转化了他的心情。当他们面临挫折时，便会告诉自己过去并不等于未来。他们没有失败，只是暂时停止成功。</p>
+<p>8、不愿意努力工作</p>
+<p>这点也是我过去常犯的错误－-不愿意努力工作。一般人常希望自己能用最简单、最省力、最少的时间，赚到最多的钱并且获得成功。然而，我们发现，全世界最成功的人，通常都是最努力的人。</p>
+<p>记得有一次，公司有位同事在凯悦饭店遇到了超级巨星成龙，结果他就当面问成龙：“成功的秘诀是什么？”成龙当场愣了一下，因为大部分跑去找他的，都是要他签名、拍照的影迷，怎么会有人跑去问他成功的秘诀？结果，成龙想了一下，立刻告诉他说：“努力！“就是这么一句话，这么简单。</p>
+<p>所以，亲爱的朋友，假如你奋斗了10年，却没有成功，请继续努力。努力，就是成功最有效的方法，也是成功的捷径。努力的前提是方法正确，方向正确。</p>
+<p>9、误交损友</p>
+<p>一般人失败的原因，常是因为他结交了错误的朋友，所谓物以类聚嘛！所以，我时常给我的学员一个建议：当你遇到问题，遇到困难，遇到挫折时，不要问比你更不成功的朋友，因为他们没有办法解决你的问题，因为他的想法都跟你很类似。</p>
+<p>成功环境的最重要条件，就是选择成功的朋友。如同我刚才提到的，跟成功者交往是件非常重要的事，对你一辈子有决定性的影响。因为，成功一定有方法；失败也一定有原因。</p>
+<p>我前几天看报纸，看到美国“NBA”的芝加哥公牛队，最近愈战愈勇，已经成为历史上最快速达到50胜的球队。50胜代表赢球几乎高达90%，就是每比赛10场，就赢9场，这样子下去，他们赢得“NBA”总冠军，应该是指日可待了。</p>
+<p>当然关键不是在这里，重要的是我看到他们除了超级巨星迈克尔乔丹之外，还有一个“NBA”最棒的篮板王，每一场球赛中他都可以抢15个篮板以上，他是罗德曼。</p>
+<p>10、时间管理不当</p>
+<p>一般人都缺乏时间管理的习惯与观念。他们每天都在浪费时间，不知道对自己而言，什么才是最有生产力的事情。</p>
+<p>我看过许多业绩不好的业务员，他们的工作习惯是，早上大概九点钟出门，九点半到办公室，然后，整理资料到十点，然后喝杯咖啡到十点半，而后再跟朋友聊个天，十一点才开始打电话，这时顾客大部分都已不在，所以，十一点半就准备要吃饭，到了下午觉得太累，先睡个午觉，然后就抱着反正明天再拜访也无所谓的心情，就这样结束了一天的工作。</p>
+<p>一个月下来，他说：“咦！奇怪了？为什么收入这么少？业绩这么不好？”因为他们都花时间在休息聊天上！他们工作的时候想到玩，玩的时候就忘掉工作，这样的习惯是没有办法成功的。</p>
+<p>11、用错了方法和策略</p>
+<p>我记得我们公司在两年前，推出了全台湾最顶尖的超高能潜意识录音带，那时候我们非常兴奋。因为这套录音带，让我在半年之内，倍增了五倍以上的收入。所有公司里的人都迫不及待的想要到处推广。他们都说，每一天都要出去做拜访。</p>
+<p>我记得其中有一个黄发姓的伙伴，带了一个皮箱，里面摆了大概20套的潜意识录音带，他志得意满地说：“陈老师，我向你保证，我今天一定卖20套，没有卖完20套，绝对不回到公司。”听完后，我说：“黄先生，这是你说的，你一定要做到！”他坚决的表示：“是的，我一定做到。”我也兴奋的配合：“那你就立刻行动。”</p>
+<p>结果第二天，他回来告诉我：“陈老师，昨天我满载而归，一套也没有卖掉。”我问：“这到底是怎么一回事？”他说，他跑去百货公司推销，结果没有推销成功，还被专柜小姐反推销。”</p>
+<p>事实上，依照他那种一对一的推销方法，一个月最多只能卖50套的潜意识录音带。这表示他用错了方法和策略。后来我告诉他演讲销售会比较好。结果这位黄先生，在一场演讲当中，卖了70套以上的潜意识录音带，超过他过去一个月的业绩。</p>
+<p>所以，大部份人失败的原因，是因为他使用了错误的方法、错误的策略。那么正确的方法正确的策略从哪里来，其实就在自己的经验里和成功者身上。</p>
+<p>12、缺乏自我成长</p>
+<p>下一个导致失败的理由是缺乏自我成长。大部分的人都不看书。我太太告诉我，她看过一则报道讲：日本人每年平均一个人大概读七本书，而中国人每年大概平均读零点一本。也就是说，我们的资讯非常地缺乏。</p>
+<p>我发现一个失败，最主要的两个关键，一个是缺乏资讯，二是没有运用潜意识力量。大多数人都缺乏某一方面的知识或资讯。事实上，我以前之所以会有所改变，是因为我听了某一类课，与某一些人分享了某一个观念、一个方法，或阅读了某一本书籍，从中得到过一份新的资讯。</p>
+<p>所有的问题都可以解决，只要你拥有足够的资讯。大部分人却因资讯不足而没有办法解决。没有资讯的原因，是因为他们没有注重学习及与人交流。</p>
+<p>13、没有百分之百地下定决心、全力以赴</p>
+<p>另一个失败的原因是没有没有百分之百地下定决心、全力以赴。我时常听人说：“对，我要达成目标！”然后呢？行动时却心不在焉。任何事情没有全力以赴去做，其效果永远是不理想的。</p>
+<p>我1996年对我公司的伙伴说：“我们1996年成功的策略，就是比去年努力4倍。”至于为什么要努力4倍呢？这数字到底从哪里来？有一次，我看到堤义明（世界首富）的书，书中提及作者做任何事情，都比别人努力3倍，那么依照陈安之的成功学理论：比最好的还要更好，所以我们就要努力4倍。</p>
+<p>14、缺乏运用潜意识力量</p>
+<p>这是最后一点，也是最重要的一点，就是一般人缺乏运用潜意识力量。</p>
+<p>潜能激发的目的，就是要激发你的潜意识。潜意识是如何形成的？是由你思考、动作的不断改变而改变。</p>
+<p>所以，改变潜意识的最好方法，就是确定你的主要目标，也就是核心目标。每天早上写10遍，把这样的目标输入到你的潜意识里，要你的潜意识自动来改变你的行为习惯。</p>
+<p>人的行动都是由思想来控制，所以只要我们能改变我们的思想，我们就能改变我们的行动。通常，改变的时间约需21天到30天左右。</p>
+<p>所以，各位朋友，任何的习惯，只要你能够重复，只要持续30天，它都可以自动被消除。</p>
 ]]></content>
       <categories>
         <category>Article</category>
@@ -2220,118 +2980,6 @@
 <p>回到战略，它的本质是什么？我认为，战略就是一个杠杆。它让你做的每一件事，都放大几倍，几十倍。一旦远离这个杠杆，就变成小公司创业模式。关键是，这种创业模式，又比不过真正的创业公司。</p>
 <p>猎豹走到今天，重新回到创业，置身于一处——于大格局之下，寻找新的破局点。战略如是。</p>
 <p>*来源介绍：盛盛GO（ID：fstalk），猎豹移动联合创始人兼CEO，关注创新创业，人工智能，还有机器人。</p>
-]]></content>
-      <categories>
-        <category>Article</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Excerpt 24：陈安之如何追求超级成功</title>
-    <url>/2016/04/08/Article/24%EF%BC%9A%E9%99%88%E5%AE%89%E4%B9%8B%E5%A6%82%E4%BD%95%E8%BF%BD%E6%B1%82%E8%B6%85%E7%BA%A7%E6%88%90%E5%8A%9F/</url>
-    <content><![CDATA[<h2 id="如何追求超级成功"><a href="#如何追求超级成功" class="headerlink" title="如何追求超级成功"></a>如何追求超级成功</h2><p>成功最重要的秘诀，就是要用已经证明有效的成功方法。你必须向成功者学习，做成功者所做的事情，了解成功者的思考模式，加以运用到自己的身上，然后再以自己的风格，创出一套自己的成功哲学和理论。<br>　　<br>你想知道那些世界级的顶尖人物，是如何透过自我操练与自我鞭策才能达到巅峰？你想知道他们成功的秘诀是什么吗？现在，让我们一起来揭开超级成功的神秘面纱。 </p>
-<p>1、做你喜欢做的事，然后把它做到最好。  </p>
-<p>你一定要做自己喜欢做的事情，才会有所成就。正确寻找工作的方法，把自己理想和完美的工作条件列出来。  </p>
-<p>2、要以成为行业中的世界最顶尖为目标。  </p>
-<p>不要把赚很多钱当做是你人生最重要的目标。只要你能够成为最好的人物，最好的事情也就会发生在你身上。  </p>
-<p>当你想要得到一切最美好的事物，你必须把自己变成最好的人，以成为行业中的世界最顶尖为你人生的最终目标，这样的话，你一定可以实现你所有的梦想。 </p>
-<p>3、成功的人要有远大的梦想，但要有合理的目标。  </p>
-<p>每一个成功的人都有伟大的梦想。大成功是由小成功所累积，每一个成功的人都是在达成无数的小目标之后，才实现他们伟大的梦想。  </p>
-<p>不放弃，就一定有成功的机会，如果你放弃，就已经失败了。记住！每一个目标和梦想，都要设定一个期限。目标不达成：1、不合理2、没有期限3、缺乏详细的计划4、没有天天衡量进度。千万不要靠运气过生活，你一定要靠目标和计划过生活。  </p>
-<p>每一年年底的时候，都要写出明年想要达成的目标。全写出来，选四个最重要、最想要，选1个为核心目标，另3个再排优先顺序，订出具体的完成期限。当你列出目标之后，请你列出一个详细的计划，把计划依照优先顺序排列好，这样会使你达成目标的机率大幅度地提升，这也是每个超级成功者所做的事情。  </p>
-<p>4、你到底是想要成功，还是一定要成功？  </p>
-<p>成功有三个最重要的秘诀：1、要有强烈的欲望2、还是要有强烈的欲望3、还是要有强烈的欲望。  </p>
-<p>5、每一天都要不断地检讨自己的做法和成效。  </p>
-<p>做对的一定要不断地加强，做错的一定要立刻改正。因为，同样的错误千万不要犯第二次！每一天一定要检视自己的进度，我检视下属进度，每一礼拜开会做讨论，发生何事（错、对）。  </p>
-<p>6、一定要跟成功的人学习，尤其是世界级的成功人物。  </p>
-<p>你一定要学习成功的榜样，让自己进入成功的环境当中，跟着成功者学习。一个人要成功 ，有几个方法：  </p>
-<p>1、他必须帮成功者工作2、当他们开始成功的时候，也开始跟更成功的人合作3、当你越来越成功的时候，要找成功者来帮你工作。依照这三个方法，按步就班去做，你一定会非常地成功。  </p>
-<p>7、要成功。要先研究成功学。  </p>
-<p>要成功，一定要研究成功。一个人的智慧产生的三个要素：  </p>
-<p>1、成功者不断地搜集资讯，他们相当善于掌握新知。记住！永远要不断地搜集新的资讯2、一个成功的人会不断地学习别人的经验。3、一个有智慧的人，会不断地自我反省。  </p>
-<p>8、要成功就要采取行动。  </p>
-<p>世界最顶尖的业务员成功的秘诀：从早上八点工作到晚上昏倒为止。销量永远是一个数字的游戏，你只要越勤劳，拜访越多的顾客，一定就会有成交的机会。  </p>
-<p>成功的人永远比一般人做得更多，当一般人放弃的时候，他们找寻下一位顾客；当顾客拒绝时，他再问他们：”你到底要不要？”当顾客不买时，他问：”你为什么不买？”记住！永远是你采取了多少行动让你更成功，而不是你知道了多少。  </p>
-<p>9、要不断地请教成功者，询问他们成功的方法和意见。  </p>
-<p>一个人要成功，需要不断地历练，需要经过不断地学习，然而，最快的方法就是向一些成功者询问，请他们给你一些意见，给你一些回馈，请他们告诉你做对了什么，做错了什么。  </p>
-<p>让他们用他们智慧和经验指导你，这样的话，比你看任何的书籍都要来得有效。你永远看不见你自己思考的盲点。问成功人士：”到底还有什么地方，我还需要改进？”  </p>
-<p>10、不管你做什么事，一定要快乐，一定要享受过程。  </p>
-<p>推销宗旨、理念：”提供顾客最好的服务，帮助顾客解决他们的问题。”  </p>
-<p>11、要设立高的标准，绝对不要接受第二流的表现。  </p>
-<p>你做事的品质和你个人的成就成正比，跟你服务的人数成正比，跟你的态度成正比，跟你的知识成正比，跟你的标准成正比，成功者都拥有高的标准，失败者的标准都不高。凡事零缺点。一定要求第一名。  </p>
-<p>12、改变自我的心像。  </p>
-<p>心理学最伟大的发现之一，就是可以籍由自己的不断想像，而成为自己理想中的人物。你必须想像自己是一个非常成功的人，非常富有的人，非常积极的人，非常热情的人，非常有动力的人，你必须每天不断地花一些时间，想像自己成功的景象。  </p>
-<p>你必须想像自己是一个天生的羸家。不断想像每一年你要达成的目标，不断具体地一次又一次，睡梦中输入潜意识。你不妨今天就把你的目标，有适当的图片，把它剪下，贴起来，每天想像，每天想像，早晚灌输到你的潜意识里面，来改变自己。  </p>
-<p>13、潜意识的力量。  </p>
-<p>“潜意识的力量比意识大三万倍以上。”运用潜意识的第一个方法，就是不断地想像，改变自我内在的一个影像和图片；第二个方法，也就是要不断地自我暗示，或是所谓的自我确认。  </p>
-<p>“我会成功，我会成功，我一定会成功””我会很有钱，我会很有钱，我一定会很有钱””我的业绩不断地提升，不断地提升，我的业绩一定会不断地提升””我很会存钱，我很会存钱，我很会存钱”反复地练习，反复地输入。  </p>
-<p>影响一个人潜意识最重要最重要的关键，就是要不断地重复，不断地重复，再一次不断地重复，大量地重复，有时间随时随地不断地确认你的目标，不断地想着你的目标，这样的话，你的目标终究会实现的。  </p>
-<p>14、把你的目标录在录音带上，每天不断地重复播放，来输入你的潜意识。  </p>
-<p>不断地重复，不断地重复。方法简单，一般人都不愿意去尝试，不尝试，铁定没有效。  </p>
-<p>15、听潜意识录音带。  </p>
-<p>影响潜意识最重要最重要的关键，就是反复的次数。”我的收入不断地增加，我的收入不断地增加，我的收入轻而易举地不断地增加””要节俭，要节俭，银行要存钱，要存钱””我们拥有完美的细胞”（不断地重复听）  </p>
-<p>16、运用潜能开发机。  </p>
-<p>要改变潜意识，世界上最快的方法，就是运用催眠。新的东西总是容易受到排斥。成功者，勇于尝试新工具。  </p>
-<p>17、不断建立自己的知识基础。  </p>
-<p>每年平均阅读400-600本书或杂志。成功有一个很重要的秘诀，就是要用最短的时间，采取最大量的行动。所有的领导者都是阅读者。每会必到。学习才会让你更成功。你必须花30%的收入来不断学习。成功是不断持续累积的，就像学习也是一样。  </p>
-<p>想赚得更多，一定要学得更多，你的专业知识，一定要是你行业的顶尖。你之所以成功，是因为别人喜欢你，别人相信你；别人凭什么相信你、喜欢你，因为你懂得的比他们多，他们觉得跟你在一起有希望。他们觉得跟你在一起可以学到东西。</p>
-<h2 id="检讨是成功之父"><a href="#检讨是成功之父" class="headerlink" title="检讨是成功之父"></a>检讨是成功之父</h2><p>在研究如何成功致富之前，我们一定要了解，一般人为什么会失败。</p>
-<p>因为，我每天都在研究成功者如何成功，却从未研究失败者如何失败。失败是成功之母，检讨是成功之父。我发现，如果你做了成功者做的事情，又做了失败者不该做的事情后，成功的几率便更小了。</p>
-<p>所以，不妨在和我分享如何成功之前，先探讨一下一个人为什么失败。</p>
-<p>1、缺乏目标</p>
-<p>一般人失败的第一个主要原因，就是缺乏目标。我时常问我的学员：“你想不想成功？”他说：“我很想呀！想得不得了！但是，我还没有想好要做什么？”我听后觉得很奇怪，因为一个想要成功的人竟然没有设定目标？</p>
-<p>今天我要探讨的是成功致富的策略与方法，从最简单、最可能犯的错误，到最困难或是一般人最容易忽略的问题，我都会与你分享。思想只是原因，行动才会有结果。假如到目前为止你还没听到你要的讯息，也请你拭目以待。</p>
-<p>2、未能记录</p>
-<p>第二个导致失败的理由是：虽然有了目标，却没有把它写下来，忽略了白纸黑字的力量。</p>
-<p>以前我在设定目标时，总是不断的满脑子乱想。所以，当人家问我有没有目标时我就回答：“有！有！有的”“在哪里啊？”，“在脑袋里面。”，“写出来没有啊？”，“没有。”</p>
-<p>我想，写下来干什么？浪费时间。事实上，设定目标的第一个关键，就是把它写下来。因为，当你写下来之后，在你脑海中，已经把这个目标“视觉化”了。</p>
-<p>3、时常更改目标</p>
-<p>下一个失败的原因是：时常更改目标。许多人常在设定目标之后，隔了不久发现，这好象不是我想要的，或是目标定得太小了，应该再大一点，既然潜意识是无所不能的，就该设大一点的目标，才能实现得更快！</p>
-<p>这个一般人常有的通病。我时常在想，假设一个枪靶是漂浮不定的话，我们是很难击中的。这是一般人时常犯的毛病，也是大家特别需要注意的地方。</p>
-<p>4、不愿意对自己负责</p>
-<p>除了上述的几种原因外，我发现一般人失败的原因，便是不愿意对自己负责，老是找借口，老是因为别人的原因使自己无法成功：老是认为别人不好，而导致自己失败。</p>
-<p>你可以仔细观察，这些失败者，天天都在抱怨。然后天天找朋友谈他的问题，假如没有人倾听他们的问题，他就把这些人视为敌人，然后另外找一群愿意分享问题的朋友，接着便天天聚在一起抱怨。</p>
-<p>例如，我从事汽车销售时，业绩不是很好，我就怪公司训练得不够多；广告打得不够大；我们车子的种类不够多；颜色不够多，整整抱怨了两个月，差点被开除。</p>
-<p>但事实上，这对自己并没有任何的好处。所以，假设你想要更成功的话，请你从现在开始，百分之百地对自己负责。</p>
-<p>5、不能立刻行动  </p>
-<p>谈了这么多失败原因后，我认为促使个人失败的最大原因，就是因为没有立刻行动。成功者通常都是马上行动，而失败者却是明天再做，后天再做。今天好累，先睡个觉，先休息一下，先喝杯咖啡，我资料还没有整理好，总之他总是帮自己找一堆借口。要相信，借口与成功无缘。</p>
-<p>6、自我设限</p>
-<p>此外一个无法成功的最大障碍，就是害怕“被拒绝”，进而害怕失败。我时常问许多业务伙伴：“假如你所拜访的顾客都会购买你的产品，而且会大量的购买的话，请问你一天会拜访几个顾客？”</p>
-<p>他们的回答是：“我会跑遍整条街，因为每个人都会跟我买，我一定会立刻行动。”所以导致他们不行动的原因，是因为他们满脑子都在想：“大家不会跟我买，大家铁定会拒绝我，每一个都会给我脸色看。”</p>
-<p>7、无法掌控自己的情绪</p>
-<p>无法掌控自己的情绪也是许多人常犯的毛病。我发现很多失败者，他们的情绪时常处于低落的状态，譬如以前我去拜访顾客时，一旦被顾客拒绝就会很难过，常常要一个礼拜才能克服被拒绝的恐惧感。</p>
-<p>然而，成功的人在被顾客拒绝之后，会立刻想说：“顾客就是因为不了解，所以才会拒绝，我下次应该再解释一遍。”就这么一个简单的想法，已经转化了他的心情。当他们面临挫折时，便会告诉自己过去并不等于未来。他们没有失败，只是暂时停止成功。</p>
-<p>8、不愿意努力工作</p>
-<p>这点也是我过去常犯的错误－-不愿意努力工作。一般人常希望自己能用最简单、最省力、最少的时间，赚到最多的钱并且获得成功。然而，我们发现，全世界最成功的人，通常都是最努力的人。</p>
-<p>记得有一次，公司有位同事在凯悦饭店遇到了超级巨星成龙，结果他就当面问成龙：“成功的秘诀是什么？”成龙当场愣了一下，因为大部分跑去找他的，都是要他签名、拍照的影迷，怎么会有人跑去问他成功的秘诀？结果，成龙想了一下，立刻告诉他说：“努力！“就是这么一句话，这么简单。</p>
-<p>所以，亲爱的朋友，假如你奋斗了10年，却没有成功，请继续努力。努力，就是成功最有效的方法，也是成功的捷径。努力的前提是方法正确，方向正确。</p>
-<p>9、误交损友</p>
-<p>一般人失败的原因，常是因为他结交了错误的朋友，所谓物以类聚嘛！所以，我时常给我的学员一个建议：当你遇到问题，遇到困难，遇到挫折时，不要问比你更不成功的朋友，因为他们没有办法解决你的问题，因为他的想法都跟你很类似。</p>
-<p>成功环境的最重要条件，就是选择成功的朋友。如同我刚才提到的，跟成功者交往是件非常重要的事，对你一辈子有决定性的影响。因为，成功一定有方法；失败也一定有原因。</p>
-<p>我前几天看报纸，看到美国“NBA”的芝加哥公牛队，最近愈战愈勇，已经成为历史上最快速达到50胜的球队。50胜代表赢球几乎高达90%，就是每比赛10场，就赢9场，这样子下去，他们赢得“NBA”总冠军，应该是指日可待了。</p>
-<p>当然关键不是在这里，重要的是我看到他们除了超级巨星迈克尔乔丹之外，还有一个“NBA”最棒的篮板王，每一场球赛中他都可以抢15个篮板以上，他是罗德曼。</p>
-<p>10、时间管理不当</p>
-<p>一般人都缺乏时间管理的习惯与观念。他们每天都在浪费时间，不知道对自己而言，什么才是最有生产力的事情。</p>
-<p>我看过许多业绩不好的业务员，他们的工作习惯是，早上大概九点钟出门，九点半到办公室，然后，整理资料到十点，然后喝杯咖啡到十点半，而后再跟朋友聊个天，十一点才开始打电话，这时顾客大部分都已不在，所以，十一点半就准备要吃饭，到了下午觉得太累，先睡个午觉，然后就抱着反正明天再拜访也无所谓的心情，就这样结束了一天的工作。</p>
-<p>一个月下来，他说：“咦！奇怪了？为什么收入这么少？业绩这么不好？”因为他们都花时间在休息聊天上！他们工作的时候想到玩，玩的时候就忘掉工作，这样的习惯是没有办法成功的。</p>
-<p>11、用错了方法和策略</p>
-<p>我记得我们公司在两年前，推出了全台湾最顶尖的超高能潜意识录音带，那时候我们非常兴奋。因为这套录音带，让我在半年之内，倍增了五倍以上的收入。所有公司里的人都迫不及待的想要到处推广。他们都说，每一天都要出去做拜访。</p>
-<p>我记得其中有一个黄发姓的伙伴，带了一个皮箱，里面摆了大概20套的潜意识录音带，他志得意满地说：“陈老师，我向你保证，我今天一定卖20套，没有卖完20套，绝对不回到公司。”听完后，我说：“黄先生，这是你说的，你一定要做到！”他坚决的表示：“是的，我一定做到。”我也兴奋的配合：“那你就立刻行动。”</p>
-<p>结果第二天，他回来告诉我：“陈老师，昨天我满载而归，一套也没有卖掉。”我问：“这到底是怎么一回事？”他说，他跑去百货公司推销，结果没有推销成功，还被专柜小姐反推销。”</p>
-<p>事实上，依照他那种一对一的推销方法，一个月最多只能卖50套的潜意识录音带。这表示他用错了方法和策略。后来我告诉他演讲销售会比较好。结果这位黄先生，在一场演讲当中，卖了70套以上的潜意识录音带，超过他过去一个月的业绩。</p>
-<p>所以，大部份人失败的原因，是因为他使用了错误的方法、错误的策略。那么正确的方法正确的策略从哪里来，其实就在自己的经验里和成功者身上。</p>
-<p>12、缺乏自我成长</p>
-<p>下一个导致失败的理由是缺乏自我成长。大部分的人都不看书。我太太告诉我，她看过一则报道讲：日本人每年平均一个人大概读七本书，而中国人每年大概平均读零点一本。也就是说，我们的资讯非常地缺乏。</p>
-<p>我发现一个失败，最主要的两个关键，一个是缺乏资讯，二是没有运用潜意识力量。大多数人都缺乏某一方面的知识或资讯。事实上，我以前之所以会有所改变，是因为我听了某一类课，与某一些人分享了某一个观念、一个方法，或阅读了某一本书籍，从中得到过一份新的资讯。</p>
-<p>所有的问题都可以解决，只要你拥有足够的资讯。大部分人却因资讯不足而没有办法解决。没有资讯的原因，是因为他们没有注重学习及与人交流。</p>
-<p>13、没有百分之百地下定决心、全力以赴</p>
-<p>另一个失败的原因是没有没有百分之百地下定决心、全力以赴。我时常听人说：“对，我要达成目标！”然后呢？行动时却心不在焉。任何事情没有全力以赴去做，其效果永远是不理想的。</p>
-<p>我1996年对我公司的伙伴说：“我们1996年成功的策略，就是比去年努力4倍。”至于为什么要努力4倍呢？这数字到底从哪里来？有一次，我看到堤义明（世界首富）的书，书中提及作者做任何事情，都比别人努力3倍，那么依照陈安之的成功学理论：比最好的还要更好，所以我们就要努力4倍。</p>
-<p>14、缺乏运用潜意识力量</p>
-<p>这是最后一点，也是最重要的一点，就是一般人缺乏运用潜意识力量。</p>
-<p>潜能激发的目的，就是要激发你的潜意识。潜意识是如何形成的？是由你思考、动作的不断改变而改变。</p>
-<p>所以，改变潜意识的最好方法，就是确定你的主要目标，也就是核心目标。每天早上写10遍，把这样的目标输入到你的潜意识里，要你的潜意识自动来改变你的行为习惯。</p>
-<p>人的行动都是由思想来控制，所以只要我们能改变我们的思想，我们就能改变我们的行动。通常，改变的时间约需21天到30天左右。</p>
-<p>所以，各位朋友，任何的习惯，只要你能够重复，只要持续30天，它都可以自动被消除。</p>
 ]]></content>
       <categories>
         <category>Article</category>
