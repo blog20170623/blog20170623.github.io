@@ -1,0 +1,401 @@
+html 、css：
+ie 6、7、8是不支持css3的
+浏览器私有前缀：浏览器只执行自己的，其他的忽略
+-webkit-border-radius:/*谷歌*/
+-moz-border-radius:/*火狐*/
+-ms-border-radius:/*ie浏览器*/
+border-radius:标准的放在最后一个
+-o-border-radius: /*opera浏览器*/中国用的少
+<link>标签	rel	指定链接类型	stylesheet
+　	href	需要加载的资源(css文件)的地址	css/common.css
+　	type	内容的类型,	text/css
+常用标签：<p><span><img><a href=”#”><sup><sub>
+
+<hr>水平线
+width:20px;	宽度20象素
+height:	20px;	高度
+padding:上 右 下 左; 属性设置元素的上内边距（空间）
+		padding-left:/padding-right:/padding-top:/padding-bottom:
+margin: 上 右 下 左; 属性设置元素的上外边距（空间）
+ul li:first-child{margin-left:0px;     第一个元素左边距为0象素	
+ul li:nth-child(1){margin-left:0px;
+li的文字内容不一样多时，不用写固定宽度，而用padding
+list-style: 	none;	取消<li>排列的小黑点
+float:left/ right;	向左/右浮动
+clear：none;允许两边都可以有浮动对象
+both 　不允许有浮动对象
+left　不允许左边有浮动对象
+right 不允许右边有浮动对象	
+contenteditable="true" 开启div可编辑区域
+文字
+font-size:16px	　	字体大小
+font-family	:”微软雅黑”;　	字体类别
+font-weight:bold;(600)	字体加粗
+font-style:normal;	　	字体样式正常
+color：	　	字体颜色		　
+text-indent:50px;	将段落的首行缩进50象素
+text-decoration:	none;	去掉文字链接下划线
+text-align:	center	/right/left;文本水平居中对齐	　
+line-height	:100px	文字\图片垂直居中	
+letter-spacing:	　	属性增加或减少字符间的空白（字符间距）。
+text-decoration:	none;	指定文字无装饰	　
+　					underline;	指定文字的装饰是下划线	　
+　					overline;	指定文字的装饰是上划线	　
+　					line-through;	指定文字的装饰是贯穿线	　
+　					blink;	指定文字的装饰是闪烁。
+text-transform:capitalize;		  	文本中的每个单词以大写字母开头
+text-transform:lowercase;			定义无大写字母，仅有小写字母。
+text-transform:uppercase;		定义仅有大写字母。
+text-overflow: ellipsis;		显示省略符号来代表被修剪的文本
+overflow: 	hidden; 内容会被修剪，并且其余内容是不可见的。
+			visible	默认值。内容不会被修剪，会呈现在元素框之外。
+			scroll	内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
+user-select: none;     禁止用户选中文本
+
+背景
+background:url(images/00.jpg)no-repeat 10px 10px
+no-repeat不平铺，repeat-X平铺X轴，repeat-Y平铺Y轴	　
+background:	#999	背景颜色	
+background-position:	10px 10px	 (x轴  y轴)	
+background-size:	
+			100px  100px;
+			50%;
+			cover;
+			contain;	把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。
+线性背景 :
+background:linear-gradient	线性渐变	linear-gradient(90deg,#...,#...)
+			radial-gradient	放射性渐变	linear-gradient(90deg,#...,#...)
+display:	inline-block	指定对象为内联块元素	
+根据文字内容平铺浏览器，内容有多少就铺多少　
+　			block	指定对象为块元素	  给个高度就可以平铺整个浏览器　
+display:none; 隐藏对象
+input type="text"	;　	用户可在其中输入文本	
+a:hover{}	　	鼠标指针浮动在上面的元素	可用于所有元素，不只是链接。
+img:hover  i{}	　
+
+边框	　	　
+outline:	none;	定义无轮廓	
+solid实线、dashed虚线轮廓、dotted点状轮廓、	groove3d凹槽轮廓　
+border:1px solid red	　	边框5象素、样式、颜色	
+border-top:1px solid red;
+border-right:1px solid red;
+border-left:1px solid red;
+border-bottom:1px solid red;　
+border-radius:	4px/2%	边框圆角
+border-radius:2em;
+等价于：
+border-top-left-radius:2em;
+border-top-right-radius:2em;
+border-bottom-right-radius:2em;
+border-bottom-left-radius:2em;
+border:none; 无轮廓
+border:hidden; 隐藏边框
+border-left:none;左边框不要
+border-top:5px solid transparent;	四方向制作小三角
+border:0;outline:none	　	搜索框重合	　
+box-shadow: （inset）10px 10px 5px #888;默认外阴影(内阴影)
+text-shadow:	x y 模糊半径 颜色；	字体阴影	
+overflow:hidden	　	内容会被修剪，并且其余内容是不可见的。	
+overflow:	visible	（默认值）内容不会被修剪，会呈现在元素框之外	　
+定位
+position:	fixed	　	永远在浏览器第一屏，并且不会跟着浏览器滚动
+　			absolute	　	在浏览器第一屏，会随浏览器滚动
+　			relative	　	永远占坑
+z-index:1;	正数，则离用户更近，负数则表示离用户更远。z-index 仅能在定位元素上奏效
+动画
+transform:rotate(360deg);	　	旋转360度
+transform:scale(0.9);　	缩小
+放大缩小scale,旋转rotate（360deg）,倾斜skew,平移translate
+img: hover{transform:scale(0.8)	　	鼠标滑上图片缩小0.8	　
+光标
+cursor:  pointer	;光标呈现为指示链接的指针（一只手）
+		move 此光标指示某对象可被移动。
+		crosshair 光标呈现为十字线。
+		wait 此光标指示程序正忙（通常是一只表或沙漏）。
+		text 此光标指示文本。
+		help 此光标指示可用的帮助（通常是一个问号或一个气球）。
+透明
+opacity(ie9+)
+opacity:	　	div 元素的不透明级别
+　
+box-sizing:border-box;
+white-space: nowrap
+多栏布局	
+columns: 100px 5;
+			column-gap:2em/*栏与栏之间的间距*/
+			column-width:200px/*每一栏的宽度*/
+			column-count:5/*显示多少栏*/
+			column-rule:1px solid red;/*分割线的样式*/
+关键帧
+		@keyframes meng{
+			from{}
+			10%{}
+			to{}
+		}
+	.box{animation:meng 1s ease;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+javascript
+	var(数据类型) a(变量) = 10(字面值);
+	空间   篮子  = 苹果;
+变量：
+什么是变量?
+以字母，美元符号，下划线开头的其他任意组合
+	一些特殊字符关键字是不允许定义变量的，如：js关键字 
+	var cccc;		//显示undefined 因为这个变量没有被赋值
+	开发过程中尽量是使用英文定义变量名，并且还要见名知意。
+数据类型：
+javascript的数据类型有哪些:
+	数字类型（number），var num = 10;var pi = 3.1415926;
+	字符串（string），	var c = "A";
+					var cc = 'A';
+					var s =  "我爱你们。字符串 ";
+	数组， 	
+				var primes = [1,3,5,9,11];
+				var misc = [1.1,true,”a”];
+	boolean类型 ，只有两个值true/false
+	日期[Date]  
+	undefined 
+	函数类型 function类型
+	对象【object】
+		object类型 :	date/数组/object/null
+
+运算符与表达式：
+	运算（算术运算符 赋值运算符 逻辑运算符,条件运算符(if elseif else / switch case)）
+		//赋值运算符 ：等号= += ,-=,*=,/=
+		//算术运算符：+、-、*、/、%、++（前后/增量）、--（前后/减量）
+		//逻辑运算符 :大于(>)  等于(==) 小于(<) 大于等于(>=) 小于等于(<=)  不等于(!=) 
+		//true/false
+		delete 删除属性
+		typeof 检测操作数类型
+		&&与||或！非	
+		+ 加号除了算术运算符以外还是一个连接符
+	三元表达式： “？： ”
+	数据类型转换--parseInt(str)--number--字符串转换成数字
+String	
+	var string=0123456789
+	var str = string.substring(0,2);//索引0开始，2是索引2。自动按较小值开始算起；写负数就是0
+	alert (str); ----===0,1
+	alert (str.length);
+	var s = str.slice(1 ,3); //如果都是正常等价于substring(1,3).如果是-3，则是长度-3
+	str += "345"; //等价于: str = str +"345";
+	length 属性--字符串的总长度
+	substring() //截取
+	string.concat(value1,value2,…); //连接字符串、字符串连接可以替代+=
+	string.indexOf(子串，索引位置);搜索一个字符串，如果有，返回子串第一次出现索引位置，没有就返回-1 
+string.lasteIndexOf()从最后一个开始搜索！ 
+String.split()将一个字符串切分成一个字符串组成的数组//slice则是提取一个子串 
+		prototype原型；标准，模范
+trim contain startWith endWith --String内置方方法 
+字符串方法：
+	var c = "i love you ,everbody";
+	//将些小字母转换大写字母-toUpperCase();//不接受任何参数
+	var cc = c.toUpperCase(); 
+	//大写字母转成小写字母toLowerCase()
+	replace()替换 
+	//c.replace(把什么,替换成什么)
+	//c.replace(regex对象,替换成什么)	
+	var d = c.replace("Your","you");
+	var nregex = new RegExp("2","ig");//g代表全局，i代表不区分大小写
+	var cregex = new RegExp("操蛋","g");
+	var ddd = str.replace(cregex,"***");
+	//alert(ddd);
+数字类型
+	八进制：以0开头一组0 - 7的数字组成
+	十六进制:0x开头, 0 1 2 3 4 5 6 7 8 9 A B C D E F
+	八进制转十进制 parseInt('数字/字符串数字',10);
+	无穷大Infinity,也是代表数字  Infinity正无穷 -Infinity负无穷
+	NaN是一种特殊的数字类型,什么时候会产生：not a number(非数字)
+		//a:当一个数字和字符串进行运算的时候就会产生
+		//b:Infinity 的相加减都会得到NaN;
+		//c:当0作为分母的时候进行
+	parseInt(100px)==100
+	toFixed(num),mun是指取小数位，四舍五入
+	math.floor(math.random()*256); 0-255的随机数
+数组：
+	var arr = ["小红","小明","小张"];
+	split(分隔符|正则表达式);返回数组
+	操作数组:
+		查询:
+		添加 push
+		删除 delete
+		修改
+	数组:在javascript中基础数据类型中，array也是一种是以数据结构,它就是一种存储数据的列表
+			定义格式:
+			var arr = [];//定义了一个null数组
+			var arr = new Array();//这个不准使用
+			var arr = [1,2,3];
+			var arr = ["123","keke","keke"];
+			var arr = [{username:"keke"}];
+			var arr = [test,test2,test3];
+			function test(){
+			};
+			function test2(){
+			};
+			数组的常用方法:
+			属性：length 获取数组的长度
+			下标是从:0开始
+			获取第一个元素：arr[0];					
+			获取获取最后元素：arr[arr.length-1];
+日期：
+	Math.ceil(天花板 ) floor(地板) random()随机数
+var date= new Date();
+	var year=date.getFullYear();//返回4位数完整年份
+	alert(year);
+	
+	getFullYear();//返回4位数完整年份
+	getMonth();//返回本地月份
+	getDay();//返回星期几（0-6）
+	getHours();//返回本地小时（0-23）
+	getMinutes();//分钟
+	getSeconds();//秒数
+	getMilliseconds();//毫秒
+	Sat Jul 11 2015 23:13:08 GMT+0800 (中国标准时间) 格林式日期
+ 
+星期一： Mon=Monday
+	星期二： Tues=Tuesday
+	星期三： Wed=Wednesday
+	星期四： Thur=Thursday
+	星期五： Fri=Friday
+	星期六： Sat=Saturday
+	星期天： Sun=Sun 
+ 
+ 
+Jan一月
+	Feb二月
+	Mar三月
+	Apr四月
+	May五月
+	Jun六月
+	Jul七月
+	Aug八月
+	Sep九月
+	Oct十月
+	Nov十一月
+	Dec十二月
+ 
+
+function
+	function 是一种数据类型，只在调用的时候才编译和执行函数体的内容
+	闭包：一个内部函数里变量作用域生命周期延续。直接访问一个函数里面的私有属性.
+		1，闭包外层是个函数.
+2，闭包内部都有函数.
+3，闭包会return内部函数.
+4，闭包返回的函数内部不能有return.(因为这样就真的结束了)
+5，执行闭包后,闭包内部变量会存在,而闭包内部函数的内部变量不会存在.
+	闭包-：解决变量作用域延续的问题，同时解决全局变量冲突的问题。(即时函数)
+	格式:
+	注意：不允许使用关键字定义变量和方法的名称
+	function 函数名称(变量的定义规则)(形参列表){
+		//函数体
+		return ""; //不是一定要return,你有需要的时候才用return ,你打算把函数里你觉得要返回的数据，
+		};
+	//bb,ba , 是形参 .1 和8 是实参
+		function sum(bb,ba){ 
+			return bb+ba;
+		};
+	总结：
+		1:如果函数没有返回值，返回就是undefined
+		2:函数是一种数据类型，
+		3:执行函数就是：函数名称();
+		4:参数列表，分为形参和实参
+		5. 在开发中,一种代码重复三次以上,一定要用一个方法把封装起来，通过传递参数的, 封装不用刻意，不是一开始做的事情
+		function sum(){ 
+			var a = 100;
+			var fn  = function(){//函数表达式
+				return a;
+			};
+			return fn;
+		};
+		var fn =  sum();
+		var a = fn();
+		alert(fn);
+
+sum(1,100,function(){
+			var a = 10;
+			var b = 20;
+			alert(a+b);
+		});
+function(){
+	alert()
+}
+对象【object】
+对象:职责调用属性，调用方法
+var obj = {};//对象
+var obj = new Object();//创建对象
+var obj = Object.create();
+//添加值 对象.属性名
+		obj.age = 30;
+		obj.address = "湖南长沙";
+		alert("添加:"+obj.username+"===="+obj.age+"==="+obj.address);
+//修改值
+		obj.username = "小king";
+		obj.age = 20;
+		alert("修改:"+obj.username+"===="+obj.age+"==="+obj.address);
+//删除值
+		delete obj.age;
+		alert("修改:"+obj.username+"===="+obj.age+"==="+obj.address);
+		obj.age = 21;
+		alert("修改:"+obj.username+"===="+obj.age+"==="+obj.address);
+//删除整个对象
+		obj = null;
+取值有两种
+		//第一方式: 对象.属性
+		//第二方式: 对象["属性名"]
+Browser 对象
+-window 对象属性：
+	outerheight	返回窗口的外部高度。
+uterwidth	返回窗口的外部宽度。
+innerheight	返回窗口的文档显示区的高度。
+innerwidth	返回窗口的文档显示区的宽度。
+
+-window 对象方法:
+	alert()	显示带有一段消息和一个确认按钮的警告框。
+	close()	关闭浏览器窗口。
+	print()	打印当前窗口的内容。
+	resizeBy()	按照指定的像素调整窗口的大小。
+resizeTo()	把窗口的大小调整到指定的宽度和高度。
+scrollBy()	按照指定的像素值来滚动内容。
+scrollTo()	把内容滚动到指定的坐标。
+setInterval()	按照指定的周期（以毫秒计）来调用函数或计算表达式。
+setTimeout()	在指定的毫秒数后调用函数或计算表达式。
+
+HTML DOM 对象
+- Event 对象 （事件）
+	clientX	返回当事件被触发时，鼠标指针的水平坐标。
+clientY	返回当事件被触发时，鼠标指针的垂直坐标。
+onselectstart几乎可以用于所有对象，其触发时间为目标对象被开始选中时(即选中动作刚开始，尚未实质性被选中)。	
+语句：
+//循环 --for
+		for(定义变量(一次性) 1 ;逻辑判断2;运算符3){
+			4
+		}
+		第一次执行：1 2 4
+		第二次执行: 3 4 2
+		第三次执行: 3 4 2
+		第四次执行: 3 4 2
+		第五次执行: 3 4 2
+		…
+		循环重点就是逻辑的判断的(true/false)
+		如果为false代表一个循环的终点
+		var i=0,len = arr.length
+		for(;i<len;i+=1){
+		console.log(arr[i]);

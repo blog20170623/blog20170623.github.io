@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>Python文件和异常 | Blog</title>
+
+    <meta name="description" content="&lt;p&gt;本章只讲述所有基本的的I/O函数，更多函数请参考Python标准文档。&lt;/p&gt;">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl14p0h6y006iatjc6q6q5vvc" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      Python文件和异常
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2021-11-01T16:00:00.000Z" itemprop="datePublished">2021-11-02</time>
+</div>
+
+            
+            <div class="article-category">
+                <a class="article-category-link" href="/categories/Web/">Web</a>
+            </div>
+            
+
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <p>本章只讲述所有基本的的I/O函数，更多函数请参考Python标准文档。</p>
+<span id="more"></span>
+
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><p><strong>键盘输入</strong></p>
+<p>在Python 3中，不建议使用raw_input()函数。 <code>input()</code>函数可以从键盘读取数并作为字符串类型，而不管它是否用引号括起来(“或”“)。</p>
+<p><code>input</code>会假设你的输入是一个有效的Python表达式，并返回运算结果。</p>
+<h3 id="打开关闭文件"><a href="#打开关闭文件" class="headerlink" title="打开关闭文件"></a>打开关闭文件</h3><p><strong>打开文件</strong></p>
+<p>在读取或写入文件之前，必须使用Python的内置open()函数打开文件。此函数创建一个文件对象，该对象将用于调用与其相关联的其他支持方法。</p>
+<p><code>语法：</code></p>
+<blockquote>
+<p>file object = open(file_name [, access_mode][, buffering])</p>
+</blockquote>
+<ul>
+<li><p><code>file_name</code> - file_name参数是一个字符串值，指定要访问的文件的名称。</p>
+</li>
+<li><p><code>access_mode</code> - access_mode确定文件打开的模式，即读取，写入，追加等。可能的值的完整列表如下表所示。 </p>
+</li>
+<li><p>这是一个可选参数，默认文件访问模式为(r - 也就是只读)。buffering - 如果buffering值设置为0，则不会发生缓冲。 如果缓冲值buffering为1，则在访问文件时执行行缓冲。如果将缓冲值buffering指定为大于1的整数，则使用指定的缓冲区大小执行缓冲操作。如果为负，则缓冲区大小为系统默认值(默认行为)。</p>
+</li>
+</ul>
+<p>不同模式打开文件的完全列表：</p>
+<p><img src="/images/Web/filename.png"></p>
+<p>在使用<code>open</code>函数时，指定好带路径的文件名（可以使用相对路径或绝对路径）并将文件模式设置为<code>&#39;r&#39;</code>（如果不指定，默认值也是<code>&#39;r&#39;</code>），然后通过<code>encoding</code>参数指定编码（如果不指定，默认值是None，那么在读取文件时使用的是操作系统默认的编码）。</p>
+<p>如果不能保证保存文件时使用的编码方式与encoding参数指定的编码方式是一致的，那么就可能因无法解码字符而导致读取失败。下面的例子演示了如何读取一个纯文本文件。</p>
+<pre><code class="Python">def main():
+    f = open(&#39;致橡树.txt&#39;, &#39;r&#39;, encoding=&#39;utf-8&#39;)
+    print(f.read())
+    f.close()
+
+
+if __name__ == &#39;__main__&#39;:
+    main()
+</code></pre>
+<p>请注意上面的代码，如果<code>open</code>函数指定的文件并不存在或者无法打开，那么将引发异常状况导致程序崩溃。</p>
+<p>为了让代码有一定的健壮性和容错性，我们可以使用Python的异常机制对可能在运行时发生状况的代码进行适当的处理，如下所示：</p>
+<pre><code class="Python">def main():
+    f = None
+    try:
+        f = open(&#39;致橡树.txt&#39;, &#39;r&#39;, encoding=&#39;utf-8&#39;)
+        print(f.read())
+    except FileNotFoundError:
+        print(&#39;无法打开指定的文件!&#39;)
+    except LookupError:
+        print(&#39;指定了未知的编码!&#39;)
+    except UnicodeDecodeError:
+        print(&#39;读取文件时解码错误!&#39;)
+    finally:
+        if f:
+            f.close()
+
+
+if __name__ == &#39;__main__&#39;:
+    main()
+</code></pre>
+<p>在Python中，我们可以将那些在运行时可能会出现状况的代码放在<code>try</code>代码块中，在<code>try</code>代码块的后面可以跟上一个或多个<code>except</code>来捕获可能出现的异常状况。</p>
+<p>例如在上面读取文件的过程中：</p>
+<p>1.文件找不到会引发<code>FileNotFoundError</code>。</p>
+<p>2.指定了未知的编码会引发<code>LookupError</code>。</p>
+<p>3.如果读取文件时无法按指定方式解码会引发<code>UnicodeDecodeError</code>。</p>
+<p>我们在<code>try</code>后面跟上了三个<code>except</code>分别处理这三种不同的异常状况。</p>
+<p>最后我们使用<code>finally</code>代码块来关闭打开的文件，释放掉程序中获取的外部资源，由于<code>finally</code>块的代码不论程序正常还是异常都会执行到（甚至是调用了<code>sys</code>模块的<code>exit</code>函数退出Python环境，<code>finally</code>块都会被执行，因为<code>exit</code>函数实质上是引发了<code>SystemExit</code>异常），因此我们通常把<code>finally</code>块称为“总是执行代码块”，它最适合用来做释放外部资源的操作。</p>
+<p>如果每次都这么写，实在太繁琐。所以Python引入了with语句来自动帮我们调用close()方法：</p>
+<p><code>上面的一大段可以忽略...</code></p>
+<pre><code class="py">with open(&#39;/path/to/file&#39;, &#39;r&#39;) as f:
+    print(f.read())
+</code></pre>
+<p>这和前面的try … finally是一样的，但是代码更佳简洁，并且不必调用f.close()方法。with open会自动关闭。</p>
+<hr>
+<p><strong>文件对象属性</strong></p>
+<p>1.<code>file.closed</code> 如果文件关闭则返回true，否则返回false。</p>
+<p>2.<code>file.mode</code> 返回打开文件的访问模式。</p>
+<p>3.<code>file.name</code> 返回文件的名称。</p>
+<pre><code class="py"># Open a file
+fo = open(&quot;foo.txt&quot;, &quot;wb&quot;)
+print (&quot;Name of the file: &quot;, fo.name)
+print (&quot;Closed or not : &quot;, fo.closed)
+print (&quot;Opening mode : &quot;, fo.mode)
+fo.close()
+</code></pre>
+<p>运行：</p>
+<pre><code class="py">Name of the file:  foo.txt
+Closed or not :  False
+Opening mode :  wb
+</code></pre>
+<p>当文件的引用对象重新分配给另一个文件时，Python也会自动关闭一个文件。但使用close()方法关闭文件是个好习惯。</p>
+<hr>
+<p><strong>读取和写入文件</strong></p>
+<p>下面将演示如何使用<code>read()</code>和<code>write()</code>方法来读取和写入文件。</p>
+<p><code>read()</code>方法用于从打开的文件读取一个字符串。重要的是要注意Python字符串除文本数据外可以是二进制数据。</p>
+<blockquote>
+<p>fileObject.read([count])</p>
+</blockquote>
+<p>count是从打开的文件读取的字节数。 该方法从文件的开始位置开始读取，如果count不指定值或丢失，则尽可能地尝试读取文件，直到文件结束。</p>
+<pre><code class="py">fo = open(&quot;/tmp/foo.txt&quot;, &quot;r+&quot;)
+str = fo.read(10);
+print &quot;读取的字符串是: &quot;, str
+# 关闭打开的文件
+fo.close()
+
+# 读取的字符串是:  Python is
+</code></pre>
+<p><code>write()</code>方法将任何字符串写入打开的文件。该方法不会在字符串的末尾添加换行符(‘\n‘) </p>
+<blockquote>
+<p>fileObject.write(string)</p>
+</blockquote>
+<pre><code class="py"># Open a file
+fo = open(&quot;foo.txt&quot;, &quot;w&quot;)
+fo.write( &quot;Python is a great language.\nYeah its great!!\n&quot;)
+
+# Close opend file
+fo.close()
+
+
+# run
+# Python is a great language.
+# Yeah its great!!
+</code></pre>
+<p><strong>文件位置</strong></p>
+<p><code>tell()</code>方法用于获取文件中的当前位置; 换句话说，下一次读取或写入将发生在从文件开始处之后的多个字节数的位置。</p>
+<p><code>seek(offset [，from])</code>方法更改当前文件位置。 offset参数表示要移动的字节数。 from参数指定要移动字节的引用位置。</p>
+<p>如果from设置为0，则将文件的开头作为参考位置。 如果设置为1，则将当前位置用作参考位置。 如果设置为2，则文件的末尾将被作为参考位置。</p>
+<pre><code class="py"># Open a file
+fo = open(&quot;foo.txt&quot;, &quot;r+&quot;)
+str = fo.read(10)
+print (&quot;Read String is : &quot;, str)
+
+# Check current position
+position = fo.tell()
+print (&quot;Current file position : &quot;, position)
+
+# Reposition pointer at the beginning once again
+position = fo.seek(0, 0)
+str = fo.read(10)
+print (&quot;Again read String is : &quot;, str)
+
+# Close opened file
+fo.close()
+</code></pre>
+<p>执行上面代码，这产生以下结果</p>
+<pre><code class="py">Read String is :  Python is
+Current file position :  10
+Again read String is :  Python is
+</code></pre>
+<hr>
+<p><strong>重命名和删除文件</strong></p>
+<p><code>rename()</code>方法有两个参数，即当前的文件名和新的文件名。</p>
+<blockquote>
+<p>os.rename(current_file_name, new_file_name)</p>
+</blockquote>
+<p>将现有文件test1.txt重命名为test2.txt的示例：</p>
+<pre><code class="py">import os
+
+# Rename a file from test1.txt to test2.txt
+os.rename( &quot;test1.txt&quot;, &quot;test2.txt&quot; )
+</code></pre>
+<p><code>remove()</code>方法并通过提供要删除的文件的名称作为参数来删除文件。</p>
+<blockquote>
+<p>os.remove(file_name)</p>
+</blockquote>
+<pre><code class="py">os.remove(&quot;text2.txt&quot;)  #删除现有文件test2.txt的示例 
+</code></pre>
+<hr>
+<h3 id="Python中的目录"><a href="#Python中的目录" class="headerlink" title="Python中的目录"></a>Python中的目录</h3><p>所有文件都包含在各种目录中，Python处理目录问题也很容易。<code>os</code>模块有几种方法可以用来创建，删除和更改目录。</p>
+<p><strong>创建目录</strong></p>
+<p><code>mkdir()</code>方法在当前目录中创建目录。需要为此方法提供一个参数，指定要创建的目录的名称。</p>
+<blockquote>
+<p>os.mkdir(“newdir”)</p>
+</blockquote>
+<p><strong>重命名目录</strong></p>
+<p>使用<code>chdir()</code>方法来更改当前目录。 <code>chdir()</code>方法接受一个参数，它是要选择作为当前目录的目录的名称。</p>
+<blockquote>
+<p>os.chdir(“newdir”)</p>
+</blockquote>
+<pre><code class="py">import os
+
+# Changing &quot;/home/olddir&quot; to &quot;/home/newdir&quot;
+os.chdir(&quot;/home/newdir&quot;)
+</code></pre>
+<p><strong>显示当前工作目录</strong></p>
+<p><code>getcwd()</code>方法用于显示当前工作目录。</p>
+<p><strong>删除目录</strong></p>
+<p><code>rmdir()</code>方法删除该方法中作为参数传递的目录。删除目录之前，应删除其中的所有内容。</p>
+<blockquote>
+<p>os.rmdir(‘dirname’)</p>
+</blockquote>
+<p>更多OS模块的对象和方法See also 百易教程<a target="_blank" rel="noopener" href="https://www.yiibai.com/python/os_file_methods.html">Python os模块方法</a></p>
+<hr>
+<p>综合案例：</p>
+<p>要将文本信息写入文件文件也非常简单，在使用<code>open</code>函数时指定好文件名并将文件模式设置为<code>&#39;w&#39;</code>即可。注意如果需要对文件内容进行追加式写入，应该将模式设置为<code>&#39;a&#39;</code>。如果要写入的文件不存在会自动创建文件而不是引发异常。</p>
+<p>下面的例子演示了如何将1-9999之间的素数分别写入三个文件中（1-99之间的素数保存在a.txt中，100-999之间的素数保存在b.txt中，1000-9999之间的素数保存在c.txt中）。</p>
+<pre><code class="Python">from math import sqrt
+
+
+def is_prime(n):
+    &quot;&quot;&quot;判断素数的函数&quot;&quot;&quot;
+    assert n &gt; 0
+    for factor in range(2, int(sqrt(n)) + 1):
+        if n % factor == 0:
+            return False
+    return True if n != 1 else False
+
+
+def main():
+    filenames = (&#39;a.txt&#39;, &#39;b.txt&#39;, &#39;c.txt&#39;)
+    fs_list = []
+    try:
+        for filename in filenames:
+            fs_list.append(open(filename, &#39;w&#39;, encoding=&#39;utf-8&#39;))
+        for number in range(1, 10000):
+            if is_prime(number):
+                if number &lt; 100:
+                    fs_list[0].write(str(number) + &#39;\n&#39;)
+                elif number &lt; 1000:
+                    fs_list[1].write(str(number) + &#39;\n&#39;)
+                else:
+                    fs_list[2].write(str(number) + &#39;\n&#39;)
+    except IOError as ex:
+        print(ex)
+        print(&#39;写文件时发生错误!&#39;)
+    finally:
+        for fs in fs_list:
+            fs.close()
+    print(&#39;操作完成!&#39;)
+
+
+if __name__ == &#39;__main__&#39;:
+    main()
+</code></pre>
+<hr>
+<h3 id="读写二进制文件"><a href="#读写二进制文件" class="headerlink" title="读写二进制文件"></a>读写二进制文件</h3><p>知道了如何读写文本文件要读写二进制文件也就很简单了，下面的代码实现了复制图片文件的功能。</p>
+<pre><code class="Python">def main():
+    try:
+        with open(&#39;guido.jpg&#39;, &#39;rb&#39;) as fs1:
+            data = fs1.read()
+            print(type(data))  # &lt;class &#39;bytes&#39;&gt;
+        with open(&#39;吉多.jpg&#39;, &#39;wb&#39;) as fs2:
+            fs2.write(data)
+    except FileNotFoundError as e:
+        print(&#39;指定的文件无法打开.&#39;)
+    except IOError as e:
+        print(&#39;读写文件时出现错误.&#39;)
+    print(&#39;程序执行结束.&#39;)
+
+
+if __name__ == &#39;__main__&#39;:
+    main()
+</code></pre>
+<blockquote>
+<p>See also <a target="_blank" rel="noopener" href="https://blogspace170623.github.io/Python/part02/file/5/section.1.html">文件操作-黑马笔记</a></p>
+</blockquote>
+<hr>
+<h3 id="读写JSON文件"><a href="#读写JSON文件" class="headerlink" title="读写JSON文件"></a>读写JSON文件</h3><p>通过上面的讲解，我们已经知道如何将文本数据和二进制数据保存到文件中，那么这里还有一个问题，如果希望把一个列表或者一个字典中的数据保存到文件中又该怎么做呢？答案是将数据以JSON格式进行保存。JSON是“JavaScript Object Notation”的缩写，它本来是JavaScript语言中创建对象的一种字面量语法，现在已经被广泛的应用于跨平台跨语言的数据交换，原因很简单，因为JSON也是纯文本，任何系统任何编程语言处理纯文本都是没有问题的。目前JSON基本上已经取代了XML作为异构系统间交换数据的事实标准。关于JSON的知识，更多的可以参考<a target="_blank" rel="noopener" href="http://json.org/">JSON的官方网站</a>，从这个网站也可以了解到每种语言处理JSON数据格式可以使用的工具或三方库，下面是一个JSON的简单例子。</p>
+<pre><code class="JSON">&#123;
+    &quot;name&quot;: &quot;骆昊&quot;,
+    &quot;age&quot;: 38,
+    &quot;qq&quot;: 957658,
+    &quot;friends&quot;: [&quot;王大锤&quot;, &quot;白元芳&quot;],
+    &quot;cars&quot;: [
+        &#123;&quot;brand&quot;: &quot;BYD&quot;, &quot;max_speed&quot;: 180&#125;,
+        &#123;&quot;brand&quot;: &quot;Audi&quot;, &quot;max_speed&quot;: 280&#125;,
+        &#123;&quot;brand&quot;: &quot;Benz&quot;, &quot;max_speed&quot;: 320&#125;
+    ]
+&#125;
+</code></pre>
+<p>可能大家已经注意到了，上面的JSON跟Python中的字典其实是一样一样的，事实上JSON的数据类型和Python的数据类型是很容易找到对应关系的，如下面两张表所示。</p>
+<table>
+<thead>
+<tr>
+<th>JSON</th>
+<th>Python</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>object</td>
+<td>dict</td>
+</tr>
+<tr>
+<td>array</td>
+<td>list</td>
+</tr>
+<tr>
+<td>string</td>
+<td>str</td>
+</tr>
+<tr>
+<td>number (int / real)</td>
+<td>int / float</td>
+</tr>
+<tr>
+<td>true / false</td>
+<td>True / False</td>
+</tr>
+<tr>
+<td>null</td>
+<td>None</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Python</th>
+<th>JSON</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>dict</td>
+<td>object</td>
+</tr>
+<tr>
+<td>list, tuple</td>
+<td>array</td>
+</tr>
+<tr>
+<td>str</td>
+<td>string</td>
+</tr>
+<tr>
+<td>int, float, int- &amp; float-derived Enums</td>
+<td>number</td>
+</tr>
+<tr>
+<td>True / False</td>
+<td>true / false</td>
+</tr>
+<tr>
+<td>None</td>
+<td>null</td>
+</tr>
+</tbody></table>
+<p>我们使用Python中的json模块就可以将字典或列表以JSON格式保存到文件中，代码如下所示。</p>
+<pre><code class="Python">import json
+
+
+def main():
+    mydict = &#123;
+        &#39;name&#39;: &#39;骆昊&#39;,
+        &#39;age&#39;: 38,
+        &#39;qq&#39;: 957658,
+        &#39;friends&#39;: [&#39;王大锤&#39;, &#39;白元芳&#39;],
+        &#39;cars&#39;: [
+            &#123;&#39;brand&#39;: &#39;BYD&#39;, &#39;max_speed&#39;: 180&#125;,
+            &#123;&#39;brand&#39;: &#39;Audi&#39;, &#39;max_speed&#39;: 280&#125;,
+            &#123;&#39;brand&#39;: &#39;Benz&#39;, &#39;max_speed&#39;: 320&#125;
+        ]
+    &#125;
+    try:
+        with open(&#39;data.json&#39;, &#39;w&#39;, encoding=&#39;utf-8&#39;) as fs:
+            json.dump(mydict, fs)
+    except IOError as e:
+        print(e)
+    print(&#39;保存数据完成!&#39;)
+
+
+if __name__ == &#39;__main__&#39;:
+    main()
+</code></pre>
+<p>json模块主要有四个比较重要的函数，分别是：</p>
+<ul>
+<li><code>dump</code> - 将Python对象按照JSON格式序列化到文件中</li>
+<li><code>dumps</code> - 将Python对象处理成JSON格式的字符串</li>
+<li><code>load</code> - 将文件中的JSON数据反序列化成对象</li>
+<li><code>loads</code> - 将字符串的内容反序列化成Python对象</li>
+</ul>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2021/11/08/Web/Python%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%A5%E6%9C%9F/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          Python时间和日期
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/11/01/Blog/%E8%81%9A%E5%90%88%E6%96%B0%E9%97%BB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">聚合新闻</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/03/24/Blog/1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/19/News/%E5%BE%90%E5%85%B6%E8%80%80/">徐其耀</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/17/News/%E8%AF%B4%E4%B8%80%E4%B8%8B%E5%BA%95%E5%B1%82%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%E6%A0%B7%E5%AD%90/">说一下底层的中国人到底是什么样子</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ajax/" rel="tag">Ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/" rel="tag">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web%E5%BC%80%E5%8F%91/" rel="tag">Web开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/" rel="tag">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/" rel="tag">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" rel="tag">前端开发</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

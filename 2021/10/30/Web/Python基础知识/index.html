@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>Python基础知识 | Blog</title>
+
+    <meta name="description" content="&lt;p&gt;&lt;img src=&#34;/images/Github/Weekly/20210802001.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;MAC 系统都自带有 Python2.7 环境，你可以在&lt;a href=&#34;https://www.python.org/downloads/mac-osx/&#34;&gt;链接&lt;/a&gt; 上下载最新版安装 Python 3.x。&lt;/p&gt;
+&lt;p&gt;你也可以参考源码安装的方式来安装。&lt;/p&gt;
+&lt;p&gt;有命令行打开python的方法，也有集成开发环境（IDE：Integrated Development Environment）: PyCharm打开python的方法&lt;/p&gt;">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl14p0h6x006gatjc95k5d0qj" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      Python基础知识
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2021-10-29T16:00:00.000Z" itemprop="datePublished">2021-10-30</time>
+</div>
+
+            
+            <div class="article-category">
+                <a class="article-category-link" href="/categories/Web/">Web</a>
+            </div>
+            
+
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <p><img src="/images/Github/Weekly/20210802001.png"></p>
+<p>MAC 系统都自带有 Python2.7 环境，你可以在<a target="_blank" rel="noopener" href="https://www.python.org/downloads/mac-osx/">链接</a> 上下载最新版安装 Python 3.x。</p>
+<p>你也可以参考源码安装的方式来安装。</p>
+<p>有命令行打开python的方法，也有集成开发环境（IDE：Integrated Development Environment）: PyCharm打开python的方法</p>
+<span id="more"></span>
+
+<p>默认情况下，Python 3 源码文件以 UTF-8 编码，所有字符串都是 unicode 字符串。</p>
+<h2 id="标识符和关键字"><a href="#标识符和关键字" class="headerlink" title="标识符和关键字"></a>标识符和关键字</h2><p>程序开发中自定义的一些符号和名称，标示符是自己定义的,如变量名 、函数名等，关键字是python已经使用的了。</p>
+<ul>
+<li>标示符由字母、下划线和数字组成，且数字不能开头</li>
+<li>python中的标识符是区分大小写的</li>
+</ul>
+<p><strong>关键字</strong></p>
+<pre><code class="python">and     as      assert     break     class      continue    def     del
+elif    else    except     exec      finally    for         from    global
+if      in      import     is        lambda     not         or      pass
+print   raise   return     try       while      with        yield
+</code></pre>
+<h2 id="语句结构"><a href="#语句结构" class="headerlink" title="语句结构"></a>语句结构</h2><h3 id="分支结构"><a href="#分支结构" class="headerlink" title="分支结构"></a>分支结构</h3><p><code>if语句：</code></p>
+<p>案例：</p>
+<p>简单的用户身份验证：</p>
+<pre><code class="py">
+username = input(&quot;请输入用户名：&quot;)
+password = input(&quot;请输入密码：&quot;)
+
+if username == &quot;happy&quot; and password == &quot;123&quot;:
+    
+    print(&quot;你输入的密码正确&quot;)
+
+else:
+    print(&quot;不对哦&quot;)    
+</code></pre>
+<p>如果要构造出更多的分支，可以使用<code>if...elif...else...</code>结构或者嵌套的<code>if...else...</code>结构。</p>
+<p>之所以提倡代码“扁平化”是因为嵌套结构的嵌套层次多了之后会严重的影响代码的可读性，所以<code>能使用扁平化的结构时就不要使用嵌套</code>。</p>
+<h3 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h3><p>举一个简单的例子，如果要实现每隔1秒中在屏幕上打印一次“hello, world”并持续打印一个小时，我们肯定不能够直接把<code>print(&#39;hello, world&#39;)</code>这句代码写3600遍，这样就需要循环结构了。</p>
+<p><strong>for in 循环</strong></p>
+<pre><code class="py">sum = 0
+for x in range(1,101):
+    sum += x
+print(sum)
+
+# 用for循环实现1~100之间的偶数求和
+sum = 0
+for x in range(2, 101, 2):
+    sum += x
+print(sum)
+</code></pre>
+<p>指定一个数组集合的循环个数：这集需要一个计数器counter</p>
+<pre><code class="py">counter = 0
+for div in div_list:
+    counter = counter + 1
+    soup = BeautifulSoup(div,&#39;lxml&#39;)
+    title = soup.select(&#39;.anhover&#39;)
+    print(title)
+    if counter == 7:
+        break
+    # 当变量 counter 等于 7 时退出循环
+</code></pre>
+<p><strong>while循环</strong></p>
+<p>如果要构造不知道具体循环次数的循环结构，我们推荐使用<code>while</code>循环。<code>while</code>循环通过一个能够产生或转换出<code>bool</code>值的表达式来控制循环，表达式的值为<code>True</code>则继续循环；表达式的值为<code>False</code>则结束循环。</p>
+<pre><code class="py">
+# 猜数字游戏
+
+import random
+
+answer = random.randint(1, 100)
+counter = 0
+while True:
+    counter += 1
+    number = int(input(&#39;请输入: &#39;))
+    if number &lt; answer:
+        print(&#39;大一点&#39;)
+    elif number &gt; answer:
+        print(&#39;小一点&#39;)
+    else:
+        print(&#39;恭喜你猜对了!&#39;)
+        break
+print(&#39;你总共猜了%d次&#39; % counter)
+if counter &gt; 7:
+    print(&#39;你的智商余额明显不足&#39;)
+</code></pre>
+<h3 id="列表、元祖、字典"><a href="#列表、元祖、字典" class="headerlink" title="列表、元祖、字典"></a>列表、元祖、字典</h3><p>类似于其他语言的数组</p>
+<p>列表的嵌套</p>
+<pre><code class="py">
+schoolNames = [[&#39;北京大学&#39;,&#39;清华大学&#39;],
+    [&#39;南开大学&#39;,&#39;天津大学&#39;,&#39;天津师范大学&#39;],
+    [&#39;山东大学&#39;,&#39;中国海洋大学&#39;]]
+
+# 元组
+a = ()    
+</code></pre>
+<p>Python的元组与列表类似，不同之处在于元组的元素不能修改。元组使用小括号，列表使用方括号。</p>
+<p>字典是另一种可变容器模型，且可存储任意类型对象。</p>
+<p>字典的每个键值 key=&gt;value 对用冒号 : 分割，每个键值对之间用逗号 , 分割，整个字典包括在花括号 {} 中 ,格式如下所示：</p>
+<pre><code class="python">
+d = &#123;key1 : value1, key2 : value2 &#125;
+</code></pre>
+<h3 id="构造程序逻辑"><a href="#构造程序逻辑" class="headerlink" title="构造程序逻辑"></a>构造程序逻辑</h3><p><code>构造程序逻辑:</code>就是锻炼自己，把用人类自然语言描述的算法（解决问题的方法和步骤）翻译成Python代码。而这件事情必须通过大量的练习才能达成。</p>
+<blockquote>
+<p>思考：公鸡5元一只，母鸡3元一只，小鸡1元三只，用100块钱买一百只鸡，问公鸡、母鸡、小鸡各有多少只？</p>
+</blockquote>
+<h3 id="函数的作用"><a href="#函数的作用" class="headerlink" title="函数的作用"></a>函数的作用</h3><p>编程大师<em>Martin Fowler</em>先生曾经说过：“<strong>代码有很多种坏味道，重复是最坏的一种！</strong>”，要写出高质量的代码首先要解决的就是重复代码的问题。对于上面的代码来说，我们可以将计算阶乘的功能封装到一个称之为“函数”的功能模块中，在需要计算阶乘的地方，我们只需要“调用”这个“函数”就可以了。</p>
+<pre><code class="py">def fac(num):
+    &quot;&quot;&quot;求阶乘&quot;&quot;&quot;
+    result = 1
+    for n in range(1, num + 1):
+        result *= n
+    return result
+
+
+m = int(input(&#39;m = &#39;))
+n = int(input(&#39;n = &#39;))
+</code></pre>
+<p>函数是组织好的，可重复使用的，用来实现单一，或相关联功能的代码段。</p>
+<ul>
+<li>函数代码块以 def 关键词开头，后接函数标识符名称和圆括号()。</li>
+<li>函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明。</li>
+<li>函数内容以冒号起始，并且缩进。</li>
+</ul>
+<pre><code class="python">def printme( str ):
+   &quot;打印传入的字符串到标准显示设备上&quot;
+   print str
+   return
+
+# 调用函数
+
+printme(&quot;我要调用用户自定义函数!&quot;);
+</code></pre>
+<blockquote>
+<p>内置函数，参考文档…</p>
+</blockquote>
+<p><strong>用模块管理函数</strong></p>
+<p>对于任何一种编程语言来说，给变量、函数这样的标识符起名字都是一个让人头疼的问题，因为我们会遇到命名冲突这种尴尬的情况。最简单的场景就是在同一个.py文件中定义了两个同名函数，由于Python没有函数重载的概念，那么后面的定义会覆盖之前的定义，也就意味着两个函数同名函数实际上只有一个是存在的。</p>
+<p>那么怎么解决这种命名冲突呢？答案其实很简单，Python中每个文件就代表了一个模块（module），我们在不同的模块中可以有同名的函数，在使用函数的时候我们通过<code>import</code>关键字导入指定的模块就可以区分到底要使用的是哪个模块中的同名函数，</p>
+<pre><code class="Python">from module1 import foo
+from module2 import foo
+
+...
+
+if __name__ == &#39;__main__&#39;:
+    # 在if __name__ 里面的代码 解释器直接编译才运用，import调用的话不运行
+</code></pre>
+<p>support.py 模块：</p>
+<pre><code class="python">def print_func( par ):
+   print &quot;Hello : &quot;, par
+   return
+
+# 在其他文件调用时：
+
+# 导入模块
+import support
+support.print_func(&quot;Runoob&quot;)
+</code></pre>
+<h3 id="字符串和常用数据结构"><a href="#字符串和常用数据结构" class="headerlink" title="字符串和常用数据结构"></a>字符串和常用数据结构</h3><p>虽然数值运算仍然是计算机日常工作中最为重要的事情之一，但是今天的计算机处理得更多的数据可能都是以文本的方式存在的，如果我们希望通过Python程序操作本这些文本信息，就必须要先了解字符串类型以及与它相关的知识。</p>
+<p>可以在字符串中使用<code>\</code>（反斜杠）来表示转义，也就是说<code>\</code>后面的字符不再是它原来的意义，例如：<code>\n</code>不是代表反斜杠和字符n，而是表示换行；</p>
+<p>而<code>\t</code>也不是代表反斜杠和字符t，而是表示制表符。所以如果想在字符串中表示<code>&#39;</code>要写成<code>\&#39;</code>，同理想表示<code>\</code>要写成<code>\\</code>。可以运行下面的代码看看会输出什么。</p>
+<p>案例：</p>
+<p>设计一个函数产生指定长度的验证码，验证码由大小写字母和数字构成。</p>
+<pre><code class="py">import random
+
+def generate_code(code_len=4):
+    &quot;&quot;&quot;
+    生成指定长度的验证码
+
+    :param code_len: 验证码的长度(默认4个字符)
+
+    :return: 由大小写英文字母和数字构成的随机验证码
+    &quot;&quot;&quot;
+    all_chars = &#39;0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;
+    last_pos = len(all_chars) - 1
+    code = &#39;&#39;
+    for _ in range(code_len):
+        index = random.randint(0, last_pos)
+        code += all_chars[index]
+    return code
+
+
+# for _in range(n):  
+
+# _在下面不会用到，这里的_可以替换成任何符合规定的字符串。相当于一个占位符，只在乎遍历次数 range(n) 就是遍历n次
+</code></pre>
+<hr>
+<h2 id="面向对象编程"><a href="#面向对象编程" class="headerlink" title="面向对象编程"></a>面向对象编程</h2><p>面向对象和面向过程都是解决问题的一种思路而已</p>
+<p>拿菜鸟买电脑的故事为例：</p>
+<p>第一种方式【面向过程】:</p>
+<p>1)在网上查找资料</p>
+<p>2)根据自己预算和需求定电脑的型号 MacBook 15 顶配 1W8</p>
+<p>3)去市场找到苹果店各种店无法甄别真假 随便找了一家</p>
+<p>4)找到业务员,业务员推荐了另外一款 配置更高价格便宜,也是苹果系统的 1W</p>
+<p>5)砍价30分钟 付款9999</p>
+<p>6)成交</p>
+<p>7)回去之后发现各种问题</p>
+<p>8)尝试解决各种问题…</p>
+<p>第二种方式【面向对象】:</p>
+<p>1)找一个靠谱的电脑高手</p>
+<p>2)给钱交易</p>
+<h3 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h3><p>面向对象编程的2个非常重要的概念：类和对象</p>
+<p>对象是面向对象编程的核心，在使用对象的过程中，为了将具有共同特征和行为的一组对象抽象定义，提出了另外一个新的概念——类</p>
+<p><code>类就相当于制造飞机时的图纸，用它来进行创建的飞机就相当于对象</code></p>
+<p>举例：</p>
+<pre><code>奔驰汽车 类
+奔驰smart 类 
+张三的那辆奔驰smart 对象
+狗 类
+大黄狗 类 
+李四家那只大黄狗 对象 
+水果 类
+苹果 类 
+红苹果 类 红富士苹果 类 
+我嘴里吃了一半的苹果 对象
+</code></pre>
+<p><strong>抽象类：</strong></p>
+<p><code>类的抽象</code></p>
+<p>小明在公车上牵着一条叼着热狗的狗</p>
+<ul>
+<li>小明–》抽象成 人类</li>
+<li>公车–》抽象成 交通工具类</li>
+<li>热狗–》抽象成 食物类</li>
+<li>狗–》抽象成 狗类</li>
+</ul>
+<p>Python本身不提供抽象类和接口机制，要想实现抽象类，可以借助abc模块。ABC是Abstract Base Class的缩写。<code>抽象类是一个特殊的类，它的特殊之处在于只能被继承，不能被实例化</code></p>
+<blockquote>
+<p>比如我们有香蕉的类，有苹果的类，有桃子的类，从这些类抽取相同的内容就是水果这个抽象的类，你吃水果时，要么是吃一个具体的香蕉，要么是吃一个具体的桃子。。。。。。你永远无法吃到一个叫做水果的东西。</p>
+</blockquote>
+<p>这里不得不说，这个比喻打的太好了，看了那么多的文档教程总是云里雾里的，这个比喻有种醍醐灌顶的感觉。</p>
+<p>从设计角度去看，如果类是从现实对象抽象而来的，那么抽象类就是基于类抽象而来的。</p>
+<p>从实现角度来看，抽象类与普通类的不同之处在于：抽象类中有抽象方法，该类不能被实例化，只能被继承，且子类必须实现抽象方法。这一点与接口有点类似，但其实是不同的。</p>
+<p><code>抽象类是一个介于类和接口直接的一个概念，同时具备类和接口的部分特性，可以用来实现归一化设计 </code></p>
+<p><strong>定义类：</strong></p>
+<pre><code class="py">class Hero(object):  # 新式类定义形式
+    def info(self):
+        print(&quot;英雄各有见，何必问出处。&quot;)
+
+
+# Hero这个类 实例化了一个对象  taidamier(泰达米尔)
+
+taidamier = Hero()
+
+# 对象调用实例方法info()，执行info()里的代码
+# . 表示选择属性或者方法
+
+taidamier.info()
+</code></pre>
+<p>object 是Python 里所有类的最顶级父类；</p>
+<p>类名 的命名规则按照”大驼峰命名法”；</p>
+<p>info 是一个实例方法，第一个参数一般是self，表示实例对象本身，当然了可以将self换为其它的名字，其作用是一个变量 这个变量指向了实例对象</p>
+<p>案例：</p>
+<p>给对象添加自己的属性：</p>
+<pre><code class="py">
+class Hero(object):
+    &quot;&quot;&quot;定义了一个英雄类，可以移动和攻击&quot;&quot;&quot;
+    def move(self):
+        &quot;&quot;&quot;实例方法&quot;&quot;&quot;
+        print(&quot;正在前往事发地点...&quot;)
+
+    def attack(self):
+        &quot;&quot;&quot;实例方法&quot;&quot;&quot;
+        print(&quot;发出了一招强力的普通攻击...&quot;)
+
+# 实例化了一个英雄对象 泰达米尔
+taidamier = Hero()
+
+# 给对象添加属性，以及对应的属性值
+taidamier.name = &quot;泰达米尔&quot;  # 姓名
+taidamier.hp = 2600  # 生命值
+taidamier.atk = 450  # 攻击力
+taidamier.armor = 200  # 护甲值
+
+# 通过.成员选择运算符，获取对象的属性值
+print(&quot;英雄 %s 的生命值 :%d&quot; % (taidamier.name, taidamier.hp))
+print(&quot;英雄 %s 的攻击力 :%d&quot; % (taidamier.name, taidamier.atk))
+print(&quot;英雄 %s 的护甲值 :%d&quot; % (taidamier.name, taidamier.armor))
+
+# 通过.成员选择运算符，获取对象的实例方法
+taidamier.move()
+taidamier.attack()
+</code></pre>
+<blockquote>
+<p>创建对象后再去添加属性有点不合适，有没有简单的办法，可以在创建对象的时候，就已经拥有这些属性？</p>
+</blockquote>
+<pre><code class="py">class Hero(object):
+    &quot;&quot;&quot;定义了一个英雄类，可以移动和攻击&quot;&quot;&quot;
+
+    def __init__(self, name, skill, hp, atk, armor):
+        &quot;&quot;&quot; __init__() 方法，用来做变量初始化 或 赋值 操作&quot;&quot;&quot;
+        # 英雄名
+        self.name = name
+        # 技能
+        self.skill = skill
+        # 生命值：
+        self.hp = hp
+        # 攻击力
+        self.atk = atk
+        # 护甲值
+        self.armor = armor
+
+    def move(self):
+        &quot;&quot;&quot;实例方法&quot;&quot;&quot;
+        print(&quot;%s 正在前往事发地点...&quot; % self.name)
+
+    def attack(self):
+        &quot;&quot;&quot;实例方法&quot;&quot;&quot;
+        print(&quot;发出了一招强力的%s...&quot; % self.skill)
+
+    def info(self):
+        print(&quot;英雄 %s 的生命值 :%d&quot; % (self.name, self.hp))
+        print(&quot;英雄 %s 的攻击力 :%d&quot; % (self.name, self.atk))
+        print(&quot;英雄 %s 的护甲值 :%d&quot; % (self.name, self.armor))
+
+
+# 实例化英雄对象时，参数会传递到对象的__init__()方法里
+taidamier = Hero(&quot;泰达米尔&quot;, &quot;旋风斩&quot;, 2600, 450, 200)
+gailun = Hero(&quot;盖伦&quot;, &quot;大宝剑&quot;, 4200, 260, 400)
+
+
+# print(gailun)
+# print(taidamier)
+
+# 不同对象的属性值的单独保存
+print(id(taidamier.name)) 
+print(id(gailun.name))
+
+# 同一个类的不同对象，实例方法共享
+print(id(taidamier.move())) 
+print(id(gailun.move()))
+</code></pre>
+<p>说明：<br>通过一个类，可以创建多个对象，就好比 通过一个模具创建多个实体一样</p>
+<p><code>__init__(self)</code>中，默认有1个参数名字为self，如果在创建对象时传递了2个实参，那么__init__(self)中出了self作为第一个形参外还需要2个形参，例如__init__(self,x,y)</p>
+<p><code>__str__()</code></p>
+<pre><code class="py">class Hero(object):
+    &quot;&quot;&quot;定义了一个英雄类，可以移动和攻击  Hero.__doc__显示的内容&quot;&quot;&quot;
+
+    def __init__(self, name, skill, hp, atk, armor):
+        &quot;&quot;&quot; __init__() 方法，用来做变量初始化 或 赋值 操作&quot;&quot;&quot;
+        # 英雄名
+        self.name = name  # 实例变量
+        # 技能
+        self.skill = skill
+        # 生命值：
+        self.hp = hp   # 实例变量
+        # 攻击力
+        self.atk = atk
+        # 护甲值
+        self.armor = armor
+
+    def move(self):
+        &quot;&quot;&quot;实例方法&quot;&quot;&quot;
+        print(&quot;%s 正在前往事发地点...&quot; % self.name)
+
+    def attack(self):
+        &quot;&quot;&quot;实例方法&quot;&quot;&quot;
+        print(&quot;发出了一招强力的%s...&quot; % self.skill)
+
+    # def info(self):
+    #     print(&quot;英雄 %s 的生命值 :%d&quot; % (self.name, self.hp))
+    #     print(&quot;英雄 %s 的攻击力 :%d&quot; % (self.name, self.atk))
+    #     print(&quot;英雄 %s 的护甲值 :%d&quot; % (self.name, self.armor))
+
+
+    def __str__(self):
+        &quot;&quot;&quot;
+            这个方法是一个魔法方法 (Magic Method) ，用来显示信息
+            该方法需要 return 一个数据，并且只有self一个参数，当在类的外部 print(对象) 则打印这个数据
+        &quot;&quot;&quot;
+        return &quot;英雄 &lt;%s&gt; 数据： 生命值 %d, 攻击力 %d, 护甲值 %d&quot; % (self.name, self.hp, self.atk, self.armor)
+
+
+taidamier = Hero(&quot;泰达米尔&quot;, &quot;旋风斩&quot;, 2600, 450, 200)
+gailun = Hero(&quot;盖伦&quot;, &quot;大宝剑&quot;, 4200, 260, 400)
+
+# 如果没有__str__ 则默认打印 对象在内存的地址。
+# 当类的实例化对象 拥有 __str__ 方法后，那么打印对象则打印 __str__ 的返回值。
+print(taidamier)
+print(gailun)
+
+# 查看类的文档说明，也就是类的注释
+print(Hero.__doc__)
+</code></pre>
+<p>在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法</p>
+<p>当使用print输出对象的时候，只要自己定义了__str__(self)方法，那么就会打印从在这个方法中return的数据</p>
+<p><code>__str__</code>方法需要返回一个字符串，当做这个对象的描写</p>
+<blockquote>
+<p>上面几行字是runoob教程上的内容，不是很明白。我的理解就是返回这个对象愿意给你看到的东西，比如有些东西【英雄的奥义】不想显示，self.skill就没写。</p>
+</blockquote>
+<hr>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>在程序中，继承描述的是多个类之间的所属关系。如果一个类A里面的属性和方法可以复用，则可以通过继承的方式，传递到类B里。</p>
+<p><code>那么类A就是基类，也叫做父类；类B就是派生类，也叫做子类。</code></p>
+<pre><code class="py"># 父类
+class A(object):
+    def __init__(self):
+        self.num = 10
+
+    def print_num(self):
+        print(self.num + 10)
+# 子类
+class B(A):
+    pass
+
+
+b = B()
+print(b.num) 
+b.print_num()
+</code></pre>
+<p>子类除了继承父类提供的属性和方法，还可以定义自己特有的属性和方法，所以子类比父类拥有的更多的能力，在实际开发中，我们经常会用子类对象去替换掉一个父类对象，这是面向对象编程中一个常见的行为，对应的原则称之为<code>里氏替换原则</code>。</p>
+<p>子类在继承了父类的方法后，可以对父类已有的方法给出新的实现版本，这个动作称之为方法重写（override）。</p>
+<p><strong>单继承和多继承：</strong></p>
+<p>故事情节：煎饼果子老师傅在煎饼果子界摸爬滚打几十年，拥有一身精湛的煎饼果子技术，并总结了一套”古法煎饼果子配方”。</p>
+<p>可是老师傅年迈已久，在嗝屁之前希望把自己的配方传承下去，于是老师傅把配方传给他的徒弟大猫…</p>
+<p>大猫掌握了师傅的配方，可以制作古法煎饼果子。但是大猫是个爱学习的好孩子，他希望学到更多的煎饼果子的做法，于是通过百度搜索，找到了一家煎饼果子培训学校。（多继承）</p>
+<pre><code class="py">
+class Prentice(Master, School):  # 多继承，继承了多个父类（Master在前）
+    pass
+</code></pre>
+<p><a target="_blank" rel="noopener" href="https://blogspace170623.github.io/Python/part03/file/6/section.8.2.html">子类重写父类的同名属性和方法</a></p>
+<p><a target="_blank" rel="noopener" href="https://blogspace170623.github.io/Python/part03/file/6/section.8.1.html">子类调用父类同名属性和方法</a></p>
+<p><code>继承有两种用途：</code></p>
+<p>一：继承基类的方法，并且做出自己的改变或者扩展（代码重用）  </p>
+<p>二：声明某个子类兼容于某基类，定义一个接口类Interface，接口类中定义了一些接口名（就是函数名）且并未实现接口的功能，子类继承接口类，并且实现接口中的功能.</p>
+<p>实践中，继承的第一种含义意义并不很大，甚至常常是有害的。因为它使得子类与基类出现强耦合。</p>
+<p>继承的第二种含义非常重要。它又叫“接口继承”。<br>接口继承实质上是要求“做出一个良好的抽象，这个抽象规定了一个兼容接口，使得外部调用者无需关心具体细节，可一视同仁的处理实现了特定接口的所有对象”——这在程序设计上，叫做归一化。</p>
+<hr>
+<h3 id="私有权限"><a href="#私有权限" class="headerlink" title="私有权限"></a>私有权限</h3><p><code>面向对象三大特性：封装、继承、多态</code></p>
+<p>封装的意义：将属性和方法放到一起做为一个整体，然后通过实例化对象来处理；隐藏内部实现细节，只需要和对象及其属性和方法交互就可以了；对类的属性和方法增加访问权限控制。这就有了<code>私有权限</code>概念</p>
+<p><strong>私有权限：在属性名和方法名 前面 加上两个下划线</strong></p>
+<ul>
+<li>类的私有属性 和 私有方法，都不能通过对象直接访问，但是可以在本类内部访问；</li>
+<li>类的私有属性 和 私有方法，都不会被子类继承，子类也无法访问；</li>
+<li>私有属性 和 私有方法 往往用来处理类的内部事情，不通过对象处理，起到安全作用</li>
+</ul>
+<p><code>修改私有属性值：</code></p>
+<blockquote>
+<p>对象名.属性名 = 数据 —-&gt; 直接修改</p>
+</blockquote>
+<p>私有属性不能直接访问，所以这个方法不能修改。得定义一个可以调用的公有方法，在这个公有方法内访问修改。</p>
+<pre><code class="py">class Prentice(School, Master):
+    def __init__(self):
+        self.kongfu = &quot;猫氏煎饼果子配方&quot;
+        # 私有属性，可以在类内部通过self调用，但不能通过对象访问
+        self.__money = 10000  
+
+    ...
+
+        # 接收参数，修改私有属性的值
+    def set_money(self, num):
+        self.__money = num
+
+damao = Prentice()
+# 对象不能访问私有权限的属性和方法
+# print(damao.__money)
+# damao.__print_info()
+
+# 可以通过访问公有方法set_money()来修改私有属性的值
+damao.set_money(100)        
+</code></pre>
+<p>1、<code>_xxx</code> 不能用于’from module import * ’ 以单下划线开头的表示的是protected类型的变量。一般来讲，变量名_xxx被看作是“私有 的”，在模块或类外不可以使用。</p>
+<p>当变量是私有的时候，用_xxx 来表示变量是很好的习惯。以”单下划线” 开始的成员变量叫做保护变量，意思是只有类对象和子类对象自己能访问到这些变量；</p>
+<p>2、<code>__xxx</code> 双下划线的表示的是私有类型的变量。只能是允许这个类本身进行访问了。连子类也不可以</p>
+<p>3、<code>__xxx__</code> 定义的是特列方法【也叫魔法方法】。像__init__之类的</p>
+<p><strong>@property装饰器</strong></p>
+<p>如果想访问属性可以通过属性的getter（访问器）和setter（修改器）方法进行对应的操作。如果要做到这点，就可以考虑使用@property包装器来包装getter和setter方法，使得对属性的访问既安全又方便，代码如下所示。</p>
+<pre><code class="py">class Person(object):
+
+    def __init__(self, name, age):
+        self._name = name
+        self._age = age
+
+    # 访问器 - getter方法
+    @property
+    def name(self):
+        return self._name
+
+    # 访问器 - getter方法
+    @property
+    def age(self):
+        return self._age
+
+    # 修改器 - setter方法
+    @age.setter
+    def age(self, age):
+        self._age = age
+
+    def play(self):
+        if self._age &lt;= 16:
+            print(&#39;%s正在玩飞行棋.&#39; % self._name)
+        else:
+            print(&#39;%s正在玩斗地主.&#39; % self._name)
+
+
+def main():
+    person = Person(&#39;王大锤&#39;, 12)
+    person.play()
+    person.age = 22
+    person.play()
+    # person.name = &#39;白元芳&#39;  # AttributeError: can&#39;t set attribute
+
+
+if __name__ == &#39;__main__&#39;:
+    main()
+</code></pre>
+<p>我的理解：<code>@property</code>是相当于通道，<code>@age.setter</code>是开门的钥匙。光有通道没有钥匙是修改不了数据的。</p>
+<p><strong>多态：</strong></p>
+<p><code>多态：</code>定义时的类型和运行时的类型不一样，此时就成为多态 ，多态的概念是应用于Java和C#这一类强类型语言中，而Python崇尚“鸭子类型”。</p>
+<blockquote>
+<p>鸭子类型：虽然我想要一只”鸭子”，但是你给了我一只鸟。但是只要这只鸟走路像鸭子，叫起来像鸭子，游泳也像鸭子，我就认为这是鸭子。</p>
+</blockquote>
+<p>综合案例：</p>
+<pre><code class="py">
+&quot;&quot;&quot;
+某公司有三种类型的员工 分别是部门经理、程序员和销售员
+需要设计一个工资结算系统 根据提供的员工信息来计算月薪
+部门经理的月薪是每月固定15000元
+程序员的月薪按本月工作时间计算 每小时150元
+销售员的月薪是1200元的底薪加上销售额5%的提成
+&quot;&quot;&quot;
+from abc import ABCMeta, abstractmethod
+
+
+class Employee(object, metaclass=ABCMeta):
+    &quot;&quot;&quot;员工&quot;&quot;&quot;
+
+    def __init__(self, name):
+        &quot;&quot;&quot;
+        初始化方法
+
+        :param name: 姓名
+        &quot;&quot;&quot;
+        self._name = name
+
+    @property
+    def name(self):
+        return self._name
+
+    @abstractmethod
+    def get_salary(self):
+        &quot;&quot;&quot;
+        获得月薪
+
+        :return: 月薪
+        &quot;&quot;&quot;
+        pass
+
+
+class Manager(Employee):
+    &quot;&quot;&quot;部门经理&quot;&quot;&quot;
+
+    def get_salary(self):
+        return 15000.0
+
+
+class Programmer(Employee):
+    &quot;&quot;&quot;程序员&quot;&quot;&quot;
+
+    def __init__(self, name, working_hour=0):
+        super().__init__(name)
+        self._working_hour = working_hour
+
+    @property
+    def working_hour(self):
+        return self._working_hour
+
+    @working_hour.setter
+    def working_hour(self, working_hour):
+        self._working_hour = working_hour if working_hour &gt; 0 else 0
+
+    def get_salary(self):
+        return 150.0 * self._working_hour
+
+
+class Salesman(Employee):
+    &quot;&quot;&quot;销售员&quot;&quot;&quot;
+
+    def __init__(self, name, sales=0):
+        super().__init__(name)
+        self._sales = sales
+
+    @property
+    def sales(self):
+        return self._sales
+
+    @sales.setter
+    def sales(self, sales):
+        self._sales = sales if sales &gt; 0 else 0
+
+    def get_salary(self):
+        return 1200.0 + self._sales * 0.05
+
+
+def main():
+    emps = [
+        Manager(&#39;刘备&#39;), Programmer(&#39;诸葛亮&#39;),
+        Manager(&#39;曹操&#39;), Salesman(&#39;荀彧&#39;),
+        Salesman(&#39;吕布&#39;), Programmer(&#39;张辽&#39;),
+        Programmer(&#39;赵云&#39;)
+    ]
+    for emp in emps:
+        if isinstance(emp, Programmer):
+            emp.working_hour = int(input(&#39;请输入%s本月工作时间: &#39; % emp.name))
+        elif isinstance(emp, Salesman):
+            emp.sales = float(input(&#39;请输入%s本月销售额: &#39; % emp.name))
+        # 同样是接收get_salary这个消息但是不同的员工表现出了不同的行为(多态)
+        print(&#39;%s本月工资为: ￥%s元&#39; %
+              (emp.name, emp.get_salary()))
+
+
+if __name__ == &#39;__main__&#39;:
+    main()
+</code></pre>
+<hr>
+<blockquote>
+<p>See also <a target="_blank" rel="noopener" href="https://blogspace170623.github.io/Python/part03/file/6/section.2.html">面向对象</a></p>
+</blockquote>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2021/11/01/Blog/%E8%81%9A%E5%90%88%E6%96%B0%E9%97%BB/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          聚合新闻
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/10/24/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A24/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">数字周刊 24</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/03/24/Blog/1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/19/News/%E5%BE%90%E5%85%B6%E8%80%80/">徐其耀</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/17/News/%E8%AF%B4%E4%B8%80%E4%B8%8B%E5%BA%95%E5%B1%82%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%E6%A0%B7%E5%AD%90/">说一下底层的中国人到底是什么样子</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ajax/" rel="tag">Ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/" rel="tag">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web%E5%BC%80%E5%8F%91/" rel="tag">Web开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/" rel="tag">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/" rel="tag">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" rel="tag">前端开发</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

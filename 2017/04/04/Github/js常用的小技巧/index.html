@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>js常用技巧 | Blog</title>
+
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl14p0h63004qatjc2cutbb25" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      js常用技巧
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2017-04-04T09:01:00.000Z" itemprop="datePublished">2017-04-04</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" rel="tag">前端开发</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h1 id="js常用的小技巧"><a href="#js常用的小技巧" class="headerlink" title="js常用的小技巧"></a>js常用的小技巧</h1><h3 id="1-使用闭包实现私有变量"><a href="#1-使用闭包实现私有变量" class="headerlink" title="1.使用闭包实现私有变量"></a>1.使用闭包实现私有变量</h3><pre><code class="javascript">function Person(name, age) &#123;
+  this.getName = function() &#123; return name; &#125;;
+  this.setName = function(newName) &#123; name = newName; &#125;;
+  this.getAge = function() &#123; return age; &#125;;
+  this.setAge = function(newAge) &#123; age = newAge; &#125;;
+
+  //未在构造函数中初始化的属性
+  var occupation;
+  this.getOccupation = function() &#123; return occupation; &#125;;
+  this.setOccupation = function(newOcc) &#123; occupation =
+                       newOcc; &#125;;
+&#125;
+</code></pre>
+<h3 id="2-小心使用typeof、instanceof和constructor"><a href="#2-小心使用typeof、instanceof和constructor" class="headerlink" title="2.小心使用typeof、instanceof和constructor"></a>2.小心使用typeof、instanceof和constructor</h3><pre><code class="javascript">var arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;];
+typeof arr;   // return &quot;object&quot;
+arr instanceof Array // true
+arr.constructor();  //[]
+</code></pre>
+<h3 id="3-String的trim函数"><a href="#3-String的trim函数" class="headerlink" title="3.String的trim函数"></a>3.String的trim函数</h3><p>在Java、C#、PHP和很多其他语言中都有一个经典的 trim 函数，用来去除字符串中的空格符，而在JavaScript中并没有，所以我们需要在String对象上加上这个函数。</p>
+<pre><code class="javascript">//去掉字符串的前后空格，不包括字符串内部空格
+String.prototype.trim = function()&#123;return this.replace(/^\s+|\s+$/g, &quot;&quot;);&#125;;
+</code></pre>
+<h3 id="4-使用-map-方法来遍历一个数组里的项"><a href="#4-使用-map-方法来遍历一个数组里的项" class="headerlink" title="4.使用 map() 方法来遍历一个数组里的项"></a>4.使用 map() 方法来遍历一个数组里的项</h3><pre><code class="javascript">var squares = [1,2,3,4].map(function (val) &#123;
+    return val * val;
+&#125;);
+// squares will be equal to [1, 4, 9, 16]
+</code></pre>
+<h3 id="5-基于JSON的序列化和反序列化"><a href="#5-基于JSON的序列化和反序列化" class="headerlink" title="5.基于JSON的序列化和反序列化"></a>5.基于JSON的序列化和反序列化</h3><pre><code class="javascript">var person = &#123;name :&#39;Saad&#39;, age : 26, department : &#123;ID : 15, name : &quot;R&amp;D&quot;&#125; &#125;;
+var stringFromPerson = JSON.stringify(person);
+/* stringFromPerson is equal to &quot;&#123;&quot;name&quot;:&quot;Saad&quot;,&quot;age&quot;:26,&quot;department&quot;:&#123;&quot;ID&quot;:15,&quot;name&quot;:&quot;R&amp;D&quot;&#125;&#125;&quot;   */
+var personFromString = JSON.parse(stringFromPerson);
+/* personFromString is equal to person object  */
+</code></pre>
+<h3 id="6-避免使用-for-in-来遍历一个数组"><a href="#6-避免使用-for-in-来遍历一个数组" class="headerlink" title="6.避免使用 for-in 来遍历一个数组"></a>6.避免使用 for-in 来遍历一个数组</h3><pre><code class="javascript">var sum = 0;
+for (var i in arrayNumbers) &#123;
+    sum += arrayNumbers[i];
+&#125;
+/*
+更好的方式：
+*/
+var sum = 0;
+for (var i = 0, len = arrayNumbers.length; i &lt; len; i++) &#123;
+    sum += arrayNumbers[i];
+&#125;
+</code></pre>
+<h3 id="7-使用-switch-case-语句，而不是一长串的-if-else"><a href="#7-使用-switch-case-语句，而不是一长串的-if-else" class="headerlink" title="7.使用 switch/case 语句，而不是一长串的 if/else"></a>7.使用 switch/case 语句，而不是一长串的 if/else</h3><p>在判断情况大于2种的时候，使用 switch/case 更高效，而且更优雅（更易于组织代码）。但在判断的情况超过10种的时候，不要使用 switch/case。</p>
+<h3 id="8-避免在循环内部使用-try-catch-finally"><a href="#8-避免在循环内部使用-try-catch-finally" class="headerlink" title="8.避免在循环内部使用 try-catch-finally"></a>8.避免在循环内部使用 try-catch-finally</h3><p>在运行时，每次当 catch 从句被执行的时候，被捕获的异常对象会赋值给一个变量，而在 try-catch-finally 结构中，每次都会新建这个变量。</p>
+<p>避免这样的写法：</p>
+<pre><code class="javascript">var object = [&#39;foo&#39;, &#39;bar&#39;], i;
+for (i = 0, len = object.length; i &lt;len; i++) &#123;
+    try &#123;
+        // do something that throws an exception
+    &#125;
+    catch (e) &#123;
+        // handle exception
+    &#125;
+&#125;
+</code></pre>
+<p>而使用：</p>
+<pre><code class="javascript">var object = [&#39;foo&#39;, &#39;bar&#39;], i;
+try &#123;
+    for (i = 0, len = object.length; i &lt;len; i++) &#123;
+        // do something that throws an exception
+    &#125;
+&#125;
+catch (e) &#123;
+    // handle exception
+&#125;
+</code></pre>
+<h3 id="9-牢记，原始运算符始终比函数调用要高效。"><a href="#9-牢记，原始运算符始终比函数调用要高效。" class="headerlink" title="9.牢记，原始运算符始终比函数调用要高效。"></a>9.牢记，原始运算符始终比函数调用要高效。</h3><pre><code class="javascript">//举例来说，不使用：
+var min = Math.min(a,b);
+A.push(v);
+
+//而用：
+var min = a &lt; b ? a b;
+A[A.length] = v;
+</code></pre>
+<pre><code class="javascript">
+</code></pre>
+<pre><code class="javascript">
+</code></pre>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2017/04/04/Github/js%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          js设计模式
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/30/Github/Ajax/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">Ajax</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/03/24/Blog/1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/19/News/%E5%BE%90%E5%85%B6%E8%80%80/">徐其耀</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/17/News/%E8%AF%B4%E4%B8%80%E4%B8%8B%E5%BA%95%E5%B1%82%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%E6%A0%B7%E5%AD%90/">说一下底层的中国人到底是什么样子</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-archive">
+    <div class="widget-title"><span>Archive</span></div>
+    <div class="widget-inner">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-tags">
+    <div class="widget-title"><span>Tags</span></div>
+    <div class="widget-inner">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ajax/" rel="tag">Ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/" rel="tag">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web%E5%BC%80%E5%8F%91/" rel="tag">Web开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/" rel="tag">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/" rel="tag">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" rel="tag">前端开发</a></li></ul>
+    </div>
+  </div>
+
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
