@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>总结ES6常用的新特性 | Blog</title>
+
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl1lj39vj007uvejgguu5dbsd" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      总结ES6常用的新特性
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2017-01-04T16:00:00.000Z" itemprop="datePublished">2017-01-05</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h1 id="总结ES6常用的新特性"><a href="#总结ES6常用的新特性" class="headerlink" title="总结ES6常用的新特性"></a>总结ES6常用的新特性</h1><h2 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h2><p>我们先来看一个基本的新特性，在javascript中，定义函数需要关键字function，但是在es6中，还有更先进的写法，我们来看：<br>es6写法：</p>
+<pre><code class="javascript">var human = &#123;
+    breathe(name) &#123;   //不需要function也能定义breathe函数。
+        console.log(name + &#39; is breathing...&#39;);
+    &#125;
+&#125;;
+human.breathe(&#39;jarson&#39;);   //输出 ‘jarson is breathing...’
+</code></pre>
+<p>转成js代码：</p>
+<pre><code class="javascript">var human = &#123;
+    breathe: function(name) &#123;
+      console.log(name + &#39;is breathing...&#39;);
+    &#125;
+&#125;;
+human.breathe(&#39;jarson&#39;);
+</code></pre>
+<h2 id="创建类"><a href="#创建类" class="headerlink" title="创建类"></a>创建类</h2><p>我们知道，javascript不像java是面向对象编程的语言，而只可以说是基于对象编程的语言。所以在js中，我们通常都是用function和prototype来模拟类这个概念。</p>
+<pre><code class="javascript">class Human &#123;
+    constructor(name) &#123;
+        this.name = name;
+      &#125;
+     breathe() &#123;
+        console.log(this.name + &quot; is breathing&quot;);
+      &#125;
+&#125;
+var man = new Human(&quot;jarson&quot;);
+man.breathe();    //jarson is breathing
+</code></pre>
+<p>上面代码转为js格式：</p>
+<pre><code class="javascript">function Human(name) &#123;
+    this.name = name;
+    this.breathe = function() &#123;
+        console.log(this.name + &#39; is breathing&#39;);
+    &#125;
+&#125;
+var man = new Human(&#39;jarson&#39;);
+man.breathe();    //jarson is breathing
+</code></pre>
+<p>所以我们看到，我们可以像java那样语义化的去创建一个类。另外，js中的继承父类，需要用prototype来实现。那么在es6中，又有什么新的方法来实现类的继承呢？继续看：<br>假如我们要创建一个Man类继承上面的Human类，es6代码：</p>
+<pre><code class="javascript">class Man extends Human &#123;
+      constructor(name, sex) &#123;
+        super(name);
+          this.sex = sex;
+      &#125;
+      info()&#123;
+          console.log(this.name + &#39;is &#39; + this.sex);
+    &#125;
+&#125;
+var xx = new Man(&#39;jarson&#39;, &#39;boy&#39;);
+xx.breathe();   //jarson is breathing
+xx.info();   //arsonis boy
+</code></pre>
+<p>代码很简单，不作赘述，可以使用文章里提到的在线工具去试试效果就能明白了。需要注意的是：super()是父类的构造函数。</p>
+<h2 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h2><p>在ES6标准中，javascript原生支持module了。将不同功能的代码分别写在不同文件中，各模块只需导出<strong>export</strong>公共接口部分，然后在需要使用的地方通过模块的导入<strong>import</strong>就可以了。下面继续看例子：</p>
+<h3 id="内联导出"><a href="#内联导出" class="headerlink" title="内联导出"></a>内联导出</h3><p>ES6模块里的对象可在创建它们的声明中直接导出，一个模块中可无数次使用export。<br>app.js</p>
+<pre><code class="javascript">export class Human&#123;
+    constructor(name) &#123;
+        this.name = name;
+    &#125;
+    breathe() &#123;
+        console.log(this.name + &quot; is breathing&quot;);
+    &#125;
+&#125;  
+export function run()&#123;  
+    console.log(&#39;i am runing&#39;);
+&#125;
+function eat() &#123;
+    console.log(&#39;i am eating&#39;);
+&#125;
+</code></pre>
+<p>例子中的模块导出了两个对象：Human类和run函数， eat函数没有导出，则仍为此模块私有，不能被其他文件使用。</p>
+<h3 id="导出一组对象"><a href="#导出一组对象" class="headerlink" title="导出一组对象"></a>导出一组对象</h3><p>另外，其实如果需要导出的对象很多的时候，我们可以在最后统一导出一组对象。</p>
+<pre><code class="javascript">class Human&#123;
+    constructor(name) &#123;
+        this.name = name;
+    &#125;
+    breathe() &#123;
+        console.log(this.name + &quot; is breathing&quot;);
+    &#125;
+&#125;  
+function run()&#123;  
+    console.log(&#39;i am runing&#39;);
+&#125;
+function eat() &#123;
+    console.log(&#39;i am eating&#39;);
+&#125;
+export &#123;Human, run&#125;;
+</code></pre>
+<p>这样的写法功能和上面一样，而且也很明显，在最后可以清晰的看到导出了哪些对象。</p>
+<h3 id="default导出"><a href="#default导出" class="headerlink" title="default导出"></a>default导出</h3><p>导出时使用关键字default，可将对象标注为default对象导出。default关键字在每一个模块中只能使用一次。它既可以用于内联导出，也可以用于一组对象导出声明中。<br>查看导出default对象的语法：</p>
+<pre><code class="javascript">...   //创建类、函数等等
+export default &#123;  //把Human类和run函数标注为default对象导出。
+    Human,  
+    run  
+&#125;;
+</code></pre>
+<h3 id="无对象导入"><a href="#无对象导入" class="headerlink" title="无对象导入"></a>无对象导入</h3><p>如果模块包含一些逻辑要执行，且不会导出任何对象，此类对象也可以被导入到另一模块中，导入之后只执行逻辑。如：</p>
+<pre><code class="javascript">import &#39;./module1.js&#39;;
+</code></pre>
+<h3 id="导入默认对象"><a href="#导入默认对象" class="headerlink" title="导入默认对象"></a>导入默认对象</h3><pre><code class="javascript">import app from &#39;./module1.js&#39;;
+</code></pre>
+<p>上面例子中，默认./module1.js文件只导出了一个对象；若导出了一组对象，则应该在导入声明中一一列出这些对象，如：</p>
+<pre><code class="javascript">import &#123;Human, run&#125; from &#39;./app.js&#39;
+</code></pre>
+<h2 id="let与const"><a href="#let与const" class="headerlink" title="let与const"></a>let与const</h2><p>在我看来，在es6新特性中，在定义变量的时候统统使用let来代替var就好了，const则很直观，用来定义常量，即无法被更改值的变量。</p>
+<pre><code class="javascript">for (let i=0;i&lt;2;i++) &#123;
+    console.log(i);  //输出: 0,1
+&#125;
+</code></pre>
+<h2 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h2><p>ES6中新增的箭头操作符=&gt;简化了函数的书写。操作符左边为输入的参数，而右边则是进行的操作以及返回的值，这样的写法可以为我们减少大量的代码，看下面的实例：</p>
+<pre><code class="javascript">let arr = [6, 8, 10, 20, 15, 9];
+arr.forEach((item, i) =&gt; console.log(item, i));
+let newArr = arr.filter((item) =&gt; (item&lt;10));
+console.log(newArr); //[6, 8, 9];
+</code></pre>
+<p>上面的**(item, i)<strong>就是参数，后面的</strong>console.log(item, i)**就是回到函数要执行的操作逻辑。</p>
+<p>上面代码转为js格式：</p>
+<pre><code class="javascript">var arr = [6, 8, 10, 20, 15, 9];
+arr.forEach(function(item, i) &#123;
+    return console.log(item, i);
+&#125;);
+var newArr = arr.filter(function(item) &#123;
+    return (item &lt; 10);
+&#125;);
+console.log(newArr);
+</code></pre>
+<h2 id="字符串模版"><a href="#字符串模版" class="headerlink" title="字符串模版"></a>字符串模版</h2><p>ES6中允许使用反引号 ` 来创建字符串，此种方法创建的字符串里面可以包含由美元符号加花括号包裹的变量${vraible}。看一下实例就会明白了：</p>
+<pre><code class="javascript">//产生一个随机数
+let num = Math.random();
+//将这个数字输出到console
+console.log(`your num is $&#123;num&#125;`);
+</code></pre>
+<h2 id="解构"><a href="#解构" class="headerlink" title="解构"></a>解构</h2><p>若一个函数要返回多个值，常规的做法是返回一个对象，将每个值做为这个对象的属性返回。在ES6中，利用解构这一特性，可以直接返回一个数组，然后数组中的值会自动被解析到对应接收该值的变量中。我们来看例子：</p>
+<pre><code class="javascript">function getVal() &#123;
+    return [1, 2];
+&#125;
+var [x,y] = getVal(); //函数返回值的解构
+console.log(&#39;x:&#39;+x+&#39;, y:&#39;+y);   //输出：x:1, y:2
+</code></pre>
+<h2 id="默认参数"><a href="#默认参数" class="headerlink" title="默认参数"></a>默认参数</h2><p>现在可以在定义函数的时候指定参数的默认值了，而不用像以前那样通过逻辑或操作符来达到目的了。</p>
+<pre><code class="javascript">function sayHello(name)&#123;
+    var name=name||&#39;tom&#39;;    //传统的指定默认参数的方式
+    console.log(&#39;Hello &#39;+name);
+&#125;
+//运用ES6的默认参数
+function sayHello2(name=&#39;tom&#39;)&#123;  //如果没有传这个参数，才会有默认值，
+    console.log(`Hello $&#123;name&#125;`);
+&#125;
+sayHello();//输出：Hello tom
+sayHello(&#39;jarson&#39;);//输出：Hello jarson
+sayHello2();//输出：Hello tom
+sayHello2(&#39;jarson&#39;);//输出：Hello jarson
+</code></pre>
+<p>注意： sayHello2(name=’tom’)这里的等号，意思是没有传这个参数，则设置默认值，而不是给参数赋值的意思。</p>
+<h2 id="Proxy"><a href="#Proxy" class="headerlink" title="Proxy"></a>Proxy</h2><p>Proxy可以监听对象身上发生了什么事情，并在这些事情发生后执行一些相应的操作。一下子让我们对一个对象有了很强的追踪能力，同时在数据绑定方面也很有用处。</p>
+<pre><code class="javascript">//定义被监听的目标对象
+let engineer = &#123; name: &#39;Joe Sixpack&#39;, salary: 50 &#125;;
+//定义处理程序
+let interceptor = &#123;
+      set(receiver, property, value) &#123;
+        console.log(property, &#39;is changed to&#39;, value);
+        receiver[property] = value;
+      &#125;
+&#125;;
+//创建代理以进行侦听
+engineer = new Proxy(engineer, interceptor);
+//做一些改动来触发代理
+engineer.salary = 70;//控制台输出：salary is changed to 70
+</code></pre>
+<p>对于处理程序，是在被监听的对象身上发生了相应事件之后，处理程序里面的方法就会被调用。<br>结语<br>总的来说，虽然支持es6的情况到目前还不是很乐观，但es6的新语法特性让前端和后端的差异越来越小了，这是一个新时代的开始，我们必须要了解这些新的前沿知识，才能跟上时代的步伐。</p>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2017/01/05/1001/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          UI界面
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/12/20/1001/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">JS面向对象</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/03/27/1001/">新闻联播</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/24/1001/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/1001/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/1001/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/1001/">5个航母打击群20万大军就位 北约可随时投入战斗</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

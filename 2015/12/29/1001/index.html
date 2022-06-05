@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>JS正则验证账号、手机、电话、邮箱 | Blog</title>
+
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl1lj39uj005uvejgbzhg97g8" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      JS正则验证账号、手机、电话、邮箱
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2015-12-28T16:00:00.000Z" itemprop="datePublished">2015-12-29</time>
+</div>
+
+            
+            <div class="article-category">
+                <a class="article-category-link" href="/categories/Web%E5%BC%80%E5%8F%91/">Web开发</a>
+            </div>
+            
+
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h2 id="JS正则表达式验证账号、手机号、电话和邮箱"><a href="#JS正则表达式验证账号、手机号、电话和邮箱" class="headerlink" title="JS正则表达式验证账号、手机号、电话和邮箱"></a>JS正则表达式验证账号、手机号、电话和邮箱</h2><h3 id="1-验证帐号是否合法"><a href="#1-验证帐号是否合法" class="headerlink" title="1.验证帐号是否合法"></a>1.验证帐号是否合法</h3><p>验证规则：字母、数字、下划线组成，字母开头，4-16位。</p>
+<pre><code class="javascript">function checkUser(str)&#123;
+    var re = /^[a-zA-z]\w&#123;3,15&#125;$/;
+    if(re.test(str))&#123;
+        alert(&quot;正确&quot;);
+    &#125;else&#123;
+        alert(&quot;错误&quot;);
+    &#125;          
+&#125;
+checkUser(&quot;jihua_cnblogs&quot;);//调用
+</code></pre>
+<h3 id="2-验证手机号码"><a href="#2-验证手机号码" class="headerlink" title="2.验证手机号码"></a>2.验证手机号码</h3><p>验证规则：11位数字，以1开头。</p>
+<pre><code class="javascript">function  checkMobile(str) &#123;
+    var re = /^1\d&#123;10&#125;$/
+    if (re.test(str)) &#123;
+        alert(&quot;正确&quot;);
+    &#125; else &#123;
+        alert(&quot;错误&quot;);
+    &#125;
+&#125;
+checkMobile(&#39;13800138000&#39;); //调用
+checkMobile(&#39;139888888889&#39;);//错误示例
+</code></pre>
+<h3 id="3-验证电话号码"><a href="#3-验证电话号码" class="headerlink" title="3.验证电话号码"></a>3.验证电话号码</h3><p>验证规则：区号+号码，区号以0开头，3位或4位<br>号码由7位或8位数字组成<br>区号与号码之间可以无连接符，也可以“-”连接<br>如01088888888,010-88888888,0955-7777777 </p>
+<pre><code class="javascript">function checkPhone(str)&#123;
+    var re = /^0\d&#123;2,3&#125;-?\d&#123;7,8&#125;$/;
+    if(re.test(str))&#123;
+        alert(&quot;正确&quot;);
+    &#125;else&#123;
+        alert(&quot;错误&quot;);
+    &#125;
+&#125;
+checkPhone(&quot;09557777777&quot;);//调用
+</code></pre>
+<h3 id="4-验证邮箱"><a href="#4-验证邮箱" class="headerlink" title="4.验证邮箱"></a>4.验证邮箱</h3><p>验证规则：姑且把邮箱地址分成“第一部分@第二部分”这样<br>第一部分：由字母、数字、下划线、短线“-”、点号“.”组成，<br>第二部分：为一个域名，域名由字母、数字、短线“-”、域名后缀组成，<br>而域名后缀一般为.xxx或.xxx.xx，一区的域名后缀一般为2-4位，如cn,com,net，现在域名有的也会大于4位</p>
+<pre><code class="javascript">function checkEmail(str)&#123;
+    var re = /^(\w-*\.*)+@(\w-?)+(\.\w&#123;2,&#125;)+$/
+    if(re.test(str))&#123;
+        alert(&quot;正确&quot;);
+    &#125;else&#123;
+        alert(&quot;错误&quot;);
+    &#125;
+&#125;
+checkEmail(&quot;contact@cnblogs.com&quot;);//调用
+</code></pre>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2016/01/01/1001/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          Excerpt 10：看懂中国房地产
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/12/25/1001/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">Excerpt 09：20个你不知道的大脑秘密</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/03/27/1001/">新闻联播</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/24/1001/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/1001/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/1001/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/1001/">5个航母打击群20万大军就位 北约可随时投入战斗</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

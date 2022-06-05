@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>MongoDB + 小小留言板 | Blog</title>
+
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl1lj39ut0068vejgc0sjcjdf" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      MongoDB + 小小留言板
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2018-06-26T16:32:50.000Z" itemprop="datePublished">2018-06-27</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/" rel="tag">Node.js</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h2 id="1-MongoDB安装"><a href="#1-MongoDB安装" class="headerlink" title="1.MongoDB安装"></a>1.MongoDB安装</h2><p>请参阅<a target="_blank" rel="noopener" href="http://www.runoob.com/mongodb/mongodb-osx-install.html">菜鸟教程</a></p>
+<p>启动MongoDB</p>
+<pre><code>sudo mongod
+
+# 如果没有创建全局路径 PATH，需要进入以下目录
+cd /usr/local/mongodb/bin
+sudo ./mongod
+</code></pre>
+<h2 id="2-MongoDB图形界面管理"><a href="#2-MongoDB图形界面管理" class="headerlink" title="2.MongoDB图形界面管理"></a>2.MongoDB图形界面管理</h2><p>…</p>
+<h2 id="3-语法"><a href="#3-语法" class="headerlink" title="3.语法"></a>3.语法</h2><h3 id="MongoDB-创建数据库"><a href="#MongoDB-创建数据库" class="headerlink" title="MongoDB 创建数据库"></a>MongoDB 创建数据库</h3><p>MongoDB 创建数据库的语法格式如下：</p>
+<pre><code>use DATABASE_NAME
+
+use.runoob
+</code></pre>
+<p>查看所有数据库，可以使用 </p>
+<pre><code>show dbs  //
+</code></pre>
+<p>插入数据</p>
+<pre><code>&gt; db.runoob.insert(&#123;&quot;name&quot;:&quot;菜鸟教程&quot;&#125;)
+WriteResult(&#123; &quot;nInserted&quot; : 1 &#125;)
+</code></pre>
+<h3 id="MongoDB-删除数据库"><a href="#MongoDB-删除数据库" class="headerlink" title="MongoDB 删除数据库"></a>MongoDB 删除数据库</h3><pre><code>db.dropDatabase()
+</code></pre>
+<p>切换到数据库 runoob,然后再删除</p>
+<pre><code>&gt; use runoob
+switched to db runoob
+&gt; 
+
+
+&gt; db.dropDatabase()
+&#123; &quot;dropped&quot; : &quot;runoob&quot;, &quot;ok&quot; : 1 &#125;
+</code></pre>
+<p>删除集合：</p>
+<pre><code>&gt; use runoob
+switched to db runoob
+&gt; show tables
+site
+&gt; db.site.drop()
+true
+&gt; show tables
+</code></pre>
+<h2 id="留言本案例"><a href="#留言本案例" class="headerlink" title="留言本案例"></a>留言本案例</h2><p><strong>编程思路：</strong></p>
+<ol>
+<li>启动一个简单的服务器</li>
+<li>把页面提交的留言信息【Ajax提交信息】输入到数据库中</li>
+<li>从数据库中读取留言信息，显示在页面上</li>
+<li>留言数据足够多的时候，要分页显示【局部刷新】</li>
+</ol>
+<h3 id="1-简单的服务器"><a href="#1-简单的服务器" class="headerlink" title="1. 简单的服务器"></a>1. 简单的服务器</h3><p><strong>app.js</strong></p>
+<pre><code class="js">
+var express = require(&quot;express&quot;);
+var app = express();
+//db.js 是封装好一个模型，用来操作MongoDB数据库的
+var db = require(&quot;./model/db.js&quot;);
+
+app.set(&quot;view engine&quot;,&quot;ejs&quot;);
+
+app.use(express.static(&quot;./public&quot;));
+
+app.get(&quot;/&quot;,function(req,res,next)&#123;
+  res.render(&quot;index&quot;);
+&#125;);
+
+</code></pre>
+<p><strong>index.ejs</strong></p>
+<pre><code class="html">
+&lt;h1&gt;简单的服务器&lt;/h1&gt;
+</code></pre>
+<h3 id="2-Ajax提交信息，输入数据库中"><a href="#2-Ajax提交信息，输入数据库中" class="headerlink" title="2. Ajax提交信息，输入数据库中"></a>2. Ajax提交信息，输入数据库中</h3><p><strong>index.ejs</strong></p>
+<pre><code class="js">$(&quot;#tijiao&quot;).click(function () &#123;
+    $(&quot;#shibai&quot;).hide();
+    $(&quot;#chenggong&quot;).hide();
+    $.post(&quot;/tijiao&quot;, &#123;
+        &quot;xingming&quot;: $(&quot;#xingming&quot;).val(),
+        &quot;liuyan&quot;: $(&quot;#liuyan&quot;).val()
+    &#125;, function (result) &#123;
+        if (result.result == -1) &#123;
+            $(&quot;#shibai&quot;).fadeIn();
+        &#125; else if (result.result == 1) &#123;
+            //提交成功
+            $(&quot;#chenggong&quot;).fadeIn();
+            //数据库真的存储了，但是当前页面无法显示。这是因为需要刷新
+            //才能用ajax从/du中得到新的。所以我们先用一个假盒子凑出来。
+        &#125;
+    &#125;);
+&#125;);
+</code></pre>
+<p><strong>app.js</strong></p>
+<pre><code class="js">
+var formidable = require(&#39;formidable&#39;);
+//处理留言
+//Express中post请求需要一个formidable插件
+
+app.post(&quot;/tijiao&quot;, function (req, res, next) &#123;
+  var form = new formidable.IncomingForm();
+
+  form.parse(req, function (err, fields) &#123;
+      //写入数据库
+      db.insertOne(&quot;liuyanben&quot;, &#123;
+          &quot;xingming&quot; : fields.xingming,
+          &quot;liuyan&quot; : fields.liuyan,
+          &quot;shijian&quot; : new Date()
+      &#125;, function (err, result) &#123;
+          if(err)&#123;
+              res.send(&#123;&quot;result&quot;:-1&#125;); //-1是给Ajax看的
+              return;
+          &#125;
+          res.json(&#123;&quot;result&quot;:1&#125;);
+      &#125;);
+  &#125;);
+&#125;);
+</code></pre>
+<h3 id="3-读取留言信息数据库，在前端页面上呈现"><a href="#3-读取留言信息数据库，在前端页面上呈现" class="headerlink" title="3.读取留言信息数据库，在前端页面上呈现"></a>3.读取留言信息数据库，在前端页面上呈现</h3><p><strong>text/template</strong>模板</p>
+<p>在js里面，经常需要使用js往页面中插入html内容。比如这样：</p>
+<pre><code class="js">var number = 123;
+$(&#39;#d&#39;).append(&#39;&lt;div class=&quot;t&quot;&gt;&#39;+number+&#39;&lt;/div&gt;&#39;)
+</code></pre>
+<p>如果html很短还好说，但是遇到描述里面的这么大段，直接用字符串存储会很困难，因为不光要处理单引号，还需要很多「+」号把字符串一个个连接起来，十分的不方便。</p>
+<p>设置type=”text/template” ，标签里面的内容不会被执行，也不会显示在页面上，但是可以在另一个script里面通过获取插入到页面中。这样就把大段的HTML操作从js里面分离开了。</p>
+<p><strong>Underscore.js</strong></p>
+<p>template模板需要配合underscore.js使用</p>
+<pre><code class="html">
+&lt;div id=&quot;quanbuliuyan&quot;&gt;&lt;/div&gt;
+
+&lt;script type=&quot;text/template&quot; id=&quot;moban&quot;&gt;
+    &lt;div class=&quot;liuyankuai&quot;&gt;
+        &lt;p&gt;【姓名】&#123;&#123;= xingming &#125;&#125;&lt;/p&gt;
+        &lt;p&gt;【留言】&#123;&#123;= liuyan &#125;&#125;&lt;/p&gt;
+        &lt;p&gt;【时间】&#123;&#123;= shijian &#125;&#125;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&quot;/shanchu?id=&#123;&#123;=id&#125;&#125;&quot; class=&quot;shanchu&quot;&gt;删除&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/script&gt;
+</code></pre>
+<pre><code>在ejs模板中，使用underscore模板会有冲突，这时候需要把underscore源码改动一下，改成&quot; &#123;&#123; " 和 " &#125;&#125; &quot;
+</code></pre>
+<p><strong>index.ejs</strong>通过Ajax请求数据</p>
+<pre><code class="js">$.get(&quot;/du&quot;,function(result)&#123;
+  var json = JSON.parse(result);
+
+  var compiled = _.template($(&quot;#moban&quot;).html());
+  //清空全部留言中的所有节点
+  $(&quot;#quanbuliuyan&quot;).html(&quot;&quot;);
+
+  for (var i = 0; i &lt; result.result.length; i++) &#123;
+    //数据绑定
+    var html = compiled(&#123;
+        liuyan: result.result[i].liuyan,
+        xingming: result.result[i].xingming,
+        shijian: result.result[i].shijian
+    &#125;);
+    //DOM操作，添加节点
+    $(&quot;#quanbuliuyan&quot;).append($(html));
+  &#125;
+&#125;);
+</code></pre>
+<p><strong>app.js</strong></p>
+<pre><code class="js">//读取所有留言，这个页面是供Ajax使用的
+app.get(&quot;/du&quot;, function (req, res, next) &#123;
+  //可以接受一个参数
+  var page = parseInt(req.query.page);
+
+  db.find(&quot;liuyanben&quot;,&#123;&#125;,&#123;&quot;sort&quot;:&#123;&quot;shijian&quot;:-1&#125;&#125;,function(err,result)&#123;
+      res.json(&#123;&quot;result&quot;:result&#125;);
+  &#125;);
+&#125;);
+</code></pre>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2018/07/17/1001/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          webpack
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/06/26/1001/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">帮助：前端资源库</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/03/27/1001/">新闻联播</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/24/1001/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/1001/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/1001/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/1001/">5个航母打击群20万大军就位 北约可随时投入战斗</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

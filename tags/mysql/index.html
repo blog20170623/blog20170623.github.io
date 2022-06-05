@@ -1,148 +1,257 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Tag: mysql - Blog</title><meta property="og:type" content="blog"><meta property="og:title" content="Blog"><meta property="og:url" content="http://example.com/"><meta property="og:site_name" content="Blog"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://example.com/img/og_image.png"><meta property="article:author" content="Mr.Zhang"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com"},"headline":"Blog","image":["http://example.com/img/og_image.png"],"author":{"@type":"Person","name":"Mr.Zhang"},"description":""}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
-</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">Tags</a></li><li class="is-active"><a href="#" aria-current="page">mysql</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2017-10-06T05:38:25.000Z" title="2017-10-06T05:38:25.000Z">2017-10-06</time></span><span class="level-item">Updated&nbsp;<time dateTime="2017-10-06T05:38:25.000Z" title="2017-10-06T05:38:25.000Z">2017-10-06</time></span><span class="level-item">16 minutes read (About 2414 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2017/10/06/Github/%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/">Mysql-数据查询语言DQL</a></h1><div class="content"><h2 id="基本查询"><a href="#基本查询" class="headerlink" title="基本查询"></a>基本查询</h2><p>select [all | distinct] 字段或表达式列表 [from子句] [where子句] [group by子句] [having子句] [order by子句] [limit子句]；</p>
-<p><strong>[all | distinct]</strong></p>
-<p>用于设定所select出来的数据是否允许出现重复行（完全相同的数据行）</p>
-<p>all：允许出现——默认不写就是All（允许的）。<br>distinct：不允许出现——就是所谓的“消除重复行”。</p>
-<p><strong>from子句</strong></p>
-<p>就是指定数据的来源，其实就是“表”，可以是一个表名，也可以是多个表——多表查询了。</p>
-<p><strong>where子句</strong></p>
-<p>一个概念：where子句，相当于php或js中的if条件语句：其最终结果就是布尔值（true/false）</p>
-<blockquote>
-<p>where子句前面必须有from子句。虽然他们2者都可以省略，但有from可以没有where，而有where必须有from。</p>
-</blockquote>
-<p><strong>between语法：</strong></p>
-<p>XX  between  值1  and  值2；<br>含义：字段XX的值在值1和值2之间（含），相当于：XX &gt;=值1 and XX&lt;=值2；</p>
-<p><strong>in语法：</strong></p>
-<p>XX  in (值1，值2，…….)；<br>含义：XX等于其中所列出的任何一个值都算成立，相当于：<br>XX = 值1  or XX = 值2  or  XX = 值2<br>注意：其中的值1通常是“直接值”，但也可以是后面要学习的“查询结果值”</p>
-<p><strong>like语法（模糊查找）：</strong></p>
-<p>语法形式：　ＸＸ　like  ‘要查找字符’;<br>说明：<br>1，like语法（模糊查找）用于对字符类型的字段进行字符匹配查找<br>2，要查找的字符中，有2个特殊含义的字符：<br>2.1:  %   其含义是：代表任意个数的任意字符<br>2.2:  _   其含义是：代表1个的任意字符<br>2.3：这里的字符，都是指现实中可见的一个“符号”，而不是字节。<br>3，实际应用中的模糊查找，通常都是这样：like ‘%关键字%’；</p>
-<p><strong>[group by子句]</strong></p>
-<p>形式：<br>group  by  字段1  排序方式1，字段2 排序方式2， …..<br>通常都只进行一个字段的分组。<br>含义：<br>什么叫分组？就是将数据以某个字段的值为“依据”，分到不同的“组别”里。<br>分组的结果通常：<br>1，数据结果只能是“组”——没有数据本身的个体<br>2，数据结果就可能“丢失”很多特性，比如没有性别，身高，姓名，等等。<br>3，实际上，结果中通常只剩下“组”作为整体的信息：<br>首先是该组的本身依据值，<br>另外，这几个可能的值：组内成员的个数，组内某些字段的最大值，最小值，平均值，总和值。<br>其他字段，通常就不能用了。<br>4，如果是2个字段或以上分组，则其实是相当于对前一分组的组内，再进行后一依据的分组。<br>上述说明的结果，其实是反映在ｓｅｌｅｃｔ语句中，就是select的“取出项”（输出项）就基本只剩下以上信息了，</p>
-<pre><code class="sql">
-select pinpai,count(*) as 数量,max(price) as 最大值, avg(price) as 平均值 from product group by pinpai;
-</code></pre>
-<p>可见，在分组查询中，基本都依赖于一下几个函数（聚合函数，统计函数）：<br>count(<em>):  统计一组中的数量，通常用“</em>”做参数<br>max(字段名)：获取该字段中在该组中的最大值。<br>min(字段名)：获取该字段中在该组中的最小值。<br>sum(字段名)：获取该字段中在该组中的总和。<br>avg(字段名)：获取该字段中在该组中的平均值。</p>
-<p><strong>[having子句]</strong></p>
-<p>having子句其实概念跟where子句完全一样：<br>where是针对表的字段的值进行“条件判断”<br>having是只针对groupby之后的“组”数据进行条件判断，即<br>其不能使用：字段名&gt;10<br>但可以使用：count(字段名)&gt;10， 或  max(price) &gt; 2000, 但如果字段是分组依据，也可以。<br>当然，通常也可以使用select中的有效的字段别名，比如：</p>
-<pre><code class="sql">select count(*) as f1 , max(f1) as f2  from tab1  group by f3 having f1 &gt; 5 and  f2 &lt; 1000;
-</code></pre>
-<p><strong>[order by子句]</strong></p>
-<p>形式：<br>order  by  排序字段1  [排序方式]，  排序字段2  [排序方式]， …..<br>说明：<br>对前面取得的数据（含from子句，where子句，group子句，having子句的所有结果）来指定按某个字段的大小进行排列（排序），排序只有2种方式：<br>正序： ASC（默认值），可以省略<br>倒序： DESC</p>
-<p><strong>[limit子句]</strong></p>
-<p>形式：<br>limit   [起始行号start]， 要取出的行数num<br>说明：<br>表示将前面取得的数据并前面排好之后（如果有），对之指定取得“局部连续的若干条”数据。<br>起始行号ｓｔａｒｔ：第一行的行号为０，　可以省略，则为默认行号（０）。<br>要取得的行数：如果结果集中从指定的行号开始到最后没有这么多行，则就只取到最后。</p>
-<p>此子句非常有用——主要用于网页上最常见的一个需求（现象）：分页。<br>分页原理：<br>分页的前提：人为指定每页显示的条数，$pageSize = 3;<br>显示（取得）第1页数据：select * from 表名 limit  0,  $pageSize;<br>显示（取得）第2页数据：select * from 表名 limit  3,  $pageSize;<br>显示（取得）第3页数据：select * from 表名 limit  6,  $pageSize;</p>
-<h2 id="连接查询"><a href="#连接查询" class="headerlink" title="连接查询"></a>连接查询</h2><p>连接就是指两个或2个以上的表（数据源）“连接起来成为一个数据源”。</p>
-<p><strong>基本形式</strong></p>
-<p>from 表1  [连接方式]  join 表2  [on 连接条件]；</p>
-<p>连接的结果可以当作一个“表”来使用。常用有以下几种连接方式：</p>
-<p><strong>交叉连接</strong></p>
-<p>实际上，交叉连接是将两个表不设定任何条件的连接结果。<br>交叉连接通常也被叫做“笛卡尔积”——数学上可能比较多。<br>语法：<br>from  表1  [cross]  join  表2  ;    //可见交叉连接只是没有on条件而已。<br>cross这个词也可以省略，还可以使用inner这个词代替</p>
-<p><strong>内连接</strong></p>
-<p>语法：<br>from  表1  [inner]  join  表2  on  表1.字段1=表2.字段2；<br>含义：找出（过滤）在交叉连接的结果表中的表1的字段1的值等于表2的字段2的值的那些行。</p>
-<p><strong>左［外］连接</strong></p>
-<p>形式：<br>from  表1  left  [outer]  join   表2   on  连接条件。<br>说明：<br>1，这里，left是关键字。<br>2，连接条件跟内连接一样。<br>3，含义是：内连接的结果基础上，加上左边表中所有不符合连接条件的数据，相应本应放右边表的字段的位置就自动补为“null”值。</p>
-<p><strong>右［外］连接</strong><br>右连接跟左连接恰恰相反：<br>形式：<br>from  表1  right  [outer]  join   表2   on  连接条件。<br>说明：<br>1，这里，right是关键字。<br>2，连接条件跟内连接一样。<br>3，含义是：在内连接的结果基础上，加上右边表中所有不符合连接条件的数据，相应本应放左边表的字段的位置就自动补为“null”值。</p>
-<p><strong>全［外］连接</strong><br>形式：<br>from  表1  full  [outer]  join  表2  on  连接条件；<br>说明：<br>1，含义：其实是左右连接的“并集”（消除重复项），即内连接的结果，加上左表中不满足条件的所有行（右边对应补null），再加上，右表中不满足条件的所有行（左边对应补null）。<br>2，mysql中其实不认识全[外]连接语法，即mysql这个软件本身不支持全连接的语法。<br>3，此概念在其他数据库有的存在，了解就可以。</p>
-<h2 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h2><p>一个查询，通常就是一个select语句（即出现一次select关键字）<br>但，如果在一个select查询语句中，又出现了select查询语句，此时就称后者为“子查询”，前者就是“主查询”</p>
-<p>形式：</p>
-<p>selelct 字段或表达式或(子查询1) [as 别名] from 表名或(子查询2) where 字段或表达式或(子查询3) 的条件判断</p>
-<p>注意：<br>每个位置所放置的子查询结果，应该符合该位置的数据需求。<br>通常：<br>子查询1应该是一个“数据结果”。<br>子查询2可以是“任意结果”，此位置的查询结果，通常作为数据源，可以给一个别名<br>子查询3可以是一个数据或一列数据甚至是一行数据</p>
-<p><strong>使用in子查询</strong></p>
-<p>in的基本语法形式为：<br>where  操作数  in (值1，值2， ….）<br>则in子查询就是：<br>where  操作数  in ( 列子查询 ）；<br>含义：<br>表示该操作数（字段值） 等于 该子查询的其中任意一个只，就算满足条件。</p>
-<p>更多资料，请查阅笔记11</p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2017-10-06T05:26:40.000Z" title="2017-10-06T05:26:40.000Z">2017-10-06</time></span><span class="level-item">Updated&nbsp;<time dateTime="2017-10-06T05:26:40.000Z" title="2017-10-06T05:26:40.000Z">2017-10-06</time></span><span class="level-item">5 minutes read (About 817 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2017/10/06/Github/%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C%E8%AF%AD%E8%A8%80/">Mysql-数据操作语言</a></h1><div class="content"><h2 id="数据插入"><a href="#数据插入" class="headerlink" title="数据插入"></a>数据插入</h2><h3 id="3中形式"><a href="#3中形式" class="headerlink" title="3中形式"></a>3中形式</h3><p>形式1：<br>insert into  表名（字段名1，字段名2，….）values (值a1，值a2， …..)， (值b1，值b2， …..)，….. ；</p>
-<p>形式2：<br>insert into  表名1（字段名1，字段名2，….）select  字段名1，字段名2，….  from  表名2；</p>
-<p>形式3：<br>insert  into  表名  set  字段名1=值1，字段名2=值2， ….. ；</p>
-<p><strong>解释：</strong></p>
-<p>1，形式1和形式2，可以一次插入多条数据；<br>2，不管哪种形式，在“字段”和“值”之间，都有“一一对应”关系。<br>3，值的形式，通常是这样：数字直接写，字符串和时间加单引号，但如果是函数值，则不能加引号<br>4，观念问题：不管那种形式，都要理解为：插入数据的单位是“行”；<br>5，有的字段通常无需插入数据，此时不应该出现该字段名：auto_increment， timestamp，</p>
-<h2 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h2><p>delete from 表名 [where条件] [order排序] [limit限定]；</p>
-<p><strong>解释：</strong></p>
-<p>1，观念问题：删除也是应该以理解为“以行为单位”进行的。<br>2，删除语句中，where条件通常都要写上，因为如果不写，则就删除了所有数据，应用中极少如此。<br>3，order排序子句和limit限定子句，应用中通常不需要。<br>  3.1 order排序子句用于设定删除数据的先后顺序。<br>  3.2 limit限定子句用于限定在设定的顺序情况下删除指定的某些行。</p>
-<h4 id="类似删除语句truncate："><a href="#类似删除语句truncate：" class="headerlink" title="类似删除语句truncate："></a>类似删除语句truncate：</h4><p>truncate [table] 表名；用于直接删除整个表（结构）并重新创建该表。<br>1，删除整个表（数据和结构都没有了）<br>2，重新创建该表（全新表）。<br>3，跟delete 语句不带where条件，有什么区别？<br>主要影响的是类似：auto_increment这种类型的字段值：<br>truncate结果会重新计算，delete还能继续增长。</p>
-<h2 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h2><p><strong>解释：</strong></p>
-<p>1， 观念问题：仍然要理解为更新是以“行”为单位进行的，虽然可以指定只更新其中的部分字段。<br>2， where条件子句，在应用中，同样几乎都必须有，否则很可能就失去意义，类似delete<br>3，order排序子句通常不需要，用于将要更新的数据指定更新的顺序。<br>4，limit限定子句通常不需要，用于将要更新的数据的指定顺序去更新部分（局部）数据，比如：前500行。<br>5，字段的值可以是表达式，或直接值，或函数，如果是直接值，同样遵循insert语句中的值的写法。</p>
-<p><strong>案例：</strong><br>复制表：</p>
-<pre><code class="sql">#复制表方法1：
-create table tab2 like tab1; //复制结构了
-insert into tab2 select * from tab1;    //复制数据
-##这种方法可以比较完整。
+<!DOCTYPE html>
+<html>
 
-#复制表方法2：
-create table tab2 select * from tab1; //同时复制结构和数据
-##这种方法可能会丢一些结构信息，比如：索引，约束，自增长属性
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>Tag | mysql | Blog</title>
+
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
 
 
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = false
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    
+
+    
+    
+    
+    
+    <section class="archives-wrap">
+        <div class="archive-year-wrap">
+        <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/10/06/1001/">Mysql-数据查询语言DQL</a>
+    </h1>
+  
+
+</article>
+
+    
+    
+    <article class="archive-article archive-type-post">
+  
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/10/06/1001/">Mysql-数据操作语言</a>
+    </h1>
+  
+
+</article>
+
+    
+    
+    <article class="archive-article archive-type-post">
+  
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/10/06/1001/">Mysql</a>
+    </h1>
+  
+
+</article>
+
+
+    </div></section>
 
 
 
 
-</code></pre>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2017-10-06T03:44:20.000Z" title="2017-10-06T03:44:20.000Z">2017-10-06</time></span><span class="level-item">Updated&nbsp;<time dateTime="2017-10-06T03:44:20.000Z" title="2017-10-06T03:44:20.000Z">2017-10-06</time></span><span class="level-item">2 minutes read (About 345 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2017/10/06/Github/mysql%20%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/">Mysql</a></h1><div class="content"><h1 id="mysql-复习笔记"><a href="#mysql-复习笔记" class="headerlink" title="mysql 复习笔记"></a>mysql 复习笔记</h1><p>[toc]</p>
-<h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><h3 id="1-数据库的连接"><a href="#1-数据库的连接" class="headerlink" title="1.数据库的连接"></a>1.数据库的连接</h3><pre><code>$ mysql&gt; mysql -u -p -h
-</code></pre>
-<p>-u 用户名<br>-p 密码<br>-h host主机</p>
-<h3 id="2-库级知识"><a href="#2-库级知识" class="headerlink" title="2:库级知识"></a>2:库级知识</h3><p>2.1 显示数据库: show databases;<br>2.2 选择数据库: use dbname;<br>2.3 创建数据库: create database dbname charset utf8;<br>2.3 删除数据库: drop database dbname;</p>
-<h3 id="3-表级操作"><a href="#3-表级操作" class="headerlink" title="3: 表级操作:"></a>3: 表级操作:</h3><p>3.1 显示库下面的表</p>
-<pre><code>show tables;
-</code></pre>
-<p>3.2 查看表的结构: </p>
-<pre><code>desc tableName;
-</code></pre>
-<p>3.3 查看表的创建过程: </p>
-<pre><code>show create table  tableName;
-</code></pre>
-<p>3.4 创建表:</p>
-<pre><code>　create table tbName (
-列名称1　列类型　[列参数]　[not null default ],
-....列2...
-....
-列名称N　列类型　[列参数]　[not null default ]
-)engine myisam/innodb charset utf8/gbk
-</code></pre>
-<p><strong>3.4的例子:</strong></p>
-<pre><code class="mysql">
-create table user (
-    id int auto_increment,
-    name varchar(20) not null default &#39;&#39;,
-    age tinyint unsigned not null default 0,
-   index id (id)
-   )engine=innodb charset=utf8;
-</code></pre>
-<p>注:innodb是表引擎,也可以是myisam或其他,但最常用的是myisam和innodb,<br>charset 常用的有utf8,gbk;</p>
-<p>3.5 修改表</p>
-<pre><code class="sql">#增改字段：
-alter table 表名 add [column] 字段名 字段类型 字段属性;
+                </section>
+            </section>
 
-#删：
-alter table 表名 drop 字段名;
+            
+            <aside class="sidebar ">
+                
 
-#改：
-alter table 表名 change 原字段名 新字段名 新字段类型 新字段属性;
 
-</code></pre>
-<p>3.6 删除表：</p>
-<p>drop table 表名</p>
-<h3 id="4-视图"><a href="#4-视图" class="headerlink" title="4.视图"></a>4.视图</h3><p>视图可以看作是一个“临时存储的数据所构成的表”（非真实表），其实本质上只是一个select语句。</p>
-<p><strong>视图创建</strong> </p>
-<p>create  view   视图名 [（列名1，列名2，…）]   as  一条复杂select语句；</p>
-</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Your name"></figure><p class="title is-size-4 is-block line-height-inherit">Your name</p><p class="is-size-6 is-block">Your title</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Your location</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">133</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">11</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Article/"><span class="level-start"><span class="level-item">Article</span></span><span class="level-end"><span class="level-item tag">30</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Blog/"><span class="level-start"><span class="level-item">Blog</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/English/"><span class="level-start"><span class="level-item">English</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Github/"><span class="level-start"><span class="level-item">Github</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/News/"><span class="level-start"><span class="level-item">News</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Web/"><span class="level-start"><span class="level-item">Web</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Web%E5%BC%80%E5%8F%91/"><span class="level-start"><span class="level-item">Web开发</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Weekly/"><span class="level-start"><span class="level-item">Weekly</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Wiki/"><span class="level-start"><span class="level-item">Wiki</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E5%91%A8%E5%88%8A/"><span class="level-start"><span class="level-item">周刊</span></span><span class="level-end"><span class="level-item tag">23</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%96%B0%E9%97%BB/"><span class="level-start"><span class="level-item">新闻</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-26T16:00:00.000Z">2022-03-27</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/27/News/%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD/">新闻联播</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/News/">News</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-24T04:47:56.357Z">2022-03-24</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/24/Blog/1/"> </a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-21T16:00:00.000Z">2022-03-22</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E5%91%A8%E5%88%8A/">周刊</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-21T03:55:25.751Z">2022-03-21</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/"> </a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-20T16:00:00.000Z">2022-03-21</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/21/News/%E5%8C%97%E7%BA%A6/">5个航母打击群20万大军就位 北约可随时投入战斗</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/News/">News</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Ajax/"><span class="tag">Ajax</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/CSS/"><span class="tag">CSS</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Javascript/"><span class="tag">Javascript</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Linux/"><span class="tag">Linux</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Node-js/"><span class="tag">Node.js</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Python/"><span class="tag">Python</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web%E5%BC%80%E5%8F%91/"><span class="tag">Web开发</span><span class="tag is-grey-lightest">10</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mysql/"><span class="tag">mysql</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/php/"><span class="tag">php</span><span class="tag is-grey-lightest">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/web/"><span class="tag">web</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/web%E5%BC%80%E5%8F%91/"><span class="tag">web开发</span><span class="tag is-grey-lightest">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"><span class="tag">前端开发</span><span class="tag is-grey-lightest">3</span></a></div></div></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2022/03/"><span class="level-start"><span class="level-item">March 2022</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2022/02/"><span class="level-start"><span class="level-item">February 2022</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/11/"><span class="level-start"><span class="level-item">November 2021</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/10/"><span class="level-start"><span class="level-item">October 2021</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/09/"><span class="level-start"><span class="level-item">September 2021</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/08/"><span class="level-start"><span class="level-item">August 2021</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/07/"><span class="level-start"><span class="level-item">July 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/04/"><span class="level-start"><span class="level-item">April 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/01/"><span class="level-start"><span class="level-item">January 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/02/"><span class="level-start"><span class="level-item">February 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2018/10/"><span class="level-start"><span class="level-item">October 2018</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2018/07/"><span class="level-start"><span class="level-item">July 2018</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2018/06/"><span class="level-start"><span class="level-item">June 2018</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/10/"><span class="level-start"><span class="level-item">October 2017</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/09/"><span class="level-start"><span class="level-item">September 2017</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/08/"><span class="level-start"><span class="level-item">August 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/07/"><span class="level-start"><span class="level-item">July 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/04/"><span class="level-start"><span class="level-item">April 2017</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/03/"><span class="level-start"><span class="level-item">March 2017</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/01/"><span class="level-start"><span class="level-item">January 2017</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/12/"><span class="level-start"><span class="level-item">December 2016</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/10/"><span class="level-start"><span class="level-item">October 2016</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/08/"><span class="level-start"><span class="level-item">August 2016</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/07/"><span class="level-start"><span class="level-item">July 2016</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/04/"><span class="level-start"><span class="level-item">April 2016</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/03/"><span class="level-start"><span class="level-item">March 2016</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/02/"><span class="level-start"><span class="level-item">February 2016</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/01/"><span class="level-start"><span class="level-item">January 2016</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/12/"><span class="level-start"><span class="level-item">December 2015</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/11/"><span class="level-start"><span class="level-item">November 2015</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/10/"><span class="level-start"><span class="level-item">October 2015</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/02/"><span class="level-start"><span class="level-item">February 2015</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Blog" height="28"></a><p class="size-small"><span>&copy; 2022 Mr.Zhang</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
-            article: {
-                highlight: {
-                    clipboard: true,
-                    fold: 'unfolded'
-                }
-            }
-        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
-            if (typeof $.fn.lightGallery === 'function') {
-                $('.article').lightGallery({ selector: '.gallery-item' });
-            }
-            if (typeof $.fn.justifiedGallery === 'function') {
-                if ($('.justified-gallery > p > .gallery-item').length) {
-                    $('.justified-gallery > p > .gallery-item').unwrap();
-                }
-                $('.justified-gallery').justifiedGallery();
-            }
-        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
-            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
-        });</script></body></html>
+<div class="widget" id="widget">
+    
+      
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/03/27/1001/">新闻联播</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/24/1001/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/1001/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/1001/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/1001/">5个航母打击群20万大军就位 北约可随时投入战斗</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

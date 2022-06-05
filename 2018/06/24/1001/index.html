@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>小小相册 | Blog</title>
+
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl1lj39vh007pvejg55f21y0p" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      小小相册
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2018-06-24T12:21:10.000Z" itemprop="datePublished">2018-06-24</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h2 id="小小相册"><a href="#小小相册" class="headerlink" title="小小相册"></a>小小相册</h2><h3 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h3><p>controller ：控制器、路由<br>    —package.json 是controller下的入口文件，方便引包<br>  —router.js</p>
+<p>models : 功能模型<br>  —file.js 操作文件模型的文件<br>node_modules ：node资源</p>
+<p>public ：存放前端资源</p>
+<p>views ：前端模板页面</p>
+<p>uploads ：后端资源：存放上传的内容</p>
+<p>app.js ：启动文件</p>
+<p><strong>思路：</strong></p>
+<ol>
+<li><p>实现路由功能</p>
+</li>
+<li><p>编写获取所有目录和文件的方法，并封装成模型。</p>
+</li>
+<li><p>文件的上传</p>
+</li>
+</ol>
+<h3 id="第一阶段："><a href="#第一阶段：" class="headerlink" title="第一阶段："></a>第一阶段：</h3><p><strong>router.js</strong></p>
+<pre><code class="js">
+exports.showIndex = function(req,res)&#123;
+    res.send(&quot;我是首页&quot;);
+&#125;
+
+
+exports.showAlbum = function(req,res)&#123;
+    res.send(&quot;我是相册&quot;);
+&#125;
+
+</code></pre>
+<p><strong>app.js</strong></p>
+<pre><code class="js">
+var express = require(&quot;express&quot;);
+var app = express();
+var router = require(&quot;./controller&quot;);
+
+app.set(&quot;view engine&quot;,&quot;ejs&quot;);//设置模板引擎
+
+
+//路由中间件
+
+app.use(express.static(&quot;./public&quot;));
+app.get(&quot;/&quot;,router.showIndex);
+app.get(&quot;/:albumName&quot;,router.showAlbum);
+
+
+app.listen(3000);
+</code></pre>
+<h3 id="第二阶段"><a href="#第二阶段" class="headerlink" title="第二阶段"></a>第二阶段</h3><p><strong>file.js</strong></p>
+<pre><code class="js">
+var fs = require(&quot;fs&quot;);//引入fs模块，文件系统是专门处理文件读取写的
+
+
+// 获取所有的相册文件
+exports.getAllAlbums = function(callback)&#123;
+    fs.readdir(&quot;./uploads&quot;,function(err,files)&#123;
+        if(err)&#123;
+            callback(&quot;没有找到uploads文件&quot;,null);
+        &#125;
+        var allAlbums = [];
+
+        (function iterator(i)&#123;
+            if(i = files.length)&#123;
+                //变量结束
+                callback(null,allAlbums);
+                return;
+            &#125;
+            fs.stat(&quot;./uploads/&quot;+files[i],function(err,stats)&#123;
+                if(err)&#123;
+                    callback(&quot;找不到文件&quot;+files[i],null);
+                &#125;
+                if(stats.isDirectory())&#123;
+                    allAlbums.push(files[i]);
+                &#125;
+                iterator(i+1);
+            &#125;);
+        &#125;)(0);
+    &#125;);
+&#125;
+
+//通过文件名，找到图片
+
+exports.getAllImagesByAlbumName = function(albumName,callback)&#123;
+  fs.readdir(&quot;./uploads/&quot; + albumName,function(err,files)&#123;
+      if(err)&#123;
+          callback(&quot;没有找到uploads文件&quot;,null);
+          return;
+      &#125;
+      var allImages = [];
+      (function iterator(i)&#123;
+          if(i == files.length)&#123;
+              //遍历结束
+              console.log(allImages);
+              callback(null,allImages);
+              return;
+          &#125;
+          fs.stat(&quot;./uploads/&quot; + albumName + &quot;/&quot; + files[i],function(err,stats)&#123;
+              if(err)&#123;
+                  callback(&quot;找不到文件&quot; + files[i] , null);
+                  return;
+              &#125;
+              if(stats.isFile())&#123;
+                  allImages.push(files[i]);
+              &#125;
+              iterator(i + 1);
+          &#125;);
+      &#125;)(0);
+  &#125;);
+&#125;
+</code></pre>
+<p>读取目录的语法格式：fs.readdir(path[, options], callback)</p>
+<p>callback - 回调函数，回调函数带有两个参数err, files，err 为错误信息，files 为 目录下的文件数组列表。</p>
+<p>通过异步模式获取文件信息的语法格式：fs.stat(path, callback)</p>
+<p>callback - 回调函数，带有两个参数如：(err, stats), stats 是 fs.Stats 对象。</p>
+<p>stats.isDirectory()    如果是目录返回 true，否则返回 false。</p>
+<p>stats.isFile()    如果是文件返回 true，否则返回 false。</p>
+<p><strong>router.js</strong></p>
+<pre><code class="js">var file = require(&quot;../models/file.js&quot;);
+//首页
+exports.showIndex = function(req,res)&#123;
+    file.getAllAlbums(function(err,allAlbums)&#123;
+        if(err)&#123;
+            next();
+            return;
+        &#125;
+        res.render(&quot;index&quot;,&#123;
+            &quot;albums&quot; : allAlbums
+        &#125;);
+    &#125;)
+&#125;
+
+//相册页
+exports.showAlbum = function(req,res)&#123;
+    //遍历相册中的所有图片
+    var albumName = req.params.albumName;
+    //具体业务交给model
+    file.getAllImagesByAlbumName(albumName,function(err,imagesArray)&#123;
+        if(err)&#123;
+            next(); //交给下面的中间件
+            return;
+        &#125;
+        res.render(&quot;album&quot;,&#123;
+            &quot;albumname&quot; : albumName,
+            &quot;images&quot; : imagesArray
+        &#125;);
+    &#125;);
+&#125;
+
+
+// GET /user/tj
+req.params.name
+// =&gt; &quot;tj&quot;
+
+// example.com/users?sort=desc
+req.path
+// =&gt; &quot;/users&quot;
+</code></pre>
+<p><strong>res.render(view [, locals] [, callback])</strong> 渲染一个视图，然后将渲染得到的HTML文档发送给客户端。</p>
+<p>–locals，定义了视图本地参数属性的一个对象。</p>
+<pre><code>// 将呈现的视图发送到客户端
+
+res.render(&#39;index&#39;);
+
+// 如果指定回调，则必须显式发送所呈现的HTML
+res.render(&#39;index&#39;, function(err, html) &#123;
+  res.send(html);
+&#125;);
+
+// 将局部变量传给视图
+res.render(&#39;user&#39;, &#123; name: &#39;Tobi&#39; &#125;, function(err, html) &#123;
+  // ...
+&#125;);
+</code></pre>
+<p><strong>index.ejs</strong>模板引擎的部分内容</p>
+<pre><code class="vbscript-html">
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;% for(var i = 0 ; i &lt; albums.length ; i++)&#123; %&gt;
+            &lt;div class=&quot;col-xs-6 col-md-3&quot;&gt;
+                &lt;a href=&quot;&lt;%= albums[i] %&gt;&quot; class=&quot;thumbnail&quot;&gt;
+                    &lt;img src=&quot;images/wjj.jpg&quot; alt=&quot;...&quot;&gt;
+                &lt;/a&gt;
+                &lt;h4&gt;&lt;%= albums[i] %&gt;&lt;/h4&gt;
+            &lt;/div&gt;
+        &lt;% &#125; %&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2018/06/25/1001/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          Node.js
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/06/11/1001/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">Python 基本语法(一)</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/03/27/1001/">新闻联播</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/24/1001/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/1001/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/1001/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/1001/">5个航母打击群20万大军就位 北约可随时投入战斗</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
