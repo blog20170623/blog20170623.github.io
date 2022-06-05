@@ -1,539 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    
-    <title>Blog</title>
-
-    <meta name="description" content="Blog">
-    <meta name="keywords" content="">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
-
-
-    
-<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
-
-
-    <script>
-        window.isPost = false
-        window.aomori = {
-            
-            
-            
-        }
-        window.aomori_logo_typed_animated = false
-        window.aomori_search_algolia = false
-
-    </script>
-
-<meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
-</head>
-
-<body>
-
-    <div class="container">
-    <header class="header">
-        <div class="header-type">
-            
-            <div class="header-type-inner">
-                
-                    <a class="header-type-title" href="/">Blog</a>
-                
-    
-                
-            </div>
-        </div>
-        <div class="header-menu">
-            <div class="header-menu-inner">
-                
-                <a href="/">Home</a>
-                
-                <a href="/archives">Archives</a>
-                
-                <a href="/photography">Photo</a>
-                
-                <a href="/Python">Python</a>
-                
-            </div>
-            <div class="header-menu-social">
-                
-            </div>
-        </div>
-
-        <div class="header-menu-mobile">
-            <div class="header-menu-mobile-inner" id="mobile-menu-open">
-                <i class="icon icon-menu"></i>
-            </div>
-        </div>
-    </header>
-
-    <div class="header-menu-mobile-menu">
-        <div class="header-menu-mobile-menu-bg"></div>
-        <div class="header-menu-mobile-menu-wrap">
-            <div class="header-menu-mobile-menu-inner">
-                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
-                    <i class="icon icon-cross"></i>
-                </div>
-                <div class="header-menu-mobile-menu-list">
-                    
-                    <a href="/">Home</a>
-                    
-                    <a href="/archives">Archives</a>
-                    
-                    <a href="/photography">Photo</a>
-                    
-                    <a href="/Python">Python</a>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-    <div class="container">
-        <div class="main">
-            <section class="inner">
-                <section class="inner-main">
-                    <div class="index">
-  
-    
-      <article
-id="post-Github/React使用手册"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2018/07/18/Github/React%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/">React 使用手册</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <h1 id="React使用手册"><a href="#React使用手册" class="headerlink" title="React使用手册"></a>React使用手册</h1><hr>
-<p>1.<a href="#1-Webpack+Babel+React%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA">Webpack</a></p>
-<h2 id="什么是React"><a href="#什么是React" class="headerlink" title="什么是React?"></a>什么是React?</h2><p>React 是 Facebook 推出的一个用来构建用户界面的 JavaScript 库。</p>
-<p>React 为了更高超的性能而使用虚拟 DOM 作为其不同的实现。 它同时也可以由服务端 Node.js 渲染 － 而不需要过重的浏览器 DOM 支持</p>
-<h3 id="React有三个关键词："><a href="#React有三个关键词：" class="headerlink" title="React有三个关键词："></a>React有三个关键词：</h3><ul>
-<li>just the ui</li>
-<li>virtual DOM</li>
-<li>data flow</li>
-</ul>
-<h4 id="Just-the-ui"><a href="#Just-the-ui" class="headerlink" title="Just the ui"></a>Just the ui</h4><p>React 负责UI层面的展现，它把UI拆分成组件，而不是通过模板引擎和展示逻辑，使得它可以易于拓展和维护。因此它引入了JSX这种语法规则，可以让我们使用类似HTML的语法去写js的函数调用。</p>
-<h4 id="virtual-DOM"><a href="#virtual-DOM" class="headerlink" title="virtual DOM"></a>virtual DOM</h4><p><strong>React的virtual dom是怎么做的呢？</strong><br>生成virtual dom-&gt;diff-&gt;必要的DOM更新</p>
-<h4 id="data-flow"><a href="#data-flow" class="headerlink" title="data flow"></a>data flow</h4><p>React中的数据流是沿着组件树从上到下单向流动的。</p>
-<hr>
-<h2 id="如何使用React"><a href="#如何使用React" class="headerlink" title="如何使用React?"></a>如何使用React?</h2><h3 id="不适用npm-的快速开始"><a href="#不适用npm-的快速开始" class="headerlink" title="不适用npm 的快速开始"></a>不适用npm 的快速开始</h3><pre><code class="vbscript-html">&lt;script src=&quot;build/react.js&quot;&gt;&lt;/script&gt; 
-//react引入文件
-&lt;script src=&quot;build/react-with-addons.js&quot;&gt;&lt;/script&gt;
-//带插件功能的react引入文件
-&lt;script src=&quot;build/JSXTransformer.js&quot;&gt;&lt;/script&gt;
-&lt;!--负责解析JSX代码的--&gt;
-
-&lt;!--type=&quot;text/jsx&quot;是来告诉浏览器这是jsx代码--&gt;
-&lt;script type=&quot;text/jsx&quot;&gt;
-
-/*创建一个组件*/
-var SubComp = React.createClass(&#123;
-  render:function()&#123;
-      return(
-      &lt;div&gt;
-        &lt;h3&gt;这是一个子组件&lt;/h3&gt;
-          &lt;SubSubComp &#123;...this.props &#125; /&gt;
-      &lt;/div&gt;
-        )
-  &#125;
-&#125;);
-/*react渲染这个个组件*/
-React.render(
-  &lt;SubComp /&gt;,
-  document.getElementById(&#39;app&#39;)
-);
-&lt;/script&gt;
-</code></pre>
-<h2 id="案例教程"><a href="#案例教程" class="headerlink" title="案例教程"></a>案例教程</h2><p>构建一个简单却真实的评论框。</p>
-<p>我们将提供以下内容：</p>
-<p>1.一个展示所有评论的视图</p>
-<p>2.一个提交评论的表单</p>
-<p>3.用于构建自定制后台的接口链接（hooks）</p>
-<h3 id="你的第一个组件"><a href="#你的第一个组件" class="headerlink" title="你的第一个组件"></a>你的第一个组件</h3><p>React 中全是模块化、可组装的组件。以我们的评论框为例，我们将有如下的组件结构：</p>
-<pre><code>- CommentBox
-  - CommentList
-    - Comment
-  - CommentForm
-
-</code></pre>
-<p>让我们构造 CommentBox 组件，它只是一个简单的&lt;div&gt;而已：</p>
-<p>// tutorial1.js</p>
-<pre><code class="jsx">
-var CommentBox = React.createClass(&#123;
-  render: function() &#123;    return (
-      &lt;div className=&quot;commentBox&quot;&gt;
-        Hello, world! I am a CommentBox.
-      &lt;/div&gt;
-    );
-  &#125;
-&#125;);
-React.render(
-  &lt;CommentBox /&gt;,
-  document.getElementById(&#39;content&#39;)
-);
-</code></pre>
-<p>我们通过 JavaScript 对象传递一些方法到 React.createClass() 来创建一个新的React组件。其中最重要的方法是render，该方法返回一颗 React 组件树，这棵树最终将会渲染成 HTML。</p>
-<h4 id="制作组件"><a href="#制作组件" class="headerlink" title="制作组件"></a>制作组件</h4><p>让我们为 CommentList 和 CommentForm 构建骨架，这也会是一些简单的 &lt;div&gt; ：</p>
-<p>// tutorial2.js</p>
-<pre><code class="jsx">var CommentList = React.createClass(&#123;
-  render: function() &#123;    return (
-      &lt;div className=&quot;commentList&quot;&gt;
-        Hello, world! I am a CommentList.
-      &lt;/div&gt;
-    );
-  &#125;
-&#125;);
-
-var CommentForm = React.createClass(&#123;
-  render: function() &#123;    return (
-      &lt;div className=&quot;commentForm&quot;&gt;
-        Hello, world! I am a CommentForm.
-      &lt;/div&gt;
-    );
-  &#125;
-&#125;);
-</code></pre>
-<p>下一步，更新 CommentBox 组件，使用这些新的组件：</p>
-<p>// tutorial3.js</p>
-<pre><code class="jsx">var CommentBox = React.createClass(&#123;
-  render: function() &#123;    return (
-      &lt;div className=&quot;commentBox&quot;&gt;
-        &lt;h1&gt;Comments&lt;/h1&gt;
-        &lt;CommentList /&gt;
-        &lt;CommentForm /&gt;
-      &lt;/div&gt;
-    );
-  &#125;
-&#125;);
-</code></pre>
-<h4 id="组件的属性"><a href="#组件的属性" class="headerlink" title="组件的属性"></a>组件的属性</h4><p>// tutorial4.js</p>
-<pre><code class="jsx">var CommentList = React.createClass(&#123;
-  render: function() &#123;    return (
-      &lt;div className=&quot;commentList&quot;&gt;
-        &lt;Comment author=&quot;Pete Hunt&quot;&gt;This is one comment&lt;/Comment&gt;
-        &lt;Comment author=&quot;Jordan Walke&quot;&gt;This is *another* comment&lt;/Comment&gt;
-      &lt;/div&gt;
-    );
-  &#125;
-&#125;);
-</code></pre>
-<p>从父节点传递到子节点的数据称为 props，是属性（properties）的缩写。通过 props，就能够从中读取到从 CommentList 传递过来的数据，然后渲染一些标记：</p>
-<p>// tutorial5.js</p>
-<pre><code class="jsx">
-var Comment = React.createClass(&#123;
-  render: function() &#123;    return (
-      &lt;div className=&quot;comment&quot;&gt;
-        &lt;h2 className=&quot;commentAuthor&quot;&gt;
-          &#123;this.props.author&#125;
-        &lt;/h2&gt;
-        &#123;this.props.children&#125;
-      &lt;/div&gt;
-    );
-  &#125;
-&#125;);
-</code></pre>
-<p>我们访问传递给组件的命名属性作为 this.props 的键，任何内嵌的元素作为 this.props.children。</p>
-<h4 id="添加Markdown"><a href="#添加Markdown" class="headerlink" title="添加Markdown"></a>添加Markdown</h4><p>首先，添加第三方的 Showdown 库到你的应用。这是一个JavaScript库，处理 Markdown 文本并且转换为原始的 HTML。这需要在你的头部添加一个 script 标签</p>
-<pre><code class="html">
-&lt;script src=&quot;http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js&quot;&gt;
-</code></pre>
-<p>下一步，让我们转换评论文本为 Markdown 格式，然后输出它：</p>
-<p>// tutorial6.js</p>
-<pre><code class="jsx">
-var converter = new Showdown.converter();var Comment = React.createClass(&#123;
-  render: function() &#123;    return (
-      &lt;div className=&quot;comment&quot;&gt;
-        &lt;h2 className=&quot;commentAuthor&quot;&gt;
-          &#123;this.props.author&#125;
-        &lt;/h2&gt;
-        &#123;converter.makeHtml(this.props.children.toString())&#125;
-      &lt;/div&gt;
-    );
-  &#125;
-&#125;);
-</code></pre>
-<p>我们在这里唯一需要做的就是调用 Showdown 库。我们需要把this.props.children从 React 的包裹文本转换成 Showdown 能处理的原始的字符串，所以我们显示地调用了toString()。</p>
-<h4 id="接入数据模型"><a href="#接入数据模型" class="headerlink" title="接入数据模型"></a>接入数据模型</h4><p>让我们渲染一小块JSON数据到评论列表。最终，数据将会来自服务器，但是现在，写在你的源代码中：</p>
-<p>// tutorial8.js</p>
-<pre><code class="js">
-var data = [
-  &#123;author: &quot;Pete Hunt&quot;, text: &quot;This is one comment&quot;&#125;,
-  &#123;author: &quot;Jordan Walke&quot;, text: &quot;This is *another* comment&quot;&#125;
-];
-</code></pre>
-<p>我们需要用一种模块化的方式将数据传入到 CommentList。修改 CommentBox 和 React.render() 方法，通过 props 传递数据到 CommentList：</p>
-<p>// tutorial9.js</p>
-<pre><code class="jsx">
-var CommentBox = React.createClass(&#123;
-  render: function() &#123;
-    return (      &lt;div className=&quot;commentBox&quot;&gt;
-        &lt;h1&gt;Comments&lt;/h1&gt;
-        &lt;CommentList data=&#123;this.props.data&#125; /&gt;
-        &lt;CommentForm /&gt;
-      &lt;/div&gt;
-    );
-  &#125;
-&#125;);
-
-React.render(  &lt;CommentBox data=&#123;data&#125; /&gt;,
-  document.getElementById(&#39;content&#39;)
-);
-</code></pre>
-<p>现在数据在 CommentList 中可用了，让我们动态地渲染评论：</p>
-<p>// tutorial10.js</p>
-<pre><code class="jsx">
-var CommentList = React.createClass(&#123;
-  render: function() &#123;    
-  var commentNodes = this.props.data.map(function (comment) &#123;      
-      return (        
-          &lt;Comment author=&#123;comment.author&#125;&gt;        
-              &#123;comment.text&#125;    
-          &lt;/Comment&gt;
-      );
-    &#125;);    
-    return (      
-        &lt;div className=&quot;commentList&quot;&gt;
-        &#123;commentNodes&#125;
-      &lt;/div&gt;
-    );
-  &#125;
-&#125;);
-</code></pre>
-<h3 id="通过AJAX动态添加动态的数据"><a href="#通过AJAX动态添加动态的数据" class="headerlink" title="通过AJAX动态添加动态的数据"></a>通过AJAX动态添加动态的数据</h3><h3 id="制作表单组件"><a href="#制作表单组件" class="headerlink" title="制作表单组件"></a>制作表单组件</h3><h3 id="进行组件模板拆分"><a href="#进行组件模板拆分" class="headerlink" title="进行组件模板拆分"></a>进行组件模板拆分</h3><hr>
-<p>待整理：太冗长了</p>
-<h3 id="Webpack-Babel-React开发环境的搭建"><a href="#Webpack-Babel-React开发环境的搭建" class="headerlink" title="Webpack+Babel+React开发环境的搭建"></a>Webpack+Babel+React开发环境的搭建</h3><h4 id="1-Babel-是一个javascript编辑器，用它可以把-jsx和es6语法进行编译"><a href="#1-Babel-是一个javascript编辑器，用它可以把-jsx和es6语法进行编译" class="headerlink" title="1. Babel 是一个javascript编辑器，用它可以把 jsx和es6语法进行编译"></a>1. Babel 是一个javascript编辑器，用它可以把 jsx和es6语法进行编译</h4><h5 id="安装babel"><a href="#安装babel" class="headerlink" title="安装babel"></a>安装babel</h5><pre><code>npm install  babel-cli -g
-</code></pre>
-<h5 id="把依赖写入package-json中"><a href="#把依赖写入package-json中" class="headerlink" title="把依赖写入package.json中"></a>把依赖写入package.json中</h5><pre><code>npm install --save-dev babel-cli
-</code></pre>
-<h5 id="把ES6文件转换成ES5"><a href="#把ES6文件转换成ES5" class="headerlink" title="把ES6文件转换成ES5"></a>把ES6文件转换成ES5</h5><pre><code>npm install --save-dev babel-preset-es2015
-</code></pre>
-<p>再在根目录下创建.babelrc文件，设置为：</p>
-<pre><code>&#123;&quot;presets&quot;:[&quot;es2015&quot;]&#125;
-</code></pre>
-<h5 id="babel转换命令"><a href="#babel转换命令" class="headerlink" title="babel转换命令"></a>babel转换命令</h5><pre><code>babel app.js --out-file build.js
-</code></pre>
-<h4 id="2-Webpack-能够把各种文件作为模块进行打包，Webpack出自facebook的Instagram团队。"><a href="#2-Webpack-能够把各种文件作为模块进行打包，Webpack出自facebook的Instagram团队。" class="headerlink" title="2. Webpack 能够把各种文件作为模块进行打包，Webpack出自facebook的Instagram团队。"></a>2. Webpack 能够把各种文件作为模块进行打包，Webpack出自facebook的Instagram团队。</h4><ul>
-<li>同时支持CommonJS和AMD模块（对于新项目，推荐直接使用CommonJS）；</li>
-<li> 串联式模块加载器以及插件机制，让其具有更好的灵活性和扩展性，例如提供对CoffeeScript、ES6的支持；</li>
-<li> 可以基于配置或者智能分析打包成多个文件，实现公共模块或者按需加载；</li>
-<li> 支持对CSS，图片等资源进行打包，从而无需借助Grunt或Gulp；</li>
-<li> 开发时在内存中完成打包，性能更快，完全可以支持开发过程的实时打包需求；</li>
-<li> 对sourcemap有很好的支持，易于调试。</li>
-</ul>
-<h5 id="webpack安装"><a href="#webpack安装" class="headerlink" title="webpack安装"></a>webpack安装</h5><pre><code>npm install webpack -g
-</code></pre>
-<h5 id="创建package-json文件"><a href="#创建package-json文件" class="headerlink" title="创建package.json文件"></a>创建package.json文件</h5><pre><code>npm init
-</code></pre>
-<ul>
-<li><strong>name:</strong> 项目名称</li>
-<li><strong>version:</strong> 项目版本</li>
-<li><strong>description:</strong> 描述</li>
-<li><strong>main:</strong> 入口文件</li>
-<li><strong>dependencies:</strong> 依赖</li>
-<li><strong>devDependencies</strong> 开发依赖</li>
-<li>**scripts: **简化命令行中的命令，执行</li>
-</ul>
-<pre><code>npm run build
-</code></pre>
-<p>相当于执行scripts对象下的build里面的命令。</p>
-<pre><code class="json">&#123;
-  &quot;name&quot;: &quot;webpack-react&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;description&quot;: &quot;&quot;,
-  &quot;main&quot;: &quot;server.js&quot;,
-  &quot;dependencies&quot;: &#123;
-    &quot;babel-preset-react&quot;: &quot;^6.5.0&quot;,
-    &quot;react&quot;: &quot;^0.14.7&quot;,
-    &quot;react-dom&quot;: &quot;^0.14.7&quot;,
-    &quot;webpack&quot;: &quot;^1.12.15&quot;
-  &#125;,
-  &quot;devDependencies&quot;: &#123;
-    &quot;babel-core&quot;: &quot;^6.7.2&quot;,
-    &quot;babel-loader&quot;: &quot;^6.2.4&quot;,
-    &quot;babel-preset-es2015&quot;: &quot;^6.6.0&quot;,
-    &quot;babel-preset-stage-1&quot;: &quot;^6.5.0&quot;,
-    &quot;css-loader&quot;: &quot;^0.23.1&quot;,
-    &quot;file-loader&quot;: &quot;^0.8.5&quot;,
-    &quot;html-webpack-plugin&quot;: &quot;^2.14.0&quot;,
-    &quot;less-loader&quot;: &quot;^2.2.3&quot;,
-    &quot;react-hot-loader&quot;: &quot;^1.3.0&quot;,
-    &quot;style-loader&quot;: &quot;^0.13.0&quot;,
-    &quot;webpack-dev-server&quot;: &quot;^1.14.1&quot;
-  &#125;,
-  &quot;scripts&quot;: &#123;
-    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,
-    &quot;start_html&quot;:&quot;webpack --config webpack.html.config.js&quot;,
-    &quot;start_es6&quot;:&quot;webpack --config webpack.es6.config.js&quot;,
-    &quot;start_react&quot;:&quot;webpack --config webpack.react.config.js&quot;,
-    &quot;start_todo&quot;:&quot;webpack --config webpack.todo.config.js&quot;,
-    &quot;build&quot;:&quot;webpack-dev-server --port 3000 --hot --inline&quot;,
-    &quot;build_es6&quot;:&quot;webpack-dev-server --port 4000 --hot --inline --config webpack.es6.config.js&quot;,
-    &quot;build_todo&quot;:&quot;webpack-dev-server --port 4000 --hot --inline --config webpack.todo.config.js&quot;
-  &#125;,
-  &quot;author&quot;: &quot;&quot;,
-  &quot;license&quot;: &quot;ISC&quot;
-&#125;
-</code></pre>
-<h5 id="把依赖写入package-json"><a href="#把依赖写入package-json" class="headerlink" title="把依赖写入package.json"></a>把依赖写入package.json</h5><pre><code>npm install webpack@1.12.15 --save-dev
-</code></pre>
-<blockquote>
-<p>webpack 1 和 2 有点不一样。</p>
-</blockquote>
-<h5 id="安装模块加载器"><a href="#安装模块加载器" class="headerlink" title="安装模块加载器"></a>安装模块加载器</h5><p>各种不同文件类型的资源，webpack有对应的模块loader<br>安装加载器：</p>
-<pre><code>npm install xxx-loader --save-dev
-</code></pre>
-<p>例如：</p>
-<pre><code>npm install css-loader style-loader  #处理css文件和样式
-</code></pre>
-<p><strong>安装package.json文件中的所有依赖</strong></p>
-<pre><code>npm install 
-</code></pre>
-<p>npm update xxx 更新模块<br>npm uninstall xxx 卸载模块</p>
-<p>更多参考：<a target="_blank" rel="noopener" href="http://webpack.github.io/docs/using-loaders.html">http://webpack.github.io/docs/using-loaders.html</a></p>
-<h5 id="webpack-config-js配置文件"><a href="#webpack-config-js配置文件" class="headerlink" title="webpack.config.js配置文件"></a>webpack.config.js配置文件</h5><p>用这个配置文件，规定webpack进行怎样的打包。</p>
-<blockquote>
-<p>在配置文件中，一个字母也会影响打包成功</p>
-</blockquote>
-<ul>
-<li><strong>entry:</strong><br>它定义了打包的入口文件，数组中的文件会按顺序进行，并且会自行解决依赖问题。</li>
-<li><strong>output:</strong><br>它定义了输出文件的的位置，包括路径，文件名，还可能有运行时的访问路径<br>  path :  定义输出的文件路径<br>  filename :  指定打包的文件名称。</li>
-<li><strong>module:</strong><br>webpack将所有的资源都看做是模块，而模块就需要加载器。对于不同的文件，我们可以自行配置使用不同的加载器。也可以自行实现合心意的加载器。<br>在这里我们配置了babel-loader，可以让我们在js文件中随心所欲的开始写ES6规范的代码。<br>  test : 正则，匹配到的文件后缀名<br>  loader/loaders : string || array 处理匹配到的文件<br>  include : string || array 包含的文件夹<br>  exclude : string || array 排除的文件夹</li>
-<li><strong>resolve：</strong><br>webpack 是使用类似 Browserify 的方式在本地按目录对依赖进行查找。<br>指定可以被 import 的文件后缀。比如 Hello.jsx 这样的文件就可以直接用 import Hello from ‘Hello’ 引用。</li>
-<li>**plugin: **<br>我们可以在plugin参数中配置我们需要用到的各种各样的插件。比如我们想将多个文件分开打包，可能会用到:</li>
-</ul>
-<pre><code class="javascript">&#123;
-entry: &#123; a: &quot;./a&quot;, b: &quot;./b&quot; &#125;,
-output: &#123; filename: &quot;[name].js&quot; &#125;,
-plugins: [ new webpack.CommonsChunkPlugin(&quot;init.js&quot;) ]
-&#125;
-</code></pre>
-<pre><code class="javascript">var webpack = require(&#39;webpack&#39;);
-  module.exports = &#123;
-    entry: [
-      &#39;webpack/hot/only-dev-server&#39;,
-      &quot;./js/app.js&quot;
-    ],
-    output: &#123;
-        path: &#39;./build&#39;,
-        filename: &quot;bundle.js&quot;
-    &#125;,
-    module: &#123;
-       loaders: [
-         &#123; test: /\.js?$/, loaders: [&#39;react-hot&#39;, &#39;babel&#39;], exclude: /node_modules/ &#125;,
-         &#123; test: /\.js$/, exclude: /node_modules/, loader: &#39;babel-loader&#39;&#125;,
-         &#123; test: /\.css$/, loader: &quot;style!css&quot; &#125;,
-         &#123;test: /\.less/,loader: &#39;style-loader!css-loader!less-loader&#39;&#125;
-       ]
-   &#125;,
-   resolve:&#123;
-       extensions:[&#39;&#39;,&#39;.js&#39;,&#39;.json&#39;]
-   &#125;,
-   plugins: [
-       new webpack.NoErrorsPlugin()
-   ]
- &#125;;
-</code></pre>
-<h5 id="webpack-dev-server"><a href="#webpack-dev-server" class="headerlink" title="webpack-dev-server"></a>webpack-dev-server</h5><p>轻量级的服务器<br>修改文件源码后，自动刷新页面就能把修改同步到页面上。</p>
-<h5 id="安装webpack-dev-server"><a href="#安装webpack-dev-server" class="headerlink" title="安装webpack-dev-server"></a>安装webpack-dev-server</h5><pre><code>npm install webpack-dev-server -g
-# 安装后再命令行中使用webpack-dev-server命令
-# 把依赖写入package.json
-npm install webpack-dev-server --save-dev
-</code></pre>
-<h5 id="开启服务器"><a href="#开启服务器" class="headerlink" title="开启服务器"></a>开启服务器</h5><pre><code>webpack-dev-server --port 3000
-</code></pre>
-<h5 id="使用命令，做的自动刷新-热加载-。"><a href="#使用命令，做的自动刷新-热加载-。" class="headerlink" title="使用命令，做的自动刷新(热加载)。"></a>使用命令，做的自动刷新(热加载)。</h5><pre><code class="cmd">webpack-dev-server --hot --inline
-</code></pre>
-<p>index.html文件，要这样引入build.js</p>
-<pre><code>&lt;script src=&quot;http://127.0.0.1:3000/build.js&quot;&gt;&lt;/script&gt;
-</code></pre>
-<p>执行简化的命令：</p>
-<pre><code>npm run build
-</code></pre>
-<h4 id="3-安装React模块"><a href="#3-安装React模块" class="headerlink" title="3.安装React模块"></a>3.安装React模块</h4><pre><code>npm install react react-dom babel-preset-react --save-dev
-</code></pre>
-<p>配置：</p>
-<pre><code>&#123;&quot;presets&quot;:[&quot;es2015&quot;,&quot;react&quot;]&#125;
-</code></pre>
-<h5 id="热加载"><a href="#热加载" class="headerlink" title="热加载"></a>热加载</h5><pre><code>npm install react-hot-loader --save-dev
-</code></pre>
-<h2 id="React如何实现数据绑定？"><a href="#React如何实现数据绑定？" class="headerlink" title="React如何实现数据绑定？"></a>React如何实现数据绑定？</h2><h2 id="React如何操作json数据，以及用ajax操作json文件？"><a href="#React如何操作json数据，以及用ajax操作json文件？" class="headerlink" title="React如何操作json数据，以及用ajax操作json文件？"></a>React如何操作json数据，以及用ajax操作json文件？</h2><h2 id="如何开启React服务器"><a href="#如何开启React服务器" class="headerlink" title="如何开启React服务器"></a>如何开启React服务器</h2><h2 id="什么是redux"><a href="#什么是redux" class="headerlink" title="什么是redux?"></a>什么是redux?</h2>
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2018-07-18T13:31:20.000Z" itemprop="datePublished">2018-07-18</time>
-</div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web%E5%BC%80%E5%8F%91/" rel="tag">Web开发</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-Github/webpack"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2018/07/17/Github/webpack/">webpack</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <h2 id="什么是webpack"><a href="#什么是webpack" class="headerlink" title="什么是webpack?"></a>什么是webpack?</h2><p>webpack是近期最火的一款模块加载器兼打包工具，它能够把各种资源，例如JS（含JSX）、样式（含less/sass）、图片等都作为模块来使用和处理。</p>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Blog</title><meta property="og:type" content="blog"><meta property="og:title" content="Blog"><meta property="og:url" content="http://example.com/"><meta property="og:site_name" content="Blog"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://example.com/img/og_image.png"><meta property="article:author" content="Mr.Zhang"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com"},"headline":"Blog","image":["http://example.com/img/og_image.png"],"author":{"@type":"Person","name":"Mr.Zhang"},"description":""}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-07-16T16:00:00.000Z" title="2018-07-16T16:00:00.000Z">2018-07-17</time></span><span class="level-item">Updated&nbsp;<time dateTime="2018-07-17T15:58:27.000Z" title="2018-07-17T15:58:27.000Z">2018-07-17</time></span><span class="level-item">16 minutes read (About 2343 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/07/17/Github/webpack/">webpack</a></h1><div class="content"><h2 id="什么是webpack"><a href="#什么是webpack" class="headerlink" title="什么是webpack?"></a>什么是webpack?</h2><p>webpack是近期最火的一款模块加载器兼打包工具，它能够把各种资源，例如JS（含JSX）、样式（含less/sass）、图片等都作为模块来使用和处理。</p>
 <p>出自facebook的Instagram团队。</p>
 <p>当今越来越多的网站已经从网页模式进化到了 Webapp 模式。它们运行在现代的高级浏览器里，使用 HTML5、 CSS3、 ES6 等更新的技术来开发丰富的功能，网页已经不仅仅是完成浏览的基本需求，并且webapp通常是一个单页面应用，每一个视图通过异步的方式加载，这导致页面初始化和使用过程中会加载越来越多的 JavaScript 代码，这给前端开发的流程和资源组织带来了巨大的挑战。</p>
 <p>前端开发和其他开发工作的主要区别，首先是前端是基于多语言、多层次的编码和组织工作，其次前端产品的交付是基于浏览器，这些资源是通过增量加载的方式运行到浏览器端，如何在开发环境组织好这些碎片化的代码和资源，并且保证他们在浏览器端快速、优雅的加载和更新，就需要一个模块化系统，这个理想中的模块化系统是前端工程师多年来一直探索的难题。</p>
@@ -694,54 +161,7 @@ module.exports = &#123;
 /******/  var installedModules = &#123;&#125;;
 // 后面代码省略
 </code></pre>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2018-07-16T16:00:00.000Z" itemprop="datePublished">2018-07-17</time>
-</div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-Github/MongDB"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2018/06/27/Github/MongDB/">MongoDB + 小小留言板</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <h2 id="1-MongoDB安装"><a href="#1-MongoDB安装" class="headerlink" title="1.MongoDB安装"></a>1.MongoDB安装</h2><p>请参阅<a target="_blank" rel="noopener" href="http://www.runoob.com/mongodb/mongodb-osx-install.html">菜鸟教程</a></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-06-26T16:32:50.000Z" title="2018-06-26T16:32:50.000Z">2018-06-27</time></span><span class="level-item">Updated&nbsp;<time dateTime="2018-06-26T16:32:50.000Z" title="2018-06-26T16:32:50.000Z">2018-06-27</time></span><span class="level-item">6 minutes read (About 890 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/06/27/Github/MongDB/">MongoDB + 小小留言板</a></h1><div class="content"><h2 id="1-MongoDB安装"><a href="#1-MongoDB安装" class="headerlink" title="1.MongoDB安装"></a>1.MongoDB安装</h2><p>请参阅<a target="_blank" rel="noopener" href="http://www.runoob.com/mongodb/mongodb-osx-install.html">菜鸟教程</a></p>
 <p>启动MongoDB</p>
 <pre><code>sudo mongod
 
@@ -907,148 +327,97 @@ app.get(&quot;/du&quot;, function (req, res, next) &#123;
   &#125;);
 &#125;);
 </code></pre>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2018-06-26T16:32:50.000Z" itemprop="datePublished">2018-06-27</time>
-</div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node-js/" rel="tag">Node.js</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-
-  
-    <nav class="pagination">
-        <a class="extend prev" rel="prev" href="/page/21/">Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/page/23/">23</a><a class="page-number" href="/page/24/">24</a><span class="space">&hellip;</span><a class="page-number" href="/page/45/">45</a><a class="extend next" rel="next" href="/page/23/">Next</a>
-    </nav>
-  
-</div>
-
-                </section>
-            </section>
-
-            
-            <aside class="sidebar ">
-                
-
-
-<div class="widget" id="widget">
-    
-      
-  <div class="widget-wrap widget-recent-posts">
-    <div class="widget-title"><span>Recent Posts</span></div>
-    <div class="widget-inner">
-      <ul>
-        
-          <li>
-            <a href="/2022/03/24/Blog/1/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/19/News/%E5%BE%90%E5%85%B6%E8%80%80/">徐其耀</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/17/News/%E8%AF%B4%E4%B8%80%E4%B8%8B%E5%BA%95%E5%B1%82%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%E6%A0%B7%E5%AD%90/">说一下底层的中国人到底是什么样子</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-    
-      
-  <div class="widget-wrap widget-archive">
-    <div class="widget-title"><span>Archive</span></div>
-    <div class="widget-inner">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget-wrap widget-tags">
-    <div class="widget-title"><span>Tags</span></div>
-    <div class="widget-inner">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ajax/" rel="tag">Ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/" rel="tag">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web%E5%BC%80%E5%8F%91/" rel="tag">Web开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/" rel="tag">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/" rel="tag">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" rel="tag">前端开发</a></li></ul>
-    </div>
-  </div>
-
-
-    
-</div>
-
-<div id="backtop"><i class="icon icon-arrow-up"></i></div>
-            </aside>
-            
-        </div>
-    </div>
-
-    <footer class="footer">
-    <div class="footer-wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </div>
-
-    <!-- Please do not remove this -->
-    <!-- 开源不易，请勿删除 -->
-    <div class="footer-wrap">
-        <div class="footer-inner"> 
-            Blog &copy; 2022<br>
-            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
-        </div>
-    </div>
-
-</footer>
-
-
-
-
-
-
-<script src="/dist/build.js?undefined.js"></script>
-
-
-<script src="/dist/custom.js?undefined.js"></script>
-
-
-
-
-
-
-
-
-
-
-</body>
-
-</html>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-06-26T05:24:07.000Z" title="2018-06-26T05:24:07.000Z">2018-06-26</time></span><span class="level-item">Updated&nbsp;<time dateTime="2018-06-26T05:24:07.000Z" title="2018-06-26T05:24:07.000Z">2018-06-26</time></span><span class="level-item">9 minutes read (About 1283 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/06/26/Github/%E6%A8%A1%E6%9D%BF%E4%B8%AD%E7%9A%84%E6%8F%92%E4%BB%B6/">帮助：前端资源库</a></h1><div class="content"><h1 id="前端资源库"><a href="#前端资源库" class="headerlink" title="前端资源库"></a>前端资源库</h1><p><a target="_blank" rel="noopener" href="http://www.yyyweb.com/">前端里</a><br>专注Web开发技术和资源分享的网站</p>
+<p><a target="_blank" rel="noopener" href="https://www.mathjax.org/">MathJax</a><br>MathJax是一款运行在浏览器中的开源的数学符号渲染引擎，使用MathJax可以方便的在浏览器中显示数学公式，不需要使用图片。</p>
+<p><a href="www.codeceo.com">码农网</a><br>码农网-程序员编程资料和编程经验分享平台</p>
+<p><a target="_blank" rel="noopener" href="http://www.swiper.com.cn/">Swiper</a><br>Swiper(Swiper master)是目前应用较广泛的移动端网页触摸内容滑动js插件。</p>
+<p><a target="_blank" rel="noopener" href="https://cli.im/">草料二维码</a><br>草料二维码是国内专业的二维码服务提供商，提供二维码生成，美化，印制，管理，统计等服务，帮助企业通过二维码展示信息并采集线下数据，提升营销和管理效率。</p>
+<p><a target="_blank" rel="noopener" href="http://www.chongbuluo.com/">虫部落</a><br>虫部落 — 让搜索更简单</p>
+<p><a target="_blank" rel="noopener" href="http://www.daqianduan.com/">大前端</a><br>大前端-关注前端开发</p>
+<p><a target="_blank" rel="noopener" href="http://www.bootcss.com/">Bootstrap</a><br>Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。目前，Bootstrap最新版本为3.0 。Bootstrap中文网致力于为广大国内开发者提供详尽的中文文档、代码实例等，助力开发者掌握并使用这一框架。”</p>
+<p><a target="_blank" rel="noopener" href="http://www.sioe.cn/yingyong/yanse-rgb-16/">www.sioe.cn</a><br> RGB颜色值与十六进制颜色码转换工具，以及对颜色的描述</p>
+<p><a target="_blank" rel="noopener" href="http://es6.ruanyifeng.com/#README">ECMAScript</a><br>ECMAScript 6 入门</p>
+<p><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><br><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a></p>
+<h2 id="vendor目录"><a href="#vendor目录" class="headerlink" title="vendor目录"></a>vendor目录</h2><p>用于存放第三方库的目录</p>
+<ol>
+<li>bootstrap 响应式的前端框架</li>
+<li>animate.css  一款强大的css3预设的动画库</li>
+<li>pace.preloader.css  加载时的动画效果</li>
+<li>pace.js  页面自动加载进度条插件</li>
+</ol>
+<h3 id="jquery"><a href="#jquery" class="headerlink" title="jquery"></a>jquery</h3><ol start="5">
+<li><p>jquery.js</p>
+</li>
+<li><p>jquery-2.1.1.min.js</p>
+</li>
+<li><p>Skycons  是用canvas标签实现的气象图标。</p>
+</li>
+</ol>
+<h2 id="plugins目录"><a href="#plugins目录" class="headerlink" title="plugins目录"></a>plugins目录</h2><p>用于存放插件的目录。</p>
+<p>autosize 用于处理移动端自适应的插件目录【下同】</p>
+<p>bootkit </p>
+<p>bootstrap-colorpicker  一款可定制颜色的插件</p>
+<p>bootstrap-datepicker  Bootstrap日期和时间表单组件。</p>
+<p>bootstrap-markdown  类似于markdown的文本编辑器</p>
+<p>bootstrap-tagsinput  显示关键字的标签插件</p>
+<p>bootstrap-timepicker  日期时间插件</p>
+<p>canvas-particle  制作光线粒子背景</p>
+<p>chart-master 是一个简单、面向对象、为设计者和开发者准备的图表绘制工具库。</p>
+<p>chosen Jquery的chosen一款选择插件，支持检索，多选，但不支持输入效果</p>
+<p>d3 是操纵基于数据的JavaScript库文件</p>
+<p>dropzone 提供了拖放文件上传图片预览</p>
+<p>easypiechart 此插件主要是用来统计新的访问、跳出率、服务器负载、使用的RAM等，功能很强大，带有HTML5的动画效果，效果非常炫</p>
+<p>editable 是一个jquery插件，它的优点是可以就地编辑，并且提交到服务器处理，是一个不可多得的就地编辑插件。(注： 就地编辑，也有称即时编辑？一般的流程是这样的，当用户点击网页上的文字时，该文字就会出现在一个编辑框中，用户对文字进行修改完成后点击提交按钮，新的文本将发送到服务器上，然后表单消失，显示最新编辑的文本。)</p>
+<p>flot Flot采用Canvas绘制图形</p>
+<p>flot-tooltip</p>
+<p>fullcalendar 可以根据FullCalendar提供的API快速完成一个日历日程的开发</p>
+<p>gauge 是一种轻量级的跨平台测试自动化工具，具有编写业务语言中测试用例的能力。</p>
+<p>gmaps 谷歌地图调用插件</p>
+<p>isotope Isotope是一款效果非常神奇的元素分类过滤和排序布局jQuery插件</p>
+<p>jquery</p>
+<p>jquery-datatables</p>
+<p>jquery-datatables-bs3</p>
+<p>jquery-ui</p>
+<p>jquery-ui-touch-punch</p>
+<p>jquery-validation</p>
+<p>jqvmap</p>
+<p>justgage JustGage 是一个 JavaScript 插件来生成很漂亮的仪表盘，基于 Raphaël 库做向量图绘制。</p>
+<p>magnific-popup 是一款免费的响应式 jQuery Lightbox 插件</p>
+<p>maskedinput 输入框input输入内容格式限制插件</p>
+<p>mockjax 生成随机数据，拦截 Ajax 请求</p>
+<p>modernizr 是一个 JavaScript 库，用于检测用户浏览器的 HTML5 与 CSS3 特性。</p>
+<p>moment JavaScript 日期处理类库</p>
+<p>morris 不过Morris.js是基于Raphael.js来的，也就是其使用SVG和VML来绘制图形</p>
+<p>nanoscroller jQuery滚动条插件nanoscroller</p>
+<p>owl-carousel jQuery幻灯片插件Owl Carousel</p>
+<p>placeholder jQ中的输入框插件</p>
+<p>pnotify 　PNotify 是一个 JavaScript 通知插件</p>
+<p>raphael 网页中使用矢量图形</p>
+<p>scrollbar </p>
+<p>select2</p>
+<p>sparkline jQuery线状图插件Sparkline</p>
+<p>store-js 　store.js 是一个兼容所有浏览器的 LocalStorage 包装器，不需要借助 Cookie 或者 Flash。store.js 会根据浏览器自动选择使用 localStorage、globalStorage 或者 userData 来实现本地存储功能。</p>
+<p>summernote 使用summernote生成一个简单的富文本编辑器</p>
+<p>touchpunch 实现移动端的拖放效果</p>
+<p>wizard</p>
+<p>xcharts 图表制作js库</p>
+</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/21/">Previous</a></div><div class="pagination-next"><a href="/page/23/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/21/">21</a></li><li><a class="pagination-link is-current" href="/page/22/">22</a></li><li><a class="pagination-link" href="/page/23/">23</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/45/">45</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Your name"></figure><p class="title is-size-4 is-block line-height-inherit">Your name</p><p class="is-size-6 is-block">Your title</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Your location</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">133</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">11</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Article/"><span class="level-start"><span class="level-item">Article</span></span><span class="level-end"><span class="level-item tag">30</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Blog/"><span class="level-start"><span class="level-item">Blog</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/English/"><span class="level-start"><span class="level-item">English</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Github/"><span class="level-start"><span class="level-item">Github</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/News/"><span class="level-start"><span class="level-item">News</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Web/"><span class="level-start"><span class="level-item">Web</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Web%E5%BC%80%E5%8F%91/"><span class="level-start"><span class="level-item">Web开发</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Weekly/"><span class="level-start"><span class="level-item">Weekly</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Wiki/"><span class="level-start"><span class="level-item">Wiki</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E5%91%A8%E5%88%8A/"><span class="level-start"><span class="level-item">周刊</span></span><span class="level-end"><span class="level-item tag">23</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%96%B0%E9%97%BB/"><span class="level-start"><span class="level-item">新闻</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-26T16:00:00.000Z">2022-03-27</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/27/News/%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD/">新闻联播</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/News/">News</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-24T04:47:56.357Z">2022-03-24</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/24/Blog/1/"> </a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-21T16:00:00.000Z">2022-03-22</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E5%91%A8%E5%88%8A/">周刊</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-21T03:55:25.751Z">2022-03-21</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/"> </a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-20T16:00:00.000Z">2022-03-21</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/21/News/%E5%8C%97%E7%BA%A6/">5个航母打击群20万大军就位 北约可随时投入战斗</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/News/">News</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Ajax/"><span class="tag">Ajax</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/CSS/"><span class="tag">CSS</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Javascript/"><span class="tag">Javascript</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Linux/"><span class="tag">Linux</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Node-js/"><span class="tag">Node.js</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Python/"><span class="tag">Python</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web%E5%BC%80%E5%8F%91/"><span class="tag">Web开发</span><span class="tag is-grey-lightest">10</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mysql/"><span class="tag">mysql</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/php/"><span class="tag">php</span><span class="tag is-grey-lightest">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/web/"><span class="tag">web</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/web%E5%BC%80%E5%8F%91/"><span class="tag">web开发</span><span class="tag is-grey-lightest">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"><span class="tag">前端开发</span><span class="tag is-grey-lightest">3</span></a></div></div></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2022/03/"><span class="level-start"><span class="level-item">March 2022</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2022/02/"><span class="level-start"><span class="level-item">February 2022</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/11/"><span class="level-start"><span class="level-item">November 2021</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/10/"><span class="level-start"><span class="level-item">October 2021</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/09/"><span class="level-start"><span class="level-item">September 2021</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/08/"><span class="level-start"><span class="level-item">August 2021</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/07/"><span class="level-start"><span class="level-item">July 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/04/"><span class="level-start"><span class="level-item">April 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/01/"><span class="level-start"><span class="level-item">January 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/02/"><span class="level-start"><span class="level-item">February 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2018/10/"><span class="level-start"><span class="level-item">October 2018</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2018/07/"><span class="level-start"><span class="level-item">July 2018</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2018/06/"><span class="level-start"><span class="level-item">June 2018</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/10/"><span class="level-start"><span class="level-item">October 2017</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/09/"><span class="level-start"><span class="level-item">September 2017</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/08/"><span class="level-start"><span class="level-item">August 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/07/"><span class="level-start"><span class="level-item">July 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/04/"><span class="level-start"><span class="level-item">April 2017</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/03/"><span class="level-start"><span class="level-item">March 2017</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/01/"><span class="level-start"><span class="level-item">January 2017</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/12/"><span class="level-start"><span class="level-item">December 2016</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/10/"><span class="level-start"><span class="level-item">October 2016</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/08/"><span class="level-start"><span class="level-item">August 2016</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/07/"><span class="level-start"><span class="level-item">July 2016</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/04/"><span class="level-start"><span class="level-item">April 2016</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/03/"><span class="level-start"><span class="level-item">March 2016</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/02/"><span class="level-start"><span class="level-item">February 2016</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/01/"><span class="level-start"><span class="level-item">January 2016</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/12/"><span class="level-start"><span class="level-item">December 2015</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/11/"><span class="level-start"><span class="level-item">November 2015</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/10/"><span class="level-start"><span class="level-item">October 2015</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/02/"><span class="level-start"><span class="level-item">February 2015</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Blog" height="28"></a><p class="size-small"><span>&copy; 2022 Mr.Zhang</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

@@ -1,239 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    
-    <title>Blog</title>
-
-    <meta name="description" content="Blog">
-    <meta name="keywords" content="">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
-
-
-    
-<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
-
-
-    <script>
-        window.isPost = false
-        window.aomori = {
-            
-            
-            
-        }
-        window.aomori_logo_typed_animated = false
-        window.aomori_search_algolia = false
-
-    </script>
-
-<meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
-</head>
-
-<body>
-
-    <div class="container">
-    <header class="header">
-        <div class="header-type">
-            
-            <div class="header-type-inner">
-                
-                    <a class="header-type-title" href="/">Blog</a>
-                
-    
-                
-            </div>
-        </div>
-        <div class="header-menu">
-            <div class="header-menu-inner">
-                
-                <a href="/">Home</a>
-                
-                <a href="/archives">Archives</a>
-                
-                <a href="/photography">Photo</a>
-                
-                <a href="/Python">Python</a>
-                
-            </div>
-            <div class="header-menu-social">
-                
-            </div>
-        </div>
-
-        <div class="header-menu-mobile">
-            <div class="header-menu-mobile-inner" id="mobile-menu-open">
-                <i class="icon icon-menu"></i>
-            </div>
-        </div>
-    </header>
-
-    <div class="header-menu-mobile-menu">
-        <div class="header-menu-mobile-menu-bg"></div>
-        <div class="header-menu-mobile-menu-wrap">
-            <div class="header-menu-mobile-menu-inner">
-                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
-                    <i class="icon icon-cross"></i>
-                </div>
-                <div class="header-menu-mobile-menu-list">
-                    
-                    <a href="/">Home</a>
-                    
-                    <a href="/archives">Archives</a>
-                    
-                    <a href="/photography">Photo</a>
-                    
-                    <a href="/Python">Python</a>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-    <div class="container">
-        <div class="main">
-            <section class="inner">
-                <section class="inner-main">
-                    <div class="index">
-  
-    
-      <article
-id="post-Github/String"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2016/07/08/Github/String/">1.String</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <h2 id="1-String"><a href="#1-String" class="headerlink" title="1.String"></a>1.String</h2><h3 id="String-charAt"><a href="#String-charAt" class="headerlink" title="String.charAt()"></a>String.charAt()</h3><p>取得一个字符串中，第”n”个字符；n是字符串中的索引。</p>
-<h3 id="String-charCodeAt"><a href="#String-charCodeAt" class="headerlink" title="String.charCodeAt()"></a>String.charCodeAt()</h3><p>取得一个字符串中，第”n”个字符的编码</p>
-<h3 id="String-concat-value-…"><a href="#String-concat-value-…" class="headerlink" title="String.concat(value,…)"></a>String.concat(value,…)</h3><p>连接字符串</p>
-<h3 id="String-indexOf"><a href="#String-indexOf" class="headerlink" title="String.indexOf()"></a>String.indexOf()</h3><p>搜索一个子字符串。</p>
-<h3 id="String-length"><a href="#String-length" class="headerlink" title="String.length"></a>String.length</h3><p>一个字符串的长度</p>
-<h3 id="String-replace"><a href="#String-replace" class="headerlink" title="String.replace()"></a>String.replace()</h3><p>替换，第一参数可以是字符串，也可以是正则。第二个参数是替换成的文本内容，或是函数。<br>string.replace(regexp,replacement)</p>
-<h3 id="String-search"><a href="#String-search" class="headerlink" title="String.search()"></a>String.search()</h3><p>根据一个正则表达式查找，返回第一次出现的索引，没有找到返回-1</p>
-<h3 id="String-slice"><a href="#String-slice" class="headerlink" title="String.slice()"></a>String.slice()</h3><p>提取一个子串</p>
-<h3 id="String-split"><a href="#String-split" class="headerlink" title="String.split()"></a>String.split()</h3><p>把一个字符串，切分成一个数组。</p>
-<h3 id="String-substr"><a href="#String-substr" class="headerlink" title="String.substr()"></a>String.substr()</h3><p>提取一个子串</p>
-<h3 id="String-toLowerCase"><a href="#String-toLowerCase" class="headerlink" title="String.toLowerCase()"></a>String.toLowerCase()</h3><p>将一个字符串转化成小写</p>
-<h3 id="String-toUpperCase"><a href="#String-toUpperCase" class="headerlink" title="String.toUpperCase()"></a>String.toUpperCase()</h3><p>将一个字符串转化成大写</p>
-<h3 id="String-trim"><a href="#String-trim" class="headerlink" title="String.trim()"></a>String.trim()</h3><p>去掉开头和结尾处的空白字符</p>
-<pre><code class="javascript">var words = &#39;新浪网是个网站&#39;;
-
-获取字符串的长度
-words.length == 7 
-获取字符串下标为0的字符
-words.charAt(0) == &quot;新&quot;
-获取字符串最后一位字符
-words.charAt( words.length-1 ) == &quot;站&quot;
-
-返回字符串中的子字符所在的索引值，第一次出现的位置。
-words.indexOf(&#39;网&#39;) == 2
-words.indexOf(&#39;网&#39;,3) == 5
-倒序查找
-words.lastIndexOf(&#39;网&#39;) == 5
-1替换前，2替换后
-words.replace(&#39;新浪网&#39;,&#39;sina&#39;) //替换功能
-
-//按某个字符进行切割，并返回数组
-var words = &#39;新浪网,是个网站&#39;;
-var words.split(&#39;,&#39;);
-返回结果是数组[&quot;新浪网&quot;,&quot;是个网站&quot;]
-&quot;1:2:3:4&quot;.split(&quot;:&quot;)//返回[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;]
-&quot;|a|b|c&quot;.split(&quot;|&quot;)//返回[&quot;&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]
-&quot;hello&quot;.split(&quot;&quot;,3)//返回[&quot;h&quot;,&quot;e&quot;,&quot;l&quot;]
-
-
-其他
-s.trim()  //用于去除字符串两端的空格，返回一个新字符串
-s.slice(start,end)   
-//用于从原字符串取出子字符串并返回，不改变原字符串。第一个参数是子字符串的开始位置，第二个参数是子字符串的结束位置（不含该位置）。如果参数是负值，表示从结尾开始倒数计算的位置，即该负值加上字符串长度。
-s.substring(start,end)  
-//用于从原字符串取出子字符串并返回，不改变原字符串.第一个参数表示子字符串的开始位置，第二个位置表示结束位置。
-s.substr(start,length)   
-//用于从原字符串取出子字符串并返回，不改变原字符串。第一个参数是子字符串的开始位置，第二个参数是子字符串的长度。如果第一个参数是负数，表示倒数计算的字符位置。如果第二个参数是负数，将被自动转为0，因此会返回空字符串。
-
-s.match(regexp)   
-var w = &#39;1 plus 2 eee&#39;;
-w.match(/\d+/g)  //返回[&quot;1&quot;,&quot;2&quot;]
-//用于确定原字符串是否匹配某个子字符串，返回一个数组，成员为匹配的第一个字符串。如果没有找到匹配，则返回null。
-</code></pre>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2016-07-07T16:00:00.000Z" itemprop="datePublished">2016-07-08</time>
-</div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-Article/27：中国做大事的22条真言"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2016/04/29/Article/27%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%81%9A%E5%A4%A7%E4%BA%8B%E7%9A%8422%E6%9D%A1%E7%9C%9F%E8%A8%80/">Excerpt 27：中国做大事的22条真言</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>一位身价过亿的温州商人醉酒后说出在中国做大事的22条真言</p>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Blog</title><meta property="og:type" content="blog"><meta property="og:title" content="Blog"><meta property="og:url" content="http://example.com/"><meta property="og:site_name" content="Blog"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://example.com/img/og_image.png"><meta property="article:author" content="Mr.Zhang"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com"},"headline":"Blog","image":["http://example.com/img/og_image.png"],"author":{"@type":"Person","name":"Mr.Zhang"},"description":""}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2016-04-28T16:00:00.000Z" title="2016-04-28T16:00:00.000Z">2016-04-29</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-08-19T02:48:35.000Z" title="2021-08-19T02:48:35.000Z">2021-08-19</time></span><span class="level-item"><a class="link-muted" href="/categories/Article/">Article</a></span><span class="level-item">28 minutes read (About 4164 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2016/04/29/Article/27%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%81%9A%E5%A4%A7%E4%BA%8B%E7%9A%8422%E6%9D%A1%E7%9C%9F%E8%A8%80/">Excerpt 27：中国做大事的22条真言</a></h1><div class="content"><p>一位身价过亿的温州商人醉酒后说出在中国做大事的22条真言</p>
 <h2 id="1-坚持看CCTV-1新闻联播。"><a href="#1-坚持看CCTV-1新闻联播。" class="headerlink" title="1.坚持看CCTV-1新闻联播。"></a>1.坚持看CCTV-1新闻联播。</h2><p>要想把握经济命脉，必须关注政局，新闻联播图文并茂，有声有色，着实为中国商人的最佳晴雨表；你可以不看财经报道，也可以不看焦点访谈，如果你不是做石油和外汇的，甚至你都可以不去管类似9.11事件和中东局势。</p>
 <h2 id="2-不要轻易相信合约或合同"><a href="#2-不要轻易相信合约或合同" class="headerlink" title="2.不要轻易相信合约或合同"></a>2.不要轻易相信合约或合同</h2><p>哪怕合约让你的律师看过了，公证处公证了都不要轻易相信，甚至当你的客户把钱已经汇入你指定的账户以后你都必须确认，这笔钱你能不能拿出来，能不能动，而合约以外的涉及到利益冲突的任何口头承诺与解释你都必须当他是放屁，无论香还是臭，在对方兑现承诺以前都不要沉湎其中，更无论对方是谁，哪怕那是你交了十年的朋友甚至是和你上了床的女人都必须如此。</p>
 <h2 id="3-你自己必须守信，一诺千斤，但对不守信的人例外！！"><a href="#3-你自己必须守信，一诺千斤，但对不守信的人例外！！" class="headerlink" title="3.你自己必须守信，一诺千斤，但对不守信的人例外！！"></a>3.你自己必须守信，一诺千斤，但对不守信的人例外！！</h2><p>你确认你一定能够做到的事情你才可以承诺，但不要夸大其辞；你如果想一直做个商人，那么你必须树立自己的信誉！虽然你可以不在乎外界对你的争议甚至你也可以制造争议但你不能失去信誉，否则你就不是一个商人而是一个骗子；信誉具体包括你如果和别人约了2：00见面，那么你绝对不可以1：50以前或者2：01以后出现，如遇交通堵塞或意外事件，那你必须及时通知对方，除非你出了车祸遇到空难昏迷不醒或者已经死亡，否则你都没有理由爽约、早到太早或迟到太迟，而你的涵养则体现在对待对方不守时不守承诺的态度与包容等方面；而一旦当你确认对方是在为了利益而一再欺骗你，那么你对对方做出的一切行为都不过分，甚至你可以将计就计，反过来给他画一个饼！</p>
@@ -256,54 +23,7 @@ class="article article-type-post"
 <h2 id="20-不要用黑白道的规矩去解决商业上的冲突"><a href="#20-不要用黑白道的规矩去解决商业上的冲突" class="headerlink" title="20.不要用黑白道的规矩去解决商业上的冲突"></a>20.不要用黑白道的规矩去解决商业上的冲突</h2><p>商业永远是商业，而商业是有商业自身的游戏规则在的，所以哪怕你确实是黑道人物，也不能随便利用黑道规矩去解决商业冲突，同样，即将你有很好的白道背景与资源，你也不能轻易利用这些资源来解决你在商业中的冲突！既然选择了商人，那你必须遵守商业中的一切游戏规则，愿赌就得服输！</p>
 <h2 id="21-在能把握全局的前提下，不要追求事必躬亲"><a href="#21-在能把握全局的前提下，不要追求事必躬亲" class="headerlink" title="21.在能把握全局的前提下，不要追求事必躬亲"></a>21.在能把握全局的前提下，不要追求事必躬亲</h2><p>不要把自己搞的没有时间与朋友交流，更不要让自己没有时间去泡女人和INTERNET，最要紧的是不要让自己没有时间放松与思考，所以，应该学会让别人去帮你打点生意，处理业务，虽然，业务的核心部分你自己必须牢牢把握；同样，把事情交给别人去做的风险你要考虑清楚并能够预防，以免你把事情交给别人去做以后，你自己又成了一名忙碌的救火队员，记住消防和救火是有区别的，消防的口号是“消防结合，预防为主”。</p>
 <h2 id="22-给自己留条后路，预防众叛亲离你"><a href="#22-给自己留条后路，预防众叛亲离你" class="headerlink" title="22.给自己留条后路，预防众叛亲离你"></a>22.给自己留条后路，预防众叛亲离你</h2><p>可以在沉寂江湖多年以后重整旗鼓，但你不可以倒下以后就不再起来，因为你是一个男人！所以你必须给自己留一条属于你自己的后路，后路包括藏起一个存钱罐，虽然里面只有几块钱但你将来就是要靠这几块钱东山再起；后路也包括一栋法律意义上并不在你名下的房子(你可以有个地方一个人疗伤，恢复元气)，更包括一个并不经常来往的但很仗义而且你也给过他很多帮助的朋友(他可以在关键时候收留你，陪你喝酒，而这样的朋友一生中你能遇到一个也已经很幸运了)；如果实在没有后路，那么你就必须有去露宿街头沿街乞讨的心理准备，但那时候你只可以去向陌生人伸手，而绝对不要向你过去帮助过的还欠着你很多债务或者人情但装做不认识你的人低头。</p>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2016-04-28T16:00:00.000Z" itemprop="datePublished">2016-04-29</time>
-</div>
-    
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/Article/">Article</a>
-        </div>
-    
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-Article/26：杰出的程序员"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2016/04/22/Article/26%EF%BC%9A%E6%9D%B0%E5%87%BA%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/">Excerpt 26：杰出的程序员</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>我不能算是一个很优秀的程序员，但这个问题我已经反复思考了五年了。跟大家分享一下我的看法：</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2016-04-21T16:00:00.000Z" title="2016-04-21T16:00:00.000Z">2016-04-22</time></span><span class="level-item">Updated&nbsp;<time dateTime="2021-08-19T02:14:58.000Z" title="2021-08-19T02:14:58.000Z">2021-08-19</time></span><span class="level-item"><a class="link-muted" href="/categories/Article/">Article</a></span><span class="level-item">5 minutes read (About 718 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2016/04/22/Article/26%EF%BC%9A%E6%9D%B0%E5%87%BA%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/">Excerpt 26：杰出的程序员</a></h1><div class="content"><p>我不能算是一个很优秀的程序员，但这个问题我已经反复思考了五年了。跟大家分享一下我的看法：</p>
 <p>首先， 我认为答案绝对不是 “只要写很多年代码就好了“。我面试过不少有10年经验，代码却写的很糟糕的程序员。经验很保贵， 但只靠经验是不够的。就像下棋一样，假如你用心研究，复习，不断挑战自己，也许可以成为一名大师。但不断用懒散的方式去玩棋，下20年也只是一个”臭棋篓子“。</p>
 <p>我觉得比较有用的进步方式：</p>
 <h2 id="1-学会看代码"><a href="#1-学会看代码" class="headerlink" title="1. 学会看代码"></a>1. 学会看代码</h2><p>大多数程序员都只愿意用自己写的代码，但高手一般可以轻易调用别人写的代码。表面看上去是工作习惯不同， 但实际上是能力上的差别。看代码要比写代码难很多倍。</p>
@@ -313,148 +33,141 @@ class="article article-type-post"
 <p>Facebook喜欢雇佣所谓的 “full stack programmer”，就是一个人从设计，到交互，到html， css，javascript， server，sql， 架构，和数据统计都能做。成为full stack programmer最好的方式就是不断做个人项目。</p>
 <h2 id="4-问答网站"><a href="#4-问答网站" class="headerlink" title="4. 问答网站"></a>4. 问答网站</h2><p>问问题和回答问题都是很好的学习方式。 有的时候写出一个好问题， 比写出解答次问题所需要的代码还难。写问题可以帮你整理自己的思维逻辑。你可以试着每周在<a target="_blank" rel="noopener" href="http://stackoverflow.com上问一个好问题或写一个好答案./">http://stackoverflow.com上问一个好问题或写一个好答案。</a></p>
 <h2 id="5-加入一个好团队"><a href="#5-加入一个好团队" class="headerlink" title="5. 加入一个好团队"></a>5. 加入一个好团队</h2><p>最好的进步方式就是跟比自己强的人一起做事。高手都愿意聚在一起，所以很多会选择去优秀的早期创业公司。我在硅谷和创新工场创业时遇到了很多神人， 跟他们学了不少东西。</p>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2016-04-21T16:00:00.000Z" itemprop="datePublished">2016-04-22</time>
-</div>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2016-04-14T09:01:00.000Z" title="2016-04-14T09:01:00.000Z">2016-04-14</time></span><span class="level-item">Updated&nbsp;<time dateTime="2017-05-04T06:39:07.000Z" title="2017-05-04T06:39:07.000Z">2017-05-04</time></span><span class="level-item">8 minutes read (About 1234 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2016/04/14/Github/javascript%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86/">javascript常用的小知识</a></h1><div class="content"><h1 id="javascript常用的小知识"><a href="#javascript常用的小知识" class="headerlink" title="javascript常用的小知识"></a>javascript常用的小知识</h1><h3 id="1-JS中的是是非非"><a href="#1-JS中的是是非非" class="headerlink" title="1.JS中的是是非非"></a>1.JS中的是是非非</h3><p>JS是一门计算机编程语言，是一门动态语言也称为脚本语言，是解析型编程语言。为什么是脚本？因为他本身不能执行，就是没有main函数或主程序的入口，必须被他的宿主环境，也就是解析环境解析执行他。为是什么是解析型？因为JS不会进行编程，链接，汇编等一系统的过程生成某个文件，再执行，他就是以字符串形式加载执行.. </p>
+<h3 id="2-JS中的真真假假"><a href="#2-JS中的真真假假" class="headerlink" title="2.JS中的真真假假"></a>2.JS中的真真假假</h3><p>空，null,undefined,false,0,””,’’,NaN都为假,其他都为真 </p>
+<h3 id="3-函数，类，对象，构造器有什么区别"><a href="#3-函数，类，对象，构造器有什么区别" class="headerlink" title="3.函数，类，对象，构造器有什么区别?"></a>3.函数，类，对象，构造器有什么区别?</h3><p>答:在js中函数，类，对象，构造器可以说是没有任何区别的，我们可以说函数既为对象，对象既为类，类既为构造器。但一般情况下，我们称对象为那个类的实例，这是为了减少混乱。 </p>
+<pre><code class="javascript">function Person()&#123; 
+&#125; 
+var person = new Person(); 
+//Person我们可以称为函数，类，对象，构造器(不带参数) 
+//person称为对象的引用 
+</code></pre>
+<h3 id="4-懂this关键字，你懂JS五分之一"><a href="#4-懂this关键字，你懂JS五分之一" class="headerlink" title="4.懂this关键字，你懂JS五分之一."></a>4.懂this关键字，你懂JS五分之一.</h3><p>this永远指向调用该方法(函数)的那个对象.(必背)<br>首先要知道this是什么？<br>this就是js中的一个对象。是一个对象，不是一个函数，此是的对象你可以看作是一个对象的引用，引用谁？引用调用方法的那个对象.<br>this这个对象存在哪里？存在JS代码中，一般存在于函数之中。如果你把this放到‘script标签中，你可以试下window==this(true)，打印什么?为什么？ </p>
+<h3 id="5种继承让你如虎添翼"><a href="#5种继承让你如虎添翼" class="headerlink" title="5种继承让你如虎添翼."></a>5种继承让你如虎添翼.</h3><p>i.对象冒充<br>ii.apply<br>iii.call<br>iv.prototype<br>v.for循环方式<br>用法:永远只须记住，JS中的继承只是属性和方法的拷贝. </p>
+<h3 id="6-自调用函数："><a href="#6-自调用函数：" class="headerlink" title="6.自调用函数："></a>6.自调用函数：</h3><pre><code class="javascript">(function()&#123;
+    // 置于此处的代码将自动执行
+&#125;)();  
+(function(a,b)&#123;
+    var result = a+b;
+    return result;
+&#125;)(10,20)
+</code></pre>
+<h3 id="7-从数组中随机获取成员"><a href="#7-从数组中随机获取成员" class="headerlink" title="7.从数组中随机获取成员"></a>7.从数组中随机获取成员</h3><pre><code class="javascript">var items = [12, 548 , &#39;a&#39; , 2 , 5478 , &#39;foo&#39; , 8852, , &#39;Doe&#39; , 2145 , 119];
+var  randomItem = items[Math.floor(Math.random() * items.length)];
+</code></pre>
+<h3 id="8-获取指定范围内的随机数"><a href="#8-获取指定范围内的随机数" class="headerlink" title="8.获取指定范围内的随机数"></a>8.获取指定范围内的随机数</h3><pre><code class="javascript">var x = Math.floor(Math.random() * (max - min + 1)) + min;
+</code></pre>
+<h3 id="9-生成从0到指定值得数字数组"><a href="#9-生成从0到指定值得数字数组" class="headerlink" title="9.生成从0到指定值得数字数组"></a>9.生成从0到指定值得数字数组</h3><pre><code class="javascript">var numbersArray = [] , max = 100;
+for( var i=1; numbersArray.push(i++) &lt; max;);  // numbers = [1,2,3 ... 100]
+</code></pre>
+<h3 id="10-生成随机的字母数字字符串"><a href="#10-生成随机的字母数字字符串" class="headerlink" title="10.生成随机的字母数字字符串"></a>10.生成随机的字母数字字符串</h3><pre><code class="javascript">function generateRandomAlphaNum(len) &#123;
+    var rdmString = &quot;&quot;;
+    for( ; rdmString.length &lt; len; rdmString  += Math.random().toString(36).substr(2));
+    return  rdmString.substr(0, len);
+&#125;
+</code></pre>
+<h3 id="11-字符串去空格"><a href="#11-字符串去空格" class="headerlink" title="11.字符串去空格"></a>11.字符串去空格</h3><pre><code class="javascript">String.prototype.trim = function()&#123;return this.replace(/^\s+|\s+$/g, &quot;&quot;);&#125;;
+</code></pre>
+<h3 id="12-对象转换为数组"><a href="#12-对象转换为数组" class="headerlink" title="12.对象转换为数组"></a>12.对象转换为数组</h3><pre><code class="javascript">var argArray = Array.prototype.slice.call(arguments);
+</code></pre>
+<h3 id="13-验证是否是数字"><a href="#13-验证是否是数字" class="headerlink" title="13.验证是否是数字"></a>13.验证是否是数字</h3><pre><code class="javascript">function isNumber(n)&#123;
+    return !isNaN(parseFloat(n)) &amp;&amp; isFinite(n);
+&#125;
+</code></pre>
+<h3 id="14-获取数组中的最大值和最小值"><a href="#14-获取数组中的最大值和最小值" class="headerlink" title="14.获取数组中的最大值和最小值"></a>14.获取数组中的最大值和最小值</h3><pre><code class="javascript">var  numbers = [5, 458 , 120 , -215 , 228 , 400 , 122205, -85411]; 
+var maxInNumbers = Math.max.apply(Math, numbers); 
+var minInNumbers = Math.min.apply(Math, numbers);
+// 清空数组
+myArray.length = 0;
+使用length属性截断数组
+</code></pre>
+<h3 id="15-通过for-in循环检查对象的属性"><a href="#15-通过for-in循环检查对象的属性" class="headerlink" title="15.通过for-in循环检查对象的属性"></a>15.通过for-in循环检查对象的属性</h3><pre><code class="javascript">for(var name in object)&#123;
     
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/Article/">Article</a>
-        </div>
-    
-    
-    </div>
-</footer>
+&#125;
+</code></pre>
+<h3 id="16-判断2个变量的最小值或最大值："><a href="#16-判断2个变量的最小值或最大值：" class="headerlink" title="16.判断2个变量的最小值或最大值："></a>16.判断2个变量的最小值或最大值：</h3><pre><code class="javascript">var a=10;var b=11;Math.min(a,b);
+var a=10;var b=11;a&lt;b?a:b;
+</code></pre>
+<h3 id="17-确认选择（confirm消息对话框）"><a href="#17-确认选择（confirm消息对话框）" class="headerlink" title="17.确认选择（confirm消息对话框）"></a>17.确认选择（confirm消息对话框）</h3><pre><code class="javascript">var mymessage=confirm(&quot;你喜欢JavaScript吗?&quot;);
+ if(mymessage==true)&#123;
+   document.write(&quot;很好,加油!&quot;); 
+  &#125;else&#123;
+   document.write(&quot;JS功能强大，要学习噢!&quot;);
+  &#125;
+</code></pre>
+<h3 id="18-提问（prompt消息对话框）"><a href="#18-提问（prompt消息对话框）" class="headerlink" title="18.提问（prompt消息对话框）"></a>18.提问（prompt消息对话框）</h3><pre><code class="javascript">function rec()&#123;
+  var score; //score变量，用来存储用户输入的成绩值。
+  score = prompt(&quot;请输入你的成绩&quot;,&quot;90&quot;);
+  if(score&gt;=90)&#123;
+   document.write(&quot;你很棒!&quot;);
+  &#125;else if(score&gt;=75)&#123;
+   document.write(&quot;不错吆!&quot;);
+  &#125;else if(score&gt;=60)&#123;
+   document.write(&quot;要加油!&quot;);
+  &#125;else&#123;
+   document.write(&quot;要努力了!&quot;);
+  &#125;;
+ &#125; ; 
+</code></pre>
+<h3 id="19-js刷新页面的方法"><a href="#19-js刷新页面的方法" class="headerlink" title="19.js刷新页面的方法"></a>19.js刷新页面的方法</h3><pre><code class="javascript">&lt;meta http-equiv=&quot;refresh&quot; content=&quot;20&quot;&gt;//每隔20秒刷新一次页面
+&lt;meta http-equiv=&quot;refresh&quot; content=&quot;20;url=http://www.jb51.net&quot;&gt;//20秒后跳转到51.net页面。
 
-</article>
+//页面自动刷新js版本
+function myrefresh()
+&#123;
+   window.location.reload();
+&#125;
+setTimeout(&#39;myrefresh()&#39;,1000); //指定1秒刷新一次
+</code></pre>
+<h3 id="20-立即执行函数"><a href="#20-立即执行函数" class="headerlink" title="20.立即执行函数"></a>20.立即执行函数</h3><p>把函数定义和函数执行结合到一起就是立即执行函数，也叫自执行函数。<br>这里需要注意两点：1.函数定义仅限于表达式方式定义的函数;2.函数执行实际上就是对函数表达式做一次运算，所以一元运算符都可以让函数执行。</p>
+<pre><code class="javascript">+function()&#123;&#125;();  
 
-    
-  
+!function()&#123;console.log(&quot;IIFE&quot;);&#125;();
 
-  
-    <nav class="pagination">
-        <a class="extend prev" rel="prev" href="/page/34/">Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/33/">33</a><a class="page-number" href="/page/34/">34</a><span class="page-number current">35</span><a class="page-number" href="/page/36/">36</a><a class="page-number" href="/page/37/">37</a><span class="space">&hellip;</span><a class="page-number" href="/page/45/">45</a><a class="extend next" rel="next" href="/page/36/">Next</a>
-    </nav>
-  
-</div>
+void function()&#123;console.log(&quot;IIFE&quot;);&#125;();
 
-                </section>
-            </section>
+~function()&#123;console.log(&quot;IIFE&quot;);&#125;();
 
-            
-            <aside class="sidebar ">
-                
-
-
-<div class="widget" id="widget">
-    
-      
-  <div class="widget-wrap widget-recent-posts">
-    <div class="widget-title"><span>Recent Posts</span></div>
-    <div class="widget-inner">
-      <ul>
-        
-          <li>
-            <a href="/2022/03/24/Blog/1/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/19/News/%E5%BE%90%E5%85%B6%E8%80%80/">徐其耀</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/17/News/%E8%AF%B4%E4%B8%80%E4%B8%8B%E5%BA%95%E5%B1%82%E7%9A%84%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%E6%A0%B7%E5%AD%90/">说一下底层的中国人到底是什么样子</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-    
-      
-  <div class="widget-wrap widget-archive">
-    <div class="widget-title"><span>Archive</span></div>
-    <div class="widget-inner">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/">2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015</a></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget-wrap widget-tags">
-    <div class="widget-title"><span>Tags</span></div>
-    <div class="widget-inner">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ajax/" rel="tag">Ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Node-js/" rel="tag">Node.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web%E5%BC%80%E5%8F%91/" rel="tag">Web开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/" rel="tag">php</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/" rel="tag">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" rel="tag">前端开发</a></li></ul>
-    </div>
-  </div>
-
-
-    
-</div>
-
-<div id="backtop"><i class="icon icon-arrow-up"></i></div>
-            </aside>
-            
-        </div>
-    </div>
-
-    <footer class="footer">
-    <div class="footer-wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </div>
-
-    <!-- Please do not remove this -->
-    <!-- 开源不易，请勿删除 -->
-    <div class="footer-wrap">
-        <div class="footer-inner"> 
-            Blog &copy; 2022<br>
-            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
-        </div>
-    </div>
-
-</footer>
-
-
-
-
-
-
-<script src="/dist/build.js?undefined.js"></script>
-
-
-<script src="/dist/custom.js?undefined.js"></script>
-
-
-
-
-
-
-
-
-
-
-</body>
-
-</html>
+(function()&#123;console.log(&quot;Foo!&quot;);&#125;)();  
+</code></pre>
+<h3 id="21-构建字符串的最优方法"><a href="#21-构建字符串的最优方法" class="headerlink" title="21.构建字符串的最优方法"></a>21.构建字符串的最优方法</h3><p>当你需要遍历数组或对象的时候，不要总想着“for”语句，要有创造性，总能找到更好的办法，例如，像下面这样。</p>
+<pre><code class="javascript">var arr = [&#39;item 1&#39;, &#39;item 2&#39;, &#39;item 3&#39;, ...];  
+var list = &#39;&lt;ul&gt;&lt;li&gt;&#39; + arr.join(&#39;&lt;/li&gt;&lt;li&gt;&#39;) + &#39;&lt;/li&gt;&lt;/ul&gt;&#39;;
+</code></pre>
+<h3 id="22-减少全局变量"><a href="#22-减少全局变量" class="headerlink" title="22.减少全局变量"></a>22.减少全局变量</h3><p> 只要把多个全局变量都整理在一个名称空间下，拟将显著降低与其他应用程序、组件或类库之间产生糟糕的相互影响的可能性。<br>更好的做法：</p>
+<pre><code class="javascript">var DudeNameSpace = &#123;  
+   name : &#39;Jeffrey&#39;,  
+   lastName : &#39;Way&#39;,  
+   doSomething : function() &#123;...&#125;  
+&#125;  
+console.log(DudeNameSpace.name); // Jeffrey 
+</code></pre>
+<h3 id="23-不要给”setInterval”或”setTimeout”传递字符串参数"><a href="#23-不要给”setInterval”或”setTimeout”传递字符串参数" class="headerlink" title="23.不要给”setInterval”或”setTimeout”传递字符串参数"></a>23.不要给”setInterval”或”setTimeout”传递字符串参数</h3><pre><code class="javascript">setInterval(  
+&quot;document.getElementById(&#39;container&#39;).innerHTML += &#39;My new number: &#39; + i&quot;, 3000  
+);
+</code></pre>
+<h3 id="24-”For-in”语句"><a href="#24-”For-in”语句" class="headerlink" title="24.”For in”语句"></a>24.”For in”语句</h3><p>当遍历对象的属性时，你可能会发现还会检索方法函数。为了解决这个问题,总在你的代码里包裹在一个if语句来过滤信息。</p>
+<pre><code class="javascript">for(key in object) &#123;  
+ object[key];
+&#125; 
+</code></pre>
+</div></article></div><nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/34/">Previous</a></div><div class="pagination-next"><a href="/page/36/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/34/">34</a></li><li><a class="pagination-link is-current" href="/page/35/">35</a></li><li><a class="pagination-link" href="/page/36/">36</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/45/">45</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Your name"></figure><p class="title is-size-4 is-block line-height-inherit">Your name</p><p class="is-size-6 is-block">Your title</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Your location</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">133</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">11</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Article/"><span class="level-start"><span class="level-item">Article</span></span><span class="level-end"><span class="level-item tag">30</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Blog/"><span class="level-start"><span class="level-item">Blog</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/English/"><span class="level-start"><span class="level-item">English</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Github/"><span class="level-start"><span class="level-item">Github</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/News/"><span class="level-start"><span class="level-item">News</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Web/"><span class="level-start"><span class="level-item">Web</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Web%E5%BC%80%E5%8F%91/"><span class="level-start"><span class="level-item">Web开发</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Weekly/"><span class="level-start"><span class="level-item">Weekly</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/Wiki/"><span class="level-start"><span class="level-item">Wiki</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E5%91%A8%E5%88%8A/"><span class="level-start"><span class="level-item">周刊</span></span><span class="level-end"><span class="level-item tag">23</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%96%B0%E9%97%BB/"><span class="level-start"><span class="level-item">新闻</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-26T16:00:00.000Z">2022-03-27</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/27/News/%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD/">新闻联播</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/News/">News</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-24T04:47:56.357Z">2022-03-24</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/24/Blog/1/"> </a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-21T16:00:00.000Z">2022-03-22</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E5%91%A8%E5%88%8A/">周刊</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-21T03:55:25.751Z">2022-03-21</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/"> </a></p><p class="is-uppercase"></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2022-03-20T16:00:00.000Z">2022-03-21</time></p><p class="title is-6"><a class="link-muted" href="/2022/03/21/News/%E5%8C%97%E7%BA%A6/">5个航母打击群20万大军就位 北约可随时投入战斗</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/News/">News</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Ajax/"><span class="tag">Ajax</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/CSS/"><span class="tag">CSS</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Javascript/"><span class="tag">Javascript</span><span class="tag is-grey-lightest">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Linux/"><span class="tag">Linux</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Node-js/"><span class="tag">Node.js</span><span class="tag is-grey-lightest">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Python/"><span class="tag">Python</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web%E5%BC%80%E5%8F%91/"><span class="tag">Web开发</span><span class="tag is-grey-lightest">10</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mysql/"><span class="tag">mysql</span><span class="tag is-grey-lightest">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/php/"><span class="tag">php</span><span class="tag is-grey-lightest">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/web/"><span class="tag">web</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/web%E5%BC%80%E5%8F%91/"><span class="tag">web开发</span><span class="tag is-grey-lightest">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"><span class="tag">前端开发</span><span class="tag is-grey-lightest">3</span></a></div></div></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2022/03/"><span class="level-start"><span class="level-item">March 2022</span></span><span class="level-end"><span class="level-item tag">17</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2022/02/"><span class="level-start"><span class="level-item">February 2022</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/11/"><span class="level-start"><span class="level-item">November 2021</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/10/"><span class="level-start"><span class="level-item">October 2021</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/09/"><span class="level-start"><span class="level-item">September 2021</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/08/"><span class="level-start"><span class="level-item">August 2021</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/07/"><span class="level-start"><span class="level-item">July 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/04/"><span class="level-start"><span class="level-item">April 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2021/01/"><span class="level-start"><span class="level-item">January 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/05/"><span class="level-start"><span class="level-item">May 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/04/"><span class="level-start"><span class="level-item">April 2020</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/02/"><span class="level-start"><span class="level-item">February 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2018/10/"><span class="level-start"><span class="level-item">October 2018</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2018/07/"><span class="level-start"><span class="level-item">July 2018</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2018/06/"><span class="level-start"><span class="level-item">June 2018</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/10/"><span class="level-start"><span class="level-item">October 2017</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/09/"><span class="level-start"><span class="level-item">September 2017</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/08/"><span class="level-start"><span class="level-item">August 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/07/"><span class="level-start"><span class="level-item">July 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/04/"><span class="level-start"><span class="level-item">April 2017</span></span><span class="level-end"><span class="level-item tag">8</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/03/"><span class="level-start"><span class="level-item">March 2017</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2017/01/"><span class="level-start"><span class="level-item">January 2017</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/12/"><span class="level-start"><span class="level-item">December 2016</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/10/"><span class="level-start"><span class="level-item">October 2016</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/08/"><span class="level-start"><span class="level-item">August 2016</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/07/"><span class="level-start"><span class="level-item">July 2016</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/04/"><span class="level-start"><span class="level-item">April 2016</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/03/"><span class="level-start"><span class="level-item">March 2016</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/02/"><span class="level-start"><span class="level-item">February 2016</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2016/01/"><span class="level-start"><span class="level-item">January 2016</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/12/"><span class="level-start"><span class="level-item">December 2015</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/11/"><span class="level-start"><span class="level-item">November 2015</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/10/"><span class="level-start"><span class="level-item">October 2015</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2015/02/"><span class="level-start"><span class="level-item">February 2015</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Blog" height="28"></a><p class="size-small"><span>&copy; 2022 Mr.Zhang</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
