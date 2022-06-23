@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>Python 基本语法(一) | Blog</title>
+
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl1lj39vc007cvejgewkzhvob" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+
+<div class="swiper-container article-gallery">
+  <div class="swiper-wrapper">
+    
+      <div class="swiper-slide">
+        <img src="/images/python/20180611001.png" itemprop="image">
+      </div>
+    
+  </div>
+  <!-- 如果需要分页器 -->
+  <div class="swiper-pagination"></div>
+</div>
+
+
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      Python 基本语法(一)
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2018-06-10T16:00:00.000Z" itemprop="datePublished">2018-06-11</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h2 id="1-注释"><a href="#1-注释" class="headerlink" title="1.注释"></a>1.注释</h2><h3 id="单行注释和多行注释"><a href="#单行注释和多行注释" class="headerlink" title="单行注释和多行注释"></a>单行注释和多行注释</h3><pre><code class="python">
+# 我是注释
+
+# 多行注释是三个单引号或者双引号
+
+&quot;&quot;&quot;
+
+我是多行注释，可以写很多很多行的功能说明
+      这就是我牛X指出
+
+      哈哈哈。。。
+
+&quot;&quot;&quot;
+</code></pre>
+<h3 id="python-中文支持"><a href="#python-中文支持" class="headerlink" title="python 中文支持"></a>python 中文支持</h3><pre><code class="python">
+#coding=utf-8
+
+# 或者
+
+# -*- coding:utf-8 -*-
+</code></pre>
+<h2 id="2-基本数据类型"><a href="#2-基本数据类型" class="headerlink" title="2.基本数据类型"></a>2.基本数据类型</h2><p>Python 中的变量不需要声明。每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。</p>
+<p>在 Python 中，变量就是变量，它没有类型，我们所说的”类型”是变量所指的内存中对象的类型。</p>
+<pre><code class="python">
+num1 = 100 #num1就是一个变量，就好一个小菜篮子
+
+num2 = 87  #num2也是一个变量
+
+result = num1 + num2 #把num1和num2这两个&quot;菜篮子&quot;中的数据进行累加，然后放到 result变量中
+
+
+print(result)
+</code></pre>
+<p><img src="/images/python/20180611002.png"></p>
+<h2 id="3-标识符和关键字"><a href="#3-标识符和关键字" class="headerlink" title="3.标识符和关键字"></a>3.标识符和关键字</h2><p>什么是标示符？开发人员在程序中自定义的一些符号和名称</p>
+<p>标示符是自己定义的,如变量名 、函数名等</p>
+<ul>
+<li><p>标示符由字母、下划线和数字组成，且数字不能开头</p>
+</li>
+<li><p>python中的标识符是区分大小写的</p>
+</li>
+<li><p>命名规则：见名知意</p>
+</li>
+</ul>
+<p><strong>关键字</strong></p>
+<p>python一些具有特殊功能的标示符，这就是所谓的关键字</p>
+<p>关键字，是python已经使用的了，所以不允许开发者自己定义和关键字相同的名字的标示符</p>
+<p>例如：</p>
+<pre><code class="python">
+and     as      assert     break     class      continue    def     del
+elif    else    except     exec      finally    for         from    global
+if      in      import     is        lambda     not         or      pass
+print   raise   return     try       while      with        yield
+</code></pre>
+<p>查看关键字</p>
+<pre><code class="python">
+#导入模块
+import  keyword
+//打印关键字列表
+print(keyword.kwlist)
+</code></pre>
+<h2 id="4-输出和输入"><a href="#4-输出和输入" class="headerlink" title="4.输出和输入"></a>4.输出和输入</h2><h3 id="1-基本输出"><a href="#1-基本输出" class="headerlink" title="1.基本输出"></a>1.基本输出</h3><pre><code class="python">
+# 打印提示
+   print(&#39;hello world&#39;)
+   print(&#39;给我的卡---印度语，你好的意思&#39;)
+</code></pre>
+<h3 id="2-格式化输出"><a href="#2-格式化输出" class="headerlink" title="2.格式化输出"></a>2.格式化输出</h3><p>在程序中，看到了%这样的操作符，这就是Python中格式化输出。</p>
+<pre><code class="python">
+age = 18
+    name = &quot;xiaohua&quot;
+    print(&quot;我的姓名是%s,年龄是%d&quot;%(name,age))
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="center">Name</th>
+<th>Academy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">%c</td>
+<td>字符</td>
+</tr>
+<tr>
+<td align="center">%s</td>
+<td>通过str() 字符串转换来格式化</td>
+</tr>
+<tr>
+<td align="center">%i</td>
+<td>有符号十进制整数</td>
+</tr>
+<tr>
+<td align="center">%d</td>
+<td>有符号十进制整数</td>
+</tr>
+<tr>
+<td align="center">%u</td>
+<td>无符号十进制整数</td>
+</tr>
+<tr>
+<td align="center">%o</td>
+<td>八进制整数</td>
+</tr>
+<tr>
+<td align="center">%x</td>
+<td>十六进制整数（小写字母）</td>
+</tr>
+<tr>
+<td align="center">%X</td>
+<td>十六进制整数（大写字母）</td>
+</tr>
+<tr>
+<td align="center">%e</td>
+<td>索引符号（小写’e’）</td>
+</tr>
+<tr>
+<td align="center">%E</td>
+<td>索引符号（大写“E”）</td>
+</tr>
+<tr>
+<td align="center">%f</td>
+<td>浮点实数</td>
+</tr>
+<tr>
+<td align="center">%g</td>
+<td>％f和％e 的简写</td>
+</tr>
+<tr>
+<td align="center">%G</td>
+<td>％f和％E的简写</td>
+</tr>
+</tbody></table>
+<h3 id="3-换行输出"><a href="#3-换行输出" class="headerlink" title="3.换行输出"></a>3.换行输出</h3><p>在输出的时候，如果有\n那么，此时\n后的内容会在另外一行显示</p>
+<pre><code class="python">
+ print(&quot;1234567890\n-------&quot;) # 一行显示1234567890，另外一行显示-------
+</code></pre>
+<h3 id="4-raw-input-和-input"><a href="#4-raw-input-和-input" class="headerlink" title="4.raw_input() 和 input()"></a>4.raw_input() 和 input()</h3><p>python3 没有raw_input()函数，只有input()</p>
+<p>并且 python3中的input与python2中的raw_input()功能一样</p>
+<h2 id="5-运算符"><a href="#5-运算符" class="headerlink" title="5.运算符"></a>5.运算符</h2><p>算术运算符</p>
+<p>“ + - * / // % ** “</p>
+<p>赋值运算符</p>
+<p>= </p>
+<p>复合赋值运算符</p>
+<p>+= -= /= …</p>
+<h2 id="6-数据类型的转换"><a href="#6-数据类型的转换" class="headerlink" title="6.数据类型的转换"></a>6.数据类型的转换</h2><table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">int(x [,base ])</td>
+<td>将x转换为一个整数</td>
+</tr>
+<tr>
+<td align="center">long(x [,base ])</td>
+<td>将x转换为一个长整数</td>
+</tr>
+<tr>
+<td align="center">float(x )</td>
+<td>将x转换到一个浮点数</td>
+</tr>
+<tr>
+<td align="center">complex(real [,imag ])</td>
+<td>创建一个复数</td>
+</tr>
+<tr>
+<td align="center">str(x )</td>
+<td>将对象 x 转换为字符串</td>
+</tr>
+<tr>
+<td align="center">repr(x )</td>
+<td>将对象 x 转换为表达式字符串</td>
+</tr>
+<tr>
+<td align="center">eval(str )</td>
+<td>用来计算在字符串中的有效Python表达式,并返回一个对象</td>
+</tr>
+<tr>
+<td align="center">tuple(s )</td>
+<td>将序列 s 转换为一个元组</td>
+</tr>
+<tr>
+<td align="center">list(s )</td>
+<td>将序列 s 转换为一个列表</td>
+</tr>
+<tr>
+<td align="center">chr(x )</td>
+<td>将一个整数转换为一个字符</td>
+</tr>
+<tr>
+<td align="center">unichr(x )</td>
+<td>将一个整数转换为Unicode字符</td>
+</tr>
+<tr>
+<td align="center">ord(x )</td>
+<td>将一个字符转换为它的整数值</td>
+</tr>
+<tr>
+<td align="center">hex(x )</td>
+<td>将一个整数转换为一个十六进制字符串</td>
+</tr>
+<tr>
+<td align="center">oct(x )</td>
+<td>将一个整数转换为一个八进制字符串</td>
+</tr>
+</tbody></table>
+<h2 id="7-判断语句"><a href="#7-判断语句" class="headerlink" title="7.判断语句"></a>7.判断语句</h2><h3 id="1-if判断语句"><a href="#1-if判断语句" class="headerlink" title="1. if判断语句"></a>1. if判断语句</h3><pre><code class="python">
+age = 30
+
+    print &quot;------if判断开始------&quot;
+
+    if age&gt;=18:
+        print &quot;我已经成年了&quot;
+
+    print &quot;------if判断结束------&quot;
+
+# if嵌套的应用
+
+chePiao = 1     # 用1代表有车票，0代表没有车票
+    daoLenght = 9     # 刀子的长度，单位为cm
+
+    if chePiao == 1:
+        print(&quot;有车票，可以进站&quot;)
+        if daoLenght &lt; 10:
+            print(&quot;通过安检&quot;)
+            print(&quot;终于可以见到Ta了，美滋滋~~~&quot;)
+        else:
+            print(&quot;没有通过安检&quot;)
+            print(&quot;刀子的长度超过规定，等待警察处理...&quot;)
+    else:
+        print(&quot;没有车票，不能进站&quot;)
+        print(&quot;亲爱的，那就下次见了，一票难求啊~~~~(&gt;_&lt;)~~~~&quot;)
+</code></pre>
+<h3 id="2-if-else"><a href="#2-if-else" class="headerlink" title="2. if-else"></a>2. if-else</h3><pre><code class="python">
+chePiao = 1 # 用1代表有车票，0代表没有车票
+   if chePiao == 1:
+       print(&quot;有车票，可以上火车&quot;)
+       print(&quot;终于可以见到Ta了，美滋滋~~~&quot;)
+   else:
+       print(&quot;没有车票，不能上车&quot;)
+       print(&quot;亲爱的，那就下次见了，一票难求啊~~~~(&gt;_&lt;)~~~~&quot;)
+</code></pre>
+<h3 id="3-elif"><a href="#3-elif" class="headerlink" title="3. elif"></a>3. elif</h3><p>当xxx1时做事情1，当xxx2时做事情2，当xxx3时做事情3，那该怎么实现呢？</p>
+<pre><code class="python">
+score = 77
+
+   if score&gt;=90 and score&lt;=100:
+       print(&#39;本次考试，等级为A&#39;)
+   elif score&gt;=80 and score&lt;90:
+       print(&#39;本次考试，等级为B&#39;)
+   elif score&gt;=70 and score&lt;80:
+       print(&#39;本次考试，等级为C&#39;)
+   elif score&gt;=60 and score&lt;70:
+       print(&#39;本次考试，等级为D&#39;)
+   elif score&gt;=0 and score&lt;60:
+       print(&#39;本次考试，等级为E&#39;)
+</code></pre>
+<p>可以和else一起使用</p>
+<pre><code class="python">
+if 性别为男性:
+       输出男性的特征
+       ...
+   elif 性别为女性:
+       输出女性的特征
+       ...
+   else:
+       第三种性别的特征
+       ...
+</code></pre>
+<h2 id="8-循环语句"><a href="#8-循环语句" class="headerlink" title="8.循环语句"></a>8.循环语句</h2><h3 id="1-while"><a href="#1-while" class="headerlink" title="1. while"></a>1. while</h3><pre><code class="python">
+i = 0
+   while i&lt;5:
+       print(&quot;当前是第%d次执行循环&quot;%(i+1))
+       print(&quot;i=%d&quot;%i)
+       i+=1
+</code></pre>
+<p>实例2</p>
+<pre><code class="python">
+#encoding=utf-8
+
+i = 1
+sum = 0
+while i&lt;=100:
+    sum = sum + i
+    i += 1
+
+print(&quot;1~100的累积和为:%d&quot;%sum)
+</code></pre>
+<p>while嵌套</p>
+<pre><code class="python">
+i = 1
+   while i&lt;=9:
+       j=1
+       while j&lt;=i:
+           print(&quot;%d*%d=%-2d &quot;%(j,i,i*j),end=&#39;&#39;)
+           j+=1
+       print(&#39;\n&#39;)
+       i+=1
+</code></pre>
+<h3 id="2-for循环"><a href="#2-for循环" class="headerlink" title="2. for循环"></a>2. for循环</h3><p>在Python中 for循环可以遍历任何序列的项目，如一个列表或者一个字符串等。</p>
+<pre><code class="python">
+ name = &#39;dongGe&#39;
+
+    for x in name:
+        print(x)
+</code></pre>
+<p><img src="/images/python/20180611003.png"></p>
+<h3 id="3-break-和-continue"><a href="#3-break-和-continue" class="headerlink" title="3.break 和 continue"></a>3.break 和 continue</h3><p>break的作用：用来结束整个循环</p>
+<p>continue的作用：用来结束本次循环，紧接着执行下一次的循环</p>
+<p>break/continue只能用在循环中，除此以外不能单独使用</p>
+<p>break/continue在嵌套循环中，只对最近的一层循环起作用</p>
+<h2 id="9-字符串、列表、元组、字典"><a href="#9-字符串、列表、元组、字典" class="headerlink" title="9.字符串、列表、元组、字典"></a>9.字符串、列表、元组、字典</h2><h3 id="1-字符串"><a href="#1-字符串" class="headerlink" title="1. 字符串"></a>1. 字符串</h3><p>双引号或者单引号中的数据，就是字符串</p>
+<pre><code class="python">
+   name = &#39;xiaoming&#39;
+    position = &#39;讲师&#39;
+    address = &#39;北京市昌平区建材城西路金燕龙办公楼1层&#39;
+
+    print(&#39;--------------------------------------------------&#39;)
+    print(&quot;姓名：%s&quot;%name)
+    print(&quot;职位：%s&quot;%position)
+    print(&quot;公司地址：%s&quot;%address)
+    print(&#39;--------------------------------------------------&#39;)
+
+</code></pre>
+<p>结果：</p>
+<pre><code>--------------------------------------------------
+  姓名： xiaoming
+  职位： 讲师
+  公司地址： 北京市昌平区建材城西路金燕龙办公楼1层
+--------------------------------------------------
+</code></pre>
+<h3 id="2-下标和切片"><a href="#2-下标和切片" class="headerlink" title="2.下标和切片"></a>2.下标和切片</h3><h3 id="1-下标索引"><a href="#1-下标索引" class="headerlink" title="1. 下标索引"></a>1. 下标索引</h3><p>所谓“下标”，就是编号，就好比超市中的存储柜的编号，通过这个编号就能找到相应的存储空间【也就是索引】</p>
+<h3 id="2-切片"><a href="#2-切片" class="headerlink" title="2. 切片"></a>2. 切片</h3><p>切片的语法：[起始:结束:步长]</p>
+<pre><code class="python">
+name = &#39;abcdef&#39;
+
+print(name[0:3]) # 取 下标0~2 的字符
+
+# 结果为abc
+
+print(name[3:5]) # 取 下标为3、4 的字符
+
+# 结果为de
+
+print(name[2:]) # 取 下标为2开始到最后的字符
+</code></pre>
+<h3 id="字符串中的常见操作"><a href="#字符串中的常见操作" class="headerlink" title="字符串中的常见操作"></a>字符串中的常见操作</h3><p>这部分，单独一片文章介绍</p>
+<pre><code class="python">
+</code></pre>
+<pre><code class="python">
+</code></pre>
+<pre><code class="python">
+</code></pre>
+<pre><code class="python">
+</code></pre>
+<pre><code class="python">
+</code></pre>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2018/06/24/Github/xiaoxiao/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          小小相册
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/10/06/Github/%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">Mysql-数据查询语言DQL</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/06/23/Blog/%E6%8A%95%E8%B5%84%E6%9C%80%E5%A5%BD%E8%A6%81%E4%B8%93%E6%B3%A8/">投资最好要专注</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/27/News/%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD/">新闻联播</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/24/Blog/1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

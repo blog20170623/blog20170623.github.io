@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>数字周刊 15 | Blog</title>
+
+    <meta name="description" content="&lt;p&gt;&lt;img src=&#34;/images/Github/Weekly/2021032.png&#34;&gt;&lt;/p&gt;">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl1lj39t90044vejg9j7cclpo" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      数字周刊 15
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2021-09-18T16:00:00.000Z" itemprop="datePublished">2021-09-19</time>
+</div>
+
+            
+            <div class="article-category">
+                <a class="article-category-link" href="/categories/%E5%91%A8%E5%88%8A/">周刊</a>
+            </div>
+            
+
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <p><img src="/images/Github/Weekly/2021032.png"></p>
+<span id="more"></span>
+
+<h2 id="1-关于json一些操作"><a href="#1-关于json一些操作" class="headerlink" title="1.关于json一些操作"></a>1.关于json一些操作</h2><p>在javascript中字符串转换json格式：</p>
+<pre><code class="js">var data = JSON.parse(str);
+</code></pre>
+<p>改变json数据中键值：</p>
+<pre><code class="js">function changeTreeDate(arrayJsonObj, oldKey, newKey) &#123;
+    let str = JSON.stringify(arrayJsonObj);
+    let reg = new RegExp(oldKey, &#39;g&#39;);
+    let newStr = str.replace(reg, newKey);
+    return JSON.parse(newStr);
+&#125;
+let newJson = changeTreeDate(data, &#39;week_things&#39;, &#39;title&#39;);
+</code></pre>
+<p>截取json数据的某一部分：</p>
+<pre><code class="js">var mydata = [];
+for (var i = 0; i &lt; data.length; i++) &#123;
+mydata.push(data[i][&#39;fields&#39;]);
+&#125;
+</code></pre>
+<p><a target="_blank" rel="noopener" href="https://www.json.cn/#">json格式化转化</a></p>
+<h2 id="2-div、css基础知识"><a href="#2-div、css基础知识" class="headerlink" title="2.div、css基础知识"></a>2.div、css基础知识</h2><p><a target="_blank" rel="noopener" href="http://www.divcss5.com/rumen/r119.shtml">DIVCSS5</a>致力于成为中小站长与DIV+CSS网页布局开发制作技术人员的CSS学习平台，并提供有意义的div css教程、CSS培训、css+div资源、css div信息(模板特效模块资源)等。</p>
+<h2 id="3-js数组与字符串的相互转换方法"><a href="#3-js数组与字符串的相互转换方法" class="headerlink" title="3.js数组与字符串的相互转换方法"></a>3.js数组与字符串的相互转换方法</h2><p>1、数组转字符串<br>需要将数组元素用某个字符连接成字符串，示例代码如下：</p>
+<pre><code class="js">var a, b;
+a = new Array(0,1,2,3,4);
+b = a.join(&quot;-&quot;);      //&quot;0-1-2-3-4&quot;
+</code></pre>
+<p>2、字符串转数组</p>
+<p>实现方法为将字符串按某个字符切割成若干个字符串，并以数组形式返回，示例代码如下：</p>
+<pre><code class="js">var s = &quot;abc,abcd,aaa&quot;;
+ss = s.split(&quot;,&quot;);// 在每个逗号(,)处进行分解  [&quot;abc&quot;, &quot;abcd&quot;, &quot;aaa&quot;]
+var s1 = &quot;helloworld&quot;;
+ss1 = s1.split(&#39;&#39;);  //[&quot;h&quot;, &quot;e&quot;, &quot;l&quot;, &quot;l&quot;, &quot;o&quot;, &quot;w&quot;, &quot;o&quot;, &quot;r&quot;, &quot;l&quot;, &quot;d&quot;]
+</code></pre>
+<h2 id="5-HTML5-Canvas炫酷背景动画特效"><a href="#5-HTML5-Canvas炫酷背景动画特效" class="headerlink" title="5.HTML5 Canvas炫酷背景动画特效"></a>5.HTML5 Canvas炫酷背景动画特效</h2><p><img src="https://www.helloweba.net/attachments/contimg/2019/canvasbackground-1.jpg"></p>
+<p><a target="_blank" rel="noopener" href="https://www.helloweba.net/demo/2019/canvasBackground/">demo演示</a></p>
+<h2 id="6-Django将queryset转为json对象"><a href="#6-Django将queryset转为json对象" class="headerlink" title="6.Django将queryset转为json对象"></a>6.Django将queryset转为json对象</h2><pre><code class="py">from django.core import serializers
+
+data = WeekPost.objects.all()
+week = serializers.serialize(&quot;json&quot;,data)
+</code></pre>
+<p><img src="https://images2018.cnblogs.com/blog/1119873/201807/1119873-20180720163154903-1740963439.png"></p>
+<h2 id="7-使用Animated动画"><a href="#7-使用Animated动画" class="headerlink" title="7.使用Animated动画"></a>7.使用Animated动画</h2><pre><code class="js">window.onload = function()&#123; 
+     
+　　$(&quot;#login-box&quot;).addClass(&quot;animated bounceInLeft&quot;);
+    console.log(111);
+
+&#125;
+</code></pre>
+<p>window.onload要等整个窗口（包括图片）都加载完才触发 执行</p>
+<p><strong>jQuery加载即执行：</strong></p>
+<pre><code class="js">$(function()&#123; 
+　　$(&quot;#name&quot;).click(function()&#123; 
+　　　　//adding your code here 
+　　&#125;); 
+&#125;); 
+</code></pre>
+<p><strong>增加和移除一个class</strong></p>
+<pre><code class="js">$(&quot;.default&quot;).addClass(&quot;hover_s&quot;);
+$(&quot;.default&quot;).removeClass(&quot;default &quot;);
+</code></pre>
+<h2 id="8-Mac电脑MySQL安装和登录"><a href="#8-Mac电脑MySQL安装和登录" class="headerlink" title="8.Mac电脑MySQL安装和登录"></a>8.Mac电脑MySQL安装和登录</h2><p>在macbookpro 上安装<a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/mysql/">mysql</a></p>
+<p>登陆mysql</p>
+<pre><code>alias mysql=/usr/local/mysql/bin/mysql
+
+mysql -u root -p
+</code></pre>
+<p>这种方式只能临时有效</p>
+<h2 id="9-Django的数据传入js中"><a href="#9-Django的数据传入js中" class="headerlink" title="9.Django的数据传入js中"></a>9.Django的数据传入js中</h2><p>我是先把数据传入Html标签中，然后通过document获取元素，把字符串数据转化成json传入js里面的。</p>
+<p>没有使用ajax</p>
+<h2 id="10-言论"><a href="#10-言论" class="headerlink" title="10.言论"></a>10.言论</h2><blockquote>
+<p>如果你有足够的权，一切的规则都是为你服务的；如果你有足够的钱，任何规则都可以变通的；如果你既没有钱又没有权，所有规则是为你定制的。</p>
+</blockquote>
+<blockquote>
+<p>很多人结婚后能白首不相离的秘诀是：结婚后生儿育女，工作赚钱还房贷，送孩子上幼儿园，上学，上各种学习班，双方父母中有人生病了还得去照顾，这样的家庭生活就像一团乱麻的烂摊子，两个人应付都得焦头烂额，一个人根本应付不了，这种情况下还想离婚？做梦去吧…</p>
+</blockquote>
+<blockquote>
+<p>光是聪明还不够的，还应该有足够的聪明以避免过分聪明。</p>
+</blockquote>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2021/09/25/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A16/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          数字周刊 16
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/09/18/Weekly/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A14/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">数字周刊 14</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/06/23/Blog/%E6%8A%95%E8%B5%84%E6%9C%80%E5%A5%BD%E8%A6%81%E4%B8%93%E6%B3%A8/">投资最好要专注</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/27/News/%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD/">新闻联播</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/24/Blog/1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

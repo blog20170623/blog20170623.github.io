@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>基础概念 | Blog</title>
+
+    <meta name="description" content="&lt;h2 id=&#34;变量&#34;&gt;&lt;a href=&#34;#变量&#34; class=&#34;headerlink&#34; title=&#34;变量&#34;&gt;&lt;/a&gt;变量&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;定义变量：&lt;/strong&gt;&lt;br&gt;var a = 10;&lt;br&gt;var(数据类型) a(变量) = 10(字面值);&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;变量命名规则：&lt;/strong&gt;&lt;br&gt;以字母，美元符号，下划线开头的其他任意组合&lt;br&gt;一些特殊字符关键字是不允许定义变量的，如：js关键字 &lt;/p&gt;
+&lt;p&gt;开发过程中尽量是使用英文定义变量名，并且还要见名知意。&lt;/p&gt;">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl1lj39v5006qvejg3ds288xn" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      基础概念
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2017-04-12T16:19:13.000Z" itemprop="datePublished">2017-04-13</time>
+</div>
+
+            
+            <div class="article-category">
+                <a class="article-category-link" href="/categories/Web%E5%BC%80%E5%8F%91/">Web开发</a>
+            </div>
+            
+
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p><strong>定义变量：</strong><br>var a = 10;<br>var(数据类型) a(变量) = 10(字面值);</p>
+<p><strong>变量命名规则：</strong><br>以字母，美元符号，下划线开头的其他任意组合<br>一些特殊字符关键字是不允许定义变量的，如：js关键字 </p>
+<p>开发过程中尽量是使用英文定义变量名，并且还要见名知意。</p>
+<span id="more"></span>
+
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><h3 id="数字类型（number）"><a href="#数字类型（number）" class="headerlink" title="数字类型（number）"></a>数字类型（number）</h3><p>var num = 10;var pi = 3.1415926;</p>
+<h3 id="字符串（string）"><a href="#字符串（string）" class="headerlink" title="字符串（string）"></a>字符串（string）</h3><p>var c = “A”;</p>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><pre><code class="javascript"> 
+var primes = [1,3,5];
+var misc = [1.1,true,”a”];
+
+primes[3] = 11;  //在索引3上添加一个值
+primes.push(14)  //在数组末尾追加一个值14
+primes.pop()     //删除数组最后一个值
+primes.shift()   //删除数组第一个值
+
+delete primes[3] //删除索引上的值，索引还在
+primes.splice(3) //值和索引一起删除
+
+var arr = primes.concat(misc);  //合并两个数组成一个数组 ,相同的值并不合并。
+</code></pre>
+<h3 id="Math对象"><a href="#Math对象" class="headerlink" title="Math对象"></a>Math对象</h3><pre><code class="javascript">
+Math.abs()：返回参数的绝对值  
+Math.ceil()：向上取整，接受一个参数，返回大于该参数的最小整数。 
+Math.floor()：向下取整  
+Math.max(n,n1,...)：可接受多个参数，返回最大值  
+Math.min(n,n1,..)：可接受多个参数，返回最小值 
+
+Math.round()：四舍五入  
+Math.random()：返回0到1之间的一个伪随机数，可能等于0，但是一定小于1。
+</code></pre>
+<h4 id="console对象"><a href="#console对象" class="headerlink" title="console对象"></a>console对象</h4><pre><code class="javascript">
+console.log(text,text2,...)  
+//用于在console窗口输出信息。它可以接受多个参数，将它们的结果连接起来输出。如果第一个参数是格式字符串（使用了格式占位符），console.log方法将依次用后面的参数替换占位符，然后再进行输出。
+console.info()   //在console窗口输出信息，同时，会在输出信息的前面，加上一个蓝色图标。
+console.debug()  //在console窗口输出信息，同时，会在输出信息的前面，加上一个蓝色图标。
+console.warn()  //输出信息时，在最前面加一个黄色三角，表示警告；
+console.error()  //输出信息时，在最前面加一个红色的叉，表示出错，同时会显示错误发生的堆栈
+console.table()  //可以将复合类型的数据转为表格显示。
+console.count()  //用于计数，输出它被调用了多少次。
+console.dir()    //用来对一个对象进行检查（inspect），并以易于阅读和打印的格式显示。
+console.dirxml()  //用于以目录树的形式，显示DOM节点。
+console.assert()  //接受两个参数，第一个参数是表达式，第二个参数是字符串。只有当第一个参数为false，才会输出第二个参数，否则不会有任何结果。
+
+//这两个方法用于计时，可以算出一个操作所花费的准确时间。
+console.time()
+console.timeEnd()
+//time方法表示计时开始，timeEnd方法表示计时结束。它们的参数是计时器的名称。调用timeEnd方法之后，console窗口会显示“计时器名称: 所耗费的时间”。
+
+console.profile()  //用来新建一个性能测试器（profile），它的参数是性能测试器的名字。
+console.profileEnd()  //用来结束正在运行的性能测试器。
+
+console.group()
+console.groupend()
+//上面这两个方法用于将显示的信息分组。它只在输出大量信息时有用，分在一组的信息，可以用鼠标折叠/展开。
+console.groupCollapsed()  //用于将显示的信息分组，该组的内容，在第一次显示时是收起的（collapsed），而不是展开的。
+
+console.trace()  //显示当前执行的代码在堆栈中的调用路径。
+console.clear()  //用于清除当前控制台的所有输出，将光标回置到第一行。
+</code></pre>
+<p><strong>boolean类型</strong> ，只有两个值true/false<br><strong>日期[Date]</strong><br>    undefined<br><strong>函数类型 function类型</strong><br><strong>对象【object】</strong><br>        object类型 :    date/数组/object/null<br>检测数据类型的方法： typeof()</p>
+<h2 id="控制语句"><a href="#控制语句" class="headerlink" title="控制语句"></a>控制语句</h2><p><strong>if…else</strong></p>
+<h4 id="switch…case语句"><a href="#switch…case语句" class="headerlink" title="switch…case语句"></a><strong>switch…case语句</strong></h4><pre><code class="javascript">
+var weather = &#39;1&#39;;
+switch (weather) &#123;
+    case &#39;1&#39;:
+        alert(&#39;这是1&#39;);
+        break;
+    case &#39;2&#39;:
+        alert(&#39;这是2&#39;);
+        break;
+    default:
+        alert(&#39;这什么都不是&#39;);
+        break;    
+&#125;
+
+//case 后面的值匹配，则执行下面的这条语句，执行完break返回
+//case 匹配不到，则执行default语句
+</code></pre>
+<p><strong>while循环</strong></p>
+<pre><code class="javascript">var i = 0;
+while (i&lt;10) &#123;
+    i++;
+    if (i%2 ===0) &#123;
+        continue;//跳出while循环
+    &#125;
+    console.log(i);
+&#125;
+</code></pre>
+<p><strong>for循环</strong></p>
+<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p><strong>给对象添加属性和方法</strong></p>
+<pre><code class="javascript">var beyond = &#123;
+    name : &#39;黄家驹&#39;,
+    artist : [&#39;1&#39;,&#39;2&#39;]
+&#125;
+beyond.showArtist = function()&#123;
+    document.writeln(this.name);//在浏览器中书写
+&#125;
+
+**循环输出对象里属性**
+var property;
+for (property in beyond)&#123;
+    console.log(beyond[property]);
+&#125;
+</code></pre>
+<h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><h3 id="DOM中获取元素的方法："><a href="#DOM中获取元素的方法：" class="headerlink" title="DOM中获取元素的方法："></a>DOM中获取元素的方法：</h3><pre><code class="javascript">document.getElementById(&#39;div&#39;);//获取DOM树上ID
+document.getElementsByTagName(&#39;p&#39;);//获取DOM树上标签元素
+
+document.querySelector()
+//可以获取标签，class,id元素，第一个，下面的是所有的。
+document.querySelectorAll(&#39;.div&#39;); 
+</code></pre>
+<h3 id="DOM中一些元素的属性"><a href="#DOM中一些元素的属性" class="headerlink" title="DOM中一些元素的属性"></a>DOM中一些元素的属性</h3><p>**nodeName:**元素的标签名称<br>**innerText:**元素的文本内容<br>**parentNode:**元素的父节点<br><strong>previousElementSibling</strong>上一个兄弟节点<br><strong>nextElementSibling</strong>下一个兄弟节点</p>
+<p>**childNodes:**获取元素的子节点（包含元素节点，和文本节点）<br>**childElementCount:**获取元素类型子节点的个数<br>**firstElementChild:**获取第一个元素类型的子节点<br>**lastElementChild:**获取最后一个元素类型的子节点</p>
+<h3 id="DOM节点的增删改"><a href="#DOM节点的增删改" class="headerlink" title="DOM节点的增删改"></a>DOM节点的增删改</h3><pre><code class="javascript">var newLi = document.createElement(&#39;li&#39;);
+
+var newText = document.createTextNode(&#39;张三&#39;);
+newLi.innerText = newText;
+
+document.querySelector(&#39;ul&#39;).appendChild(newLi);
+document.querySelector(&#39;ul&#39;).removeChild(newLi);
+//在ul标签下，添加一个新创建的子标签，位于最后一个。
+.insertBefore()
+//添加到在什么之前。
+</code></pre>
+<p>##事件Event<br>**onclick:**鼠标单击事件<br>**onmouseover:**鼠标移动到DIV区域<br>**onmouseot:**鼠标离开DIV区域</p>
+<p><strong>事件绑定：addEventListener</strong></p>
+<pre><code class="javascript">&#39;use strict&#39;
+//如果给JavaScript代码标志为“严格模式”，则其中运行的所有代码都必然是严格模式下的。 其一：如果在语法检测时发现语法问题，则整个代码块失效，并导致一个语法异常。 其二：如果在运行期出现了违反严格模式的代码，则抛出执行异常。
+
+//注：经过测试IE6,7,8,9均不支持严格模式。
+window.onload = function () &#123;
+    var btn = document.querySelector(&#39;.btn&#39;);
+    function showMessage(event)&#123;
+        console.log(event);
+        event.stopPropagation();//停止事件传播
+    &#125;
+    btn.addEventListener(&#39;click&#39;,showMessage,false);    
+&#125;
+</code></pre>
+<p>##ECMAScript 6新功能<br><strong>let</strong>声明一个块级变量{}，即大括号里的变量。外面是访问不到的。<br><strong>const</strong>声明一个恒量，不可以重新声明一个值，但可以追加值。<br><strong>解构数组</strong></p>
+<pre><code class="javascript">function break()&#123;
+    return  [&#39;a&#39;,&#39;b&#39;,&#39;b&#39;];
+&#125;
+let [A,B,C] = breakfast();
+console.log(A,B,C);//a,b,c
+</code></pre>
+<p><strong>模板字符串：</strong></p>
+<pre><code class="javascript">let name = &#39;xixi&#39;,
+    age = 19;
+let summary = `他的名字是$&#123;name&#125;，年龄是$&#123;age&#125;`;
+cosole.lgo(summary);
+</code></pre>
+<p><strong>字符串的相关操作</strong><br>startsWith()  判断一个字符是不是以某字符串开头。<br>endsWith()  判断一个字符是不是以某字符串结尾。<br>includes()  判断一个字符串是不是包含某个字符串</p>
+<p><strong>给函数形参设置默认值</strong></p>
+<pre><code class="javascript">function sum(x=1,y=2)&#123;
+    return `$&#123;x&#125;+$&#123;y&#125;`;
+&#125;
+</code></pre>
+<p><strong>数组的…</strong></p>
+<pre><code class="javascript">1.
+let name = [&#39;zhangsan&#39;,&#39;lisi&#39;],
+    name2 = [&#39;wang&#39;,...name];
+
+console.log(name2);//wang,zhangsan,lisi
+2.
+function sum(x,y,...arr)&#123;
+    //函数剩余的参数，都放在arr数组中。
+&#125;
+</code></pre>
+<h3 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h3><pre><code class="javascript">let breakfast = (dessert,drink) =&gt; dessert + drink;
+普通函数
+var breakfast = function breakfast(dessert,drink)&#123;
+    return dessert + drink;
+&#125;
+如果不返回结果,执行代码
+let breakfast = (dessert,drink) =&gt; &#123;
+    //执行代码
+&#125;;
+</code></pre>
+<h3 id="对象表达式"><a href="#对象表达式" class="headerlink" title="对象表达式"></a>对象表达式</h3><pre><code class="javascript">原来的
+let student = &#123;
+    play : function()&#123;&#125;
+&#125;
+改进的
+let student = &#123;
+    play()&#123;&#125;
+&#125;
+var drink = &#39;hot name&#39;;
+student[&#39;hot name&#39;] = &#39;wang&#39;;
+student[drink] = &#39;wang&#39;;
+//给对象添加带空格的属性。
+//属性也可以用变量来表示
+</code></pre>
+<p>##chrome调制工具</p>
+<blockquote>
+<p>alt+cmd+j    快速开启控制台</p>
+</blockquote>
+<pre><code class="javascript">
+</code></pre>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2017/04/19/Github/ECMAScript%206%E6%96%B0%E5%8A%9F%E8%83%BD/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          ECMAScript 6
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/04/12/Github/HTML5+CSS3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">HTML5+CSS3笔记</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/06/23/Blog/%E6%8A%95%E8%B5%84%E6%9C%80%E5%A5%BD%E8%A6%81%E4%B8%93%E6%B3%A8/">投资最好要专注</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/27/News/%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD/">新闻联播</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/24/Blog/1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

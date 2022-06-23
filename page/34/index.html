@@ -118,6 +118,168 @@
   
     
       <article
+id="post-Github/RegExp"
+class="article article-type-post"
+>
+
+
+
+<div class="article-inner">
+    
+
+    <div class="article-body">
+    <header class="article-title">
+        <a href="/2016/07/12/Github/RegExp/">4.RegExp</a>
+    </header>
+    <div class="article-entry post-inner-html">
+        
+        <h2 id="5-RegExp"><a href="#5-RegExp" class="headerlink" title="5.RegExp"></a>5.RegExp</h2><p>正则表达式：就是按照某种规则去匹配符合条件的字符串<br>在当前目录下，查找所有txt文件</p>
+<pre><code class="bash">find ./ -name *.txt
+</code></pre>
+<p>Javascript通过内置对象RegExp支持正则表达式</p>
+<h3 id="1-有两种方法实例化RegExp对象"><a href="#1-有两种方法实例化RegExp对象" class="headerlink" title="1.有两种方法实例化RegExp对象"></a>1.有两种方法实例化RegExp对象</h3><ul>
+<li>字面量<pre><code class="javascript">var str = &#39;He is a boy.This is a dog.&#39;
+var reg = /\bis\b/g;
+str.replace(reg,&#39;IS&#39;)
+</code></pre>
+</li>
+<li>构造函数<pre><code class="javascript">var str = &#39;He is a boy.This is a dog.&#39;
+var reg = new RegExp(&#39;\\bis\\b&#39;,&#39;g&#39;);
+str.replace(reg,&#39;IS&#39;)
+</code></pre>
+<h3 id="2-修饰符"><a href="#2-修饰符" class="headerlink" title="2.修饰符"></a>2.修饰符</h3></li>
+<li>g:global全文搜索，如果不添加，搜索到第一个匹配停止</li>
+<li>i: 忽略大小写，默认是大小写铭感 </li>
+<li>m:多行搜索<h3 id="3-字符类"><a href="#3-字符类" class="headerlink" title="3.字符类"></a>3.字符类</h3>使用元字符[]来构建一个简单的类。<pre><code class="javascript">[abc]
+把字符a或b或c归为一类，有它们中间一个就成
+&#39;a1b2c3d4&#39;.replace(/[abc]/g,&#39;x&#39;)//x1x2x3d4
+字符类取反^
+[^abc]不是字符a或b或c的内容
+&#39;a1b2c3d4&#39;.replace(/[^abc]/g,&#39;x&#39;)//axbxcxxx
+</code></pre>
+<h3 id="4-范围类"><a href="#4-范围类" class="headerlink" title="4.范围类"></a>4.范围类</h3><pre><code class="bash">[a-z]
+从a到z的任意字符
+&#39;a1b2c3d4&#39;.replace(/[a-z]/g,&#39;Q&#39;)//Q1Q2Q3Q4
+[a-zA-Z]大小写完全匹配
+[0-9-]
+范围0~9，再加&#39;-&#39;
+</code></pre>
+<h3 id="5-预定义类"><a href="#5-预定义类" class="headerlink" title="5.预定义类"></a>5.预定义类</h3><table>
+<thead>
+<tr>
+<th align="left">字符</th>
+<th align="left">等价类</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">.</td>
+<td align="left">[^\r\n]</td>
+<td align="left">除了回车符和换行符之外的所有字符</td>
+</tr>
+<tr>
+<td align="left">\d</td>
+<td align="left">[0-9]</td>
+<td align="left">数字字符</td>
+</tr>
+<tr>
+<td align="left">\D</td>
+<td align="left">[^0-9]</td>
+<td align="left">非数字字符</td>
+</tr>
+<tr>
+<td align="left">\s</td>
+<td align="left"></td>
+<td align="left">空白符</td>
+</tr>
+<tr>
+<td align="left">\S</td>
+<td align="left"></td>
+<td align="left">非空白符</td>
+</tr>
+<tr>
+<td align="left">\w</td>
+<td align="left">[a-zA-Z_0-9]</td>
+<td align="left">单词字符（字母、数字下划线）</td>
+</tr>
+<tr>
+<td align="left">\W</td>
+<td align="left">[^a-zA-Z_0-9]</td>
+<td align="left">非单词字符</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="6-边界"><a href="#6-边界" class="headerlink" title="6.边界"></a>6.边界</h3><ul>
+<li>^ 以XXX开始</li>
+<li>$ 以XXX结束</li>
+<li>\b 单词边界</li>
+<li>B 非单词边界<h3 id="7-量词"><a href="#7-量词" class="headerlink" title="7.量词"></a>7.量词</h3><table>
+<thead>
+<tr>
+<th align="left">字符</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">？</td>
+<td align="left">出现零次或一次（最多出现一次）</td>
+</tr>
+<tr>
+<td align="left">+</td>
+<td align="left">出现一次或多次（至少出现一次）</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="left">出现零次或多次（任意次）</td>
+</tr>
+<tr>
+<td align="left">{n}</td>
+<td align="left">出现n次</td>
+</tr>
+<tr>
+<td align="left">{n,m}</td>
+<td align="left">出现n到m次</td>
+</tr>
+<tr>
+<td align="left">n,</td>
+<td align="left">至少出现n次</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+
+        
+    </div>
+    </div>
+
+    <div class="article-badge">
+        
+        
+    </div>
+
+</div>
+
+<footer class="article-footer">
+    <div class="article-more-info">
+    <div class="article-date">
+  <time datetime="2016-07-11T16:00:00.000Z" itemprop="datePublished">2016-07-12</time>
+</div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
+        </div>
+    
+    </div>
+</footer>
+
+</article>
+
+    
+  
+    
+      <article
 id="post-Github/Array"
 class="article article-type-post"
 >
@@ -129,7 +291,7 @@ class="article article-type-post"
 
     <div class="article-body">
     <header class="article-title">
-        <a href="/2016/07/10/1001/">2.Array</a>
+        <a href="/2016/07/10/Github/Array/">2.Array</a>
     </header>
     <div class="article-entry post-inner-html">
         
@@ -335,7 +497,7 @@ class="article article-type-post"
 
     <div class="article-body">
     <header class="article-title">
-        <a href="/2016/07/10/1001/">3.Function</a>
+        <a href="/2016/07/10/Github/Function/">3.Function</a>
     </header>
     <div class="article-entry post-inner-html">
         
@@ -422,106 +584,6 @@ OSayColor(); //blue
 
     
   
-    
-      <article
-id="post-Github/String"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2016/07/08/1001/">1.String</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <h2 id="1-String"><a href="#1-String" class="headerlink" title="1.String"></a>1.String</h2><h3 id="String-charAt"><a href="#String-charAt" class="headerlink" title="String.charAt()"></a>String.charAt()</h3><p>取得一个字符串中，第”n”个字符；n是字符串中的索引。</p>
-<h3 id="String-charCodeAt"><a href="#String-charCodeAt" class="headerlink" title="String.charCodeAt()"></a>String.charCodeAt()</h3><p>取得一个字符串中，第”n”个字符的编码</p>
-<h3 id="String-concat-value-…"><a href="#String-concat-value-…" class="headerlink" title="String.concat(value,…)"></a>String.concat(value,…)</h3><p>连接字符串</p>
-<h3 id="String-indexOf"><a href="#String-indexOf" class="headerlink" title="String.indexOf()"></a>String.indexOf()</h3><p>搜索一个子字符串。</p>
-<h3 id="String-length"><a href="#String-length" class="headerlink" title="String.length"></a>String.length</h3><p>一个字符串的长度</p>
-<h3 id="String-replace"><a href="#String-replace" class="headerlink" title="String.replace()"></a>String.replace()</h3><p>替换，第一参数可以是字符串，也可以是正则。第二个参数是替换成的文本内容，或是函数。<br>string.replace(regexp,replacement)</p>
-<h3 id="String-search"><a href="#String-search" class="headerlink" title="String.search()"></a>String.search()</h3><p>根据一个正则表达式查找，返回第一次出现的索引，没有找到返回-1</p>
-<h3 id="String-slice"><a href="#String-slice" class="headerlink" title="String.slice()"></a>String.slice()</h3><p>提取一个子串</p>
-<h3 id="String-split"><a href="#String-split" class="headerlink" title="String.split()"></a>String.split()</h3><p>把一个字符串，切分成一个数组。</p>
-<h3 id="String-substr"><a href="#String-substr" class="headerlink" title="String.substr()"></a>String.substr()</h3><p>提取一个子串</p>
-<h3 id="String-toLowerCase"><a href="#String-toLowerCase" class="headerlink" title="String.toLowerCase()"></a>String.toLowerCase()</h3><p>将一个字符串转化成小写</p>
-<h3 id="String-toUpperCase"><a href="#String-toUpperCase" class="headerlink" title="String.toUpperCase()"></a>String.toUpperCase()</h3><p>将一个字符串转化成大写</p>
-<h3 id="String-trim"><a href="#String-trim" class="headerlink" title="String.trim()"></a>String.trim()</h3><p>去掉开头和结尾处的空白字符</p>
-<pre><code class="javascript">var words = &#39;新浪网是个网站&#39;;
-
-获取字符串的长度
-words.length == 7 
-获取字符串下标为0的字符
-words.charAt(0) == &quot;新&quot;
-获取字符串最后一位字符
-words.charAt( words.length-1 ) == &quot;站&quot;
-
-返回字符串中的子字符所在的索引值，第一次出现的位置。
-words.indexOf(&#39;网&#39;) == 2
-words.indexOf(&#39;网&#39;,3) == 5
-倒序查找
-words.lastIndexOf(&#39;网&#39;) == 5
-1替换前，2替换后
-words.replace(&#39;新浪网&#39;,&#39;sina&#39;) //替换功能
-
-//按某个字符进行切割，并返回数组
-var words = &#39;新浪网,是个网站&#39;;
-var words.split(&#39;,&#39;);
-返回结果是数组[&quot;新浪网&quot;,&quot;是个网站&quot;]
-&quot;1:2:3:4&quot;.split(&quot;:&quot;)//返回[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;]
-&quot;|a|b|c&quot;.split(&quot;|&quot;)//返回[&quot;&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]
-&quot;hello&quot;.split(&quot;&quot;,3)//返回[&quot;h&quot;,&quot;e&quot;,&quot;l&quot;]
-
-
-其他
-s.trim()  //用于去除字符串两端的空格，返回一个新字符串
-s.slice(start,end)   
-//用于从原字符串取出子字符串并返回，不改变原字符串。第一个参数是子字符串的开始位置，第二个参数是子字符串的结束位置（不含该位置）。如果参数是负值，表示从结尾开始倒数计算的位置，即该负值加上字符串长度。
-s.substring(start,end)  
-//用于从原字符串取出子字符串并返回，不改变原字符串.第一个参数表示子字符串的开始位置，第二个位置表示结束位置。
-s.substr(start,length)   
-//用于从原字符串取出子字符串并返回，不改变原字符串。第一个参数是子字符串的开始位置，第二个参数是子字符串的长度。如果第一个参数是负数，表示倒数计算的字符位置。如果第二个参数是负数，将被自动转为0，因此会返回空字符串。
-
-s.match(regexp)   
-var w = &#39;1 plus 2 eee&#39;;
-w.match(/\d+/g)  //返回[&quot;1&quot;,&quot;2&quot;]
-//用于确定原字符串是否匹配某个子字符串，返回一个数组，成员为匹配的第一个字符串。如果没有找到匹配，则返回null。
-</code></pre>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2016-07-07T16:00:00.000Z" itemprop="datePublished">2016-07-08</time>
-</div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript/" rel="tag">Javascript</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
 
   
     <nav class="pagination">
@@ -549,23 +611,23 @@ w.match(/\d+/g)  //返回[&quot;1&quot;,&quot;2&quot;]
       <ul>
         
           <li>
-            <a href="/2022/03/27/1001/">新闻联播</a>
+            <a href="/2022/06/23/Blog/%E6%8A%95%E8%B5%84%E6%9C%80%E5%A5%BD%E8%A6%81%E4%B8%93%E6%B3%A8/">投资最好要专注</a>
           </li>
         
           <li>
-            <a href="/2022/03/24/1001/">(no title)</a>
+            <a href="/2022/03/27/News/%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD/">新闻联播</a>
           </li>
         
           <li>
-            <a href="/2022/03/22/1001/">iPad配置系统邮箱</a>
+            <a href="/2022/03/24/Blog/1/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2022/03/21/1001/">(no title)</a>
+            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
           </li>
         
           <li>
-            <a href="/2022/03/21/1001/">5个航母打击群20万大军就位 北约可随时投入战斗</a>
+            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
           </li>
         
       </ul>

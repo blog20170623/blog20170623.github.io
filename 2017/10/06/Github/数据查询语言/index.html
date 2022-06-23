@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>Mysql-数据查询语言DQL | Blog</title>
+
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl1lj39vk007zvejg2j51cq3u" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      Mysql-数据查询语言DQL
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2017-10-06T05:38:25.000Z" itemprop="datePublished">2017-10-06</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h2 id="基本查询"><a href="#基本查询" class="headerlink" title="基本查询"></a>基本查询</h2><p>select [all | distinct] 字段或表达式列表 [from子句] [where子句] [group by子句] [having子句] [order by子句] [limit子句]；</p>
+<p><strong>[all | distinct]</strong></p>
+<p>用于设定所select出来的数据是否允许出现重复行（完全相同的数据行）</p>
+<p>all：允许出现——默认不写就是All（允许的）。<br>distinct：不允许出现——就是所谓的“消除重复行”。</p>
+<p><strong>from子句</strong></p>
+<p>就是指定数据的来源，其实就是“表”，可以是一个表名，也可以是多个表——多表查询了。</p>
+<p><strong>where子句</strong></p>
+<p>一个概念：where子句，相当于php或js中的if条件语句：其最终结果就是布尔值（true/false）</p>
+<blockquote>
+<p>where子句前面必须有from子句。虽然他们2者都可以省略，但有from可以没有where，而有where必须有from。</p>
+</blockquote>
+<p><strong>between语法：</strong></p>
+<p>XX  between  值1  and  值2；<br>含义：字段XX的值在值1和值2之间（含），相当于：XX &gt;=值1 and XX&lt;=值2；</p>
+<p><strong>in语法：</strong></p>
+<p>XX  in (值1，值2，…….)；<br>含义：XX等于其中所列出的任何一个值都算成立，相当于：<br>XX = 值1  or XX = 值2  or  XX = 值2<br>注意：其中的值1通常是“直接值”，但也可以是后面要学习的“查询结果值”</p>
+<p><strong>like语法（模糊查找）：</strong></p>
+<p>语法形式：　ＸＸ　like  ‘要查找字符’;<br>说明：<br>1，like语法（模糊查找）用于对字符类型的字段进行字符匹配查找<br>2，要查找的字符中，有2个特殊含义的字符：<br>2.1:  %   其含义是：代表任意个数的任意字符<br>2.2:  _   其含义是：代表1个的任意字符<br>2.3：这里的字符，都是指现实中可见的一个“符号”，而不是字节。<br>3，实际应用中的模糊查找，通常都是这样：like ‘%关键字%’；</p>
+<p><strong>[group by子句]</strong></p>
+<p>形式：<br>group  by  字段1  排序方式1，字段2 排序方式2， …..<br>通常都只进行一个字段的分组。<br>含义：<br>什么叫分组？就是将数据以某个字段的值为“依据”，分到不同的“组别”里。<br>分组的结果通常：<br>1，数据结果只能是“组”——没有数据本身的个体<br>2，数据结果就可能“丢失”很多特性，比如没有性别，身高，姓名，等等。<br>3，实际上，结果中通常只剩下“组”作为整体的信息：<br>首先是该组的本身依据值，<br>另外，这几个可能的值：组内成员的个数，组内某些字段的最大值，最小值，平均值，总和值。<br>其他字段，通常就不能用了。<br>4，如果是2个字段或以上分组，则其实是相当于对前一分组的组内，再进行后一依据的分组。<br>上述说明的结果，其实是反映在ｓｅｌｅｃｔ语句中，就是select的“取出项”（输出项）就基本只剩下以上信息了，</p>
+<pre><code class="sql">
+select pinpai,count(*) as 数量,max(price) as 最大值, avg(price) as 平均值 from product group by pinpai;
+</code></pre>
+<p>可见，在分组查询中，基本都依赖于一下几个函数（聚合函数，统计函数）：<br>count(<em>):  统计一组中的数量，通常用“</em>”做参数<br>max(字段名)：获取该字段中在该组中的最大值。<br>min(字段名)：获取该字段中在该组中的最小值。<br>sum(字段名)：获取该字段中在该组中的总和。<br>avg(字段名)：获取该字段中在该组中的平均值。</p>
+<p><strong>[having子句]</strong></p>
+<p>having子句其实概念跟where子句完全一样：<br>where是针对表的字段的值进行“条件判断”<br>having是只针对groupby之后的“组”数据进行条件判断，即<br>其不能使用：字段名&gt;10<br>但可以使用：count(字段名)&gt;10， 或  max(price) &gt; 2000, 但如果字段是分组依据，也可以。<br>当然，通常也可以使用select中的有效的字段别名，比如：</p>
+<pre><code class="sql">select count(*) as f1 , max(f1) as f2  from tab1  group by f3 having f1 &gt; 5 and  f2 &lt; 1000;
+</code></pre>
+<p><strong>[order by子句]</strong></p>
+<p>形式：<br>order  by  排序字段1  [排序方式]，  排序字段2  [排序方式]， …..<br>说明：<br>对前面取得的数据（含from子句，where子句，group子句，having子句的所有结果）来指定按某个字段的大小进行排列（排序），排序只有2种方式：<br>正序： ASC（默认值），可以省略<br>倒序： DESC</p>
+<p><strong>[limit子句]</strong></p>
+<p>形式：<br>limit   [起始行号start]， 要取出的行数num<br>说明：<br>表示将前面取得的数据并前面排好之后（如果有），对之指定取得“局部连续的若干条”数据。<br>起始行号ｓｔａｒｔ：第一行的行号为０，　可以省略，则为默认行号（０）。<br>要取得的行数：如果结果集中从指定的行号开始到最后没有这么多行，则就只取到最后。</p>
+<p>此子句非常有用——主要用于网页上最常见的一个需求（现象）：分页。<br>分页原理：<br>分页的前提：人为指定每页显示的条数，$pageSize = 3;<br>显示（取得）第1页数据：select * from 表名 limit  0,  $pageSize;<br>显示（取得）第2页数据：select * from 表名 limit  3,  $pageSize;<br>显示（取得）第3页数据：select * from 表名 limit  6,  $pageSize;</p>
+<h2 id="连接查询"><a href="#连接查询" class="headerlink" title="连接查询"></a>连接查询</h2><p>连接就是指两个或2个以上的表（数据源）“连接起来成为一个数据源”。</p>
+<p><strong>基本形式</strong></p>
+<p>from 表1  [连接方式]  join 表2  [on 连接条件]；</p>
+<p>连接的结果可以当作一个“表”来使用。常用有以下几种连接方式：</p>
+<p><strong>交叉连接</strong></p>
+<p>实际上，交叉连接是将两个表不设定任何条件的连接结果。<br>交叉连接通常也被叫做“笛卡尔积”——数学上可能比较多。<br>语法：<br>from  表1  [cross]  join  表2  ;    //可见交叉连接只是没有on条件而已。<br>cross这个词也可以省略，还可以使用inner这个词代替</p>
+<p><strong>内连接</strong></p>
+<p>语法：<br>from  表1  [inner]  join  表2  on  表1.字段1=表2.字段2；<br>含义：找出（过滤）在交叉连接的结果表中的表1的字段1的值等于表2的字段2的值的那些行。</p>
+<p><strong>左［外］连接</strong></p>
+<p>形式：<br>from  表1  left  [outer]  join   表2   on  连接条件。<br>说明：<br>1，这里，left是关键字。<br>2，连接条件跟内连接一样。<br>3，含义是：内连接的结果基础上，加上左边表中所有不符合连接条件的数据，相应本应放右边表的字段的位置就自动补为“null”值。</p>
+<p><strong>右［外］连接</strong><br>右连接跟左连接恰恰相反：<br>形式：<br>from  表1  right  [outer]  join   表2   on  连接条件。<br>说明：<br>1，这里，right是关键字。<br>2，连接条件跟内连接一样。<br>3，含义是：在内连接的结果基础上，加上右边表中所有不符合连接条件的数据，相应本应放左边表的字段的位置就自动补为“null”值。</p>
+<p><strong>全［外］连接</strong><br>形式：<br>from  表1  full  [outer]  join  表2  on  连接条件；<br>说明：<br>1，含义：其实是左右连接的“并集”（消除重复项），即内连接的结果，加上左表中不满足条件的所有行（右边对应补null），再加上，右表中不满足条件的所有行（左边对应补null）。<br>2，mysql中其实不认识全[外]连接语法，即mysql这个软件本身不支持全连接的语法。<br>3，此概念在其他数据库有的存在，了解就可以。</p>
+<h2 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h2><p>一个查询，通常就是一个select语句（即出现一次select关键字）<br>但，如果在一个select查询语句中，又出现了select查询语句，此时就称后者为“子查询”，前者就是“主查询”</p>
+<p>形式：</p>
+<p>selelct 字段或表达式或(子查询1) [as 别名] from 表名或(子查询2) where 字段或表达式或(子查询3) 的条件判断</p>
+<p>注意：<br>每个位置所放置的子查询结果，应该符合该位置的数据需求。<br>通常：<br>子查询1应该是一个“数据结果”。<br>子查询2可以是“任意结果”，此位置的查询结果，通常作为数据源，可以给一个别名<br>子查询3可以是一个数据或一列数据甚至是一行数据</p>
+<p><strong>使用in子查询</strong></p>
+<p>in的基本语法形式为：<br>where  操作数  in (值1，值2， ….）<br>则in子查询就是：<br>where  操作数  in ( 列子查询 ）；<br>含义：<br>表示该操作数（字段值） 等于 该子查询的其中任意一个只，就算满足条件。</p>
+<p>更多资料，请查阅笔记11</p>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2018/06/11/Github/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          Python 基本语法(一)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/10/06/Github/%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C%E8%AF%AD%E8%A8%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">Mysql-数据操作语言</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/06/23/Blog/%E6%8A%95%E8%B5%84%E6%9C%80%E5%A5%BD%E8%A6%81%E4%B8%93%E6%B3%A8/">投资最好要专注</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/27/News/%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD/">新闻联播</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/24/Blog/1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

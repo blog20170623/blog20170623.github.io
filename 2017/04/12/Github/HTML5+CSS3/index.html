@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+    <title>HTML5+CSS3笔记 | Blog</title>
+
+    <meta name="description" content="Blog">
+    <meta name="keywords" content="">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/dist/build.css?v=undefined.css">
+
+
+    
+<link rel="stylesheet" href="/dist/custom.css?v=undefined.css">
+
+
+    <script>
+        window.isPost = true
+        window.aomori = {
+            
+            
+            
+        }
+        window.aomori_logo_typed_animated = false
+        window.aomori_search_algolia = false
+
+    </script>
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body>
+
+    <div class="container">
+    <header class="header">
+        <div class="header-type">
+            
+            <div class="header-type-inner">
+                
+                    <a class="header-type-title" href="/">Blog</a>
+                
+    
+                
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="header-menu-inner">
+                
+                <a href="/">Home</a>
+                
+                <a href="/archives">Archives</a>
+                
+                <a href="/photography">Photo</a>
+                
+                <a href="/Python">Python</a>
+                
+            </div>
+            <div class="header-menu-social">
+                
+            </div>
+        </div>
+
+        <div class="header-menu-mobile">
+            <div class="header-menu-mobile-inner" id="mobile-menu-open">
+                <i class="icon icon-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-menu-mobile-menu">
+        <div class="header-menu-mobile-menu-bg"></div>
+        <div class="header-menu-mobile-menu-wrap">
+            <div class="header-menu-mobile-menu-inner">
+                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
+                    <i class="icon icon-cross"></i>
+                </div>
+                <div class="header-menu-mobile-menu-list">
+                    
+                    <a href="/">Home</a>
+                    
+                    <a href="/archives">Archives</a>
+                    
+                    <a href="/photography">Photo</a>
+                    
+                    <a href="/Python">Python</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="main">
+            <section class="inner">
+                <section class="inner-main">
+                    <div class="post">
+    <article id="post-cl1lj39u6005dvejgecmlbvpi" class="article article-type-post" itemscope
+    itemprop="blogPost">
+
+    <div class="article-inner">
+
+        
+          
+        
+        
+        
+
+        
+        <header class="article-header">
+            
+  
+    <h1 class="article-title" itemprop="name">
+      HTML5+CSS3笔记
+    </h1>
+  
+
+        </header>
+        
+
+        <div class="article-more-info article-more-info-post hairline">
+
+            <div class="article-date">
+  <time datetime="2017-04-11T16:30:52.000Z" itemprop="datePublished">2017-04-12</time>
+</div>
+
+            
+
+            
+            <div class="article-tag">
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li></ul>
+            </div>
+            
+
+            
+
+        </div>
+
+        <div class="article-entry post-inner-html hairline" itemprop="articleBody">
+            <h1 id="HTML5-CSS3"><a href="#HTML5-CSS3" class="headerlink" title="HTML5+CSS3"></a>HTML5+CSS3</h1><h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><h3 id="1-HTML5网页结构"><a href="#1-HTML5网页结构" class="headerlink" title="1.HTML5网页结构"></a>1.HTML5网页结构</h3><pre><code class="vbscript-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head lang=&quot;en&quot;&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;网页头部&lt;/header&gt;
+    &lt;nav&gt;导航&lt;/nav&gt;
+    &lt;section&gt;一段内容&lt;/section&gt;
+    &lt;article&gt;与上下文不相关的内容&lt;/article&gt;
+    &lt;footer&gt;页脚&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3 id="2-HTML5新增标记"><a href="#2-HTML5新增标记" class="headerlink" title="2.HTML5新增标记"></a>2.HTML5新增标记</h3><p><strong>header</strong> 一个页面并没有限制header的出现次数，也就是说我们可以在同一页面内，不同的内容区块上分别加上一个header标记<br><strong>mark</strong> 高亮显示，吸引当前用户注意。默认背景色是黄色，可以设置颜色。</p>
+<p>details 和 summary 组合使用，目前只是chrome支持</p>
+<pre><code class="html">&lt;details&gt;
+  &lt;summary&gt;
+    点击我，就展示或隐藏P内容
+  &lt;/summary&gt;
+  &lt;P&gt;
+    我是内容
+  &lt;/P&gt;
+&lt;/details&gt;
+</code></pre>
+<p><strong>progress</strong>显示进度条，可设置长度</p>
+<pre><code class="html">&lt;progress max=&quot;100&quot; value=&quot;85&quot;&gt;&lt;/progress&gt;
+</code></pre>
+<p><strong>meter</strong>显示进度条，可设置长度，高度。</p>
+<pre><code class="html">&lt;meter value=&quot;43&quot; max=&quot;120&quot; min=&quot;0&quot;&gt;43/120&lt;/meter&gt;
+</code></pre>
+<p><strong>加强版的ol</strong></p>
+<pre><code class="html">&lt;ol START=&quot;5&quot; TYPE=&quot;1&quot; REVERSED=&quot;reversed&quot;&gt;
+  &lt;li&gt;...&lt;li&gt;
+  &lt;li&gt;...&lt;li&gt;
+  &lt;li&gt;reversed是倒序&lt;li&gt;
+&lt;/ol&gt;
+</code></pre>
+<h3 id="3-web-storage"><a href="#3-web-storage" class="headerlink" title="3.web storage"></a>3.web storage</h3><p><strong>临时储存：</strong></p>
+<pre><code class="javascript">//储存
+sessionStorage.setItme(&#39;key&#39;,&#39;value&#39;);
+//读取
+sessionStorage.getItem(&#39;key&#39;);
+</code></pre>
+<p><strong>永久储存</strong></p>
+<pre><code class="javascript">//储存
+localStorage.setItme(&#39;key&#39;,&#39;value&#39;);
+//读取
+localStorage.getItem(&#39;key&#39;);
+//清空数据
+localStorage.clear();
+</code></pre>
+<h3 id="4-audio-和-video"><a href="#4-audio-和-video" class="headerlink" title="4.audio 和 video"></a>4.audio 和 video</h3><p>使用方法：</p>
+<pre><code class="html">&lt;audio src=&quot;MP3.mp3&quot; controls=&quot;controls&quot;&gt;对于不支持的浏览器，这里的你内容会显示&lt;/audio&gt;
+source，可以为同一个媒体数据指定多个播放格式月编码方式，以确保浏览器可以从中选择一种自己支持的播放器进行播放。
+&lt;video width=&quot;750&quot; height=&quot;400&quot; src=&quot;time.mp4&quot;&gt;
+  &lt;source src=&quot;video.m4v&quot; type=&quot;video/mp4&quot;&gt;
+  &lt;source src=&quot;video.webm&quot; type=&quot;video/webm&quot;&gt;
+  &lt;source src=&quot;video.ogv&quot; type=&quot;video/ogg&quot;&gt;
+  &lt;source src=&quot;video.mp4&quot;&gt;
+&lt;/video&gt;
+&lt;!--
+autoplay=&quot;autoplay&quot; 网页加载完成之后就开始自动播放。
+指定是否对数据进行预加载。
+preload=&quot;none | metadata | auto (默认值)&quot;
+
+--&gt;
+</code></pre>
+<h3 id="5-HTML5拖放"><a href="#5-HTML5拖放" class="headerlink" title="5.HTML5拖放"></a>5.HTML5拖放</h3><p><a target="_blank" rel="noopener" href="https://www.html5rocks.com/zh/tutorials/dnd/basics/">HTML5拖放</a></p>
+<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><h3 id="1-选择器"><a href="#1-选择器" class="headerlink" title="1.选择器"></a>1.选择器</h3><h4 id=""><a href="#" class="headerlink" title="*"></a>*</h4><h4 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h4><h4 id="class选择器"><a href="#class选择器" class="headerlink" title="class选择器"></a>class选择器</h4><h4 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h4><pre><code class="css">a &#123; color: red; &#125;
+ul &#123; margin-left: 0; &#125;
+</code></pre>
+<h4 id="X-Y-后代选择器"><a href="#X-Y-后代选择器" class="headerlink" title="X Y 后代选择器"></a>X Y 后代选择器</h4><pre><code class="css">li a &#123;
+text-decoration: none;
+&#125;
+</code></pre>
+<h4 id="X-gt-Y"><a href="#X-gt-Y" class="headerlink" title="X &gt; Y"></a>X &gt; Y</h4><p>X Y和X &gt; Y的区别是后者只会选中直接后代。</p>
+<h4 id="X-Y-临近元素选择器"><a href="#X-Y-临近元素选择器" class="headerlink" title="X+Y 临近元素选择器"></a>X+Y 临近元素选择器</h4><p>这是邻近元素选择器，只会选中紧接在另一个元素后的元素。这上面的示例中，只有每个ul后面的第一个段落是红色的。</p>
+<pre><code class="css">ul + p &#123;
+ color: red;
+&#125;
+</code></pre>
+<h4 id="X-visited-and-X-link"><a href="#X-visited-and-X-link" class="headerlink" title="X:visited and X:link"></a>X:visited and X:link</h4><p>我们使用:link伪类来定义所有还没点击的链接。<br>另外还有:visited伪类可以让我们给曾经点击过或者访问过的链接添加样式。</p>
+<pre><code class="css">a:link &#123; color: red; &#125;
+a:visted &#123; color: purple; &#125;
+</code></pre>
+<h4 id="X-title"><a href="#X-title" class="headerlink" title="X[title]"></a>X[title]</h4><pre><code class="css">a[title] &#123;
+ color: green;
+&#125;
+</code></pre>
+<h4 id="X-checked"><a href="#X-checked" class="headerlink" title="X:checked"></a>X:checked</h4><pre><code class="css">input[type=radio]:checked &#123;
+ border: 1px solid black;
+&#125;
+</code></pre>
+<h4 id="X-hover"><a href="#X-hover" class="headerlink" title="X:hover"></a>X:hover</h4><p>给鼠标划过的元素添加样式</p>
+<pre><code class="css">div:hover &#123;
+background: #e3e3e3;
+&#125;
+</code></pre>
+<h4 id="X-nth-child-n"><a href="#X-nth-child-n" class="headerlink" title="X:nth-child(n)"></a>X:nth-child(n)</h4><p>要注意的是nth-child指序列里的第n个元素，从1数起。如果你想匹配列表里的第二个元素，可以使用li:nth-child(2)。</p>
+<pre><code class="css">li:nth-child(3) &#123;
+ color: red;
+&#125;
+</code></pre>
+<h4 id="X-first-child"><a href="#X-first-child" class="headerlink" title="X:first-child"></a>X:first-child</h4><p>用于选中母元素的第一个子元素，常常用于去掉第一个或最后一个元素的边框。</p>
+<pre><code class="css">ul li:first-child &#123;
+ border-top: none;
+&#125;
+</code></pre>
+<h4 id="X-last-child"><a href="#X-last-child" class="headerlink" title="X:last-child"></a>X:last-child</h4><h4 id="p-class-类选择器"><a href="#p-class-类选择器" class="headerlink" title="p.class  类选择器"></a>p.class  类选择器</h4><hr>
+<p>CSS 分组 和 嵌套 选择器</p>
+<pre><code class="css">h1,h2,p
+&#123;
+color:green;
+&#125;
+</code></pre>
+<h3 id="2-伪元素选择器"><a href="#2-伪元素选择器" class="headerlink" title="2.伪元素选择器"></a>2.伪元素选择器</h3><p>使用方法：<br>选择器：伪元素{属性：值}<br>选择器：伪元素{属性：值}</p>
+<h4 id="1-first-line"><a href="#1-first-line" class="headerlink" title="1.first-line"></a>1.first-line</h4><p>用于向某个元素中的第一行文字使用样式。</p>
+<h4 id="2-first-letter"><a href="#2-first-letter" class="headerlink" title="2.first-letter"></a>2.first-letter</h4><p>用于向某个元素中的文字的首字母（欧美文字）或是第一个字（中文）使用样式</p>
+<h4 id="3-before"><a href="#3-before" class="headerlink" title="3.before"></a>3.before</h4><p>用于某个元素之前插入一些内容</p>
+<h4 id="4-after"><a href="#4-after" class="headerlink" title="4.after"></a>4.after</h4><p>用于在某个元素之后插入内容</p>
+<pre><code class="html">&lt;style&gt;
+p:first-line&#123;colro:red;&#125;
+p:first-letter&#123;font-size:30px;&#125;
+
+li:before&#123;
+  content:&quot;...追加的文字&quot;;
+  color:red;
+&#125;
+li:after&#123;
+  content:&quot;...追加的文字&quot;;
+  color:green;
+&#125;
+&lt;/style&gt;
+&lt;p&gt;
+会被改的第一行&lt;br/&gt;
+不会被改变的一行文字
+&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a&gt;一些文字&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h3 id="3-结构性伪类选择器"><a href="#3-结构性伪类选择器" class="headerlink" title="3.结构性伪类选择器"></a>3.结构性伪类选择器</h3><h4 id="root"><a href="#root" class="headerlink" title="root"></a>root</h4><p>将样式绑定到页面的根元素中</p>
+<h4 id="not"><a href="#not" class="headerlink" title="not"></a>not</h4><p>相对某个结构元素使用样式，但是想排除这个结构元素下面的子结构元素。</p>
+<h4 id="empty"><a href="#empty" class="headerlink" title="empty"></a>empty</h4><p>当指定元素中内容为空白的时候使用的样式，多用于表格</p>
+<h4 id="target"><a href="#target" class="headerlink" title="target"></a>target</h4><p>对页面中某个target元素指定样式，该样式只在用户点击了页面中的超链接，并跳转到target元素后起作用。</p>
+<p><strong>see also</strong><br><a target="_blank" rel="noopener" href="http://www.cnblogs.com/xuan-0107/p/4450577.html">结构性伪类</a><br><a target="_blank" rel="noopener" href="http://www.cnblogs.com/coco1s/p/6067305.html">2</a></p>
+<hr>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><p><a target="_blank" rel="noopener" href="http://caibaojian.com/css3-card.html">CSS3卡牌旋转滑动效果</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.daqianduan.com/6281.html">手机移动端WEB资源整合</a></p>
+<h3 id="前端博客"><a href="#前端博客" class="headerlink" title="前端博客"></a>前端博客</h3><p><a target="_blank" rel="noopener" href="https://www.xiabingbao.com/archive.html">Wenzi</a><br><a target="_blank" rel="noopener" href="http://qitiancom.com/">前端开发-朱宝详</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.haorooms.com/">http://www.haorooms.com/</a></p>
+<p><a target="_blank" rel="noopener" href="http://caibaojian.com/links">前端网址导航</a></p>
+
+        </div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<nav class="article-nav">
+  
+    <a href="/2017/04/13/Github/javascript%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-caption">次の記事</div>
+      <div class="article-nav-title">
+        
+          基础概念
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/04/06/Github/HTML%20+%20CSS/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-caption">前の記事</div>
+      <div class="article-nav-title">HTML + CSS 笔记</div>
+    </a>
+  
+</nav>
+
+
+   
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                </section>
+            </section>
+
+            
+            <aside class="sidebar ">
+                
+
+
+<div class="widget" id="widget">
+    
+      
+  <div class="widget-wrap">
+    <div class="widget-inner">
+      <div class="toc post-toc-html"></div>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-recent-posts">
+    <div class="widget-title"><span>Recent Posts</span></div>
+    <div class="widget-inner">
+      <ul>
+        
+          <li>
+            <a href="/2022/06/23/Blog/%E6%8A%95%E8%B5%84%E6%9C%80%E5%A5%BD%E8%A6%81%E4%B8%93%E6%B3%A8/">投资最好要专注</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/27/News/%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD/">新闻联播</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/24/Blog/1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+            </aside>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- Please do not remove this -->
+    <!-- 开源不易，请勿删除 -->
+    <div class="footer-wrap">
+        <div class="footer-inner"> 
+            Blog &copy; 2022<br>
+            Powered By Hexo · Theme By <a href="https://linhong.me/" target="_blank">Aomori</a> · <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Github</a>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<script src="/dist/build.js?undefined.js"></script>
+
+
+<script src="/dist/custom.js?undefined.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

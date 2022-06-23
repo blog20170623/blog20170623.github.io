@@ -118,6 +118,136 @@
   
     
       <article
+id="post-Github/php基础知识"
+class="article article-type-post"
+>
+
+
+
+<div class="article-inner">
+    
+
+    <div class="article-body">
+    <header class="article-title">
+        <a href="/2017/09/29/Github/php%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">php基础知识——变量和常量</a>
+    </header>
+    <div class="article-entry post-inner-html">
+        
+        <h2 id="php基础知识"><a href="#php基础知识" class="headerlink" title="php基础知识"></a>php基础知识</h2><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><p><strong>语法环境</strong></p>
+<pre><code class="php">&lt;?php
+
+...这里是php代码
+
+语句结束符，用分号
+
+?&gt;
+</code></pre>
+<p><strong>区分大小写</strong></p>
+<ul>
+<li>变量名区分大小写</li>
+<li>常量通常使用大写【区分大小写，可设置不区分】</li>
+<li>函数名不区分大小写</li>
+<li>系统中的关键字不区分大小写，比如if,else,for</li>
+</ul>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量是包含了一个名称和一个值得“标识符”</p>
+<p>变量必须以$开头，后面紧跟变量名。</p>
+<p><strong>命名规则</strong></p>
+<p>只能使用数字、下划线、大小写字母，且数字不能开头，不能喝关键字重名。</p>
+<p><strong>变量的使用</strong></p>
+<p>定义：直接给变量赋值，就是定义；不支持js那种‘定义但不赋值’的语法。【第一次给一个变量赋值，就算定义变量】</p>
+<p>判断变量是否存在 isset() ,存在返回true;</p>
+<p>修改：第二次及以后给一个变量赋值，就是修改变量值。</p>
+<p>删除：unset(),就是断开变量名和数据之间的“引用关系”</p>
+<p><strong>变量间的两种传值方式</strong></p>
+<ul>
+<li><p>值传递：默认</p>
+</li>
+<li><p>引用传值：变量2拷贝了变量1的数据，当数据发生变化，两个变量都发生变化。</p>
+</li>
+</ul>
+<p><strong>可变变量</strong></p>
+<pre><code class="php">&lt;?php
+
+$v1 = &quot;abc&quot;;
+$abc = 10;
+
+echo $$v1;  //可变变量，即等于10
+
+?&gt;
+</code></pre>
+<h3 id="预定义变量"><a href="#预定义变量" class="headerlink" title="预定义变量"></a>预定义变量</h3><p>预定义变量又叫超全局变量，超全局变量都是数组，包括：</p>
+<blockquote>
+<p>$_GET, $_POST, $_SERVER, $_REQUEST, $GLOBALS,  $_COOKIE, $_SESSION, ……….（大约10个）</p>
+</blockquote>
+<p><strong>$_GET</strong></p>
+<p>其作用是：用户填写表单数据，以get方式提交数据给页面abc.php，并以name属性来标识数据。</p>
+<blockquote>
+<p>var_dump($_GET)用于输出一个变量的“最完整信息”，这里是在试图输出$_GET这个‘数组’</p>
+</blockquote>
+<p><strong>$_POST</strong></p>
+<p>其作用是：用户填写表单数据，以post方式提交数据给页面abc.php，并以name属性来标识数据。</p>
+<p><strong>$_REQUEST</strong></p>
+<p>其作用是：$_GET 和 $_POST 综合，都可以取数据。</p>
+<p><strong>$_SERVER</strong></p>
+<p>该变量存储了服务器端或客户端的一些请求信息或设置信息，比较多，而且不同的服务器和不同的请求页面，其数据项都可能不同。</p>
+<ul>
+<li>REMOTE_ADDR 用户的IP地址</li>
+<li>SERVER_ADDR 服务器端的IP地址</li>
+<li>SERVER_NAME  服务器名</li>
+<li>DOCUMENT_ROOT  站点绝对路径</li>
+<li>PHP_SELF  当前网页的文件路径</li>
+<li>QUERY_STRING  表示一个get请求的整体字符串,如</li>
+</ul>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="http://www.abc.com/abc.php?a=5&amp;b=10%E8%BF%9E%E6%8E%A5%E5%9C%B0%E5%9D%80%E4%B8%AD%E7%9A%84%E2%80%9Ca=5&amp;b=10%E2%80%9D">http://www.abc.com/abc.php?a=5&amp;b=10连接地址中的“a=5&amp;b=10”</a></p>
+</blockquote>
+<p><strong>$GLOBALS</strong></p>
+<p>似乎是一个多余的变量：它只是把我们自己定义的所有全局变量存储到该数组中：<br>变量名就是该数组的下标（键名），变量值就是对应的值。</p>
+<h3 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h3><p>使用形式：define(“常量名”,”常量值”)</p>
+<p>或者：const  常量名 = 常量值 ;</p>
+<p>使用constant(“常量名”)函数获取常量值。</p>
+<p>常量值是不可以改变，不可以销毁，具有超全局作用域，常量只能存储标量类型：int,float,string,bool</p>
+<p>defined()判读常量是否存在</p>
+<h3 id="预定义常量"><a href="#预定义常量" class="headerlink" title="预定义常量"></a>预定义常量</h3><p>php语言中，预定了大量的常量，可以直接使用。如，M_PI(圆周率)</p>
+<h3 id="魔术常量"><a href="#魔术常量" class="headerlink" title="魔术常量"></a>魔术常量</h3><p>魔术常量其实是一种值会随着一定的条件（环境）而变化的常量，形式和使用上是常量，但实际上，其值会改变。</p>
+<p>例如：</p>
+<pre><code class="php">&lt;?php
+
+__DIR__（当前网页文件的所在目录），__FILE__（当前网页文件）
+?&gt;
+</code></pre>
+
+        
+    </div>
+    </div>
+
+    <div class="article-badge">
+        
+        
+    </div>
+
+</div>
+
+<footer class="article-footer">
+    <div class="article-more-info">
+    <div class="article-date">
+  <time datetime="2017-09-29T08:34:31.000Z" itemprop="datePublished">2017-09-29</time>
+</div>
+    
+    
+        <div class="article-tag">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/" rel="tag">php</a></li></ul>
+        </div>
+    
+    </div>
+</footer>
+
+</article>
+
+    
+  
+    
+      <article
 id="post-Github/web_word"
 class="article article-type-post"
 >
@@ -129,7 +259,7 @@ class="article article-type-post"
 
     <div class="article-body">
     <header class="article-title">
-        <a href="/2017/09/28/1001/">Web开发中常用到的单词</a>
+        <a href="/2017/09/28/Github/web_word/">Web开发中常用到的单词</a>
     </header>
     <div class="article-entry post-inner-html">
         
@@ -183,7 +313,7 @@ class="article article-type-post"
 
     <div class="article-body">
     <header class="article-title">
-        <a href="/2017/08/29/1001/">Express 框架</a>
+        <a href="/2017/08/29/Github/Express%20%E6%A1%86%E6%9E%B6/">Express 框架</a>
     </header>
     <div class="article-entry post-inner-html">
         
@@ -389,100 +519,6 @@ app.get(&quot;/admin/login&quot;,function(req,res)&#123;
 
     
   
-    
-      <article
-id="post-Github/移动端布局"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2017/07/14/1001/">移动端布局</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <h1 id="移动端布局"><a href="#移动端布局" class="headerlink" title="移动端布局"></a>移动端布局</h1><h2 id="1-拉勾网的做法"><a href="#1-拉勾网的做法" class="headerlink" title="1.拉勾网的做法"></a>1.拉勾网的做法</h2><p>如果html5要适应各种分辨率的移动设备，应该使用rem这样的尺寸单位，同时给出了一段针对各个分辨率范围在html上设置font-size的代码：</p>
-<pre><code class="css">html&#123;font-size:10px&#125;
-@media screen and (min-width:321px) and (max-width:375px)&#123;html&#123;font-size:11px&#125;&#125;
-@media screen and (min-width:376px) and (max-width:414px)&#123;html&#123;font-size:12px&#125;&#125;
-@media screen and (min-width:415px) and (max-width:639px)&#123;html&#123;font-size:15px&#125;&#125;
-@media screen and (min-width:640px) and (max-width:719px)&#123;html&#123;font-size:20px&#125;&#125;
-@media screen and (min-width:720px) and (max-width:749px)&#123;html&#123;font-size:22.5px&#125;&#125;
-@media screen and (min-width:750px) and (max-width:799px)&#123;html&#123;font-size:23.5px&#125;&#125;
-@media screen and (min-width:800px)&#123;html&#123;font-size:25px&#125;&#125;
-</code></pre>
-<p>在实际项目中，把与元素尺寸有关的css，如width,height,line-height,margin,padding等都以rem作为单位，这样页面在不同设备下就能保持一致的网页布局。举例来说，网页有一个.item类，设置了width为3.4rem，该类在不同分辨率下对应的实际宽度如下：</p>
-<pre><code class="vbscript-html">321px &lt;= device-width &lt;= 375px，font-size:11px        ---&gt;  .item的width：34px
-376px &lt;= device-width &lt;= 414px，font-size:12px        ---&gt;  .item的width：37.4px
-415px &lt;= device-width &lt;= 639px，font-size:15px        ---&gt;  .item的width：40.8px
-640px &lt;= device-width &lt;= 719px，font-size:20px        ---&gt;  .item的width：51px
-720px &lt;= device-width &lt;= 749px，font-size:22.5px      ---&gt;  .item的width：76.5px
-750px &lt;= device-width &lt;= 799px，font-size:23.5px      ---&gt;  .item的width：79.8999999px
-800px &lt;= device-width         ，font-size:25px        ---&gt;  .item的width：85px
-</code></pre>
-<p>以上代码乍看没啥问题，响应式设计不就应该是这么干的吗？但是从工作量和复杂度方面来考虑，它有以下几个不足：</p>
-<ul>
-<li><p>（1）.item类在所有设备下的width都是3.4rem，但在不同分辨率下的实际像素是不一样的，所以在有些分辨率下，width的界面效果不一定合适，有可能太宽，有可能太窄，这时候就要对width进行调整，那么就需要针对.item写媒介查询的代码，为该分辨率重新设计一个rem值。然而，这里有7种媒介查询的情况，css又有很多跟尺寸相关的属性，哪个属性在哪个分辨率范围不合适都是不定的，最后会导致要写很多的媒介查询才能适配所有设备，而且在写的时候rem都得根据某个分辨率html的font-size去算，这个计算可不见得每次都那么容易，比如40px / 23.5px，这个rem值口算不出来吧！由此可见这其中的麻烦有多少。</p>
-</li>
-<li><p>（2）以上代码中给出的7个范围下的font-size不一定是合适的，这7个范围也不一定合适，实际有可能不需要这么多，所以找出这些个范围，以及每个范围最合适的font-size也很麻烦</p>
-</li>
-<li><p>（3）设计稿都是以分辨率来标明尺寸的，前端在根据设计稿里各个元素的像素尺寸转换为rem时，该以哪个font-size为准呢？这需要去写才能知道。</p>
-</li>
-</ul>
-<h3 id="弹性布局"><a href="#弹性布局" class="headerlink" title="弹性布局"></a>弹性布局</h3><p>关键元素高宽和位置都不变，只有容器元素在做伸缩变换。对于这类app，记住一个开发原则就好：文字流式，控件弹性，图片等比缩放。以图描述：</p>
-<p><img src="/images/web/170703-1.png"></p>
-<p>这个规则是一套基本的适配规则，对于这种简单app来说已经足够，同时它也是后面要说的rem布局的基础。</p>
-<h2 id="2-网易的做法"><a href="#2-网易的做法" class="headerlink" title="2.网易的做法"></a>2.网易的做法</h2><p>网易页面上html的font-size不是预先通过媒介查询在css里定义好的，而是通过js计算出来的，所以当分辨率发生变化时，html的font-size就会变。</p>
-<p>这个deviceWidth通过document.documentElement.clientWidth就能取到了，所以当页面的dom ready后，做的第一件事情就是：</p>
-<pre><code class="javascript">var deviceWidth = document.documentElement.clientWidth;
-
-//当deviceWidth大于设计稿的横向分辨率时，html的font-size始终等于横向分辨率/body元素宽：
-
-if(deviceWidth &gt; 640) deviceWidth = 640;
-document.documentElement.style.fontSize = deviceWidth / 6.4 + &#39;px&#39;;
-</code></pre>
-<p>视口要如下设置:</p>
-<pre><code class="html">&lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1,maximum-scale=1, minimum-scale=1&quot;&gt;
-</code></pre>
-<h2 id="更多参考"><a href="#更多参考" class="headerlink" title="更多参考"></a>更多参考</h2><hr>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="http://www.cnblogs.com/HCJJ/p/6347242.html">http://www.cnblogs.com/HCJJ/p/6347242.html</a><br><a target="_blank" rel="noopener" href="http://blog.csdn.net/aiolos1111/article/details/51967744">http://blog.csdn.net/aiolos1111/article/details/51967744</a><br><a target="_blank" rel="noopener" href="http://www.cnblogs.com/2050/p/3877280.html">http://www.cnblogs.com/2050/p/3877280.html</a></p>
-</blockquote>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2017-07-14T13:20:36.000Z" itemprop="datePublished">2017-07-14</time>
-</div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web%E5%BC%80%E5%8F%91/" rel="tag">web开发</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
 
   
     <nav class="pagination">
@@ -510,23 +546,23 @@ document.documentElement.style.fontSize = deviceWidth / 6.4 + &#39;px&#39;;
       <ul>
         
           <li>
-            <a href="/2022/03/27/1001/">新闻联播</a>
+            <a href="/2022/06/23/Blog/%E6%8A%95%E8%B5%84%E6%9C%80%E5%A5%BD%E8%A6%81%E4%B8%93%E6%B3%A8/">投资最好要专注</a>
           </li>
         
           <li>
-            <a href="/2022/03/24/1001/">(no title)</a>
+            <a href="/2022/03/27/News/%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD/">新闻联播</a>
           </li>
         
           <li>
-            <a href="/2022/03/22/1001/">iPad配置系统邮箱</a>
+            <a href="/2022/03/24/Blog/1/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2022/03/21/1001/">(no title)</a>
+            <a href="/2022/03/22/Github/iPad%E9%85%8D%E7%BD%AE%E9%82%AE%E7%AE%B1/">iPad配置系统邮箱</a>
           </li>
         
           <li>
-            <a href="/2022/03/21/1001/">5个航母打击群20万大军就位 北约可随时投入战斗</a>
+            <a href="/2022/03/21/Wiki/%E6%B3%95%E5%BE%8B%E6%9D%A1%E6%96%87/">(no title)</a>
           </li>
         
       </ul>
