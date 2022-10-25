@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="计算公式： 最大生命值&#x3D;力量×18 物理攻击力&#x3D;主属性+敏捷×0.4 魔法强度 &#x3D;智力×2.4 物理护甲 &#x3D; 力量÷7+敏捷÷14 魔法抗性 &#x3D;智力÷10 物理暴击 &#x3D;敏捷÷2.5 肉盾    刚被猪 斧王    力量 1900+500 2159+612   智力 1345+123 1167+110   敏捷 1209+108 1312+118   生命值 45404+19523 50204+19">
+<meta property="og:type" content="article">
+<meta property="og:title" content="刀塔传奇">
+<meta property="og:url" content="http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="计算公式： 最大生命值&#x3D;力量×18 物理攻击力&#x3D;主属性+敏捷×0.4 魔法强度 &#x3D;智力×2.4 物理护甲 &#x3D; 力量÷7+敏捷÷14 魔法抗性 &#x3D;智力÷10 物理暴击 &#x3D;敏捷÷2.5 肉盾    刚被猪 斧王    力量 1900+500 2159+612   智力 1345+123 1167+110   敏捷 1209+108 1312+118   生命值 45404+19523 50204+19">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/Weekly/2021028.jpeg">
+<meta property="article:published_time" content="2022-10-13T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-10-24T21:16:46.291Z">
+<meta property="article:author" content="Mr.Zhang">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/Weekly/2021028.jpeg">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>刀塔传奇</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body class="max-width mx-auto px3 ">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2022/10/21/Gitbook%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2022/09/30/Weekly/%E5%91%A8%E5%88%8A02/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&text=刀塔传奇"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&title=刀塔传奇"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&is_video=false&description=刀塔传奇"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=刀塔传奇&body=Check out this article: http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&title=刀塔传奇"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&title=刀塔传奇"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&title=刀塔传奇"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&title=刀塔传奇"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&name=刀塔传奇&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&t=刀塔传奇"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%82%89%E7%9B%BE"><span class="toc-number">1.</span> <span class="toc-text">肉盾</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8C%B4%E5%AD%90"><span class="toc-number">2.</span> <span class="toc-text">猴子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9A%E8%A2%AB%E7%8C%AA"><span class="toc-number">3.</span> <span class="toc-text">刚被猪</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B2%89%E9%BB%98"><span class="toc-number">4.</span> <span class="toc-text">沉默</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%9C%E5%9B%A2"><span class="toc-number">5.</span> <span class="toc-text">谜团</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%80%E9%AD%94"><span class="toc-number">6.</span> <span class="toc-text">血魔</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%8F%E9%87%91%E7%8C%8E%E4%BA%BA"><span class="toc-number">7.</span> <span class="toc-text">赏金猎人</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        刀塔传奇
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mr.Zhang</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-10-13T16:00:00.000Z" itemprop="datePublished">2022-10-14</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Notes/">Notes</a>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>计算公式：</p>
+<p>最大生命值=力量×18</p>
+<p>物理攻击力=主属性+敏捷×0.4</p>
+<p>魔法强度 =智力×2.4</p>
+<p>物理护甲 = 力量÷7+敏捷÷14</p>
+<p>魔法抗性 =智力÷10</p>
+<p>物理暴击 =敏捷÷2.5</p>
+<h2 id="肉盾"><a href="#肉盾" class="headerlink" title="肉盾"></a>肉盾</h2><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">刚被猪</th>
+<th align="center">斧王</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">力量</td>
+<td align="center">1900+500</td>
+<td align="center">2159+612</td>
+</tr>
+<tr>
+<td align="center">智力</td>
+<td align="center">1345+123</td>
+<td align="center">1167+110</td>
+</tr>
+<tr>
+<td align="center">敏捷</td>
+<td align="center">1209+108</td>
+<td align="center">1312+118</td>
+</tr>
+<tr>
+<td align="center">生命值</td>
+<td align="center">45404+19523</td>
+<td align="center">50204+19573</td>
+</tr>
+<tr>
+<td align="center">物理攻击</td>
+<td align="center">3548+1084</td>
+<td align="center">3690+1020</td>
+</tr>
+<tr>
+<td align="center">魔法强度</td>
+<td align="center">3249+294</td>
+<td align="center">2976+264</td>
+</tr>
+<tr>
+<td align="center">物理护甲</td>
+<td align="center">711+474</td>
+<td align="center">757+452</td>
+</tr>
+<tr>
+<td align="center">磨抗</td>
+<td align="center">413+62</td>
+<td align="center">383+121</td>
+</tr>
+<tr>
+<td align="center">物理暴击</td>
+<td align="center">731+43</td>
+<td align="center">691+47</td>
+</tr>
+<tr>
+<td align="center">生命回复</td>
+<td align="center">4385</td>
+<td align="center">4180+1250</td>
+</tr>
+<tr>
+<td align="center">能量回复</td>
+<td align="center">290</td>
+<td align="center">272+300</td>
+</tr>
+<tr>
+<td align="center">闪避</td>
+<td align="center">25</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">穿透物理护甲</td>
+<td align="center">20</td>
+<td align="center">20</td>
+</tr>
+<tr>
+<td align="center">吸血等级</td>
+<td align="center">40</td>
+<td align="center">55+70</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">减少30%被控时间</td>
+<td align="center">同左/治疗+20%</td>
+</tr>
+</tbody></table>
+<h2 id="猴子"><a href="#猴子" class="headerlink" title="猴子"></a>猴子</h2><p>重点来了 其实个人认为大招不是很给力 但是本人给猴子定位 战略意义!!! 和敌法有异曲同工之处 </p>
+<p>【攻击顺序】平A1下→寒冰之矛(3技能)→影分身(2技能)→平A2下，以此循环。</p>
+<p>我重点来了 猴子不是要长矛伤害 这伤害不值一提 但是重点是长矛带来的分身 !!!此分身一定!!在对方后排的屁股后面 导致结果 敌方中排和后排所有人转头攻击分身</p>
+<p>猴子也有很大的缺点，个人实践得出。猴子的大，要进行分身翻滚，导致了技能伤害容易落空，当然队伍双T队伍还是很有伤害的，，猴子的3技能，暴击率较高，后排白虎小黑等英雄情有独钟，伤害一般，假设配合一姐，敌法的话，相信对后排威胁蛮大。</p>
+<p> 英雄技能</p>
+<p>一技能：【幻影突刺】：猴子的大招，猴子可以变化出一个幻象，并且挥舞长矛对敌人造成一串连刺，召唤出的幻象与猴子当前等级相同。</p>
+<p>不错的大招，可以主动放出一个幻像，而且对前面的英雄造成巨量的伤害，90级时候可以增加1800。</p>
+<p>二技能：【影分身】猴子的二技能，可以召唤出两个猴哥来帮助战斗。</p>
+<p>可以主动放出两个分身，进一步的提高对对方的伤害。</p>
+<p>三技能：【寒冰之矛】可在目标身边召唤一个分数，并且令目标减速，猴子可以召唤出的第四个幻象，可以减速敌人，在战斗中也可以扰乱敌人的攻击目标。81级时可以提升810点伤害。</p>
+<p>一个不错的技能，有减速有伤害有分身，完美的提升了猴子的输出。</p>
+<p>四技能：【幻化之身】可以增加猴子本体和幻象的生命值，可以提高猴子与幻象的生存能力，保证在战场的输出。</p>
+<h2 id="刚被猪"><a href="#刚被猪" class="headerlink" title="刚被猪"></a>刚被猪</h2><p>钢背猪是刀塔传奇6月份新出的英雄，是几个非常硬英雄之一，天生一副嘲讽脸，出场就是为了吸引火力。这个英雄在刀塔传奇中中是一个非常nb的存在，拥有极强的防御，几乎可以无视对手的普通攻击，还可以吸收火力，作为一个MT，它是非常称职的!</p>
+<p>英雄技能</p>
+<p>刚毛后背(大招)：刚背猪露出自己的刚毛后背，大幅减少受到的伤害。刺针扫射的被动效果会累积大招减免前的伤害量。</p>
+<p>粘稠鼻涕(普通)：用鼻涕包裹一个敌方单位，减少他的护甲。</p>
+<p>刺针扫射(普通)：刚背猪累积受到一定伤害后会自动将身上的尖刺发射出去，对周围的敌人造成物理伤害。</p>
+<p>战意(普通)：刚背猪激发自己的战斗意志，增加攻击力 [1]  。</p>
+<p>针刺加伤（觉醒技能）：10秒内遭受过磁针扫射的单位，再次受到磁针扫射攻击是，将受到额外伤害，并且伤害可以叠加，最多10次。（三十级效果：每次叠加造成的额外伤害提高540点。)</p>
+<p>最后总结一下：钢背是一个很强力的英雄，在吸收大量伤害的同时，能造成非常可观的伤害，是个越到后期越强力的英雄，但是成型非常晚，且非常依赖大招，是否有针对钢背的队伍还有待研究【我自己准备用钢背、熊猫、月骑、白虎、小黑的队伍】</p>
+<p>从上面所说的我们可以知道，钢背是一个很强的英雄，那他有没有什么缺点呢?答案是有，钢背是很依赖大招的一个英雄，而大招又是吃沉默的，所以在钢背要放大的时候如果被沉默、眩晕(冰冻也是眩晕)，很可能在血量很低的时候发出大，或者根本没放大就跪了，这样的情况和完美放大的钢背相比，简直是天壤之别</p>
+<h2 id="沉默"><a href="#沉默" class="headerlink" title="沉默"></a>沉默</h2><p>沉默是JJC一个极其优秀的干扰者，他不是一个优秀的爆发法师，虽然他输出不低，他的主要任务是打乱敌方节奏，提供稳定的高额输出，用大招配合队友来奠定胜局</p>
+<p>我对他的评价非常高</p>
+<h2 id="谜团"><a href="#谜团" class="headerlink" title="谜团"></a>谜团</h2><p><img src="/images/Notes/dota/dota_mt.jpeg"></p>
+<p>作为后排控制型法师，谜团的各方面属性都中规中矩，利用各种控制技能将敌人玩弄于鼓掌之间。</p>
+<p>此外，谜团享受以下加成：</p>
+<p>1、异次元——享受虚空觉醒技能加成，可获得魔法抗性提升。</p>
+<p>2、漂浮系——享受厄运之源觉醒技能加成，可获得护甲提升。</p>
+<p>【技能介绍】</p>
+<p>宇宙新星(大招)：召唤宇宙之力对敌人全体造成伤害，并召唤一个黑洞，黑洞会持续吸引敌人。</p>
+<p>重力咒缚(普通)：改变区域内的重力，重压对敌人造成伤害，进入区域的飞行或漂浮系敌人将不能移动，其他敌人将会被减速。</p>
+<p>信仰操作(普通)：控制距离最远的敌人的精神，让他不断的朝着谜团移动。当精神控制结束后，该单位会受到一个魔法伤害。</p>
+<p>小型黑洞(普通)：召唤一个小型黑洞，小型黑洞会将附近敌人的部分飞行物体吸入内部(对所有大招的飞行物体无效)，吸到一定数量或者存在一定时间后会爆炸，并对周围敌人造成伤害，期间吸收的飞行物体越多伤害越高。</p>
+<p>1、强力控制——谜团的每个技能都带有一定的控制，这让在战场上的他可以最大的发挥扰乱的作用，打乱对方阵型从而获得战斗胜利。</p>
+<p>2、飞行英雄的克星——谜团的技能二可以有效的控制飞行及漂浮英雄的行动能力，有时可以起到意想不到的结局!</p>
+<p>3、不分敌我的攻击——谜团的觉醒技能在长时间的作战里可以起到不俗的效果，让敌方不分敌我的进行无差别攻击及治疗!</p>
+<h2 id="血魔"><a href="#血魔" class="headerlink" title="血魔"></a>血魔</h2><p><img src="/images/Notes/dota/dota_xm.jpeg"></p>
+<p>作为前排吸血型坦克，血魔的站位属于前排靠前的位置。属性本就优越的他，能利用多个吸血技能，在前排大展拳脚，而很难受到生命威胁。</p>
+<p>有这样一个对鲜血极度渴望的大恶魔作为坦克，为队伍冲锋，敌人恐怕只有落荒而逃的份了!血魔还是比较百搭的，可以尝试各种队伍，都有不错发挥。</p>
+<p>优势，血魔自身伤害足，回复优越，3星也有傲人的5.5W血量，且能克制很多老魂匣(PA 虚空 圣堂 仙女龙 狼人 魂守 只要动就是血流成河，吸血效果还被削弱。)所以在JJC血魔应该是有不错的位置的。</p>
+<p>弱点，就是站位十分靠前，魔抗不高，比较怕高爆发的法系和控制能量的队伍。</p>
+<h2 id="赏金猎人"><a href="#赏金猎人" class="headerlink" title="赏金猎人"></a>赏金猎人</h2><p><img src="/images/Notes/dota/dota_sj.jpeg"></p>
+<p>赏金猎人在物攻、暴击和穿透护甲方面都十分优秀，输出会成为亮点。命中虽然不是很高，却能保证他的输出不容易被放空，出色的闪避属性和不俗的吸血等级令他在面对物理队时有良好的生存环境。</p>
+<p>【技能揭秘】</p>
+<p>悬赏令：悬赏敌人英雄的项上人头，杀死他们的人可以获得随机奖励。奖励一共有五种(1.生命值奖励<br>、能量奖励、攻击力奖励、物理免疫盾、魔法免疫盾)。施放悬赏令时，赏金猎人的队友将士气大振，攻击速度提升，赏金猎人的普通攻击将对被标记了悬赏令的目标造成双倍伤害。被标记了悬赏令的目标无法进入隐身状态。</p>
+<p>暗影步：进入隐身状态，不会被敌人选为目标。在暗影步期间进行普通攻击会结束暗影步打破隐身状态，并造成一定百分比的额外伤害。施放悬赏令不会打破隐身状态。</p>
+<p>投掷飞镖：像敌人投掷一个飞镖，造成伤害和短暂眩晕，飞镖还会向标记了悬赏令的敌人弹射。</p>
+<p>忍术：赏金猎人会不断积蓄自己的攻击力，并在下一次普通攻击中爆发出来。</p>
+<p>赏金猎人的存在对于善于收割人头的英雄来说，简直是福音般的存在。而他的五项悬赏令，并不互相排斥，也就是说，一个英雄能同时增加几种奖励!</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/tags/">tags</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%82%89%E7%9B%BE"><span class="toc-number">1.</span> <span class="toc-text">肉盾</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8C%B4%E5%AD%90"><span class="toc-number">2.</span> <span class="toc-text">猴子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9A%E8%A2%AB%E7%8C%AA"><span class="toc-number">3.</span> <span class="toc-text">刚被猪</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B2%89%E9%BB%98"><span class="toc-number">4.</span> <span class="toc-text">沉默</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%9C%E5%9B%A2"><span class="toc-number">5.</span> <span class="toc-text">谜团</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%80%E9%AD%94"><span class="toc-number">6.</span> <span class="toc-text">血魔</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%8F%E9%87%91%E7%8C%8E%E4%BA%BA"><span class="toc-number">7.</span> <span class="toc-text">赏金猎人</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&text=刀塔传奇"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&title=刀塔传奇"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&is_video=false&description=刀塔传奇"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=刀塔传奇&body=Check out this article: http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&title=刀塔传奇"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&title=刀塔传奇"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&title=刀塔传奇"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&title=刀塔传奇"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&name=刀塔传奇&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2022/10/14/Notes/%E5%88%80%E5%A1%94%E4%BC%A0%E5%A5%87/&t=刀塔传奇"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2022
+    Mr.Zhang
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
