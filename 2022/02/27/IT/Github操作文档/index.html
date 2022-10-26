@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Github搜索指南 搜百科大全，搜索优秀的资源。xxx awesome  找例子 xxx simple  找空项目架子 xxx starter  找技术教程 django tutorial">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github和Hexo操作文档">
+<meta property="og:url" content="http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="Github搜索指南 搜百科大全，搜索优秀的资源。xxx awesome  找例子 xxx simple  找空项目架子 xxx starter  找技术教程 django tutorial">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-02-26T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-10-26T07:16:29.475Z">
+<meta property="article:author" content="Mr.Zhang">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Github和Hexo操作文档</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Blog" type="application/atom+xml">
+</head>
+
+<body class="max-width mx-auto px3 ">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">tags</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2022/02/28/Weekly/%E5%91%A8%E5%88%8A01/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2021/08/08/%E6%95%B0%E5%AD%97%E5%91%A8%E5%88%8A05/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&text=Github和Hexo操作文档"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&title=Github和Hexo操作文档"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&is_video=false&description=Github和Hexo操作文档"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Github和Hexo操作文档&body=Check out this article: http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&title=Github和Hexo操作文档"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&title=Github和Hexo操作文档"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&title=Github和Hexo操作文档"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&title=Github和Hexo操作文档"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&name=Github和Hexo操作文档&description=&lt;h2 id=&#34;Github搜索指南&#34;&gt;&lt;a href=&#34;#Github搜索指南&#34; class=&#34;headerlink&#34; title=&#34;Github搜索指南&#34;&gt;&lt;/a&gt;Github搜索指南&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;搜百科大全，搜索优秀的资源。xxx awesome&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;找例子 xxx simple&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;找空项目架子 xxx starter&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;找技术教程 django tutorial &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&t=Github和Hexo操作文档"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Github%E6%90%9C%E7%B4%A2%E6%8C%87%E5%8D%97"><span class="toc-number">1.</span> <span class="toc-text">Github搜索指南</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo"><span class="toc-number">2.</span> <span class="toc-text">Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Hexo%E9%83%A8%E7%BD%B2Github"><span class="toc-number">2.1.</span> <span class="toc-text">1.Hexo部署Github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Hexo%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text">2.Hexo常用插件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-deploy%E9%83%A8%E7%BD%B2Spawn-failed%E9%94%99%E8%AF%AF"><span class="toc-number">3.</span> <span class="toc-text">Hexo deploy部署Spawn failed错误</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Github和Hexo操作文档
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Mr.Zhang</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-02-26T16:00:00.000Z" itemprop="datePublished">2022-02-27</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/Github/">Github</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Hexo/" rel="tag">Hexo</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="Github搜索指南"><a href="#Github搜索指南" class="headerlink" title="Github搜索指南"></a>Github搜索指南</h2><ol>
+<li><p>搜百科大全，搜索优秀的资源。xxx awesome</p>
+</li>
+<li><p>找例子 xxx simple</p>
+</li>
+<li><p>找空项目架子 xxx starter</p>
+</li>
+<li><p>找技术教程 django tutorial </p>
+</li>
+</ol>
+<span id="more"></span>
+
+
+<hr>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><h3 id="1-Hexo部署Github"><a href="#1-Hexo部署Github" class="headerlink" title="1.Hexo部署Github"></a>1.Hexo部署Github</h3><p><code>建立密钥通信</code></p>
+<p>打开.ssh使用 ssh-keygen 生成密钥，然后一直回车</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>密钥生成成功</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Your identification has been saved in /home/you/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /home/you/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">…………………此处是密钥内容…………………… your_email@example.com</span><br></pre></td></tr></table></figure>
+
+<p>在 chengjianhua.github.io 的首页菜单栏中点击 Settings –&gt; Deploy keys –&gt; Add deploy key，然后将生成的 id_rsa.pub 中的内容全选(全部)复制到 key 输入框中，然后点击 Add key 完成添加公钥。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>检查配置是否成功</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>如果出现以下内容即表示配置完成并且成功！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Hi username! You&#x27;ve successfully authenticated, but GitHub does not</span><br><span class="line">provide shell access.</span><br></pre></td></tr></table></figure>
+
+
+<p>hexo 的配置文件  <em>config.yml  中的 deploy 属性。</em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:username/username.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>错误：fatal: unable to access </p>
+<p>fatal: unable to access ‘<a target="_blank" rel="noopener" href="https://github.com/blog20170623/blog20170623.github.io/&#39;">https://github.com/blog20170623/blog20170623.github.io/&#39;</a>: LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443</p>
+<p>这个问题就是SSH Key需要重新更新了。就是上面可以解决这个的问题</p>
+<blockquote>
+<p>出现了这个错误之后，百度谷歌之后，有很多文章描述这种错误的，其他方法我并没有试一试，写的并不清楚，我只找到我能够看得懂试，发现完全有用。</p>
+</blockquote>
+<h3 id="2-Hexo常用插件"><a href="#2-Hexo常用插件" class="headerlink" title="2.Hexo常用插件"></a>2.Hexo常用插件</h3><p>Hexo 提供了快速方便的一键部署功能，让您只需一条命令就能将网站部署到服务器上。需要插件<code>deployer-git</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p><code>文章置顶</code></p>
+<p>hexo-generator-index是官方默认的博客文章排序插件，在我们安装hexo时就存在该插件了，hexo博客正常运行离不开该插件。该插件实现了按文章发表时间倒序排序，没有实现文件置顶功能。</p>
+<p>hexo-generator-index-pin-top是一个文章置顶功能插件，在置顶之外实现文章按发表时间倒序功能，该插件用于替换hexo-generator-index插件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index-pin-top –save</span><br><span class="line">npm uninstall hexo-generator-index –save</span><br></pre></td></tr></table></figure>
+
+<p><code>添加 RSS 订阅支持</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+<p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br><span class="line">  content_limit: 140</span><br><span class="line">  content_limit_delim: &#x27; &#x27;</span><br><span class="line">  order_by: -date</span><br></pre></td></tr></table></figure>
+
+<h2 id="Hexo-deploy部署Spawn-failed错误"><a href="#Hexo-deploy部署Spawn-failed错误" class="headerlink" title="Hexo deploy部署Spawn failed错误"></a>Hexo deploy部署Spawn failed错误</h2><p><code>Error: Spawn failed</code> 问题大多是因为git进行push或者hexo d的时候改变了一些.deploy_git文件下的内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">remote: Resolving deltas: 100% (1013/1013), completed with 115 local objects.</span><br><span class="line">remote: error: Trace: 65175cban911053cf6232469de71dc52c05baaaae7f071bc4d</span><br><span class="line">remote: error: See http://git.io/iEPt8g for more information.</span><br><span class="line">remote: error: File images/Video/light hunter By An9Angel.mp4 is 134.31 MB; this exceeds GitHub&#x27;s file size limit of 100.00 MB</span><br><span class="line">remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.</span><br><span class="line">To github.com:username/username.github.io.git</span><br><span class="line"> ! [remote rejected] HEAD -&gt; gh-pages (pre-receive hook declined)</span><br><span class="line">error: failed to push some refs to &#x27;github.com:username/blog20170623.github.io.git&#x27;</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (/Users/username/Hexo/blog/node_modules/hexo-util/lib/spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:520:28)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:291:12) &#123;</span><br></pre></td></tr></table></figure>
+
+<p>解决办法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">cd /hexo/blog/</span><br><span class="line"></span><br><span class="line">ls -al  # 显示出所以文件包括隐藏目录.deploy_git</span><br><span class="line"></span><br><span class="line">rm -rf .deploy_git/ #删除git提交内容文件夹</span><br><span class="line"></span><br><span class="line">## 执行</span><br><span class="line"></span><br><span class="line">git config --global core.autocrlf false</span><br><span class="line"></span><br><span class="line">## 最后</span><br><span class="line"></span><br><span class="line">hexo c &amp;&amp; g &amp;&amp; d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<p>jul-853 </p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/tags/">tags</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Github%E6%90%9C%E7%B4%A2%E6%8C%87%E5%8D%97"><span class="toc-number">1.</span> <span class="toc-text">Github搜索指南</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo"><span class="toc-number">2.</span> <span class="toc-text">Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Hexo%E9%83%A8%E7%BD%B2Github"><span class="toc-number">2.1.</span> <span class="toc-text">1.Hexo部署Github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Hexo%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text">2.Hexo常用插件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-deploy%E9%83%A8%E7%BD%B2Spawn-failed%E9%94%99%E8%AF%AF"><span class="toc-number">3.</span> <span class="toc-text">Hexo deploy部署Spawn failed错误</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&text=Github和Hexo操作文档"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&title=Github和Hexo操作文档"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&is_video=false&description=Github和Hexo操作文档"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Github和Hexo操作文档&body=Check out this article: http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&title=Github和Hexo操作文档"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&title=Github和Hexo操作文档"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&title=Github和Hexo操作文档"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&title=Github和Hexo操作文档"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&name=Github和Hexo操作文档&description=&lt;h2 id=&#34;Github搜索指南&#34;&gt;&lt;a href=&#34;#Github搜索指南&#34; class=&#34;headerlink&#34; title=&#34;Github搜索指南&#34;&gt;&lt;/a&gt;Github搜索指南&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;搜百科大全，搜索优秀的资源。xxx awesome&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;找例子 xxx simple&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;找空项目架子 xxx starter&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;找技术教程 django tutorial &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2022/02/27/IT/Github%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/&t=Github和Hexo操作文档"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2022
+    Mr.Zhang
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">tags</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
