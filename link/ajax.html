@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta property="og:type" content="website">
+    <meta name="description" content="无标题文档   window.onload &#x3D; function() { 	 	var oBtn &#x3D; document.getElementById(&#39;btn&#39;); 	 	 	oBtn.onclick &#x3D; function() { 		 		&#x2F;*ajax({ 			url	:	&#39;getNews.php&#39;, 			success : function(data) { 				&#x2F;&#x2F;...">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Blog">
-<meta property="og:url" content="http://example.com/archives/2015/08/index.html">
+<meta property="og:url" content="http://example.com/link/ajax.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="无标题文档   window.onload &#x3D; function() { 	 	var oBtn &#x3D; document.getElementById(&#39;btn&#39;); 	 	 	oBtn.onclick &#x3D; function() { 		 		&#x2F;*ajax({ 			url	:	&#39;getNews.php&#39;, 			success : function(data) { 				&#x2F;&#x2F;...">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-11-07T07:03:11.977Z">
+<meta property="article:modified_time" content="2022-11-07T07:03:11.977Z">
 <meta property="article:author" content="Mr.Zhang">
 <meta name="twitter:card" content="summary">
     
@@ -32,7 +36,7 @@
       
     
     <!-- title -->
-    <title>Writing: 2015/8</title>
+    <title>Blog</title>
     <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
@@ -85,42 +89,70 @@
 </header>
 
         
-        <div id="archive">
-  <ul class="post-list">
-    
-    
-    
-    
-      
-      
-      
-      
-        <li class="post-year"><h2>2015</h2></li>
-      
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2015-08-18T16:00:00.000Z" itemprop="datePublished">2015-08-19</time>
-        
-      
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2015/08/19/IT/HTML/">HTML</a>
-    
-
-
-</span>
-      </li>
-    
-  </ul>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   
 
-</div>
+  <div class="content" itemprop="articleBody">
+      
+          <!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<script src="ajax.js"></script>
+<script>
+window.onload = function() {
+	
+	var oBtn = document.getElementById('btn');
+	
+	
+	oBtn.onclick = function() {
+		
+		/*ajax({
+			url	:	'getNews.php',
+			success : function(data) {
+				//...
+			}
+		});*/
+		
+		ajax('get','getNews.php','',function(data) {
+			var data = JSON.parse( data );
+				
+			var oUl = document.getElementById('ul1');
+			var html = '';
+			for (var i=0; i<data.length; i++) {
+				html += '<li><a href="">'+data[i].title+'</a> [<span>'+data[i].date+'</span>]</li>';
+			}
+			oUl.innerHTML = html;
+		});
+		
+		setInterval(function() {
+			ajax('get','getNews.php','',function(data) {
+				var data = JSON.parse( data );
+					
+				var oUl = document.getElementById('ul1');
+				var html = '';
+				for (var i=0; i<data.length; i++) {
+					html += '<li><a href="">'+data[i].title+'</a> [<span>'+data[i].date+'</span>]</li>';
+				}
+				oUl.innerHTML = html;
+			});
+		}, 1000);
+		
+	}
+}
+</script>
+</head>
+
+<body>
+	<input type="button" value="按钮" id="btn" />
+    <ul id="ul1"></ul>
+</body>
+</html>
+
+        
+  </div>
+</article>
 
         
         <footer id="footer">
